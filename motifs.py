@@ -669,13 +669,23 @@ def render_motif_hero(motif: dict) -> str:
     )
 
 
-def render_motif_css(motif: dict) -> str:
-    """Return CSS overrides that re-paint the page in the motif's palette."""
+def render_motif_css(motif: dict, theme: dict | None = None) -> str:
+    """Return CSS overrides that re-paint the page in the motif's palette.
+
+    Motif palettes are authored for dark pages, but ~15% of days render light
+    and this block overrides --theme-accent (links, headings). Clamp against
+    the day's background so accent text stays readable."""
     if not motif:
         return ""
     primary = motif["primary"]
     secondary = motif["secondary"]
     tertiary = motif["tertiary"]
+    if theme and theme.get("is_light"):
+        import themes as _themes
+        bg = theme["bg"]
+        primary = _themes.clamp_hex_for_bg(primary, bg, 4.5)
+        secondary = _themes.clamp_hex_for_bg(secondary, bg, 4.5)
+        tertiary = _themes.clamp_hex_for_bg(tertiary, bg, 4.5)
     pattern = motif["bg_overlay"]()
     pr, pg, pb = _hex_to_rgb(primary).split(", ")
 

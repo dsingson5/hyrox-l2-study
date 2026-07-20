@@ -24,26 +24,6 @@ import widgets
 import themes
 import motifs
 
-def render_fig_strip(lesson):
-    """Thumbnails of the 5E figures/tables chosen for this lesson -> lightbox."""
-    labels = lesson.get("figures") or []
-    cards = ""
-    for lab in labels:
-        f = FIGS.get(lab)
-        if not f:
-            continue
-        url = FIG_BASE + f["file"]
-        cap = f'{f["label"]} — {f["caption"]}' if f.get("caption") else f["label"]
-        cards += (f'<figure class="fig-thumb" data-full="{esc(url)}" data-cap="{esc(cap)}" '
-                  f'tabindex="0" role="button" aria-label="{esc(cap)}">'
-                  f'<img loading="lazy" src="{esc(url)}" alt="{esc(f["label"])}">'
-                  f'<figcaption>{esc(f["label"])}</figcaption></figure>')
-    if not cards:
-        return ""
-    return ('<div class="fig-strip"><div class="fig-title">Figures from the 5th edition '
-            '<span class="fig-hint">tap to enlarge</span></div>'
-            f'<div class="fig-row">{cards}</div></div>')
-
 ROOT = Path(__file__).resolve().parent
 DATA = ROOT / "data"
 OUT = ROOT / "daily"
@@ -51,49 +31,11 @@ LAST_PAGE_QIDS = []  # core question stable-ids on the last rendered page
 STYLES = ROOT / "styles.css"
 APP_JS = ROOT / "app.js"
 
-# ── 5th-edition figure library (extracted high-res scans in ./figures) ──────────
-FIG_BASE = "../figures/"                    # relative: daily pages live in /daily/
-FIG_MANIFEST = ROOT / "figures" / "manifest.json"
-try:
-    _figs_list = json.loads(FIG_MANIFEST.read_text(encoding="utf-8"))
-except Exception:
-    _figs_list = []
-FIGS = {f["label"]: f for f in _figs_list}          # "Figure 3.1" -> record
-FIGS_BY_CH = {}
-for _f in _figs_list:
-    FIGS_BY_CH.setdefault(_f["chapter"], []).append(_f)
-
-# ── Games embed: topics that have at least one relevant drill in games.html ──────
-GAMES_HTML = ROOT / "games.html"
-try:
-    import re as _re2
-    _gh = GAMES_HTML.read_text(encoding="utf-8")
-    _fm = _re2.search(r"window\.FOCUS_MAP=(\{.*?\});</script>", _gh, _re2.S).group(1)
-    GAMES_TOPICS = set(_re2.findall(r'"([a-z0-9_]+)":\[', _fm))
-    import hashlib as _hl
-    GAMES_VER = _hl.md5(_gh.encode("utf-8")).hexdigest()[:8]
-except Exception:
-    GAMES_TOPICS = set()
-    GAMES_VER = "0"
-
-
-def render_drills(lesson, is_today):
-    """Inline the games relevant to THIS lesson's topic (auto-sized iframe)."""
-    if not is_today:
-        return ""
-    tid = lesson.get("topic_id", "")
-    if tid not in GAMES_TOPICS:
-        return ""
-    return (f'<div class="drills-embed"><div class="drills-title">Practice drills for this topic '
-            f'<span class="drills-hint">active retrieval &amp; decisions</span></div>'
-            f'<iframe class="drill-frame" data-focus="{esc(tid)}" loading="lazy" '
-            f'title="Practice drills for this topic" src="../games.html?focus={esc(tid)}&amp;embed=1&amp;v={GAMES_VER}" '
-            f'style="width:100%;border:0;height:120px;overflow:hidden"></iframe></div>')
-
-
+# (The CSCS figure-library and games-embed machinery was removed in v3.1 —
+# this site has no figures/ dir and no games.html, so those paths were dead.)
 
 # Shown in the page header (version + Manila build time). Bump on deploys.
-SITE_VERSION = "v3.0"
+SITE_VERSION = "v3.1"
 
 SPACING_DAYS = [1, 3, 7, 14, 30, 90]
 SPACING_LABELS = {
@@ -124,7 +66,60 @@ DOMAIN_FULL = {"CM": "Coaching, Mindset & Individualisation", "SM": "Sports Medi
                "PG": "Performance Pillars & Programming"}
 # Interleave targets across the five L2 domains, proportional to their share
 # of authored lessons (keep in sync with app.js EXAM_WEIGHTS).
-EXAM_WEIGHTS = {"CM": 0.21, "SM": 0.15, "BM": 0.21, "PH": 0.16, "PG": 0.27}
+EXAM_WEIGHTS = {"CM": 0.23, "SM": 0.15, "BM": 0.20, "PH": 0.16, "PG": 0.26}
+
+# ── Interactive-figure aliases ───────────────────────────────────────────────
+# widgets/steppers/biomech/motifs were inherited from the CSCS site and are
+# keyed by ITS topic_ids, so every lookup silently missed after the port and no
+# HYROX page rendered a single figure. This maps HYROX topic_ids onto the
+# generic exercise-science interactives that genuinely fit them (energy-system
+# timeline, torque calculator, force-velocity curve, arousal curve, …).
+# Topics with no honest analogue are deliberately absent — a wrong diagram is
+# worse than none. CSCS-specific pieces (phase1_review = "the four CSCS
+# domains") are never aliased.
+FIGURE_ALIAS = {
+    # Physiology & nutrition
+    "ph_energy": "energy_system_interaction",     # energy systems by duration
+    "ph_vo2_thresholds": "respiratory",           # gas exchange & the Bohr shift
+    "ph_lactate": "glycolysis",                   # splitting sugar for energy
+    "ph_compromised": "cardiovascular",           # blood flow / delivery
+    "ph_durability": "oxidative",                 # oxidative phosphorylation
+    "nu_energy_availability": "macros",           # macro calculator
+    "nu_carb_periodization": "nutrient_timing",   # macro calculator
+    "nu_raceday": "nutrient_timing",
+    # Biomechanics & technique
+    "bm_forces": "biomech_levers",                # torque & lever calculator
+    "bm_kinetic_chain": "ex_squat",               # movement-analysis stepper
+    "bm_sled": "force_velocity_length_tension",   # high force / low velocity
+    "bm_carry_lunge_wallball": "ex_squat",
+    "rb_gait": "speed_agility",
+    "rb_cadence": "speed_agility",
+    "rb_drills": "warmup",
+    "sk_progressions": "plyometrics",
+    # Performance pillars & programming
+    "of_ski": "ex_alt_modes",
+    "of_row": "ex_alt_modes",
+    "of_cross": "ex_alt_modes",
+    "pd_models": "aerobic_adaptations",           # polarized vs pyramidal
+    "pd_concurrent": "aerobic_programming",       # polarized donut
+    # Sports medicine
+    "pe_strength": "motor_units",                 # recruitment slider
+    "pe_screening": "needs_analysis",
+    "sm_return": "rehab",
+    # Coaching & mental
+    "mp_arousal": "sport_psych",                  # inverted-U arousal curve
+    "pc_needs": "needs_analysis",
+    # Exam-synthesis days reuse their domain's flagship figure
+    "xs_physio": "energy_system_interaction",
+    "xs_biomech": "biomech_levers",
+    "xs_mental": "sport_psych",
+}
+
+
+def figure_key(topic_id):
+    """CSCS figure key for a HYROX topic (identity if it already matches)."""
+    return FIGURE_ALIAS.get(topic_id, topic_id)
+
 
 # Pinned ts-fsrs (Anki's default scheduler since 23.10). ESM via jsDelivr — no
 # build step, runs in a static GitHub Pages site. app.js falls back to an
@@ -139,14 +134,6 @@ FSRS_MODULE = (
     "  window.dispatchEvent(new Event('fsrs-ready'));\n"
     "</script>"
 )
-
-DRILL_LISTENER = """<script>
-window.addEventListener("message",function(e){
-  var d=e.data; if(!d||!d.cscsGames)return;
-  var f=document.querySelector('iframe.drill-frame[data-focus="'+(d.focus||"")+'"]')||document.querySelector("iframe.drill-frame");
-  if(f&&d.height){ f.style.height=(d.height+6)+"px"; }
-});
-</script>"""
 
 
 def load_data():
@@ -221,7 +208,7 @@ def esc(s):
 def render_lesson_card(lesson, badge, badge_class, show_widget=True, is_today=False):
     domain = lesson.get("domain", "CM")
     theme = DOMAIN_THEME.get(domain, DOMAIN_THEME["CM"])
-    motif = motifs.motif_for(lesson["topic_id"])
+    motif = motifs.motif_for(figure_key(lesson["topic_id"]))
     hero_html = motifs.render_motif_hero(motif) if (is_today and motif) else ""
     motif_class = " has-motif" if (is_today and motif) else ""
     facts = "".join(f"<li>{esc(f)}</li>" for f in lesson.get("key_facts", []))
@@ -243,7 +230,7 @@ def render_lesson_card(lesson, badge, badge_class, show_widget=True, is_today=Fa
             media += (f'<a class="media-link resource" href="{esc(rsrc["url"])}" target="_blank" rel="noopener">'
                       f'<span class="m-icon">🔗</span><div><div class="m-title">{esc(rsrc["title"])}</div>'
                       f'<div class="m-cred">{esc(rsrc.get("credibility", ""))}</div></div></a>')
-    widget_html = widgets.render(lesson["topic_id"]) if show_widget else ""
+    widget_html = widgets.render(figure_key(lesson["topic_id"])) if show_widget else ""
     chip = (f'<span class="domain-chip" style="background: {theme["glow"]}; color: {theme["accent"]}; border-color: {theme["accent"]}66;">'
             f'<svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">'
             f'<path d="{theme["icon"]}"/></svg>{esc(theme["name"])}</span>')
@@ -259,8 +246,6 @@ def render_lesson_card(lesson, badge, badge_class, show_widget=True, is_today=Fa
         glossary_html = (f'<div class="glossary"><div class="gloss-title">Visual glossary</div>'
                          f'<div class="gloss-grid">{items}</div></div>')
 
-    fig_html = render_fig_strip(lesson)
-    drills_html = render_drills(lesson, is_today)
     return (f'<section class="lesson-card reveal{motif_class}" data-domain="{domain}" '
             f'style="--accent: {theme["accent"]}; --accent-2: {theme["accent_2"]}; --glow: {theme["glow"]};">'
             f'{hero_html}'
@@ -271,8 +256,7 @@ def render_lesson_card(lesson, badge, badge_class, show_widget=True, is_today=Fa
             f'{widget_html}'
             f'<div class="facts"><div class="facts-title">Key facts to memorize</div><ul>{facts}</ul></div>'
             f'{glossary_html}'
-            f'{fig_html}'
-            f'{tl_html}<div class="media">{media}</div>{drills_html}</section>')
+            f'{tl_html}<div class="media">{media}</div></section>')
 
 
 def render_q_card(topic_id, orig_idx, q, qid, domain, label="Q", pretest=False):
@@ -381,8 +365,12 @@ def render_pretest(topic_id, qs, domain):
 
 
 
-def _archive_dates(meta_start_iso):
-    """All ISO dates from start_date through max(today, latest existing daily file)."""
+def _archive_dates(meta_start_iso, page_iso=None):
+    """All ISO dates from start_date through max(Manila today, latest existing
+    daily file, the page being generated). page_iso MUST be included: the dated
+    file is written only after render, and the nightly runner's UTC date is a
+    day behind Manila — either alone would leave the page out of its own
+    archive and bake null prev/next nav."""
     import datetime as _d
     start = _d.date.fromisoformat(meta_start_iso)
     existing = []
@@ -395,8 +383,9 @@ def _archive_dates(meta_start_iso):
         pass
     last_iso = max(existing) if existing else meta_start_iso
     last = _d.date.fromisoformat(last_iso)
-    today_d = _d.date.today()
-    end = max(last, today_d)
+    end = max(last, today_local())
+    if page_iso:
+        end = max(end, _d.date.fromisoformat(page_iso))
     out = []
     d = start
     while d <= end:
@@ -407,7 +396,7 @@ def _archive_dates(meta_start_iso):
 def render_html(today, today_day, today_lesson, deep_review, reviews, questions, meta, topic_domain):
     import json as _json2
     page_date = today.isoformat()
-    _all = _archive_dates(meta["start_date"])
+    _all = _archive_dates(meta["start_date"], page_date)
     try:
         _i = _all.index(page_date)
     except ValueError:
@@ -421,8 +410,8 @@ def render_html(today, today_day, today_lesson, deep_review, reviews, questions,
     js = APP_JS.read_text(encoding="utf-8")
     theme = themes.for_day(today_day)
     theme_css = themes.render_overrides(theme)
-    motif = motifs.motif_for(today_lesson["topic_id"])
-    motif_css = motifs.render_motif_css(motif) if motif else ""
+    motif = motifs.motif_for(figure_key(today_lesson["topic_id"]))
+    motif_css = motifs.render_motif_css(motif, theme) if motif else ""
     badge = "Deep Review" if deep_review else f"Day {today_day} · New lesson"
     badge_class = "badge-review" if deep_review else "badge-new"
 
@@ -571,7 +560,6 @@ def render_html(today, today_day, today_lesson, deep_review, reviews, questions,
 <script>window.__CSCS_DOMAINS = {domains_json};</script>
 <script>window.__CSCS_NEWCOUNT = {new_count};</script>
 <script>window.__CSCS_PAGE_DATE = "{page_date}";window.__CSCS_PREV = {prev_json}; window.__CSCS_NEXT = {next_json};</script>
-{DRILL_LISTENER}
 {FSRS_MODULE}
 <script>{js}</script>
 </body>
@@ -610,7 +598,11 @@ def build_index_html(base_html, available, this_iso, dtopic=None):
     redirect = (
         '<script>(function(){'
         'var DAYS=' + days + ';var DTOPIC=' + dtopic_json + ';var DAYQ=' + dayq_json + ';var THIS="' + this_iso + '";'
-        'var GIST="";var GFILE="hyrox-l2-progress.json";'
+        # No gist id is baked (none exists yet for this site) — but once the
+        # user configures cloud sync on a device, its stored gist id makes the
+        # remote-resume branch live, so a locally-wiped device still resumes.
+        'var GIST="";try{GIST=localStorage.getItem("hyroxl2.sync.gist_id")||"";}catch(e){}'
+        'var GFILE="hyrox-l2-progress.json";'
         'function mt(d){try{var p=new Intl.DateTimeFormat("en-CA",{timeZone:"Asia/Manila",'
         'year:"numeric",month:"2-digit",day:"2-digit"}).formatToParts(d||new Date());'
         'var o={};p.forEach(function(x){o[x.type]=x.value;});return o.year+"-"+o.month+"-"+o.day;}'
@@ -668,119 +660,61 @@ def build_index_html(base_html, available, this_iso, dtopic=None):
         '<meta http-equiv="Pragma" content="no-cache">'
         '<meta http-equiv="Expires" content="0">'
     )
-    # Root landing page lives beside games.html, not inside daily/ — undo
-    # the daily-relative prefix for this one output.
-    base_html = base_html.replace('href="../games.html"', 'href="games.html"')
+    # Root landing page lives beside modules.html, not inside daily/ — undo
+    # the daily-relative prefixes for this one output. Normally invisible
+    # (the head redirect fires first), but with JS off or a failed redirect
+    # these links are what the visitor gets.
+    base_html = base_html.replace('href="../modules.html"', 'href="modules.html"')
+    base_html = base_html.replace('window.location.href = "hyrox_"', 'window.location.href = "daily/hyrox_"')
+    base_html = base_html.replace(
+        '<div class="container">',
+        '<noscript><div style="padding:12px 16px;font:14px sans-serif;background:#231f1f;color:#eee">'
+        'JavaScript is off, so the resume redirect can\'t run — '
+        '<a href="modules.html" style="color:#7fd4ff">browse all modules &amp; lessons</a> instead.</div></noscript>'
+        '<div class="container">', 1)
     return base_html.replace("<head>", "<head>\n" + CACHE_META + redirect, 1)
 
 
 
-def build_gallery_html():
-    """Standalone, self-contained browsable gallery of every 5E figure & table."""
-    CH_TITLES = {1:"Structure & Function of Body Systems",2:"Biomechanics of Resistance Exercise",3:"Bioenergetics of Exercise & Training",4:"Endocrine Responses to Resistance Training",5:"Adaptations to Anaerobic Training",6:"Adaptations to Aerobic Training",7:"Age-Related Differences",8:"Sex-Related Differences",9:"Psychological Foundations",10:"Basic Nutritional Factors",11:"Nutrition Strategies for Performance",12:"Performance-Enhancing Substances",13:"Test Selection & Administration",14:"Scoring & Interpretation of Tests",15:"Warm-Up, Mobility & Flexibility",16:"Exercise Technique: Free Weight & Machine",17:"Exercise Technique: Alternative Modes",18:"Program Design: Resistance Training",19:"Program Design: Plyometrics",20:"Program Design: Speed & Agility",21:"Program Design: Aerobic & Metabolic",22:"Periodization",23:"Rehabilitation & Reconditioning",24:"Overreaching, Overtraining & Recovery",25:"Facility Design & Layout",26:"Facility Policies & Legal Issues"}
-    css = STYLES.read_text(encoding="utf-8")
-    js = APP_JS.read_text(encoding="utf-8")
-    theme = themes.for_day(1)
-    sections = ""
-    total = 0
-    for ch in sorted(FIGS_BY_CH):
-        recs = sorted(FIGS_BY_CH[ch], key=lambda r: (0 if r["kind"] == "FIGURE" else 1,
-                      int(r["number"].split(".")[1])))
-        cards = ""
-        for f in recs:
-            total += 1
-            url = "figures/" + f["file"]
-            cap = f'{f["label"]} — {f["caption"]}' if f.get("caption") else f["label"]
-            cards += (f'<figure class="fig-thumb gal" data-full="{esc(url)}" data-cap="{esc(cap)}" '
-                      f'data-search="{esc((f["label"]+" "+f.get("caption","")).lower())}" '
-                      f'tabindex="0" role="button" aria-label="{esc(cap)}">'
-                      f'<img loading="lazy" src="{esc(url)}" alt="{esc(f["label"])}">'
-                      f'<figcaption>{esc(f["label"])}<span class="gal-cap">{esc(f.get("caption",""))}</span></figcaption>'
-                      f'</figure>')
-        sections += (f'<section class="gal-ch" data-ch="{ch}"><h2>Chapter {ch} · {esc(CH_TITLES.get(ch, ""))}</h2>'
-                     f'<div class="fig-row gal-row">{cards}</div></section>')
-    return f'''<!DOCTYPE html>
-<html lang="en"><head><meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>HYROX L2 — 5th Edition Figure Library</title>
-<style>{css}</style><style>{themes.render_overrides(theme)}</style>
-<style>.gal-wrap{{max-width:1200px;margin:0 auto;padding:20px 16px 80px}}
-.gal-head h1{{font-size:24px;margin:0 0 4px}}.gal-head p{{color:var(--text-dim);font-size:13px;margin:0 0 16px}}
-.gal-search{{width:100%;max-width:420px;padding:10px 14px;border-radius:10px;border:1px solid var(--border);
-background:var(--card);color:var(--text);font:inherit;margin-bottom:18px}}
-.gal-ch h2{{font-size:16px;margin:26px 0 10px;padding-bottom:6px;border-bottom:1px solid var(--border)}}
-.gal-row{{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:12px}}
-.fig-thumb.gal{{margin:0}}.fig-thumb.gal img{{max-height:150px}}
-.gal-cap{{display:block;font-size:10px;color:var(--text-dim);font-weight:400;margin-top:2px;line-height:1.25}}
-.gal-empty{{display:none}}</style>
-</head><body class="{theme["body_class"]}">
-<div class="gal-wrap">
-<div class="gal-head"><a href="./" style="color:var(--accent);font-size:12px;text-decoration:none">&larr; Back to today\u2019s study</a>
-<h1>5th Edition Figure Library</h1>
-<p>{total} figures &amp; tables extracted from <i>Essentials of Strength Training and Conditioning</i>, 5th ed. — tap any image to enlarge. For your personal study reference.</p>
-<input class="gal-search" type="search" placeholder="Search figures &amp; tables\u2026 (e.g. fiber, squat, VO2)" oninput="galFilter(this.value)"></div>
-{sections}
-<div class="gal-empty" id="gal-empty" style="color:var(--text-dim);padding:20px">No matches.</div>
-</div>
-<script>
-function galFilter(q){{q=(q||"").trim().toLowerCase();var any=false;
-document.querySelectorAll(".fig-thumb.gal").forEach(function(el){{
-var hit=!q||el.dataset.search.indexOf(q)>=0;el.style.display=hit?"":"none";if(hit)any=true;}});
-document.querySelectorAll(".gal-ch").forEach(function(s){{
-var vis=s.querySelectorAll(".fig-thumb.gal:not([style*=\'none\'])").length;s.style.display=vis?"":"none";}});
-document.getElementById("gal-empty").style.display=any?"none":"block";}}
-</script>
-<script>{js}</script>
-</body></html>'''
-
-def main():
-    import argparse
-    parser = argparse.ArgumentParser()
-    parser.add_argument("--day", type=int, help="Override day_number (e.g. --day 2)")
-    parser.add_argument("--date", type=str, help="Pretend today is this ISO date (e.g. --date 2026-05-20)")
-    args, _ = parser.parse_known_args()
-
-    curriculum, questions = load_data()
+def build_day(build_date, curriculum, questions, is_entry):
+    """Render one dated daily page. When is_entry is True this date is 'today':
+    it also writes the rolling copy and the index.html landing page."""
     meta = curriculum["meta"]
-    if args.date:
-        today = _dt.date.fromisoformat(args.date)
-    else:
-        today = today_local()
-    today_day = args.day if args.day else day_number(meta["start_date"], today)
-    if args.day and not args.date:
-        # If just --day given, compute synthetic "today" so file naming matches
-        today = _dt.date.fromisoformat(meta["start_date"]) + _dt.timedelta(days=args.day - 1)
+    today_day = day_number(meta["start_date"], build_date)
     if today_day < 1:
-        print(f"Today ({today}) is before curriculum start. No file generated.")
+        print(f"{build_date} is before curriculum start. No file generated.")
         return 1
     lessons = curriculum["lessons"]
-    # Map every question topic to its NSCA domain (for interleaving + calibration).
+    # Map every question topic to its L2 domain (for interleaving + calibration).
     topic_domain = {l["topic_id"]: l.get("domain", "CM") for l in lessons.values()}
     for t in questions:
         topic_domain.setdefault(t, "CM")
     today_lesson, deep_review = get_today_lesson(today_day, lessons)
     reviews = pick_review_lessons(today_day, lessons, meta.get("seen_through_day", 0))
-    html = render_html(today, today_day, today_lesson, deep_review, reviews, questions, meta, topic_domain)
+    html = render_html(build_date, today_day, today_lesson, deep_review, reviews, questions, meta, topic_domain)
     try:
         _cp = DATA / 'day_completion.json'
         _comp = {}
         if _cp.exists():
             _comp = json.loads(_cp.read_text(encoding='utf-8'))
-        _comp[today.isoformat()] = LAST_PAGE_QIDS
+        _comp[build_date.isoformat()] = LAST_PAGE_QIDS
         _cp.write_text(json.dumps(_comp, ensure_ascii=False), encoding='utf-8')
     except Exception:
         pass
     OUT.mkdir(parents=True, exist_ok=True)
-    dated_path = OUT / f"hyrox_{today.isoformat()}.html"
+    dated_path = OUT / f"hyrox_{build_date.isoformat()}.html"
+    dated_path.write_text(html, encoding="utf-8")
+    print(f"Wrote {dated_path}")
+    if not is_entry:
+        return 0
     rolling_path = OUT / "hyrox_today.html"
     index_path = ROOT / "index.html"  # GitHub Pages entry point
-    dated_path.write_text(html, encoding="utf-8")
     rolling_path.write_text(html, encoding="utf-8")
     # Index is the GitHub Pages entry point: make it self-correct to Manila "today".
     _start = meta["start_date"]
     available = sorted({d for p in OUT.glob("hyrox_2*.html") if (d := p.stem.replace("hyrox_", "")) >= _start})
-    if today.isoformat() not in available:
-        available.append(today.isoformat())
+    if build_date.isoformat() not in available:
+        available.append(build_date.isoformat())
         available.sort()
     _sd = _dt.date.fromisoformat(meta["start_date"])
     _lesson_dates = {}
@@ -792,12 +726,57 @@ def main():
                 _lesson_dates[_dd] = _tid
         except Exception:
             pass
-    index_path.write_text(build_index_html(html, available, today.isoformat(), _lesson_dates), encoding="utf-8")
-    print(f"Wrote {dated_path}")
+    index_path.write_text(build_index_html(html, available, build_date.isoformat(), _lesson_dates), encoding="utf-8")
     print(f"Wrote {rolling_path} (rolling)")
-    # (no figure gallery on this site — HYROX lessons carry no scanned figures)
     print(f"Wrote {index_path} (GitHub Pages entry)")
     return 0
+
+
+def main():
+    import argparse
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--day", type=int, help="Override day_number (e.g. --day 2)")
+    parser.add_argument("--date", type=str, help="Pretend today is this ISO date (e.g. --date 2026-05-20)")
+    parser.add_argument("--all", action="store_true",
+                        help="Rebuild EVERY dated page from start_date through max(today, last existing page)")
+    args, _ = parser.parse_known_args()
+
+    curriculum, questions = load_data()
+    meta = curriculum["meta"]
+    start = _dt.date.fromisoformat(meta["start_date"])
+    if args.date:
+        today = _dt.date.fromisoformat(args.date)
+    elif args.day:
+        # If just --day given, compute synthetic "today" so file naming matches
+        today = start + _dt.timedelta(days=args.day - 1)
+    else:
+        today = today_local()
+
+    if args.all:
+        # Full regeneration: every date from start through the later of Manila
+        # today and the last pre-generated page (the authored calendar runs
+        # ahead of the wall clock).
+        span = _archive_dates(meta["start_date"])
+        for iso in span:
+            d = _dt.date.fromisoformat(iso)
+            build_day(d, curriculum, questions, is_entry=(d == today))
+        if today.isoformat() not in span:
+            build_day(today, curriculum, questions, is_entry=True)
+        return 0
+
+    if not (args.date or args.day):
+        # Self-heal: a failed nightly run used to leave a permanent hole in the
+        # archive (the cron only ever built "today"). Backfill any missing
+        # dates before building today's page.
+        existing = {p.stem.replace("hyrox_", "") for p in OUT.glob("hyrox_2*.html")}
+        d = start
+        while d < today:
+            if d.isoformat() not in existing:
+                print(f"Backfilling missed day {d.isoformat()}")
+                build_day(d, curriculum, questions, is_entry=False)
+            d += _dt.timedelta(days=1)
+
+    return build_day(today, curriculum, questions, is_entry=True)
 
 
 if __name__ == "__main__":

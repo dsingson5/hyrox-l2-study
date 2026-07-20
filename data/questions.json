@@ -684,7 +684,7 @@
  "bm_carry_lunge_wallball": [
   {
    "q": "Which three stations close a HYROX race, in order, and what separates them?",
-   "a": "Farmers Carry 200 m → Sandbag Lunges 100 m → Wall Balls (100 reps men / 75 women, standard divisions). A 1 km run precedes each of them; there is no run after the wall balls.",
+   "a": "Farmers Carry 200 m → Sandbag Lunges 100 m → Wall Balls (100 reps, all individual divisions). A 1 km run precedes each of them; there is no run after the wall balls.",
    "type": "recall"
   },
   {
@@ -746,7 +746,7 @@
  "hp_format": [
   {
    "q": "List the eight HYROX stations in competition order.",
-   "a": "SkiErg 1000 m → Sled Push 50 m → Sled Pull 50 m → Burpee Broad Jump 80 m → Row 1000 m → Farmers Carry 200 m → Sandbag Lunges 100 m → Wall Balls (100 men / 75 women).",
+   "a": "SkiErg 1000 m → Sled Push 50 m → Sled Pull 50 m → Burpee Broad Jump 80 m → Row 1000 m → Farmers Carry 200 m → Sandbag Lunges 100 m → Wall Balls (100 reps, all individual divisions).",
    "type": "recall"
   },
   {

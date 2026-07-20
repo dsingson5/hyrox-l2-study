@@ -17,12 +17,14 @@
 
 const LS_PREFIX = "hyroxl2.";
 const STATE_KEY = "state.v1";
-const TODAY = new Date().toISOString().slice(0, 10);
+// Day boundary is midnight Asia/Manila (the site rule), not UTC — otherwise
+// "answered today" and the sparkline roll over at 08:00 Manila.
+const TODAY = manilaDate() || new Date().toISOString().slice(0, 10);
 const TARGET_RETENTION = 0.85;
 
 // Interleave targets across the five L2 curriculum domains, proportional to
 // their share of authored lessons (keep in sync with generate_daily.py).
-const EXAM_WEIGHTS = { CM: 0.21, SM: 0.15, BM: 0.21, PH: 0.16, PG: 0.27 };
+const EXAM_WEIGHTS = { CM: 0.23, SM: 0.15, BM: 0.20, PH: 0.16, PG: 0.26 };
 const DOMAIN_NAME = { CM: "Coaching, Mindset & Individualisation", SM: "Sports Medicine, Recovery & Injury", BM: "Biomechanics & Technique", PH: "Physiology & Nutrition", PG: "Performance Pillars & Programming" };
 const CONF_P = { low: 0.25, med: 0.6, high: 0.9 };
 
@@ -38,7 +40,7 @@ function lsSet(key, value) {
 
 // ── One-time hard reset ──────────────────────────────────────────────────────
 // Bump RESET_EPOCH to wipe ALL study progress on each device's next load.
-// A local backup (cscs.backup.<epoch>) is kept first so the wipe is recoverable.
+// A local backup (hyroxl2.backup.<epoch>) is kept first so the wipe is recoverable.
 const RESET_EPOCH = "2026-07-04-hyrox";
 let __didHardReset = false;
 function maybeHardReset() {
@@ -57,43 +59,6 @@ function maybeHardReset() {
 }
 maybeHardReset();
 
-// ── One-time question-bank migration (5th-edition rewrite) ───────────────────
-// The 5E rewrite replaced EVERY question, but FSRS cards are keyed by
-// <topic_id>__<index> — so the old cards/log/answers now point at questions that
-// no longer exist at those indexes. Two visible symptoms: "Last answered ..." on
-// a question never seen, and per-day completion sets that can never be satisfied
-// (the user gets pinned to one day). Clear the per-question state — backed up
-// first — but KEEP day-level progress. touchedDays only exists from 2026-06-02,
-// so seed the days finished before that or the resume would rewind to Day 1.
-const QBANK_EPOCH = "2026-07-04-5e";
-const QBANK_START = "2026-05-24";
-const QBANK_DONE_THROUGH = "2026-06-09";  // days 1-17 were completed pre-rewrite
-function maybeQBankMigrate() {
-  try {
-    if (localStorage.getItem(LS_PREFIX + "qbank_epoch") === QBANK_EPOCH) return;
-    const raw = localStorage.getItem(LS_PREFIX + STATE_KEY);
-    if (raw) {
-      localStorage.setItem(LS_PREFIX + "backup.qbank." + QBANK_EPOCH, raw);
-      let s = null;
-      try { s = JSON.parse(raw); } catch (e) { s = null; }
-      if (s) {
-        s.cards = {}; s.answers = {}; s.log = []; s.calibration = { byDomain: {} };
-        s.touchedDays = s.touchedDays || {};
-        for (let t = new Date(QBANK_START + "T00:00:00Z"), end = new Date(QBANK_DONE_THROUGH + "T00:00:00Z");
-             t <= end; t.setUTCDate(t.getUTCDate() + 1)) {
-          s.touchedDays[t.toISOString().slice(0, 10)] = true;
-        }
-        s.version = 1;
-        s.updated_at = new Date().toISOString();
-        lsSet(STATE_KEY, s);
-        __didHardReset = true;  // push the cleaned state; do not merge the stale cloud copy back
-      }
-    }
-    localStorage.setItem(LS_PREFIX + "qbank_epoch", QBANK_EPOCH);
-  } catch (e) {}
-}
-/* qbank migration is CSCS-only history; not applicable to this fresh site */
-
 function domainFor(stable) {
   const topic = String(stable).split("__")[0];
   return (window.__CSCS_DOMAINS && window.__CSCS_DOMAINS[topic]) || "CM";
@@ -108,6 +73,7 @@ function topicOf(stable) { return String(stable).split("__")[0]; }
 // is ready by then; the initial queue build also waits for the ready event.
 
 let __scheduler = null;
+let __previewScheduler = null;
 function fsrsReady() { return !!(window.__FSRS && window.__FSRS.fsrs); }
 function getScheduler() {
   if (__scheduler) return __scheduler;
@@ -118,6 +84,18 @@ function getScheduler() {
     __scheduler = window.__FSRS.fsrs(p);
   }
   return __scheduler;
+}
+// Fuzz-free twin used ONLY for the interval previews on the grade buttons —
+// with fuzz on, the previewed interval could differ from the applied one.
+function getPreviewScheduler() {
+  if (__previewScheduler) return __previewScheduler;
+  if (fsrsReady()) {
+    const p = window.__FSRS.generatorParameters({
+      request_retention: TARGET_RETENTION, maximum_interval: 365, enable_fuzz: false
+    });
+    __previewScheduler = window.__FSRS.fsrs(p);
+  }
+  return __previewScheduler;
 }
 
 function newCard() {
@@ -183,9 +161,9 @@ function fallbackSchedule(s, grade, now) {
 }
 
 // Returns { card, log }. Never throws.
-function schedule(storedCard, grade, when) {
+function schedule(storedCard, grade, when, schedOverride) {
   const now = when || new Date();
-  const sched = getScheduler();
+  const sched = schedOverride || getScheduler();
   if (sched) {
     const card = toFsrsCard(storedCard);
     let res = null;
@@ -197,14 +175,17 @@ function schedule(storedCard, grade, when) {
 }
 
 // Project the next interval text for each grade WITHOUT mutating state.
+// Uses the fuzz-free scheduler so the preview matches the applied interval
+// (the real grade still applies ±fuzz, hence the "~").
 function previewIntervals(storedCard) {
   const out = {};
   const now = new Date();
+  const psched = getPreviewScheduler();
   [1, 2, 3, 4].forEach(g => {
     if (g === 1) { out[g] = "<10m"; return; }
-    const r = schedule(storedCard, g, now);
+    const r = schedule(storedCard, g, now, psched);
     const days = Math.max(1, Math.round((new Date(r.card.due) - now) / 86400000));
-    out[g] = days >= 365 ? "1y+" : days >= 30 ? Math.round(days / 30) + "mo" : days + "d";
+    out[g] = days >= 365 ? "~1y+" : days >= 30 ? "~" + Math.round(days / 30) + "mo" : "~" + days + "d";
   });
   return out;
 }
@@ -281,8 +262,15 @@ function getCard(stable) {
 // ════════════════════════════════════════════════════════════════════════════
 //   QUESTION INTERACTION  (commitment → reveal → confidence → grade)
 // ════════════════════════════════════════════════════════════════════════════
-const pendingConf = {};   // qid -> 'low'|'med'|'high'
-const revealed = {};      // qid -> true once revealed
+// Keyed by the card's STABLE id, not the positional qid: the review queue
+// re-renders after every grade and reuses pr_0..pr_11, so positional keys
+// leak reveal/confidence state onto whichever card slides into the slot.
+const pendingConf = {};   // stable -> 'low'|'med'|'high'
+const revealed = {};      // stable -> true once revealed
+function sessKey(qid) {
+  const root = document.querySelector('[data-qid="' + qid + '"]');
+  return (root && root.dataset.stable) || qid;
+}
 
 function onAnswerInput(ev) {
   const q = ev.target.closest(".q");
@@ -298,7 +286,7 @@ function onAnswerInput(ev) {
   const btn = document.getElementById("revealbtn_" + qid);
   if (btn) {
     const hasText = ev.target.value.trim().length > 0;
-    btn.disabled = !hasText && !revealed[qid];
+    btn.disabled = !hasText && !revealed[stable || qid];
     btn.classList.toggle("ready", hasText);
   }
   const status = q.querySelector('[data-status-for="' + qid + '"]');
@@ -318,26 +306,27 @@ function onSelfExplainInput(ev) {
 }
 
 function pickConfidence(qid, level) {
-  pendingConf[qid] = level;
   const root = document.querySelector('[data-qid="' + qid + '"]');
   if (!root) return;
+  pendingConf[root.dataset.stable || qid] = level;
   root.querySelectorAll(".conf-btn").forEach(b => b.classList.toggle("active", b.dataset.conf === level));
 }
 
 function dontKnowQ(qid) {
   // An honest "I don't know" is a legitimate commitment — it forces the
   // retrieval attempt to resolve before the answer is shown.
-  if (!pendingConf[qid]) pickConfidence(qid, "low");
+  if (!pendingConf[sessKey(qid)]) pickConfidence(qid, "low");
   revealQ(qid, true);
 }
 
 function revealQ(qid, fromIDK) {
   const root = document.querySelector('[data-qid="' + qid + '"]');
   if (!root) return;
+  const sk = root.dataset.stable || qid;
   const txt = root.querySelector(".q-answer");
-  const committed = fromIDK || (txt && txt.value.trim().length > 0) || revealed[qid];
+  const committed = fromIDK || (txt && txt.value.trim().length > 0) || revealed[sk];
   if (!committed) { showToast("Type an attempt first — or tap “I don't know”."); return; }
-  revealed[qid] = true;
+  revealed[sk] = true;
   const panel = document.getElementById("reveal_" + qid);
   if (panel) panel.classList.add("shown");
   // Fill projected intervals on the grade buttons (dual-coding the schedule).
@@ -358,8 +347,8 @@ function revealQ(qid, fromIDK) {
 function rateQ(qid, grade) {
   const root = document.querySelector('[data-qid="' + qid + '"]');
   if (!root) return;
-  if (!revealed[qid]) revealQ(qid, true);
   const stable = root.dataset.stable;
+  if (!revealed[stable || qid]) revealQ(qid, true);
   const domain = root.dataset.domain || domainFor(stable);
   const s = getState();
   let card = s.cards[stable] || newCard();
@@ -373,10 +362,9 @@ function rateQ(qid, grade) {
     var pageDate = (typeof window !== 'undefined' && window.__CSCS_PAGE_DATE) ? window.__CSCS_PAGE_DATE : null;
     if (pageDate) { s.touchedDays = s.touchedDays || {}; s.touchedDays[pageDate] = true; }
   } catch (e) {}
-  refreshLastAnsweredFor(stable);
   if (s.log.length > 4000) s.log = s.log.slice(-4000);
   // Calibration: confidence (pre-reveal) vs. outcome (Again=miss, else hit)
-  const conf = pendingConf[qid] || "med";
+  const conf = pendingConf[stable || qid] || "med";
   const predicted = CONF_P[conf];
   const outcome = grade >= 2 ? 1 : 0;
   const cal = s.calibration.byDomain[domain] || { n: 0, brierSum: 0, confSum: 0, accSum: 0 };
@@ -386,6 +374,9 @@ function rateQ(qid, grade) {
   cal.accSum += outcome;
   s.calibration.byDomain[domain] = cal;
   saveState(s);
+  // AFTER saveState — the label re-reads persisted state, so refreshing any
+  // earlier shows "Not answered yet" for a just-graded first-time card.
+  refreshLastAnsweredFor(stable);
 
   // UI feedback
   root.querySelectorAll(".rate-btn").forEach(b => b.classList.remove("chosen"));
@@ -520,6 +511,13 @@ function buildReviewQueue() {
     return;
   }
   const top = due.slice(0, 12);
+  // The rebuild wipes the container after every grade — carry each surviving
+  // card's typed-but-ungraded attempt across, keyed by stable id.
+  const keepText = {};
+  container.querySelectorAll(".q").forEach(q => {
+    const ta = q.querySelector(".q-answer");
+    if (ta && ta.value.trim() && q.dataset.stable) keepText[q.dataset.stable] = ta.value;
+  });
   let html = '<section class="personal-review-section">' +
     '<h2 class="rs-title">Your review queue &middot; ' + due.length + ' due</h2>' +
     '<p class="rs-sub">Interleaved across domains by exam weight (FSRS-scheduled). Mixing topics feels harder but roughly doubles what transfers to test day. Forgetting one is fine — that\'s where learning happens.</p>';
@@ -527,6 +525,22 @@ function buildReviewQueue() {
   if (due.length > 12) html += '<div class="pr-overflow">+ ' + (due.length - 12) + ' more appear after you clear these.</div>';
   html += "</section>";
   container.innerHTML = html;
+  // Restore session state (attempt text, confidence highlight, open reveal)
+  // for cards still in the queue.
+  container.querySelectorAll(".q").forEach(q => {
+    const st = q.dataset.stable, qid = q.dataset.qid;
+    if (!st) return;
+    const kept = keepText[st];
+    if (kept) {
+      const ta = q.querySelector(".q-answer");
+      if (ta) { ta.value = kept; ta.dispatchEvent(new Event("input", { bubbles: true })); }
+    }
+    const pc = pendingConf[st];
+    if (pc) q.querySelectorAll(".conf-btn").forEach(b => b.classList.toggle("active", b.dataset.conf === pc));
+    if (revealed[st]) revealQ(qid, true);
+  });
+  hydrateLastAnswered();
+  hydrateNextReview();
 }
 
 // ════════════════════════════════════════════════════════════════════════════
@@ -551,7 +565,7 @@ function renderDashboard() {
   const tracked = Object.keys(s.cards).length;
   if (tracked === 0) { host.innerHTML = ""; return; }
 
-  const order = ["ES", "EX", "PD", "NT"];
+  const order = ["CM", "SM", "BM", "PH", "PG"];
   let rows = "";
   order.forEach(dom => {
     const a = agg[dom]; const c = cal[dom];
@@ -576,12 +590,12 @@ function renderDashboard() {
                    '<span class="cal-under">underconfident ' + Math.round(gap * 100) + '</span>')) +
       '</div></div>';
   });
-  // 14-day review volume sparkline
+  // 14-day review volume sparkline (bucketed by Manila calendar day)
   const counts = {};
-  s.log.forEach(l => { const d = (l.ts || "").slice(0, 10); if (d) counts[d] = (counts[d] || 0) + 1; });
+  s.log.forEach(l => { const d = manilaDayOf(l.ts); if (d) counts[d] = (counts[d] || 0) + 1; });
   let spark = "";
   let maxc = 1; const days = [];
-  for (let i = 13; i >= 0; i--) { const d = new Date(); d.setDate(d.getDate() - i); const k = d.toISOString().slice(0, 10); const v = counts[k] || 0; days.push(v); if (v > maxc) maxc = v; }
+  for (let i = 13; i >= 0; i--) { const d = new Date(); d.setDate(d.getDate() - i); const k = manilaDayOf(d.toISOString()); const v = counts[k] || 0; days.push(v); if (v > maxc) maxc = v; }
   spark = days.map(v => '<span class="spk" style="height:' + Math.max(3, Math.round(v / maxc * 26)) + 'px" title="' + v + ' reviews"></span>').join("");
 
   host.innerHTML =
@@ -597,7 +611,7 @@ function updateHeaderStats() {
   const tracked = Object.keys(s.cards).length;
   const now = new Date();
   const due = Object.values(s.cards).filter(c => c.due && new Date(c.due) <= now).length;
-  const todayLog = s.log.filter(l => (l.ts || "").slice(0, 10) === TODAY);
+  const todayLog = s.log.filter(l => manilaDayOf(l.ts) === TODAY);
   const correct = todayLog.filter(l => l.rating >= 2).length;
   const sc = document.getElementById("self-score"); if (sc) sc.textContent = correct;
   const stats = document.getElementById("lifetime-stats");
@@ -656,13 +670,20 @@ const obs = new IntersectionObserver(entries => {
 // ────────────────────────────────────────────────────────────────────────────
 //   "Last answered" labels next to each question
 // ────────────────────────────────────────────────────────────────────────────
+var __manilaFmt = null;
 function manilaDate(d) {
   try {
-    var p = new Intl.DateTimeFormat("en-CA", { timeZone: "Asia/Manila",
-      year: "numeric", month: "2-digit", day: "2-digit" }).formatToParts(d || new Date());
-    var o = {}; p.forEach(function (x) { o[x.type] = x.value; });
-    return o.year + "-" + o.month + "-" + o.day;
+    __manilaFmt = __manilaFmt || new Intl.DateTimeFormat("en-CA", { timeZone: "Asia/Manila",
+      year: "numeric", month: "2-digit", day: "2-digit" });
+    return __manilaFmt.format(d || new Date());  // en-CA => YYYY-MM-DD
   } catch (e) { return null; }
+}
+// Manila calendar day of an ISO timestamp (log entries store UTC instants).
+function manilaDayOf(iso) {
+  if (!iso) return "";
+  var d = new Date(iso);
+  if (isNaN(d.getTime())) return String(iso).slice(0, 10);
+  return manilaDate(d) || String(iso).slice(0, 10);
 }
 function formatLastAnswered(ts) {
   if (!ts) return "";
@@ -1104,7 +1125,35 @@ async function syncPush(opts) {
     updateSyncButton("enabled", "Synced");
     if (opts && opts.toast) showToast("Pushed to cloud");
     return true;
-  } catch (e) { updateSyncButton("error", "Push failed"); showToast("Sync push failed: " + e.message); return false; }
+  } catch (e) { updateSyncButton("error", "Push failed"); if (!(opts && opts.silent)) showToast("Sync push failed: " + e.message); return false; }
+}
+
+// After an epoch hard-reset, NEVER blind-push the freshly wiped state: the
+// gist may hold post-reset progress from other devices (the CSCS site lost
+// 84 cards / 646 reviews exactly this way on 2026-07-20). Gate on the remote
+// payload's updated_at: pre-epoch remote = stale, overwrite it; post-epoch
+// remote = live progress, merge it in first. A plain pull-then-push would
+// union the stale pre-reset cards back in, defeating the epoch wipe.
+async function hardResetSyncReconcile() {
+  try {
+    const token = getToken(), gist = getGistId();
+    if (!token || !gist) return;
+    let remote = null;
+    try {
+      const data = await gistFetch("GET", "/gists/" + gist, token);
+      const file = data.files && data.files[SYNC_FILENAME];
+      if (file) {
+        if (file.truncated) { const r = await fetch(file.raw_url); remote = await r.json(); }
+        else remote = JSON.parse(file.content);
+      }
+    } catch (e) { remote = null; }
+    const epochDate = RESET_EPOCH.slice(0, 10);
+    if (remote && remote.updated_at && String(remote.updated_at).slice(0, 10) >= epochDate) {
+      mergeRemote(remote);
+      bootRender();
+    }
+    await syncPush({ silent: true });
+  } catch (e) {}
 }
 async function createNewGist() {
   const token = getToken();
@@ -1184,7 +1233,7 @@ function injectSyncUI() {
   modal.innerHTML =
     '<div class="sync-modal-content"><h3>Cross-device sync</h3>' +
     '<p>Sync your FSRS progress across devices via a <b>private GitHub Gist</b>. Free, no external service.</p>' +
-    '<ol><li>Generate a Personal Access Token (classic) with <b>only the gist scope</b>: <a href="https://github.com/settings/tokens/new?scopes=gist&description=CSCS%20Study%20Sync" target="_blank" rel="noopener">open GitHub →</a></li>' +
+    '<ol><li>Generate a Personal Access Token (classic) with <b>only the gist scope</b>: <a href="https://github.com/settings/tokens/new?scopes=gist&description=HYROX%20L2%20Study%20Sync" target="_blank" rel="noopener">open GitHub →</a></li>' +
     '<li>Paste it below.</li><li>Each device with the same token finds the same Gist automatically.</li></ol>' +
     '<label>Personal Access Token (gist scope only)<input type="password" id="sync-token-input" autocomplete="off" placeholder="ghp_…"></label>' +
     '<label>Gist ID (optional — auto-discovered)<input type="text" id="sync-gist-input" autocomplete="off" placeholder="leave blank — auto-discovered"></label>' +
@@ -1199,7 +1248,7 @@ function injectSyncUI() {
 document.addEventListener("DOMContentLoaded", () => {
   injectSyncUI();
   if (syncEnabled()) {
-    if (__didHardReset) syncPush({ silent: true }).catch(() => {});  // overwrite cloud with the wiped state
+    if (__didHardReset) hardResetSyncReconcile().catch(() => {});
     else syncPull({ silent: true }).catch(() => {});
   }
   else updateSyncButton("off", "Cloud sync off");

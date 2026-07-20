@@ -76,6 +76,62 @@ def _hsl_to_hex(h: float, s: float, l: float) -> str:
     return f"#{int(r * 255):02x}{int(g * 255):02x}{int(b * 255):02x}"
 
 
+def _rel_lum(hex_color: str) -> float:
+    r, g, b = (int(hex_color[i:i + 2], 16) / 255 for i in (1, 3, 5))
+    lin = lambda c: c / 12.92 if c <= 0.04045 else ((c + 0.055) / 1.055) ** 2.4
+    return 0.2126 * lin(r) + 0.7152 * lin(g) + 0.0722 * lin(b)
+
+
+def _contrast(fg: str, bg: str) -> float:
+    l1, l2 = _rel_lum(fg), _rel_lum(bg)
+    return (max(l1, l2) + 0.05) / (min(l1, l2) + 0.05)
+
+
+def _clamp_contrast(h: float, s: float, l: float, bgs, ratio: float = 4.5,
+                    lighten: bool = False) -> str:
+    """Walk HSL lightness (down for light themes, up for dark) until the colour
+    clears WCAG `ratio` against every bg. Randomised palettes shipped readable
+    text as low as 1.9:1; this keeps the generated hue but restores AA."""
+    step = 1.5 if lighten else -1.5
+    hexv = _hsl_to_hex(h, s, l)
+    for _ in range(70):
+        if not any(_contrast(hexv, b) < ratio for b in bgs):
+            break
+        l += step
+        if not (0 <= l <= 100):
+            break
+        hexv = _hsl_to_hex(h, s, l)
+    return hexv
+
+
+def _darken_for_contrast(h: float, s: float, l: float, bgs, ratio: float = 4.5) -> str:
+    return _clamp_contrast(h, s, l, bgs, ratio, lighten=False)
+
+
+def clamp_hex_for_bg(hex_color: str, bg: str, ratio: float = 4.5) -> str:
+    """Public helper: nudge a finished hex colour until it clears `ratio`
+    against bg, moving away from the background's own lightness. Used by
+    motifs.py, whose palettes are authored for dark pages but also land on
+    the light-theme days."""
+    h, l, s = colorsys.rgb_to_hls(*(int(hex_color[i:i + 2], 16) / 255 for i in (1, 3, 5)))
+    lighten = _rel_lum(bg) < 0.5
+    return _clamp_contrast(h * 360, s * 100, l * 100, [bg], ratio, lighten=lighten)
+
+
+def _clamped_l(h: float, s: float, l: float, bgs, ratio: float = 4.5,
+               lighten: bool = False) -> float:
+    """The lightness _clamp_contrast settles on (not the hex)."""
+    step = 1.5 if lighten else -1.5
+    for _ in range(70):
+        if not any(_contrast(_hsl_to_hex(h, s, l), b) < ratio for b in bgs):
+            break
+        nl = l + step
+        if not (0 <= nl <= 100):
+            break
+        l = nl
+    return l
+
+
 def _hex_to_rgba(hex_color: str, alpha: float) -> str:
     """Convert #rrggbb to rgba(r, g, b, a)."""
     h = hex_color.lstrip("#")
@@ -158,9 +214,51 @@ def for_day(day: int) -> dict:
     tertiary = _hsl_to_hex(accents[2], accent_sat - rng.uniform(0, 15), accent_light + rng.uniform(-5, 5))
 
     # Status colors — derive from base hue but force into recognizable semantic ranges
-    good = _hsl_to_hex(rng.uniform(135, 165), 55, 60 if not is_light else 40)
-    warn = _hsl_to_hex(rng.uniform(32, 48), 75, 62 if not is_light else 50)
-    bad = _hsl_to_hex(rng.uniform(355, 365) % 360, 75, 64 if not is_light else 48)
+    good_h = rng.uniform(135, 165)
+    warn_h = rng.uniform(32, 48)
+    bad_h = rng.uniform(355, 365) % 360
+    good = _hsl_to_hex(good_h, 55, 60 if not is_light else 40)
+    warn = _hsl_to_hex(warn_h, 75, 62 if not is_light else 50)
+    bad = _hsl_to_hex(bad_h, 75, 64 if not is_light else 48)
+    if is_light:
+        # These tokens colour real copy (.study-tip b, .reveal-label, .sa-step-num…)
+        # and shipped as low as 1.65:1 on the near-white backgrounds. Clamp each
+        # to WCAG AA against both the page bg and the deepest surface. Done
+        # post-hoc (no extra rng draws) so every day's palette stays identical.
+        # surface_2 included: .sa-step-num and friends sit on the mid surfaces,
+        # not just bg/surface_3.
+        bgs = [bg, surface_2, surface_3]
+        good = _darken_for_contrast(good_h, 55, 40, bgs)
+        warn = _darken_for_contrast(warn_h, 75, 50, bgs)
+        bad = _darken_for_contrast(bad_h, 75, 48, bgs)
+        # Both dim tokens must clear AA on every surface, AND text_dimmer must
+        # stay visibly lighter than text_dim. Clamp text_dimmer to the AA floor
+        # first, then push text_dim past it — that ordering leaves headroom
+        # instead of the two clamps fighting each other.
+        text_dimmer_l2 = _clamped_l(base_hue, 10, text_dimmer_l, bgs, 4.6)
+        text_dimmer = _hsl_to_hex(base_hue, 10, text_dimmer_l2)
+        text_dim_l2 = min(_clamped_l(base_hue, 12, text_dim_l, bgs), text_dimmer_l2 - 6)
+        text_dim = _hsl_to_hex(base_hue, 12, max(0, text_dim_l2))
+        accent = _darken_for_contrast(accents[0], accent_sat, accent_light, bgs)
+    else:
+        # Dark themes pass on bg for most tokens, but the randomised
+        # text_dimmer bottomed out at 2.5:1 — and it carries real copy
+        # (.w-hint, .sa-step-num, .cd-note, .sch-sec). Lift it to AA against
+        # the page bg, and to 3:1 against the deepest surface, without
+        # collapsing it into text_dim.
+        dark_bgs = [bg, surface_2, surface_3]
+        # text_dimmer: AA against the page bg, 3:1 against the deeper surfaces
+        # (it is the de-emphasis token — full AA everywhere would flatten it
+        # into text_dim).
+        td_l = _clamped_l(base_hue, 10, text_dimmer_l, [bg], 4.65, lighten=True)
+        td_l = _clamped_l(base_hue, 10, td_l, dark_bgs, 3.0, lighten=True)
+        text_dimmer = _hsl_to_hex(base_hue, 10, td_l)
+        # text_dim carries real body copy — AA on every surface, but keep it
+        # brighter than dimmer and no brighter than the primary text token.
+        tdim_l = _clamped_l(base_hue, 12, text_dim_l, dark_bgs, 4.6, lighten=True)
+        text_dim = _hsl_to_hex(base_hue, 12, min(max(tdim_l, td_l + 6), text_l))
+        # accent styles headings and links; 3:1 is the AA floor for that role.
+        accent = _clamp_contrast(accents[0], accent_sat, accent_light, dark_bgs, 3.0, lighten=True)
 
     # Background gradient — pick 1-3 radial spots at random positions
     spots = rng.randint(2, 4)

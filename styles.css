@@ -646,9 +646,23 @@ footer code { background: var(--surface); padding: 2px 6px; border-radius: 4px; 
   .dash-cal { grid-column: 2 / -1; text-align: left; }
 }
 
+/* Touch devices: the grade / confidence buttons were 24-31px tall — below the
+   ~44px tap-target floor, and mis-taps feed FSRS the wrong grade. */
+@media (pointer: coarse) {
+  .rate-btn { min-height: 44px; padding: 9px 12px; }
+  .conf-btn { min-height: 38px; padding: 8px 14px; }
+  .btn-reveal, .btn-idk { min-height: 44px; }
+}
+
 /* Last-answered label injected into q-head */
 .q-last { font-size: 11px; color: var(--text-dim); margin-left: 8px; opacity: 0.85; white-space: nowrap; }
 .q-last.q-last-never { color: var(--text-dimmer); font-style: italic; opacity: 0.7; }
+
+/* "Browse all modules" line under the nav — without this it rendered as the
+   browser-default blue link (~1.4:1 on the dark background) */
+.browse-all { font-size: 13px; color: var(--text-dim); margin: 4px 0 12px; }
+.browse-all a { color: var(--theme-accent, #5ec8ff); font-weight: 600; text-decoration: none; border-bottom: 1px solid currentColor; }
+.browse-all a:hover { opacity: 0.85; }
 
 /* Lesson navigation bar (prev / next) */
 .lesson-nav {
