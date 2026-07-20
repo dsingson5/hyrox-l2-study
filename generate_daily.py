@@ -593,7 +593,7 @@ def build_index_html(base_html, available, this_iso, dtopic=None):
     redirect = (
         '<script>(function(){'
         'var DAYS=' + days + ';var DTOPIC=' + dtopic_json + ';var DAYQ=' + dayq_json + ';var THIS="' + this_iso + '";'
-        'var GIST="f7cec859cb4ab8ba049297c925c2a959";var GFILE="cscs-progress.json";'
+        'var GIST="";var GFILE="hyrox-l2-progress.json";'
         'function mt(d){try{var p=new Intl.DateTimeFormat("en-CA",{timeZone:"Asia/Manila",'
         'year:"numeric",month:"2-digit",day:"2-digit"}).formatToParts(d||new Date());'
         'var o={};p.forEach(function(x){o[x.type]=x.value;});return o.year+"-"+o.month+"-"+o.day;}'
@@ -621,13 +621,16 @@ def build_index_html(base_html, available, this_iso, dtopic=None):
         'if(hasState){for(var i=0;i<DAYS.length;i++){var d=DAYS[i];if(d>today)break;'
         'if(!complete(d,reviewed,engaged,cards)){tg=d;break;}}'
         'if(!tg){tg=(DAYS.indexOf(today)!==-1)?today:DAYS[DAYS.length-1];}}'
-        'else{if(DAYS.indexOf(today)!==-1)tg=today;else if(today>DAYS[DAYS.length-1])tg=DAYS[DAYS.length-1];else tg=DAYS[0];}'
+        # Fresh visitor: every lesson is already unlocked (dates are backdated),
+        # so start at Module 1 Day 1 rather than at 'today' (= the final lesson).
+        'else{tg=DAYS[0];}'
         'return tg||THIS;}'
         'var local=readLocal();var settled=false;'
         'function finish(remote){if(settled)return;settled=true;'
         'var reviewed={},engaged={},cards={};harvest(local,reviewed,engaged,cards);harvest(remote,reviewed,engaged,cards);'
         'var hasState=!!(Object.keys(reviewed).length||Object.keys(engaged).length||Object.keys(cards).length);go(decide(reviewed,engaged,cards,hasState));}'
-        'var token="";try{token=localStorage.getItem("cscs.sync.token")||"";}catch(e){}'
+        'var token="";try{token=localStorage.getItem("hyroxl2.sync.token")||"";}catch(e){}'
+        'if(!GIST){finish(null);return;}'
         'var to=setTimeout(function(){finish(null);},4500);'
         'try{var hd={"Accept":"application/vnd.github+json"};if(token)hd["Authorization"]="token "+token;'
         'fetch("https://api.github.com/gists/"+GIST,{headers:hd,cache:"no-store"})'

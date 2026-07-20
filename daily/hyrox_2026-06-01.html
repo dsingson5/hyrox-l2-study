@@ -1554,7 +1554,7 @@ function exportProgress() {
   const blob = new Blob([JSON.stringify(getState(), null, 2)], { type: "application/json" });
   const url = URL.createObjectURL(blob);
   const a = document.createElement("a");
-  a.href = url; a.download = "cscs-progress-" + TODAY + ".json";
+  a.href = url; a.download = "hyrox-l2-progress-" + TODAY + ".json";
   document.body.appendChild(a); a.click(); document.body.removeChild(a);
   URL.revokeObjectURL(url);
 }
@@ -1937,7 +1937,7 @@ document.addEventListener("DOMContentLoaded", () => {
 //   CROSS-DEVICE SYNC VIA GITHUB GIST  (adapted to the single-state schema)
 // ════════════════════════════════════════════════════════════════════════════
 const SYNC_KEYS = { token: "sync.token", gist: "sync.gist_id", enabled: "sync.enabled", last_push: "sync.last_push_at", last_pull: "sync.last_pull_at" };
-const SYNC_FILENAME = "cscs-progress.json";
+const SYNC_FILENAME = "hyrox-l2-progress.json";
 const SYNC_SCHEMA = 3;
 
 function syncEnabled() { return !!lsGet(SYNC_KEYS.enabled, false); }
@@ -2048,7 +2048,7 @@ async function syncPush(opts) {
 async function createNewGist() {
   const token = getToken();
   if (!token) throw new Error("No token");
-  const data = await gistFetch("POST", "/gists", token, { description: "CSCS Study Progress (sync)", public: false, files: { [SYNC_FILENAME]: { content: JSON.stringify(buildSyncPayload(), null, 2) } } });
+  const data = await gistFetch("POST", "/gists", token, { description: "HYROX L2 Study Progress (sync)", public: false, files: { [SYNC_FILENAME]: { content: JSON.stringify(buildSyncPayload(), null, 2) } } });
   return data.id;
 }
 async function findOrCreateSyncGist(token) {
