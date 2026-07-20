@@ -82,6 +82,21 @@
     "phase": 13,
     "name": "Module 10 — Personalized Performance Coaching",
     "days": "48-51"
+   },
+   {
+    "phase": 14,
+    "name": "Module 1 Revisited — Official Level 2 Topics",
+    "days": "52-53"
+   },
+   {
+    "phase": 15,
+    "name": "Exam Synthesis — High-Yield Cross-Module Review",
+    "days": "54-59"
+   },
+   {
+    "phase": 16,
+    "name": "Mock Assessment — Certification Dry Runs",
+    "days": "60-61"
    }
   ],
   "source_note": "Original study notes written for the Level 2 'Mastering Performance' module list. Not a reproduction of HYROX Academy course material."
@@ -3780,6 +3795,822 @@
    ],
    "relevant": true,
    "exam_focus": "Given a case profile (splits, history, race goal), identify the most likely rate-limiter and justify the single most appropriate intervention over plausible distractors.",
+   "figures": []
+  },
+  "52": {
+   "title": "Reflective practice & the growth mindset",
+   "topic_id": "cm_reflection",
+   "domain": "CM",
+   "chapter": "Module 1",
+   "page_refs": "The Coaching Mindset",
+   "key_concept": "Module 1 positions the reflective coach as the professional spine of Level 2. Schön's distinction is the starting point: reflection-in-action means reading and adjusting a session while it is still running — changing a cue, capping a sled load, cutting an interval when movement quality collapses — whereas reflection-on-action is the structured review afterwards. Reviews tend to stick when they follow a simple written cycle, such as Rolfe's 'what? so what? now what?' or Gibbs' longer loop, fed by deliberate inputs: session logs, filmed station work, peer observation and athlete feedback. Dweck's mindset research then shapes how findings are interpreted: praising process and strategy rather than talent, using 'not yet' language, and treating DNFs and poor splits as information tends to build athletes who seek feedback rather than fear it. The guard-rail is honesty — growth mindset is not toxic positivity, and sleep, injury and age still bound what is achievable.",
+   "key_facts": [
+    "Schön's reflection-in-action is live adjustment during the session; reflection-on-action is structured review after it ends.",
+    "Rolfe's reflective framework is three questions asked in order: what happened, so what does it mean, now what will I do.",
+    "Gibbs' reflective cycle is a longer loop — description, feelings, evaluation, analysis, conclusion, action plan — suited to bigger events like a race or an injury.",
+    "Dweck's growth mindset is the belief that abilities are developable through effort, strategy and feedback; a fixed mindset treats them as static traits.",
+    "Praising process and strategy tends to build resilience, while praising talent tends to make athletes risk-averse and fragile after setbacks.",
+    "'Not yet' language reframes a failed standard as a stage of progress — 'you can't hold 4:45 pace yet' — without lowering the standard itself.",
+    "A DNF or a bad split is information for the reflection cycle, not a verdict on the athlete or the coach.",
+    "A deliberate self-review system combines four inputs: session logs, filmed station work, peer observation, and athlete feedback loops.",
+    "Mindset shapes cue receptivity: growth-oriented athletes tend to hear correction as help, while fixed-oriented athletes may hear the same cue as criticism, which erodes adherence.",
+    "Reflection-in-action in HYROX looks like swapping a cue mid-station, capping sled load when mechanics break down, or shortening intervals when quality collapses.",
+    "Growth mindset is not toxic positivity: real constraints such as sleep debt, injury and age still limit what improvement is available, and pretending otherwise damages trust.",
+    "Peer observation works best with one narrow, agreed focus per visit — for example cue economy — rather than general impressions.",
+    "A reflection only changes practice when it ends in a written 'now what' action that is carried into the next session plan.",
+    "The reflective coach is the through-line of the whole Level 2 course: every later module (physiology, nutrition, periodization, mental performance) supplies material for the same review loop."
+   ],
+   "training_link": "This week, close every coaching session with a two-minute written Rolfe cycle: one line on what happened, one on so what, one 'now what' action that goes straight into the next session plan. Film one station per group session — sled or wall balls are the highest-yield — and review the clip against your own cueing, not just the athlete's mechanics. Swap one session of peer observation with another coach, each watching for a single agreed focus. Then audit your language: replace talent praise ('you're a natural on the erg') with process praise ('your pacing plan held'), and reframe one athlete's recent bad split or DNF as data using 'not yet' phrasing — while openly naming any real constraint, such as poor sleep or a niggle, rather than talking past it.",
+   "glossary": [
+    {
+     "term": "Reflection-in-action",
+     "def": "Schön's term for thinking and adjusting while the activity is still happening — reading the session live and changing cues, loads or structure in real time.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"24\" cy=\"20\" r=\"9\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"2\"/><path d=\"M40 20h22M54 13l8 7-8 7\" fill=\"none\" stroke=\"#67e8b0\" stroke-width=\"2\"/></svg>"
+    },
+    {
+     "term": "Reflection-on-action",
+     "def": "Schön's term for structured review after the event, done deliberately and ideally in writing, to convert experience into changed future practice.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"24\" cy=\"20\" r=\"9\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"2\"/><path d=\"M40 20h22M54 13l8 7-8 7\" fill=\"none\" stroke=\"#67e8b0\" stroke-width=\"2\"/></svg>"
+    },
+    {
+     "term": "Rolfe's framework",
+     "def": "A minimal three-question reflection cycle — what? so what? now what? — designed to be fast enough to use after every session.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"24\" cy=\"20\" r=\"9\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"2\"/><path d=\"M40 20h22M54 13l8 7-8 7\" fill=\"none\" stroke=\"#67e8b0\" stroke-width=\"2\"/></svg>"
+    },
+    {
+     "term": "Gibbs' reflective cycle",
+     "def": "A six-stage reflection loop (description, feelings, evaluation, analysis, conclusion, action plan) better suited to significant events such as races, injuries or conflicts.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"24\" cy=\"20\" r=\"9\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"2\"/><path d=\"M40 20h22M54 13l8 7-8 7\" fill=\"none\" stroke=\"#67e8b0\" stroke-width=\"2\"/></svg>"
+    },
+    {
+     "term": "Growth mindset",
+     "def": "Dweck's term for the belief that abilities can be developed through effort, strategy and feedback, which tends to increase persistence and feedback-seeking.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"24\" cy=\"20\" r=\"9\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"2\"/><path d=\"M40 20h22M54 13l8 7-8 7\" fill=\"none\" stroke=\"#67e8b0\" stroke-width=\"2\"/></svg>"
+    },
+    {
+     "term": "Fixed mindset",
+     "def": "The belief that abilities are innate and largely unchangeable, which tends to make setbacks feel like verdicts and correction feel like criticism.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"24\" cy=\"20\" r=\"9\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"2\"/><path d=\"M40 20h22M54 13l8 7-8 7\" fill=\"none\" stroke=\"#67e8b0\" stroke-width=\"2\"/></svg>"
+    },
+    {
+     "term": "Process praise",
+     "def": "Praise directed at strategy, effort and execution ('your transitions were disciplined') rather than at talent; it tends to build resilience where talent praise builds fragility.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"24\" cy=\"20\" r=\"9\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"2\"/><path d=\"M40 20h22M54 13l8 7-8 7\" fill=\"none\" stroke=\"#67e8b0\" stroke-width=\"2\"/></svg>"
+    },
+    {
+     "term": "'Not yet' language",
+     "def": "Framing an unmet standard as a stage of progress rather than a fixed limit — 'not yet' keeps the standard intact while signalling it is reachable.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"24\" cy=\"20\" r=\"9\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"2\"/><path d=\"M40 20h22M54 13l8 7-8 7\" fill=\"none\" stroke=\"#67e8b0\" stroke-width=\"2\"/></svg>"
+    },
+    {
+     "term": "Toxic positivity",
+     "def": "Relentless optimism that denies real constraints or genuine setbacks; it is a distortion of growth mindset and tends to erode athlete trust.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"24\" cy=\"20\" r=\"9\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"2\"/><path d=\"M40 20h22M54 13l8 7-8 7\" fill=\"none\" stroke=\"#67e8b0\" stroke-width=\"2\"/></svg>"
+    },
+    {
+     "term": "Peer observation",
+     "def": "Having another coach watch a session with one narrow, pre-agreed focus and give structured feedback — a low-cost external input to the self-review system.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"24\" cy=\"20\" r=\"9\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"2\"/><path d=\"M40 20h22M54 13l8 7-8 7\" fill=\"none\" stroke=\"#67e8b0\" stroke-width=\"2\"/></svg>"
+    },
+    {
+     "term": "Athlete feedback loop",
+     "def": "A routine, structured channel (for example a short post-session or weekly prompt) through which athletes tell the coach what landed, what confused them and how sessions felt.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"24\" cy=\"20\" r=\"9\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"2\"/><path d=\"M40 20h22M54 13l8 7-8 7\" fill=\"none\" stroke=\"#67e8b0\" stroke-width=\"2\"/></svg>"
+    },
+    {
+     "term": "Cue receptivity",
+     "def": "How open an athlete is to receiving and acting on technical correction; it is shaped strongly by mindset and by how the coach frames feedback.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"24\" cy=\"20\" r=\"9\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"2\"/><path d=\"M40 20h22M54 13l8 7-8 7\" fill=\"none\" stroke=\"#67e8b0\" stroke-width=\"2\"/></svg>"
+    }
+   ],
+   "relevant": true,
+   "exam_focus": "Expect to be asked to distinguish reflection-in-action from reflection-on-action with a session example, and to identify growth- versus fixed-mindset coach language in a scenario — for instance choosing the process-praise or 'not yet' response over talent praise or toxic positivity.",
+   "figures": []
+  },
+  "53": {
+   "title": "Holistic athlete development & coaching culture",
+   "topic_id": "cm_athletedev",
+   "domain": "CM",
+   "chapter": "Module 1",
+   "page_refs": "The Coaching Mindset",
+   "key_concept": "Holistic athlete development treats the HYROX athlete as a whole person rather than a set of training variables: physiology, psychology and social context interact, so a biopsychosocial lens tends to predict performance and adherence better than fitness metrics alone. Because most HYROX competitors are working adults, training is only one stressor among work, family, finances and sleep, all drawing on the same recovery budget — the coach programmes against total life-load, not the plan on paper. This differs sharply from youth long-term athlete development models: the adult amateur needs retention, health and sustainable progress, not talent identification. A deliberate club culture — belonging, visible progress, shared effort and celebration — is the retention engine, while athlete education multiplies the coach by teaching self-management. Aerobic base, strength reserves and station skill floors are multi-year projects, and leaderboard-only or more-is-better cultures are the classic red flags.",
+   "key_facts": [
+    "The biopsychosocial model views performance and adherence as the product of interacting biological, psychological and social factors, not fitness alone.",
+    "Training is only one stressor among work, family, finances and poor sleep, and all of them draw on the same finite recovery budget.",
+    "Most HYROX competitors are working-age amateurs with jobs and families — HYROX itself reports an average participant age in the late 30s and a majority-amateur field — so retention and health, not youth talent development, are the coaching priorities.",
+    "Youth LTAD models emphasise developmental stages and talent pathways, whereas adult amateur development emphasises adherence, injury avoidance and sustainable progression.",
+    "A HYROX race is 8 x 1 km runs alternated with 8 functional stations, a demand profile that rewards multi-year aerobic and strength foundations over short-term peaking.",
+    "This lesson frames four practical levers of club retention: belonging, visible progress, shared effort and celebration rituals.",
+    "As covered in the Motivation, adherence & behaviour change lesson, self-determination theory's needs for autonomy, competence and relatedness explain why those retention levers work: belonging feeds relatedness, and visible progress feeds competence.",
+    "Athlete education is a coaching multiplier: athletes who understand why a session exists self-regulate better during the many hours the coach is absent.",
+    "Safeguarding in a community setting means clear professional boundaries, appropriate communication channels, and never exploiting the coach-athlete power imbalance.",
+    "Aerobic base, strength reserve and station skill floors are multi-year projects that race-to-race planning systematically undermines.",
+    "A leaderboard-only culture retains the top performers and quietly loses everyone else.",
+    "Treating overtraining as a badge of honour is a culture red flag that normalises under-recovery and predicts injury and dropout.",
+    "A heavy life-stress week should trigger a planned load reduction — cutting weekly training load by roughly 20-30% is a practical heuristic, not a published model, and works best when agreed with the athlete in advance."
+   ],
+   "training_link": "This week, audit each athlete's life-load before you audit their training load: a two-minute check-in ('work, sleep, home — score each out of five') tells you whether the written session fits the day. For your busiest professionals, agree in advance which session gets cut first in a heavy week, so reductions feel planned rather than like failure. Add one visible-progress ritual — a benchmark board, a monthly re-test, a shout-out at the end of Saturday's session — and explain the why behind one programming decision to the whole group, so athletes begin self-managing. Finally, check your own culture honestly: if rest is mocked or the leaderboard is the only story your club tells, change the story.",
+   "glossary": [
+    {
+     "term": "Biopsychosocial model",
+     "def": "A framework viewing health and performance as the product of interacting biological, psychological and social factors, rather than physiology alone.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"24\" cy=\"20\" r=\"9\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"2\"/><path d=\"M40 20h22M54 13l8 7-8 7\" fill=\"none\" stroke=\"#67e8b0\" stroke-width=\"2\"/></svg>"
+    },
+    {
+     "term": "Allostatic load",
+     "def": "The cumulative physiological wear produced by all stressors combined — training, work, family, finances and poor sleep all contribute to the same total.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"24\" cy=\"20\" r=\"9\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"2\"/><path d=\"M40 20h22M54 13l8 7-8 7\" fill=\"none\" stroke=\"#67e8b0\" stroke-width=\"2\"/></svg>"
+    },
+    {
+     "term": "Life-load",
+     "def": "An informal coaching term for the sum of non-training stressors competing for an athlete's finite recovery capacity; programmed training should flex around it.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"24\" cy=\"20\" r=\"9\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"2\"/><path d=\"M40 20h22M54 13l8 7-8 7\" fill=\"none\" stroke=\"#67e8b0\" stroke-width=\"2\"/></svg>"
+    },
+    {
+     "term": "LTAD (long-term athlete development)",
+     "def": "Staged frameworks built primarily around youth developmental windows and talent pathways; their emphases are largely mismatched to the adult amateur HYROX population.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"24\" cy=\"20\" r=\"9\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"2\"/><path d=\"M40 20h22M54 13l8 7-8 7\" fill=\"none\" stroke=\"#67e8b0\" stroke-width=\"2\"/></svg>"
+    },
+    {
+     "term": "Session-RPE (sRPE)",
+     "def": "Load-monitoring method (session RPE multiplied by minutes, giving arbitrary units) covered fully in the Monitoring load & readiness lesson; used here only to make life-load reductions concrete.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"24\" cy=\"20\" r=\"9\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"2\"/><path d=\"M40 20h22M54 13l8 7-8 7\" fill=\"none\" stroke=\"#67e8b0\" stroke-width=\"2\"/></svg>"
+    },
+    {
+     "term": "Safeguarding",
+     "def": "The policies and behaviours that protect members from harm or exploitation in a club setting: transparent coaching arrangements, agreed communication channels, clear coach boundaries and awareness of the coach-athlete power imbalance.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"24\" cy=\"20\" r=\"9\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"2\"/><path d=\"M40 20h22M54 13l8 7-8 7\" fill=\"none\" stroke=\"#67e8b0\" stroke-width=\"2\"/></svg>"
+    },
+    {
+     "term": "Skill floor",
+     "def": "The technique level an athlete can reproduce under race fatigue without coaching input; raised gradually over years of deliberate practice.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"24\" cy=\"20\" r=\"9\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"2\"/><path d=\"M40 20h22M54 13l8 7-8 7\" fill=\"none\" stroke=\"#67e8b0\" stroke-width=\"2\"/></svg>"
+    },
+    {
+     "term": "Strength reserve",
+     "def": "The buffer between an athlete's maximal strength and the absolute demands of the stations; a larger reserve lowers the relative effort of every rep and push.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"24\" cy=\"20\" r=\"9\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"2\"/><path d=\"M40 20h22M54 13l8 7-8 7\" fill=\"none\" stroke=\"#67e8b0\" stroke-width=\"2\"/></svg>"
+    },
+    {
+     "term": "Race-to-race myopia",
+     "def": "Planning only as far as the next event, so repeated tapers and recoveries crowd out the sustained blocks that build long-term capacities.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"24\" cy=\"20\" r=\"9\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"2\"/><path d=\"M40 20h22M54 13l8 7-8 7\" fill=\"none\" stroke=\"#67e8b0\" stroke-width=\"2\"/></svg>"
+    }
+   ],
+   "relevant": true,
+   "exam_focus": "Expect multiple-choice items asking you to identify features of a holistic development culture, distinguish adult amateur coaching from youth LTAD, and choose the correct coach response when life stress collides with the written plan; culture red flags such as leaderboard-only clubs and glorified overtraining are likely distractor material.",
+   "figures": []
+  },
+  "54": {
+   "title": "Exam synthesis — recovery, monitoring & injury management",
+   "topic_id": "xs_sportsmed",
+   "domain": "SM",
+   "chapter": "Exam synthesis",
+   "page_refs": "Sports Medicine & Injury (M2 + M7.4)",
+   "key_concept": "This synthesis day is about classification under exam pressure: given a scenario, place the athlete correctly on the recovery–fatigue continuum and choose between monitor, modify, or refer. Sleep remains the recovery intervention with the broadest, most consistent support; the rest — cold-water immersion, compression, massage — tend to offer small or context-dependent benefits, and chronic post-lifting cold immersion may blunt strength adaptations. Monitoring tools answer different questions: session-RPE (after Foster, built on Borg's effort scales) quantifies internal load cheaply; HRV and resting heart rate index autonomic status but are noisy day to day; simple wellness questionnaires often shift earliest. The ACWR is a useful teaching heuristic but statistically contested, so treat it as one signal, never a law. The functional overreaching → non-functional overreaching → overtraining syndrome continuum (per the ECSS/ACSM consensus) is distinguished by recovery timescale and performance response — not by soreness, and never by assumed laziness.",
+   "key_facts": [
+    "Sleep is the recovery modality with the most consistent evidence; most other modalities (cold water, compression, massage) show small or context-dependent effects.",
+    "Regular cold-water immersion after strength sessions may blunt hypertrophy and strength adaptations, so reserve it for competition-dense phases rather than everyday training.",
+    "Session-RPE load = RPE (0–10 scale) x session duration in minutes, expressed in arbitrary units (AU).",
+    "ACWR divides acute load (typically the last 7 days) by chronic load (typically the 28-day average weekly load); the often-quoted 0.8–1.3 'sweet spot' is a heuristic and the metric is statistically contested.",
+    "Functional overreaching recovers with supercompensation within days to about two weeks; non-functional overreaching stagnates for weeks to months; overtraining syndrome persists for months and is rare.",
+    "Overtraining syndrome is a diagnosis of exclusion — a physician must rule out illness (e.g. thyroid dysfunction, anaemia, infection, clinical depression) before the label applies, so the coach's job is to refer, not diagnose.",
+    "Early warning signs of non-functional overreaching include performance decline despite maintained effort, elevated resting heart rate, disturbed sleep, and mood disturbance; muscle soreness is not a reliable marker of either recovery or overtraining.",
+    "Most HYROX injuries trace back to load error — too much, too soon, on too little chronic base — rather than intrinsically 'dangerous' movements.",
+    "Typical HYROX injury map: knee (patellofemoral) pain with spikes in lunges, wall balls and running; Achilles/calf issues with sudden running volume or speed increases; low-back complaints with sled work and loaded carries under fatigue; shoulder irritation with wall-ball, sled and pressing volume.",
+    "Movement screens predict injury poorly at the individual level, so use them to inform programming and coaching priorities while relying on ongoing monitoring to manage risk.",
+    "Return-to-training logic runs range and pain-free movement first, then load, then speed and plyometric or impact work, then sport-specific density — load before speed.",
+    "A practical traffic-light rule for niggles: pain up to about 3/10 that settles within 24 hours is amber (modify and monitor); pain above that, worsening across sessions, or changing movement mechanics is red (stop and refer).",
+    "Wellness questionnaires (sleep quality, soreness, stress, mood) tend to detect fatigue shifts earlier than heart-rate-based measures, at near-zero cost.",
+    "Single-day drops in HRV or single elevated resting-HR readings are usually noise; decisions should rest on multi-day trends against an individual baseline."
+   ],
+   "training_link": "This week, install one lightweight monitoring stack across your HYROX squad: a four-item morning wellness check (sleep, soreness, stress, mood) plus sRPE logged within 30 minutes of every session. On Sunday, review each athlete's weekly AU total against their previous month before you add sled or running volume — hunt for spikes, not magic ratios. Apply the traffic-light rule to every reported niggle in the diary, regressing stations (lighter sled, shallower lunge range, ski instead of run) for ambers. Finally, rehearse the referral conversation: pick the athlete whose numbers look flattest and decide in advance what pattern would make you send them to a physician rather than coach harder.",
+   "glossary": [
+    {
+     "term": "Session-RPE (sRPE)",
+     "def": "Internal-load method multiplying an athlete's post-session rating of perceived exertion (0–10) by session duration in minutes, giving load in arbitrary units.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"24\" cy=\"20\" r=\"9\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"2\"/><path d=\"M40 20h22M54 13l8 7-8 7\" fill=\"none\" stroke=\"#67e8b0\" stroke-width=\"2\"/></svg>"
+    },
+    {
+     "term": "Internal vs external load",
+     "def": "External load is the work prescribed or done (km, kg, metres); internal load is the athlete's physiological and perceptual response to it (HR, RPE). The same external load can produce very different internal loads.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"24\" cy=\"20\" r=\"9\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"2\"/><path d=\"M40 20h22M54 13l8 7-8 7\" fill=\"none\" stroke=\"#67e8b0\" stroke-width=\"2\"/></svg>"
+    },
+    {
+     "term": "Heart rate variability (HRV)",
+     "def": "Beat-to-beat variation in heart rhythm, commonly summarised as RMSSD, used as a proxy for autonomic recovery status; meaningful only as a trend against an individual baseline.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"24\" cy=\"20\" r=\"9\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"2\"/><path d=\"M40 20h22M54 13l8 7-8 7\" fill=\"none\" stroke=\"#67e8b0\" stroke-width=\"2\"/></svg>"
+    },
+    {
+     "term": "ACWR (acute:chronic workload ratio)",
+     "def": "Acute (about 7-day) load divided by chronic (about 28-day average weekly) load, popularised as a spike detector; its predictive validity is statistically contested, so treat it as one signal among several.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"24\" cy=\"20\" r=\"9\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"2\"/><path d=\"M40 20h22M54 13l8 7-8 7\" fill=\"none\" stroke=\"#67e8b0\" stroke-width=\"2\"/></svg>"
+    },
+    {
+     "term": "Functional overreaching (FOR)",
+     "def": "Planned short-term overload producing a temporary performance dip that rebounds, often with supercompensation, within days to roughly two weeks of reduced load.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"24\" cy=\"20\" r=\"9\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"2\"/><path d=\"M40 20h22M54 13l8 7-8 7\" fill=\"none\" stroke=\"#67e8b0\" stroke-width=\"2\"/></svg>"
+    },
+    {
+     "term": "Non-functional overreaching (NFOR)",
+     "def": "Unplanned fatigue state in which performance stagnates or declines for weeks to months despite rest, usually with mood and sleep disturbance; recovery occurs but no fitness benefit results.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"24\" cy=\"20\" r=\"9\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"2\"/><path d=\"M40 20h22M54 13l8 7-8 7\" fill=\"none\" stroke=\"#67e8b0\" stroke-width=\"2\"/></svg>"
+    },
+    {
+     "term": "Overtraining syndrome (OTS)",
+     "def": "Rare, severe maladaptation with performance decline lasting months; it is a diagnosis of exclusion made by a physician after ruling out medical causes.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"24\" cy=\"20\" r=\"9\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"2\"/><path d=\"M40 20h22M54 13l8 7-8 7\" fill=\"none\" stroke=\"#67e8b0\" stroke-width=\"2\"/></svg>"
+    },
+    {
+     "term": "Diagnosis of exclusion",
+     "def": "A label applied only after other explanations (illness, deficiency, mental-health conditions) have been medically ruled out — which is why coaches refer suspected OTS rather than declare it.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"24\" cy=\"20\" r=\"9\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"2\"/><path d=\"M40 20h22M54 13l8 7-8 7\" fill=\"none\" stroke=\"#67e8b0\" stroke-width=\"2\"/></svg>"
+    },
+    {
+     "term": "Traffic-light niggle system",
+     "def": "Practical triage rule: green = train normally; amber = mild pain that settles quickly, so modify load or regress the station; red = significant, worsening, or mechanics-altering pain, so stop and refer.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"24\" cy=\"20\" r=\"9\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"2\"/><path d=\"M40 20h22M54 13l8 7-8 7\" fill=\"none\" stroke=\"#67e8b0\" stroke-width=\"2\"/></svg>"
+    },
+    {
+     "term": "Load before speed",
+     "def": "Return-to-training principle: rebuild tolerance to heavy, slow loading before reintroducing high-velocity, plyometric, or dense race-specific work.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"24\" cy=\"20\" r=\"9\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"2\"/><path d=\"M40 20h22M54 13l8 7-8 7\" fill=\"none\" stroke=\"#67e8b0\" stroke-width=\"2\"/></svg>"
+    }
+   ],
+   "relevant": true,
+   "exam_focus": "Expect scenario items that make you classify an athlete along the FOR–NFOR–OTS continuum from markers like recovery timescale, resting HR and mood, then choose monitor, modify, or refer — with at least one trap where the correct answer is referring out rather than coaching or treating. sRPE arithmetic and the 0.8–1.3 ACWR band are easy quiz fodder, so know the numbers and the caveat that ACWR is a contested heuristic.",
+   "figures": []
+  },
+  "55": {
+   "title": "Exam synthesis — mechanics, skill acquisition & running technique",
+   "topic_id": "xs_biomech",
+   "domain": "BM",
+   "chapter": "Exam synthesis",
+   "page_refs": "Biomechanics & Skill (M3 + M7.1 + M7.2)",
+   "key_concept": "This synthesis day binds three threads the assessment is likely to mix freely: mechanics (days 9–12), motor learning (27–29) and running technique (30–33). The unifying idea is impulse–momentum thinking: every station is a problem of building or preserving momentum with a limited force–time budget — a sled start demands one long, continuous impulse from standstill, wall balls and burpee jumps demand small rhythmic impulses repeated at cadence, and running rewards minimising braking impulse per step. A useful way to file faults is into kinetic-chain energy-leak families — hip drop, trunk collapse, overstriding — each exposed by a predictable station or state. The coaching layer then selects learning conditions: blocked practice with rich knowledge of performance for novices and re-learning; random-variable practice under fatigue, external cues and faded feedback for race preparation, because contextual interference tends to trade today's performance for tomorrow's retention and transfer.",
+   "key_facts": [
+    "Impulse is net force multiplied by the time it acts (the area under the force–time curve) and, by the impulse–momentum theorem, equals the change in momentum it produces.",
+    "A sled start from standstill is impulse-limited: with no momentum to preserve, the athlete must accumulate a large force–time area before movement begins, so a continuous lean-and-drive beats repeated stop–start efforts.",
+    "Wall balls and burpee jumps sit at the opposite end of the impulse problem — brief impulses repeated at cadence — so every pause or reset re-pays the cost of accelerating body and ball from rest.",
+    "A useful way to file kinetic-chain faults is into three energy-leak families — contralateral hip drop, trunk collapse and overstriding — a teaching heuristic rather than a formal taxonomy, exposed respectively by single-leg work (sandbag lunges, fatigued running), anteriorly loaded stations (wall balls, sled push) and late-race running.",
+    "Blocked practice (AAA-BBB) tends to produce better performance within the session, while random practice (ABC-BCA) tends to produce better retention and transfer — the contextual interference effect.",
+    "Contextual interference is thought to work because task-switching forces the learner to reconstruct the action plan on every attempt and to elaborate on differences between tasks.",
+    "External cues, which direct attention to the movement's effect on the environment, tend to outperform internal body-focused cues for performance and learning — Wulf's constrained action hypothesis — though the advantage is fairly consistent in direction only; the effect is modest and some recent replications are mixed.",
+    "Knowledge of performance (KP) describes movement quality ('your hips rose before your chest'), whereas knowledge of results (KR) describes the outcome ('that set was 15 seconds slower') — a favourite exam confusion.",
+    "Feedback frequency should generally be faded as skill develops, because constant after-every-rep feedback breeds dependency and blocks the athlete's own error detection.",
+    "Running speed equals cadence multiplied by stride length — taken here, per this site's convention, as the distance covered per step — so at a fixed speed any cadence increase must be paid for with a proportionally shorter stride.",
+    "A modest cadence increase of around 5% — not a universal 180 steps per minute — tends to reduce overstriding, braking impulse and per-step loading, making it the safest first running-economy lever.",
+    "Reducing vertical oscillation and braking are honest but modest economy levers, and large deliberate technique overhauls often cost economy in the short term before any benefit appears.",
+    "Under fatigue, running form tends to degrade in a recognisable signature — cadence falls, ground contact time lengthens and trunk flexion increases, with stride length also shortening as pace fades — which is why restoring cadence is the first cue out of the roxzone (the transition zone), and why the compromised state must itself be rehearsed.",
+    "Race preparation should progress practice conditions from blocked and fresh towards random-variable and fatigued (run–station couplets), matching specificity of both skill and physiological state."
+   ],
+   "training_link": "This week, run one video session per athlete and file every fault under an energy-leak family rather than a station-specific note: hip drop (lunges, fatigued running), trunk collapse (wall balls, sled), overstriding (late-race running). Fix each with one external cue, not three internal ones. Then audit your practice schedule against athlete level: give your newest athlete blocked sets of their weakest station with frequent knowledge of performance; give race-ready athletes shuffled run–station couplets with feedback only every few rounds. Finally, rehearse degradation — finish one session with a 1 km run at race pace straight into their leakiest station, and cue cadence, not stride length, when form fades.",
+   "glossary": [
+    {
+     "term": "Impulse",
+     "def": "The product of net force and the time over which it acts — the area under the force–time curve. By the impulse–momentum theorem it equals the change in momentum it produces.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"24\" cy=\"20\" r=\"9\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"2\"/><path d=\"M40 20h22M54 13l8 7-8 7\" fill=\"none\" stroke=\"#67e8b0\" stroke-width=\"2\"/></svg>"
+    },
+    {
+     "term": "Energy leak",
+     "def": "A point in the kinetic chain where force is lost to unwanted motion (hip drop, trunk collapse) instead of being transmitted to the task.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"24\" cy=\"20\" r=\"9\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"2\"/><path d=\"M40 20h22M54 13l8 7-8 7\" fill=\"none\" stroke=\"#67e8b0\" stroke-width=\"2\"/></svg>"
+    },
+    {
+     "term": "Contextual interference",
+     "def": "The motor-learning phenomenon whereby interleaving tasks (random practice) worsens performance during practice but improves retention and transfer relative to blocked practice.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"24\" cy=\"20\" r=\"9\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"2\"/><path d=\"M40 20h22M54 13l8 7-8 7\" fill=\"none\" stroke=\"#67e8b0\" stroke-width=\"2\"/></svg>"
+    },
+    {
+     "term": "Blocked practice",
+     "def": "Repeating one task for a full set of trials before moving to the next (AAA-BBB). Low interference: strong within-session performance, weaker retention.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"24\" cy=\"20\" r=\"9\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"2\"/><path d=\"M40 20h22M54 13l8 7-8 7\" fill=\"none\" stroke=\"#67e8b0\" stroke-width=\"2\"/></svg>"
+    },
+    {
+     "term": "Random practice",
+     "def": "Interleaving tasks in unpredictable order (ABC-BCA). High interference: weaker session performance, stronger retention and transfer.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"24\" cy=\"20\" r=\"9\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"2\"/><path d=\"M40 20h22M54 13l8 7-8 7\" fill=\"none\" stroke=\"#67e8b0\" stroke-width=\"2\"/></svg>"
+    },
+    {
+     "term": "Knowledge of results (KR)",
+     "def": "Augmented feedback about the outcome of an attempt — time, distance, success — rather than the movement itself.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"24\" cy=\"20\" r=\"9\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"2\"/><path d=\"M40 20h22M54 13l8 7-8 7\" fill=\"none\" stroke=\"#67e8b0\" stroke-width=\"2\"/></svg>"
+    },
+    {
+     "term": "Knowledge of performance (KP)",
+     "def": "Augmented feedback about the quality or pattern of the movement, e.g. 'your hips rose before your chest'.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"24\" cy=\"20\" r=\"9\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"2\"/><path d=\"M40 20h22M54 13l8 7-8 7\" fill=\"none\" stroke=\"#67e8b0\" stroke-width=\"2\"/></svg>"
+    },
+    {
+     "term": "External cue",
+     "def": "An attentional focus on the movement's effect on the environment ('push the floor away'), which tends to outperform internal, body-part-focused cues — an advantage fairly consistent in direction, though modest in size and mixed in some replications.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"24\" cy=\"20\" r=\"9\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"2\"/><path d=\"M40 20h22M54 13l8 7-8 7\" fill=\"none\" stroke=\"#67e8b0\" stroke-width=\"2\"/></svg>"
+    },
+    {
+     "term": "Running economy",
+     "def": "The oxygen or energy cost of running at a given submaximal speed; a lower cost means better economy.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"24\" cy=\"20\" r=\"9\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"2\"/><path d=\"M40 20h22M54 13l8 7-8 7\" fill=\"none\" stroke=\"#67e8b0\" stroke-width=\"2\"/></svg>"
+    },
+    {
+     "term": "Cadence",
+     "def": "Step rate in steps per minute; multiplied by stride length (per this site's convention, the distance per step) it gives running speed, creating a direct trade-off at fixed pace.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"24\" cy=\"20\" r=\"9\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"2\"/><path d=\"M40 20h22M54 13l8 7-8 7\" fill=\"none\" stroke=\"#67e8b0\" stroke-width=\"2\"/></svg>"
+    },
+    {
+     "term": "Overstriding",
+     "def": "Initial ground contact too far ahead of the centre of mass, which increases braking impulse and per-step load.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"24\" cy=\"20\" r=\"9\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"2\"/><path d=\"M40 20h22M54 13l8 7-8 7\" fill=\"none\" stroke=\"#67e8b0\" stroke-width=\"2\"/></svg>"
+    }
+   ],
+   "relevant": true,
+   "exam_focus": "Expect cross-module questions that pair a station fault with the correct mechanical explanation and the correct practice-schedule or cue choice — the classic distractor pairs are force vs impulse, KR vs KP, blocked vs random, and cadence vs stride length. Be ready for simple arithmetic on impulse (force × time = change in momentum) and on speed = cadence × stride length (distance per step, per the site's convention — and watch step vs stride itself as a trap).",
+   "figures": []
+  },
+  "56": {
+   "title": "Exam synthesis — energy systems, thresholds & fuelling",
+   "topic_id": "xs_physio",
+   "domain": "PH",
+   "chapter": "Exam synthesis",
+   "page_refs": "Physiology & Nutrition (M5 + M6)",
+   "key_concept": "HYROX is best modelled as an aerobically-dominant event punctuated by repeated glycolytic surges: the eight runs and the aerobic 'engine' largely set the finishing time, while sled, wall-ball and burpee stations spike anaerobic demand and seed local fatigue. Endurance performance resolves into three partly-independent qualities — VO2max (the aerobic ceiling), fractional utilisation (the sustainable share of that ceiling, governed by the lactate/threshold boundaries), and economy (the oxygen cost of a given pace) — each answering to different training. Lactate is a shuttled fuel and a flux marker, not the cause of fatigue; acidosis tends to track hydrogen-ion accumulation, buffered extracellularly by bicarbonate and intracellularly by carnosine. Nutrition is periodised in parallel: daily carbohydrate matched to the work required, a brief race-week load, and in-race intake banded by duration. Treat energy availability, not merely body weight, as the health floor beneath all of it.",
+   "key_facts": [
+    "HYROX (8 x 1 km runs plus 8 functional stations) is aerobically dominant overall and typically lasts around 60-90+ minutes, so the aerobic system supplies most of the total energy.",
+    "Individual stations — sled push and pull, wall balls, burpee broad jumps — provoke large anaerobic-glycolytic contributions and local muscular fatigue that then compromise the run that follows.",
+    "The three-part endurance model is VO2max (aerobic ceiling), fractional utilisation (the sustainable % of VO2max, set by the threshold boundaries) and running economy (oxygen cost at a given speed); race velocity depends on all three.",
+    "VO2max responds best to hard intervals near maximal aerobic power (roughly 3-5 min efforts); fractional utilisation to tempo and threshold work; economy to strength, plyometrics, drills and accumulated easy volume.",
+    "Lactate is a metabolic fuel shuttled from fast to slow fibres, the heart and the liver (the lactate shuttle), not a waste product that 'burns' the muscle.",
+    "Exercise acidosis tends to be driven by hydrogen-ion accumulation rather than lactate itself; blood lactate is a marker of the balance between glycolytic production and clearance.",
+    "Buffering is split by compartment: bicarbonate acts extracellularly (supplemented as sodium bicarbonate) and carnosine acts intracellularly (raised by beta-alanine supplementation).",
+    "LT1 (aerobic threshold) marks the first rise of lactate above baseline; LT2 (anaerobic threshold / MLSS) is the highest intensity at which lactate production and clearance still balance — above it lactate rises inexorably and the effort becomes unsustainable.",
+    "Compromised running feels disproportionately hard because of residual metabolic fatigue, blood-flow competition after loaded stations, and neuromuscular interference that alters gait and leg stiffness.",
+    "Durability — resistance to the decline of economy and thresholds late in a prolonged effort — is a distinct, trainable quality that fresh laboratory values do not reliably predict.",
+    "In-race carbohydrate is banded by duration: roughly none needed under ~45-60 min, ~30 g/h for ~1-2 h, up to ~60 g/h beyond that, and up to ~90 g/h (multiple transportable carbs) only for very long efforts — all requiring gut training first.",
+    "Daily carbohydrate should be periodised to the work required (higher on hard and long days, lower on easy days), with a brief race-week load topping up muscle glycogen.",
+    "The best-evidenced ergogenic supplements are creatine, caffeine, beta-alanine and sodium bicarbonate (dietary nitrate/beetroot also has good support); most other products are weakly evidenced.",
+    "Low energy availability — a commonly cited heuristic floor of about 30 kcal/kg fat-free mass per day — underlies REDs; red flags include stalled performance, frequent illness or bone-stress injuries, menstrual disturbance and poor recovery."
+   ],
+   "training_link": "This week, audit each athlete against the three-part model rather than a single number. Give the runner-type station strength plus compromised-running bricks — heavy sled or wall balls straight into a threshold run — to attack their limiter; give the strength-type more threshold and easy aerobic volume plus economy drills. Screen fuelling by race duration: for a 75-90 minute finisher, rehearse roughly 30-60 g carbohydrate per hour in training and never debut it on race day. Run one weigh-in to set a personal sweat-rate and fluid plan, and quietly check energy-availability red flags — sleep, mood, appetite, menstrual status — in anyone chasing a lean 'race weight'.",
+   "glossary": [
+    {
+     "term": "VO2max",
+     "def": "The maximum rate at which the body can take up and use oxygen; the ceiling of aerobic power.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"24\" cy=\"20\" r=\"9\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"2\"/><path d=\"M40 20h22M54 13l8 7-8 7\" fill=\"none\" stroke=\"#67e8b0\" stroke-width=\"2\"/></svg>"
+    },
+    {
+     "term": "Fractional utilisation",
+     "def": "The percentage of VO2max an athlete can sustain, largely set by the lactate/threshold boundaries. Two athletes with the same VO2max can differ greatly here.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"24\" cy=\"20\" r=\"9\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"2\"/><path d=\"M40 20h22M54 13l8 7-8 7\" fill=\"none\" stroke=\"#67e8b0\" stroke-width=\"2\"/></svg>"
+    },
+    {
+     "term": "Running economy",
+     "def": "The oxygen (energy) cost of running at a given submaximal speed; better economy means a faster pace for the same metabolic cost.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"24\" cy=\"20\" r=\"9\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"2\"/><path d=\"M40 20h22M54 13l8 7-8 7\" fill=\"none\" stroke=\"#67e8b0\" stroke-width=\"2\"/></svg>"
+    },
+    {
+     "term": "LT1 (aerobic threshold)",
+     "def": "The intensity at which blood lactate first rises above resting baseline; roughly the top of comfortable, conversational effort.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"24\" cy=\"20\" r=\"9\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"2\"/><path d=\"M40 20h22M54 13l8 7-8 7\" fill=\"none\" stroke=\"#67e8b0\" stroke-width=\"2\"/></svg>"
+    },
+    {
+     "term": "LT2 (anaerobic threshold / MLSS)",
+     "def": "The highest intensity at which lactate production and clearance still balance; above it lactate rises inexorably and the effort is unsustainable.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"24\" cy=\"20\" r=\"9\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"2\"/><path d=\"M40 20h22M54 13l8 7-8 7\" fill=\"none\" stroke=\"#67e8b0\" stroke-width=\"2\"/></svg>"
+    },
+    {
+     "term": "Lactate shuttle",
+     "def": "Brooks's concept that lactate is transported between and within tissues to be oxidised as fuel or used for glucose synthesis, rather than being a dead-end waste product.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"24\" cy=\"20\" r=\"9\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"2\"/><path d=\"M40 20h22M54 13l8 7-8 7\" fill=\"none\" stroke=\"#67e8b0\" stroke-width=\"2\"/></svg>"
+    },
+    {
+     "term": "Compromised running",
+     "def": "Running performed under the residual fatigue of preceding station work, as in HYROX, and therefore slower and harder than fresh running.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"24\" cy=\"20\" r=\"9\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"2\"/><path d=\"M40 20h22M54 13l8 7-8 7\" fill=\"none\" stroke=\"#67e8b0\" stroke-width=\"2\"/></svg>"
+    },
+    {
+     "term": "Durability",
+     "def": "The resistance of economy and threshold to deterioration over a prolonged effort; a fatigue-resistance quality distinct from fresh fitness.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"24\" cy=\"20\" r=\"9\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"2\"/><path d=\"M40 20h22M54 13l8 7-8 7\" fill=\"none\" stroke=\"#67e8b0\" stroke-width=\"2\"/></svg>"
+    },
+    {
+     "term": "Carbohydrate periodisation",
+     "def": "Matching daily and session carbohydrate intake to training demand — 'fuel for the work required' — rather than eating the same every day.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"24\" cy=\"20\" r=\"9\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"2\"/><path d=\"M40 20h22M54 13l8 7-8 7\" fill=\"none\" stroke=\"#67e8b0\" stroke-width=\"2\"/></svg>"
+    },
+    {
+     "term": "Gut training",
+     "def": "Progressively practising higher in-race carbohydrate intakes so the gut's absorption capacity adapts and tolerates them without distress.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"24\" cy=\"20\" r=\"9\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"2\"/><path d=\"M40 20h22M54 13l8 7-8 7\" fill=\"none\" stroke=\"#67e8b0\" stroke-width=\"2\"/></svg>"
+    },
+    {
+     "term": "REDs (Relative Energy Deficiency in Sport)",
+     "def": "A syndrome of impaired health and performance driven by sustained low energy availability, affecting bone, hormones, immunity and recovery.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"24\" cy=\"20\" r=\"9\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"2\"/><path d=\"M40 20h22M54 13l8 7-8 7\" fill=\"none\" stroke=\"#67e8b0\" stroke-width=\"2\"/></svg>"
+    },
+    {
+     "term": "Exercise-associated hyponatraemia",
+     "def": "Dangerously low blood sodium, usually caused by over-drinking fluid; distinct from dehydration and treated in the opposite way.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"24\" cy=\"20\" r=\"9\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"2\"/><path d=\"M40 20h22M54 13l8 7-8 7\" fill=\"none\" stroke=\"#67e8b0\" stroke-width=\"2\"/></svg>"
+    }
+   ],
+   "relevant": true,
+   "exam_focus": "Expect to be asked to name the three determinants of endurance performance and match each to its training method, and to correct classic misconceptions — lactate as fuel not villain, VO2max versus economy, and hyponatraemia versus dehydration. Numerical items are likely to probe duration-banded carbohydrate targets and a sweat-rate calculation.",
+   "figures": []
+  },
+  "57": {
+   "title": "Exam synthesis — performance pillars, off-feet conditioning & race execution",
+   "topic_id": "xs_racecraft",
+   "domain": "PG",
+   "chapter": "Exam synthesis",
+   "page_refs": "Race Craft (M4 + M7.3)",
+   "key_concept": "Race craft is the synthesis layer that turns fitness into a finishing time, and it rests on three ledgers a coach should hold simultaneously: running time, station time and roxzone time, because total race time is simply their sum. The format itself — eight 1 km runs alternating with eight fixed-order stations — rewards athletes who know each station's demand fingerprint: SkiErg and Row are paceable engine work, the sleds, carries and lunges tax strength-endurance, while wall balls and burpee broad jumps punish rep integrity under fatigue. Pacing doctrine tends to favour even or slightly negative run splits with strict first-run discipline, since early enthusiasm is repaid with interest as compromised running. Roxzone time is usually the cheapest time on course, because it responds mainly to rehearsal and logistics rather than added fitness. Off-feet conditioning (erg and bike work) supplies aerobic volume without impact cost, prescribed by split targets rather than feel — a practical heuristic, not a published model.",
+   "key_facts": [
+    "The race structure is eight 1 km runs alternating with eight stations in a fixed order — SkiErg, Sled Push, Sled Pull, Burpee Broad Jumps, Row, Farmers Carry, Sandbag Lunges, Wall Balls; loads and rep counts are division- and season-dependent (Doubles split station work between partners and Relay formats differ again), so check the current rulebook — the format and rules lesson covers the numbers.",
+    "Demand fingerprints: SkiErg and Row are pure-engine stations (paceable, low failure risk); Sled Push, Sled Pull, Farmers Carry and Sandbag Lunges are strength-endurance stations; Wall Balls and Burpee Broad Jumps are rep-integrity stations where form breakdown costs no-reps and failure sets.",
+    "Roxzone time is usually the cheapest place on the course to save minutes: it responds mainly to transition rehearsal, station-order familiarity and logistics planning rather than to added fitness — fatigue does slow roxzone pace somewhat, but rehearsal and logistics are the dominant levers.",
+    "Community race-data analyses of published splits suggest total roxzone time of roughly four to six minutes for well-drilled athletes versus eight or more for unpractised amateurs — treat these as illustrative rather than official figures, but the gap is largely pure race craft.",
+    "First-run discipline is the core pacing rule: going out faster than goal pace on run 1 tends to cost more time later through compromised running than it ever gains.",
+    "Well-paced HYROX athletes aim for even or slightly negative run splits across the eight runs, whereas a fading positive-split profile usually signals an early pacing error rather than poor endurance.",
+    "Wall Balls and Burpee Broad Jumps are where failure sets occur, and a planned break scheme (moderate sets with short scheduled rests taken before failure) tends to beat unbroken efforts that collapse.",
+    "Runner-profile athletes typically bleed time on the sleds, lunges and carries; strength-profile athletes bleed time on the back-half runs; the hybrid profile concedes the least anywhere.",
+    "Off-feet conditioning on the SkiErg, rower and bike adds aerobic volume without impact cost, which protects tissue during high-run blocks, niggle management and return-to-training phases.",
+    "Erg work is prescribed by split targets (time per 500 m), and because power scales with roughly the cube of speed, small split improvements demand disproportionately large increases in watts.",
+    "The damper on an erg sets drag factor — how much air the flywheel works against per stroke, i.e. the gearing and feel — not the workout intensity, which comes only from the athlete's power output.",
+    "Compromised-pair (couplet) training — a station straight into a run, or a run straight into a station — is arguably the most race-specific repeatable conditioning unit short of a full simulation, because it rehearses the exact transition demand of the event.",
+    "Race-model arithmetic is simply: target time = run budget + station budget + roxzone budget; coach the cheapest gains first, which are usually roxzone and pacing errors, not fitness."
+   ],
+   "training_link": "This week, build each athlete a one-page race model: split their target finish time into run, station and roxzone budgets, then work backwards to a per-kilometre pace and per-station split targets. Rehearse the roxzone deliberately — station-order recitation, a walked transition plan and one timed race-flow simulation — because that time is close to free. Programme one compromised-pair session matched to each athlete's weakest fingerprint (for example sled push into 400–800 m repeats at race pace for runner profiles, or station-into-run couplets emphasising back-half run pace for strength profiles). Prescribe erg sessions by 500 m split targets so the SkiErg and Row become controlled, pre-planned stations rather than emotional ones.",
+   "glossary": [
+    {
+     "term": "Roxzone",
+     "def": "The transition area between runs and stations; time spent there counts toward the finish and is reduced mainly by rehearsal and familiarity, with fitness playing only a supporting role.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"24\" cy=\"20\" r=\"9\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"2\"/><path d=\"M40 20h22M54 13l8 7-8 7\" fill=\"none\" stroke=\"#67e8b0\" stroke-width=\"2\"/></svg>"
+    },
+    {
+     "term": "Compromised running",
+     "def": "Running on legs pre-fatigued by station work; the defining demand of HYROX and the reason pacing errors compound.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"24\" cy=\"20\" r=\"9\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"2\"/><path d=\"M40 20h22M54 13l8 7-8 7\" fill=\"none\" stroke=\"#67e8b0\" stroke-width=\"2\"/></svg>"
+    },
+    {
+     "term": "Demand fingerprint",
+     "def": "Shorthand for a station's dominant quality — pure engine, strength-endurance, or technique/rep-integrity — used to target preparation and predict where an athlete loses time.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"24\" cy=\"20\" r=\"9\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"2\"/><path d=\"M40 20h22M54 13l8 7-8 7\" fill=\"none\" stroke=\"#67e8b0\" stroke-width=\"2\"/></svg>"
+    },
+    {
+     "term": "Negative split",
+     "def": "Covering the later portion of a race faster than the earlier portion; in HYROX, holding even-to-faster run splits across runs one to eight.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"24\" cy=\"20\" r=\"9\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"2\"/><path d=\"M40 20h22M54 13l8 7-8 7\" fill=\"none\" stroke=\"#67e8b0\" stroke-width=\"2\"/></svg>"
+    },
+    {
+     "term": "Failure set",
+     "def": "A set taken to muscular failure mid-station that forces a long unplanned rest; most race-costly on Wall Balls and Burpee Broad Jumps.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"24\" cy=\"20\" r=\"9\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"2\"/><path d=\"M40 20h22M54 13l8 7-8 7\" fill=\"none\" stroke=\"#67e8b0\" stroke-width=\"2\"/></svg>"
+    },
+    {
+     "term": "Split (erg)",
+     "def": "Time per 500 m on the SkiErg or rower; the standard prescription and pacing unit for erg work.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"24\" cy=\"20\" r=\"9\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"2\"/><path d=\"M40 20h22M54 13l8 7-8 7\" fill=\"none\" stroke=\"#67e8b0\" stroke-width=\"2\"/></svg>"
+    },
+    {
+     "term": "Drag factor",
+     "def": "The measure of flywheel air resistance set by the damper; it determines the gearing and feel of each stroke, not the intensity of the workout.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"24\" cy=\"20\" r=\"9\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"2\"/><path d=\"M40 20h22M54 13l8 7-8 7\" fill=\"none\" stroke=\"#67e8b0\" stroke-width=\"2\"/></svg>"
+    },
+    {
+     "term": "Compromised pair (couplet)",
+     "def": "A training unit pairing a station with a run in either order to rehearse race-specific transitions and pre-fatigue.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"24\" cy=\"20\" r=\"9\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"2\"/><path d=\"M40 20h22M54 13l8 7-8 7\" fill=\"none\" stroke=\"#67e8b0\" stroke-width=\"2\"/></svg>"
+    },
+    {
+     "term": "Athlete profiling",
+     "def": "Classifying an athlete as runner-dominant, strength-dominant or hybrid to predict where race time will be lost and to direct training priorities.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"24\" cy=\"20\" r=\"9\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"2\"/><path d=\"M40 20h22M54 13l8 7-8 7\" fill=\"none\" stroke=\"#67e8b0\" stroke-width=\"2\"/></svg>"
+    },
+    {
+     "term": "Race model",
+     "def": "A simple arithmetic plan that splits a target finish time into run, station and roxzone budgets, then converts each budget into pace and split targets.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"24\" cy=\"20\" r=\"9\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"2\"/><path d=\"M40 20h22M54 13l8 7-8 7\" fill=\"none\" stroke=\"#67e8b0\" stroke-width=\"2\"/></svg>"
+    }
+   ],
+   "relevant": true,
+   "exam_focus": "Expect items that ask you to classify stations by dominant demand fingerprint, complete simple race-craft arithmetic — splitting a target finish into run, station and roxzone budgets, or converting an erg split into time and watts — and scenario questions presenting a runner-profile versus strength-profile athlete and asking where each loses time and what to prescribe; station-order and rep-count recitation is examined from the format and stations lessons rather than here.",
+   "figures": []
+  },
+  "58": {
+   "title": "Exam synthesis — periodization, concurrent training & peaking",
+   "topic_id": "xs_periodization",
+   "domain": "PG",
+   "chapter": "Exam synthesis",
+   "page_refs": "Periodization (M8)",
+   "key_concept": "Periodization is the deliberate sequencing of training emphasis across a macrocycle, and the honest reading of the comparative literature is that structure beats no structure, while differences between named models — linear, block, undulating — tend to be smaller than the effects of adherence and sensible load management. Polarised distribution describes how intensity is spread, not how phases are sequenced, and the two are often confused. A practical HYROX macrocycle runs general preparation (maximal strength plus aerobic base), specific preparation (station endurance and compromised running), competition (race simulations and a taper cutting volume roughly 40–60% while holding intensity and frequency for one to two weeks), then transition. Concurrent-training interference — endurance blunting strength adaptation, with a molecular story that remains contested — matters mainly at high endurance volumes and with poor session sequencing, and is managed through ordering, separation and off-feet modalities rather than avoided outright.",
+   "key_facts": [
+    "Comparative trials tend to show that any structured periodized plan beats unstructured training, while differences between the named models are small and usually smaller than the effect of adherence.",
+    "Linear periodization progresses from high-volume/low-intensity toward low-volume/high-intensity across long sequential phases.",
+    "Block periodization concentrates one dominant quality per mesocycle (commonly accumulation, transmutation, realisation) and relies on residual training effects to hold the others.",
+    "Daily or weekly undulating periodization (DUP) varies intensity and volume targets within the week, which suits concurrent-demand sports like HYROX that must keep several qualities warm at once.",
+    "Polarised (~80% easy / ~20% hard) is an intensity-distribution strategy, not a periodization model — a classic exam confusion.",
+    "A practical HYROX macrocycle runs general prep (strength + aerobic base), specific prep (station endurance + compromised running), competition (race sims + taper), then transition.",
+    "The interference effect is the blunting of strength and hypertrophy adaptations by concurrent endurance training; the molecular explanation (often framed as AMPK–mTOR crosstalk) is plausible but not settled.",
+    "Interference matters most at high endurance volumes, when same-muscle endurance work immediately precedes strength training, and when key lifting is done glycogen-depleted.",
+    "Practical interference mitigation: lift first when strength is the priority, separate sessions by roughly six hours where possible (a heuristic, not a published law), and push some endurance volume to low-impact off-feet modalities.",
+    "The textbook taper cuts training volume by roughly 40–60% over one to two weeks while maintaining intensity and frequency, typically yielding small but meaningful performance gains of around 1–3%.",
+    "The most common taper error is cutting intensity rather than volume, which lets race-pace sharpness fade exactly when it is needed.",
+    "An A/B/C race hierarchy assigns the full taper to A races, a 3–7 day mini-taper to B races, and trains through C races as quality sessions.",
+    "Functional overreaching is a planned short-term overload that rebounds to supercompensation after recovery; a plan should schedule it deliberately with the recovery week written in advance, never discover it by accident.",
+    "Strength decays over weeks rather than days, so low-volume, moderate-to-high-intensity weekly touches are enough to hold it between races and through the competition phase."
+   ],
+   "training_link": "This week, audit one athlete's next twelve weeks against the four-phase template: name the phase each week belongs to and check the dominant emphasis actually matches it. If they lift and run on the same day, fix the ordering — strength first when strength is the priority, or roughly six hours' separation where life allows — and move some easy volume to the SkiErg or bike if their legs are chronically heavy. Draft the race hierarchy now: one A race gets the full one-to-two-week taper, B races get 3–5 day mini-tapers, C races are trained through. Finally, write the taper arithmetic into the plan in advance — peak weekly volume, the 40–60% cut, and the short race-pace sessions that preserve intensity — so race week is executed, not improvised.",
+   "glossary": [
+    {
+     "term": "Macrocycle",
+     "def": "The full planning span (typically a season or year) containing preparation, competition and transition phases.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"24\" cy=\"20\" r=\"9\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"2\"/><path d=\"M40 20h22M54 13l8 7-8 7\" fill=\"none\" stroke=\"#67e8b0\" stroke-width=\"2\"/></svg>"
+    },
+    {
+     "term": "Mesocycle",
+     "def": "A block of roughly 2–6 weeks with one dominant training emphasis, the building unit of a periodized plan.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"24\" cy=\"20\" r=\"9\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"2\"/><path d=\"M40 20h22M54 13l8 7-8 7\" fill=\"none\" stroke=\"#67e8b0\" stroke-width=\"2\"/></svg>"
+    },
+    {
+     "term": "Block periodization",
+     "def": "A model that concentrates a single quality per mesocycle in sequence (accumulation, transmutation, realisation), relying on residual training effects to maintain the qualities not currently emphasised.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"24\" cy=\"20\" r=\"9\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"2\"/><path d=\"M40 20h22M54 13l8 7-8 7\" fill=\"none\" stroke=\"#67e8b0\" stroke-width=\"2\"/></svg>"
+    },
+    {
+     "term": "Undulating periodization (DUP)",
+     "def": "A model that varies intensity and volume targets within the week or day rather than across long phases; well suited to sports that must train several qualities concurrently.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"24\" cy=\"20\" r=\"9\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"2\"/><path d=\"M40 20h22M54 13l8 7-8 7\" fill=\"none\" stroke=\"#67e8b0\" stroke-width=\"2\"/></svg>"
+    },
+    {
+     "term": "Polarised intensity distribution",
+     "def": "Spending roughly 80% of endurance training time at low intensity and about 20% at high intensity; it describes the intensity mix, not the phase sequence, so it is not itself a periodization model.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"24\" cy=\"20\" r=\"9\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"2\"/><path d=\"M40 20h22M54 13l8 7-8 7\" fill=\"none\" stroke=\"#67e8b0\" stroke-width=\"2\"/></svg>"
+    },
+    {
+     "term": "Interference effect",
+     "def": "The attenuation of strength and hypertrophy adaptations when high volumes of endurance training run concurrently, strongest when endurance work loads the same muscles immediately before lifting.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"24\" cy=\"20\" r=\"9\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"2\"/><path d=\"M40 20h22M54 13l8 7-8 7\" fill=\"none\" stroke=\"#67e8b0\" stroke-width=\"2\"/></svg>"
+    },
+    {
+     "term": "Residual training effect",
+     "def": "The period a fitness quality is retained after dedicated training for it stops; strength persists for weeks, while speed and anaerobic qualities fade faster.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"24\" cy=\"20\" r=\"9\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"2\"/><path d=\"M40 20h22M54 13l8 7-8 7\" fill=\"none\" stroke=\"#67e8b0\" stroke-width=\"2\"/></svg>"
+    },
+    {
+     "term": "Taper",
+     "def": "A pre-race reduction of training volume by roughly 40–60% over one to two weeks while maintaining intensity and frequency, allowing fatigue to fall faster than fitness.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"24\" cy=\"20\" r=\"9\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"2\"/><path d=\"M40 20h22M54 13l8 7-8 7\" fill=\"none\" stroke=\"#67e8b0\" stroke-width=\"2\"/></svg>"
+    },
+    {
+     "term": "Functional overreaching",
+     "def": "A planned short-term overload producing temporary performance decline that rebounds above baseline after scheduled recovery; distinct from non-functional overreaching, where the decrement persists without payoff.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"24\" cy=\"20\" r=\"9\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"2\"/><path d=\"M40 20h22M54 13l8 7-8 7\" fill=\"none\" stroke=\"#67e8b0\" stroke-width=\"2\"/></svg>"
+    },
+    {
+     "term": "Race hierarchy (A/B/C)",
+     "def": "Classifying races by priority to decide taper depth: full taper for A races, mini-taper for B races, and training through C races.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"24\" cy=\"20\" r=\"9\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"2\"/><path d=\"M40 20h22M54 13l8 7-8 7\" fill=\"none\" stroke=\"#67e8b0\" stroke-width=\"2\"/></svg>"
+    }
+   ],
+   "relevant": true,
+   "exam_focus": "Expect scenario questions asking you to choose and justify a periodization structure and macrocycle sequence for a given athlete and race calendar, plus items that separate taper volume (cut) from intensity (kept) and block from undulating models; interference questions will most likely test when it matters and how you mitigate it, not the molecular detail.",
+   "figures": []
+  },
+  "59": {
+   "title": "Exam synthesis — mental performance & personalized coaching",
+   "topic_id": "xs_mental",
+   "domain": "CM",
+   "chapter": "Exam synthesis",
+   "page_refs": "Mental & Individualisation (M9 + M10)",
+   "key_concept": "Mental performance and individualisation converge on the same coaching question: what does this athlete need, and how do I know? Arousal regulation is symptom-led — over-aroused athletes (racing thoughts, rushed transitions, early surging) need down-regulation through slow, exhale-biased breathing and calming routines, while flat, under-aroused athletes need activation via up-tempo music, dynamic movement and energising cues. Goal architecture stacks outcome, performance and process goals; under pressure, process goals tend to hold up best because they stay controllable. Pain coping draws on attentional strategy — association for experienced pacers, dissociation and chunking for surviving predictable crisis points, pre-scripted as if-then plans in the spirit of Gollwitzer's implementation intentions. Individualisation runs through the needs-analysis pipeline: history, testing battery, gap analysis, priorities, programme, re-test. The synthesis is the case-study loop — symptom, most-limiting factor, targeted intervention, re-test — a practical heuristic, not a published model.",
+   "key_facts": [
+    "Arousal regulation is symptom-led: identify whether the athlete is over- or under-aroused first, then match the tool — down-regulation for the jittery, activation for the flat.",
+    "Slow, exhale-biased breathing (exhale longer than inhale) tends to lower arousal, while up-tempo music, dynamic movement and energising self-talk raise it.",
+    "Over-arousal typically shows as racing thoughts, a rushed warm-up and going out too hard; under-arousal shows as flatness, low drive and sluggish transitions.",
+    "Goal architecture stacks outcome goals (the result), performance goals (own-standard targets) and process goals (controllable actions), and process goals tend to be the most robust under race pressure because they stay fully controllable.",
+    "If-then plans (implementation intentions, after Gollwitzer) pre-script responses to predicted crisis points and must be rehearsed under fatigue in training to hold up on race day.",
+    "Association (internal monitoring of effort, breathing and form) supports accurate pacing in experienced athletes; dissociation and chunking help athletes tolerate discomfort spikes but can blunt pacing judgement.",
+    "Because HYROX is a fixed sequence of 8 x 1 km runs alternating with 8 stations, crisis points are predictable and can be scripted in advance — for example run 6 or the back half of the wall balls.",
+    "The needs-analysis pipeline is the individualisation engine: athlete history, then testing battery, then gap analysis, then priorities, then programme, then re-test.",
+    "A HYROX testing battery samples three layers: aerobic field tests (threshold or race-pace running), gym strength benchmarks (for example trap-bar deadlift and loaded carries) and station benchmarks (for example 1,000 m erg times and unbroken wall-ball capacity).",
+    "Every test in the battery must map to a programming decision — a test that would not change the plan is not worth its cost in time and fatigue.",
+    "Benchmarks are commonly re-tested every 6–12 weeks or at the end of a training block: often enough to steer the programme, rarely enough not to disrupt it.",
+    "A practical ranking of individualisation levers is volume tolerance, then strength floor, then pacing discipline, then psychology — fix the most-limiting lever first (a coaching heuristic, not a published hierarchy).",
+    "Outcome goals depend partly on rivals and conditions, so they motivate the season but should be de-emphasised on race day in favour of process focus.",
+    "The case-study reasoning loop the assessment is likely to reward is symptom, then most-limiting factor, then targeted intervention, then re-test."
+   ],
+   "training_link": "Pick one athlete this week and run the whole engine. Take a short history (training age, injuries, race results, constraints), then schedule a two-session mini-battery: one running field test at threshold or race pace, two or three gym strength benchmarks, and one or two station benchmarks their history flags. Write a one-line gap analysis (\"strong, but fades from run 5\") and choose the single most-limiting lever. In parallel, script the mental plan: name their two predictable crisis points, write an if-then card for each, and rehearse the breathing reset in training — never for the first time on race day. Diary the re-test six to eight weeks out before you write the block.",
+   "glossary": [
+    {
+     "term": "Arousal regulation",
+     "def": "Matching an athlete's activation level to the task — down-regulating the over-aroused or up-regulating the flat — using breathing, music, movement and routine.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"24\" cy=\"20\" r=\"9\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"2\"/><path d=\"M40 20h22M54 13l8 7-8 7\" fill=\"none\" stroke=\"#67e8b0\" stroke-width=\"2\"/></svg>"
+    },
+    {
+     "term": "Process goal",
+     "def": "A goal defined by controllable actions (e.g. \"hold my breathing rhythm on every run\") rather than results; the most robust goal type under race pressure.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"24\" cy=\"20\" r=\"9\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"2\"/><path d=\"M40 20h22M54 13l8 7-8 7\" fill=\"none\" stroke=\"#67e8b0\" stroke-width=\"2\"/></svg>"
+    },
+    {
+     "term": "If-then plan",
+     "def": "A pre-scripted response to a predicted trigger (\"if X happens, then I do Y\"), also called an implementation intention; it must be rehearsed under fatigue to work on race day.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"24\" cy=\"20\" r=\"9\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"2\"/><path d=\"M40 20h22M54 13l8 7-8 7\" fill=\"none\" stroke=\"#67e8b0\" stroke-width=\"2\"/></svg>"
+    },
+    {
+     "term": "Association",
+     "def": "An attentional strategy of monitoring internal signals such as effort, breathing and form; supports accurate pacing, particularly in experienced athletes.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"24\" cy=\"20\" r=\"9\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"2\"/><path d=\"M40 20h22M54 13l8 7-8 7\" fill=\"none\" stroke=\"#67e8b0\" stroke-width=\"2\"/></svg>"
+    },
+    {
+     "term": "Dissociation",
+     "def": "Directing attention away from bodily discomfort through external focus, counting or imagery; helps tolerate pain spikes but can blunt pacing accuracy.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"24\" cy=\"20\" r=\"9\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"2\"/><path d=\"M40 20h22M54 13l8 7-8 7\" fill=\"none\" stroke=\"#67e8b0\" stroke-width=\"2\"/></svg>"
+    },
+    {
+     "term": "Chunking",
+     "def": "Breaking a daunting whole into small units — a long wall-ball set into blocks of ten, the race into eight run-station couplets — to keep effort psychologically manageable.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"24\" cy=\"20\" r=\"9\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"2\"/><path d=\"M40 20h22M54 13l8 7-8 7\" fill=\"none\" stroke=\"#67e8b0\" stroke-width=\"2\"/></svg>"
+    },
+    {
+     "term": "Needs analysis",
+     "def": "The structured pipeline (history, testing, gap analysis, priorities, programme, re-test) that turns athlete information into individual programming decisions.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"24\" cy=\"20\" r=\"9\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"2\"/><path d=\"M40 20h22M54 13l8 7-8 7\" fill=\"none\" stroke=\"#67e8b0\" stroke-width=\"2\"/></svg>"
+    },
+    {
+     "term": "Testing battery",
+     "def": "The selected set of aerobic, strength and station benchmarks used to profile an athlete; every test should map to a programming decision.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"24\" cy=\"20\" r=\"9\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"2\"/><path d=\"M40 20h22M54 13l8 7-8 7\" fill=\"none\" stroke=\"#67e8b0\" stroke-width=\"2\"/></svg>"
+    },
+    {
+     "term": "Gap analysis",
+     "def": "Comparing test results against the race's demands and the athlete's goals to identify the most-limiting factor to target first.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"24\" cy=\"20\" r=\"9\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"2\"/><path d=\"M40 20h22M54 13l8 7-8 7\" fill=\"none\" stroke=\"#67e8b0\" stroke-width=\"2\"/></svg>"
+    },
+    {
+     "term": "Retest cadence",
+     "def": "How often benchmarks are repeated — commonly every 6–12 weeks or at block end — often enough to steer decisions without disrupting training.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"24\" cy=\"20\" r=\"9\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"2\"/><path d=\"M40 20h22M54 13l8 7-8 7\" fill=\"none\" stroke=\"#67e8b0\" stroke-width=\"2\"/></svg>"
+    },
+    {
+     "term": "Individualisation lever",
+     "def": "A modifiable factor (volume tolerance, strength floor, pacing discipline, psychology) a coach adjusts per athlete; address the most-limiting lever first.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"24\" cy=\"20\" r=\"9\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"2\"/><path d=\"M40 20h22M54 13l8 7-8 7\" fill=\"none\" stroke=\"#67e8b0\" stroke-width=\"2\"/></svg>"
+    }
+   ],
+   "relevant": true,
+   "exam_focus": "Expect case-study vignettes fusing M9 and M10: an athlete described by symptoms and test data, where you must pick the most-limiting factor and the matched mental or programming intervention. If the assessment mirrors the platform's sibling courses (MCQ format — inferred, not verified for L2), distractors will likely be plausible generic tools that ignore the specific profile presented, so always answer from the athlete described.",
+   "figures": []
+  },
+  "60": {
+   "title": "Mock assessment I — full athlete case study",
+   "topic_id": "mock_case",
+   "domain": "PG",
+   "chapter": "Mock assessment",
+   "page_refs": "Cross-module case exam",
+   "key_concept": "This day is a mock assessment: one athlete, twelve linked exam-style decisions that walk the full coaching process in order — needs analysis, testing, planning, weekly design, injury-aware progression, station priorities, monitoring, a mid-block fatigue call, taper, pacing and in-race crisis — drawing on every earlier lesson. The case: Ana, 38, women's open division, first HYROX in 12 weeks. She runs a 21:40 5 km and deadlifts 120 kg — a strong-amateur profile in which running is the clear strength and force production already covers open-division demands — but her wall balls break down early, she carries a history of Achilles niggles, and with two young children her budget is five training hours per week. Answer each question before reading the model answer, and grade yourself on reasoning rather than phrasing: the defensible 'why' matters more than the exact set-and-rep choice. The real L2 assessment format is not publicly documented, so treat this as integration practice, not a format rehearsal.",
+   "key_facts": [
+    "Case anchor: Ana is 38, entering the women's open division for her first HYROX, with race day in 12 weeks.",
+    "Ana's fresh 5 km time is 21:40 (4:20/km) — a clear relative strength for a first-time open-division athlete, so her performance ceiling is set elsewhere.",
+    "Ana's 120 kg deadlift means force production comfortably covers open-division sled and lunge demands, so strength is maintained, not built, in this cycle.",
+    "Wall balls are Ana's most-limiting station — reps break down early — and they close the race under maximal fatigue: in women's open she faces 100 reps with a 4 kg ball to a 2.70 m target.",
+    "Ana has a history of Achilles niggles, so every running progression is gated by tendon load tolerance, not by fitness.",
+    "Ana's two young children make her sleep unpredictable and her sessions missable at short notice, so her plan needs a designated droppable session, not a fragile seven-day grid.",
+    "Ana's budget is five hours per week — about four sessions — so minimum effective dose is the organising rule and no quality is trained twice.",
+    "Ana's twelve weeks split naturally into three four-week blocks: general prep (tendon base plus wall-ball skill), HYROX-specific prep (compromised running plus station pairings), and sharpen/taper.",
+    "The taught pacing rule of thumb — race run pace roughly 30-60 s/km slower than fresh 5 km pace, wider for weak-aerobic athletes, and a starting estimate rather than a law — puts Ana at about 4:50-5:20/km, with the lower end defensible because running is her strength.",
+    "Ana's monitoring must be low-burden: session RPE plus a three-item morning traffic light; daily HRV is skipped because broken parent sleep makes it noisy and prone to false alarms.",
+    "Ana's red-flag rule: Achilles morning stiffness lasting beyond roughly 24 hours, or pain that changes her gait, triggers an immediate running-load cut.",
+    "The exam skill this case trains is stating decision plus justification in two sentences — integration across modules, not isolated recall."
+   ],
+   "training_link": "Run this format on your own roster this week. Pick one real athlete, write their case line in Ana's format — age, division, key numbers, constraints, red flags — then answer the same twelve questions for them in writing, two to three sentences each. Where you cannot answer (no wall-ball benchmark, no tendon history), that is a hole in your intake, not in the athlete. Then reverse it for exam prep: practise defending each decision aloud in one breath — decision plus 'because' — since that structure answers scenario questions far faster than re-deriving everything from theory under time pressure.",
+   "glossary": [
+    {
+     "term": "Most-limiting factor",
+     "def": "The single quality or station that caps race performance regardless of improvement elsewhere; it gets first claim on a scarce training budget.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"24\" cy=\"20\" r=\"9\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"2\"/><path d=\"M40 20h22M54 13l8 7-8 7\" fill=\"none\" stroke=\"#67e8b0\" stroke-width=\"2\"/></svg>"
+    },
+    {
+     "term": "Minimum effective dose",
+     "def": "The smallest training stimulus that still drives the target adaptation; the organising principle when weekly hours are fixed and low.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"24\" cy=\"20\" r=\"9\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"2\"/><path d=\"M40 20h22M54 13l8 7-8 7\" fill=\"none\" stroke=\"#67e8b0\" stroke-width=\"2\"/></svg>"
+    },
+    {
+     "term": "Needs analysis",
+     "def": "A structured comparison of the event's demands against the athlete's current profile, producing a ranked gap list rather than a generic programme.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"24\" cy=\"20\" r=\"9\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"2\"/><path d=\"M40 20h22M54 13l8 7-8 7\" fill=\"none\" stroke=\"#67e8b0\" stroke-width=\"2\"/></svg>"
+    },
+    {
+     "term": "Phase potentiation",
+     "def": "Sequencing training blocks so each block's adaptations raise the ceiling of the next — for Ana, tendon capacity before compromised-run volume.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"24\" cy=\"20\" r=\"9\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"2\"/><path d=\"M40 20h22M54 13l8 7-8 7\" fill=\"none\" stroke=\"#67e8b0\" stroke-width=\"2\"/></svg>"
+    },
+    {
+     "term": "Compromised running",
+     "def": "Running performed under residual fatigue from a preceding station; the signature HYROX demand and the reason fresh run tests over-predict race pace.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"24\" cy=\"20\" r=\"9\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"2\"/><path d=\"M40 20h22M54 13l8 7-8 7\" fill=\"none\" stroke=\"#67e8b0\" stroke-width=\"2\"/></svg>"
+    },
+    {
+     "term": "Session RPE (sRPE)",
+     "def": "The athlete's 0-10 rating of a whole session multiplied by its duration in minutes (Foster's method); a validated, low-burden internal-load measure.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"24\" cy=\"20\" r=\"9\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"2\"/><path d=\"M40 20h22M54 13l8 7-8 7\" fill=\"none\" stroke=\"#67e8b0\" stroke-width=\"2\"/></svg>"
+    },
+    {
+     "term": "Functional overreaching",
+     "def": "A short-term performance dip from deliberate overload that recovers — and may rebound above baseline — after planned recovery; distinguished from non-functional overreaching by being brief and planned.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"24\" cy=\"20\" r=\"9\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"2\"/><path d=\"M40 20h22M54 13l8 7-8 7\" fill=\"none\" stroke=\"#67e8b0\" stroke-width=\"2\"/></svg>"
+    },
+    {
+     "term": "Tendon load tolerance",
+     "def": "The loading a tendon accepts without a symptom flare; built slowly with heavy, slow resistance work and monitored via next-morning stiffness.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"24\" cy=\"20\" r=\"9\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"2\"/><path d=\"M40 20h22M54 13l8 7-8 7\" fill=\"none\" stroke=\"#67e8b0\" stroke-width=\"2\"/></svg>"
+    },
+    {
+     "term": "Taper",
+     "def": "The deliberate pre-race reduction of training volume — commonly around 40-60% over one to two weeks — with intensity retained, trading a little fitness for a large drop in fatigue.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"24\" cy=\"20\" r=\"9\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"2\"/><path d=\"M40 20h22M54 13l8 7-8 7\" fill=\"none\" stroke=\"#67e8b0\" stroke-width=\"2\"/></svg>"
+    },
+    {
+     "term": "If-then plan",
+     "def": "A pre-agreed, rehearsed response to a predicted race problem ('if X happens, then I do Y'), converting an in-race crisis from a decision into a retrieval task; borrowed from implementation-intentions research.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"24\" cy=\"20\" r=\"9\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"2\"/><path d=\"M40 20h22M54 13l8 7-8 7\" fill=\"none\" stroke=\"#67e8b0\" stroke-width=\"2\"/></svg>"
+    },
+    {
+     "term": "Traffic-light monitoring",
+     "def": "A green/amber/red readiness triage built from a few daily items; amber modifies the session, red replaces it.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"24\" cy=\"20\" r=\"9\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"2\"/><path d=\"M40 20h22M54 13l8 7-8 7\" fill=\"none\" stroke=\"#67e8b0\" stroke-width=\"2\"/></svg>"
+    }
+   ],
+   "relevant": true,
+   "exam_focus": "Expect scenario items built around a described athlete — 'what would you prioritise, change, or decide, and why' — rather than isolated facts, particularly around the populations Module 10 names; since the actual assessment format is unverified, train the transferable skill of decision plus one-breath justification.",
+   "figures": []
+  },
+  "61": {
+   "title": "Mock assessment II — hard cases & exam-day strategy",
+   "topic_id": "mock_decisions",
+   "domain": "CM",
+   "chapter": "Mock assessment",
+   "page_refs": "Applied decisions + exam strategy",
+   "key_concept": "The twelve cases here are the exam's hard mode: scenario items where every option looks plausible and the credited answer is the safest defensible one — refer out of scope, reduce load, protect the athlete — and, where two options survive, the one that individualises. The exam-strategy spine is applied here rather than re-taught: nothing about the Level 2 assessment's format is officially published, so format expectations are working assumptions anchored to the same LMS's other courses (per-module multiple-choice quizzes, a pass mark around 80%, generous retakes — as experienced first-hand on the Foundation Course, not published for Level 2). Because navigation is linear you cannot preview a quiz, so bank named numbers, frameworks and definitions as you watch each module; if retakes are permitted, treat the first attempt diagnostically; and drive the final week from your due queue rather than re-reading modules.",
+   "key_facts": [
+    "No official public documentation of the Level 2 assessment format exists — only the course page's marketing copy — so every format expectation should be held as a working assumption, not fact.",
+    "Verified about Level 2: digital-only, self-paced, English-only, delivered on the HYROX365 LMS, Level 1 as the prerequisite, and a published list of ten structured modules. The often-quoted figure of roughly 40 hours of material is published nowhere — it comes from totalling the LMS's own module runtimes first-hand, so file it as a working assumption.",
+    "On the same LMS, the Foundation Course places a mandatory multiple-choice quiz after each module — roughly 10–20 questions, an 80% pass mark, and unlimited retakes with an unchanged question set, as experienced first-hand on completing that course (none of this is published by HYROX365) — and Level 2 plausibly but unverifiably mirrors this.",
+    "Because LMS navigation is strictly linear you cannot preview a quiz, so capture named numbers, frameworks and expert-specific claims as you first watch each module.",
+    "The safest-defensible-answer principle: when several options look plausible, the credited one almost always refers out of scope, reduces load, or otherwise protects the athlete.",
+    "Scope of practice is a classic trap family: coaches screen and refer, and never diagnose injury or illness, treat medical conditions, or prescribe medication.",
+    "Secondary amenorrhoea, persistent cold intolerance, stalled performance despite rising volume, and pride in restriction together flag possible low energy availability (REDs) and warrant referral, not applause.",
+    "External-focus cues, which direct attention to the movement's effect on the environment, tend to outperform internal body-part cues — an advantage associated with Wulf's attentional-focus research that some evidence suggests persists, and may even grow, under fatigue.",
+    "A stalling sled usually signals intermittent impulse: re-overcoming static friction on every step costs more than keeping the sled moving with a continuous lean and long driving strides.",
+    "HYROX rulebooks generally prohibit outside assistance and enforce movement standards through no-reps, but exact standards and penalties vary by season, so brief athletes from the current rulebook rather than memory.",
+    "For a 60–90 minute race the aerobic system and threshold dominate, so a programme built on short maximal sprints with full recovery mismatches the event's energy-system demands.",
+    "Evidence on concurrent-training interference is mixed — recent meta-analytic work finds small, inconsistent effects concentrated mainly in explosive power — but a common, low-risk practical recommendation is to separate heavy strength and hard intervals by six to twenty-four-plus hours or periodise emphasis; much of what athletes report as interference is simply residual fatigue.",
+    "Pre-race anxiety responds to reappraisal of arousal as readiness, slow-exhale breathing, process goals and a rehearsed routine — not to outcome reassurance.",
+    "Final-week heuristic: work the spaced-repetition due queue and your per-module number notes; re-watching whole modules is the lowest-yield use of the last week."
+   ],
+   "training_link": "Run these twelve scenarios as a closed-book mock this week, then mine the misses twice: once for revision, once on the gym floor. Each applied case maps to a live coaching situation, so audit your athletes against them: check whether anyone's 'discipline' is masking under-fuelling, rewrite one internal cue per session as an external one, watch one sled push for stalling impulse between steps, and re-order any training day that stacks heavy lower-body strength against hard intervals. Before the next race weekend, run the pacing arithmetic from the calc item against each athlete's target time so their run splits are agreed numbers, not vibes.",
+   "glossary": [
+    {
+     "term": "Safest defensible answer",
+     "def": "Exam heuristic: among plausible MCQ options, pick the one that protects the athlete, stays inside coaching scope, or reduces load — it is almost always the credited response.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"24\" cy=\"20\" r=\"9\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"2\"/><path d=\"M40 20h22M54 13l8 7-8 7\" fill=\"none\" stroke=\"#67e8b0\" stroke-width=\"2\"/></svg>"
+    },
+    {
+     "term": "Working assumption",
+     "def": "A format expectation inferred from analogous evidence — the same LMS's other courses, first-hand course notes — rather than from published documentation; useful for planning, never presented as fact.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"24\" cy=\"20\" r=\"9\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"2\"/><path d=\"M40 20h22M54 13l8 7-8 7\" fill=\"none\" stroke=\"#67e8b0\" stroke-width=\"2\"/></svg>"
+    },
+    {
+     "term": "Distractor",
+     "def": "A wrong MCQ option written to look plausible; in coaching exams it typically breaches scope, ignores safety, or overstates certainty.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"24\" cy=\"20\" r=\"9\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"2\"/><path d=\"M40 20h22M54 13l8 7-8 7\" fill=\"none\" stroke=\"#67e8b0\" stroke-width=\"2\"/></svg>"
+    },
+    {
+     "term": "Diagnostic first attempt",
+     "def": "If retakes are permitted and the question set is static, using an early attempt to reveal what is asked, then revising against it before re-sitting.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"24\" cy=\"20\" r=\"9\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"2\"/><path d=\"M40 20h22M54 13l8 7-8 7\" fill=\"none\" stroke=\"#67e8b0\" stroke-width=\"2\"/></svg>"
+    },
+    {
+     "term": "Pace drift (positive split)",
+     "def": "Running later kilometres slower than earlier ones; costed in seconds per kilometre when modelling a race outcome.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"24\" cy=\"20\" r=\"9\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"2\"/><path d=\"M40 20h22M54 13l8 7-8 7\" fill=\"none\" stroke=\"#67e8b0\" stroke-width=\"2\"/></svg>"
+    },
+    {
+     "term": "Due queue",
+     "def": "The spaced-repetition list of items scheduled for review today — the highest-yield revision source in the final week.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"24\" cy=\"20\" r=\"9\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"2\"/><path d=\"M40 20h22M54 13l8 7-8 7\" fill=\"none\" stroke=\"#67e8b0\" stroke-width=\"2\"/></svg>"
+    },
+    {
+     "term": "Scope of practice",
+     "def": "The boundary of the coaching role: screen, programme and refer. Diagnosing, treating or prescribing for medical conditions sits outside it.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"24\" cy=\"20\" r=\"9\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"2\"/><path d=\"M40 20h22M54 13l8 7-8 7\" fill=\"none\" stroke=\"#67e8b0\" stroke-width=\"2\"/></svg>"
+    },
+    {
+     "term": "REDs",
+     "def": "Relative Energy Deficiency in Sport — impaired physiological function (menstrual, bone, immune, performance) driven by low energy availability. A screen-and-refer presentation, never a coaching fix.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"24\" cy=\"20\" r=\"9\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"2\"/><path d=\"M40 20h22M54 13l8 7-8 7\" fill=\"none\" stroke=\"#67e8b0\" stroke-width=\"2\"/></svg>"
+    }
+   ],
+   "relevant": true,
+   "exam_focus": "Expect scenario MCQs where every distractor is plausible and the credited answer is the safest defensible one — refer out, reduce load, protect the athlete, individualise. Format-wise, apply the strategy spine rather than relearning it: assume per-module multiple-choice quizzes with a pass mark around 80% and generous retakes — an inference from the same platform's Foundation Course, not anything HYROX365 publishes for Level 2 — and bank module-specific numbers and named frameworks as you go, because linear navigation means you cannot preview a quiz.",
    "figures": []
   }
  }

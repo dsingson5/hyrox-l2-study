@@ -1,0 +1,29 @@
+name: Daily lesson build
+
+# Regenerates the day's lesson page just after midnight Manila so the site
+# never goes stale. generate_daily.py rotates Deep Review days once the
+# authored curriculum (day 61) is exhausted.
+on:
+  schedule:
+    - cron: "5 16 * * *" # 00:05 Asia/Manila (UTC+8)
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Generate today's page
+        run: python generate_daily.py
+      - name: Commit & push if changed
+        run: |
+          git config user.name "hyrox-l2-daily-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add daily index.html data/day_completion.json
+          git diff --cached --quiet || { git commit -m "Daily build $(TZ=Asia/Manila date +'%Y-%m-%d %H:%M') Manila"; git push; }

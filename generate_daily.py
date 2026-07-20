@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""CSCS Daily Study Generator — Interactive Edition.
+"""HYROX L2 Daily Study Generator — Interactive Edition.
 
 Reads curriculum.json + questions.json, picks today's lesson, stacks
 spaced-repetition reviews at 1/3/7/14/30/90-day intervals (Cepeda et al. 2008),
@@ -92,6 +92,9 @@ def render_drills(lesson, is_today):
 
 
 
+# Shown in the page header (version + Manila build time). Bump on deploys.
+SITE_VERSION = "v3.0"
+
 SPACING_DAYS = [1, 3, 7, 14, 30, 90]
 SPACING_LABELS = {
     1: "Yesterday (24 hr)",
@@ -103,21 +106,25 @@ SPACING_LABELS = {
 }
 
 DOMAIN_THEME = {
-    "ES": {"name": "Exercise Science", "accent": "#5ec8ff", "accent_2": "#8fdfff", "glow": "rgba(94, 200, 255, 0.18)",
+    "CM": {"name": "Coaching, Mindset & Individualisation", "accent": "#5ec8ff", "accent_2": "#8fdfff", "glow": "rgba(94, 200, 255, 0.18)",
            "icon": "M5 22a7 7 0 0 0 7-7c0-2 0-3 2-5 1.5-1.5 3-3 3-5a5 5 0 0 0-10 0c0 2 1.5 3.5 3 5 2 2 2 3 2 5a7 7 0 0 0-7 7"},
-    "NT": {"name": "Nutrition", "accent": "#67e8b0", "accent_2": "#9bf2cf", "glow": "rgba(103, 232, 176, 0.18)",
+    "SM": {"name": "Sports Medicine, Recovery & Injury", "accent": "#67e8b0", "accent_2": "#9bf2cf", "glow": "rgba(103, 232, 176, 0.18)",
            "icon": "M12 2C8 6 6 10 6 14a6 6 0 0 0 12 0c0-4-2-8-6-12z"},
-    "EX": {"name": "Exercise Technique", "accent": "#ffb86b", "accent_2": "#ffd09a", "glow": "rgba(255, 184, 107, 0.18)",
+    "BM": {"name": "Biomechanics & Technique", "accent": "#ffb86b", "accent_2": "#ffd09a", "glow": "rgba(255, 184, 107, 0.18)",
            "icon": "M6 4l4 4-2 2 4 4 2-2 4 4-4 4-4-4 2-2-4-4-2 2-4-4z"},
-    "PD": {"name": "Program Design & Testing", "accent": "#c08fff", "accent_2": "#d8b8ff", "glow": "rgba(192, 143, 255, 0.18)",
+    "PH": {"name": "Physiology & Nutrition", "accent": "#c08fff", "accent_2": "#d8b8ff", "glow": "rgba(192, 143, 255, 0.18)",
+           "icon": "M12 21C7 17 3 13.5 3 9.5A4.5 4.5 0 0 1 12 6a4.5 4.5 0 0 1 9 3.5c0 4-4 7.5-9 11.5z"},
+    "PG": {"name": "Performance Pillars & Programming", "accent": "#ff92c2", "accent_2": "#ffbcd9", "glow": "rgba(255, 146, 194, 0.18)",
            "icon": "M3 17l6-6 4 4 8-8M14 7h7v7"},
 }
 
-# Short domain names used on the question cards (match app.js DOMAIN_NAME).
-DOMAIN_FULL = {"ES": "Exercise Science", "NT": "Nutrition", "EX": "Exercise Technique", "PD": "Program Design"}
-# Official-NSCA-weighted interleave targets, normalised over the 4 curriculum
-# domains. Practical/Applied (EX + PD) is the larger, harder pool.
-EXAM_WEIGHTS = {"ES": 0.30, "NT": 0.12, "EX": 0.18, "PD": 0.40}
+# Full domain names used on the question cards (match app.js DOMAIN_NAME).
+DOMAIN_FULL = {"CM": "Coaching, Mindset & Individualisation", "SM": "Sports Medicine, Recovery & Injury",
+               "BM": "Biomechanics & Technique", "PH": "Physiology & Nutrition",
+               "PG": "Performance Pillars & Programming"}
+# Interleave targets across the five L2 domains, proportional to their share
+# of authored lessons (keep in sync with app.js EXAM_WEIGHTS).
+EXAM_WEIGHTS = {"CM": 0.21, "SM": 0.15, "BM": 0.21, "PH": 0.16, "PG": 0.27}
 
 # Pinned ts-fsrs (Anki's default scheduler since 23.10). ESM via jsDelivr — no
 # build step, runs in a static GitHub Pages site. app.js falls back to an
@@ -212,8 +219,8 @@ def esc(s):
 
 
 def render_lesson_card(lesson, badge, badge_class, show_widget=True, is_today=False):
-    domain = lesson.get("domain", "ES")
-    theme = DOMAIN_THEME.get(domain, DOMAIN_THEME["ES"])
+    domain = lesson.get("domain", "CM")
+    theme = DOMAIN_THEME.get(domain, DOMAIN_THEME["CM"])
     motif = motifs.motif_for(lesson["topic_id"])
     hero_html = motifs.render_motif_hero(motif) if (is_today and motif) else ""
     motif_class = " has-motif" if (is_today and motif) else ""
@@ -420,7 +427,7 @@ def render_html(today, today_day, today_lesson, deep_review, reviews, questions,
     badge_class = "badge-review" if deep_review else "badge-new"
 
     t_topic = today_lesson["topic_id"]
-    t_domain = topic_domain.get(t_topic, today_lesson.get("domain", "ES"))
+    t_domain = topic_domain.get(t_topic, today_lesson.get("domain", "CM"))
 
     # ── Pretest (errorful generation) — 2 questions before the lesson ──
     pre_qs = []
@@ -454,7 +461,7 @@ def render_html(today, today_day, today_lesson, deep_review, reviews, questions,
         pool.append({"topic_id": t_topic, "orig_idx": oi, "q": q, "domain": t_domain})
     for interval, lesson in reviews:
         rtopic = lesson["topic_id"]
-        rdom = topic_domain.get(rtopic, lesson.get("domain", "ES"))
+        rdom = topic_domain.get(rtopic, lesson.get("domain", "CM"))
         for oi, q in sample_questions(rtopic, questions, 2, today_day * 11 + interval):
             pool.append({"topic_id": rtopic, "orig_idx": oi, "q": q, "domain": rdom})
     # cross-domain draws so the queue is never single-domain
@@ -468,7 +475,7 @@ def render_html(today, today_day, today_lesson, deep_review, reviews, questions,
             if ot_qs:
                 oi, q = ot_qs[0]
                 pool.append({"topic_id": ot, "orig_idx": oi, "q": q,
-                             "domain": topic_domain.get(ot, "ES")})
+                             "domain": topic_domain.get(ot, "CM")})
     practice_html = render_practice_section(pool, topic_domain)
 
     # core question set for the completion-aware resume: a day is 'done'
@@ -488,6 +495,15 @@ def render_html(today, today_day, today_lesson, deep_review, reviews, questions,
 
     weekday = today.strftime("%A")
     date_str = today.strftime("%B %d, %Y")
+    # Version + Manila build stamp (site rule: every page shows when it was built).
+    try:
+        from zoneinfo import ZoneInfo as _ZI
+        _build_now = _dt.datetime.now(_ZI("Asia/Manila"))
+    except Exception:
+        _build_now = _dt.datetime.now()
+    build_stamp = f'{SITE_VERSION} &middot; built {_build_now.strftime("%b %d, %Y %H:%M")} Manila'
+    # Total authored days = the last day of the final curriculum phase.
+    total_days = max(int(p["days"].split("-")[-1]) for p in meta["phases"])
     phase = next((p for p in meta["phases"]
                   if int(p["days"].split("-")[0]) <= today_day <= int(p["days"].split("-")[1])), None)
     phase_label = f'Phase {phase["phase"]}: {phase["name"]}' if phase else "Deep review phase — curriculum complete"
@@ -510,9 +526,10 @@ def render_html(today, today_day, today_lesson, deep_review, reviews, questions,
   <header class="top">
     <div class="h-day">HYROX L2 · Day {today_day} · {weekday}</div>
     <div class="h-date">{date_str}</div>
+    <div class="h-build" style="font-size:10px;color:var(--text-dim);opacity:.75;margin-top:2px">{build_stamp}</div>
     <div class="h-phase">{esc(phase_label)}</div>
     <div class="domains">{domains_html}</div>
-    <div class="progress"><div class="bar" style="width: {min(100, today_day / 182 * 100):.1f}%;"></div></div>
+    <div class="progress"><div class="bar" style="width: {min(100, today_day / total_days * 100):.1f}%;"></div></div>
     <div class="session-goal">Today: <b id="goal-new">{new_count}</b> new &middot; <b id="goal-due">0</b> due &middot; ~<b id="goal-min">25</b> min <span class="sg-note">— attendance, not a streak</span></div>
   </header>
   <nav class="lesson-nav" aria-label="Lesson navigation"><a class="ln-prev" id="ln-prev" href="#" onclick="return cscsNavPrev();">&larr; Previous lesson</a><span class="ln-here">Day {today_day} &middot; {date_str}</span><a class="ln-next" id="ln-next" href="#" onclick="return cscsNavNext();">Next lesson &rarr;</a></nav>
@@ -566,7 +583,7 @@ def build_index_html(base_html, available, this_iso, dtopic=None):
     """Wrap the day's page as a self-correcting landing page.
     Injects a tiny script that:
       1. Computes *today* in Asia/Manila (viewer's own clock is irrelevant).
-      2. Looks at localStorage cscs.state.v1.log to find dates the user has
+      2. Looks at localStorage hyroxl2.state.v1 to find dates the user has
          already answered questions on (grouped by Manila date).
       3. Redirects to the EARLIEST archive date that is <= today AND has no
          answer activity yet — so missed days resume on the right page rather
@@ -607,7 +624,7 @@ def build_index_html(base_html, available, this_iso, dtopic=None):
         '(document.documentElement||document).appendChild(ov);'
         'setTimeout(function(){var o=document.getElementById("sa-resume");if(o&&o.parentNode)o.parentNode.removeChild(o);},8000);'
         '}catch(e){}'
-        'function readLocal(){try{var raw=localStorage.getItem("cscs.state.v1");return raw?JSON.parse(raw):null;}catch(e){return null;}}'
+        'function readLocal(){try{var raw=localStorage.getItem("hyroxl2.state.v1");return raw?JSON.parse(raw):null;}catch(e){return null;}}'
         'function harvest(s,reviewed,engaged,cards){if(!s)return;var tt=s.touchedDays||{};for(var k in tt){if(tt[k])reviewed[k]=true;}'
         'var cc=s.cards||{};for(var ck in cc){engaged[ck.split("__")[0]]=true;cards[ck]=true;}}'
         # touchedDays is the page-identity truth and wins FIRST: if the user
@@ -738,9 +755,9 @@ def main():
         return 1
     lessons = curriculum["lessons"]
     # Map every question topic to its NSCA domain (for interleaving + calibration).
-    topic_domain = {l["topic_id"]: l.get("domain", "ES") for l in lessons.values()}
+    topic_domain = {l["topic_id"]: l.get("domain", "CM") for l in lessons.values()}
     for t in questions:
-        topic_domain.setdefault(t, "ES")
+        topic_domain.setdefault(t, "CM")
     today_lesson, deep_review = get_today_lesson(today_day, lessons)
     reviews = pick_review_lessons(today_day, lessons, meta.get("seen_through_day", 0))
     html = render_html(today, today_day, today_lesson, deep_review, reviews, questions, meta, topic_domain)

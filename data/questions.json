@@ -3160,5 +3160,625 @@
    "a": "Strength and station-specific qualities decay if dropped entirely; 1–2 weekly quality sessions with intensity preserved retain most of the adaptation while aerobic volume takes priority.",
    "type": "recall"
   }
+ ],
+ "cm_reflection": [
+  {
+   "q": "Define Schön's reflection-in-action and reflection-on-action, with one HYROX example of each.",
+   "a": "Reflection-in-action is adjusting live during the session, e.g. capping sled load mid-set when mechanics break down; reflection-on-action is structured review afterwards, e.g. a written post-session log analysing why the wall-ball block failed.",
+   "type": "recall"
+  },
+  {
+   "q": "State the three questions of Rolfe's reflective framework, in order.",
+   "a": "What? (what happened), So what? (what does it mean / why does it matter), Now what? (what will I do differently next time). The cycle only counts as complete when the 'now what' becomes a concrete action in the next plan.",
+   "type": "recall"
+  },
+  {
+   "q": "What is the core claim of Dweck's growth mindset, and how does a fixed mindset differ?",
+   "a": "Growth mindset holds that abilities are developable through effort, strategy and feedback; a fixed mindset treats abilities as innate and static, so setbacks feel like verdicts and correction feels like criticism.",
+   "type": "recall"
+  },
+  {
+   "q": "Why is process praise preferred over talent praise for athletes?",
+   "a": "Praising process and strategy tends to build persistence and willingness to attempt hard things, whereas talent praise tends to make athletes protect the 'talented' label — becoming risk-averse and fragile after setbacks.",
+   "type": "recall"
+  },
+  {
+   "q": "Name the four inputs of a deliberate coach self-review system.",
+   "a": "Session logs, filmed station work, peer observation, and athlete feedback loops. Together they give written, visual, external and athlete-sourced perspectives on the same coaching.",
+   "type": "recall"
+  },
+  {
+   "q": "What is toxic positivity, and why is it not the same as growth mindset?",
+   "a": "Toxic positivity is relentless optimism that denies real constraints and setbacks. Growth mindset says improvement is possible through effort and strategy, but it still acknowledges genuine limits such as sleep debt, injury and age — honesty is what keeps the athlete's trust.",
+   "type": "recall"
+  },
+  {
+   "q": "Mid-session, your athlete's wall-ball catches are drifting forward and reps are failing at no-rep depth. Walk through what reflection-in-action looks like here.",
+   "a": "Read it live and act now: change one cue (e.g. 'sit before you throw'), reduce the set size or ball target height to restore quality, and note the trigger. The point is adjusting during the session rather than only recording it for later review — though it should still feed tonight's written log.",
+   "type": "applied"
+  },
+  {
+   "q": "An athlete DNFs their first race and says 'I'm just not built for this.' Give a growth-mindset response that avoids toxic positivity.",
+   "a": "Reframe the DNF as information, not identity: 'You couldn't hold that pace yet — the splits show you went out 15 seconds per km too fast, and that's fixable with pacing work.' Acknowledge anything real (illness, poor prep) rather than pretending the race went fine, then set the 'now what' actions together.",
+   "type": "applied"
+  },
+  {
+   "q": "You coach ten group sessions a week and have almost no admin time. Design a minimal but sustainable reflection routine.",
+   "a": "Use Rolfe's three questions as a two-minute written log after every session, film just one station per week for review, and book one peer-observation swap per month with a single agreed focus. Reserve the longer Gibbs cycle for significant events only — a race, an injury, a session that went badly wrong.",
+   "type": "applied"
+  },
+  {
+   "q": "A strength-dominant athlete waves off your running cues with 'I've always run this way.' How does mindset thinking change your approach?",
+   "a": "That is fixed-mindset language, so correction is landing as criticism. Shift to process framing: tie the cue to their goal ('this is how we protect your run splits after the sleds'), praise their execution of previous changes, and introduce one cue at a time as an experiment to test rather than a fault to fix.",
+   "type": "applied"
+  },
+  {
+   "q": "A 52-year-old masters athlete with a knee niggle and poor sleep announces a target of a 15-minute PB this season. How do you respond with an honest growth mindset?",
+   "a": "Affirm that meaningful improvement is available through better pacing, strength work and station efficiency, but name the real constraints openly: the knee dictates loading choices and the sleep debt caps training tolerance. Reframe the goal as staged — 'not yet' on the full 15 minutes — and agree process targets first; promising the PB regardless would be toxic positivity.",
+   "type": "applied"
+  },
+  {
+   "q": "Calc: an athlete's first four 1 km race runs average 4:30/km and the last four average 5:03/km. Calculate the percentage slowdown, and state the 'so what' a coach should draw from it.",
+   "a": "4:30 = 270 s and 5:03 = 303 s, so the drop is 33 s; 33 ÷ 270 ≈ 12.2% slowdown. As a practical heuristic (not a published cut-off), a double-digit fade of this size points to a pacing or durability problem rather than 'a bad day' — the 'now what' is pacing discipline early in the race plus fatigue-resistance work, linking back to the durability material in the physiology modules.",
+   "type": "calc"
+  }
+ ],
+ "cm_athletedev": [
+  {
+   "q": "What three interacting domains make up the biopsychosocial model of the athlete?",
+   "a": "Biological (physiology, training, sleep), psychological (stress, motivation, mindset) and social (work, family, community). Performance and adherence emerge from their interaction, not from the biological domain alone.",
+   "type": "recall"
+  },
+  {
+   "q": "How does the typical HYROX athlete differ from the population most LTAD models were designed for?",
+   "a": "Most HYROX athletes are working-age amateurs with jobs and families — HYROX reports an average participant age in the late 30s — whereas LTAD frameworks were built primarily around staged youth development and talent pathways. The adult priorities are retention, health and sustainable progress, not talent identification.",
+   "type": "recall"
+  },
+  {
+   "q": "Name the four practical levers of club retention covered in this lesson.",
+   "a": "Belonging, visible progress, shared effort (suffering together), and celebration rituals.",
+   "type": "recall"
+  },
+  {
+   "q": "What is race-to-race myopia, and which long-term capacities does it undermine?",
+   "a": "Race-to-race myopia is planning only as far as the next event, so repeated tapers, race weeks and recoveries crowd out sustained development blocks. It undermines the multi-year capacities — aerobic base, strength reserve and station skill floors — which never get the uninterrupted training time they need.",
+   "type": "recall"
+  },
+  {
+   "q": "Give two culture red flags in a HYROX club or crew.",
+   "a": "A leaderboard-only culture in which only the fastest are celebrated, and treating overtraining or training through pain as a badge of honour. Both normalise under-recovery and predict injury and dropout.",
+   "type": "recall"
+  },
+  {
+   "q": "Why is athlete education described as a coaching multiplier?",
+   "a": "An athlete who understands why a session exists can self-manage — adjusting load, pacing and recovery — during the many hours the coach is not present, effectively multiplying the coach's influence beyond contact time.",
+   "type": "recall"
+  },
+  {
+   "q": "Your athlete arrives at Tuesday intervals after a redundancy announcement at work and five hours' sleep. The plan says 8 x 400 m hard. What do you do and why?",
+   "a": "Reduce or swap the session — for example convert it to easy aerobic work or cut the volume and intensity — because psychological stress and sleep loss draw on the same recovery budget as training, blunting adaptation and raising injury risk. Frame it as a planned adjustment rather than a failure, and revisit the intervals later in the week if things settle.",
+   "type": "applied"
+  },
+  {
+   "q": "Your crew's group chat only ever posts the top-three race times, and two beginners have quietly stopped attending. What cultural changes would you make?",
+   "a": "Add visible-progress recognition for all levels — personal-best boards, most-improved shout-outs, attendance milestones — and build belonging rituals such as partner formats and post-session coffee so beginners have a reason to stay. Keep the leaderboard, but stop it being the only story the club tells.",
+   "type": "applied"
+  },
+  {
+   "q": "An athlete wants to race HYROX every six weeks all season. How do you coach the conversation towards long-term development?",
+   "a": "Explain that constant racing forces repeated tapers and recoveries, so aerobic base, strength reserve and station skill floors — multi-year projects — never get sustained development blocks. Agree a small number of priority races and reframe the rest as training races or drop them.",
+   "type": "applied"
+  },
+  {
+   "q": "A member starts messaging you late at night about personal problems and asks to train one-to-one, off the books. What is the professionally sound response?",
+   "a": "Treat it as a safeguarding matter handled by club systems, not just personal judgement: keep communication within the club's agreed channels and hours, and route any one-to-one coaching through the normal, transparent arrangement so nothing happens off the books. Signpost personal problems to appropriate professional support rather than acting as a counsellor — the coach-athlete power imbalance is precisely why transparent arrangements exist, and, as the scope-of-practice lesson covers, clear professional boundaries protect both athlete and coach.",
+   "type": "applied"
+  },
+  {
+   "q": "You take over a crew whose previous coach programmed everything and explained nothing. What is your first educational move and why?",
+   "a": "Start teaching the why in small doses — one sentence per session on its purpose, plus a short monthly theme such as easy days easy, sleep or fuelling — so athletes begin self-managing load and effort. Educated athletes adhere better and make sensible decisions on the days you are not there.",
+   "type": "applied"
+  },
+  {
+   "q": "An athlete's planned week totals 1300 AU by the session-RPE method: intervals 50 min at RPE 8 (400 AU), long run 80 min at RPE 5 (400 AU), strength 60 min at RPE 5 (300 AU), easy run 50 min at RPE 4 (200 AU). A major work deadline hits and your agreed heuristic is to cut weekly load by about 25%. What is the target load, and how would you reallocate the week to hit it while protecting the long run and the strength session?",
+   "a": "Target: 1300 x 0.75 ≈ 975 AU, so roughly 325 AU has to come out. Protect the long run (400 AU) and strength (300 AU) as the week's key developmental sessions and take the cut elsewhere: drop the easy run (−200 AU) and ease the intervals from RPE 8 to RPE 6 (50 x 6 = 300, −100 AU). That lands on 1000 AU — a roughly 23% reduction, close enough to target — with both priority sessions untouched. Which sessions get cut first should already have been agreed with the athlete, so the reduction feels planned rather than like failure.",
+   "type": "calc"
+  }
+ ],
+ "xs_sportsmed": [
+  {
+   "q": "State the formula for session-RPE training load and its units.",
+   "a": "sRPE load = session RPE on a 0–10 scale multiplied by session duration in minutes. The result is expressed in arbitrary units (AU).",
+   "type": "recall"
+  },
+  {
+   "q": "Name three features that distinguish non-functional overreaching from functional overreaching.",
+   "a": "Timescale (NFOR stagnation lasts weeks to months versus days to about two weeks for FOR), outcome (NFOR brings no supercompensation when load is reduced, FOR rebounds above baseline), and accompanying signs (NFOR typically adds persistent mood disturbance, sleep disruption and elevated resting HR, whereas FOR is a planned, short-lived dip).",
+   "type": "recall"
+  },
+  {
+   "q": "Why is overtraining syndrome described as a diagnosis of exclusion, and what does that mean for the coach's role?",
+   "a": "OTS can only be labelled after a physician rules out medical causes such as thyroid dysfunction, anaemia, infection or clinical depression, because these mimic its presentation. The coach's role is therefore to recognise the pattern and refer, never to diagnose or treat.",
+   "type": "recall"
+  },
+  {
+   "q": "Which recovery intervention has the strongest evidence base, and what is the key caveat with cold-water immersion?",
+   "a": "Sleep has the most consistent evidence of any recovery intervention. Cold-water immersion used routinely after strength training may blunt hypertrophy and strength adaptations, so it is better reserved for competition-dense periods where next-day freshness outweighs adaptation.",
+   "type": "recall"
+  },
+  {
+   "q": "An athlete reports knee pain at 2/10 during walking lunges that is gone by the next morning. What is your traffic-light call and this week's action?",
+   "a": "Amber: pain is mild (about 3/10 or below) and settles within 24 hours, so training continues with modification — reduce lunge depth or load, trim running or wall-ball volume, and monitor daily. It becomes red (stop and refer) if pain rises, persists past 24 hours, or changes movement mechanics.",
+   "type": "applied"
+  },
+  {
+   "q": "A previously keen athlete has been flat for three weeks: times are slipping despite full effort, morning HR is up, sleep is poor, and motivation has vanished. Another coach calls them lazy. What do you do?",
+   "a": "This is the classic NFOR picture, not laziness — declining performance at maintained effort plus autonomic and mood signs. Cut load substantially, prioritise sleep, and monitor; if the picture does not clearly improve over the following weeks, refer to a physician to exclude medical causes before any OTS label is considered.",
+   "type": "applied"
+  },
+  {
+   "q": "A runner-dominant athlete new to HYROX adds heavy sled push and pull twice weekly and develops low-back tightness by week two. What is the likely training error and your modification?",
+   "a": "The likely error is a load spike on an untrained pattern — high sled volume with fatigue-driven lumbar flexion on a small strength base, not the sled being inherently dangerous. Regress to lighter sled loads with strict trunk position, halve the weekly sled volume and rebuild gradually, coaching hip drive and neutral spine while monitoring symptoms with the traffic-light rule.",
+   "type": "applied"
+  },
+  {
+   "q": "An athlete's HRV app shows a sharp one-day drop this morning, but their wellness scores and resting HR are normal. Do you cancel today's interval session?",
+   "a": "No — a single-day HRV reading is noisy and decisions should rest on multi-day trends against the athlete's own baseline. Proceed with an extended warm-up, check how they respond to the first efforts, and only reduce the session if subjective feel or output confirms fatigue; if the downward trend persists several days, then adjust the plan.",
+   "type": "applied"
+  },
+  {
+   "q": "An athlete six weeks post calf strain, now pain-free walking, wants to jump straight back into 1 km run repeats. Sequence their return using return-to-training logic.",
+   "a": "Apply load before speed: first confirm pain-free range and daily-life function, then rebuild calf loading capacity (heavy slow calf raises, brisk walking, ski-erg or bike to hold conditioning off-feet), then reintroduce easy continuous running, then strides and hills, and only then interval density like 1 km repeats. Each step progresses only if symptoms obey the 24-hour rule, with station regressions covering fitness in the meantime.",
+   "type": "applied"
+  },
+  {
+   "q": "A new client scores poorly on a movement screen but is asymptomatic and races in six weeks. Do you overhaul their technique and delay hard training?",
+   "a": "No — screens predict injury poorly at the individual level, so a poor score is programming information, not a red light. Keep race preparation on track, weave the screen findings into warm-ups and accessory work, and rely on ongoing monitoring (wellness, sRPE trends, niggle reports) to manage actual risk.",
+   "type": "applied"
+  },
+  {
+   "q": "Calculate the weekly sRPE load: Monday 60 min at RPE 7, Wednesday 45 min at RPE 8, Saturday 90 min at RPE 6.",
+   "a": "Monday 7 x 60 = 420 AU; Wednesday 8 x 45 = 360 AU; Saturday 6 x 90 = 540 AU. Weekly total = 420 + 360 + 540 = 1,320 AU.",
+   "type": "calc"
+  },
+  {
+   "q": "An athlete's last four weekly loads were 1,200, 1,400, 1,300 and 2,100 AU (most recent last). Compute the ACWR using the 4-week average as chronic load and interpret it.",
+   "a": "Chronic load = (1,200 + 1,400 + 1,300 + 2,100) / 4 = 1,500 AU; acute load = 2,100 AU; ACWR = 2,100 / 1,500 = 1.40. This sits above the commonly cited 0.8–1.3 band, flagging a load spike worth reviewing — but since ACWR is a statistically contested heuristic, the response is to check context (what drove the spike, how the athlete is responding) and moderate next week's progression, not to treat the number as proof of imminent injury.",
+   "type": "calc"
+  }
+ ],
+ "xs_biomech": [
+  {
+   "q": "Define impulse and state how it differs from force.",
+   "a": "Impulse is net force multiplied by the time it acts — the area under the force–time curve — and it equals the change in momentum produced. Force is an instantaneous push or pull; impulse is force accumulated over time, so a smaller force applied for longer can produce the same momentum change as a larger, briefer one.",
+   "type": "recall"
+  },
+  {
+   "q": "State the two ends of the HYROX impulse continuum, with one station at each end and the coaching priority each implies.",
+   "a": "One end is the single sustained impulse: a sled push (or pull) start from standstill, where a large force–time area must be accumulated in one continuous lean-and-drive, because every stall throws away momentum already bought. The other end is brief impulses repeated at cadence: wall balls (or burpee broad jumps), where every pause re-pays the cost of accelerating body and ball from rest — so the priority is unbroken rhythm rather than one big effort.",
+   "type": "recall"
+  },
+  {
+   "q": "For a fresh novice and a race-prep athlete, name the matching practice schedule AND feedback emphasis — one line each.",
+   "a": "Novice: blocked practice (AAA-BBB) with frequent knowledge of performance, since stable, low-interference conditions and movement-quality feedback help shape the pattern early. Race-prep athlete: random-variable practice (shuffled run–station couplets, often under fatigue) with faded or summary feedback leaning on knowledge of results — though the ideal mix is task-dependent, and KR remains useful at every level.",
+   "type": "recall"
+  },
+  {
+   "q": "This lesson files kinetic-chain faults into three energy-leak families as a teaching heuristic. Name them and one station or context that exposes each.",
+   "a": "Contralateral hip drop — exposed by sandbag lunges and single-leg stance in fatigued running. Trunk collapse — exposed by wall balls and the sled push. Overstriding — exposed by running, especially late-race under fatigue.",
+   "type": "recall"
+  },
+  {
+   "q": "Your athlete keeps stalling in the first metre of the sled push, restarting three or four times. Using impulse–momentum reasoning, what do you change?",
+   "a": "From standstill the sled needs a large force–time area before it moves, and every stall throws away the momentum already bought. Cue a lower, pre-tensioned start with one long continuous drive — arms locked, hips low, short fast steps — so force is applied for longer without interruption, rather than repeated maximal but brief efforts.",
+   "type": "applied"
+  },
+  {
+   "q": "A novice who has just re-learned lunge mechanics after a knee niggle, and an experienced athlete six weeks from race day, both need station practice this week. Assign each a practice schedule and justify it.",
+   "a": "The novice gets blocked practice — repeated lunge sets with frequent knowledge of performance — because re-learning benefits from stable, low-interference conditions. The race-prep athlete gets random-variable practice — shuffled run–station couplets under fatigue — because contextual interference and state specificity improve retention and transfer to race conditions.",
+   "type": "applied"
+  },
+  {
+   "q": "An athlete overstrides visibly in the back half of their race-pace runs. Give the cue you would use and explain why you chose it over 'shorten your stride'.",
+   "a": "Use an external, rhythm-based cue — for example a metronome set roughly 5% above their current cadence with 'quick feet to the beat'. Raising cadence at constant speed shortens the stride automatically and reduces braking impulse, whereas 'shorten your stride' is an internal, body-focused cue that invites conscious control and tends to degrade coordination.",
+   "type": "applied"
+  },
+  {
+   "q": "You currently comment after every wall-ball rep for a well-trained athlete. What would you change and why?",
+   "a": "Fade the feedback: move to summary or bandwidth feedback — comment only after a set, or when form drifts outside an agreed tolerance. Constant feedback breeds dependency and blocks the athlete's own error detection; faded feedback tends to preserve session performance while improving retention.",
+   "type": "applied"
+  },
+  {
+   "q": "Simulation video shows your athlete's technique is clean on stations done fresh, but their trunk collapses and hips drop from station five onwards. Design next week's key session.",
+   "a": "Rehearse technique in the degraded state, not just fresh: a 1 km run at race pace straight into their two leakiest stations, repeated for three to four rounds, with one external cue per station — 'chest to the target' for the trunk on wall balls, and for the hips an environment-referenced cue such as 'point your belt buckle at the far cone'. (A genuinely external hip-stability cue is hard to write — note that 'hips level' directs attention to a body part and is therefore internal.) Trunk control and hip stability degrade first under fatigue, so the compromised state must become the practised state.",
+   "type": "applied"
+  },
+  {
+   "q": "An open-division athlete breaks their wall balls into singles, pausing and resetting between every rep. Explain the mechanical cost and your fix.",
+   "a": "Each pause discards the rhythmic and elastic contribution, so every rep re-pays the impulse cost of accelerating the ball and body from rest — total work and station time rise sharply. Prescribe planned sets (for example steady blocks of 10–15 with a breathing cadence) and an external cue such as 'drive the ball through the target' to restore continuous rhythm.",
+   "type": "applied"
+  },
+  {
+   "q": "A sled (equipment plus load) of 120 kg is at rest. The athlete applies a mean net horizontal force of 300 N for 0.8 s. Calculate the impulse and the resulting sled velocity.",
+   "a": "Impulse = 300 N × 0.8 s = 240 N·s. Change in velocity = impulse ÷ mass = 240 ÷ 120 = 2.0 m/s. Note that 'net' force means friction is already subtracted — reading a stated applied force as net force is a classic trap.",
+   "type": "calc"
+  },
+  {
+   "q": "An athlete runs 1 km repeats at 5:00/km with a cadence of 168 steps per minute. (a) What is their stride length (distance per step, per the site's convention)? (b) If cadence rises 5% at the same speed, what is the new stride length?",
+   "a": "5:00/km = 300 s, so speed = 1000 ÷ 300 ≈ 3.33 m/s. (a) 168 spm = 2.8 steps/s, so stride length = 3.33 ÷ 2.8 ≈ 1.19 m. (b) New cadence = 176.4 spm = 2.94 steps/s, so stride length = 3.33 ÷ 2.94 ≈ 1.13 m — about 5% shorter, illustrating the cadence–stride trade-off at fixed speed.",
+   "type": "calc"
+  }
+ ],
+ "xs_physio": [
+  {
+   "q": "Name the three determinants in the classic three-part model of endurance performance.",
+   "a": "VO2max (the aerobic ceiling), fractional utilisation (the sustainable percentage of VO2max, set by the threshold boundaries) and running economy (the oxygen cost at a given pace). Race velocity depends on all three together.",
+   "type": "recall"
+  },
+  {
+   "q": "Is lactate the cause of the muscle 'burn' and fatigue? Explain.",
+   "a": "No. Lactate is a fuel shuttled to and oxidised by other fibres, the heart and the liver. Acidosis tends to be driven by hydrogen-ion accumulation, and blood lactate is only a marker of the balance between glycolytic production and clearance.",
+   "type": "recall"
+  },
+  {
+   "q": "Distinguish LT1 from LT2.",
+   "a": "LT1 (aerobic threshold) is where lactate first rises above baseline, the top of easy effort. LT2 (anaerobic threshold / MLSS) is the highest intensity at which lactate production and clearance still balance — above it lactate rises inexorably, so it marks the ceiling of sustainable intensity.",
+   "type": "recall"
+  },
+  {
+   "q": "Which supplements carry the strongest ergogenic evidence base?",
+   "a": "Creatine, caffeine, beta-alanine and sodium bicarbonate (dietary nitrate/beetroot also has good support). Most other products are weakly evidenced.",
+   "type": "recall"
+  },
+  {
+   "q": "A strength-dominant athlete posts a strong VO2max in the lab but fades badly on the back-half runs. Where do you direct training, and why?",
+   "a": "Toward fractional utilisation (threshold and tempo work) and economy (easy aerobic volume, run frequency, drills), plus compromised-running bricks. A high aerobic ceiling is largely wasted if the sustainable fraction and economy are low.",
+   "type": "applied"
+  },
+  {
+   "q": "Your athlete says the runs 'feel impossible' straight after the sled, even though their solo run pace is fine. What is happening and how do you train it?",
+   "a": "Compromised running — residual metabolic fatigue, blood-flow competition after loaded stations and neuromuscular interference degrade economy. Train it with station-to-run bricks and runs performed in a deliberately pre-fatigued state.",
+   "type": "applied"
+  },
+  {
+   "q": "Two athletes have identical VO2max but clearly different race times. What most likely separates them, and how do you improve the slower one?",
+   "a": "Economy and/or fractional utilisation. Improve economy with strength training, plyometrics, technique drills and easy running volume, and raise the sustainable fraction with threshold work.",
+   "type": "applied"
+  },
+  {
+   "q": "In a hot race an athlete drinks heavily throughout, finishes nauseous, headachy and confused, and has gained weight. Dehydration or hyponatraemia — and what must you not do?",
+   "a": "Exercise-associated hyponatraemia from over-drinking (the weight gain is the tell, not a fluid deficit). Do not give more plain water; seek medical help and consider sodium — treating it as dehydration would be dangerous.",
+   "type": "applied"
+  },
+  {
+   "q": "How would you periodise daily carbohydrate across a week with two hard interval days, one long day and three easy days?",
+   "a": "Raise carbohydrate on the two hard days and the long day ('fuel for the work required') and keep the easy days lower. Fully fuel before and after key sessions, and reserve any low-carbohydrate work for easy days only.",
+   "type": "applied"
+  },
+  {
+   "q": "A lean female athlete chasing 'race weight' reports stalled performance, frequent colds and menstrual disturbance. What do you suspect, and what is your first step?",
+   "a": "Low energy availability / REDs. The first step is to raise energy intake (especially carbohydrate), de-emphasise body weight, and refer for medical and dietetic assessment — restore the health floor before chasing performance.",
+   "type": "applied"
+  },
+  {
+   "q": "An age-grouper targets a 100-minute HYROX. Plan an in-race carbohydrate intake and give the approximate total.",
+   "a": "~100 min (1.67 h) sits in the ~1-2 h band, so target ~30 g/h: 30 x 1.67 ≈ 50 g total. Deliver via, say, a 30 g gel plus roughly 20 g from a carbohydrate drink (~50 g), gut-trained in advance. The ~60 g/h and ~90 g/h bands apply only to efforts running well beyond 2 h, so they do not apply here.",
+   "type": "calc"
+  },
+  {
+   "q": "Pre-session mass 75.0 kg, post-session 73.4 kg; the athlete drank 0.6 L during a 60-minute session and did not urinate. Calculate the sweat rate.",
+   "a": "Sweat loss = mass lost + fluid drunk = (75.0 − 73.4) + 0.6 = 1.6 + 0.6 = 2.2 kg ≈ 2.2 L over 1 h, so the sweat rate ≈ 2.2 L/h. Plan fluids to keep net loss under about 2-3% of body mass.",
+   "type": "calc"
+  }
+ ],
+ "xs_racecraft": [
+  {
+   "q": "Name the three ledgers of the HYROX race model and state how they combine into a race plan.",
+   "a": "Running time, station time and roxzone time — total race time is simply their sum. A target finish is therefore split into a run budget, a station budget and a roxzone budget, each converted into per-kilometre pace and per-station split targets, and the coach attacks the cheapest gains first, which are usually roxzone and pacing errors rather than fitness.",
+   "type": "recall"
+  },
+  {
+   "q": "What is the roxzone, and why do coaches call time spent there 'free time'?",
+   "a": "The roxzone is the transition area athletes pass through between each run and station. Its time counts toward the finish but is reduced mainly by rehearsal, station-order familiarity and logistics planning rather than by added fitness, so minutes can be saved there at very little training cost — which is why coaches, a little loosely, call it 'free'.",
+   "type": "recall"
+  },
+  {
+   "q": "What does the damper on a SkiErg or rower actually control?",
+   "a": "It sets the drag factor — how much air the flywheel works against each stroke — which changes the gearing and feel of the stroke. It does not set intensity; intensity comes only from the power (split) the athlete produces.",
+   "type": "recall"
+  },
+  {
+   "q": "Classify the eight stations by demand fingerprint: which are pure engine, which are strength-endurance, and which carry the highest failure-set or no-rep risk?",
+   "a": "SkiErg and Row are pure-engine, paceable stations. Sled Push, Sled Pull, Farmers Carry and Sandbag Lunges are strength-endurance stations. Wall Balls and Burpee Broad Jumps are rep-integrity stations with the highest risk of no-reps and failure sets under fatigue.",
+   "type": "recall"
+  },
+  {
+   "q": "An athlete's runs 1–2 are their fastest, then runs 6–8 collapse by 30–40 s/km while station splits stay solid. Diagnose and prescribe.",
+   "a": "This is a classic pacing error — going out too hot and paying for it as compromised running — not an endurance deficit. Enforce first-run discipline at or slightly below goal average pace, set an even-to-negative split plan with a concrete cap for run 1, and rehearse it in compromised-pair sessions so the target pace is calibrated under race-like fatigue.",
+   "type": "applied"
+  },
+  {
+   "q": "A sub-40-minute 10 km runner loses around four minutes to similar-level peers across the sleds and sandbag lunges. What is the programming priority for the next block?",
+   "a": "Treat them as a runner profile and attack the strength-endurance fingerprint: heavy sled push/pull work, loaded carries and lunge volume as the block's priority, with running dropped to maintenance. Include couplets such as sled work straight into race-pace running so the new strength expresses itself under race conditions.",
+   "type": "applied"
+  },
+  {
+   "q": "Your athlete always attempts Wall Balls unbroken, hits failure around rep 60, and then loses a minute standing bent over. How do you re-plan the station?",
+   "a": "Prescribe a scheduled break scheme that starts before failure — for example steady sets of 15–20 reps with short 5–10 s planned rests — and rehearse it in training under race fatigue. Planned short breaks cost seconds; unplanned failure sets cost a minute or more plus no-rep risk as form degrades.",
+   "type": "applied"
+  },
+  {
+   "q": "An athlete six weeks out develops a shin niggle and cannot tolerate normal run volume. How do you protect their engine without aggravating the tissue?",
+   "a": "Shift the bulk of aerobic volume off-feet — SkiErg, rower and bike sessions prescribed by split or power targets at equivalent internal load, keeping the same intensity distribution. Retain only the minimal specific running the tissue tolerates, and reintroduce run volume progressively as symptoms settle.",
+   "type": "applied"
+  },
+  {
+   "q": "A first-time amateur is losing roughly eight minutes in the roxzone. Race day is in two weeks — what do you actually do?",
+   "a": "Rehearse, don't train: walk them through the venue layout or a mock course, have them recite the station order until automatic, run one timed race-flow simulation practising direct lines and immediate starts at each station, and fix logistics (grip, laces, gel placement) in advance. Roxzone time is close to free — this is the highest-return fortnight intervention available.",
+   "type": "applied"
+  },
+  {
+   "q": "A nervous first-timer asks 'how fast should I run the first run?' Give your coaching answer and the reasoning.",
+   "a": "At, or a touch slower than, their target average race pace — give them a concrete split cap for run 1. Fresh legs and adrenaline make goal pace feel too easy in the first kilometre, and every second gained there tends to be repaid with interest as compromised running in the back half.",
+   "type": "applied"
+  },
+  {
+   "q": "An athlete targets 75:00. You budget 33:00 total for the eight stations and 6:00 total for roxzone. What average run pace do the eight 1 km runs require?",
+   "a": "Run budget = 75:00 − 33:00 − 6:00 = 36:00 for 8 km, so 36:00 ÷ 8 = 4:30 per km average. If that pace is unrealistic for the athlete, the model says to revise the target or find savings in stations/roxzone — the arithmetic exposes the trade-off.",
+   "type": "calc"
+  },
+  {
+   "q": "(a) What 500 m split delivers a 4:00 total on the 1,000 m Row? (b) Estimate the watts that split requires using the standard erg formula W = 2.80 ÷ (pace in seconds per metre)³.",
+   "a": "(a) 4:00 ÷ 2 = a 2:00/500 m split. (b) Pace = 120 s ÷ 500 m = 0.24 s/m; 0.24³ = 0.013824; 2.80 ÷ 0.013824 ≈ 203 W. Note the cubic relationship: holding just a few seconds faster per 500 m demands a disproportionately large jump in power.",
+   "type": "calc"
+  }
+ ],
+ "xs_periodization": [
+  {
+   "q": "Name the three commonly cited periodization models and state what the comparative evidence actually supports.",
+   "a": "Linear, block, and undulating (DUP). Trials tend to show that structured plans beat unstructured training, but differences between the models are small — adherence and sensible load management matter more than model choice.",
+   "type": "recall"
+  },
+  {
+   "q": "State the textbook taper prescription for volume, intensity, frequency and duration.",
+   "a": "Cut volume by roughly 40–60%, maintain intensity and maintain frequency, over one to two weeks (leaning longer after very heavy prior loading). Expect small but meaningful gains, typically around 1–3%.",
+   "type": "recall"
+  },
+  {
+   "q": "What is the interference effect and under which three conditions does it matter most?",
+   "a": "The blunting of strength and hypertrophy adaptations by concurrent endurance training. It matters most with high endurance volumes, when same-muscle endurance work immediately precedes strength training, and when key lifting is performed glycogen-depleted.",
+   "type": "recall"
+  },
+  {
+   "q": "List the four phases of a practical HYROX macrocycle and each phase's dominant emphasis.",
+   "a": "General preparation (maximal strength plus aerobic base), specific preparation (station endurance and compromised running), competition (race simulations and taper), and transition (reduced structured training for physical and mental regeneration).",
+   "type": "recall"
+  },
+  {
+   "q": "A runner-dominant athlete is 16 weeks from their A race and loses time on sleds and carries. How do you sequence their macrocycle?",
+   "a": "Extend general prep with a maximal-strength emphasis (their limiter) while maintaining, not building, run volume; use specific prep to convert strength into station endurance under fatigue with compromised-running sessions; finish with a competition phase of full or partial simulations and a 1–2 week taper. The phase order is standard — the time allocated to each phase is what individualises it.",
+   "type": "applied"
+  },
+  {
+   "q": "In specific prep an athlete wants to keep four heavy lifting sessions per week while adding around 50 km of running. What do you change and why?",
+   "a": "Cut lifting to two maintenance sessions, order strength first on double days or separate sessions by about six hours, and shift some easy volume to off-feet modalities. At that combined load the goal is holding strength while running specificity rises — chasing strength gains there invites interference and unmanageable total load.",
+   "type": "applied"
+  },
+  {
+   "q": "An athlete has two races five weeks apart and says both matter. How do you manage the block?",
+   "a": "Force a hierarchy: designate one A and one B. Give the B race a 3–5 day mini-taper, follow it with a short recovery microcycle, fit in one solid loading week, then run the full taper into the A race, keeping a weekly strength touch throughout so nothing has to be rebuilt.",
+   "type": "applied"
+  },
+  {
+   "q": "Ten days out, mid-taper, your athlete feels flat and wants to add extra sessions 'to get fitness back'. Your call?",
+   "a": "Hold the taper. Flatness mid-taper is common and usually reflects fatigue still clearing, not fitness lost; keep the planned short race-pace touches for sharpness and refuse volume additions. Fitness is already banked — the taper's job is shedding fatigue.",
+   "type": "applied"
+  },
+  {
+   "q": "During a deliberately big week your athlete's performance and mood dip. How do you decide whether this is acceptable overreaching or a problem?",
+   "a": "Check it against the plan: a dip during a scheduled overload block with the recovery week already written in is functional overreaching, and you expect rebound above baseline after that recovery. If the decrement persists for weeks despite the recovery actually being taken, treat it as non-functional overreaching and cut load. The distinguishing feature is planned recovery and subsequent rebound, not the dip itself.",
+   "type": "applied"
+  },
+  {
+   "q": "A colleague's 'block periodization' plan rotates heavy, light and moderate days within every week all season. What is the terminology error, and does it matter for the athlete?",
+   "a": "That is undulating (DUP), not block — block concentrates one quality per mesocycle and relies on residuals. For outcomes it may matter little, and DUP-style mixing often suits HYROX's concurrent demands well; but for the assessment, and for justifying decisions to athletes, the models must be named correctly.",
+   "type": "applied"
+  },
+  {
+   "q": "An athlete peaks at 48 km of running per week. Prescribe a two-week taper at 60% of peak in week 1 and 40% of peak in week 2, giving weekly kilometres.",
+   "a": "Week 1: 48 × 0.60 = 28.8 ≈ 29 km. Week 2: 48 × 0.40 = 19.2 ≈ 19 km. This sits within the 40–60% reduction guideline; intensity is preserved with short race-pace efforts inside that reduced volume.",
+   "type": "calc"
+  },
+  {
+   "q": "An athlete trains 10 h/week. General prep splits 40% aerobic running, 30% strength, 20% off-feet, 10% station skill; specific prep keeps 10 h but shifts to 35% running, 20% strength, 15% off-feet, 30% station/compromised work. Give hours per category in each phase and interpret the strength change.",
+   "a": "General prep: 4.0 / 3.0 / 2.0 / 1.0 h. Specific prep: 3.5 / 2.0 / 1.5 / 3.0 h. Strength drops from 3.0 to 2.0 h — a maintenance dose, not abandonment — while specific station and compromised work triples, which is exactly the general-to-specific shift the template intends.",
+   "type": "calc"
+  }
+ ],
+ "xs_mental": [
+  {
+   "q": "Name the three goal types in the goal-setting architecture and state which tends to hold up best under race pressure, and why.",
+   "a": "Outcome goals (result), performance goals (own-standard targets) and process goals (controllable actions). Process goals tend to hold up best under pressure because they remain fully within the athlete's control regardless of rivals or conditions.",
+   "type": "recall"
+  },
+  {
+   "q": "List the stages of the needs-analysis pipeline in order.",
+   "a": "Athlete history, testing battery, gap analysis, priorities, programme, then re-test. It is the engine that turns athlete information into individualised programming decisions.",
+   "type": "recall"
+  },
+  {
+   "q": "Distinguish association from dissociation as attentional strategies, and note one risk of dissociation.",
+   "a": "Association is internal monitoring of body signals (effort, breathing, form) and supports accurate pacing, especially in experienced athletes; dissociation directs attention away from discomfort (external focus, counting, imagery) and helps tolerate pain spikes. Dissociation's risk is blunted pacing judgement — the athlete stops reading the signals that regulate effort.",
+   "type": "recall"
+  },
+  {
+   "q": "What symptoms suggest an athlete is over-aroused before a race, and which class of tool matches that state?",
+   "a": "Racing thoughts, jitteriness, a rushed warm-up and transitions, and going out too hard. The match is down-regulation: slow, exhale-biased breathing, a calming pre-race routine and a quieter environment.",
+   "type": "recall"
+  },
+  {
+   "q": "Ten minutes before the start your athlete is flat, quiet and withdrawn in the corral. What do you do?",
+   "a": "Treat it as under-arousal and up-regulate: up-tempo music, dynamic movement or strides, and short energising cue words or self-talk. Avoid calming breathing work, which would deepen the flatness — the tool must match the symptom, not a fixed routine.",
+   "type": "applied"
+  },
+  {
+   "q": "An athlete reliably falls apart mentally around rep 60 of the wall balls. Design the mental intervention.",
+   "a": "Script an if-then plan for that exact moment (\"if it bites at rep 60, then one reset breath and count in blocks of ten\"), chunk the set in advance with a planned break scheme, and rehearse the whole script under genuine fatigue in training sessions. Predictable crisis points should never be met unscripted on race day.",
+   "type": "applied"
+  },
+  {
+   "q": "Case: a strength-dominant athlete posts top-quartile station splits but their run splits fade badly from run 5 onward. Which individualisation lever do you pull first, and what is the intervention?",
+   "a": "The most-limiting factor is aerobic durability/volume tolerance, not strength, so prioritise easy-run volume plus compromised-running work while holding strength at maintenance. Re-test a fatigued-running benchmark in roughly 6–8 weeks to confirm the intervention worked.",
+   "type": "applied"
+  },
+  {
+   "q": "An athlete's full test battery comes back \"slightly below average\" everywhere with no obvious gap. How do you individualise their programme?",
+   "a": "With a flat profile, prioritise by race impact and trainability: build the aerobic engine first, since running occupies roughly half the race, and keep other qualities at maintenance. Also revisit the history and test selection — a completely flat profile can mean the battery was not sensitive enough to expose the real limiter.",
+   "type": "applied"
+  },
+  {
+   "q": "Your athlete panics whenever they are overtaken early in the race because they are fixated on their target finish position. Restructure their goals for race day.",
+   "a": "Move outcome goals (finish position) back to season level and anchor race day in process goals: pacing to their own planned splits, transition routine and breathing cadence. Add a scripted refocus routine — a cue word plus an attentional anchor — for the specific moment of being overtaken.",
+   "type": "applied"
+  },
+  {
+   "q": "You have one session with an athlete who races in five days. Do you teach them a brand-new breathing protocol? Justify your decision.",
+   "a": "No — mental skills only hold up under stress once rehearsed, so a new protocol introduced in race week is likely to fail or distract. Refine tools the athlete already uses, write simple if-then cards for their known crisis points, and keep race week familiar; introduce new protocols in the next training block.",
+   "type": "applied"
+  },
+  {
+   "q": "Calc: an athlete's 1,000 m SkiErg benchmark improves from 4:10 to 3:55 over a training block. What is the percentage improvement?",
+   "a": "4:10 = 250 s and 3:55 = 235 s, so the improvement is 15 s. 15 ÷ 250 = 0.06, i.e. a 6% improvement.",
+   "type": "calc"
+  },
+  {
+   "q": "Calc: a needs analysis assigns weightings of 50% aerobic running, 25% strength, 15% station skill and 10% mental skills/mobility to an athlete with 6 hours (360 minutes) of weekly training time. Allocate the minutes.",
+   "a": "Aerobic running 0.50 × 360 = 180 min; strength 0.25 × 360 = 90 min; station skill 0.15 × 360 = 54 min; mental/mobility 0.10 × 360 = 36 min. Check: 180 + 90 + 54 + 36 = 360 minutes.",
+   "type": "calc"
+  }
+ ],
+ "mock_case": [
+  {
+   "q": "Ana's intake is complete. What are the top three priorities her needs analysis should surface, in order, and why?",
+   "a": "First, wall balls: her most-limiting station, highly trainable in 12 weeks, and it closes the race under maximal fatigue. Second, Achilles-safe running-load management, because her running is only a strength while the tendon stays quiet. Third, adherence-proof session design for five hours with unpredictable interruptions — her 5 km and deadlift are already strengths, so spending budget improving them buys nothing.",
+   "type": "applied"
+  },
+  {
+   "q": "You can afford roughly 60-90 minutes of testing in week 1. Which tests do you choose for Ana, and which do you deliberately skip?",
+   "a": "Choose a wall-ball benchmark (max unbroken set or 100-for-time proxy) to quantify the limiter, a compromised-run test (e.g. 1 km repeats off an erg effort) to model race pace, and a single-leg calf-raise capacity test as the Achilles baseline. Skip the 5 km time trial and deadlift 1RM: she has recent numbers, they are strengths, and re-testing them consumes budget while adding no programming information.",
+   "type": "applied"
+  },
+  {
+   "q": "Sketch Ana's 12-week phase structure and justify the sequence.",
+   "a": "Three four-week blocks: weeks 1-4 general prep (heavy slow calf/tendon loading, high-frequency low-fatigue wall-ball technique, aerobic maintenance); weeks 5-8 HYROX-specific (compromised-run sessions, station pairings, race-pace rehearsal) with lighter weeks around weeks 4 and 8; weeks 9-12 sharpen, with a race simulation near week 9-10 and a 10-14 day taper. The sequence is phase potentiation — tendon capacity and wall-ball skill must exist before the specific block loads them under fatigue — and every block must survive on four sessions.",
+   "type": "applied"
+  },
+  {
+   "q": "Design Ana's weekly template inside her five-hour budget.",
+   "a": "Four sessions: (1) 60-75 min quality run — intervals or tempo, maintaining a strength; (2) 75-90 min strength/station session with wall-ball skill work first, while fresh; (3) 60-75 min compromised-run hybrid session; (4) a 30-45 min flexible slot of easy aerobic work, calf loading and mobility. The flexible slot is the designated drop when family life intervenes — wall-ball and tendon work never live in the droppable session.",
+   "type": "applied"
+  },
+  {
+   "q": "How do you progress Ana's running over the block given the Achilles history?",
+   "a": "Hold running volume roughly flat — her running is already race-adequate — and change composition instead: swap some easy mileage for off-feet conditioning (SkiErg, row, bike) to bank aerobic load without tendon cost. Anchor twice-weekly heavy, slow calf work (bent- and straight-knee) throughout, and gate every progression with the 24-hour rule: morning stiffness lasting beyond a day means the last dose was too big, regardless of how fit she felt.",
+   "type": "applied"
+  },
+  {
+   "q": "Ana asks for equal practice time across all eight stations. What do you tell her, and what is your allocation logic?",
+   "a": "No — rank stations by limiting-factor status, trainability in 12 weeks, and time cost. Wall balls get the most technical time (weakest, skill-trainable, last station); sleds need familiarisation and pacing only, since her 120 kg deadlift shows force is not the constraint; ergs get grooved inside conditioning sessions rather than owning their own slots. Equal time on strengths is budget spent where there is no return.",
+   "type": "applied"
+  },
+  {
+   "q": "Write one compromised-run session for Ana in week 6 and state its intent.",
+   "a": "Example: 4 rounds of a hard 250 m row (or 10 x 30 s sled/carry efforts) straight into 1 km at target race pace (~4:50/km for her), with 2 minutes walk between rounds. The intent is pace discipline on pre-fatigued legs, so progress by shrinking recovery or adding a round — never by chasing a faster kilometre, because the race rewards holding the planned pace, not producing a heroic one.",
+   "type": "applied"
+  },
+  {
+   "q": "Which monitoring system do you set up for Ana, and what do you deliberately leave out?",
+   "a": "The lowest-burden set that still catches her failure modes: session RPE times duration for load tracking, plus a three-item morning traffic light — sleep quality, Achilles morning stiffness, motivation. Leave out daily HRV: with young children her sleep is chaotically variable, so HRV would generate false alarms and erode trust in the system. The Achilles item is non-negotiable because tendon flare is her most likely derailment.",
+   "type": "applied"
+  },
+  {
+   "q": "Week 6: Ana reports heavy legs, wall-ball numbers down about 10%, a week of wrecked sleep from a sick child, flat mood, but she wants to train. Functional overreach, illness, or life-load — and what do you do?",
+   "a": "First screen for illness — fever, sore throat, unusually elevated resting heart rate — because if present the answer is stop, not reduce. Absent those signs, this reads as acute life-load and sleep debt stacked on the block's planned overload rather than non-functional overreaching: one bad week with a clear external cause. Cut this week's load by roughly 30-50%, keep the low-fatigue skill work, and reassess in three to five days once sleep normalises before changing the plan itself.",
+   "type": "applied"
+  },
+  {
+   "q": "Plan Ana's race-week taper.",
+   "a": "Over the final 10-14 days, cut volume progressively to roughly 40-60% of normal while keeping intensity: short race-pace touches and small crisp wall-ball sets stay, long or grinding sessions go. The last meaningful session sits four to five days out; race week itself is short primers plus rehearsal of warm-up, fuelling and the pacing plan. Warn her in advance that taper sensations are unreliable — feeling flat is common and does not predict a bad race.",
+   "type": "applied"
+  },
+  {
+   "q": "Using Ana's numbers, set her race run-pace targets and total running time. Show your working.",
+   "a": "21:40 for 5 km = 1300 s / 5 = 260 s/km = 4:20/km fresh. The pacing lesson's rule of thumb puts sustainable HYROX run pace roughly 30-60 s/km slower than fresh 5 km pace: 260 + 30 to 60 = 290-320 s/km, i.e. about 4:50-5:20/km. Because running is Ana's clear strength — the gap widens for weak-aerobic athletes, so she sits at the narrow end — the model target is near the lower bound: ~4:50/km (290 s/km), giving 8 x 1 km = roughly 38:40 of total running, with run 1 deliberately capped at that pace to prevent an over-fast start. Station and Roxzone time sit on top of that; the assessable skill is the run arithmetic, citing the taught rule, and the capped first run — not a guessed finish time.",
+   "type": "calc"
+  },
+  {
+   "q": "Race day, around rep 40 of wall balls: Ana fails three reps in a row and looks panicked. What should you have coached beforehand, and what does she do now?",
+   "a": "She executes the rehearsed if-then plan: break before failure into pre-planned sets — for example sets of 10 with five breaths' rest — instead of grinding into repeated no-reps, which cost more time and morale than planned breaks. She resets with one breathing cue and one technique cue (hips to full depth, eyes on the target) and accepts the planned rhythm. Because the response was rehearsed in training, the crisis is a retrieval task, not a decision made under panic.",
+   "type": "applied"
+  }
+ ],
+ "mock_decisions": [
+  {
+   "q": "What is publicly verified about how the Level 2 assessment is delivered, and what does the closest analogous evidence suggest about its format?",
+   "a": "Verified: digital-only, self-paced, English-only, on the HYROX365 LMS, Level 1 prerequisite, and a published list of ten structured modules — no hour count, question count, pass mark or format is published (the ~40-hour figure comes from totalling the LMS's own module runtimes first-hand, not from any official source). The same platform's Foundation Course uses per-module multiple-choice quizzes of roughly 10–20 questions, an 80% pass mark and unlimited retakes with a static question set — again first-hand experience rather than published documentation — and it is reasonable but unverified that Level 2 mirrors this.",
+   "type": "recall"
+  },
+  {
+   "q": "Mid-block, an athlete texts you a photo of a swollen, tender Achilles: 'Is this tendinopathy? Can I still run?' Give the pass-standard response.",
+   "a": "Do not name the pathology — diagnosis is outside coaching scope. Refer to a qualified medical professional, pause aggravating loading (running, jumping) in the interim, and keep training pain-free capacities. The defensible answer protects the athlete and stays inside scope.",
+   "type": "applied"
+  },
+  {
+   "q": "A female athlete has dropped about 4 kg in 8 weeks, trains twice daily, and says she has 'never been more disciplined' — yet her interval paces have flatlined, she is always cold, sleeps poorly, and her period has stopped. What is your read and your action?",
+   "a": "Secondary amenorrhoea plus cold intolerance, poor sleep and stalled performance despite high volume and weight loss are red flags for low energy availability (REDs); the 'discipline' framing is the trap. Reduce training load, open the energy-intake conversation, and refer to a physician and sports dietitian — screen and refer, never diagnose or applaud the restriction.",
+   "type": "applied"
+  },
+  {
+   "q": "Rewrite the internal sled-push cue 'extend your hips and knees harder as you drive' as an external cue, and justify the switch.",
+   "a": "Something like 'drive the floor away behind you' or 'push the sled through the wall ahead'. External-focus cues direct attention to the movement's effect on the environment, which tends to preserve automaticity and movement quality — an advantage (associated with Wulf's attentional-focus research) that some evidence suggests persists, and may even grow, under race fatigue.",
+   "type": "applied"
+  },
+  {
+   "q": "An athlete describes their sled push: 'I stay fairly upright, arms bent, take short choppy steps, and the sled keeps stalling between steps.' Diagnose the faults and prescribe fixes.",
+   "a": "An upright torso aims force vertically instead of horizontally, bent arms leak force, and choppy steps let the sled stop so every step must re-overcome static friction. Fix: pronounced forward lean, arms held long and stiff to transmit force through a braced trunk, and longer continuous driving strides that never let the sled stall.",
+   "type": "applied"
+  },
+  {
+   "q": "Mid-race, a friend hands your open-division athlete a drink bottle over the barrier, and moments later the judge signals a wall-ball no-rep at rep 60. What do the rules generally mean here, and what is the coaching lesson?",
+   "a": "Outside assistance from spectators is generally prohibited and can draw a penalty (specifics vary by the season's rulebook), while a no-rep simply does not count and must be repeated until the valid total is reached. Brief athletes pre-race from the current rulebook: use only permitted aid, know the movement standards, and answer a no-rep by fixing the standard, not arguing with the judge.",
+   "type": "applied"
+  },
+  {
+   "q": "You inherit a programme for a ~75-minute HYROX athlete: three weekly sessions of 8 x 200 m sprints with full recovery, one 30-minute easy jog, and no threshold work. What is the mismatch and the rebuild?",
+   "a": "A 60–90 minute race is overwhelmingly aerobic, so the limiters are threshold and aerobic capacity — not maximal sprint power, which full-recovery 200s train. Rebuild around substantial easy volume, threshold/tempo running and race-specific compromised running, keeping only a small high-intensity dose.",
+   "type": "applied"
+  },
+  {
+   "q": "Post-race post-mortem: your athlete faded badly from station six onward; they had only coffee three hours pre-race, avoided carbohydrate for 24 hours 'to stay light', and drank nothing during the race. Explain the fade and fix the plan.",
+   "a": "The fade is consistent with low starting glycogen from carbohydrate avoidance, zero intra-race intake and likely dehydration. Rebuild: carbohydrate-rich eating in the 24–48 hours prior, a familiar carb-based meal 2–4 hours out, fluid plus some carbohydrate during a race of this duration — and rehearse the whole plan in training, never debuting it on race day.",
+   "type": "applied"
+  },
+  {
+   "q": "A strength-dominant athlete lifts heavy lower-body on Monday morning, runs 10 x 400 m at VO2 intensity Monday evening, repeats the pattern Thursday, and reports permanently heavy legs with neither quality improving. Name the programming error and fix it.",
+   "a": "Heavy strength and maximal-intensity intervals are stacked on the same musculature within hours, twice weekly. The chronic-interference evidence is mixed — meta-analyses find small effects concentrated mainly in explosive power — but the residual fatigue alone explains the permanently heavy legs, and the stacking is needlessly high-risk either way. Separate the qualities by at least six hours and ideally different days, pair easy aerobic work with strength days instead of VO2 sessions, order by priority, and periodise so only one quality is pushed hard per block.",
+   "type": "applied"
+  },
+  {
+   "q": "At the race-week check-in a first-timer reports sleeplessness, intrusive images of failing the wall balls, and a racing heart whenever they think about the start line. What do you do?",
+   "a": "Both cognitive (imagined failure) and somatic (racing heart, sleeplessness) anxiety are present. Normalise the arousal and reappraise it as readiness, replace outcome imagery with rehearsed process goals and a segmented race plan, teach a slow-exhale breathing drill, and lock in a pre-race routine — avoid piling on outcome reassurance, which raises the stakes.",
+   "type": "applied"
+  },
+  {
+   "q": "Your data shows a runner-profile athlete (strong 10 k, weak sled and carry splits) who insists on adding a third running session and cutting strength work because 'running is my strength'. Coach decision?",
+   "a": "The needs analysis shows race time is being lost at the stations, not on the runs, so the marginal session belongs to sled and carry strength. But adherence is part of individualisation: show the station-split data, agree to protect their running quality, and co-create the compromise rather than imposing it — a programme the athlete resents is one they will not follow.",
+   "type": "applied"
+  },
+  {
+   "q": "An athlete targets 1:30:00 and you predict 46:00 combined for the eight stations plus Roxzone. (a) What average 1 km run pace is required? (b) What does a 10 s/km fade over the final four runs cost, and what is the countermeasure?",
+   "a": "(a) 90:00 − 46:00 = 44:00 for 8 km, i.e. 5:30 per km average. (b) 4 km × 10 s = 40 s, giving 1:30:40. Countermeasure: bank roughly 5:25/km on the early runs while fresh — 5:25 × 4 = 21:40, and even a 10 s/km fade to 5:35 × 4 = 22:20 still totals exactly 44:00 — or find the 40 s in the Roxzone and station transitions.",
+   "type": "calc"
+  }
  ]
 }

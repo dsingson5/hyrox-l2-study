@@ -1,4 +1,4 @@
-// CSCS daily study — learning-science runtime (v2).
+// HYROX L2 daily study — learning-science runtime (v2).
 //
 // Implements the evidence-based stack from the learning-science review:
 //   • Retrieval practice with FORCED COMMITMENT — Reveal is gated until the
@@ -8,23 +8,22 @@
 //   • Confidence rating BEFORE reveal + 4-button Again/Hard/Good/Easy AFTER —
 //     the four-button grade is the scheduler input and the confidence is the
 //     calibration probe (Brier score per domain).
-//   • Interleaving the due queue across CSCS domains by exam weight.
+//   • Interleaving the due queue across the L2 domains by exam weight.
 //   • Desirable difficulty framing: forgetting ("Again") is framed as "where
 //     learning happens", not failure. No streaks, no XP (evidence-free).
 //
-// State lives in a single localStorage key (cscs.state.v1) so it survives
+// State lives in a single localStorage key (hyroxl2.state.v1) so it survives
 // reloads AND the daily regeneration of hyrox_today.html (same origin).
-// Old SM-2 state (cscs.qstate / cscs.answers) is migrated on first load.
 
 const LS_PREFIX = "hyroxl2.";
 const STATE_KEY = "state.v1";
 const TODAY = new Date().toISOString().slice(0, 10);
 const TARGET_RETENTION = 0.85;
 
-// Official-NSCA-weighted sampling targets, normalised over the 4 domains the
-// curriculum uses. Practical/Applied (EX + PD) is the larger, harder pool.
-const EXAM_WEIGHTS = { ES: 0.30, NT: 0.12, EX: 0.18, PD: 0.40 };
-const DOMAIN_NAME = { ES: "Exercise Science", NT: "Nutrition", EX: "Exercise Technique", PD: "Program Design" };
+// Interleave targets across the five L2 curriculum domains, proportional to
+// their share of authored lessons (keep in sync with generate_daily.py).
+const EXAM_WEIGHTS = { CM: 0.21, SM: 0.15, BM: 0.21, PH: 0.16, PG: 0.27 };
+const DOMAIN_NAME = { CM: "Coaching, Mindset & Individualisation", SM: "Sports Medicine, Recovery & Injury", BM: "Biomechanics & Technique", PH: "Physiology & Nutrition", PG: "Performance Pillars & Programming" };
 const CONF_P = { low: 0.25, med: 0.6, high: 0.9 };
 
 function lsGet(key, fallback) {
@@ -97,7 +96,7 @@ function maybeQBankMigrate() {
 
 function domainFor(stable) {
   const topic = String(stable).split("__")[0];
-  return (window.__CSCS_DOMAINS && window.__CSCS_DOMAINS[topic]) || "ES";
+  return (window.__CSCS_DOMAINS && window.__CSCS_DOMAINS[topic]) || "CM";
 }
 function topicOf(stable) { return String(stable).split("__")[0]; }
 
