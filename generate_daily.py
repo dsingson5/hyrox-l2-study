@@ -35,7 +35,28 @@ APP_JS = ROOT / "app.js"
 # this site has no figures/ dir and no games.html, so those paths were dead.)
 
 # Shown in the page header (version + Manila build time). Bump on deploys.
-SITE_VERSION = "v3.2"
+SITE_VERSION = "v3.3"
+
+
+def stamp_html(site_label="HYROX L2 Study"):
+    """Tiny fixed top-right version pill — same pattern as the hybrid-crew hub:
+    version + Manila date/time this page was built, tap to hide."""
+    try:
+        from zoneinfo import ZoneInfo
+        now = _dt.datetime.now(ZoneInfo("Asia/Manila"))
+    except Exception:
+        now = _dt.datetime.now()
+    d = now.strftime("%b %d, %Y")
+    t = now.strftime("%I:%M %p").lstrip("0")
+    return ('<div id="pg-stamp" onclick="this.remove()" '
+            f'title="{site_label} {SITE_VERSION} · this page built {d} · {t} (Manila) · tap to hide" '
+            'style="position:fixed;top:env(safe-area-inset-top,0px);right:0;z-index:2147483647;'
+            "font:600 10px/1.2 -apple-system,'Segoe UI',Roboto,sans-serif;"
+            'background:rgba(8,10,20,.82);color:#9fb6c9;border:1px solid rgba(159,182,201,.35);'
+            'border-top:0;border-right:0;border-radius:0 0 0 8px;padding:4px 9px 5px;'
+            'letter-spacing:.03em;white-space:nowrap;cursor:pointer;'
+            '-webkit-backdrop-filter:blur(4px);backdrop-filter:blur(4px)">'
+            f'{SITE_VERSION} · {d} · {t}</div>')
 
 SPACING_DAYS = [1, 3, 7, 14, 30, 90]
 SPACING_LABELS = {
@@ -519,13 +540,6 @@ def render_html(today, today_day, today_lesson, deep_review, reviews, questions,
 
     weekday = today.strftime("%A")
     date_str = today.strftime("%B %d, %Y")
-    # Version + Manila build stamp (site rule: every page shows when it was built).
-    try:
-        from zoneinfo import ZoneInfo as _ZI
-        _build_now = _dt.datetime.now(_ZI("Asia/Manila"))
-    except Exception:
-        _build_now = _dt.datetime.now()
-    build_stamp = f'{SITE_VERSION} &middot; built {_build_now.strftime("%b %d, %Y %H:%M")} Manila'
     # Total authored days = the last day of the final curriculum phase.
     total_days = max(int(p["days"].split("-")[-1]) for p in meta["phases"])
     phase = next((p for p in meta["phases"]
@@ -546,11 +560,11 @@ def render_html(today, today_day, today_lesson, deep_review, reviews, questions,
 <style>{motif_css}</style>
 </head>
 <body class="{theme["body_class"]}">
+{stamp_html()}
 <div class="container">
   <header class="top">
     <div class="h-day">HYROX L2 · Day {today_day} · {weekday}</div>
     <div class="h-date">{date_str}</div>
-    <div class="h-build" style="font-size:10px;color:var(--text-dim);opacity:.75;margin-top:2px">{build_stamp}</div>
     <div class="h-phase">{esc(phase_label)}</div>
     <div class="domains">{domains_html}</div>
     <div class="progress"><div class="bar" style="width: {min(100, today_day / total_days * 100):.1f}%;"></div></div>
