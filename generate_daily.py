@@ -87,7 +87,7 @@ DOMAIN_FULL = {"CM": "Coaching, Mindset & Individualisation", "SM": "Sports Medi
                "PG": "Performance Pillars & Programming"}
 # Interleave targets across the five L2 domains, proportional to their share
 # of authored lessons (keep in sync with app.js EXAM_WEIGHTS).
-EXAM_WEIGHTS = {"CM": 0.22, "SM": 0.14, "BM": 0.19, "PH": 0.19, "PG": 0.26}
+EXAM_WEIGHTS = {"CM": 0.21, "SM": 0.14, "BM": 0.18, "PH": 0.21, "PG": 0.26}
 
 # ── Interactive-figure aliases ───────────────────────────────────────────────
 # widgets/steppers/biomech/motifs were inherited from the CSCS site and are
@@ -99,6 +99,8 @@ EXAM_WEIGHTS = {"CM": 0.22, "SM": 0.14, "BM": 0.19, "PH": 0.19, "PG": 0.26}
 # worse than none. CSCS-specific pieces (phase1_review = "the four CSCS
 # domains") are never aliased.
 FIGURE_ALIAS = {
+    "ph_o2transport": "respiratory",
+    "ph_domains": "aerobic_adaptations",
     "hp_pillars": "needs_analysis",
     "ph_motorunits": "motor_units",
     "ph_mechanics": "force_velocity_length_tension",

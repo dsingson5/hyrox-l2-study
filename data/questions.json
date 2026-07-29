@@ -3966,5 +3966,129 @@
    "a": "PCSA ≈ volume ÷ fibre length. A = 600 ÷ 8 = 75 cm²; B = 600 ÷ 24 = 25 cm². At 25 N/cm², A ≈ 1,875 N and B ≈ 625 N — three times the force for A. B, with three times the fibre length and therefore more sarcomeres in series, gains greater excursion and a higher maximum shortening velocity. Specific tension is an assumption (commonly quoted somewhere around 20–35 N/cm²), so treat the absolute newtons as illustrative and the 3:1 ratio as the real point.",
    "type": "calc"
   }
+ ],
+ "ph_o2transport": [
+  {
+   "q": "Walk the oxygen cascade from atmosphere to mitochondrion with typical resting sea-level values, and give the reasons alveolar PO2 is lower than atmospheric PO2.",
+   "a": "Roughly 159 mmHg in atmospheric air; about 149 mmHg once humidified in the airway; about 100–105 mmHg in alveolar gas; about 95–100 mmHg in arterial blood; about 40 mmHg in the mixed venous blood returning to the lung; roughly 20–40 mmHg in resting muscle tissue, falling into single figures in hard-working muscle; and mitochondrial PO2 lower still, commonly quoted around 1–5 mmHg. Alveolar gas is below atmospheric for four reasons: water vapour at body temperature contributes about 47 mmHg and displaces the other gases; carbon dioxide entering the alveolus dilutes them further; pulmonary blood removes oxygen continuously; and each breath mixes into a much larger resident lung volume rather than replacing it. A useful check is inspired PO2 minus arterial PCO2 divided by the respiratory exchange ratio, about 149 − 40/0.8 ≈ 99 mmHg. All figures are typical values, not constants.",
+   "type": "recall"
+  },
+  {
+   "q": "Name the three forms in which carbon dioxide is carried in blood with approximate proportions, explain the chloride shift, and define the Haldane effect.",
+   "a": "Roughly 60–70% as bicarbonate, roughly 20–25% as carbamino compounds bound to the terminal amine groups of haemoglobin's globin chains, and roughly 5–10% dissolved. The bicarbonate route dominates because carbonic anhydrase inside the red cell hydrates carbon dioxide to carbonic acid almost instantly, which dissociates to H+ and bicarbonate; the H+ is buffered largely by haemoglobin itself. The chloride shift is the exchange of that bicarbonate out of the red cell for plasma chloride through the red-cell anion exchanger, preserving electrical neutrality and preventing intracellular bicarbonate accumulating and stalling the reaction. The Haldane effect is the reciprocal of the Bohr effect: deoxygenated haemoglobin binds H+ and carbon dioxide more readily, so unloading oxygen at the muscle increases carbon dioxide carriage, while re-oxygenating haemoglobin at the lung drives carbon dioxide off. The two effects reinforce one another rather than opposing one another.",
+   "type": "recall"
+  },
+  {
+   "q": "State the four factors that shift the oxyhaemoglobin dissociation curve to the right, what a right shift does to affinity and offloading, how the Bohr effect fits, and how myoglobin differs.",
+   "a": "Raised hydrogen ion concentration (lower pH), raised temperature, raised 2,3-DPG and raised PCO2. A right shift means REDUCED haemoglobin–oxygen affinity, so more oxygen is released to tissue at any given PO2, and P50 rises above its normal 26–27 mmHg. The Bohr effect names the pH and carbon dioxide arm of that shift specifically; temperature and 2,3-DPG act through separate mechanisms. A left shift is the reverse and favours loading, which is what the cooler, less acidic lung provides. Myoglobin is a single-subunit intracellular carrier with one haem group, so its curve is hyperbolic rather than sigmoid and its affinity is much higher (P50 around 2–3 mmHg) — it accepts oxygen from haemoglobin at the low PO2 inside the muscle cell and buffers supply at the onset of contraction.",
+   "type": "recall"
+  },
+  {
+   "q": "Distinguish Fick's law of diffusion from the Fick principle, and use the law to explain why carbon dioxide clears the lung easily on a much smaller gradient than oxygen.",
+   "a": "Fick's law of diffusion governs transfer across a membrane: rate rises with surface area and the partial pressure gradient, falls with membrane thickness, and is scaled by each gas's own diffusion constant, which is proportional to solubility and inversely proportional to the square root of molecular weight. The Fick principle is a whole-body oxygen-uptake equation, VO2 = cardiac output x arterial–venous oxygen difference. For carbon dioxide the alveolar gradient is only about 6 mmHg — mixed venous near 46, alveolar near 40 — against roughly 60–65 mmHg for oxygen, but carbon dioxide is around 24 times more soluble in the fluid it must cross, and after correcting for its larger molecular weight it diffuses on the order of twenty times faster. The solubility term more than compensates for the small gradient.",
+   "type": "recall"
+  },
+  {
+   "q": "An athlete tells you that pushing harder on the sled 'pulls more oxygen out of the air', and asks whether a bigger lung capacity would raise the gradient. Correct the model, and state what actually changes with intensity.",
+   "a": "Effort has no purchase on either the composition or the pressure of the air. Barometric pressure and the oxygen fraction are set by the venue, so the top of the cascade sits near 159 mmHg at sea level whether the athlete is walking or on the sled. Intensity acts only on the consumption side, and the body answers with flow: a larger cardiac output moves blood past the alveolar membrane and the muscle capillary more often, and a larger alveolar ventilation refreshes alveolar gas faster. Two secondary effects do steepen the gradient at each end without touching the starting point — alveolar PO2 rises slightly as hyperventilation lowers alveolar PCO2, and mixed venous PO2 falls as extraction increases, so the pulmonary gradient widens during exercise rather than narrowing. Practically: training buys transport and extraction, not a richer atmosphere, and that is exactly why an altitude race has to be re-modelled rather than trained around in the final week.",
+   "type": "applied"
+  },
+  {
+   "q": "The SkiErg is station 1 and the row is station 5. Using the transport chain, explain why upper-body ergometry costs more centrally than the leg work would suggest, and give the pacing rule that follows.",
+   "a": "Upper-body ergometry engages a smaller active muscle mass, so at a matched oxygen uptake it elicits a higher heart rate, higher blood pressure and higher ventilation than leg work — and the higher heart rate reflects a LOWER stroke volume, not a larger cardiac output, because a smaller active muscle mass returns less blood to fill the ventricle. There is also less muscle to extract into, so the peripheral term of the Fick principle is small and peak oxygen uptake in arm-dominant work sits well below leg values; the effort is therefore paid centrally. (Day 14 flags the SkiErg as a common site of an early-race heart-rate spike, for the same reason.) The rule: set both ergs to a rehearsed split the athlete has already produced in training off a run, and hold it rather than racing whoever is alongside — the eight runs are roughly half the clock for most age-groupers, and a delivery cost paid at station 1 or station 5 comes back on the kilometre that follows.",
+   "type": "applied"
+  },
+  {
+   "q": "A hot race: your athlete's pace decays through the back half while heart rate is already at its ceiling. Explain what has happened to the oxygen-transport chain, and what you change beforehand next time.",
+   "a": "Two demands compete for one finite cardiac output. Thermoregulatory skin blood flow claims litres per minute for heat dissipation, so a smaller share of the same output reaches locomotor muscle. At the same time sweat losses shrink plasma volume, reducing venous return, end-diastolic filling and therefore stroke volume — and since cardiac output is heart rate times stroke volume, heart rate must rise simply to hold output constant. Once heart rate is at its ceiling, output can no longer be defended and pace has to fall. Extraction cannot rescue it, because the arterial–venous oxygen difference is already near its practical ceiling late in a race. Beforehand: heat-acclimatise across several sessions to expand plasma volume and lower core temperature at a given load, build a deliberate hydration and sodium plan, and re-model the race with slower run splits and more conservative sled and burpee efforts — expecting the closing 100 wall balls to expose any optimism left in the plan.",
+   "type": "applied"
+  },
+  {
+   "q": "An athlete brings a post-session blood panel showing haematocrit and haemoglobin concentration both above their baseline, and is pleased. How do you read it, and how would you read the opposite finding four weeks into a heavy aerobic block?",
+   "a": "Not as an improvement. Sweat losses removed plasma, so the same red cells are concentrated into a smaller volume — haemoconcentration, not new haemoglobin. Total haemoglobin mass is unchanged, viscosity is higher, and the lost plasma volume reduces ventricular filling and stroke volume, so oxygen delivery (cardiac output x arterial oxygen content) actually falls. Re-test in a properly hydrated state before interpreting anything. The mirror image is equally important: a haematocrit that drops a few points early in a heavy aerobic block is usually dilutional, because plasma volume expands within days to weeks while red-cell mass follows far more slowly. That is a sign the central adaptation is happening, not evidence of anaemia — but if it persists alongside stalled progress and rising heart rate at fixed pace, refer for a full blood count and ferritin rather than assuming either way, and do not prescribe iron yourself.",
+   "type": "applied"
+  },
+  {
+   "q": "Why does a red cell's pulmonary transit time matter, and how would you use it to answer an athlete who asks whether their lungs are holding them back?",
+   "a": "At rest a red cell spends roughly 0.75 s in a pulmonary capillary and equilibrates with alveolar gas within about the first third of that, so there is a large reserve — for most athletes at most intensities the lung is not the limiting step, and breathing feels hard because ventilation is expensive, not because loading has failed. At maximal cardiac output transit time falls toward roughly 0.25 s. Capillary recruitment and distension blunt that fall by increasing the capillary volume available, and equilibration normally still completes, but the reserve narrows, which is why a subset of highly trained athletes show measurable arterial desaturation at maximal effort and why altitude or a thickened membrane bites hardest at high output rather than at rest. So the honest answer is: almost certainly not the lungs — look at the delivery and extraction terms first — while noting that a well-founded suspicion of a respiratory condition is a referral, not a coaching decision.",
+   "type": "applied"
+  },
+  {
+   "q": "An athlete's laboratory VO2max has not moved in two years, yet their compromised 1 km pace off the sled keeps improving. Explain this with the Fick principle and say what it implies for the next block.",
+   "a": "The Fick principle splits oxygen uptake into cardiac output and the arterial–venous oxygen difference. A static VO2max says the product at maximal effort has plateaued — at sea level in healthy athletes that ceiling is generally considered delivery-limited, and central adaptations such as plasma volume, ventricular filling and eccentric hypertrophy do saturate. But the peripheral term keeps improving for years: capillary density and recruitment, mitochondrial density and oxidative enzymes, myoglobin content and the local right shift of the dissociation curve all widen extraction and speed metabolite clearance between efforts. That is exactly what a compromised run measures, and it is why the athlete is getting faster where it counts (days 19 and 20 for the threshold and clearance side of the same picture). Implication: keep aerobic volume and station-into-run coupling as the main levers rather than chasing the ceiling number, and judge the block on compromised splits, not on a lab value that has stopped being the informative variable.",
+   "type": "applied"
+  },
+  {
+   "q": "Calculate arterial oxygen content for an athlete with haemoglobin 14.2 g/dL, arterial saturation 97% and arterial PO2 95 mmHg. Take binding capacity as 1.34 mL O2 per gram and plasma solubility as 0.003 mL O2 per dL per mmHg. What fraction is dissolved, what is delivery at a cardiac output of 22 L/min, and what happens if untreated iron deficiency drops haemoglobin to 12.0 g/dL?",
+   "a": "Bound: 14.2 x 1.34 = 19.03 mL per dL at full saturation, x 0.97 = 18.46 mL per dL. Dissolved: 0.003 x 95 = 0.29 mL per dL. Total content = 18.46 + 0.29 = 18.75 mL of oxygen per 100 mL of blood to the decimals shown (18.74 if the unrounded 18.457 + 0.285 is carried through — use 18.74 for the steps below). The dissolved share is 0.285 / 18.74 = 1.5%, so about 98.5% rides on haemoglobin; the conventional '98% bound, 2% dissolved' shorthand rounds this, and 1.5% is the more accurate figure here. Delivery = cardiac output x arterial content = 220 dL/min x 18.74 mL/dL = about 4,120 mL of oxygen per minute. At haemoglobin 12.0 g/dL: bound = 12.0 x 1.34 x 0.97 = 15.60, plus 0.29 dissolved = 15.89 mL per dL (15.88 unrounded), so delivery = 220 x 15.88 ≈ 3,490 mL/min — a fall of roughly 15% for the same cardiac output and the same saturation. That is why haemoglobin mass is a performance variable and why iron status is worth screening and referring.",
+   "type": "calc"
+  },
+  {
+   "q": "On run 5 an athlete's heart rate is 172 bpm with a stroke volume of 118 mL and an arterial–venous oxygen difference of 15.0 mL per 100 mL. They weigh 66 kg. Calculate cardiac output and VO2 in L/min and mL/kg/min. Then calculate the result if a training block raises stroke volume to 132 mL at the same heart rate, and state what extraction alone would have had to reach to produce the same VO2.",
+   "a": "Cardiac output = 172 x 118 = 20,296 mL/min ≈ 20.3 L/min, i.e. 202.96 dL/min. VO2 = 202.96 x 15.0 = 3,044 mL/min = 3.04 L/min, or 3,044 / 66 = 46.1 mL/kg/min. With stroke volume at 132 mL: cardiac output = 172 x 132 = 22,704 mL/min ≈ 22.7 L/min, i.e. 227.04 dL/min, so VO2 = 227.04 x 15.0 = 3,406 mL/min (3,405.6 before rounding) = 3.41 L/min = 51.6 mL/kg/min — an 11.9% gain from the central term alone (132/118 = 1.119). To reach the same 3,406 mL/min from extraction with cardiac output unchanged at 20.3 L/min, the arterial–venous oxygen difference would have to widen to 3,405.6 / 202.96 = 16.8 mL per 100 mL, which is close to the practical ceiling of roughly 15–17 and therefore much less available headroom than the central route. Note the caveat carried in the key facts: the classic stroke-volume plateau at 40–60% of VO2max is the general pattern, but in highly trained endurance athletes stroke volume frequently keeps climbing toward maximal effort, so a 132 mL stroke volume at this work rate is not out of reach.",
+   "type": "calc"
+  }
+ ],
+ "ph_domains": [
+  {
+   "q": "Name the four exercise intensity domains in ascending order and the boundary separating each pair.",
+   "a": "Moderate, heavy, severe, extreme (sprint). The first lactate threshold separates moderate from heavy; the maximal metabolic steady state — estimated by MLSS or critical power/speed — separates heavy from severe; the severe/extreme boundary is the intensity above which the effort ends before VO2max can be attained at all.",
+   "type": "recall"
+  },
+  {
+   "q": "At a constant intensity, how does blood lactate behave over time in each of the moderate, heavy and severe domains?",
+   "a": "Moderate: it stays at or close to resting values. Heavy: it rises, then settles at an elevated but stable plateau. Severe: it climbs continuously with no plateau until the athlete has to stop. This time-course behaviour, not a percentage of a maximum, is what defines each domain.",
+   "type": "recall"
+  },
+  {
+   "q": "Describe the three phases of the ventilatory response to the onset of exercise and what drives each.",
+   "a": "Phase I is an immediate feedforward rise that can begin before the first movement, from central command and the abrupt increase in cardiac output. Phase II is a continued steep rise over roughly the next two minutes, driven by neural drive plus mechanoreceptor and metabolic feedback from the working limbs. Phase III is a slower, chemoreceptor-modulated adjustment that settles into a steady state in the moderate and heavy domains but keeps climbing in severe.",
+   "type": "recall"
+  },
+  {
+   "q": "What are the ventilatory equivalents, and how do the two inflection points differ?",
+   "a": "VE/VO2 is ventilation per litre of oxygen consumed, VE/VCO2 per litre of carbon dioxide produced. At VT1, VE/VO2 turns upward while VE/VCO2 stays flat or falls — this is the start of the isocapnic buffering region, where the extra ventilation is matched by the extra CO2 released as bicarbonate buffers H+, so arterial CO2 is held roughly constant. At VT2/RCP, VE/VCO2 also begins to rise (VE/VO2 has been rising since VT1), ending isocapnic buffering: ventilation now outruns CO2 production and arterial CO2 falls, because buffering can no longer hold pH.",
+   "type": "recall"
+  },
+  {
+   "q": "Why are VT1 = LT1 and VT2/RCP = LT2 approximations rather than identities?",
+   "a": "They come from different measurement systems — expired gas versus blood lactate — with different sampling rates, protocols and detection methods, and threshold identification involves a degree of judgement. They usually land close together, but in an individual athlete the gap can be big enough to change a pace prescription, so record which method produced the value and re-test with the same method.",
+   "type": "applied"
+  },
+  {
+   "q": "An athlete is given a 30-minute 'threshold' run. Lactate reads 4.1 mmol/L at 10 min and 7.9 mmol/L at 25 min, and they abandon at 27 minutes. Which domain were they actually in, and what do you change?",
+   "a": "Severe — lactate never stabilised and the bout ended in task failure, which is the defining behaviour above MMSS. The prescribed pace sits above their heavy/severe boundary, so lower it until a constant-pace probe holds lactate (or pace, breathing and RPE) steady out to 30 minutes, then re-anchor the boundary before rebuilding the race model.",
+   "type": "applied"
+  },
+  {
+   "q": "Why can an athlete who runs the first two kilometres above their maximal metabolic steady state not simply settle back into a sustainable pace?",
+   "a": "The severe excursion drives VO2 toward maximum and accumulates a metabolic disturbance that has to be repaid rather than forgotten. More importantly the boundary itself falls with accumulated work (day 22), so the pace that would have been heavy-domain when fresh may now sit in severe. That is the physiological case for the even-to-slightly-negative pacing taught on day 16.",
+   "type": "applied"
+  },
+  {
+   "q": "Your athlete races in a chest strap. Why is heart rate close to useless for policing effort on a 2-minute sled push, and what should you use instead?",
+   "a": "HR lags a step change in work rate by tens of seconds, so the station is over before the reading catches up, and it is separately inflated by arousal, upper-body work, heat and cardiac drift. Use external work instead: a rehearsed cadence and time target for the push, plus the pace of the first 200 m of the following kilometre, with breathing rhythm and RPE as the internal check. Note also that the standard 'HR is the main lever once stroke volume plateaus' account is the general pattern only — in highly trained endurance athletes SV often keeps rising toward maximal effort.",
+   "type": "applied"
+  },
+  {
+   "q": "Explain the VO2 slow component to a coach, and say why it matters for the back half of a HYROX race.",
+   "a": "Above LT1, oxygen uptake at an unchanged workload keeps creeping upward after the first couple of minutes — the same speed progressively costs more oxygen. It is associated with recruiting additional higher-threshold, less economical motor units as the fatigue-resistant ones tire (day 63), although the mechanism is not fully settled. In a race it means a pace that behaved like heavy-domain work on run 2 can behave like severe-domain work on run 7 without the athlete ever speeding up.",
+   "type": "applied"
+  },
+  {
+   "q": "Map a HYROX race onto the intensity-domain model and state two coaching consequences.",
+   "a": "For a well-paced athlete the eight 1 km legs sit in the heavy domain — elevated but stable lactate, a delayed VO2 steady state — while the sleds, burpee broad jumps and the closing 100 wall balls force short severe-domain excursions above MMSS. Consequence one: for stations 1–7 every excursion is repaid on the following kilometre and in the roxzone, so station pacing is really run pacing. Wall balls are the exception — as the final station there is no run left to pay on, so an overcooked race surfaces there as broken sets instead. Consequence two: because accumulated work lowers the boundary, the plan must hold the runs under MMSS from kilometre one rather than banking time early.",
+   "type": "applied"
+  },
+  {
+   "q": "In an incremental test, stage A gives VE 58 L/min, VO2 2.00 L/min, VCO2 1.70 L/min; stage B gives VE 80 L/min, VO2 2.50 L/min, VCO2 2.35 L/min. Compute both ventilatory equivalents at each stage and say which threshold has been crossed.",
+   "a": "Stage A: VE/VO2 = 58 ÷ 2.00 = 29.0; VE/VCO2 = 58 ÷ 1.70 = 34.1. Stage B: VE/VO2 = 80 ÷ 2.50 = 32.0; VE/VCO2 = 80 ÷ 2.35 = 34.0. VE/VO2 has risen by three units while VE/VCO2 is essentially unchanged — the signature of VT1, i.e. the athlete has just entered the isocapnic buffering region. VT2/RCP would instead show VE/VCO2 beginning to rise as well.",
+   "type": "calc"
+  },
+  {
+   "q": "During a constant-speed heavy-domain run, VO2 is 3.20 L/min at minute 3 and 3.55 L/min at minute 12 with no change in pace. The athlete's VO2max is 4.20 L/min. Quantify the slow component in absolute terms, in relative terms, and as a share of the remaining aerobic reserve.",
+   "a": "Slow component = 3.55 − 3.20 = 0.35 L/min, i.e. 0.35 ÷ 3.20 = 10.9% above the three-minute value at identical speed. Reserve at minute 3 = 4.20 − 3.20 = 1.00 L/min, so the drift has consumed 35% of what was left. That is heavy-domain behaviour with a large slow component, and it explains why a pace that feels controlled at three minutes can be untenable by twenty.",
+   "type": "calc"
+  }
  ]
 }
