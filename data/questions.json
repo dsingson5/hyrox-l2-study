@@ -3780,5 +3780,191 @@
    "a": "(a) 90:00 − 46:00 = 44:00 for 8 km, i.e. 5:30 per km average. (b) 4 km × 10 s = 40 s, giving 1:30:40. Countermeasure: bank roughly 5:25/km on the early runs while fresh — 5:25 × 4 = 21:40, and even a 10 s/km fade to 5:35 × 4 = 22:20 still totals exactly 44:00 — or find the 40 s in the Roxzone and station transitions.",
    "type": "calc"
   }
+ ],
+ "hp_pillars": [
+  {
+   "q": "Define fitness as the six-pillar model uses the term, and name the six pillars.",
+   "a": "Fitness is sport-specific physical readiness — the qualities a given event demands, in the proportions it demands them, rather than a single general trait. Transfer between sports is partial, not absent: central endurance adaptations carry across, while muscle-specific, positional and technical qualities do not. The six pillars are strength, endurance, speed, power, coordination and flexibility/mobility.",
+   "type": "recall"
+  },
+  {
+   "q": "Give the three distinct jobs strength does in a HYROX race.",
+   "a": "First, force production against the fixed external loads: driving the sled, holding the farmers handles, standing out of a loaded lunge. Second, form preservation — a larger force reserve puts every rep at a lower fraction of maximum, so joint positions and technique survive deeper into the race. Third, tissue tolerance: greater tendon, ligament and connective-tissue load capacity, which is much of what decides whether a fatigued, compromised position is merely slow or actually injurious.",
+   "type": "recall"
+  },
+  {
+   "q": "Define coordination and state where in a race it is most fragile, and why.",
+   "a": "Coordination is the organisation of a movement so that it is accurate and economical at once, including hitting a judged standard. It is most fragile wherever the athlete is working closest to their limit, because speed and load raise the control demand while accumulated fatigue simultaneously lowers the motor control available. In practice that means any station raced near maximal effort — the burpee broad jump at station 4 as much as the wall balls at the end — rather than 'late' as such.",
+   "type": "recall"
+  },
+  {
+   "q": "Why should the six-pillar model be taught as a coaching taxonomy rather than as a validated model of fitness?",
+   "a": "Because the pillars are not independent measured constructs. Power is arithmetically force times velocity, with strength the capacity behind the force term; coordination is inseparable from movement economy; and mobility is a precondition for expressing several of the others. The category boundaries are conventions of coaching practice. It earns its place as a needs-analysis checklist that stops qualities being omitted by accident, not as a factor structure of human fitness.",
+   "type": "recall"
+  },
+  {
+   "q": "A coach's HYROX programme consists of heavy lifting twice a week and long easy runs. Which pillars are unaddressed, and name a station where each omission shows up.",
+   "a": "Speed (movement rate is never trained, so burpee broad jump and wall-ball cadence stay slow and the roxzone traverses are walked), power and explosive force (nothing rehearses breaking a stopped sled out and accelerating it at the start and at each of the three turnarounds), coordination (no judged reps under fatigue, so wall-ball depth and target accuracy fail), and flexibility/mobility (insufficient usable range to hit wall-ball depth on rep 90 or hold hip extension on run 8). The programme covers two pillars well and four not at all.",
+   "type": "applied"
+  },
+  {
+   "q": "An athlete's sled push is slow to start at 0 m and again at every turnaround, but moves acceptably once rolling. Which quality is limiting, and how do you train it?",
+   "a": "Explosive force production — high force developed fast to break the sled out and then accelerate it, since more force is needed to start the sled than to keep it moving. At the instant of the break this is a maximal-force and rate-of-force-development demand (velocity, and so mechanical power, is zero at rest); power in the force-times-velocity sense carries the acceleration once the sled moves. Once rolling, the demand becomes strength-endurance over the concentric-dominant lengths, and that part is evidently adequate. Train heavy short sled starts from a dead stop (repeated 5-10 m accelerations rather than full lengths), accelerative work such as hill sprints and heavy prowler starts, and rehearse each turnaround as a deliberate re-start rather than a drift.",
+   "type": "applied"
+  },
+  {
+   "q": "From around rep 65 of the wall balls your athlete starts missing depth and missing the target. Diagnose it across the pillars and give the fix.",
+   "a": "Primarily a coordination failure under fatigue — the standard is known, the precision to deliver it is gone — sitting on top of an endurance shortfall and possibly a mobility limit if depth is the item failing first. Fix: drill judged reps deliberately past rep 60 rather than only in fresh sets, cap set size so cadence stays repeatable, and screen loaded squat depth. If depth returns immediately with a lighter ball, it is fatigue and coordination; if it never appears even fresh, it is usable range.",
+   "type": "applied"
+  },
+  {
+   "q": "Two athletes have near-identical fresh 1 km pace and near-identical station splits, yet one finishes two minutes ahead. Which pillars most plausibly explain the gap?",
+   "a": "Speed and coordination, expressed off the run course. Transition pace across the 15 roxzone traverses is a speed quality (moving purposefully out of a station, hands on the implement without hesitation), and clean judged reps are a coordination quality that removes repeated reps and penalties. Neither appears in the run or station splits, which is exactly why the two athletes look identical on paper. Note the transitions still cost energy, so the answer is a rehearsed, well-paced traverse, not a sprint.",
+   "type": "applied"
+  },
+  {
+   "q": "Explain how flexibility/mobility support the other five pillars, with one concrete HYROX example each for wall balls and for running.",
+   "a": "None of the other pillars can be expressed in a position the athlete cannot reach and control. At wall balls, without usable hip, knee and ankle range the athlete cannot hit the depth standard, so their strength, power and endurance produce no-reps rather than counted reps. On the runs, hip extension has to be sufficient to hold an upright posture and complete the drive phase; when fatigue or genuine restriction leaves the athlete folding forward, the stride shortens. Be careful with the economy claim in the other direction — more static flexibility does not buy a cheaper kilometre, and trained runners with stiffer hips and hamstrings tend to be more economical because elastic return is cheaper than muscular work. What matters is enough usable range to reach the required positions, judged against the movement standard and run posture rather than against a range-of-motion norm table.",
+   "type": "applied"
+  },
+  {
+   "q": "How does this lesson relate to day 17's profiling method, and which one comes first in practice?",
+   "a": "The pillars are the candidate qualities; profiling is the selection procedure. Day 17 ranks an athlete's runs and stations against their division to identify which quality is costing the most time, and the six pillars supply the vocabulary for what that quality can be. In practice profiling comes first when race splits exist, because competition data outranks gym testing; the pillar audit then confirms or contradicts it, and disagreement is resolved in favour of the race.",
+   "type": "applied"
+  },
+  {
+   "q": "An athlete's best 400 m equates to 3:00/km and their target race run pace is 5:00/km. What fraction of that 400 m speed ceiling is race pace, and what happens to the fraction if a speed block lifts the 400 m equivalent to 2:50/km?",
+   "a": "First name the ceiling honestly: a 400 m is a speed-endurance effort whose average velocity sits well below true maximal sprint speed, so this indexes the speed-endurance ceiling, not top-end speed. Against that benchmark: 3:00/km = 180 s per 1000 m = 5.56 m/s; 5:00/km = 300 s = 3.33 m/s, so race pace is 3.33 / 5.56 = 60% of the 400 m ceiling. At 2:50/km the ceiling becomes 170 s = 5.88 m/s and the same race pace is 3.33 / 5.88 = about 57%, roughly three percentage points lower for an identical absolute pace. Treat it as a relative-intensity argument against the tested ceiling only — it does not by itself prove the kilometre will cost less oxygen, which is a question of economy and threshold.",
+   "type": "calc"
+  },
+  {
+   "q": "An athlete is no-repped on 9 of their 100 wall balls, and each redone rep costs about 3.5 s including the reset. Express the loss in seconds and as a fraction of one kilometre at their 5:20/km race run pace.",
+   "a": "9 x 3.5 = 31.5 s lost. One kilometre at 5:20 is 320 s, so 31.5 / 320 = about 9.8% of a kilometre's running time. Roughly a tenth of a run leg, given away on a standard the athlete already knows — which is why coordination under fatigue is a time-saving intervention, not just a compliance one.",
+   "type": "calc"
+  }
+ ],
+ "ph_motorunits": [
+  {
+   "q": "Define a motor unit, and explain what its all-or-none firing means for how force is graded.",
+   "a": "A motor unit is one alpha motor neuron plus every muscle fibre it innervates; in adult limb muscle each fibre is innervated by exactly one neuron, but each neuron commands many fibres. Because the neuron either reaches threshold and fires fully or does not fire at all, every fibre in the unit contracts together — there is no partial unit. Force can therefore only be graded by recruiting more units or by firing the recruited ones at a higher frequency (rate coding).",
+   "type": "recall"
+  },
+  {
+   "q": "State Henneman's size principle and the neural property that produces it.",
+   "a": "Motor units are recruited in a broadly fixed order from smallest to largest as required force rises, and de-recruited in reverse. It follows from soma size: small motor neurons have low excitation thresholds and are switched on by modest synaptic drive, while large neurons need much more drive. The trade-off is that the small, easily excited neurons also conduct more slowly and innervate fewer, smaller fibres, and because recruitment is orderly the large units are always added on top of the small ones, never in isolation.",
+   "type": "recall"
+  },
+  {
+   "q": "Why is 'Type IIb' the wrong label for a human fast fibre, and what should be used instead?",
+   "a": "The true MyHC-IIb isoform is expressed in small mammals such as rodents, not in human limb muscle. What older histochemical work labelled IIb in humans expresses MyHC-IIx, sometimes written IId/x, so IIx is the correct term. Expect legacy textbooks and older histochemical staining plates to still say IIb.",
+   "type": "recall"
+  },
+  {
+   "q": "What does myosin ATPase activity tell you about a fibre, and why was it the basis of classical fibre typing?",
+   "a": "It is the rate at which the myosin head splits ATP during cross-bridge cycling, and Bárány (1967) showed it rises with a fibre's maximal shortening velocity — fast fibres are literally fast at spending ATP. Because that relationship holds across muscles of widely differing speeds, histochemical ATPase staining let researchers read contraction speed off a tissue section and sort fibres into slow and fast populations without measuring their mechanics directly.",
+   "type": "recall"
+  },
+  {
+   "q": "Which HYROX efforts demand the highest-threshold motor units, and what does the size principle imply about what the Type I units are doing meanwhile?",
+   "a": "The sled push and sled pull, the take-off of each burpee broad jump, and heavy wall balls late in the set demand the most high-threshold recruitment. Because recruitment is orderly, those high-threshold units are added on top of the low-threshold ones rather than instead of them — Type I units are active during every run and every station and are never given a rest across the whole race. That is why fatigue in the 'endurance' pool accumulates even during the strength stations, and why aerobic capacity is one of the strongest influences on how well an athlete tolerates repeated high-force work.",
+   "type": "applied"
+  },
+  {
+   "q": "Your athlete is visibly fast-twitch-dominant: muscular, very strong on the sleds, but their output falls away sharply across repeated hard efforts. How does that change their training week compared with a slow-twitch-dominant athlete?",
+   "a": "Space the hard sessions further apart and lengthen the rests inside them, because their power decrement across repeated high-intensity bouts tends to be larger and their restoration slower. Expect wall-ball and lunge capacity to build slowly and programme it patiently rather than by adding more hard days. Fill the recovered days with sub-threshold aerobic volume to build the oxidative side of their Type II pool. The slow-twitch-dominant athlete tolerates a denser week of intervals but needs deliberate short maximal-intent work to protect the force end.",
+   "type": "applied"
+  },
+  {
+   "q": "Why do the sled push and burpee broad jump punish a fast-twitch-dominant athlete's recovery differently from the way wall balls do?",
+   "a": "Sled push and sled pull are near-maximal, concentric-dominant, high-force efforts and the burpee broad jump adds repeated near-maximal take-offs with eccentric landings; all three demand high-threshold units immediately and drain their phosphagen and glycogen stores fast. A fast-twitch athlete posts a good split there, then pays with a large power decrement and a badly compromised run 3, 4 or 5. Wall balls are a long block of submaximal reps — 100 in every individual division — limited by local muscular endurance over minutes rather than by peak force, so the same athlete fails progressively, with set fragmentation and rising rest, rather than acutely. Wall balls also close the race, so their cost lands on the finish rather than on a following run.",
+   "type": "applied"
+  },
+  {
+   "q": "A coach tells you they intend to convert their athlete's Type II fibres into Type I to make them a better HYROX endurance athlete. What is your response?",
+   "a": "Whole conversion between Type I and Type II in humans is far less established than the shift within the fast family, so this is not a target worth building a block around — fibre-type proportion is also substantially inherited, so the ceiling on reshuffling is not a coaching failure. What training does reliably move is IIx toward IIa with sustained training of almost any kind, with IIx climbing back only under disuse, detraining or a taper. Published increases in Type I proportion after endurance blocks exist but are illustrative and carry biopsy sampling error. Programme instead for what is genuinely trainable: oxidative capacity, capillarisation, buffering, recruitment and rate coding, fibre size, and the athlete's IIx↔IIa balance.",
+   "type": "applied"
+  },
+  {
+   "q": "Eye-movement muscles have very low innervation ratios; large limb muscles have very high ones. Explain the trade-off, and what it predicts about controlling a wall-ball throw versus a maximal sled push.",
+   "a": "Few fibres per neuron means each additional unit adds only a tiny increment of force, giving very fine gradation — essential for precise eye movement — while many fibres per neuron adds a large increment, giving high total force in coarse steps. A wall-ball throw is a repeatable, moderately loaded action an athlete can dose precisely, whereas a maximal sled push recruits large-ratio units close to their ceiling, so it feels much more binary and is harder to modulate by feel. Practically, coach the sled by external constraints — cadence, contact position, breathing on the turnaround — rather than by asking for a percentage of effort.",
+   "type": "applied"
+  },
+  {
+   "q": "After ten weeks of high-volume Z2 and threshold running your athlete's sled push has slowed noticeably, with no change in bodyweight. What is the plausible fibre-type and motor-unit explanation, and the fix?",
+   "a": "Sustained endurance work reduces the IIx share in favour of IIa, and, more immediately, removing high-force and high-velocity exposure detrains recruitment of the high-threshold units and their discharge rates. The athlete has not lost muscle; they have lost access to it. Reinstate short maximal-intent work — heavy pushes, jumps, low-rep strength — twice a week at low volume, which costs little aerobic development while restoring that recruitment; do not expect it to raise IIx content, only to limit further loss of high-force capability. Cross-check against the strength and power programming principles rather than adding more running.",
+   "type": "applied"
+  },
+  {
+   "q": "A vastus lateralis biopsy reads 46% Type I, 39% Type IIa, 15% Type IIx. After a 12-week base block the athlete is re-biopsied: Type IIx has fallen to 4% and Type I is unchanged. What is the new IIa proportion, and what does the change represent?",
+   "a": "Type I stays at 46% and IIx is 4%, so IIa = 100 − 46 − 4 = 50%. IIa has risen by 11 percentage points, exactly matching the 11-point fall in IIx. That is the classic IIx→IIa shift with no evidence of any Type I↔Type II conversion — the change training most reliably produces. Treat the precise figures with caution: a needle biopsy samples a tiny region of one muscle, so a few percentage points of that movement may be sampling noise.",
+   "type": "calc"
+  },
+  {
+   "q": "Athlete A's mean power across six 20 s maximal sprints falls from 620 W on sprint 1 to 527 W on sprint 6. For planning purposes you model Athlete B, who is markedly more fast-twitch-dominant, as declining 20% more in relative terms — a modelling assumption you have chosen, not a measured constant. If B also opens at 620 W, estimate B's sprint-6 power and the gap.",
+   "a": "A's decline = (620 − 527) ÷ 620 = 93 ÷ 620 = 15.0%. A 20% larger relative decline gives 15.0 × 1.2 = 18.0%, so B's sprint 6 ≈ 620 × 0.82 = 508 W — roughly 19 W below A. The multiplier is your assumption, so report the output as a plan, never as a measurement. The coaching action holds regardless: B needs longer rests within the session and more days between sessions of this type.",
+   "type": "calc"
+  }
+ ],
+ "ph_mechanics": [
+  {
+   "q": "Put the cross-bridge cycle in the correct order, naming what detaches the myosin head and what triggers the power stroke.",
+   "a": "ATP binding detaches the myosin head from actin; hydrolysis to ADP + Pi re-cocks the head into its high-energy position; calcium binding to troponin shifts tropomyosin off the actin binding site so a cross-bridge can form; phosphate release triggers the power stroke toward the M line; ADP is released; the next ATP detaches the head again. One ATP is spent per cycle.",
+   "type": "recall"
+  },
+  {
+   "q": "Define the four muscle actions in one line each, and state the caveat attached to the fourth.",
+   "a": "Isometric — tension with no net change in muscle length. Concentric — the muscle shortens and does positive external work. Eccentric — the muscle lengthens under tension, so the load does work on the muscle. Isokinetic — length changes at a constant velocity, which in practice requires a dynamometer. The caveat: isokinetic is a velocity condition rather than a separate action, since the underlying action is still concentric or eccentric.",
+   "type": "recall"
+  },
+  {
+   "q": "Rank maximal eccentric, isometric and concentric force, and explain why 'at zero velocity the muscle produces its maximum force' is only half true.",
+   "a": "Eccentric > isometric > concentric. Isometric force is the peak of the concentric side of the force–velocity curve, so it is maximal only when eccentric actions are excluded. Maximal lengthening force exceeds it — commonly around 1.2–1.8× isometric in isolated preparations, and often only about 1.0–1.3× in voluntary human efforts because of neural inhibition.",
+   "type": "recall"
+  },
+  {
+   "q": "What does the plateau of the force–length curve represent, and what limits force on each limb?",
+   "a": "The plateau is the sarcomere length at which actin–myosin overlap is optimal, so every myosin head is within reach of a binding site. On the ascending limb the sarcomere is too short — thin filaments from opposite halves double-overlap and interfere with one another, calcium sensitivity falls, and at the shortest lengths the thick filaments run into the Z discs. On the descending limb overlap declines so fewer cross-bridges can form, although passive tension from titin and connective tissue rises and partly compensates in an intact muscle.",
+   "type": "recall"
+  },
+  {
+   "q": "An athlete calls their SkiErg intervals 'isokinetic training'. Correct them precisely.",
+   "a": "The flywheel provides accommodating resistance — drag rises with handle speed, so it resists whatever force is applied — but the limbs still accelerate and decelerate within every stroke, so velocity is not constant. True isokinetic work needs a dynamometer that holds limb velocity fixed; it belongs to testing and rehabilitation settings, not to an erg. Note also that isokinetic is a velocity condition, not a separate muscle action.",
+   "type": "applied"
+  },
+  {
+   "q": "An athlete has an excellent back squat but a slow sled push. Give two mechanical explanations from this lesson and the training response.",
+   "a": "First, the sled push sits far toward the force end of the force–velocity curve (race push velocities are typically well under 1 m/s) and its demand never falls away, because friction is roughly constant over the 50 m — so useful force is needed right into end-range extension, precisely where a squat's ascending curve lets capability outrun demand. Second, the force must be directed horizontally, so vertical barbell strength does not transfer automatically. Response: make sled work at race load over race distance the primary dose, check body angle and force-vector alignment before adding barbell load, and use accommodating resistance on squats and presses only as a secondary way of keeping tension high near lockout.",
+   "type": "applied"
+  },
+  {
+   "q": "Which strength curve fits the sled pull, SkiErg and rower for the upper body, and what accessory work follows from it?",
+   "a": "A descending pattern — upper-body capability falls as the rope or handle finishes toward the body, the shortened range where the lats, posterior shoulder and elbow flexors are weakest, while the demand stays constant. Train that range directly: hold the top position of rows and chin-ups briefly under load, and pull rope at race cadence so the finish is loaded in the pattern it is actually used in. Caveat: on the rower, whole-system handle force typically peaks earlier during the leg drive; it is the upper-body segment of the stroke whose relative difficulty rises to the finish.",
+   "type": "applied"
+  },
+  {
+   "q": "Why do sandbag lunges and burpee broad jumps produce more next-day soreness than the sled push, despite the sled involving higher force?",
+   "a": "The lunge descent and the jump landing are eccentric — the muscle lengthens under high tension with cross-bridges forcibly detached while strained, the action most associated with muscle damage and delayed soreness. The sleds are concentric-dominant: each stride is hip, knee and ankle extension with almost no braking or lowering phase, so their force cost is high but their damage cost is comparatively low.",
+   "type": "applied"
+  },
+  {
+   "q": "An athlete's wall ball reps get shallower past rep 60 and start attracting no-reps. Explain in force-length and strength-curve terms, then give the fix.",
+   "a": "The bottom of the squat is the hardest point of an ascending strength curve — long muscle lengths with poor mechanical advantage at the hip and knee — so as fatigue lowers available force the athlete unconsciously trades depth for a position they can still drive out of. Fix: squat and front-rack to at least the judged depth (hip crease below the top of the knee) under fatigue, add paused work in the bottom position, and pace the set so available force stays clear of the requirement rather than converging on it.",
+   "type": "applied"
+  },
+  {
+   "q": "The farmers carry moves no load through any range at the hands, yet athletes report it as costly. Explain mechanically.",
+   "a": "Grip and trunk work is isometric — tension with no length change and therefore no external work — but cross-bridges are still cycling and calcium is still being released and pumped back, each consuming ATP. The energy bill is charged per cycle, not per metre of movement, so a static hold is genuinely expensive even though nothing is being lifted through a range.",
+   "type": "applied"
+  },
+  {
+   "q": "A muscle's fibres pull at 25° to the tendon and generate 4,000 N along the fibre. How much force reaches the tendon, and why is pennation still a good trade?",
+   "a": "cos 25° ≈ 0.906, so 4,000 × 0.906 ≈ 3,625 N reaches the tendon — a loss of about 375 N, roughly 9%. It remains a good trade because angling the fibres allows far more, shorter fibres to be packed into the same muscle volume, and the resulting rise in physiological cross-sectional area typically increases force by much more than 9%. What is given up is excursion and maximum shortening velocity.",
+   "type": "calc"
+  },
+  {
+   "q": "Two muscles each have a volume of 600 cm³. Muscle A has 8 cm fibres, muscle B has 24 cm fibres. Estimate PCSA and maximal force for each using a specific tension of 25 N/cm², and state what B gains.",
+   "a": "PCSA ≈ volume ÷ fibre length. A = 600 ÷ 8 = 75 cm²; B = 600 ÷ 24 = 25 cm². At 25 N/cm², A ≈ 1,875 N and B ≈ 625 N — three times the force for A. B, with three times the fibre length and therefore more sarcomeres in series, gains greater excursion and a higher maximum shortening velocity. Specific tension is an assumption (commonly quoted somewhere around 20–35 N/cm²), so treat the absolute newtons as illustrative and the 3:1 ratio as the real point.",
+   "type": "calc"
+  }
  ]
 }
