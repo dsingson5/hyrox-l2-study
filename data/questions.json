@@ -4152,5 +4152,129 @@
    "a": "Short rest: 10 + 8 + 6 + 5 = 29 reps × 100 kg = 2900 kg. Long rest: 10 + 10 + 9 + 8 = 37 reps × 100 kg = 3700 kg. Difference = 800 kg, i.e. 800 ÷ 2900 = 27.6%, so the long-rest condition completes about 28% more volume-load. The SHORT-rest condition produces the larger acute GH response (robustly) and often a larger testosterone response (less consistently). But the LONG-rest condition is expected to produce equal or greater hypertrophy and strength, because volume-load, mechanical tension and effort are the drivers and the hormonal excursion is not. This worked example illustrates why the hypothesis fails: the hormonal and volume-load outcomes point in opposite directions, and the controlled trials that actually measured hypertrophy (e.g. 1 min versus 3 min inter-set rest) followed the volume-load, not the hormones.",
    "type": "calc"
   }
+ ],
+ "ph_thermoreg": [
+  {
+   "q": "State the heat-balance relationship and explain what determines whether body temperature rises.",
+   "a": "Heat storage = heat production − heat loss. Body temperature rises only while storage is positive. Production is set by metabolic rate (minus the small fraction leaving as external work); loss is the sum of conduction, convection, radiation and evaporation. A coach can only act on one side or the other — lower production by pacing or improving economy, or raise loss through airflow, cooling and anything that helps sweat evaporate. Note the environmental split: where loss can keep up with production, core temperature settles at a plateau set by relative intensity; where it cannot, storage stays positive and every additional minute adds heat.",
+   "type": "recall"
+  },
+  {
+   "q": "Name the four avenues of heat exchange, and state which one still works when the air is warmer than the skin — and why.",
+   "a": "Conduction, convection, radiation and evaporation. Conduction, convection and radiation all follow the skin-to-environment temperature gradient, so when the surroundings are warmer than skin they reverse and become sources of heat gain. Evaporation is the exception: it depends on the water vapour-pressure gradient rather than the temperature gradient, so it remains available — provided the air is dry enough and moving enough to accept the vapour.",
+   "type": "recall"
+  },
+  {
+   "q": "What physically drives sweat evaporation, and why does dripping sweat provide no cooling?",
+   "a": "The water vapour-pressure gradient between wet skin and the surrounding air. Cooling comes from the phase change itself — the latent heat of vaporisation, roughly 2.4 kJ per gram — so heat is only removed when sweat actually converts to vapour at the skin. Sweat that rolls off, drips or is towelled away has left the body without absorbing that latent heat: full fluid cost, no thermal return. Airflow matters because it clears the near-saturated boundary layer of air sitting against the skin and restores the gradient.",
+   "type": "recall"
+  },
+  {
+   "q": "Which single feature most reliably separates exertional heat stroke from heat exhaustion, and what is the coach's role once it is present?",
+   "a": "Central nervous system dysfunction — confusion, disorientation, irrational or aggressive behaviour, ataxia, seizure, altered or lost consciousness. Heat exhaustion typically leaves the athlete unable to continue but lucid; exertional heat stroke does not. It is a medical emergency. The coach recognises it, stops the athlete, calls emergency medical services immediately, and begins aggressive whole-body cooling on the spot while waiting — cold-water immersion where available, otherwise continuous cold water, ice packs to neck, axillae and groin, and fanning. Cool first, transport second: outcome depends on how fast core temperature comes down. Rapid cooling is recognised first aid, not treatment; what sits outside coaching scope of practice (day 1) is diagnosis, medication, and the decision to stop cooling or clear the athlete — those belong to medical staff.",
+   "type": "recall"
+  },
+  {
+   "q": "Why can a warm, humid, crowded indoor hall be a harder thermal environment than a hotter but dry and breezy outdoor course?",
+   "a": "Because evaporative capacity, not temperature, is the binding constraint. A high ambient water vapour pressure flattens the skin-to-air gradient, so sweat is produced but does not evaporate — it drips, costing fluid without cooling. Still air means the near-saturated boundary layer against the skin is never cleared, further stalling evaporation. Crowding adds radiant and convective heat from other bodies and reduces what little airflow exists, and once ambient approaches skin temperature the dry avenues stop helping altogether. A hot but dry, moving-air environment leaves evaporation fully functional, which is the avenue that actually carries the load. This is also the condition in which duration stops being harmless: with storage permanently positive, the deficit compounds minute by minute rather than settling at a plateau.",
+   "type": "applied"
+  },
+  {
+   "q": "An athlete finishes a hot race with a measured gastrointestinal temperature of 40.4 °C, walking and talking normally. A colleague insists this proves the athlete was in serious danger. How do you respond?",
+   "a": "The number alone does not carry that conclusion. Published field measurements from elite competition — around 41 °C in road cycling world championship efforts reported by Racinais and colleagues — have been recorded in athletes who finished and were fine, so 'critical core temperature' is best treated as a contested laboratory construct rather than a fixed cut-off. What matters is the athlete in front of you: lucid, oriented, coherent. The corollary is equally important — a lower reading would not have reassured you if the athlete were confused or ataxic. Judge on central nervous system signs, not on the thermometer, and escalate on signs.",
+   "type": "applied"
+  },
+  {
+   "q": "Two athletes of identical body mass, one at about 12% body fat and one at about 25%, complete the same session in a warm hall. What difference would you expect, and what is the mechanism?",
+   "a": "Be careful — this is the design in which the popular answer fails. With mass matched and the same absolute work rate (so similar metabolic heat production), mass-matched studies find little to no difference in core-temperature rise or sweat loss in compensable conditions. Adipose tissue does insulate and has a lower specific heat than lean tissue, but at matched mass and matched heat production those effects are small. The real-world disadvantage of the higher-fat athlete usually comes from carrying more total mass (more absolute heat produced at the same speed), a lower VO2max and poorer economy — and from uncompensable conditions, where any shortfall between required and possible evaporation compounds over time. Movement economy is a separate and often overlooked determinant on the production side: a less economical athlete makes more heat for the same external speed regardless of aerobic fitness, so technical work is also heat management. Coaching implication: individualise on heat production and fitness, not on a body-fat number.",
+   "type": "applied"
+  },
+  {
+   "q": "In a hot hall your athlete's splits fall away from run three onward, yet heart rate is no higher than in cool-gym sessions and they report no burning legs. Explain what is most likely happening and what you can act on.",
+   "a": "This is the behavioural thermoregulation route rather than a metabolic ceiling. Rising skin temperature and thermal discomfort feed thermal perception, which — alongside cardiovascular strain — inflates perceived exertion, and the athlete reduces self-selected work rate to defend heat balance. The chain runs through perception and can operate well before core temperature is anywhere near remarkable, so the physiological readouts you are watching look unalarming. Act on both ends: lower production by resetting pace and softening the sled effort before the cost compounds, and attack the perceptual side directly — cold fluid at the roxzones (day 25), cold water over head and neck where the rules permit, pre-cooling before the gun, minimal kit. Comfort is not a soft variable here; it feeds straight into the pace the athlete selects.",
+   "type": "applied"
+  },
+  {
+   "q": "Outline a heat-acclimation block for an athlete travelling to a race in a warm, humid hall, and state which adaptations you expect and which fade first.",
+   "a": "Roughly 5–14 daily exposures of about 60–90 min in genuinely warm conditions at modest intensity, positioned in the final weeks and deliberately kept away from key quality sessions so the extra strain does not corrupt them; then top-ups every few days to hold the adaptation. It can be manufactured at home — a hot room, extra layers, a sauna finish — rather than requiring travel to the climate itself. Expect plasma-volume expansion, earlier sweat onset, a higher sweat rate, more dilute sweat, and lower core temperature and heart rate at a fixed workload, plus improved thermal comfort — which matters because thermal perception is itself a determinant of self-selected pace. Plasma-volume expansion appears early and is also among the first adaptations to decay once exposure stops, whereas the sweating adaptations take longer to build. Nothing in the block substitutes for arriving euhydrated (day 25) or for the fluid-balance physiology in day 69.",
+   "type": "applied"
+  },
+  {
+   "q": "Name what a coach can realistically control on race day in a warm, still, crowded hall — and what they cannot.",
+   "a": "Controllable: arrival time and time spent standing in a hot holding pen; warm-up length and clothing (short, minimal kit, ideally in the coolest available space); pre-cooling — a cold drink or ice slurry, an ice towel, cold water on head and neck within event rules; a pacing reset written before the gun rather than improvised on run five (day 16), with the sleds and burpee broad jump deliberately softened because they are the peak heat-production segments; a rehearsed cold mouthful at named roxzones, since the 15 traverses are the only realistic intake points (day 25); an agreed emergency plan, including where ice and water are and the instruction that cooling starts on the spot; and post-race supervision, given that wall balls end the race with heat storage at its highest. Not controllable: hall temperature, humidity, airflow, crowd density, and the athlete's body composition and economy on the day — those had to be addressed in the training block, not the warm-up.",
+   "type": "applied"
+  },
+  {
+   "q": "An athlete holds 220 W of external power on the SkiErg at a gross mechanical efficiency of 22%. Calculate total metabolic rate and rate of heat production. Then, assuming a 70 kg body, a specific heat of body tissue of about 3.47 kJ·kg⁻¹·°C⁻¹, and — as a thought experiment — no heat loss at all, how fast would body temperature rise?",
+   "a": "Total metabolic rate = 220 ÷ 0.22 = 1000 W. Heat production = 1000 − 220 = 780 W, i.e. 780 J per second. Whole-body heat capacity = 70 kg × 3.47 kJ·kg⁻¹·°C⁻¹ = 242.9 kJ per °C = 242 900 J per °C. Rate of rise = 780 ÷ 242 900 ≈ 0.0032 °C per second ≈ 0.19 °C per minute — so a four-minute SkiErg would add roughly 0.8 °C, and just over five minutes (1 ÷ 0.19 ≈ 5.2 min) would take it past 1 °C. Real athletes do not heat at that rate because heat loss runs the whole time; the point of the calculation is the scale of the load the loss avenues must handle, and why an athlete in a hall with poor evaporative capacity has very little margin.",
+   "type": "calc"
+  },
+  {
+   "q": "An athlete must dissipate 700 W and, in a warm hall, evaporation is effectively the only useful avenue. Using a latent heat of vaporisation of about 2.4 kJ per gram, how much sweat must EVAPORATE per hour? If humidity and still air mean only about 60% of secreted sweat evaporates, how much must be secreted?",
+   "a": "700 W = 700 J/s × 3600 s = 2 520 000 J = 2520 kJ per hour. Evaporation required = 2520 ÷ 2.4 = 1050 g/h, i.e. about 1.05 litres of evaporated sweat per hour. At 60% evaporative efficiency, secretion required = 1.05 ÷ 0.6 = 1.75 litres per hour for the same cooling. The extra 0.7 L/h drips off having done no thermal work at all — the athlete pays the full fluid cost for 60% of the benefit. This is why a humid hall raises fluid requirements and lowers cooling at the same time, and why the intake plan built in day 25 must be set from race-like conditions rather than cool-gym data.",
+   "type": "calc"
+  }
+ ],
+ "ph_fluidbalance": [
+  {
+   "q": "State how body water is distributed between the compartments, as fractions, and name the compartment that matters most acutely for performance.",
+   "a": "About two-thirds of total body water is intracellular. The remaining extracellular third divides roughly three-quarters interstitial and one-quarter plasma once the small transcellular fraction (synovial, cerebrospinal, ocular and gastrointestinal secretions) is set aside. Plasma is the smallest of the three major compartments -- transcellular fluid is smaller still, but it is not a circulating reserve -- and the acutely decisive one, because it is the circulating volume itself: lose it and the heart has less to eject per beat, with muscle and skin then competing over a smaller output.",
+   "type": "recall"
+  },
+  {
+   "q": "Why does sweating tend to RAISE plasma sodium concentration rather than lower it?",
+   "a": "Sweat is a hypotonic secretion -- the gland puts out a near-isotonic fluid and then reabsorbs sodium and chloride in the duct, so its sodium concentration (day 25 gives the individual range) sits well below plasma's roughly 135-145 mmol/L. Proportionally more water than sodium leaves the body, so what remains is more concentrated. The same duct mechanism explains why sweat runs saltier at high sweat rates -- less transit time to reclaim sodium. It is also why sodium loss is not the usual route to exercise-associated hyponatraemia; overdrinking dilute fluid is (day 25).",
+   "type": "recall"
+  },
+  {
+   "q": "What does the sodium-potassium ATPase do, and why does a coach care?",
+   "a": "It hydrolyses ATP to export three sodium ions and import two potassium ions, maintaining the transmembrane ion gradients that establish the resting membrane potential. Without that potential there is no action potential, so no motor-unit activation and no contraction (day 63). It also runs continuously and expensively -- commonly estimated at roughly a fifth to a third of resting energy turnover -- which is part of why electrolyte status is not a peripheral nutritional detail.",
+   "type": "recall"
+  },
+  {
+   "q": "Give the normal range for plasma osmolality and name its principal determinant in the extracellular space.",
+   "a": "Roughly 285-295 mOsm/kg, defended within a narrow band. Sodium, together with its accompanying anions, is the principal determinant of extracellular osmolality. A rise is detected by hypothalamic osmoreceptors, which generate thirst and trigger vasopressin release to reduce renal water loss.",
+   "type": "recall"
+  },
+  {
+   "q": "An athlete racing an indoor HYROX in one of the rarer cool, well-ventilated venues -- most halls are not (day 25) -- wants to salt-load for two weeks beforehand to 'expand blood volume'. What does the evidence actually support?",
+   "a": "Not that. The systematic-review picture (Heffernan and colleagues) is mixed -- roughly a third of trials supported improved sodium balance, roughly a third showed no benefit, and there is no consistent ergogenic effect in healthy athletes in temperate conditions. What sodium reliably does is indirect: it helps maintain plasma volume during exercise, improves post-exercise fluid retention at around 40 mmol/L and above, and may reduce perceived exertion in the heat. Chronic loading in a temperate climate is also self-defeating, because the kidney matches excretion to intake across a wide range (Malhotra) -- you mostly buy expensive urine. Advise sodium present in the drink and the meals, not mega-dosed. The one context with some support is a high-dose pre-exercise sodium beverage before genuinely HOT racing -- which, given how most halls actually feel, is the condition to plan for.",
+   "type": "applied"
+  },
+  {
+   "q": "Endurance field data show the fastest finishers losing the most body mass -- an inverse relationship between percentage body-mass change and finishing time across 643 marathon finishers (Zouhal and colleagues, 2011), and the same pattern in long-course triathlon (Wharam and colleagues). Does that mean dehydration improves performance? Justify your answer.",
+   "a": "No. The association is heavily confounded. Faster finishers spend less time on course, stop less often and drink less, sweat at higher absolute rates because they are working harder, and are typically leaner and fitter to begin with. Mass loss is a marker of how they raced, not a cause of how fast they raced. The defensible reading is that laboratory dehydration protocols overstate the effect seen in the field -- not that fluid loss is beneficial. Where a mass-loss advantage is plausible at all, the mechanism is simply less mass to transport, which is modality-specific to weight-bearing work and is not a physiological benefit of losing fluid.",
+   "type": "applied"
+  },
+  {
+   "q": "Laboratory studies commonly show decrements from around 2% body-mass loss; field studies frequently do not. Explain why the two literatures disagree, and say where that leaves the 2% planning figure.",
+   "a": "The designs differ in ways that push the result in opposite directions. Laboratory protocols often pre-dehydrate participants before the trial begins, use little or no airflow relative to real racing speeds, are extremely hard to blind (participants know they have not drunk), hold a fixed submaximal intensity, and frequently use time-to-exhaustion outcomes that magnify small differences. Field studies have the opposite problem: mass loss is confounded with pace, body size, fitness and time on course, and nobody controls what was drunk. Meanwhile the mechanistic evidence is real -- dehydration accelerates muscle glycogen use and raises heart rate, core temperature and perceived exertion at a fixed workload (Logan-Sprenger and colleagues) -- so the argument is about magnitude and threshold, not existence. That leaves 2% exactly where day 25 puts it: a reasonable planning heuristic, not a physiological cliff edge. The threshold that matters is individual and condition-dependent, smaller in hot still air and larger in cool, ventilated, self-paced conditions.",
+   "type": "applied"
+  },
+  {
+   "q": "A coach sends every athlete for sweat-sodium testing and prescribes replacement to the nearest 100 mg. What is right and what is wrong about that?",
+   "a": "Right: testing to CLASSIFY an athlete -- to place them in a low, moderate or high sweat-sodium band and inform the plan -- is legitimate and is what day 25 recommends, and it explains why two athletes with identical sweat rates need different drinks. Wrong: milligram-level individualised replacement has not been demonstrated to improve performance. The measurement is also less fixed than it looks, since sweat sodium shifts with habitual dietary intake and acclimation state (Malhotra) and rises with sweat rate as duct transit time falls. Use the test to set a band and a starting point, then adjust from race-day experience -- not to compute a prescription to two significant figures.",
+   "type": "applied"
+  },
+  {
+   "q": "An athlete finishes a 70-minute simulation 1.2 kg lighter having drunk 400 mL. What is his sweat loss, what is his actual deficit at the finish, and is the scale reading the whole story?",
+   "a": "Sweat loss = mass lost + fluid taken in = 1.2 + 0.4 = 1.6 L, i.e. a sweat rate of about 1.37 L/h -- that is the number you plan the next session's intake around. His deficit AT THE FINISH is not 1.6 L: 400 mL was replaced, so he is down 1.2 kg, roughly 1.5% of body mass for an 80 kg athlete. The two figures answer different questions -- 1.6 L is what the sweat glands moved, 1.2 L is the deficit still owed -- and day 25's field formula treating 1 kg as about 1 litre stands for both. The mechanistic caveat is that not all body-mass change during exercise is fluid: oxidising carbohydrate and fat consumes stored substrate mass and releases metabolic water, and water bound to glycogen is freed as glycogen is used, so a small part of the 1.2 kg on the scale does not represent a fluid deficit of the same size. The practical implication is modest -- do not treat a sweat-rate estimate as accurate to two decimal places, and do not conclude an athlete is in catastrophic deficit from a scale reading alone.",
+   "type": "calc"
+  },
+  {
+   "q": "Distinguish voluntary from involuntary dehydration and explain why the distinction is a coaching lever specifically in HYROX.",
+   "a": "Involuntary dehydration is a deficit the athlete cannot avoid -- losses exceed what can be taken on, or fluid is simply unavailable. Voluntary dehydration is drinking less than is being lost while fluid IS available, because thirst lags the actual deficit and because stopping costs time. In HYROX the voluntary component dominates: the race is roughly 60 minutes to 2 hours, the athlete is racing throughout, and the 15 roxzone traverses are the only realistic drinking opportunities -- brief windows where the clock is running and the instinct is to keep moving. That makes it a plan-and-rehearsal problem, not a physiology problem: a fixed, pre-decided sip at named roxzones (day 25) removes an in-race decision the fatigued athlete will otherwise decline to make. It also means the starting state carries most of the weight, since there is very little scope to correct a deficit once the gun goes.",
+   "type": "applied"
+  },
+  {
+   "q": "A 78 kg athlete has total body water equal to 60% of body mass. Estimate his total body water and each compartment, then express a 1.6 L sweat loss as a proportion of plasma volume. What does that comparison teach?",
+   "a": "TBW = 0.60 x 78 = 46.8 L. Intracellular = two-thirds = 31.2 L. Extracellular = one-third = 15.6 L, splitting roughly 3:1 into interstitial 11.7 L and plasma 3.9 L. A 1.6 L loss is 1.6 / 3.9 = about 41% of plasma volume. The teaching point: plasma alone cannot possibly absorb that loss and remain compatible with racing, so the deficit must be shared across compartments -- water is drawn from interstitial fluid and, driven by the rising extracellular sodium concentration, out of the cells. That osmotic redistribution is precisely what partially defends circulating volume, and it is why sodium matters indirectly rather than as a direct ergogenic aid.",
+   "type": "calc"
+  },
+  {
+   "q": "Two athletes both weigh 80 kg; one is 10% body fat, the other 25%. Assuming lean tissue is about 72% water and adipose tissue about 10% water, calculate each athlete's total body water and show what a 2%-of-body-mass loss (1.6 kg) means for each.",
+   "a": "Leaner athlete: fat mass 8 kg -> 0.8 L; lean mass 72 kg -> 72 x 0.72 = 51.84 L; TBW = 52.6 L, i.e. about 66% of body mass. Higher-fat athlete: fat mass 20 kg -> 2.0 L; lean mass 60 kg -> 60 x 0.72 = 43.2 L; TBW = 45.2 L, i.e. about 57% of body mass. Both sit inside the normal 45-75% span, which is exactly the point -- the span is wide because composition drives it. The same 1.6 L deficit is 1.6 / 52.6 = 3.0% of the leaner athlete's total body water but 1.6 / 45.2 = 3.5% of the other's -- roughly a sixth more of the available reserve. Same scale reading, same percentage of body mass, meaningfully different physiological stress. Treat 2% as a planning line that needs individual adjustment, not as an equal standard applied to every body composition. (The tissue water fractions used here are textbook approximations, so the numbers illustrate the direction of the effect rather than measuring it precisely.)",
+   "type": "calc"
+  }
  ]
 }
