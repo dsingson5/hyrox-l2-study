@@ -4276,5 +4276,67 @@
    "a": "Leaner athlete: fat mass 8 kg -> 0.8 L; lean mass 72 kg -> 72 x 0.72 = 51.84 L; TBW = 52.6 L, i.e. about 66% of body mass. Higher-fat athlete: fat mass 20 kg -> 2.0 L; lean mass 60 kg -> 60 x 0.72 = 43.2 L; TBW = 45.2 L, i.e. about 57% of body mass. Both sit inside the normal 45-75% span, which is exactly the point -- the span is wide because composition drives it. The same 1.6 L deficit is 1.6 / 52.6 = 3.0% of the leaner athlete's total body water but 1.6 / 45.2 = 3.5% of the other's -- roughly a sixth more of the available reserve. Same scale reading, same percentage of body mass, meaningfully different physiological stress. Treat 2% as a planning line that needs individual adjustment, not as an equal standard applied to every body composition. (The tissue water fractions used here are textbook approximations, so the numbers illustrate the direction of the effect rather than measuring it precisely.)",
    "type": "calc"
   }
+ ],
+ "ph_testing": [
+  {
+   "q": "Define movement competency, state what \"optimally\" requires, and outline the causal chain the movement-competency literature proposes.",
+   "a": "It is the ability to perform fundamental movement patterns optimally, where optimal means pain-free, with acceptable joint alignment, coordinated and well-timed muscular contribution and postural control held through the range. Kritz and Cronin's proposed chain: muscles that are disproportionately strong, weak, poorly timed or short disrupt the balance of support around a joint; that produces a faulty pattern; the faulty pattern degrades joint function and mechanical output. Present it as a coaching model for organising observation, not a validated causal mechanism.",
+   "type": "recall"
+  },
+  {
+   "q": "Name the seven items of the Functional Movement Screen and its scoring scale, including what a zero means and how asymmetry is handled.",
+   "a": "Deep squat, hurdle step, in-line lunge, shoulder mobility, active straight leg raise, trunk stability push-up, rotary stability. Each is rated on a 0-3 ordinal scale: 3 = performed without compensation, 2 = performed with compensation, 1 = unable to perform, 0 = pain provoked. Composite out of 21. Five of the seven items are scored on each side and only the lower side enters the composite, so asymmetry has to be recorded separately — the total cannot show it. Three pass/fail clearing tests (shoulder impingement, spinal extension press-up, spinal flexion posterior rocking) can force the associated item to 0 on pain, and a 0 is a referral trigger under scope of practice (day 1), not a corrective-exercise prescription.",
+   "type": "recall"
+  },
+  {
+   "q": "How long should a movement-competency screen take, how often should it be repeated, and why that infrequently?",
+   "a": "Roughly a fixed 10-20 minute window per athlete, repeated about two or three times a year. Movement competency is a slow-moving quality, so more frequent screening mostly samples day-to-day variation and observer noise rather than change. It is deliberately the opposite cadence to the weekly monitoring markers of day 49.",
+   "type": "recall"
+  },
+  {
+   "q": "What order should tests take within a single session, and what is the justification?",
+   "a": "Reactive and explosive power first, then maximal strength, then strength endurance; complex multi-joint tests before simple single-joint ones. The justification is contamination: residual fatigue degrades power measures far more than endurance measures, so a jump measured after heavy lifting or an erg piece is partly a measurement of the previous test rather than of the athlete's power. Recovery between efforts should be long enough to restore phosphagen availability — around 2-3 minutes for power efforts, 3-5 minutes before maximal strength, shorter for submaximal endurance items — because phosphocreatine needs roughly 3-5 minutes to resynthesise fully, even though it is about half restored within 30 seconds.",
+   "type": "recall"
+  },
+  {
+   "q": "A coach tells an athlete: \"You scored 13 on the screen, which is inside the 14-or-below band, so you are at elevated injury risk and I am pulling you out of the strength block.\" Evaluate that reasoning.",
+   "a": "It is not defensible. The <=14 cut-off comes from small, specific cohorts (Kiesel and colleagues in professional American football and firefighters), and subsequent systematic reviews and meta-analyses (Dorrel 2015; Moran 2017; Bunn 2019) report pooled sensitivity of only about 0.2-0.3, far too low for the composite to work as an injury-screening instrument however respectable its specificity or its inter-rater reliability. It also misuses the number: the total tells you nothing about which pattern failed, whether the failure was one-sided, or whether it hurt. The correct move is to read the item scores and asymmetries, act on any painful item by referral (day 1), keep training the athlete, and use the screen as a description to re-check in a few months.",
+   "type": "applied"
+  },
+  {
+   "q": "Two athletes both score 14. One scored 2 on every item. The other scored 3 on three items, 2 on two items, 1 on the in-line lunge with a clear left-right difference, and 0 on the hurdle step. Same composite — what do you do differently?",
+   "a": "The identical totals mean nothing in common. The first athlete shows mild, global compensation across all patterns and is a candidate for general technical work and load progression, with no single target. The second has one clearly failed, asymmetrical pattern and a pain response: the 0 is a referral (day 1), and the in-line lunge deficit is a specific target with direct consequences for sandbag lunges and the sled push. This is exactly the information ordinal summation destroys, which is why item scores and asymmetries are recorded rather than the total alone.",
+   "type": "applied"
+  },
+  {
+   "q": "On the side view a standing athlete shows a markedly anterior-tilted pelvis. How should you handle that finding?",
+   "a": "Record it and test it; do not treat it. Static posture is cheap to assess but its relationship to dynamic movement quality is unclear, so it produces hypotheses rather than diagnoses. Ask what it predicts in a pattern that matters — hinge position under a loaded bend, lumbar position at the bottom of a deep squat, trunk position under a carry, pelvic control in gait — and cross-check the capacity and control screens of day 38. If the standing finding does not reappear under load it does not earn programme time; if it does, it is the loaded pattern you coach and re-screen, not the standing posture.",
+   "type": "applied"
+  },
+  {
+   "q": "An athlete cannot maintain an overhead dowel while reaching squat depth. Which HYROX demands does this touch, and what do you do?",
+   "a": "Squat depth plus overhead position feeds the 100 wall balls that close every individual division and the loaded take-off of the burpee broad jump; on the screen this is the deep squat item, with shoulder mobility as the follow-up item that tells you whether the limit sits in the arms or the legs. Record the item scores rather than the total, then decide which element is limiting — thoracic and shoulder range, ankle range, or trunk control — and regress the pattern (elevated heels, box depth, a lighter or lower target) while training that element. The low-back and SkiErg consequences of a restricted overhead position belong to day 38; the decision here is which pattern you regress and when you re-screen it, which is in months rather than weeks.",
+   "type": "applied"
+  },
+  {
+   "q": "A coach tests the countermovement jump immediately after a five-rep-max back squat and three 500 m row efforts. What is wrong, and how do you fix the session?",
+   "a": "The sequence is inverted. Power is the quality most corrupted by residual fatigue, so the jump height measured here reflects the squat and rowing that preceded it, not the athlete's power. Fix it by placing the jumps first after a standardised warm-up with submaximal build-up attempts, then the maximal strength work, then the strength-endurance items, with 2-3 minutes between power efforts and 3-5 minutes before maximal lifts. Any jump collected in the wrong order should not be logged as comparable with rested values.",
+   "type": "applied"
+  },
+  {
+   "q": "Your athlete's short maximal SkiErg power test keeps getting extended — an assistant coach has taken it out to 30 strokes because \"that gives a better number\". Why does that break the test?",
+   "a": "The test is deliberately held to roughly 6-10 seconds, the window in which the phosphagen system supplies most of the ATP, so that it measures upper-body power production (day 18). Thirty strokes is on the order of 30-40 seconds of maximal work, by which point glycolysis is the dominant energy pathway, so the test has become a short anaerobic-capacity or ski-specific endurance effort — a different quality with a different fatigue profile. It also breaks comparability with every earlier result, so the season's data are no longer a single series. Restore the original stroke count, warm-up and cueing, and if ski endurance matters, test it separately as its own item.",
+   "type": "applied"
+  },
+  {
+   "q": "An athlete's CMJ is 41.4 cm and concentric-only SJ is 36.0 cm. Eight weeks later CMJ is 44.0 cm and SJ is 40.0 cm. Compute EUR at both points and interpret carefully.",
+   "a": "EUR is CMJ/SJ from jump height. Baseline: 41.4/36.0 = 1.15. Retest: 44.0/40.0 = 1.10. The ratio fell, yet both jumps improved — CMJ by 2.6 cm and SJ by 4.0 cm. The correct reading is that concentric output improved faster than countermovement output, not that the athlete lost elastic function; because EUR is a ratio, a fall can reflect a better denominator rather than a worse numerator. Always report raw jump heights alongside the ratio, state that the height-based version was used (a peak-power version gives different values), confirm the SJ pause and depth were controlled so no countermovement crept in, and judge the change against the test's own error (day 49).",
+   "type": "calc"
+  },
+  {
+   "q": "You screen 200 athletes over a season; 20 sustain an injury. Assume the composite cut-off flags injured athletes with sensitivity 0.25 and correctly passes non-injured athletes with a diagnostic specificity of 0.85 — approximately the pooled values the reviews report, and note that diagnostic specificity here is the screening-accuracy sense, not the test-specificity of day 49. Work out how informative the flag is.",
+   "a": "Injured group: 0.25 x 20 = 5 correctly flagged, 15 missed. Non-injured group of 180: 0.85 x 180 = 153 correctly passed, so 27 falsely flagged. Total flagged = 5 + 27 = 32, of whom only 5 are injured — positive predictive value 5/32 = about 16%, so roughly 84% of flagged athletes never get hurt. Of the 168 who passed, 15 were injured, about 9%, against a base rate of 20/200 = 10%. So a flag moves your estimate from 10% to about 16% and a pass moves it from 10% to about 9%, while the screen misses three-quarters of the injuries outright. With a low base rate and low sensitivity the cut-off carries almost no decision value — use the screen descriptively instead.",
+   "type": "calc"
+  }
  ]
 }
