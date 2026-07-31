@@ -4462,5 +4462,67 @@
    "a": "Session A: work = 3 x 12 x 30 s = 1080 s = 18 min. Within-series recoveries = 3 x 11 x 15 s = 495 s = 8 min 15 s. Between-series recoveries = 2 x 180 s = 360 s = 6 min. Total = 1080 + 495 + 360 = 1935 s = 32 min 15 s. Work fraction = 18/32.25 = 55.8%. Session B: work = 6 x 40 s = 240 s = 4 min. Recoveries = 5 x 240 s = 1200 s = 20 min. Total = 1440 s = 24 min. Work fraction = 4/24 = 16.7%. Read: A accumulates 18 min above threshold inside about half an hour, sits inside the typical short-interval range, and is a genuine aerobic buy; B accumulates 4 min in 24 min, carries the sprint-interval signature, and spends heavily from the neuromuscular and glycolytic budget for roughly a sixth of the session spent at intensity. For a singles HYROX athlete A is the staple and B the occasional supplement.",
    "type": "calc"
   }
+ ],
+ "ph_altitude": [
+  {
+   "q": "At 3,000 m, what has happened to the percentage of oxygen in the air, and what exactly is the athlete short of?",
+   "a": "The percentage is essentially unchanged — air remains about 20.9% oxygen at any elevation. What has fallen is total barometric pressure, and therefore the pressure oxygen contributes to the inspired gas. The athlete is short of oxygen PRESSURE, not oxygen molecules as a proportion of the mixture. This is hypobaric hypoxia, and it lowers the first term of the oxygen cascade (day 65), which is why every downstream gradient shrinks with it.",
+   "type": "recall"
+  },
+  {
+   "q": "Distinguish hypobaric from normobaric hypoxia, and say why the distinction matters to a coach buying an altitude tent.",
+   "a": "Hypobaric hypoxia is real altitude: the oxygen fraction is normal but total pressure is low. Normobaric hypoxia is produced at sea-level pressure by lowering the inspired oxygen fraction — tents, masks and chambers. Both reduce inspired PO2, but by different routes, and reported responses in ventilation, fluid shifts and symptom load are not identical. Treat a tent as an approximation of altitude rather than an equivalent, and do not assume a dose expressed in 'metres' transfers cleanly between them.",
+   "type": "recall"
+  },
+  {
+   "q": "Trace the ventilatory chain at altitude from the stimulus through to the renal response, and name the cost of the compensation.",
+   "a": "Low arterial PO2 stimulates the peripheral chemoreceptors, which raise ventilation immediately at rest and at submaximal work — the hypoxic ventilatory response, which keeps increasing over the following hours and days. Greater ventilation blows off CO2, lowering arterial PCO2 and producing a respiratory alkalosis. The kidneys compensate over days by excreting bicarbonate, which returns pH toward normal. The cost is reduced blood buffering capacity — exactly the reserve needed for high-intensity work (day 20), which is why quality sessions suffer disproportionately.",
+   "type": "recall"
+  },
+  {
+   "q": "State the conventional altitude bands and what each means for performance.",
+   "a": "Five conventional bands, and the reason they exist is the shape of the dissociation curve: while arterial PO2 stays on the flat shoulder the cost is trivial, and it accelerates once PO2 reaches the steep limb. Below roughly 500 m nothing meaningful happens. From about 500 to 2000 m the loss is small and largely reversible once acclimatised. From about 2000 to 3000 m aerobic capacity is measurably reduced with only partial recovery, and acute mountain sickness becomes possible from roughly 2500 m, particularly on a fast ascent. From about 3000 to 5500 m acute mountain sickness is common and the decrement cannot be fully reversed by acclimatisation. Above roughly 5500 m the picture is progressive deterioration rather than adaptation. Treat every boundary as a convention rather than a physiological edge: individuals straddle them, and an athlete's own threshold for symptoms is not read off a table.",
+   "type": "recall"
+  },
+  {
+   "q": "An athlete critiques your teaching: 'You said alkalosis shifts the curve left and raises haemoglobin's affinity for oxygen — that sounds purely good.' Answer them.",
+   "a": "It is a trade, not a gift. A left shift means haemoglobin binds oxygen more readily, which HELPS loading in the lung where alveolar PO2 is low — genuinely useful at altitude. The same increased affinity HINDERS unloading at the tissue, where oxygen must come off the molecule to diffuse into the fibre. The two effects partly cancel. Add the time course: over the following days 2,3-DPG rises and shifts the curve back rightward, partly offsetting the alkalotic left shift, so the working position of the curve keeps moving through an acclimatisation period.",
+   "type": "applied"
+  },
+  {
+   "q": "Day four of a training camp at about 2,400 m. Your athlete's heart rate at their normal easy pace is 11 bpm above sea-level values, HRV is down, sleep is broken and the prescribed threshold session felt impossible. What is happening, and what do you change?",
+   "a": "This is the expected acute picture, not a red flag — provided you have ruled out acute mountain sickness, which is possible from about 2500 m; screen actively for headache, nausea, dizziness and loss of appetite, and if those are present the answer is descent or delay, not a modified session. Otherwise the mechanism is routine: sympathetic drive has raised heart rate to defend cardiac output against a reduced stroke volume from plasma-volume loss; HRV falls with it; periodic breathing disrupts sleep; and reduced buffering plus a lower maximal metabolic steady state make threshold work brutal. Changes: drop absolute pace targets and prescribe by perceived effort first, heart rate second — sea-level HR zones do not transfer cleanly either, since maximal heart rate falls while submaximal heart rate rises, so treat the top of a familiar band as too high until re-tested on site. Cut load through the first week, push fluids and daily carbohydrate (accepting that in-session feeding is oxidised less efficiently in the first days), and defer hard intervals until that inefficient early pattern has settled — commonly across the first week to ten days, as peripheral extraction improves and heart rate returns toward familiar values at a given effort. Treat the timescale as approximate and strongly individual rather than a fixed date. Keep monitoring resting heart rate and morning subjective markers (day 5).",
+   "type": "applied"
+  },
+  {
+   "q": "A blood panel taken on day five at altitude shows haematocrit up from 43% to 46%. Your athlete says the camp is 'already working'. What do you tell them?",
+   "a": "Almost certainly not yet. Erythropoietin does rise within hours and peaks in the first day or two, but a measurable increase in red-cell mass takes weeks. On day five the haematocrit rise is dominated by haemoconcentration — plasma volume falls fast through respiratory water loss and a bicarbonate-driven diuresis, so the same red cells now sit in less plasma. Day 65 already made the point that a higher haematocrit is not automatically greater oxygen-carrying capacity; here it may even signal a fluid deficit worth correcting.",
+   "type": "applied"
+  },
+  {
+   "q": "An athlete returns from three weeks at altitude and expects a personal best at their next HYROX. How do you frame expectations?",
+   "a": "Honestly and without promising a bounce. Transfer of altitude exposure to performance is real but contested, with modest average effects and well-documented non-responders — this athlete may be one. Any erythropoietic gain was gated by iron status, so if iron was not screened and repleted beforehand (day 23), the stimulus may have gone nowhere. Meanwhile they trained at reduced absolute intensity for three weeks, so top-end sharpness and sea-level pacing feel are likely blunted. Plan the race on current, re-tested sea-level numbers rather than pre-camp bests, and treat any gain as a bonus.",
+   "type": "applied"
+  },
+  {
+   "q": "You coach an athlete who LIVES at about 2,200 m but will race at sea level. How do you set their training targets, and how do you read their home training data?",
+   "a": "Set targets by perceived effort and by heart rate established AT altitude — not by imported sea-level zones, which do not transfer cleanly in either direction once maximal heart rate has fallen and submaximal heart rate has risen. Hold their home paces, watts and sled loads as altitude-specific rather than absolute truth: lactate threshold occurs at a lower absolute work rate where they live (Clark and colleagues, 2007), and the maximal metabolic steady state is likewise lowered in hypoxia (separate MLSS work), so home threshold splits understate sea-level capability. Expect their submaximal heart rate to run higher than a sea-level peer's at the same absolute output, and their carbohydrate reliance at a given pace to be greater (Brooks and colleagues, 1991; Roberts and colleagues, 1996) — with the caveat that ingested carbohydrate is oxidised less efficiently in hypoxia (Margolis and colleagues, 2020), an effect that eases with acclimatisation. At the race they should be prepared to run faster than home data predicts — pace the first 1 km by feel and heart rate rather than trusting an old number.",
+   "type": "applied"
+  },
+  {
+   "q": "A race is announced at a genuinely elevated venue, around 2,200 m. How do you re-plan the athlete's race model for 8 x 1 km alternating with the eight stations?",
+   "a": "Rewrite it around a lower ceiling, not around bravery. Aerobic performance falls broadly in step with hypoxaemia, so target run splits and station paces both shift slower, and RPE at any given pace is elevated. Lactate accumulates earlier at a matched absolute output, and buffering reserve is reduced if the athlete arrived recently, so an aggressive sled push or an early hot 1 km is expensive in a way it would not be at sea level. Because the order is fixed and every individual division finishes on 100 wall balls, protect that end: plan conservative early splits, allow more recovery around the sled work, and pace the run legs by perceived effort first and heart rate second rather than by sea-level target times — remembering that sea-level HR zones do not transfer cleanly either, since maximal heart rate falls while submaximal heart rate rises, so the top of a familiar band may already sit above their altitude threshold. Note that the reduced-drag sprint benefit does not apply — the race is indoors and the running is aerobic.",
+   "type": "applied"
+  },
+  {
+   "q": "Barometric pressure at a mountain venue is 560 mmHg; at sea level take it as 760 mmHg. Using an oxygen fraction of 0.209, compute the atmospheric partial pressure of oxygen at both, the absolute fall, and the percentage fall. Then compute the humidified inspired value at the venue, allowing 47 mmHg for water vapour.",
+   "a": "Sea level: 0.209 x 760 = 158.8 mmHg (about 159). Venue: 0.209 x 560 = 117.0 mmHg (about 117). Absolute fall = 158.8 - 117.0 = 41.8 mmHg. Percentage fall = 41.8 / 158.8 = 26.3%. Humidified at the venue: 0.209 x (560 - 47) = 0.209 x 513 = 107.2 mmHg, against 0.209 x (760 - 47) = 0.209 x 713 = 149.0 mmHg at sea level. Note the order of operations: subtract water vapour from barometric pressure FIRST, then multiply by the fraction. The coaching point: the oxygen FRACTION was identical in every one of those calculations — the roughly 26% loss came entirely from the pressure term, and because the 47 mmHg water-vapour subtraction is a fixed absolute amount, the humidified comparison gives a slightly larger relative loss still (41.8 / 149.0 = 28.0%).",
+   "type": "calc"
+  },
+  {
+   "q": "An athlete has a blood volume of 6.0 L and a haematocrit of 42% on arrival at altitude. Four days later plasma volume has fallen by 12% with no change in red-cell mass. Compute the new haematocrit and interpret it.",
+   "a": "On arrival: red-cell volume = 0.42 x 6000 = 2520 mL; plasma = 6000 - 2520 = 3480 mL. After a 12% plasma loss: plasma = 3480 x 0.88 = 3062 mL; red cells unchanged at 2520 mL; new blood volume = 2520 + 3062 = 5582 mL. New haematocrit = 2520 / 5582 = 45.1%. Interpretation: haematocrit rose by more than three percentage points (42.0 to 45.1) with ZERO new red cells produced. Total oxygen-carrying capacity is unchanged and circulating volume is lower, which reduces cardiac filling and stroke volume. This is the haemoconcentration trap — do not read this panel as evidence of erythropoiesis.",
+   "type": "calc"
+  }
  ]
 }
