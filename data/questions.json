@@ -4524,5 +4524,67 @@
    "a": "On arrival: red-cell volume = 0.42 x 6000 = 2520 mL; plasma = 6000 - 2520 = 3480 mL. After a 12% plasma loss: plasma = 3480 x 0.88 = 3062 mL; red cells unchanged at 2520 mL; new blood volume = 2520 + 3062 = 5582 mL. New haematocrit = 2520 / 5582 = 45.1%. Interpretation: haematocrit rose by more than three percentage points (42.0 to 45.1) with ZERO new red cells produced. Total oxygen-carrying capacity is unchanged and circulating volume is lower, which reduces cardiac filling and stroke volume. This is the haemoconcentration trap — do not read this panel as evidence of erythropoiesis.",
    "type": "calc"
   }
+ ],
+ "sk_sequence": [
+  {
+   "q": "Name the two independent progression ladders a HYROX coach manages and state precisely what each one advances.",
+   "a": "The movement ladder (day 29) advances the difficulty of the movement variant itself — load, range of motion, stability, velocity, complexity. The practice-context ladder advances the representativeness of the practice environment — fatigue, strategic decision-making, transitions, opponents, whole-race structure. They are independent axes; an athlete's rung on one predicts nothing about their rung on the other.",
+   "type": "recall"
+  },
+  {
+   "q": "What does representative learning design ask of a practice environment, and how does that idea justify sequencing practice contexts?",
+   "a": "It asks that practice preserve the informational constraints the athlete must actually act on in competition — the clock, the position and pace of other athletes, the state of the rope and sled — and preserve them under the task and performer constraints of the race, chiefly the transition structure and accumulated fatigue, rather than preserving only the movement shape. Each successive practice context restores more of those constraints, so the ladder is a staged reintroduction of competition information rather than an arbitrary list of session formats.",
+   "type": "recall"
+  },
+  {
+   "q": "What is the defining feature of the fourth rung, and why is intensity deliberately held below race pace there?",
+   "a": "It is a race-shaped bout: the athlete arrives at the station at running pace, completes a working set under a nominated strategy, and leaves at running pace, with the effort capped below race intensity on purpose. The target of that rung is context, not conditioning; capping the effort leaves enough attentional capacity for the athlete to actually attend to execution, entry and exit. Raising intensity does not promote the bout to the top rung — that rung is defined by whole-race structure, not by pace. Within this rung, context and intensity are meant to rise progressively from low toward high, but that rise comes LAST, after entry, stated strategy and exit are reliable; letting the effort drift up early simply converts the rehearsal into a conditioning bout and buries the thing being rehearsed.",
+   "type": "recall"
+  },
+  {
+   "q": "How should readiness to move an athlete up a rung be defined?",
+   "a": "As an observable technical criterion assessed under the condition the NEXT rung will impose, not as a date and not as performance when fresh. For example, before moving a novice from isolated pull rehearsal to fatigued rehearsal, require rope tension maintained and a neutral braced spine across every pull of a 12.5 m length taken immediately after a short burpee-broad-jump piece — a single probe exposure to the next rung's condition, not a block of it — on two consecutive sessions. Write the criterion down before the block begins so the advance is visible and non-arbitrary.",
+   "type": "recall"
+  },
+  {
+   "q": "An athlete pulls the full race-division sled load with clean hand-over-hand mechanics, full range, every session. In their first race they lose about 40 s on the sled pull, stall the sled twice, and cannot remember their planned set structure. Locate them on each ladder and prescribe.",
+   "a": "They are at or near the top of the movement ladder — race load, full range, sound mechanics — and near the bottom of the practice-context ladder, because every rehearsal has been fresh, solo, unhurried and without transitions. Do not add load; that would advance the wrong axis. Hold the movement variant constant at race load and climb the context axis: pair the pull with a fatiguing partner movement, then rehearse an explicit set-and-pause strategy, then run entry-work-exit bouts below race pace, then add an opponent. The failure was contextual, so the intervention must be contextual.",
+   "type": "applied"
+  },
+  {
+   "q": "Design the first three weeks of sled-pull skill work for a genuine novice who has never touched a rope sled. Say what goes in each session and where in the session it sits.",
+   "a": "Weeks 1–2 sit almost entirely on the isolated-drilling rung, placed early in the session while the athlete is fresh, with dense feedback and only a narrow band of variation (days 27, 28). Build the arms-extended squat for postural control and trunk/leg engagement first, then the loaded pull position — chest up, weight carried forward over the forefoot, elbows long, rope already under tension — then standing into the rope to full hip and knee extension, trunk settling backwards, spine never rounding. Add the rhythm progression once that is reliable: four hard backward strides from extension without letting the rope go slack. Week 3 introduces the second rung — the intact pull placed behind a fatiguing partner movement — only if the pattern holds. No strategy work, no opponent and no simulation yet.",
+   "type": "applied"
+  },
+  {
+   "q": "A doubles pair has sound individual pull mechanics. What is actually being practised when they move to the third rung, and how do you structure it?",
+   "a": "Strategy, not technique. The variable under manipulation is the switch schedule — how many solid pulls one partner completes before the other takes over — together with breathing and pause placement. Rehearse two or three candidate schedules across separate sets so the pair can feel the trade-off between handover cost and per-partner fatigue. Critically, coach the handover itself as a discrete skill: where the incoming partner stands, how the rope is released and received, and whether tension is lost across the exchange. A pair who have never rehearsed the handover will lose the sled's momentum and have to break static friction again (day 11).",
+   "type": "applied"
+  },
+  {
+   "q": "You add a training partner racing alongside your athlete during a reduced-intensity station rehearsal. What does that restore, and what must you protect against?",
+   "a": "It restores the reactive, self-regulating demand that solo rehearsal deletes — the athlete now has to read someone else's pace and position and decide whether to respond, which is an informational constraint present in every race and absent from every solo drill. Protect against the intensity creeping up to race pace, because the athlete will chase. The instruction is to hold technique and the planned strategy while an opponent is present, not to beat them; if mechanics degrade, the opponent comes out and you drop back a rung.",
+   "type": "applied"
+  },
+  {
+   "q": "A coach runs a full simulation every third week and reports it as both a benchmark and a skill session. What is the problem, and how should it be resolved?",
+   "a": "The two purposes pull in opposite directions. As a test the sim belongs to the testing framework (day 49) and its conditions are locked, so you cannot interrupt, cue or rescale it. As skill rehearsal the point is to practise entry, transitions and decision-making, which invites stopping, cueing and repeating segments — and that destroys the test's comparability. Declare the intent before the session: if it is a test, standardise and score it and run it far less often; if it is rehearsal, coach it freely but do not treat the finishing time as data. Every third week is also too frequent to keep as a full test, and pushes into taper territory near a race (day 43).",
+   "type": "applied"
+  },
+  {
+   "q": "Your athlete is comfortably at the fourth rung on the SkiErg but genuinely at the first on the sled pull, and has just returned from three weeks of travel with no equipment access. How do you programme the block?",
+   "a": "Track and programme a separate rung per skill. Keep SkiErg work in race-shaped bouts with transitions, while sled pull goes back to isolated pattern rehearsal early in the session, fresh, with feedback — running them at the same nominal 'level' would either waste the SkiErg competence or groove a bad sled pull under fatigue. Expect regression after the lay-off across both, and treat a revisited rung as maintenance rather than failure; re-entry is normally much quicker than the first ascent. Re-establish the technical criterion under the relevant condition before climbing again, and if a race is close, prioritise restoring context on the skills that are already technically sound.",
+   "type": "applied"
+  },
+  {
+   "q": "A doubles pair rehearses switch schedules on the 50 m sled pull, worked as 4 × 12.5 m, which takes them about 10 hand-over-hand pulls per length (assume, for the arithmetic only, that a switch can be taken at any pull and costs the same wherever it falls). Compare a 4-pull switch with an 8-pull switch: how many work blocks and handovers does each produce, how do the pulls split between partners, and at roughly 2 s lost per handover what is the time difference?",
+   "a": "Total pulls = 4 × 10 = 40. Four-pull switch: 40 ÷ 4 = 10 work blocks, so 9 handovers (none needed after the final block); partners alternate 5 blocks each = 20 pulls each; handover cost ≈ 9 × 2 = 18 s. Eight-pull switch: 40 ÷ 8 = 5 blocks, so 4 handovers; the split is uneven at 3 blocks (24 pulls) versus 2 blocks (16 pulls); handover cost ≈ 4 × 2 = 8 s. The longer schedule saves about 18 − 8 = 10 s of transition but doubles the work-bout length and loads one partner 8 pulls more. A 5-pull schedule is a sensible middle option: 8 blocks, 7 handovers, 20 pulls each, ≈ 14 s. Choose on which partner holds mechanics longest, not on the arithmetic alone. Two caveats on the model. First, the 50 m / 4 × 12.5 m structure and the ~10-pulls-per-length figure are worked assumptions — recount them on your own sled and load. Second, the four length changes are already natural switch points where a handover costs close to nothing, so a schedule that aligns with them (roughly 10 pulls, one partner per length) removes most of the modelled cost, while an 8-pull schedule straddles a length boundary and is not really as cheap as the arithmetic suggests. The point of the calculation is the trade-off shape — handover count against per-partner fatigue — not the specific seconds.",
+   "type": "calc"
+  },
+  {
+   "q": "You have a 12-week build with two sled-pull skill exposures per week. You want roughly half the exposures on the bottom two rungs, a quarter on strategic variation, and the remainder split between reduced-intensity context rehearsal and full simulation, weighted toward the former. Work out the allocation, express each as a percentage, and check the simulation frequency against the taper.",
+   "a": "Total exposures = 12 × 2 = 24. Bottom two rungs: 12 exposures (50%), weeks 1–6. Strategic variation: 6 exposures (25%), weeks 7–9. Weeks 10–12 hold the remaining 6 exposures: reduced-intensity context rehearsal 4 (≈16.7%) and full simulation 2 (≈8.3%). 12 + 6 + 4 + 2 = 24, and the windows tile the block with no overlap. Two sims in twelve weeks is one per six weeks, a defensible frequency. With a race at the end of week 12, place them at the first exposure of week 10 and the first exposure of week 11, leaving the last four exposures (late week 11 and week 12) as rung-4 bouts — that puts the final full simulation roughly 10–14 days out, clear of a normal taper (day 43). If the taper runs longer than a week, pull the second sim back into week 10 rather than compressing the taper. Treat the ratios as an illustration of shape, not a prescribed split.",
+   "type": "calc"
+  }
  ]
 }
