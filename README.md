@@ -13,7 +13,7 @@ Level 2 *Mastering Performance* certification.
 
 ### Curriculum
 
-110 lessons. Days 1-51 walk the 13 official modules; days 52-53 add the two
+119 lessons. Days 1-51 walk the 13 official modules; days 52-53 add the two
 Module 1 topics the original pass missed (reflective practice / growth mindset,
 holistic athlete development); days 54-59 are cross-module exam-synthesis days;
 days 60-61 are mock assessments; days 62-75 deepen Modules 4, 5, 7.1 and 7.2.
@@ -27,6 +27,13 @@ Days 102-110 are the real Module 7.4: an introduction to the module's three
 expert lenses (biomechanics / physiotherapy / strength & conditioning) followed
 by a deep dive on each of the eight stations, including the burpee broad jump,
 which previously had no dedicated lesson anywhere on the site.
+
+Days 111-119 close the last of the audited gaps: Module 7.3's test matrix and
+decision tree (111-112), Module 4's 5 Level System and safety/efficacy/
+efficiency hierarchy (113-114), Module 3's how-to-utilise-testing-data
+(115), Module 8's double peaking (116), Module 7.1's categorization of
+skills (117), Module 7.2's differences in running (118) and Module 6's
+supplements (119).
 
 **Correction, Aug 2026:** days 37-39 (`pe_strength`, `pe_screening`,
 `pe_load_mgmt`) were originally filed under Module 7.4 on the assumption that
@@ -48,9 +55,14 @@ Academy course material. Assessment-format details are inferred from public
 sources about the same platform's other courses and are flagged as unverified
 in the lessons that mention them.
 
-Known remaining gaps (audited Aug 2026, not yet authored): Module 7.3 Test Matrix
-and Decision Tree; Module 4's 5 Level System and Safety / Efficacy / Efficiency;
-Module 3's How to Utilise Testing Data; Module 8's Double Peaking specifics;
-Module 7.1 Categorization of Skills; Module 6 Supplements (partially covered by
-day 26); Module 7.2 Differences in Running.
+Gap audit status (Aug 2026): **all identified course-section gaps are now
+authored.** Every teaching section across the 13 official modules maps to at
+least one lesson.
+
+Two sections could not be verified against the source because the course
+delivers them as podcast audio or video rather than text — Module 4's *5 Level
+System* (day 113) and Module 7.2's *Differences in Running* (day 118). Both are
+reconstructions from surrounding module material and are flagged as unverified
+in-lesson and in their question sets. Confirm the exact definitions against the
+module before relying on them in an assessment.
 
