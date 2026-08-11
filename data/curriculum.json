@@ -65,7 +65,7 @@
    },
    {
     "phase": 10,
-    "name": "Module 7.4 — Performance Enhancement and Injury",
+    "name": "Modules 2 & 4 — Strength, Prehab & Load Management (re-filed: was mis-labelled Module 7.4)",
     "days": "37-39"
    },
    {
@@ -167,6 +167,11 @@
     "phase": 30,
     "name": "Module 2 — Sports Medicine (Expanded): Longevity, Neuro, Illness & Anti-Doping",
     "days": "98-101"
+   },
+   {
+    "phase": 31,
+    "name": "Module 7.4 — Station Deep Dives: the eight stations through three expert lenses",
+    "days": "102-110"
    }
   ],
   "source_note": "Original study notes written for the Level 2 'Mastering Performance' module list. Not a reproduction of HYROX Academy course material."
@@ -2785,8 +2790,8 @@
    "title": "Strength & power for HYROX",
    "topic_id": "pe_strength",
    "domain": "SM",
-   "chapter": "Module 7.4",
-   "page_refs": "Performance Enhancement and Injury",
+   "chapter": "Module 4",
+   "page_refs": "HYROX Performance Pillars — Building Power",
    "key_concept": "HYROX rewards a strength floor more than a strength ceiling. Station loads are fixed and absolute, so what matters is the fraction of an athlete's maximal capacity each rep demands: once someone can handle the race loads with room to spare, further 1RM gains buy progressively less race time and the payoff shifts to strength-endurance and to holding force output under accumulating fatigue. The sleds are the exception — pushing and pulling a heavily loaded sled can sit close to an underpowered athlete's maximal horizontal force, so max strength still gates that station. In a concurrent build, most athletes hold this with two low-volume, high-intent lifting sessions a week — heavy low-rep work plus loaded carries and compromised-position practice — sequenced so lifting fatigue does not land on key running sessions. Note that specific strength 'floors' below are coaching heuristics for programming decisions, not validated cut-offs.",
    "key_facts": [
     "Three qualities sit on a continuum: maximal strength (force ceiling) → strength-endurance (repeat submaximal force with little decay) → rate of force development (produce force fast). HYROX loads the middle of that continuum hardest.",
@@ -2859,8 +2864,8 @@
    "title": "Injury risk screening & prehab",
    "topic_id": "pe_screening",
    "domain": "SM",
-   "chapter": "Module 7.4",
-   "page_refs": "Performance Enhancement and Injury",
+   "chapter": "Module 2",
+   "page_refs": "Sports Medicine: Optimizing Health, Recovery & Performance — Functional Neuroscience Injury Prevention",
    "key_concept": "A HYROX race is 8 x 1 km of running alternating with 8 stations in a fixed order (SkiErg, sled push, sled pull, burpee broad jump, row, farmers carry, sandbag lunges, wall balls), so the same tissues get loaded repeatedly while already fatigued: the calf-Achilles complex (running on tired legs, driving the sled), the single-leg system (lunges, sled push, the turns on a looped run course), the trunk (carries, hinge-loaded sled pull) and the shoulder-scapula unit (SkiErg, wall balls). Screening should therefore lean capacity-and-control first rather than passive-flexibility first — how many quality heel raises, how long a side bridge holds, how controlled a single-leg step-down looks after work, not how far a joint bends. Treat any asymmetry as a ratio against the athlete's own opposite side, confirm it repeats before acting on it, then prescribe low-dose, targeted prehab placed so it does not compete with the key run or strength stimulus. Note that no screening test has strong prospective evidence for predicting injury; these tools are for finding capacity gaps worth training, not for forecasting who gets hurt.",
    "key_facts": [
     "Screen capacity and control under fatigue rather than passive ROM alone — the failures HYROX exposes are usually endurance and control failures.",
@@ -2926,8 +2931,8 @@
    "title": "Load management & managing niggles",
    "topic_id": "pe_load_mgmt",
    "domain": "SM",
-   "chapter": "Module 7.4",
-   "page_refs": "Performance Enhancement and Injury",
+   "chapter": "Module 2",
+   "page_refs": "Sports Medicine: Optimizing Health, Recovery & Performance — Rehabilitation & Recovery",
    "key_concept": "Load management is keeping applied load under tissue capacity while still driving adaptation. Most HYROX breakdowns are not accidents — they are accumulated: 8 km of fatigued running plus burpee broad jumps, sandbag lunges and wall balls loads the same lower limb repeatedly. The coach's job is triage, not diagnosis. Classify what the athlete reports as soreness (diffuse, symmetrical, eases with warm-up, settling over a few days), a niggle (local, reproducible, low-grade, no loss of quality) or an injury (sharp, night/rest pain, swelling, altered mechanics, function lost). Then apply traffic-light rules: modify the stimulus, keep the intent, substitute off-feet, and progress running volume gradually rather than stopping everything.",
    "key_facts": [
     "DOMS: onset ~12–24 h, peaks ~24–72 h, and usually resolves within 5–7 days; unaccustomed eccentric-heavy work (lunges, downhill running, burpee broad jump landings) drives it most. Soreness still worsening after a week is a flag to reassess, not to push.",
@@ -7324,6 +7329,546 @@
    ],
    "relevant": true,
    "exam_focus": "Explain strict liability and its implications for supplement use, list anti-doping rule violations beyond a positive test, and state the criteria for a Therapeutic Use Exemption.",
+   "figures": []
+  },
+  "102": {
+   "title": "Analysing a station — the three expert lenses",
+   "topic_id": "st_framework",
+   "domain": "BM",
+   "chapter": "Module 7.4",
+   "page_refs": "Performance Enhancement and Injury — Introduction",
+   "key_concept": "Module 7.4 examines each of the eight stations three times over, through a biomechanist's eyes, a physiotherapist's and a strength coach's. The value is that the three lenses disagree productively. The biomechanist asks how force is produced and where it leaks, and reasons in terms of sequencing, force vectors, moment arms and spinal position. The physiotherapist asks what is restricting the athlete, and typically finds the limiter upstream of the complaint — a tight hip or thorax capping performance at a station that looks like a strength problem. The strength coach asks which physical qualities underpin the station and what exercises build them. An athlete who is slow on the sled might be weak (S&C), might be leaking force through a collapsed trunk (biomechanics), or might be unable to transfer force from the floor because their hips are restricted (physiotherapy). Diagnosing which of the three is limiting the athlete in front of you is the actual coaching skill; applying the wrong lens produces training that is technically sound and useless. Somatotype runs through all three: compact, mesomorphic athletes and tall, ectomorphic athletes need genuinely different strategies at the same station.",
+   "key_facts": [
+    "The module analyses all eight stations through three lenses: biomechanics (how force is produced and lost), physiotherapy (what restriction limits the athlete), strength & conditioning (which qualities and exercises build capacity).",
+    "The same poor station time can have three different causes — insufficient strength, faulty sequencing, or a mobility restriction upstream. Diagnose before you prescribe.",
+    "Recurring biomechanical themes: proximal-to-distal sequencing, trunk stiffness, force-vector alignment, moment-arm management, and neutral spinal position under load.",
+    "Force leakage is the unifying biomechanical concept — energy generated proximally that fails to reach the implement because a segment in the chain yields.",
+    "Recurring physiotherapy theme: hip and thoracic restriction limit output at nearly every station, often presenting as a strength or cardiovascular problem rather than a mobility one.",
+    "Restriction of the thorax limits rib-cage expansion and therefore breathing, which is why a mobility problem can present as a cardiovascular ceiling.",
+    "Recurring S&C theme: build maximal strength for the heavy stations, strength-endurance for the repeated ones, and elastic/power qualities where a stretch-shortening cycle is involved.",
+    "Somatotype changes the optimal strategy: shorter mesomorphs have compact levers, a lower centre of mass and strong proximal power; taller ectomorphs gain range and stroke length but face larger moment arms on the spine and shoulders.",
+    "Mesomorph general priority: rhythm and consistency rather than chasing maximal range per repetition.",
+    "Ectomorph general priority: trunk stiffness and sequencing, so long levers become an asset rather than a mechanical liability.",
+    "Fatigue is the fourth lens implicitly present throughout — every station's technical model degrades late in the race, and the coaching target is the fatigued pattern.",
+    "The physiotherapy lens in this module also advances nutritional and supplement claims (glutamine as a lactate buffer, essential fatty acids to raise oxygen uptake, iron for female athletes). Treat the mobility reasoning as clinically mainstream and the supplement claims as weakly evidenced — iron status is the one with genuine support, and only where deficiency is confirmed by testing.",
+    "Practical diagnostic order: rule out restriction first (it is quickest to change), then check sequencing on video, then treat it as a strength deficit."
+   ],
+   "training_link": "When an athlete is slow at a station, resist prescribing strength work by reflex. Run the three lenses in order. First check restriction, because it is the cheapest to fix and often the real cause — get them into the position the station demands and see whether they can actually achieve it. Then film them and look for sequencing: arms breaking early, a trunk that folds, a hip that lags. Only when both come back clean should you conclude they need to be stronger. Then factor their build honestly: a compact athlete and a tall one are not doing the same task on the sled, and coaching them to the same technical model will hold one of them back. And do all of this on a fatigued athlete, because the pattern that costs them time is the one that appears at station six, not the one they show you fresh.",
+   "glossary": [
+    {
+     "term": "Force leakage",
+     "def": "Energy generated by the large proximal muscles that fails to reach the implement because a segment in the kinetic chain yields under load.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"18\" cy=\"20\" r=\"5\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"1.8\"/><circle cx=\"34\" cy=\"20\" r=\"5\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"1.8\"/><circle cx=\"50\" cy=\"20\" r=\"5\" fill=\"none\" stroke=\"#67e8b0\" stroke-width=\"1.8\"/><circle cx=\"66\" cy=\"20\" r=\"5\" fill=\"none\" stroke=\"#ffb86b\" stroke-width=\"1.8\"/><path d=\"M23 20h6M39 20h6M55 20h6\" stroke=\"#3a4a5e\" stroke-width=\"1.4\"/></svg>"
+    },
+    {
+     "term": "Proximal-to-distal sequencing",
+     "def": "Initiating movement with the large trunk and hip musculature and finishing with the limbs. Reversing the order shortens the stroke and raises metabolic cost.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"18\" cy=\"20\" r=\"5\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"1.8\"/><circle cx=\"34\" cy=\"20\" r=\"5\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"1.8\"/><circle cx=\"50\" cy=\"20\" r=\"5\" fill=\"none\" stroke=\"#67e8b0\" stroke-width=\"1.8\"/><circle cx=\"66\" cy=\"20\" r=\"5\" fill=\"none\" stroke=\"#ffb86b\" stroke-width=\"1.8\"/><path d=\"M23 20h6M39 20h6M55 20h6\" stroke=\"#3a4a5e\" stroke-width=\"1.4\"/></svg>"
+    },
+    {
+     "term": "Somatotype",
+     "def": "Body-build classification — here contrasting compact mesomorphic athletes with tall ectomorphic ones, whose lever lengths demand different station strategies.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"28\" cy=\"12\" r=\"4\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"1.8\"/><path d=\"M28 16v10M22 20h12M28 26l-5 10M28 26l5 10\" stroke=\"#67e8b0\" stroke-width=\"1.8\"/><path d=\"M52 8v26\" stroke=\"#ffb86b\" stroke-width=\"1.8\"/><path d=\"M48 12h8M48 30h8\" stroke=\"#3a4a5e\" stroke-width=\"1.4\"/></svg>"
+    },
+    {
+     "term": "Moment arm",
+     "def": "The perpendicular distance from a joint to the line of force. Longer limbs create larger moment arms, increasing the torque a tall athlete's trunk must resist.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M12 30h44M48 25l8 5-8 5\" fill=\"none\" stroke=\"#67e8b0\" stroke-width=\"2\"/><path d=\"M12 30L44 12\" stroke=\"#5ec8ff\" stroke-width=\"2\"/><path d=\"M12 30a18 18 0 0 1 9-15\" fill=\"none\" stroke=\"#3a4a5e\" stroke-width=\"1.3\"/></svg>"
+    },
+    {
+     "term": "Trunk stiffness",
+     "def": "The trunk's resistance to unwanted flexion, extension or rotation under load. The mechanical precondition for transferring force from the floor to the implement.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"14\" y=\"10\" width=\"52\" height=\"22\" rx=\"3\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"1.6\"/><path d=\"M40 10v22\" stroke=\"#ffb86b\" stroke-width=\"2\"/><path d=\"M20 21h14M46 21h14\" stroke=\"#67e8b0\" stroke-width=\"1.6\"/></svg>"
+    },
+    {
+     "term": "Three-lens diagnosis",
+     "def": "Assessing a station deficit as restriction, sequencing or capacity in turn, so training addresses the actual limiter rather than the most obvious one.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"26\" cy=\"14\" r=\"6\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"1.8\"/><circle cx=\"40\" cy=\"28\" r=\"6\" fill=\"none\" stroke=\"#67e8b0\" stroke-width=\"1.8\"/><circle cx=\"54\" cy=\"14\" r=\"6\" fill=\"none\" stroke=\"#ffb86b\" stroke-width=\"1.8\"/><path d=\"M31 18l6 6M49 18l-6 6M32 14h16\" stroke=\"#3a4a5e\" stroke-width=\"1.2\"/></svg>"
+    }
+   ],
+   "relevant": true,
+   "exam_focus": "Given a station deficit, work through the biomechanical, physiotherapy and S&C lenses to identify the true limiter, and adapt the technical model to the athlete's somatotype.",
+   "figures": []
+  },
+  "103": {
+   "title": "SkiErg — sequencing, force transfer & the shoulder",
+   "topic_id": "st_ski",
+   "domain": "BM",
+   "chapter": "Module 7.4",
+   "page_refs": "Performance Enhancement and Injury — SkiErg",
+   "key_concept": "The SkiErg is the race's most coordinated expression of full-body force production, and it comes first, when the athlete is still relatively fresh but heart rate is climbing. That makes it a pacing trap: there is a real opportunity to establish rhythm without spiking heart rate, and a real temptation to spend too much too early. Mechanically the station rewards proximal-to-distal sequencing — the pull is initiated by the lats, trunk flexors and hip hinge, with the arms finishing rather than starting the stroke. Athletes who break at the elbows early hand the work to biceps and triceps, small muscles that fatigue fast, and efficiency collapses. Two further principles matter: the athlete should begin tall and elongated so the lats and trunk flexors work through their strongest mid-range, and the upward return should be used to preload the posterior chain rather than as rest, storing elastic energy for the next stroke. The physiotherapy lens is unusually productive here, because shoulder-girdle and thoracic restriction couple tightly and limit output — opening both often produces immediate gains at this station.",
+   "key_facts": [
+    "Race position: station one, athlete relatively fresh, heart rate rising. The goal is establishing rhythm without spiking heart rate, not maximum output.",
+    "Sequence the pull proximal to distal: lats, trunk flexors and hip hinge initiate; the arms finish the stroke. Early elbow break shifts work to biceps and triceps and drops efficiency sharply.",
+    "Hinge at the hips rather than squatting each stroke — the hinge is what recruits the posterior chain and lats effectively.",
+    "Start tall and elongated. Optimal length-tension means the lats and trunk flexors generate peak force from a lengthened start through a strong mid-range.",
+    "Use cyclical elastic recoil: the upward return preloads the posterior chain rather than being passive recovery.",
+    "Chase power per stroke rather than a high stroke rate — stroke rate is the faster route to an uncontrolled heart-rate response.",
+    "Safety point one: keep neutral cervical alignment. Neck flexion under fatigue disrupts scapular mechanics and loads the upper traps.",
+    "Safety point two: keep the hip hinge dominant over lumbar flexion. Rounding the spine to reach further costs power and spinal integrity simultaneously.",
+    "Physiotherapy lens: the shoulder girdle and thorax are mechanically coupled, and protracted, tight shoulders are extremely common. Restoring shoulder and thoracic mobility can improve SkiErg output quickly.",
+    "Even modest latissimus tightness measurably reduces SkiErg performance, so mobility here is a performance intervention rather than a warm-up formality.",
+    "S&C qualities: anterior-chain endurance (lats, abdominals, hip flexors), trunk stiffness for force transfer, and power endurance.",
+    "Key exercises: neutral-grip chin-ups (replicating the SkiErg line of pull), dumbbell pullovers for the lats, medicine-ball slams for the velocity side of power, and Pallof presses, ab rollouts or long planks for trunk stiffness.",
+    "A high damper setting is a useful specific tool for developing power endurance on the machine itself.",
+    "Somatotype: compact mesomorphs produce high force per stroke and should prioritise rhythm and consistency; tall ectomorphs gain stroke length but must control larger moment arms on spine and shoulders through stiffness and sequencing."
+   ],
+   "training_link": "Watch where the stroke starts. If the elbows break before the hips and lats have done anything, your athlete is skiing with their arms and will be cooked by station three — cue them to start tall, hinge, and let the hands arrive last. Coach power per stroke rather than a fast stroke rate, because rate is how they arrive at the sled with their heart rate already gone. Before you add strength work, check their shoulders and thoracic spine: protracted, tight shoulders are near-universal in desk-bound athletes and opening them up often buys more here than a month of pulling. Then build the specific qualities — neutral-grip chin-ups and dumbbell pullovers for the line of pull, Pallof presses for the trunk, medicine-ball slams for velocity — and use a high damper setting for power endurance.",
+   "glossary": [
+    {
+     "term": "Proximal-to-distal sequencing",
+     "def": "Initiating the SkiErg stroke with lats, trunk and hip hinge and finishing with the arms. Reversing it hands the work to small, rapidly fatiguing muscles.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"18\" cy=\"20\" r=\"5\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"1.8\"/><circle cx=\"34\" cy=\"20\" r=\"5\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"1.8\"/><circle cx=\"50\" cy=\"20\" r=\"5\" fill=\"none\" stroke=\"#67e8b0\" stroke-width=\"1.8\"/><circle cx=\"66\" cy=\"20\" r=\"5\" fill=\"none\" stroke=\"#ffb86b\" stroke-width=\"1.8\"/><path d=\"M23 20h6M39 20h6M55 20h6\" stroke=\"#3a4a5e\" stroke-width=\"1.4\"/></svg>"
+    },
+    {
+     "term": "Length-tension relationship",
+     "def": "The dependence of muscular force on muscle length. Starting tall and elongated places the lats and trunk flexors where they generate most force.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M8 26 C20 26 22 32 32 32 C46 32 46 12 66 12\" fill=\"none\" stroke=\"#67e8b0\" stroke-width=\"2\"/><line x1=\"8\" y1=\"24\" x2=\"72\" y2=\"24\" stroke=\"#3a4a5e\" stroke-width=\"1\" stroke-dasharray=\"3 2\"/></svg>"
+    },
+    {
+     "term": "Cyclical elastic recoil",
+     "def": "Using the upward return of the stroke to preload the posterior chain, storing elastic energy that contributes to the next pull rather than resting.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M12 20h8l4-8 6 16 6-16 6 16 4-8h22\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"2\"/></svg>"
+    },
+    {
+     "term": "Power per stroke",
+     "def": "Generating output through force rather than stroke frequency — the pacing strategy that keeps the heart-rate response controlled at station one.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M12 30h44M48 25l8 5-8 5\" fill=\"none\" stroke=\"#67e8b0\" stroke-width=\"2\"/><path d=\"M12 30L44 12\" stroke=\"#5ec8ff\" stroke-width=\"2\"/><path d=\"M12 30a18 18 0 0 1 9-15\" fill=\"none\" stroke=\"#3a4a5e\" stroke-width=\"1.3\"/></svg>"
+    },
+    {
+     "term": "Scapular mechanics",
+     "def": "Movement coordination of the shoulder blade. Disrupted by cervical flexion under fatigue, which overloads the upper trapezius.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"28\" cy=\"12\" r=\"4\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"1.8\"/><path d=\"M28 16v10M22 20h12M28 26l-5 10M28 26l5 10\" stroke=\"#67e8b0\" stroke-width=\"1.8\"/><path d=\"M52 8v26\" stroke=\"#ffb86b\" stroke-width=\"1.8\"/><path d=\"M48 12h8M48 30h8\" stroke=\"#3a4a5e\" stroke-width=\"1.4\"/></svg>"
+    },
+    {
+     "term": "Anterior chain endurance",
+     "def": "Fatigue resistance of the lats, abdominals and hip flexors — the muscle groups driving repeated SkiErg strokes.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"14\" y=\"10\" width=\"52\" height=\"22\" rx=\"3\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"1.6\"/><path d=\"M40 10v22\" stroke=\"#ffb86b\" stroke-width=\"2\"/><path d=\"M20 21h14M46 21h14\" stroke=\"#67e8b0\" stroke-width=\"1.6\"/></svg>"
+    }
+   ],
+   "relevant": true,
+   "exam_focus": "Identify a sequencing fault on the SkiErg from a description, explain why early elbow break costs efficiency, and prescribe the mobility and strength work that addresses each lens.",
+   "figures": []
+  },
+  "104": {
+   "title": "Sled push — horizontal vector & triple extension",
+   "topic_id": "st_sledpush",
+   "domain": "PG",
+   "chapter": "Module 7.4",
+   "page_refs": "Performance Enhancement and Injury — Sled Push",
+   "key_concept": "The sled push is the purest horizontal force production in the race, and its defining requirement is vector alignment: torso angle, shin angle and push direction unified into a single forward line. Any deviation bleeds force into the floor or into the athlete's own spine instead of the sled. The second principle is triple extension sequencing — hips, knees and ankles extending in coordinated order to produce continuous drive; when one joint lags, and it is usually the hips, the athlete stalls. The third is specific to friction: because the sled's resistance is frictional rather than gravitational, resistance is highest at rest, so any pause is expensive. Continuous force output beats a powerful but intermittent one, which is the mechanical justification for the familiar advice never to stop the sled. Safety rests on neutral lumbar alignment — flexion under this load raises shear on the spine and simultaneously prevents the hips from contributing — and a stable shoulder girdle with the scapulae protracted but not collapsed. The physiotherapy lens locates the most common hidden limiter in the hips: dysfunction there destabilises the lower back and prevents force transferring from the floor into the sled, often without producing any pain at all.",
+   "key_facts": [
+    "Defining principle: horizontal force-vector alignment. Torso angle, shin angle and push direction must form one unified forward vector to minimise energy leakage.",
+    "Triple extension sequencing of hips, knees and ankles generates continuous drive; a lagging hip is the usual culprit when an athlete stalls under load.",
+    "The sled's resistance is frictional, not gravitational, so static friction makes restarting far harder than continuing. Any pause is disproportionately expensive.",
+    "Maintain neutral lumbar alignment. Lumbar flexion under load raises spinal shear and simultaneously reduces the hips' ability to contribute power.",
+    "Keep the shoulder girdle stable with scapulae protracted but not collapsed — this stabilises the kinetic chain and protects the anterior shoulder.",
+    "Physiotherapy lens: hip dysfunction destabilises the lumbar spine and blocks force transfer from floor to sled. Many athletes lose substantial performance here with no back pain at all.",
+    "The thoracolumbar fascia and quadratus lumborum are implicated in that lower-back instability, with the primary restriction usually sitting at the hips.",
+    "Reported ankle issues at this station — including Achilles complaints — are attributed to tightness in calf and anterior ankle structures, the same restrictions that affect running.",
+    "S&C qualities: maximal lower-body strength, horizontal power production, and bracing under load.",
+    "Bilateral maximal strength via front squats, back squats and barbell or trap-bar deadlifts, where a stable position permits maximal recruitment.",
+    "Heavy unilateral work — dumbbell or barbell Bulgarian split squats — targets the glutes and hamstrings driving hip extension.",
+    "Train the movement itself: heavy horizontal sled work is non-negotiable, because the goal is moving a sled horizontally and forcefully.",
+    "Core bracing is essential — treat the legs as an extension of the sled, so a weak trunk becomes the point where force is lost.",
+    "Somatotype: compact mesomorphs adopt a low torso angle without losing stability and must avoid over-shortening their steps; tall ectomorphs benefit from a slightly higher torso angle and should prioritise rhythm and stiffness over maximal drive per step."
+   ],
+   "training_link": "Get behind your athlete and look for one line from the ankle through the hip to the hands — if the hips are riding high or the back is rounding, force is going into the floor rather than the sled. Cue continuous movement above all else, because friction means a stopped sled costs far more than a slow one, and athletes who rest mid-lane pay for it twice. Before adding load, check their hips: restriction there quietly caps this station and usually presents as weakness rather than tightness, often with no back pain to give it away. Then train it heavy and specific — front squats and trap-bar deadlifts for maximal strength, Bulgarians for the hip extensors, and actual heavy sled work, because nothing else transfers as directly. Keep the trunk braced; a soft core is where the leg drive disappears.",
+   "glossary": [
+    {
+     "term": "Force-vector alignment",
+     "def": "Unifying torso angle, shin angle and push direction into a single forward line, so generated force reaches the sled rather than the floor or the spine.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M12 30h44M48 25l8 5-8 5\" fill=\"none\" stroke=\"#67e8b0\" stroke-width=\"2\"/><path d=\"M12 30L44 12\" stroke=\"#5ec8ff\" stroke-width=\"2\"/><path d=\"M12 30a18 18 0 0 1 9-15\" fill=\"none\" stroke=\"#3a4a5e\" stroke-width=\"1.3\"/></svg>"
+    },
+    {
+     "term": "Triple extension",
+     "def": "Coordinated extension of hip, knee and ankle. A lagging hip breaks the sequence and causes the athlete to stall under load.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"18\" cy=\"20\" r=\"5\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"1.8\"/><circle cx=\"34\" cy=\"20\" r=\"5\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"1.8\"/><circle cx=\"50\" cy=\"20\" r=\"5\" fill=\"none\" stroke=\"#67e8b0\" stroke-width=\"1.8\"/><circle cx=\"66\" cy=\"20\" r=\"5\" fill=\"none\" stroke=\"#ffb86b\" stroke-width=\"1.8\"/><path d=\"M23 20h6M39 20h6M55 20h6\" stroke=\"#3a4a5e\" stroke-width=\"1.4\"/></svg>"
+    },
+    {
+     "term": "Static vs kinetic friction",
+     "def": "A stationary sled requires more force to start than a moving one requires to keep moving — the mechanical reason pausing mid-lane is so costly.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M8 12 C26 13 44 22 72 33\" fill=\"none\" stroke=\"#ffb86b\" stroke-width=\"2\"/><line x1=\"8\" y1=\"34\" x2=\"72\" y2=\"34\" stroke=\"#3a4a5e\" stroke-width=\"1\"/></svg>"
+    },
+    {
+     "term": "Scapular protraction",
+     "def": "Forward movement of the shoulder blades around the ribcage. Required for a stable pushing platform, but must not collapse into the anterior shoulder.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"28\" cy=\"12\" r=\"4\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"1.8\"/><path d=\"M28 16v10M22 20h12M28 26l-5 10M28 26l5 10\" stroke=\"#67e8b0\" stroke-width=\"1.8\"/><path d=\"M52 8v26\" stroke=\"#ffb86b\" stroke-width=\"1.8\"/><path d=\"M48 12h8M48 30h8\" stroke=\"#3a4a5e\" stroke-width=\"1.4\"/></svg>"
+    },
+    {
+     "term": "Thoracolumbar fascia",
+     "def": "The connective sheet linking hips, trunk and shoulder girdle. Implicated in the lower-back instability that follows hip dysfunction under load.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"14\" y=\"10\" width=\"52\" height=\"22\" rx=\"3\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"1.6\"/><path d=\"M40 10v22\" stroke=\"#ffb86b\" stroke-width=\"2\"/><path d=\"M20 21h14M46 21h14\" stroke=\"#67e8b0\" stroke-width=\"1.6\"/></svg>"
+    },
+    {
+     "term": "Horizontal power",
+     "def": "Force production directed forward rather than vertically. Trained most specifically by heavy sled work itself rather than by vertical lifts alone.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"24\" cy=\"20\" r=\"9\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"2\"/><path d=\"M40 20h22M54 13l8 7-8 7\" fill=\"none\" stroke=\"#67e8b0\" stroke-width=\"2\"/></svg>"
+    }
+   ],
+   "relevant": true,
+   "exam_focus": "Explain why frictional resistance makes stopping costly, identify the vector and sequencing faults that stall a sled push, and justify hip assessment before prescribing strength work.",
+   "figures": []
+  },
+  "105": {
+   "title": "Sled pull — force redirection, traction & grip",
+   "topic_id": "st_sledpull",
+   "domain": "PG",
+   "chapter": "Module 7.4",
+   "page_refs": "Performance Enhancement and Injury — Sled Pull",
+   "key_concept": "The sled pull inverts the push. Rather than applying force directly into the implement, the athlete must anchor their own body and redirect force through a rope, which makes ground reaction force management the defining problem: the feet must generate backward traction while the upper body pulls horizontally. The efficient pattern initiates with the lats and trunk rather than the arms, keeping the load on large proximal musculature, and treats the arms as an extension of the rope in exactly the way a deadlift treats them as an extension of the barbell. Breaking early at the elbows both fatigues the athlete and degrades force transfer. Counterbalance positioning is the third principle — leaning back shifts the centre of mass behind the base of support, increasing traction and reducing slippage — but the lean must come without spinal flexion, since a rounded spine under tension raises shear and reduces pulling efficiency. Grip is frequently the true limiter, and the physiotherapy lens attributes much of that to inhibition from a tight shoulder girdle rather than to forearm weakness, which changes the intervention entirely.",
+   "key_facts": [
+    "Defining principle: force redirection. The athlete anchors their body and redirects force through the rope rather than applying it directly to the sled.",
+    "Ground reaction force management is central — the feet create backward traction while the upper body generates horizontal pull.",
+    "Initiate with the lats and trunk, not the arms, so large proximal muscles carry the majority of the load.",
+    "Treat the arms as an extension of the rope, exactly as a deadlift treats them as an extension of the bar. Early elbow break adds fatigue and reduces force transfer.",
+    "Counterbalance positioning: leaning back moves the centre of mass behind the base of support, increasing traction and reducing foot slippage.",
+    "Avoid spinal flexion when leaning back — a rounded spine under tension increases shear force and reduces pulling efficiency.",
+    "Keep elbows tracking close to the body to protect shoulder integrity and reduce strain on the biceps tendon.",
+    "Physiotherapy lens: grip failure is frequently caused by inhibition from a tight shoulder girdle rather than by forearm weakness. Mobilising the shoulder girdle can restore grip quickly.",
+    "Lower-back complaints and heavy lactate accumulation in the legs at this station are attributed largely to hip restriction reducing blood flow and limiting clearance.",
+    "S&C qualities: posterior chain strength above all — glutes, hamstrings and lower back — developed through deadlift variations, squats and barbell hip thrusts.",
+    "Grip strength deserves specific work where it is the weakest link, since the whole station is capped by it.",
+    "Vastus medialis works hard during the backward stepping pattern; sled drags and quarter squats target it directly.",
+    "Body mass is a genuine advantage here: heavier, more muscular athletes gain traction and leverage, while lighter runners typically need dedicated strength work to compete at this station.",
+    "Somatotype: compact mesomorphs lean back aggressively without losing balance but must maximise rope length per pull; tall ectomorphs take longer rope segments but face greater spinal torque and must prioritise trunk stiffness and controlled footwork."
+   ],
+   "training_link": "If your athlete's grip goes before their legs do, don't jump straight to farmer's holds — check their shoulder girdle first, because tightness there inhibits grip and mobilising it often restores more than forearm work will. Coach the arms as rope, not as pullers: long arms, elbows close, initiation from the lats and trunk, exactly like a deadlift set-up. Get them leaning back for traction but watch that the lean comes from the hips rather than a rounding spine. Build the posterior chain hard — deadlift variations, hip thrusts — and add sled drags and quarter squats for the vastus medialis that takes the backward stepping. And be realistic with your lighter runners: they are at a genuine mass disadvantage here, so this is a station where they need dedicated strength work rather than more conditioning.",
+   "glossary": [
+    {
+     "term": "Force redirection",
+     "def": "Anchoring the body and channelling force through a rope rather than applying it directly to the implement — the mechanical signature of the sled pull.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M12 30h44M48 25l8 5-8 5\" fill=\"none\" stroke=\"#67e8b0\" stroke-width=\"2\"/><path d=\"M12 30L44 12\" stroke=\"#5ec8ff\" stroke-width=\"2\"/><path d=\"M12 30a18 18 0 0 1 9-15\" fill=\"none\" stroke=\"#3a4a5e\" stroke-width=\"1.3\"/></svg>"
+    },
+    {
+     "term": "Ground reaction force",
+     "def": "The floor's equal and opposite response to force applied through the feet. On the sled pull it must generate backward traction against forward slippage.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"24\" cy=\"20\" r=\"9\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"2\"/><path d=\"M40 20h22M54 13l8 7-8 7\" fill=\"none\" stroke=\"#67e8b0\" stroke-width=\"2\"/></svg>"
+    },
+    {
+     "term": "Counterbalance positioning",
+     "def": "Shifting the centre of mass behind the base of support by leaning back, gaining traction and mechanical advantage without flexing the spine.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"28\" cy=\"12\" r=\"4\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"1.8\"/><path d=\"M28 16v10M22 20h12M28 26l-5 10M28 26l5 10\" stroke=\"#67e8b0\" stroke-width=\"1.8\"/><path d=\"M52 8v26\" stroke=\"#ffb86b\" stroke-width=\"1.8\"/><path d=\"M48 12h8M48 30h8\" stroke=\"#3a4a5e\" stroke-width=\"1.4\"/></svg>"
+    },
+    {
+     "term": "Grip inhibition",
+     "def": "Loss of grip strength caused by restriction upstream in the shoulder girdle rather than by forearm weakness, and therefore addressed by mobility work.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M8 12 C26 13 44 22 72 33\" fill=\"none\" stroke=\"#ffb86b\" stroke-width=\"2\"/><line x1=\"8\" y1=\"34\" x2=\"72\" y2=\"34\" stroke=\"#3a4a5e\" stroke-width=\"1\"/></svg>"
+    },
+    {
+     "term": "Vastus medialis",
+     "def": "The teardrop-shaped quadriceps head above the medial knee, loaded heavily by the backward stepping pattern of the sled pull.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"28\" cy=\"12\" r=\"4\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"1.8\"/><path d=\"M28 16v10M22 20h12M28 26l-5 10M28 26l5 10\" stroke=\"#67e8b0\" stroke-width=\"1.8\"/><path d=\"M52 8v26\" stroke=\"#ffb86b\" stroke-width=\"1.8\"/><path d=\"M48 12h8M48 30h8\" stroke=\"#3a4a5e\" stroke-width=\"1.4\"/></svg>"
+    },
+    {
+     "term": "Posterior chain",
+     "def": "Glutes, hamstrings and lower back — the muscle groups producing the hip extension that moves the sled.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"18\" cy=\"20\" r=\"5\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"1.8\"/><circle cx=\"34\" cy=\"20\" r=\"5\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"1.8\"/><circle cx=\"50\" cy=\"20\" r=\"5\" fill=\"none\" stroke=\"#67e8b0\" stroke-width=\"1.8\"/><circle cx=\"66\" cy=\"20\" r=\"5\" fill=\"none\" stroke=\"#ffb86b\" stroke-width=\"1.8\"/><path d=\"M23 20h6M39 20h6M55 20h6\" stroke=\"#3a4a5e\" stroke-width=\"1.4\"/></svg>"
+    }
+   ],
+   "relevant": true,
+   "exam_focus": "Contrast the mechanics of sled pull and sled push, explain grip failure as shoulder-girdle inhibition, and justify why body mass advantages differ between athlete types at this station.",
+   "figures": []
+  },
+  "106": {
+   "title": "Burpee broad jump — elastic power & landing control",
+   "topic_id": "st_burpee",
+   "domain": "BM",
+   "chapter": "Module 7.4",
+   "page_refs": "Performance Enhancement and Injury — Burpee Broad Jump",
+   "key_concept": "The burpee broad jump combines a cyclical ground-to-standing transition with explosive horizontal jumping, and it is the station where elastic quality separates athletes most clearly. The ones who excel are not those who muscle each jump but those who load, store and release force efficiently, repetition after repetition. Each landing preloads the tendons of both the lower and upper body, and athletes with good elastic qualities convert that stored energy into longer, easier jumps while reducing muscular effort. Four mechanical principles govern it: energy recycling through elastic recoil rather than resetting each phase; hip-dominant propulsion, since horizontal displacement comes from the hips rather than the knees; landing force attenuation through coordinated hip, knee and ankle flexion; and centre-of-mass control, keeping momentum forward without wasteful vertical oscillation. The jump-length decision is a real trade-off — longer jumps demand more explosive power, drive heart rate higher, and impose greater eccentric landing loads, so an athlete choosing them must have trained the eccentric strength to absorb them.",
+   "key_facts": [
+    "The station rewards elastic power — the ability to store and release force rapidly via the stretch-shortening cycle — rather than raw strength applied to each jump.",
+    "Each burpee landing preloads tendons in both lower and upper body, letting tendon do part of the work and reducing muscular effort.",
+    "Principle one, energy recycling: transition from burpee to jump using elastic recoil rather than resetting each phase.",
+    "Principle two, hip-dominant propulsion: horizontal displacement is driven from the hips, not the knees.",
+    "Principle three, landing force attenuation: absorb through coordinated hip, knee and ankle flexion. Poor landings lengthen ground contact and raise injury risk.",
+    "Principle four, centre-of-mass control: maintain forward momentum without excessive vertical oscillation, which wastes energy.",
+    "Safety: keep neutral wrist alignment during the burpee to limit compressive load on the carpal joints.",
+    "Safety: control spinal flexion descending to the floor. Collapsing into the burpee increases lumbar strain and breaks movement rhythm.",
+    "Longer jumps cover ground in fewer reps but demand more explosive power, produce a higher heart-rate spike, and impose greater eccentric landing load.",
+    "If the athlete opts for longer jumps, train eccentric strength — heavy controlled squat repetitions are the primary tool.",
+    "Elastic qualities are trainable through plyometrics: bounding, hopping and reactive drills for the lower body, plus reactive press-up variations off the deck for the upper body.",
+    "Physiotherapy lens: lower-back and shoulder pain at this station is attributed to thoracic and shoulder-girdle tightness plus tight hip flexors, causing lumbar compensation or instability.",
+    "The same restrictions are held to limit cardiovascular output at this station, so mobility work can raise a ceiling that looks like a conditioning ceiling.",
+    "Somatotype: compact mesomorphs produce powerful efficient jumps with little energy loss and must manage jump frequency; tall ectomorphs cover more distance per rep but face higher landing forces and need superior control descending into the burpee."
+   ],
+   "training_link": "Watch whether your athlete bounces or resets. The ones who pause at the bottom, stand up, then jump are doing three separate movements and will fade badly — you want one continuous elastic action where the landing loads the next jump. Train that with actual plyometrics: bounding, hops, reactive drills, and reactive press-ups off the floor for the upper body, since the arms are storing energy too. Then have an honest conversation about jump length. Longer jumps mean fewer reps but a bigger heart-rate spike and much more eccentric load to absorb, so if they choose that route, build the eccentric strength first with heavy controlled squats. And check hip flexors and thoracic mobility — the athlete collapsing into each burpee with a sore lower back is usually tight rather than weak.",
+   "glossary": [
+    {
+     "term": "Elastic power",
+     "def": "The ability to store energy in muscle and tendon during rapid loading and release it explosively via the stretch-shortening cycle.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M12 20h8l4-8 6 16 6-16 6 16 4-8h22\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"2\"/></svg>"
+    },
+    {
+     "term": "Stretch-shortening cycle",
+     "def": "A rapid eccentric-to-concentric sequence in which pre-stretch stores elastic energy that augments the following contraction.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M12 20h8l4-8 6 16 6-16 6 16 4-8h22\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"2\"/></svg>"
+    },
+    {
+     "term": "Energy recycling",
+     "def": "Carrying momentum from one phase into the next rather than resetting, conserving substantial energy across repeated repetitions.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M8 26 C20 26 22 32 32 32 C46 32 46 12 66 12\" fill=\"none\" stroke=\"#67e8b0\" stroke-width=\"2\"/><line x1=\"8\" y1=\"24\" x2=\"72\" y2=\"24\" stroke=\"#3a4a5e\" stroke-width=\"1\" stroke-dasharray=\"3 2\"/></svg>"
+    },
+    {
+     "term": "Force attenuation",
+     "def": "Absorbing landing forces through coordinated hip, knee and ankle flexion, reducing ground contact time and injury risk.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M8 12 C26 13 44 22 72 33\" fill=\"none\" stroke=\"#ffb86b\" stroke-width=\"2\"/><line x1=\"8\" y1=\"34\" x2=\"72\" y2=\"34\" stroke=\"#3a4a5e\" stroke-width=\"1\"/></svg>"
+    },
+    {
+     "term": "Eccentric strength",
+     "def": "Force production while a muscle lengthens — the quality required to absorb the landing of longer broad jumps without breaking down.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"14\" y=\"10\" width=\"52\" height=\"22\" rx=\"3\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"1.6\"/><path d=\"M40 10v22\" stroke=\"#ffb86b\" stroke-width=\"2\"/><path d=\"M20 21h14M46 21h14\" stroke=\"#67e8b0\" stroke-width=\"1.6\"/></svg>"
+    },
+    {
+     "term": "Vertical oscillation",
+     "def": "Up-and-down movement of the centre of mass. Excess in a horizontal jump wastes energy that should be directed forward.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M12 30h44M48 25l8 5-8 5\" fill=\"none\" stroke=\"#67e8b0\" stroke-width=\"2\"/><path d=\"M12 30L44 12\" stroke=\"#5ec8ff\" stroke-width=\"2\"/><path d=\"M12 30a18 18 0 0 1 9-15\" fill=\"none\" stroke=\"#3a4a5e\" stroke-width=\"1.3\"/></svg>"
+    }
+   ],
+   "relevant": true,
+   "exam_focus": "Explain the role of the stretch-shortening cycle at this station, evaluate the trade-off between long and short broad jumps, and prescribe plyometric and eccentric work accordingly.",
+   "figures": []
+  },
+  "107": {
+   "title": "Rowing — kinetic sequence, knee tracking & rhythm",
+   "topic_id": "st_row",
+   "domain": "BM",
+   "chapter": "Module 7.4",
+   "page_refs": "Performance Enhancement and Injury — Rowing",
+   "key_concept": "Rowing is sequenced power transfer: legs to hips to trunk to arms, in a smooth uninterrupted chain that lets the large proximal groups initiate acceleration while the distal segments refine and extend the stroke. Roughly 60% of the stroke's effort comes from the legs. Disrupting the order — most commonly by flexing the arms early — shortens the stroke, drops peak force and raises metabolic cost, because small muscles take on work meant for large ones. Stroke length is the second anchor: maximise reach at the catch without sacrificing trunk stiffness, since lumbar flexion both reduces force transmission through the posterior chain and increases spinal shear. Rhythm is the third: a consistent drive-to-recovery ratio stabilises power output, and athletes who rush the recovery raise heart rate and oxygen demand without gaining boat speed. The station's characteristic late-race fault is knee valgus during the drive, which signals glute medius under-activation or quad dominance — and in HYROX, arriving fatigued, even athletes with strong glutes will show it.",
+   "key_facts": [
+    "Kinetic sequence: legs → hips → trunk → arms, smooth and uninterrupted. The legs contribute roughly 60% of stroke effort.",
+    "Early arm flexion breaks the sequence — the stroke shortens, peak force drops and metabolic cost rises as small muscles do large-muscle work.",
+    "Maximise reach at the catch without losing trunk stiffness. Excessive lumbar flexion reduces posterior-chain force transmission and increases spinal shear.",
+    "Overreaching with the shoulders destabilises the thoracic spine and delays force application.",
+    "Rhythm: a consistent drive-to-recovery ratio stabilises power. Rushing the recovery raises heart rate and oxygen demand without increasing speed.",
+    "Avoid exaggerated layback at the finish — it increases posterior shear. Keep rib cage stacked over pelvis throughout.",
+    "Knee valgus (knees caving in) during the drive indicates glute medius under-activation or quad dominance; the body collapses inward seeking stability.",
+    "In HYROX the row arrives late, so fatigue alone will produce knee valgus even in athletes with strong glutes. Cue knees tracking outward over the toes.",
+    "Glute medius remedial work: lateral band walks, clamshells and monster walks; plus hip thrusts, glute bridges and single-leg RDLs for robust glutes.",
+    "Lower-body strength and power: back squats and front squats for leg drive and upright posture, deadlifts for hip-hinge power, leg press where back squatting is contraindicated.",
+    "There is substantial crossover from sled push training, which reinforces leg drive without the technical complexity of the barbell lifts.",
+    "Posterior chain: hip thrusts, Nordic hamstring curls and back extensions transfer force through the pull. Power: power or hang cleans, kettlebell swings and box jumps for explosive triple extension off the catch.",
+    "Core requirement is anti-flexion and anti-rotation, so planks, dead bugs, Pallof presses and hanging leg raises beat classic sit-ups for this station.",
+    "Physiotherapy lens: hip restriction limits force and can tighten the rib cage, restricting expansion and capping cardiovascular output — with athletes compensating by breathing through tight neck flexors. Opening the chest and hips is presented as a fast route to more oxygen and better rowing performance.",
+    "Somatotype: compact mesomorphs generate high peak power per stroke but must avoid over-compact strokes that sacrifice mechanical advantage; tall ectomorphs gain natural stroke length but must keep the trunk rigid to avoid collapse at the catch."
+   ],
+   "training_link": "Look at the knees on the last twenty strokes, not the first ten. Caving knees late in the piece tell you the glute medius is losing the argument with fatigue, and the fix is band walks, clamshells and monster walks alongside the bigger hip thrust and single-leg RDL work — plus a simple cue to drive the knees out. Fix the sequence too: legs first, long arms, and nothing bending at the elbow until the hips have finished, because arms-early is how athletes turn a leg exercise into an arm exercise. Coach a steady drive-to-recovery ratio rather than a frantic one, since rushing the slide buys heart rate and no speed. And if their chest and hips are locked up, mobilise before you condition — a tight rib cage caps breathing, and that shows up as a cardio problem on the rower.",
+   "glossary": [
+    {
+     "term": "Kinetic sequence",
+     "def": "The ordered transfer of force legs → hips → trunk → arms. Disrupting it shortens the stroke and raises metabolic cost.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"18\" cy=\"20\" r=\"5\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"1.8\"/><circle cx=\"34\" cy=\"20\" r=\"5\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"1.8\"/><circle cx=\"50\" cy=\"20\" r=\"5\" fill=\"none\" stroke=\"#67e8b0\" stroke-width=\"1.8\"/><circle cx=\"66\" cy=\"20\" r=\"5\" fill=\"none\" stroke=\"#ffb86b\" stroke-width=\"1.8\"/><path d=\"M23 20h6M39 20h6M55 20h6\" stroke=\"#3a4a5e\" stroke-width=\"1.4\"/></svg>"
+    },
+    {
+     "term": "The catch",
+     "def": "The front position where the stroke begins. Reach should be maximised without sacrificing trunk stiffness or spinal position.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M12 30h44M48 25l8 5-8 5\" fill=\"none\" stroke=\"#67e8b0\" stroke-width=\"2\"/><path d=\"M12 30L44 12\" stroke=\"#5ec8ff\" stroke-width=\"2\"/><path d=\"M12 30a18 18 0 0 1 9-15\" fill=\"none\" stroke=\"#3a4a5e\" stroke-width=\"1.3\"/></svg>"
+    },
+    {
+     "term": "Drive-to-recovery ratio",
+     "def": "The timing relationship between the working drive and the recovery slide. Consistency stabilises power; rushing recovery raises oxygen cost without gaining speed.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M8 26 C20 26 22 32 32 32 C46 32 46 12 66 12\" fill=\"none\" stroke=\"#67e8b0\" stroke-width=\"2\"/><line x1=\"8\" y1=\"24\" x2=\"72\" y2=\"24\" stroke=\"#3a4a5e\" stroke-width=\"1\" stroke-dasharray=\"3 2\"/></svg>"
+    },
+    {
+     "term": "Knee valgus",
+     "def": "Inward collapse of the knees during the drive, indicating glute medius under-activation, quad dominance, or simply accumulated fatigue.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M8 12 C26 13 44 22 72 33\" fill=\"none\" stroke=\"#ffb86b\" stroke-width=\"2\"/><line x1=\"8\" y1=\"34\" x2=\"72\" y2=\"34\" stroke=\"#3a4a5e\" stroke-width=\"1\"/></svg>"
+    },
+    {
+     "term": "Glute medius",
+     "def": "The smaller lateral gluteal muscle responsible for keeping the knees tracking outward. The usual culprit when knees cave late in a race.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"28\" cy=\"12\" r=\"4\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"1.8\"/><path d=\"M28 16v10M22 20h12M28 26l-5 10M28 26l5 10\" stroke=\"#67e8b0\" stroke-width=\"1.8\"/><path d=\"M52 8v26\" stroke=\"#ffb86b\" stroke-width=\"1.8\"/><path d=\"M48 12h8M48 30h8\" stroke=\"#3a4a5e\" stroke-width=\"1.4\"/></svg>"
+    },
+    {
+     "term": "Anti-flexion core work",
+     "def": "Trunk training that resists flexion and rotation — planks, dead bugs, Pallof presses — rather than producing it, as sit-ups do.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"14\" y=\"10\" width=\"52\" height=\"22\" rx=\"3\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"1.6\"/><path d=\"M40 10v22\" stroke=\"#ffb86b\" stroke-width=\"2\"/><path d=\"M20 21h14M46 21h14\" stroke=\"#67e8b0\" stroke-width=\"1.6\"/></svg>"
+    }
+   ],
+   "relevant": true,
+   "exam_focus": "Explain the rowing kinetic sequence and the cost of early arm break, diagnose late-race knee valgus, and prescribe glute medius and anti-flexion core work.",
+   "figures": []
+  },
+  "108": {
+   "title": "Farmers carry — anti-lateral flexion & grip",
+   "topic_id": "st_carry",
+   "domain": "SM",
+   "chapter": "Module 7.4",
+   "page_refs": "Performance Enhancement and Injury — Farmers Carry",
+   "key_concept": "The farmers carry is a moving demonstration of anti-lateral flexion stability. The load constantly tries to pull the athlete off centre, and the obliques, quadratus lumborum and deep spinal stabilisers work isometrically to hold a stacked rib-cage-over-pelvis relationship. Any deviation costs energy and disrupts gait. Gait mechanics are the second principle, and the counter-intuitive finding is that the ideal pattern is not a walk but a compressed, stabilised march — short controlled steps that reduce oscillation of the centre of mass and minimise medial-lateral sway, since long strides amplify ground reaction variability and raise ankle instability risk. Postural control is equally important: scapular depression stops the shoulders being dragged into elevation and overloading the upper traps, while a neutral spine with slight thoracic extension lets the diaphragm and pelvic floor coordinate for bracing. Grip is the obvious limiter, but the physiotherapy lens locates much of it upstream — in a tight shoulder girdle and, specifically and unusually, in the opponens muscle of the thumb, which is often too tight to contract fully.",
+   "key_facts": [
+    "Defining principle: anti-lateral flexion stability. Obliques, quadratus lumborum and deep spinal stabilisers work isometrically to resist side-to-side deviation.",
+    "Maintain a stacked rib-cage-to-pelvis relationship. Any deviation increases energy expenditure and disrupts gait mechanics.",
+    "Optimal gait is a compressed, stabilised march rather than a normal walking pattern — short, controlled steps.",
+    "Short steps reduce centre-of-mass oscillation and medial-lateral sway; long strides amplify ground reaction variability and raise ankle instability risk.",
+    "Maintain scapular depression so the load does not drag the shoulders into elevation and overload the upper trapezius.",
+    "A neutral spine with slight thoracic extension allows the diaphragm and pelvic floor to coordinate effectively for bracing.",
+    "Avoid excessive trunk lean, which increases spinal loading, and keep a stable head position to preserve vestibular alignment.",
+    "Ideally postural control should fail before grip does — if grip goes first, the station is grip-capped rather than trunk-capped.",
+    "Physiotherapy lens on lower-back instability: dysfunction or tightness of quadratus lumborum, psoas and often gluteus maximus prevents the lower back stabilising during the carry.",
+    "Physiotherapy lens on grip: tightness around the shoulder girdle and latissimus/brachialis region inhibits grip, so grip failure is frequently an upstream problem.",
+    "A specific and unusual claim from the module: the opponens pollicis of the thumb is often too tight to contract fully, and deep self-massage of the thenar eminence can noticeably improve grip. Cheap to test on an individual; treat the magnitude claim with healthy scepticism.",
+    "Practical self-treatment suggested: massage the thumb musculature, the forearms, and the teres minor region around the shoulder.",
+    "Grip strength deserves dedicated training where it is the weakest link, since the whole station is capped by it.",
+    "Somatotype: compact mesomorphs excel through a lower centre of mass and strong trunk musculature, absorbing force with less sway; tall ectomorphs face longer moment arms at the spine and usually benefit from a slightly slower cadence to control oscillation."
+   ],
+   "training_link": "Watch what fails first. If the trunk is still stacked and the hands are giving out, this is a grip-capped station and you should train grip directly — but check the shoulder girdle and thumb before you assume it's forearm weakness, because tightness upstream inhibits grip and mobilising it is free. The thumb massage trick is odd but costs nothing to test on an individual athlete; judge it by whether their carry actually improves. Then fix the gait: most athletes try to walk normally and sway all over the lane, when what you want is a short, compressed march with the ribs stacked over the pelvis and the shoulders pulled down away from the ears. And if their lower back is wobbling, look at the hips and quadratus lumborum rather than adding more carries.",
+   "glossary": [
+    {
+     "term": "Anti-lateral flexion",
+     "def": "Isometric resistance to sideways trunk bending under an offset load — the core demand of a loaded carry.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M40 6v28\" stroke=\"#5ec8ff\" stroke-width=\"2\"/><path d=\"M16 14h48\" stroke=\"#67e8b0\" stroke-width=\"2\"/><rect x=\"10\" y=\"16\" width=\"12\" height=\"8\" fill=\"none\" stroke=\"#ffb86b\" stroke-width=\"1.6\"/><rect x=\"58\" y=\"16\" width=\"12\" height=\"8\" fill=\"none\" stroke=\"#ffb86b\" stroke-width=\"1.6\"/></svg>"
+    },
+    {
+     "term": "Quadratus lumborum",
+     "def": "A deep lateral trunk muscle spanning the lower ribs to the pelvis, central to resisting lateral flexion and implicated in carry-related back instability.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"28\" cy=\"12\" r=\"4\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"1.8\"/><path d=\"M28 16v10M22 20h12M28 26l-5 10M28 26l5 10\" stroke=\"#67e8b0\" stroke-width=\"1.8\"/><path d=\"M52 8v26\" stroke=\"#ffb86b\" stroke-width=\"1.8\"/><path d=\"M48 12h8M48 30h8\" stroke=\"#3a4a5e\" stroke-width=\"1.4\"/></svg>"
+    },
+    {
+     "term": "Stacked rib-to-pelvis alignment",
+     "def": "Positioning the rib cage directly over the pelvis so bracing is efficient and force is not lost to trunk deviation.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"14\" y=\"10\" width=\"52\" height=\"22\" rx=\"3\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"1.6\"/><path d=\"M40 10v22\" stroke=\"#ffb86b\" stroke-width=\"2\"/><path d=\"M20 21h14M46 21h14\" stroke=\"#67e8b0\" stroke-width=\"1.6\"/></svg>"
+    },
+    {
+     "term": "Compressed march",
+     "def": "The short-step, low-oscillation gait pattern that suits a loaded carry better than a normal walking stride.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"24\" cy=\"20\" r=\"9\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"2\"/><path d=\"M40 20h22M54 13l8 7-8 7\" fill=\"none\" stroke=\"#67e8b0\" stroke-width=\"2\"/></svg>"
+    },
+    {
+     "term": "Scapular depression",
+     "def": "Actively holding the shoulder blades down against a load that pulls them upward, protecting the upper trapezius and shoulder integrity.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"28\" cy=\"12\" r=\"4\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"1.8\"/><path d=\"M28 16v10M22 20h12M28 26l-5 10M28 26l5 10\" stroke=\"#67e8b0\" stroke-width=\"1.8\"/><path d=\"M52 8v26\" stroke=\"#ffb86b\" stroke-width=\"1.8\"/><path d=\"M48 12h8M48 30h8\" stroke=\"#3a4a5e\" stroke-width=\"1.4\"/></svg>"
+    },
+    {
+     "term": "Grip inhibition",
+     "def": "Reduced grip output caused by restriction upstream — shoulder girdle, lat and thumb musculature — rather than by forearm weakness.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M8 12 C26 13 44 22 72 33\" fill=\"none\" stroke=\"#ffb86b\" stroke-width=\"2\"/><line x1=\"8\" y1=\"34\" x2=\"72\" y2=\"34\" stroke=\"#3a4a5e\" stroke-width=\"1\"/></svg>"
+    }
+   ],
+   "relevant": true,
+   "exam_focus": "Explain anti-lateral flexion demand and why a compressed march beats a walking stride, and distinguish a grip-capped from a trunk-capped farmers carry.",
+   "figures": []
+  },
+  "109": {
+   "title": "Sandbag lunges — overhead position & bilateral drive",
+   "topic_id": "st_lunge",
+   "domain": "BM",
+   "chapter": "Module 7.4",
+   "page_refs": "Performance Enhancement and Injury — Sandbag Lunges",
+   "key_concept": "Station seven, with the end in sight and the wall balls still to come — which is exactly why the most consequential coaching point here is not the lunge itself but how much the athlete has left afterwards. It begins with a sandbag clean: grip the outside handles, the inner-outside or the closest inside handles, drive the bag to a front rack, then get it overhead onto the shoulders, where it stays for the whole 100 m. The lunge pattern has two dominant faults. The first is walking a tightrope — placing the feet in line as though on a beam — when they should stay in parallel lines at roughly squat width. The second, and more expensive, is standing up out of each lunge using only the front leg. Driving up with both feet and pushing off the back leg distributes body weight plus bag weight across two legs instead of loading one quadriceps repeatedly. Athletes who overload the front leg feel it on the final run and arrive at the wall balls with nothing, turning a manageable finish into a grim one.",
+   "key_facts": [
+    "Race position: station seven of eight, with a final run and 100 wall balls still to come. Preserving the legs matters more than the split at this station.",
+    "The station opens with a sandbag clean — grip the outside, inner-outside or closest inside handles, drive to a front rack, then position overhead onto the shoulders.",
+    "Once overhead the bag stays there for the full 100 m, so the athlete must find a position they can genuinely hold, staying tight to the shoulders and keeping hold of the grip.",
+    "Fault one — the tightrope walk. Feet should stay in parallel lines at roughly squat width, moving forward on those lines, not placed one in front of the other.",
+    "Fault two, and the costly one — standing up out of the lunge with the front leg only. Keep the back leg engaged.",
+    "Correct pattern: step, drive up with both feet, then push off the back leg to finish the extension. Weight distribution should be equal across both feet on the way up.",
+    "Loading the front leg and knee repeatedly taxes one quadriceps far more than necessary, and the cost is paid on the final run and at the wall balls.",
+    "Reach full extension every repetition — that is the movement standard, whichever stepping style is used.",
+    "Pacing option when breathing is the limiter: bring the feet together at the top of each rep and take a beat before the next one.",
+    "Speed option when going for time: a step-through, or a tap-to-step-through, is typically the fastest pattern.",
+    "The overhead position couples shoulder and thoracic mobility to the station — an athlete who cannot hold the bag overhead comfortably will compensate through the lumbar spine.",
+    "Unilateral leg endurance is the underlying quality; the lunge is where a runner's lack of single-leg strength endurance becomes visible.",
+    "This station and the wall balls together determine the finish, so treat them as a coupled pair in both pacing and training.",
+    "Practise the clean and the overhead transition specifically — fumbling the set-up wastes time and energy before the lunging even starts."
+   ],
+   "training_link": "Coach the exit from the lunge, not the entry. Most athletes step nicely and then haul themselves up on the front leg alone, and that single habit is what empties their legs before the last run — cue them to drive with both feet and push off the back leg to finish. Get their feet out of a line: parallel tracks at squat width, not a tightrope. Practise the clean and the overhead set-up separately, because fumbling that at station seven costs time and energy they don't have. Then decide the pattern in advance based on what limits them — feet together and a beat between reps if they're gasping, step-through if they're chasing time. And train it as a pair with the wall balls, because how they lunge decides what they've got left for the finish.",
+   "glossary": [
+    {
+     "term": "Sandbag clean",
+     "def": "Lifting the bag from the floor to a front rack and then overhead onto the shoulders, using outside, inner-outside or closest inside handles.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"24\" cy=\"20\" r=\"9\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"2\"/><path d=\"M40 20h22M54 13l8 7-8 7\" fill=\"none\" stroke=\"#67e8b0\" stroke-width=\"2\"/></svg>"
+    },
+    {
+     "term": "Parallel-line stance",
+     "def": "Keeping the feet on two tracks at roughly squat width rather than placing them in a single line, preserving lateral stability under load.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M40 6v28\" stroke=\"#5ec8ff\" stroke-width=\"2\"/><path d=\"M16 14h48\" stroke=\"#67e8b0\" stroke-width=\"2\"/><rect x=\"10\" y=\"16\" width=\"12\" height=\"8\" fill=\"none\" stroke=\"#ffb86b\" stroke-width=\"1.6\"/><rect x=\"58\" y=\"16\" width=\"12\" height=\"8\" fill=\"none\" stroke=\"#ffb86b\" stroke-width=\"1.6\"/></svg>"
+    },
+    {
+     "term": "Bilateral drive",
+     "def": "Standing out of each lunge using both legs and finishing with a push off the rear foot, rather than loading the front leg alone.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M10 20h20M30 20l14-9M30 20l14 9\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"2\"/><circle cx=\"48\" cy=\"11\" r=\"3\" fill=\"#67e8b0\"/><circle cx=\"48\" cy=\"29\" r=\"3\" fill=\"#ffb86b\"/></svg>"
+    },
+    {
+     "term": "Step-through",
+     "def": "A continuous lunge pattern moving directly from one repetition into the next, typically the fastest option when time rather than breathing is the limiter.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"18\" cy=\"20\" r=\"5\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"1.8\"/><circle cx=\"34\" cy=\"20\" r=\"5\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"1.8\"/><circle cx=\"50\" cy=\"20\" r=\"5\" fill=\"none\" stroke=\"#67e8b0\" stroke-width=\"1.8\"/><circle cx=\"66\" cy=\"20\" r=\"5\" fill=\"none\" stroke=\"#ffb86b\" stroke-width=\"1.8\"/><path d=\"M23 20h6M39 20h6M55 20h6\" stroke=\"#3a4a5e\" stroke-width=\"1.4\"/></svg>"
+    },
+    {
+     "term": "Overhead carry position",
+     "def": "Holding the bag on the shoulders overhead for the full distance. Requires shoulder and thoracic mobility, or the athlete compensates through the lumbar spine.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"28\" cy=\"12\" r=\"4\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"1.8\"/><path d=\"M28 16v10M22 20h12M28 26l-5 10M28 26l5 10\" stroke=\"#67e8b0\" stroke-width=\"1.8\"/><path d=\"M52 8v26\" stroke=\"#ffb86b\" stroke-width=\"1.8\"/><path d=\"M48 12h8M48 30h8\" stroke=\"#3a4a5e\" stroke-width=\"1.4\"/></svg>"
+    },
+    {
+     "term": "Unilateral leg endurance",
+     "def": "Fatigue resistance of a single leg under load — the quality the sandbag lunge exposes and the one runners most often lack.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M8 26 C20 26 22 32 32 32 C46 32 46 12 66 12\" fill=\"none\" stroke=\"#67e8b0\" stroke-width=\"2\"/><line x1=\"8\" y1=\"24\" x2=\"72\" y2=\"24\" stroke=\"#3a4a5e\" stroke-width=\"1\" stroke-dasharray=\"3 2\"/></svg>"
+    }
+   ],
+   "relevant": true,
+   "exam_focus": "Identify the two dominant sandbag-lunge faults, explain why front-leg-only extension costs the final run and wall balls, and select a stepping pattern based on the athlete's limiter.",
+   "figures": []
+  },
+  "110": {
+   "title": "Wall balls — triple extension & posture under fatigue",
+   "topic_id": "st_wallball",
+   "domain": "PG",
+   "chapter": "Module 7.4",
+   "page_refs": "Performance Enhancement and Injury — Wall Balls",
+   "key_concept": "Wall balls are a triple threat — a squat, a vertical power throw and a postural endurance test — combined into the final station, performed on completely spent legs. Mechanically it runs on triple extension of hips, knees and ankles, followed by proximal-to-distal transfer through the torso, shoulders and arms, so that the ball's trajectory is driven by leg power rather than upper-body fatigue. The arms guide the ball rather than muscling it; over-relying on the shoulders produces rapid fatigue and inconsistent trajectory. Efficient athletes use elastic recoil, storing energy in the musculotendinous structures during the descent and releasing it into the upward drive. The characteristic failure is postural, not muscular: under fatigue the upper back rounds, the elbows drop forward, and the athlete's ability to drive the ball up and receive it again collapses. That makes upper-back strength endurance and trunk rigidity the decisive trainable qualities across 100 repetitions, alongside squat endurance and shoulder endurance.",
+   "key_facts": [
+    "Wall balls combine a squat, a vertical ballistic throw and a postural endurance test in one station — and it is the last one, on pre-fatigued legs.",
+    "Triple extension of hips, knees and ankles drives the throw, followed by proximal-to-distal transfer through torso, shoulders and arms.",
+    "When sequencing is efficient the ball's trajectory comes from leg power, not from the upper body.",
+    "The arms guide the ball rather than muscling it. Over-reliance on the shoulders causes rapid fatigue and inconsistent trajectory.",
+    "Descend to regulation depth while maintaining trunk stiffness and neutral lumbar alignment; lumbar flexion at the bottom compromises force transfer and loads the spine.",
+    "Use elastic recoil — store energy in the musculotendinous structures on the descent and release it into the upward drive.",
+    "Keep rib-to-pelvis alignment during the throw; over-arching increases lumbar shear. Avoid the catch pulling the athlete into thoracic flexion.",
+    "The signature fatigue failure is postural: upper back rounds, elbows drop forward, and both the drive and the catch degrade.",
+    "Upper-back strength endurance is therefore decisive — weak mid and lower traps, rhomboids or spinal erectors mean posture collapses. Train with scapular depressions, prone Y-raises and cable face pulls.",
+    "Squat endurance builds the strength reserve: barbell front squats, plus goblet squats with dumbbell or kettlebell to reinforce mechanics in both lower and upper body.",
+    "Core bracing maintains the rigid trunk that prevents forward trunk flexion — front planks with a reach and loaded front carries are the recommended tools.",
+    "Shoulder endurance via barbell or dumbbell push press, working heavier loads in a movement plane that closely replicates the wall-ball pattern.",
+    "Physiotherapy lens: shoulder-girdle mobility is presented as the single fastest route to improved wall-ball performance, with thoracic and hip mobility close behind.",
+    "Somatotype: compact mesomorphs cycle reps quickly on strong hip drive but must avoid inefficient high arcs; tall ectomorphs benefit from reduced effective throw height and longer reach but must control long levers through the squat to keep timing consistent."
+   ],
+   "training_link": "The thing that ends wall balls is posture, not legs. Watch for the upper back rounding and the elbows dropping — once that happens the drive and the catch both fall apart, and no amount of grit fixes it mid-set. So train the upper back specifically: scapular depressions, prone Y-raises, face pulls, plus front planks with a reach for the rigid trunk. Build squat endurance with front squats and goblets, and shoulder endurance with push press, which sits in nearly the same plane as the throw. Cue the legs to launch the ball and the arms only to guide it — athletes who press with the shoulders are finished by rep forty. And check shoulder mobility first, because on this station it is the cheapest and fastest gain available.",
+   "glossary": [
+    {
+     "term": "Triple extension",
+     "def": "Coordinated extension of hips, knees and ankles that generates the upward drive projecting the ball.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"18\" cy=\"20\" r=\"5\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"1.8\"/><circle cx=\"34\" cy=\"20\" r=\"5\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"1.8\"/><circle cx=\"50\" cy=\"20\" r=\"5\" fill=\"none\" stroke=\"#67e8b0\" stroke-width=\"1.8\"/><circle cx=\"66\" cy=\"20\" r=\"5\" fill=\"none\" stroke=\"#ffb86b\" stroke-width=\"1.8\"/><path d=\"M23 20h6M39 20h6M55 20h6\" stroke=\"#3a4a5e\" stroke-width=\"1.4\"/></svg>"
+    },
+    {
+     "term": "Proximal-to-distal transfer",
+     "def": "Force passing from the large lower-body and trunk musculature outward through shoulders and arms, so leg power rather than arm strength drives the throw.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M12 30h44M48 25l8 5-8 5\" fill=\"none\" stroke=\"#67e8b0\" stroke-width=\"2\"/><path d=\"M12 30L44 12\" stroke=\"#5ec8ff\" stroke-width=\"2\"/><path d=\"M12 30a18 18 0 0 1 9-15\" fill=\"none\" stroke=\"#3a4a5e\" stroke-width=\"1.3\"/></svg>"
+    },
+    {
+     "term": "Elastic recoil",
+     "def": "Energy stored in musculotendinous structures during the squat descent and released into the upward drive, reducing muscular cost per repetition.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M12 20h8l4-8 6 16 6-16 6 16 4-8h22\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"2\"/></svg>"
+    },
+    {
+     "term": "Postural collapse",
+     "def": "The characteristic fatigue failure — upper back rounding and elbows dropping forward — that degrades both the drive and the catch.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M8 12 C26 13 44 22 72 33\" fill=\"none\" stroke=\"#ffb86b\" stroke-width=\"2\"/><line x1=\"8\" y1=\"34\" x2=\"72\" y2=\"34\" stroke=\"#3a4a5e\" stroke-width=\"1\"/></svg>"
+    },
+    {
+     "term": "Upper-back strength endurance",
+     "def": "Fatigue resistance of mid and lower traps, rhomboids and spinal erectors, the muscles that hold posture across 100 repetitions.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M8 26 C20 26 22 32 32 32 C46 32 46 12 66 12\" fill=\"none\" stroke=\"#67e8b0\" stroke-width=\"2\"/><line x1=\"8\" y1=\"24\" x2=\"72\" y2=\"24\" stroke=\"#3a4a5e\" stroke-width=\"1\" stroke-dasharray=\"3 2\"/></svg>"
+    },
+    {
+     "term": "Push press",
+     "def": "An overhead press initiated with a leg drive, training shoulder endurance in a plane closely replicating the wall-ball throw.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"24\" cy=\"20\" r=\"9\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"2\"/><path d=\"M40 20h22M54 13l8 7-8 7\" fill=\"none\" stroke=\"#67e8b0\" stroke-width=\"2\"/></svg>"
+    }
+   ],
+   "relevant": true,
+   "exam_focus": "Explain why wall-ball failure is postural rather than muscular, identify the muscle groups whose endurance prevents it, and prescribe the squat, upper-back and shoulder work required.",
    "figures": []
   }
  }

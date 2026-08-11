@@ -6260,5 +6260,563 @@
    "a": "Manipulation of blood and blood components, chemical and physical manipulation, and gene doping.",
    "type": "recall"
   }
+ ],
+ "st_framework": [
+  {
+   "q": "Name the three lenses Module 7.4 applies to every station.",
+   "a": "Biomechanics (how force is produced and lost), physiotherapy (what restriction limits the athlete), and strength & conditioning (which qualities and exercises build capacity).",
+   "type": "recall"
+  },
+  {
+   "q": "An athlete is slow on the sled. Give the three possible causes.",
+   "a": "Insufficient strength (S&C), force leaking through faulty sequencing or a collapsed trunk (biomechanics), or a hip restriction blocking force transfer (physiotherapy).",
+   "type": "application"
+  },
+  {
+   "q": "Define force leakage.",
+   "a": "Energy generated proximally that fails to reach the implement because a segment in the kinetic chain yields under load.",
+   "type": "recall"
+  },
+  {
+   "q": "Which restriction recurs across nearly every station?",
+   "a": "Hip and thoracic restriction — often presenting as a strength or cardiovascular problem rather than a mobility one.",
+   "type": "recall"
+  },
+  {
+   "q": "How can a mobility problem present as a cardiovascular ceiling?",
+   "a": "Thoracic restriction limits rib-cage expansion and therefore breathing, capping output in a way that looks like poor conditioning.",
+   "type": "application"
+  },
+  {
+   "q": "General strategic priority for a compact mesomorph?",
+   "a": "Rhythm and consistency rather than chasing maximal range per repetition.",
+   "type": "recall"
+  },
+  {
+   "q": "General strategic priority for a tall ectomorph?",
+   "a": "Trunk stiffness and sequencing, so long levers become an asset rather than a mechanical liability.",
+   "type": "recall"
+  },
+  {
+   "q": "In what order should you diagnose a station deficit?",
+   "a": "Restriction first (quickest to change), then sequencing on video, then treat it as a strength deficit.",
+   "type": "application"
+  },
+  {
+   "q": "How should the module's supplement claims be treated?",
+   "a": "Cautiously. The mobility reasoning is clinically mainstream; glutamine-as-lactate-buffer and fatty-acids-raise-oxygen-uptake are weakly evidenced. Iron has genuine support, but only where deficiency is confirmed by testing.",
+   "type": "application"
+  },
+  {
+   "q": "Why assess the fatigued pattern rather than the fresh one?",
+   "a": "Every station's technical model degrades late in the race, so the pattern that costs time is the one appearing at station six, not the one shown fresh.",
+   "type": "application"
+  },
+  {
+   "q": "What happens if you apply the wrong lens?",
+   "a": "You produce training that is technically sound and useless, because it doesn't address the actual limiter.",
+   "type": "recall"
+  },
+  {
+   "q": "Why do longer limbs complicate a station technically?",
+   "a": "They create larger moment arms, increasing the torque the trunk and shoulders must resist under the same external load.",
+   "type": "recall"
+  }
+ ],
+ "st_ski": [
+  {
+   "q": "Where in the race does the SkiErg fall and what's the pacing implication?",
+   "a": "Station one — athlete fresh but heart rate rising. Establish rhythm without spiking heart rate rather than chasing maximum output.",
+   "type": "recall"
+  },
+  {
+   "q": "Give the correct SkiErg pull sequence.",
+   "a": "Lats, trunk flexors and hip hinge initiate; the arms finish the stroke.",
+   "type": "recall"
+  },
+  {
+   "q": "What goes wrong when the elbows break early?",
+   "a": "Work shifts to biceps and triceps — small muscles that fatigue quickly — and efficiency drops sharply.",
+   "type": "application"
+  },
+  {
+   "q": "Hinge or squat on each stroke?",
+   "a": "Hinge. The hip hinge is what recruits the posterior chain and lats effectively.",
+   "type": "recall"
+  },
+  {
+   "q": "Why start tall and elongated?",
+   "a": "Length-tension: the lats and trunk flexors produce peak force starting lengthened and contracting through a strong mid-range.",
+   "type": "recall"
+  },
+  {
+   "q": "What should the upward return be used for?",
+   "a": "Preloading the posterior chain to store elastic energy for the next pull — not as passive rest.",
+   "type": "application"
+  },
+  {
+   "q": "Power per stroke or high stroke rate?",
+   "a": "Power per stroke. Chasing rate is the faster route to an uncontrolled heart-rate response.",
+   "type": "recall"
+  },
+  {
+   "q": "What does cervical flexion under fatigue cost you?",
+   "a": "It disrupts scapular mechanics and increases strain on the upper trapezius.",
+   "type": "recall"
+  },
+  {
+   "q": "Physiotherapy lens — what's the quickest win on the SkiErg?",
+   "a": "Restoring shoulder-girdle and thoracic mobility. The two are coupled, and even modest lat tightness measurably reduces output.",
+   "type": "application"
+  },
+  {
+   "q": "Name two exercises replicating the SkiErg line of pull.",
+   "a": "Neutral-grip chin-ups and dumbbell pullovers.",
+   "type": "recall"
+  },
+  {
+   "q": "How would you train the velocity component of power for this station?",
+   "a": "Heavy medicine-ball slams, replicating the stroke pattern and driving the ball down hard.",
+   "type": "application"
+  },
+  {
+   "q": "What does a high damper setting develop?",
+   "a": "Power endurance, worked specifically on the machine itself.",
+   "type": "recall"
+  }
+ ],
+ "st_sledpush": [
+  {
+   "q": "State the defining biomechanical principle of the sled push.",
+   "a": "Horizontal force-vector alignment — torso angle, shin angle and push direction unified into one forward vector.",
+   "type": "recall"
+  },
+  {
+   "q": "Which joint usually lags in triple extension, and what happens?",
+   "a": "The hips. The sequence breaks and the athlete stalls under load.",
+   "type": "application"
+  },
+  {
+   "q": "Why is pausing mid-lane so costly?",
+   "a": "Resistance is frictional, not gravitational — static friction makes restarting a stopped sled far harder than keeping a moving one going.",
+   "type": "recall"
+  },
+  {
+   "q": "Two consequences of lumbar flexion under sled load?",
+   "a": "Increased spinal shear force, and reduced ability of the hips to contribute power.",
+   "type": "recall"
+  },
+  {
+   "q": "Correct shoulder position on the sled?",
+   "a": "Stable girdle with scapulae protracted but not collapsed, stabilising the chain and protecting the anterior shoulder.",
+   "type": "recall"
+  },
+  {
+   "q": "Physiotherapy lens — the hidden limiter, and why it's missed?",
+   "a": "Hip dysfunction destabilising the lumbar spine and blocking force transfer. It's missed because many athletes have no back pain at all.",
+   "type": "application"
+  },
+  {
+   "q": "Which structures are implicated in that lower-back instability?",
+   "a": "The thoracolumbar fascia and quadratus lumborum, with the primary restriction usually at the hips.",
+   "type": "recall"
+  },
+  {
+   "q": "Name the three S&C qualities for this station.",
+   "a": "Maximal lower-body strength, horizontal power production, and bracing under load.",
+   "type": "recall"
+  },
+  {
+   "q": "Why include heavy sled work specifically?",
+   "a": "The goal is moving a sled horizontally and forcefully — nothing else transfers as directly to that vector.",
+   "type": "application"
+  },
+  {
+   "q": "Which unilateral exercise is recommended and what does it target?",
+   "a": "Dumbbell or barbell Bulgarian split squats, targeting the glutes and hamstrings that drive hip extension.",
+   "type": "recall"
+  },
+  {
+   "q": "Why does core bracing matter here?",
+   "a": "The legs act as an extension of the sled, so a weak trunk becomes the point where leg drive is lost.",
+   "type": "application"
+  },
+  {
+   "q": "How should torso angle differ between a compact and a tall athlete?",
+   "a": "Compact mesomorphs can hold a low torso angle without losing stability; tall ectomorphs benefit from a slightly higher angle to maintain trunk integrity.",
+   "type": "application"
+  }
+ ],
+ "st_sledpull": [
+  {
+   "q": "What's the defining principle of the sled pull?",
+   "a": "Force redirection — anchoring the body and channelling force through the rope rather than applying it directly to the sled.",
+   "type": "recall"
+  },
+  {
+   "q": "What must the feet do during the pull?",
+   "a": "Create backward traction while the upper body generates horizontal pull — ground reaction force management.",
+   "type": "recall"
+  },
+  {
+   "q": "How should the arms be conceived?",
+   "a": "As an extension of the rope, exactly as a deadlift treats them as an extension of the barbell. Initiation comes from lats and trunk.",
+   "type": "application"
+  },
+  {
+   "q": "Why lean back, and what's the constraint?",
+   "a": "It shifts the centre of mass behind the base of support, increasing traction. The constraint is that the lean must not come with spinal flexion.",
+   "type": "recall"
+  },
+  {
+   "q": "Where should the elbows track and why?",
+   "a": "Close to the body, maintaining shoulder integrity and reducing strain on the biceps tendon.",
+   "type": "recall"
+  },
+  {
+   "q": "Physiotherapy lens — why does grip fail, and what's the fix?",
+   "a": "Often inhibition from a tight shoulder girdle rather than forearm weakness. Mobilising the shoulder girdle can restore grip quickly.",
+   "type": "application"
+  },
+  {
+   "q": "What's attributed to hip restriction at this station?",
+   "a": "Lower-back complaints and heavy lactate accumulation in the legs, via reduced blood flow and impaired clearance.",
+   "type": "recall"
+  },
+  {
+   "q": "Primary S&C quality and its key exercises?",
+   "a": "Posterior chain strength — deadlift variations, squats and barbell hip thrusts.",
+   "type": "recall"
+  },
+  {
+   "q": "Which quadriceps head is loaded by the backward stepping, and how do you train it?",
+   "a": "Vastus medialis — sled drags and quarter squats.",
+   "type": "recall"
+  },
+  {
+   "q": "Who has the built-in advantage here?",
+   "a": "Heavier, more muscular athletes, whose mass aids traction and leverage. Lighter runners typically need dedicated strength work.",
+   "type": "application"
+  },
+  {
+   "q": "Trade-off between compact and tall athletes on the pull?",
+   "a": "Compact athletes lean back aggressively without losing balance but get less rope per pull; tall athletes take longer rope segments but face greater spinal torque.",
+   "type": "application"
+  },
+  {
+   "q": "Cost of breaking early at the elbows?",
+   "a": "Added fatigue plus less efficient transfer of generated force to the sled.",
+   "type": "recall"
+  }
+ ],
+ "st_burpee": [
+  {
+   "q": "What quality most separates athletes at this station?",
+   "a": "Elastic power — the ability to load, store and release force rapidly, repetition after repetition, rather than muscling each jump.",
+   "type": "recall"
+  },
+  {
+   "q": "What does each burpee landing do mechanically?",
+   "a": "Preloads tendons in both lower and upper body, letting tendon do part of the work and reducing muscular effort.",
+   "type": "recall"
+  },
+  {
+   "q": "Hips or knees for the broad jump?",
+   "a": "Hips. Hip-dominant propulsion maximises horizontal displacement.",
+   "type": "recall"
+  },
+  {
+   "q": "How should landing forces be absorbed?",
+   "a": "Through coordinated hip, knee and ankle flexion. Poor landings lengthen ground contact time and raise injury risk.",
+   "type": "recall"
+  },
+  {
+   "q": "Why limit vertical oscillation?",
+   "a": "It wastes energy that should be directed forward — the jump is a horizontal task.",
+   "type": "application"
+  },
+  {
+   "q": "Two safety points during the burpee phase?",
+   "a": "Neutral wrist alignment to limit carpal compression, and controlled spinal flexion descending — collapsing raises lumbar strain.",
+   "type": "recall"
+  },
+  {
+   "q": "Three costs of choosing longer jumps?",
+   "a": "More explosive power required, a higher heart-rate spike, and greater eccentric landing load on the lower body.",
+   "type": "application"
+  },
+  {
+   "q": "If an athlete opts for longer jumps, what must you train?",
+   "a": "Eccentric strength — primarily heavy controlled squat repetitions.",
+   "type": "application"
+  },
+  {
+   "q": "How do you train the elastic quality?",
+   "a": "Plyometrics — bounding, hopping and reactive lower-body drills, plus reactive press-up variations off the deck for the upper body.",
+   "type": "recall"
+  },
+  {
+   "q": "Physiotherapy lens on burpee back and shoulder pain?",
+   "a": "Attributed to thoracic and shoulder-girdle tightness plus tight hip flexors, causing lumbar compensation or instability.",
+   "type": "recall"
+  },
+  {
+   "q": "Why might mobility work raise what looks like a conditioning ceiling here?",
+   "a": "The same thoracic and hip restrictions are held to limit cardiovascular output at this station.",
+   "type": "application"
+  },
+  {
+   "q": "Somatotype trade-off at the burpee broad jump?",
+   "a": "Compact mesomorphs jump powerfully with little energy loss but must manage rep frequency; tall ectomorphs cover more ground per rep but absorb higher landing forces.",
+   "type": "application"
+  }
+ ],
+ "st_row": [
+  {
+   "q": "State the rowing kinetic sequence and the legs' share of effort.",
+   "a": "Legs → hips → trunk → arms, smooth and uninterrupted. The legs contribute roughly 60% of stroke effort.",
+   "type": "recall"
+  },
+  {
+   "q": "What does early arm flexion cost?",
+   "a": "A shorter stroke, lower peak force and higher metabolic cost, as small muscles take on large-muscle work.",
+   "type": "application"
+  },
+  {
+   "q": "What limits reach at the catch?",
+   "a": "Trunk stiffness. Excessive lumbar flexion reduces posterior-chain force transmission and raises spinal shear.",
+   "type": "recall"
+  },
+  {
+   "q": "What happens when an athlete rushes the recovery?",
+   "a": "Heart rate and oxygen demand rise with no increase in net speed.",
+   "type": "recall"
+  },
+  {
+   "q": "Why avoid exaggerated layback at the finish?",
+   "a": "It increases posterior shear forces on the spine.",
+   "type": "recall"
+  },
+  {
+   "q": "Knees cave in during the drive. What does it indicate?",
+   "a": "Glute medius under-activation or quad dominance — the body collapsing inward to find stability.",
+   "type": "application"
+  },
+  {
+   "q": "Why do strong-glute athletes still show knee valgus in HYROX?",
+   "a": "The row arrives late in the race, and fatigue alone produces the collapse regardless of baseline strength.",
+   "type": "application"
+  },
+  {
+   "q": "Name three glute medius remedial exercises.",
+   "a": "Lateral band walks, clamshells and monster walks.",
+   "type": "recall"
+  },
+  {
+   "q": "Which station's training transfers well to the row, and why?",
+   "a": "Sled push — it reinforces leg drive without the technical complexity of barbell lifts.",
+   "type": "application"
+  },
+  {
+   "q": "What kind of core work does rowing need?",
+   "a": "Anti-flexion and anti-rotation — planks, dead bugs, Pallof presses, hanging leg raises. Classic sit-ups are poorly suited.",
+   "type": "recall"
+  },
+  {
+   "q": "Physiotherapy lens — how does hip tightness cap rowing?",
+   "a": "It tightens the rib cage, restricting expansion and breathing, so athletes compensate through tight neck flexors and cardiovascular output falls.",
+   "type": "application"
+  },
+  {
+   "q": "Which exercises develop the explosive start?",
+   "a": "Power or hang cleans, kettlebell swings and box jumps — full-body triple extension.",
+   "type": "recall"
+  }
+ ],
+ "st_carry": [
+  {
+   "q": "What is the defining demand of the farmers carry?",
+   "a": "Anti-lateral flexion stability — resisting sideways trunk deviation isometrically under an offset load.",
+   "type": "recall"
+  },
+  {
+   "q": "Which muscles do that work?",
+   "a": "Obliques, quadratus lumborum and the deep spinal stabilisers.",
+   "type": "recall"
+  },
+  {
+   "q": "What gait pattern is optimal, and why?",
+   "a": "A compressed, stabilised march with short controlled steps — it reduces centre-of-mass oscillation and medial-lateral sway.",
+   "type": "application"
+  },
+  {
+   "q": "Why avoid long strides under load?",
+   "a": "They amplify ground reaction variability and increase ankle instability risk.",
+   "type": "recall"
+  },
+  {
+   "q": "Why maintain scapular depression?",
+   "a": "To stop the load dragging the shoulders into elevation, which overloads the upper trapezius and compromises shoulder integrity.",
+   "type": "recall"
+  },
+  {
+   "q": "What should fail first, ideally?",
+   "a": "Postural control rather than grip. If grip goes first the station is grip-capped.",
+   "type": "application"
+  },
+  {
+   "q": "Physiotherapy lens on grip failure?",
+   "a": "Tightness in the shoulder girdle and lat/brachialis region inhibits grip, making it frequently an upstream problem rather than forearm weakness.",
+   "type": "application"
+  },
+  {
+   "q": "What unusual grip intervention does the module suggest?",
+   "a": "Deep self-massage of the opponens pollicis / thenar eminence of the thumb, which is often too tight to contract fully. Cheap to test; treat the claimed magnitude sceptically.",
+   "type": "recall"
+  },
+  {
+   "q": "Which muscles are implicated in carry-related lower-back instability?",
+   "a": "Quadratus lumborum, psoas and often gluteus maximus.",
+   "type": "recall"
+  },
+  {
+   "q": "What does slight thoracic extension with a neutral spine enable?",
+   "a": "Effective coordination of the diaphragm and pelvic floor for bracing.",
+   "type": "recall"
+  },
+  {
+   "q": "Why keep the head stable?",
+   "a": "To preserve vestibular alignment while moving under load.",
+   "type": "recall"
+  },
+  {
+   "q": "How should a tall athlete adjust their carry?",
+   "a": "Slightly slower cadence to control oscillation, given longer moment arms at the spine.",
+   "type": "application"
+  }
+ ],
+ "st_lunge": [
+  {
+   "q": "Where does this station sit and why does that matter?",
+   "a": "Station seven of eight, with a final run and 100 wall balls to come — preserving the legs matters more than the split here.",
+   "type": "recall"
+  },
+  {
+   "q": "Describe the opening sequence.",
+   "a": "A sandbag clean using outside, inner-outside or closest inside handles, driving to a front rack then overhead onto the shoulders, where it stays for 100 m.",
+   "type": "recall"
+  },
+  {
+   "q": "What is the 'tightrope' fault?",
+   "a": "Placing the feet in a single line as though on a beam. They should stay in parallel lines at roughly squat width.",
+   "type": "recall"
+  },
+  {
+   "q": "What's the most expensive lunge fault, and the fix?",
+   "a": "Standing up on the front leg alone. Drive up with both feet and push off the back leg to finish extension.",
+   "type": "application"
+  },
+  {
+   "q": "Why does front-leg-only extension hurt later?",
+   "a": "It repeatedly loads one quadriceps with body weight plus bag weight, and the cost is paid on the final run and at the wall balls.",
+   "type": "application"
+  },
+  {
+   "q": "Pacing option when breathing is the limiter?",
+   "a": "Bring the feet together at the top of each rep and take a beat before the next.",
+   "type": "application"
+  },
+  {
+   "q": "Fastest pattern when chasing time?",
+   "a": "A step-through, or a tap-to-step-through.",
+   "type": "recall"
+  },
+  {
+   "q": "What movement standard applies regardless of style?",
+   "a": "Reaching full extension on every repetition.",
+   "type": "recall"
+  },
+  {
+   "q": "Why does overhead mobility matter here?",
+   "a": "An athlete who can't hold the bag comfortably overhead compensates through the lumbar spine for 100 m.",
+   "type": "application"
+  },
+  {
+   "q": "Which underlying quality does this station expose?",
+   "a": "Unilateral leg endurance — where a runner's lack of single-leg strength endurance becomes visible.",
+   "type": "recall"
+  },
+  {
+   "q": "Why practise the clean separately?",
+   "a": "Fumbling the set-up at station seven wastes time and energy the athlete doesn't have.",
+   "type": "application"
+  },
+  {
+   "q": "How should weight be distributed standing up?",
+   "a": "Equally across both feet.",
+   "type": "recall"
+  }
+ ],
+ "st_wallball": [
+  {
+   "q": "Why are wall balls called a 'triple threat'?",
+   "a": "They combine a squat, a vertical ballistic throw and a postural endurance test — as the final station, on spent legs.",
+   "type": "recall"
+  },
+  {
+   "q": "What should drive the ball's trajectory?",
+   "a": "Leg power via triple extension, transferred proximal-to-distal — not the upper body.",
+   "type": "recall"
+  },
+  {
+   "q": "What role do the arms play?",
+   "a": "They guide the ball rather than muscling it. Over-relying on the shoulders causes rapid fatigue and inconsistent trajectory.",
+   "type": "application"
+  },
+  {
+   "q": "What's the signature fatigue failure at this station?",
+   "a": "Postural collapse — the upper back rounds and the elbows drop forward, degrading both drive and catch.",
+   "type": "recall"
+  },
+  {
+   "q": "Which muscle groups prevent that collapse?",
+   "a": "Mid and lower traps, rhomboids and spinal erectors.",
+   "type": "recall"
+  },
+  {
+   "q": "Name three exercises for upper-back strength endurance.",
+   "a": "Scapular depressions, prone Y-raises and cable face pulls.",
+   "type": "recall"
+  },
+  {
+   "q": "How is elastic recoil used here?",
+   "a": "Energy is stored in musculotendinous structures during the squat descent and released into the upward drive.",
+   "type": "application"
+  },
+  {
+   "q": "Which squat variations build the strength reserve?",
+   "a": "Barbell front squats, plus goblet squats with dumbbell or kettlebell to reinforce mechanics.",
+   "type": "recall"
+  },
+  {
+   "q": "Why is push press the recommended shoulder exercise?",
+   "a": "It allows heavier loads and sits in a movement plane closely replicating the wall-ball throw.",
+   "type": "application"
+  },
+  {
+   "q": "What core exercises are recommended and why?",
+   "a": "Front planks with a reach and loaded front carries — they build the rigid trunk that prevents forward trunk flexion.",
+   "type": "recall"
+  },
+  {
+   "q": "Physiotherapy lens — fastest gain on wall balls?",
+   "a": "Shoulder-girdle mobility, with thoracic and hip mobility close behind.",
+   "type": "application"
+  },
+  {
+   "q": "Somatotype trade-off at the wall ball?",
+   "a": "Compact mesomorphs cycle reps fast on hip drive but must avoid inefficient high arcs; tall ectomorphs get reduced effective throw height and reach but must control long levers through the squat.",
+   "type": "application"
+  }
  ]
 }
