@@ -7066,5 +7066,191 @@
    "a": "Penalties and no-reps decide races at the sharp end, so efficacy outranks economy.",
    "type": "application"
   }
+ ],
+ "bm_testdata": [
+  {
+   "q": "Name the three possible reference standards for a test result.",
+   "a": "The athlete's own history, a population norm, or the race demand.",
+   "type": "recall"
+  },
+  {
+   "q": "Which reference is most useful and which least?",
+   "a": "The athlete's own trend is most useful; population norms least, because HYROX athletes are highly heterogeneous.",
+   "type": "recall"
+  },
+  {
+   "q": "Why establish measurement error first?",
+   "a": "If day-to-day variability is 3%, a 2% 'improvement' is noise, and acting on it produces programming churn.",
+   "type": "application"
+  },
+  {
+   "q": "Define movement competency.",
+   "a": "The ability to perform key movement patterns optimally — pain-free, with correct joint alignment, muscular coordination and posture.",
+   "type": "recall"
+  },
+  {
+   "q": "List the causes of a faulty movement pattern.",
+   "a": "Strength deficit, flexibility/range restriction, coordination problem, existing injury or niggle, or pure skill limitation.",
+   "type": "recall"
+  },
+  {
+   "q": "Give an example of too much and too little muscle activity causing breakdown.",
+   "a": "Quad dominance overloading the patellar tendon; an under-firing glute medius failing to control knee alignment.",
+   "type": "application"
+  },
+  {
+   "q": "Which patterns are worth screening?",
+   "a": "A lunge (sometimes with rotation), upper-body push, upper-body pull, hinge/bend, and gait or walking analysis.",
+   "type": "recall"
+  },
+  {
+   "q": "Why observe from two planes?",
+   "a": "Many faults are invisible from a single view — front and side are both needed.",
+   "type": "recall"
+  },
+  {
+   "q": "How should static posture screening be used?",
+   "a": "As a baseline for comparison, not a diagnosis — its relationship to movement quality remains unclear.",
+   "type": "application"
+  },
+  {
+   "q": "Why screen under fatigue?",
+   "a": "Faults that appear only under fatigue — like late-race knee valgus — are missed entirely by fresh-state screening.",
+   "type": "application"
+  },
+  {
+   "q": "What does 'closing the loop' mean?",
+   "a": "A result changes the programme, and the next test evaluates whether the change worked.",
+   "type": "recall"
+  },
+  {
+   "q": "How should results be communicated?",
+   "a": "As one or two actionable priorities, not a spreadsheet.",
+   "type": "application"
+  }
+ ],
+ "pd_doublepeak": [
+  {
+   "q": "Why can't an athlete hold peak form between two races?",
+   "a": "Peak form is a temporary supercompensation, not a plateau. It decays within weeks.",
+   "type": "recall"
+  },
+  {
+   "q": "Give the double-peak sequence.",
+   "a": "Peak one → short recovery → compressed re-development block → second, shorter taper → peak two.",
+   "type": "recall"
+  },
+  {
+   "q": "Where are double peaks won or lost?",
+   "a": "The middle re-development block — too gentle leaves the athlete flat, too aggressive leaves them fatigued.",
+   "type": "application"
+  },
+  {
+   "q": "Why is the second taper usually shorter?",
+   "a": "The athlete rebuilds from a higher base and carries less accumulated fatigue.",
+   "type": "application"
+  },
+  {
+   "q": "Is tapering rest?",
+   "a": "No. The module explicitly rejects complete cessation — extended complete rest causes decline. Load is manipulated, not removed.",
+   "type": "recall"
+  },
+  {
+   "q": "What's the mechanism of a good taper?",
+   "a": "Preserve intensity while cutting volume — retaining fitness while shedding fatigue.",
+   "type": "recall"
+  },
+  {
+   "q": "Name the four dimensions of fatigue.",
+   "a": "Physical, neural, psychological and emotional.",
+   "type": "recall"
+  },
+  {
+   "q": "What does the cited 2022 fatigue review argue?",
+   "a": "Recovery must target both central (neural drive, coordination, responsiveness) and peripheral (metabolite clearance, micro-damage repair, energy stores) domains.",
+   "type": "recall"
+  },
+  {
+   "q": "What does the cited 2023 tapering-psychology review report?",
+   "a": "Athletes generally show improvements in mood, perceived fatigue, wellness and recovery balance during taper phases.",
+   "type": "recall"
+  },
+  {
+   "q": "What does the Bannister example illustrate?",
+   "a": "Physiological supercompensation and psychological rebalancing arriving together — the art and science of a taper.",
+   "type": "application"
+  },
+  {
+   "q": "How many true peaks per macrocycle are realistic?",
+   "a": "About two. Attempting four produces a season of mediocre form.",
+   "type": "application"
+  },
+  {
+   "q": "Why record what worked in a taper?",
+   "a": "Taper response is individual, and experienced athletes' own patterns are the best guide for the next one.",
+   "type": "application"
+  }
+ ],
+ "sk_categorization": [
+  {
+   "q": "Is HYROX a low-skill sport?",
+   "a": "Only partly. The movements are simple to attempt but genuinely skilful to execute efficiently under fatigue.",
+   "type": "recall"
+  },
+  {
+   "q": "Give the module's working definition of skill.",
+   "a": "The ability to accomplish a task automatically and with intent — executing as intended, without deliberation.",
+   "type": "recall"
+  },
+  {
+   "q": "How is skill distinguished from fitness?",
+   "a": "Fitness concerns load, volume and intensity; skill can be developed without incredible duress.",
+   "type": "recall"
+  },
+  {
+   "q": "What's the programming consequence of that distinction?",
+   "a": "Skill work can go on days where hard conditioning can't — taper, recovery, rehabilitation.",
+   "type": "application"
+  },
+  {
+   "q": "What's the metabolic argument for automaticity?",
+   "a": "Deliberation costs mental energy and the brain draws heavily on glucose, so automated skills free resources for pacing and decisions.",
+   "type": "application"
+  },
+  {
+   "q": "Give the module's sled-pull worked example.",
+   "a": "Arm position, hip position, taking tension out of the rope without wasted time, and knowing how many steps fill the box so the pattern repeats without thought.",
+   "type": "recall"
+  },
+  {
+   "q": "Name a concrete automation device.",
+   "a": "Counting the step pattern in advance — 'one-two, one-two-three' — removing in-race deliberation.",
+   "type": "application"
+  },
+  {
+   "q": "Give four useful skill categories for HYROX.",
+   "a": "Closed self-paced station skills, load-management skills, transition/roxzone skills, and pacing/self-regulation skills.",
+   "type": "recall"
+  },
+  {
+   "q": "Why are transition skills underrated?",
+   "a": "They cost real time, and they're pure skill rather than fitness — so they're cheap to improve and easy to ignore.",
+   "type": "application"
+  },
+  {
+   "q": "What happens if you develop every skill at once?",
+   "a": "Poor results in all of them, especially while also building fitness. Skill development needs a longer timeline.",
+   "type": "application"
+  },
+  {
+   "q": "How does confidence relate to skill?",
+   "a": "Knowing you can execute the task is inseparable from having automated it — confidence is part of the definition.",
+   "type": "recall"
+  },
+  {
+   "q": "How many skills should a block target?",
+   "a": "A small number — two or three — drilled to automaticity, rather than nibbling at all eight stations.",
+   "type": "application"
+  }
  ]
 }

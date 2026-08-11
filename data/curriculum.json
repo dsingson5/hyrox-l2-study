@@ -177,6 +177,11 @@
     "phase": 32,
     "name": "Modules 7.3 & 4 — Gap Close: off-feet decision-making, level system & the movement hierarchy",
     "days": "111-114"
+   },
+   {
+    "phase": 33,
+    "name": "Modules 3, 8 & 7.1 — Gap Close: using test data, double peaking & categorising skills",
+    "days": "115-117"
    }
   ],
   "source_note": "Original study notes written for the Level 2 'Mastering Performance' module list. Not a reproduction of HYROX Academy course material."
@@ -8110,6 +8115,186 @@
    ],
    "relevant": true,
    "exam_focus": "Apply the safety-efficacy-efficiency hierarchy to a faulty movement, explain why the order matters, and identify the classic efficacy failures at HYROX stations.",
+   "figures": []
+  },
+  "115": {
+   "title": "How to utilise testing data",
+   "topic_id": "bm_testdata",
+   "domain": "BM",
+   "chapter": "Module 3",
+   "page_refs": "Biomechanics — How to Utilise Testing Data",
+   "key_concept": "Collecting test data is the easy half; the coaching skill is converting numbers into decisions. A test result is only meaningful against a reference — the athlete's own previous result, a population norm, or the demand of the race — and of those three, the athlete's own trend is usually the most useful and the population norm the least. Before acting on any change you need to know whether it exceeds measurement error: a 2% shift in a test with 3% day-to-day variability is noise, and chasing it produces churn. Movement competency screening feeds the same loop, identifying whether a breakdown reflects a strength deficit, a flexibility restriction, a coordination problem, an existing niggle or simply a skill limitation — and those four causes need four different interventions. The final step is the one most often skipped: closing the loop. Data should change the programme, and the next test should evaluate whether that change worked. Data that never alters a session is an expensive hobby.",
+   "key_facts": [
+    "A number means nothing alone. Interpret every result against one of three references: the athlete's own history, a population norm, or the race demand.",
+    "The athlete's own trend is usually the most useful reference; population norms are the least, because HYROX athletes are a heterogeneous population.",
+    "Establish measurement error before interpreting change — if day-to-day variability is 3%, a 2% improvement is noise.",
+    "Standardise ruthlessly: same protocol, equipment, time of day, warm-up and prior-day load, or you measure conditions rather than fitness.",
+    "Movement competency screening asks whether the athlete performs key patterns optimally — pain-free, with correct joint alignment, muscular coordination and posture.",
+    "Faulty patterns arise from four distinguishable causes: a strength deficit, a flexibility or range restriction, a coordination problem, or an existing injury/niggle — plus pure skill limitation. Each needs a different intervention.",
+    "Both excessive and insufficient muscle activity cause breakdown: quad dominance overloading the patellar tendon, or an under-firing glute medius failing to control knee alignment.",
+    "Key patterns worth screening: a lunge (sometimes with rotation), an upper-body push, an upper-body pull, a hinge/bend, and gait or walking analysis.",
+    "Observe from front and side views — many faults are invisible from a single plane.",
+    "Static posture screening is easy to perform, but its relationship to movement quality remains unclear. Use it as a baseline for comparison rather than as a diagnosis.",
+    "Map tests to the demands they probe: aerobic capacity for the 8 km and roxzone, anaerobic power for sleds and burpee broad jumps, strength endurance for the lunges and carries, neuromuscular efficiency for technique maintenance under fatigue.",
+    "Test under fatigue where the fault appears under fatigue. Screening only in a fresh state misses the athlete whose knee alignment fails at station six.",
+    "Close the loop: a result should change the programme, and the next test should evaluate whether the change worked. Data that never alters a session is an expensive hobby.",
+    "Communicate results in terms the athlete can act on — one or two priorities, not a spreadsheet."
+   ],
+   "training_link": "Decide what a result would change before you run the test — if no plausible number would alter next week's training, don't bother collecting it. When you do test, repeat the protocol identically and work out roughly how much your numbers bounce around, because otherwise you'll chase a 2% wobble as though it were progress. Screen the lunge, hinge, push, pull and gait from both the front and the side, and when something looks wrong, work out which of the four causes it is — weak, tight, uncoordinated, or sore — because the fix is different each time. Do at least some screening on a tired athlete, since knee valgus that only shows up at the end is exactly the one that costs them the race. Then feed it back as one or two priorities, not a report.",
+   "glossary": [
+    {
+     "term": "Reference standard",
+     "def": "What a test result is compared against — the athlete's own history, a population norm, or the race demand. Without one, a number is uninterpretable.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"16\" y=\"8\" width=\"48\" height=\"24\" rx=\"2\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"1.6\"/><path d=\"M32 8v24M48 8v24M16 16h48M16 24h48\" stroke=\"#3a4a5e\" stroke-width=\"1.2\"/><rect x=\"32\" y=\"16\" width=\"16\" height=\"8\" fill=\"#67e8b0\" opacity=\"0.35\"/></svg>"
+    },
+    {
+     "term": "Measurement error",
+     "def": "The inherent day-to-day variability of a test. Change smaller than the error is noise and should not drive programming.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M8 12 C26 13 44 22 72 33\" fill=\"none\" stroke=\"#ffb86b\" stroke-width=\"2\"/><line x1=\"8\" y1=\"34\" x2=\"72\" y2=\"34\" stroke=\"#3a4a5e\" stroke-width=\"1\"/></svg>"
+    },
+    {
+     "term": "Movement competency",
+     "def": "The ability to perform key movement patterns optimally — pain-free, with correct joint alignment, muscular coordination and posture.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"16\" y=\"8\" width=\"34\" height=\"26\" rx=\"2\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"1.6\"/><path d=\"M22 16h22M22 22h22M22 28h14\" stroke=\"#67e8b0\" stroke-width=\"1.6\"/></svg>"
+    },
+    {
+     "term": "Quad dominance",
+     "def": "Over-reliance on the quadriceps in a pattern, placing additional stress on structures such as the patellar tendon and disturbing knee control.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M10 20h20M30 20l14-9M30 20l14 9\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"2\"/><circle cx=\"48\" cy=\"11\" r=\"3\" fill=\"#67e8b0\"/><circle cx=\"48\" cy=\"29\" r=\"3\" fill=\"#ffb86b\"/></svg>"
+    },
+    {
+     "term": "Neuromuscular efficiency",
+     "def": "The ability to maintain coordination and technique under fatigue — the attribute that determines whether form survives to the final stations.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"24\" cy=\"20\" r=\"9\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"2\"/><path d=\"M40 20h22M54 13l8 7-8 7\" fill=\"none\" stroke=\"#67e8b0\" stroke-width=\"2\"/></svg>"
+    },
+    {
+     "term": "Closing the loop",
+     "def": "Using a test result to change the programme, then re-testing to evaluate whether the change worked.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M8 26 C20 26 22 32 32 32 C46 32 46 12 66 12\" fill=\"none\" stroke=\"#67e8b0\" stroke-width=\"2\"/><line x1=\"8\" y1=\"24\" x2=\"72\" y2=\"24\" stroke=\"#3a4a5e\" stroke-width=\"1\" stroke-dasharray=\"3 2\"/></svg>"
+    }
+   ],
+   "relevant": true,
+   "exam_focus": "Interpret a test result against an appropriate reference, distinguish real change from measurement error, and identify which of the four causes underlies a faulty movement pattern.",
+   "figures": []
+  },
+  "116": {
+   "title": "Double peaking within the macrocycle",
+   "topic_id": "pd_doublepeak",
+   "domain": "PG",
+   "chapter": "Module 8",
+   "page_refs": "Mastering Periodization in HYROX — Double Peaking Within the Macrocycle",
+   "key_concept": "Peak form is a temporary supercompensation, not a plateau you can occupy. That single fact governs everything about double peaking: because peak condition decays within weeks, an athlete who wants to perform twice in one macrocycle cannot simply hold form between the two races — they must deliberately come down, rebuild, and taper again. The sequence is peak one, a short recovery, a compressed re-development block that restores training stress without attempting to rebuild the whole base, then a second, usually shorter taper into peak two. The art is in the middle block: too gentle and the athlete arrives at race two detrained and flat; too aggressive and they arrive fatigued, having converted a peak into a hole. Tapering itself is not rest. The module is explicit that complete cessation is wrong — diminishing returns of adaptation do not occur immediately, but extended complete rest does cause decline — so load is manipulated rather than removed. And fatigue is multidimensional: physical, neural, psychological and emotional, all of which must be shed for a genuine peak.",
+   "key_facts": [
+    "Peaking is arriving at competition in a state of optimal readiness, where training, recovery and mindset align.",
+    "Peak form is a temporary supercompensation, not a permanent plateau. It cannot be held indefinitely — the skill is timing it, not sustaining it.",
+    "Double peaking therefore requires coming down deliberately after race one and rebuilding, not attempting to maintain peak condition across the gap.",
+    "Sequence: peak one → short recovery → compressed re-development block → second, usually shorter taper → peak two.",
+    "The middle block is where double peaks are won or lost: too gentle and the athlete is flat and detrained, too aggressive and they arrive fatigued.",
+    "The second taper is usually shorter than the first, because the athlete is rebuilding from a higher base and carrying less accumulated fatigue.",
+    "Tapering is intentional reduction of training load, not rest — designed to allow full system recovery so performance peaks on the day.",
+    "The module explicitly rejects complete cessation: diminishing returns of adaptation do not occur immediately, but extended complete rest does cause decline. Manipulate load; don't remove it.",
+    "Preserve intensity while cutting volume — that is the mechanism by which fitness is retained while fatigue is shed.",
+    "Fatigue is multidimensional — physical, neural, psychological and emotional. Unaddressed, it dulls sharpness, reduces confidence and blunts responsiveness.",
+    "A 2022 review cited in the module on central and peripheral fatigue argues recovery must target both the nervous system (neural drive, coordination, responsiveness) and the muscles (metabolite clearance, micro-damage repair, energy store restoration).",
+    "A 2023 review cited on the psychology of tapering reports that athletes generally show improvements in mood, perceived fatigue, wellness and recovery balance during taper phases.",
+    "Roger Bannister's two-week retreat to the Scottish mountains before the four-minute mile is the module's illustration — physiological supercompensation and psychological rebalancing arriving together.",
+    "Individualise: athletes differ in how they respond to a taper, and experienced athletes usually know what works for them. Record what worked and reuse it.",
+    "Practical rule for HYROX: designate genuine A-races. Two true peaks per macrocycle is realistic; four is not, and trying produces a season of mediocre form."
+   ],
+   "training_link": "If your athlete has two races they genuinely care about in one cycle, plan for two separate peaks rather than hoping they can hold form across the gap — they can't, because peak condition decays within weeks. Let them come down properly after the first race, then run a short, sharp rebuild that restores training stress without trying to reconstruct the whole base, and taper again more briefly into race two. Don't let them rest completely during either taper: cut the volume and keep the intensity, because that's what sheds fatigue while holding fitness. Watch the mental side as well as the legs — mood and perceived fatigue usually lift during a good taper, and if they don't, the taper isn't working. And be ruthless about which races are actually A-races; two real peaks a cycle is achievable, four is a year of feeling average.",
+   "glossary": [
+    {
+     "term": "Double peaking",
+     "def": "Deliberately producing two peaks within one macrocycle by coming down after the first, rebuilding, and tapering again.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M8 32 C16 32 18 12 26 12 C34 12 36 30 44 30 C52 30 54 10 62 10 C68 10 70 20 74 24\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"2\"/><circle cx=\"26\" cy=\"12\" r=\"2.6\" fill=\"#67e8b0\"/><circle cx=\"62\" cy=\"10\" r=\"2.6\" fill=\"#ffb86b\"/></svg>"
+    },
+    {
+     "term": "Supercompensation",
+     "def": "The temporary rise in performance capacity above baseline following recovery from training stress. The physiological basis of a peak, and inherently short-lived.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M8 26 C20 26 22 32 32 32 C46 32 46 12 66 12\" fill=\"none\" stroke=\"#67e8b0\" stroke-width=\"2\"/><line x1=\"8\" y1=\"24\" x2=\"72\" y2=\"24\" stroke=\"#3a4a5e\" stroke-width=\"1\" stroke-dasharray=\"3 2\"/></svg>"
+    },
+    {
+     "term": "Taper",
+     "def": "Intentional reduction of training load before competition, typically cutting volume while preserving intensity, to shed fatigue without losing fitness.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M8 12 C26 13 44 22 72 33\" fill=\"none\" stroke=\"#ffb86b\" stroke-width=\"2\"/><line x1=\"8\" y1=\"34\" x2=\"72\" y2=\"34\" stroke=\"#3a4a5e\" stroke-width=\"1\"/></svg>"
+    },
+    {
+     "term": "Re-development block",
+     "def": "The compressed training phase between two peaks that restores training stress without attempting to rebuild the entire base.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M10 32h12v-6h12v-6h12v-6h12v-6h10\" fill=\"none\" stroke=\"#67e8b0\" stroke-width=\"2\"/><line x1=\"10\" y1=\"34\" x2=\"72\" y2=\"34\" stroke=\"#3a4a5e\" stroke-width=\"1\"/></svg>"
+    },
+    {
+     "term": "Central vs peripheral fatigue",
+     "def": "Fatigue of the nervous system (neural drive, coordination, responsiveness) versus of the muscle (metabolites, micro-damage, energy stores). Recovery must address both.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M10 20h20M30 20l14-9M30 20l14 9\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"2\"/><circle cx=\"48\" cy=\"11\" r=\"3\" fill=\"#67e8b0\"/><circle cx=\"48\" cy=\"29\" r=\"3\" fill=\"#ffb86b\"/></svg>"
+    },
+    {
+     "term": "A-race",
+     "def": "A competition designated as a genuine performance target, around which a peak is built. Realistically limited to about two per macrocycle.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"14\" y=\"10\" width=\"52\" height=\"22\" rx=\"3\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"1.6\"/><path d=\"M40 10v22\" stroke=\"#ffb86b\" stroke-width=\"2\"/><path d=\"M20 21h14M46 21h14\" stroke=\"#67e8b0\" stroke-width=\"1.6\"/></svg>"
+    }
+   ],
+   "relevant": true,
+   "exam_focus": "Plan a double-peak macrocycle with recovery, re-development and a second taper, and justify why complete rest is rejected in favour of load manipulation.",
+   "figures": []
+  },
+  "117": {
+   "title": "Categorising skills in HYROX racing",
+   "topic_id": "sk_categorization",
+   "domain": "BM",
+   "chapter": "Module 7.1",
+   "page_refs": "Embedding Skills in Athletes — Categorization of Skills in HYROX Racing",
+   "key_concept": "HYROX is popularly described as a low-skill sport, and the module's starting point is that this is only partly true. Anyone can push a sled; doing it efficiently and effectively under fatigue is a skill. The working definition offered is that skill is the ability to accomplish a task automatically and with intent — turning it on and executing it the way you meant to, without deliberation. That definition matters because it separates skill from fitness: fitness is a question of load, volume and intensity, whereas skill can be developed without incredible duress, which means skill work can be layered into a programme at points where hard conditioning cannot. The performance argument for automaticity is concrete rather than aesthetic. Deliberation costs mental energy, and mental energy is metabolically real — so an athlete who has to think about where their hips go on the sled pull, or how many steps fill the box, is spending glucose and attention that should be going into pacing decisions. Categorising the race's skills lets you decide which ones to automate first.",
+   "key_facts": [
+    "The 'HYROX is low skill' narrative is only partly true: the movements are simple to attempt and genuinely skilful to execute efficiently under fatigue.",
+    "Working definition of skill: the ability to accomplish a task automatically and with intent — turning it on and doing it as intended, without deliberation.",
+    "Skill is distinguishable from fitness. Fitness concerns load, volume and intensity; skill can be developed without incredible duress.",
+    "That distinction is programmable: skill work can be placed on days where hard conditioning cannot, including during taper, recovery and rehabilitation.",
+    "Automaticity has a metabolic payoff — deliberation consumes mental energy and the brain draws heavily on glucose, so automated skills free resources for pacing and decision-making.",
+    "Confidence is part of the definition: knowing you can execute the task at hand is inseparable from having automated it.",
+    "Skill has a mental as well as physical component — how the movement should feel, and knowing what to do without needing to work it out mid-race.",
+    "Useful categories for HYROX: closed self-paced station skills (SkiErg, row, wall balls), load-management skills (sled push and pull, carries), transition and roxzone skills, and pacing/self-regulation skills.",
+    "Worked example from the module — the sled pull: arm position, hip position, taking tension out of the rope without wasted time, and knowing how many steps fill the box so the pattern repeats without thought.",
+    "Counting the step pattern in advance ('one-two, one-two-three') is a concrete automation device that removes in-race deliberation.",
+    "Transition skills are heavily underrated relative to their time cost, and they are pure skill rather than fitness.",
+    "Skill development requires committing to a longer timeline. Attempting to develop every skill at once, while also building fitness, produces poor results in all of them.",
+    "Sequence the skills: pick a small number to automate per block rather than working on everything simultaneously."
+   ],
+   "training_link": "Push back gently on the idea that there's nothing to learn here. Ask your athlete to describe exactly what they do on the sled pull — where the arms sit, where the hips sit, how they take tension out of the rope, how many steps fill the box — and if they have to think about any of it, that's a skill not yet automated and it's costing them mental energy they'll want at station six. Pick two or three skills per block and drill them to the point of not thinking, rather than nibbling at all eight stations at once. Use the days when hard conditioning isn't appropriate — taper weeks, easy days, coming back from a niggle — because skill work doesn't need duress. And give it a longer timeline than feels necessary; trying to build every skill and the engine simultaneously gets you neither.",
+   "glossary": [
+    {
+     "term": "Skill (working definition)",
+     "def": "The ability to accomplish a task automatically and with intent — executing as intended without deliberation.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"30\" cy=\"20\" r=\"10\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"1.8\"/><path d=\"M30 14v6l4 4\" stroke=\"#67e8b0\" stroke-width=\"1.8\" fill=\"none\"/><path d=\"M48 20h16M58 15l6 5-6 5\" fill=\"none\" stroke=\"#ffb86b\" stroke-width=\"1.8\"/></svg>"
+    },
+    {
+     "term": "Automaticity",
+     "def": "Performing a movement without conscious attention. Frees mental resources and reduces the metabolic cost of deliberation.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"30\" cy=\"20\" r=\"10\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"1.8\"/><path d=\"M30 14v6l4 4\" stroke=\"#67e8b0\" stroke-width=\"1.8\" fill=\"none\"/><path d=\"M48 20h16M58 15l6 5-6 5\" fill=\"none\" stroke=\"#ffb86b\" stroke-width=\"1.8\"/></svg>"
+    },
+    {
+     "term": "Skill vs fitness",
+     "def": "Fitness concerns load, volume and intensity; skill can be developed without duress — so the two occupy different slots in a programme.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M10 20h20M30 20l14-9M30 20l14 9\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"2\"/><circle cx=\"48\" cy=\"11\" r=\"3\" fill=\"#67e8b0\"/><circle cx=\"48\" cy=\"29\" r=\"3\" fill=\"#ffb86b\"/></svg>"
+    },
+    {
+     "term": "Closed self-paced skill",
+     "def": "A skill executed in a predictable environment at the athlete's own tempo, such as the SkiErg or wall balls. Highly amenable to automation.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"14\" y=\"10\" width=\"52\" height=\"22\" rx=\"3\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"1.6\"/><path d=\"M40 10v22\" stroke=\"#ffb86b\" stroke-width=\"2\"/><path d=\"M20 21h14M46 21h14\" stroke=\"#67e8b0\" stroke-width=\"1.6\"/></svg>"
+    },
+    {
+     "term": "Transition skill",
+     "def": "The movement and decision pattern between run and station. Pure skill rather than fitness, and heavily underrated relative to its time cost.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"24\" cy=\"20\" r=\"9\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"2\"/><path d=\"M40 20h22M54 13l8 7-8 7\" fill=\"none\" stroke=\"#67e8b0\" stroke-width=\"2\"/></svg>"
+    },
+    {
+     "term": "Skill sequencing",
+     "def": "Automating a small number of skills per block rather than all at once, on a timeline long enough for each to become automatic.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M10 32h12v-6h12v-6h12v-6h12v-6h10\" fill=\"none\" stroke=\"#67e8b0\" stroke-width=\"2\"/><line x1=\"10\" y1=\"34\" x2=\"72\" y2=\"34\" stroke=\"#3a4a5e\" stroke-width=\"1\"/></svg>"
+    }
+   ],
+   "relevant": true,
+   "exam_focus": "Define skill as automaticity with intent, distinguish it from fitness, and categorise HYROX skills to justify which to automate first and where to place the work.",
    "figures": []
   }
  }
