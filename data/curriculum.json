@@ -182,6 +182,11 @@
     "phase": 33,
     "name": "Modules 3, 8 & 7.1 — Gap Close: using test data, double peaking & categorising skills",
     "days": "115-117"
+   },
+   {
+    "phase": 34,
+    "name": "Modules 7.2 & 6 — Gap Close: individual running differences & supplement decision-making",
+    "days": "118-119"
    }
   ],
   "source_note": "Original study notes written for the Level 2 'Mastering Performance' module list. Not a reproduction of HYROX Academy course material."
@@ -8295,6 +8300,128 @@
    ],
    "relevant": true,
    "exam_focus": "Define skill as automaticity with intent, distinguish it from fitness, and categorise HYROX skills to justify which to automate first and where to place the work.",
+   "figures": []
+  },
+  "118": {
+   "title": "Differences in running — why one model doesn't fit",
+   "topic_id": "rb_differences",
+   "domain": "BM",
+   "chapter": "Module 7.2",
+   "page_refs": "Running Biomechanics and Technique — Differences in Running",
+   "key_concept": "The running module spends most of its time on principles that generalise — hip extension, braking, elastic quality — and then insists on the corollary: the expression of those principles is individual, and coaching every athlete toward one visual template is a mistake. Anthropometry alone guarantees difference, because limb length, mass distribution and tendon properties change what is mechanically optimal; a tall athlete and a compact one running at the same speed are solving different problems. Layered on top are training history, strength, mobility restrictions and injury history, each of which shifts what an athlete can currently do. The practical consequence is that technique targets should be set as principles with individual tolerances rather than as a single ideal gait. There is a second sense of 'differences' that matters just as much in HYROX: the same athlete runs differently in different states. Fresh running, compromised running after a station, and running in the closing kilometres are three distinct patterns, and the one to coach is the degraded one. Note: this section was not directly verifiable in the source, so the framing below is reconstructed from the module's surrounding material.",
+   "key_facts": [
+    "The module's principles generalise; their expression does not. Coaching every athlete to one visual template is the error the section guards against.",
+    "Anthropometry drives difference: limb length, mass distribution and tendon properties change what is mechanically optimal for a given athlete.",
+    "Tall and compact athletes running at the same speed solve different problems — stride length versus stride frequency, and larger versus smaller moment arms.",
+    "Training history, current strength, mobility restriction and injury history all shift what an athlete can currently express, independent of what is theoretically optimal.",
+    "Set targets as principles with individual tolerances — 'get more range behind you' rather than 'match this cadence number'.",
+    "Cadence illustrates the point: population averages are a weak individual prescription, and the useful comparison is the athlete against their own baseline.",
+    "There is no single correct footstrike. It redistributes load between structures rather than being right or wrong (see day 93).",
+    "Second sense of difference — the same athlete runs differently in different states: fresh, compromised after a station, and deep into the closing kilometres.",
+    "The pattern worth coaching is the degraded one, because that is the one that determines HYROX race time.",
+    "Assess and film at multiple states and speeds. A single fresh clip at a comfortable pace tells you very little about race mechanics.",
+    "Beware borrowing elite templates: elite runners' technique is partly a consequence of their capacities, not a cause an amateur can copy.",
+    "Change one variable at a time and verify on video, because an intervention that helps one athlete can degrade another.",
+    "Some individual differences are worth accommodating rather than correcting — an asymmetry that is longstanding, painless and efficient is often best left alone.",
+    "Unverified: this section's specific content could not be checked against the source, which is delivered as video. The principle-versus-template framing is a reconstruction; confirm details against the module."
+   ],
+   "training_link": "Stop coaching your athletes toward the same picture. A 1.90 m athlete and a 1.60 m athlete running side by side should not look alike, and forcing either toward the other's stride will make them slower. Set the target as a principle — more range behind them, less braking in front — and let each of them express it in a way their build and current mobility allows. Be sceptical of cadence numbers off the internet; compare them against their own baseline instead. Film at several states rather than one, and make sure one of those clips is late in a hard session after a station, since that degraded pattern is the one that decides their race. Change one thing at a time, check it on video, and if something looks odd but is longstanding, painless and efficient, leave it alone.",
+   "glossary": [
+    {
+     "term": "Anthropometry",
+     "def": "An individual's physical dimensions — limb length, mass distribution, segment proportions — which alter what running mechanics are optimal for them.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"28\" cy=\"12\" r=\"4\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"1.8\"/><path d=\"M28 16v10M22 20h12M28 26l-5 10M28 26l5 10\" stroke=\"#67e8b0\" stroke-width=\"1.8\"/><path d=\"M52 8v26\" stroke=\"#ffb86b\" stroke-width=\"1.8\"/><path d=\"M48 12h8M48 30h8\" stroke=\"#3a4a5e\" stroke-width=\"1.4\"/></svg>"
+    },
+    {
+     "term": "Principle vs template",
+     "def": "Coaching toward an underlying mechanical goal with individual tolerances, rather than toward one visual model of ideal gait.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M10 20h20M30 20l14-9M30 20l14 9\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"2\"/><circle cx=\"48\" cy=\"11\" r=\"3\" fill=\"#67e8b0\"/><circle cx=\"48\" cy=\"29\" r=\"3\" fill=\"#ffb86b\"/></svg>"
+    },
+    {
+     "term": "Individual tolerance",
+     "def": "The acceptable range around a technique target for a given athlete, set by their build, strength and mobility rather than by a population norm.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"16\" y=\"8\" width=\"48\" height=\"24\" rx=\"2\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"1.6\"/><path d=\"M32 8v24M48 8v24M16 16h48M16 24h48\" stroke=\"#3a4a5e\" stroke-width=\"1.2\"/><rect x=\"32\" y=\"16\" width=\"16\" height=\"8\" fill=\"#67e8b0\" opacity=\"0.35\"/></svg>"
+    },
+    {
+     "term": "State-dependent mechanics",
+     "def": "The fact that one athlete runs differently fresh, compromised after a station, and late in a race — three patterns requiring separate assessment.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M8 12 C26 13 44 22 72 33\" fill=\"none\" stroke=\"#ffb86b\" stroke-width=\"2\"/><line x1=\"8\" y1=\"34\" x2=\"72\" y2=\"34\" stroke=\"#3a4a5e\" stroke-width=\"1\"/></svg>"
+    },
+    {
+     "term": "Elite template fallacy",
+     "def": "Copying elite runners' technique without their underlying capacities, mistaking a consequence of their physiology for a cause of their speed.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"24\" cy=\"20\" r=\"9\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"2\"/><path d=\"M40 20h22M54 13l8 7-8 7\" fill=\"none\" stroke=\"#67e8b0\" stroke-width=\"2\"/></svg>"
+    },
+    {
+     "term": "Benign asymmetry",
+     "def": "A longstanding, painless and efficient movement difference better accommodated than corrected.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"14\" y=\"10\" width=\"52\" height=\"22\" rx=\"3\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"1.6\"/><path d=\"M40 10v22\" stroke=\"#ffb86b\" stroke-width=\"2\"/><path d=\"M20 21h14M46 21h14\" stroke=\"#67e8b0\" stroke-width=\"1.6\"/></svg>"
+    }
+   ],
+   "relevant": true,
+   "exam_focus": "Explain why technique targets should be principles with individual tolerances, and identify which running state should drive coaching decisions in HYROX.",
+   "figures": []
+  },
+  "119": {
+   "title": "Supplements — evidence, permissibility & contamination risk",
+   "topic_id": "nu_supplements",
+   "domain": "PH",
+   "chapter": "Module 6",
+   "page_refs": "Nutrition — Supplements",
+   "key_concept": "The module's position is food-first: supplementation is a considered exception, not a default. Legitimate reasons to supplement are narrow — meeting macronutrient requirements around training and competition, correcting a specific deficiency arising from dietary restriction, or using a genuine ergogenic aid to enhance performance or recovery. Any decision is then filtered through three questions: is it permissible, is it safe, and is it effective. On effectiveness, the strongest evidence comes from systematic reviews and meta-analyses that pool findings across studies, and from stance or consensus statements; a handful of supplements clear that bar and a great many do not. On permissibility, HYROX introduced athlete drug testing in February 2024 and expanded it for the 2025-26 season, so the anti-doping consequences are now concrete rather than theoretical. And on safety, the practical hazard for most athletes is not the substance itself but contamination — commercially produced supplements can contain undeclared banned substances, and under strict liability the athlete carries that risk regardless of intent.",
+   "key_facts": [
+    "Food-first is the default. Supplement only to meet macronutrient needs around training and competition, correct a deficiency from dietary restriction, or use a genuine ergogenic aid.",
+    "Filter every decision through permissibility, safety and efficacy — in that order.",
+    "Strongest evidence for effectiveness: systematic reviews and meta-analyses pooling multiple studies, plus stance and consensus statements. A few supplements clear that bar; most do not.",
+    "Well-supported ergogenic aids in endurance and mixed-modal sport: caffeine, creatine, beta-alanine, sodium bicarbonate, and dietary nitrate (beetroot juice).",
+    "Supported where deficiency is confirmed by testing — not otherwise: iron and vitamin D. Supplementing without a confirmed deficiency has no established performance benefit and iron can be harmful in excess.",
+    "Weakly evidenced or unsupported for performance despite heavy marketing: glutamine as an ergogenic aid or lactate buffer, BCAAs for endurance performance, and most 'recovery' proprietary blends. Treat claims encountered elsewhere in the course with the same scepticism.",
+    "A registered dietitian or sports nutritionist can often identify small habitual-diet changes that remove the need for a supplement entirely.",
+    "HYROX introduced drug testing in February 2024, expanded for the 2025-26 competitive season. The anti-doping code is published in full on the HYROX website.",
+    "Strict liability applies: it is the athlete's individual duty to avoid prohibited substances, and neither intent nor knowing use needs to be proven for a violation.",
+    "Check every medication and over-the-counter product against Global DRO. Formulations for the same medicine differ between countries, so re-check anything bought abroad.",
+    "TUE consequence specific to HYROX: without an exemption an athlete cannot compete for competitive results, podiums or world championship qualification, though they may be permitted to participate for time.",
+    "Informed Sport is a global banned-substance testing and certification programme developed with UK Anti-Doping; certified products carry the logo and are searchable by brand, product or batch code.",
+    "Critical limitation: Informed Sport tests for the presence of banned substances — it does not explicitly verify that listed ingredients and dosages are accurate. Certification reduces doping risk, not mislabelling risk.",
+    "Testing protocol: at majors, regional and world championships five athletes are selected — elite 15 podium finishers are mandatory-tested plus two chosen at random. Selected athletes are notified on finishing and chaperoned until the test is complete.",
+    "Unannounced out-of-competition testing can occur at any time for licensed elite athletes.",
+    "Penalties vary by circumstance and can reach a four-year ban for a first offence, with a lifetime ban possible for repeat violations."
+   ],
+   "training_link": "Start by asking what the supplement is supposed to fix, and whether food could fix it instead — most of the time it could, and a dietitian will spot the change faster than you will. If there's a real case, hold it to the evidence: caffeine, creatine, beta-alanine, bicarb and nitrate have genuine support; iron and vitamin D only once a test shows a deficiency; almost everything else is marketing, including the glutamine that gets recommended around gyms for lactate. Then handle the risk properly — check every medication on Global DRO, re-check anything bought in another country, and if they insist on supplements, steer them to Informed Sport batch-tested products while being straight that this covers banned substances and not whether the label is honest. Since HYROX started testing in 2024 and expanded it, this is a real conversation now, not a hypothetical one.",
+   "glossary": [
+    {
+     "term": "Food-first",
+     "def": "The principle that nutritional needs should be met through diet wherever possible, with supplementation as a considered exception.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"16\" y=\"8\" width=\"34\" height=\"26\" rx=\"2\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"1.6\"/><path d=\"M22 16h22M22 22h22M22 28h14\" stroke=\"#67e8b0\" stroke-width=\"1.6\"/></svg>"
+    },
+    {
+     "term": "Ergogenic aid",
+     "def": "A substance intended to enhance performance capacity or recovery. Only a small number have strong supporting evidence.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M8 26 C20 26 22 32 32 32 C46 32 46 12 66 12\" fill=\"none\" stroke=\"#67e8b0\" stroke-width=\"2\"/><line x1=\"8\" y1=\"24\" x2=\"72\" y2=\"24\" stroke=\"#3a4a5e\" stroke-width=\"1\" stroke-dasharray=\"3 2\"/></svg>"
+    },
+    {
+     "term": "Evidence hierarchy",
+     "def": "Systematic reviews and meta-analyses, plus consensus statements, outrank individual studies and manufacturer claims when judging effectiveness.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"20\" y=\"8\" width=\"40\" height=\"6\" fill=\"#67e8b0\" opacity=\"0.7\"/><rect x=\"24\" y=\"17\" width=\"32\" height=\"6\" fill=\"#5ec8ff\" opacity=\"0.55\"/><rect x=\"28\" y=\"26\" width=\"24\" height=\"6\" fill=\"#ffb86b\" opacity=\"0.45\"/></svg>"
+    },
+    {
+     "term": "Global DRO",
+     "def": "An online reference for checking whether specific medications contain prohibited substances. Formulations differ by country, so re-check products bought abroad.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M40 6l16 6v10c0 8-7 12-16 14-9-2-16-6-16-14V12z\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"1.8\"/><path d=\"M34 20l5 5 8-9\" fill=\"none\" stroke=\"#67e8b0\" stroke-width=\"2\"/></svg>"
+    },
+    {
+     "term": "Informed Sport",
+     "def": "A banned-substance testing and certification programme developed with UK Anti-Doping. Tests for prohibited substances but does not verify listed ingredients or dosages.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M40 6l16 6v10c0 8-7 12-16 14-9-2-16-6-16-14V12z\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"1.8\"/><path d=\"M34 20l5 5 8-9\" fill=\"none\" stroke=\"#67e8b0\" stroke-width=\"2\"/></svg>"
+    },
+    {
+     "term": "Contamination risk",
+     "def": "The chance that a commercially produced supplement contains undeclared banned substances — the main practical doping hazard, borne by the athlete under strict liability.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M8 12 C26 13 44 22 72 33\" fill=\"none\" stroke=\"#ffb86b\" stroke-width=\"2\"/><line x1=\"8\" y1=\"34\" x2=\"72\" y2=\"34\" stroke=\"#3a4a5e\" stroke-width=\"1\"/></svg>"
+    }
+   ],
+   "relevant": true,
+   "exam_focus": "Apply the permissibility-safety-efficacy filter to a supplement request, separate well-evidenced ergogenic aids from unsupported ones, and state what Informed Sport certification does and does not guarantee.",
    "figures": []
   }
  }

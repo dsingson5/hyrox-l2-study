@@ -7252,5 +7252,129 @@
    "a": "A small number — two or three — drilled to automaticity, rather than nibbling at all eight stations.",
    "type": "application"
   }
+ ],
+ "rb_differences": [
+  {
+   "q": "What error does this section guard against?",
+   "a": "Coaching every athlete toward one visual template. The principles generalise; their expression is individual.",
+   "type": "recall"
+  },
+  {
+   "q": "How does anthropometry drive difference?",
+   "a": "Limb length, mass distribution and tendon properties change what is mechanically optimal for a given athlete.",
+   "type": "recall"
+  },
+  {
+   "q": "How should technique targets be expressed?",
+   "a": "As principles with individual tolerances — 'more range behind you' rather than 'match this cadence number'.",
+   "type": "application"
+  },
+  {
+   "q": "Why are population cadence averages a weak prescription?",
+   "a": "They say little about an individual. The useful comparison is the athlete against their own baseline.",
+   "type": "application"
+  },
+  {
+   "q": "Is there a correct footstrike?",
+   "a": "No — it redistributes load between structures rather than being right or wrong.",
+   "type": "recall"
+  },
+  {
+   "q": "Name the three states in which one athlete runs differently.",
+   "a": "Fresh, compromised immediately after a station, and deep into the closing kilometres.",
+   "type": "recall"
+  },
+  {
+   "q": "Which state should drive coaching decisions in HYROX?",
+   "a": "The degraded one — it determines race time.",
+   "type": "application"
+  },
+  {
+   "q": "What's wrong with copying elite technique?",
+   "a": "Elite mechanics are partly a consequence of elite capacities, not a cause an amateur can adopt by imitation.",
+   "type": "application"
+  },
+  {
+   "q": "How should you introduce a technique change?",
+   "a": "One variable at a time, verified on video — an intervention that helps one athlete can degrade another.",
+   "type": "application"
+  },
+  {
+   "q": "When should an asymmetry be left alone?",
+   "a": "When it's longstanding, painless and efficient — accommodate rather than correct.",
+   "type": "application"
+  },
+  {
+   "q": "Why is one fresh video clip insufficient?",
+   "a": "It tells you almost nothing about race mechanics; assess at multiple states and speeds.",
+   "type": "recall"
+  },
+  {
+   "q": "What's the verification status of this section?",
+   "a": "Unverified — the source is delivered as video and couldn't be checked. The principle-versus-template framing is a reconstruction.",
+   "type": "recall"
+  }
+ ],
+ "nu_supplements": [
+  {
+   "q": "What's the module's default position?",
+   "a": "Food-first. Supplementation is a considered exception, not a default.",
+   "type": "recall"
+  },
+  {
+   "q": "Name the three legitimate reasons to supplement.",
+   "a": "Meeting macronutrient needs around training and competition, correcting a deficiency from dietary restriction, or using a genuine ergogenic aid.",
+   "type": "recall"
+  },
+  {
+   "q": "State the three-part filter.",
+   "a": "Permissibility, safety, efficacy.",
+   "type": "recall"
+  },
+  {
+   "q": "What counts as strongest evidence of effectiveness?",
+   "a": "Systematic reviews and meta-analyses pooling multiple studies, plus stance and consensus statements.",
+   "type": "recall"
+  },
+  {
+   "q": "Name the well-supported ergogenic aids.",
+   "a": "Caffeine, creatine, beta-alanine, sodium bicarbonate and dietary nitrate (beetroot juice).",
+   "type": "recall"
+  },
+  {
+   "q": "When are iron and vitamin D justified?",
+   "a": "Only where deficiency is confirmed by testing. Supplementing without confirmed deficiency has no established benefit, and excess iron can harm.",
+   "type": "application"
+  },
+  {
+   "q": "Name supplements that are heavily marketed but weakly evidenced.",
+   "a": "Glutamine as an ergogenic aid or lactate buffer, BCAAs for endurance performance, and most proprietary recovery blends.",
+   "type": "recall"
+  },
+  {
+   "q": "When did HYROX introduce drug testing?",
+   "a": "February 2024, expanded for the 2025-26 competitive season.",
+   "type": "recall"
+  },
+  {
+   "q": "What does strict liability mean here?",
+   "a": "It's the athlete's individual duty to avoid prohibited substances; neither intent nor knowing use needs proving for a violation.",
+   "type": "recall"
+  },
+  {
+   "q": "What is Global DRO, and what's the country caveat?",
+   "a": "An online check for whether medications contain prohibited substances. Formulations differ between countries, so re-check anything bought abroad.",
+   "type": "application"
+  },
+  {
+   "q": "What does Informed Sport certification NOT guarantee?",
+   "a": "It doesn't verify that listed ingredients and dosages are accurate — it tests for banned substances only. It reduces doping risk, not mislabelling risk.",
+   "type": "application"
+  },
+  {
+   "q": "Describe the HYROX testing protocol and penalties.",
+   "a": "At majors and championships five athletes are tested — elite 15 podium finishers mandatorily plus two at random, notified on finishing and chaperoned. Bans reach four years for a first offence, lifetime for repeats.",
+   "type": "recall"
+  }
  ]
 }
