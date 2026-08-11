@@ -172,6 +172,11 @@
     "phase": 31,
     "name": "Module 7.4 — Station Deep Dives: the eight stations through three expert lenses",
     "days": "102-110"
+   },
+   {
+    "phase": 32,
+    "name": "Modules 7.3 & 4 — Gap Close: off-feet decision-making, level system & the movement hierarchy",
+    "days": "111-114"
    }
   ],
   "source_note": "Original study notes written for the Level 2 'Mastering Performance' module list. Not a reproduction of HYROX Academy course material."
@@ -7869,6 +7874,242 @@
    ],
    "relevant": true,
    "exam_focus": "Explain why wall-ball failure is postural rather than muscular, identify the muscle groups whose endurance prevents it, and prescribe the squat, upper-back and shoulder work required.",
+   "figures": []
+  },
+  "111": {
+   "title": "Off-feet conditioning — the test matrix",
+   "topic_id": "of_testmatrix",
+   "domain": "PG",
+   "chapter": "Module 7.3",
+   "page_refs": "Off-Feet Conditioning — Test Matrix",
+   "key_concept": "Off-feet conditioning is only useful if you know what it is substituting for, and that requires measuring the athlete on both sides of the comparison. A test matrix is a small, repeatable battery that profiles aerobic capacity across each modality the athlete might use — running, bike, SkiErg, rower — so their off-feet work can be prescribed at an equivalent physiological cost rather than guessed at. The core insight is that fitness is only partly transferable between modalities: an athlete's threshold on the bike may sit at a very different absolute output from their running threshold, and mode-specific economy and local muscular endurance differ substantially. Without a matrix you end up prescribing 60 minutes on the bike as though it equals a 60-minute run, which it usually does not. Running the same tests every 4-8 weeks also turns the matrix into a monitoring tool, showing whether off-feet volume is maintaining the aerobic base or quietly allowing it to erode. Anchor every modality to a common internal-load currency — heart rate, RPE and, where available, lactate — so the numbers can be compared at all.",
+   "key_facts": [
+    "Purpose of a test matrix: profile the athlete in every modality they will train in, so off-feet work can be prescribed at equivalent physiological cost rather than by assumed equivalence.",
+    "Transfer between modalities is partial. Central adaptations (cardiac output, plasma volume) transfer well; peripheral and mode-specific adaptations (local muscular endurance, economy, motor pattern) transfer poorly.",
+    "Minimum viable matrix: a running threshold or time-trial test, a bike test, a SkiErg test and a rowing test — each with heart rate and RPE recorded.",
+    "Anchor to internal load, not external: HR, RPE and where available lactate are what make outputs from different machines comparable.",
+    "Record both the output (pace, watts, split, distance) and the internal cost (HR, RPE) so you can express any modality as a percentage of that athlete's own maximum in that modality.",
+    "Practical test options: a 5 km or 30-minute run test; a 20-minute or ramp bike test; 1000 m SkiErg; 1000 m or 2000 m row.",
+    "Standardise the conditions — same damper setting, same machine where possible, similar time of day, similar prior-day load — or the matrix compares noise.",
+    "Re-test every 4-8 weeks. The matrix is a monitoring tool as much as a prescription tool.",
+    "The matrix exposes profile asymmetry: a runner with a weak SkiErg or row is common, and it tells you which off-feet modality is a genuine substitute versus which is itself a limiter needing development.",
+    "Heart rate at a fixed submaximal output, tracked over time in each modality, is a low-cost durability and fitness marker.",
+    "Beware conflating a station test with a conditioning test: a 1000 m row is both a race-station benchmark and an aerobic probe, and the two purposes need different pacing instructions.",
+    "Where lactate testing is available it sharpens threshold anchoring considerably, but a well-standardised HR-and-RPE matrix is sufficient for most coaching decisions.",
+    "The matrix is not a fitness test for its own sake — its output should be a table you actually consult when writing the week."
+   ],
+   "training_link": "Before you start swapping runs for bike sessions, spend a week testing. Get a running threshold number, a bike number, a 1000 m Ski and a 1000 m row, and write down heart rate and RPE alongside every result — those are the only things that let you compare a watt to a pace. What usually falls out is an asymmetry: the runner whose Ski is dreadful, or the strong rower whose bike is untrained. That tells you which modality is a genuine substitute for running volume and which is actually a weakness you should be training on its own terms. Keep the conditions identical each time, re-test every month or two, and actually put the table somewhere you'll look at it when you write the week — an unused matrix is just a hard training session.",
+   "glossary": [
+    {
+     "term": "Test matrix",
+     "def": "A small repeatable battery profiling an athlete across every training modality, so work in one can be prescribed at equivalent physiological cost to another.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"16\" y=\"8\" width=\"48\" height=\"24\" rx=\"2\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"1.6\"/><path d=\"M32 8v24M48 8v24M16 16h48M16 24h48\" stroke=\"#3a4a5e\" stroke-width=\"1.2\"/><rect x=\"32\" y=\"16\" width=\"16\" height=\"8\" fill=\"#67e8b0\" opacity=\"0.35\"/></svg>"
+    },
+    {
+     "term": "Modality transfer",
+     "def": "The degree to which fitness gained in one exercise mode carries to another. Central adaptations transfer well; peripheral and economy adaptations poorly.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"24\" cy=\"20\" r=\"9\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"2\"/><path d=\"M40 20h22M54 13l8 7-8 7\" fill=\"none\" stroke=\"#67e8b0\" stroke-width=\"2\"/></svg>"
+    },
+    {
+     "term": "Internal load",
+     "def": "The physiological cost of a session — heart rate, RPE, lactate — as opposed to external output such as pace or watts. The common currency across modalities.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"14\" y=\"10\" width=\"52\" height=\"22\" rx=\"3\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"1.6\"/><path d=\"M40 10v22\" stroke=\"#ffb86b\" stroke-width=\"2\"/><path d=\"M20 21h14M46 21h14\" stroke=\"#67e8b0\" stroke-width=\"1.6\"/></svg>"
+    },
+    {
+     "term": "Mode-specific economy",
+     "def": "The efficiency with which an athlete performs a particular movement. Largely trained by doing that movement, which is why transfer is incomplete.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M8 26 C20 26 22 32 32 32 C46 32 46 12 66 12\" fill=\"none\" stroke=\"#67e8b0\" stroke-width=\"2\"/><line x1=\"8\" y1=\"24\" x2=\"72\" y2=\"24\" stroke=\"#3a4a5e\" stroke-width=\"1\" stroke-dasharray=\"3 2\"/></svg>"
+    },
+    {
+     "term": "Profile asymmetry",
+     "def": "A marked gap between an athlete's capacity in different modalities, revealing which off-feet options are true substitutes and which are limiters.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M10 20h20M30 20l14-9M30 20l14 9\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"2\"/><circle cx=\"48\" cy=\"11\" r=\"3\" fill=\"#67e8b0\"/><circle cx=\"48\" cy=\"29\" r=\"3\" fill=\"#ffb86b\"/></svg>"
+    },
+    {
+     "term": "Standardisation",
+     "def": "Holding test conditions — machine, damper, time of day, prior load — constant so repeated measurements reflect fitness change rather than noise.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"16\" y=\"8\" width=\"34\" height=\"26\" rx=\"2\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"1.6\"/><path d=\"M22 16h22M22 22h22M22 28h14\" stroke=\"#67e8b0\" stroke-width=\"1.6\"/></svg>"
+    }
+   ],
+   "relevant": true,
+   "exam_focus": "Design a minimum off-feet test matrix, justify anchoring to internal load, and explain why modality transfer is only partial.",
+   "figures": []
+  },
+  "112": {
+   "title": "Off-feet conditioning — the decision tree",
+   "topic_id": "of_decisiontree",
+   "domain": "PG",
+   "chapter": "Module 7.3",
+   "page_refs": "Off-Feet Conditioning — Decision Tree",
+   "key_concept": "A decision tree turns the question 'should this session be off-feet?' into a repeatable rule rather than a mood. The first branch is always tissue status: if running is contraindicated or provoking symptoms, the session goes off-feet regardless of what the plan said. The second branch is the session's purpose — if the aim is aerobic development or recovery, the modality is largely interchangeable and off-feet is a legitimate choice; if the aim is running-specific economy, compromised-running practice, or bone and tendon loading, then off-feet cannot substitute and the session should be modified rather than swapped. The third branch is cumulative impact load: an athlete already near their tolerated running volume gains aerobic stimulus more cheaply off-feet. The fourth is context — travel, weather, heat, time constraints and equipment access. Used consistently the tree stops two opposite errors: the athlete who bikes away from every niggle and never develops running durability, and the coach who insists on running through symptoms because the plan said run.",
+   "key_facts": [
+    "Branch 1 — tissue status. Pain, an irritable tendon, a bone stress concern or a medical restriction sends the session off-feet immediately, whatever the plan said.",
+    "Branch 2 — session purpose. Aerobic development and active recovery transfer well off-feet; running economy, compromised-running practice and bone/tendon loading do not.",
+    "If the purpose cannot be met off-feet, modify the running session (shorter, slower, softer surface) rather than substituting a different modality.",
+    "Branch 3 — accumulated impact load. An athlete near their tolerated weekly running volume can add aerobic stimulus more cheaply off-feet than by adding mileage.",
+    "Branch 4 — context. Travel, extreme heat, air quality, darkness, time available and equipment access are legitimate inputs, not excuses.",
+    "Match intensity by internal load using the test matrix, not by duration. Sixty minutes of easy cycling is not sixty minutes of easy running.",
+    "Bike is generally the lowest-impact, highest-volume substitute; rowing and SkiErg add upper-body and trunk demand that doubles as race-station practice.",
+    "Because bike and row are seated and non-weight-bearing, they do not maintain bone loading, tendon stiffness or running-specific leg stiffness — a real cost of over-substituting.",
+    "Two failure modes the tree prevents: the athlete who bikes away from every niggle and never builds running durability, and the coach who runs an athlete through symptoms because the plan said run.",
+    "For HYROX specifically, off-feet work is doubly valuable because SkiErg, row and bike are either race stations or close analogues — the substitution can be race-specific rather than merely aerobic.",
+    "Set a standing rule for how much of weekly aerobic volume may be off-feet, then vary it deliberately by phase rather than session by session.",
+    "In a heavy race block or when returning from injury, the off-feet share rises; in a running-development block it falls.",
+    "Document the decision. If you cannot say which branch sent the session off-feet, you made a mood-based call, not a coaching one."
+   ],
+   "training_link": "Write the tree down once and then follow it, because the whole value is that it removes the argument. Anything sore or symptomatic goes off-feet immediately — that branch is not negotiable. Then ask what the session was actually for: if it was aerobic volume or recovery, the bike or rower is fine; if it was economy, compromised running, or getting load through bone and tendon, off-feet won't do it, so shrink the run rather than replace it. Match the intensity using your matrix numbers rather than the clock. And set a ceiling on how much of the week can be off-feet — otherwise the athlete drifts into a very fit cyclist who falls apart on the eight runs.",
+   "glossary": [
+    {
+     "term": "Decision tree",
+     "def": "An ordered set of branching rules converting a recurring coaching question into a repeatable decision rather than an ad hoc judgement.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M40 6v8M40 14L22 22M40 14l18 8M22 22v6M58 22v6\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"1.8\"/><circle cx=\"40\" cy=\"6\" r=\"3\" fill=\"#5ec8ff\"/><circle cx=\"22\" cy=\"31\" r=\"3\" fill=\"#67e8b0\"/><circle cx=\"58\" cy=\"31\" r=\"3\" fill=\"#ffb86b\"/></svg>"
+    },
+    {
+     "term": "Session purpose",
+     "def": "The specific adaptation a session targets. Determines whether a different modality can substitute without losing the intended stimulus.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"14\" y=\"10\" width=\"52\" height=\"22\" rx=\"3\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"1.6\"/><path d=\"M40 10v22\" stroke=\"#ffb86b\" stroke-width=\"2\"/><path d=\"M20 21h14M46 21h14\" stroke=\"#67e8b0\" stroke-width=\"1.6\"/></svg>"
+    },
+    {
+     "term": "Impact load",
+     "def": "The cumulative weight-bearing stress of running. The variable off-feet conditioning is usually chosen to reduce.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M8 12 C26 13 44 22 72 33\" fill=\"none\" stroke=\"#ffb86b\" stroke-width=\"2\"/><line x1=\"8\" y1=\"34\" x2=\"72\" y2=\"34\" stroke=\"#3a4a5e\" stroke-width=\"1\"/></svg>"
+    },
+    {
+     "term": "Non-weight-bearing modality",
+     "def": "Seated or supported exercise such as cycling or rowing. Preserves aerobic stimulus but not bone loading or running-specific leg stiffness.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M10 20h20M30 20l14-9M30 20l14 9\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"2\"/><circle cx=\"48\" cy=\"11\" r=\"3\" fill=\"#67e8b0\"/><circle cx=\"48\" cy=\"29\" r=\"3\" fill=\"#ffb86b\"/></svg>"
+    },
+    {
+     "term": "Substitution ceiling",
+     "def": "A deliberate cap on the share of weekly aerobic volume performed off-feet, varied by training phase rather than by how the athlete feels.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M10 32h12v-6h12v-6h12v-6h12v-6h10\" fill=\"none\" stroke=\"#67e8b0\" stroke-width=\"2\"/><line x1=\"10\" y1=\"34\" x2=\"72\" y2=\"34\" stroke=\"#3a4a5e\" stroke-width=\"1\"/></svg>"
+    },
+    {
+     "term": "Race-specific substitution",
+     "def": "Choosing an off-feet modality that is itself a race station — SkiErg or row — so the session serves conditioning and skill simultaneously.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"24\" cy=\"20\" r=\"9\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"2\"/><path d=\"M40 20h22M54 13l8 7-8 7\" fill=\"none\" stroke=\"#67e8b0\" stroke-width=\"2\"/></svg>"
+    }
+   ],
+   "relevant": true,
+   "exam_focus": "Apply the decision tree to a scenario, state which session purposes cannot be met off-feet, and explain the cost of over-substituting non-weight-bearing work.",
+   "figures": []
+  },
+  "113": {
+   "title": "The 5 Level System",
+   "topic_id": "hp_levels",
+   "domain": "PG",
+   "chapter": "Module 4",
+   "page_refs": "HYROX Performance Pillars — 5 Level System",
+   "key_concept": "The 5 Level System is Module 4's framework for placing an athlete on a competence ladder and coaching them at the rung they are actually on. Its logic is the same one that governs any staged progression: a level is defined by demonstrated capability, not by ambition or training history, and an athlete only advances when the criteria of their current level are met consistently under fatigue — not once, fresh, on a good day. The coaching payoff is that it prevents the most common programming error in HYROX, which is prescribing competitive-level intensity and complexity to an athlete who has not yet secured movement competence or an aerobic base. It also gives the coach a shared language with the athlete for why a session is being held back. Note honestly: the specific level definitions and advancement criteria in the official course are delivered as audio and were not verifiable when these notes were written, so the ladder below is a reconstruction from the module's surrounding material and general staged-development practice — treat the structure as sound and the exact wording as unverified.",
+   "key_facts": [
+    "A level describes demonstrated current capability, not training age, ambition, or what the athlete used to be able to do.",
+    "Advancement requires meeting the current level's criteria consistently and under fatigue, not once in a fresh state.",
+    "Reconstructed ladder — Level 1: movement competence. Can the athlete perform each pattern safely with no load and no clock?",
+    "Level 2: loaded competence. Can they hold that technical standard under race-representative load for the required volume?",
+    "Level 3: conditioned competence. Can they hold the standard under fatigue, which is the state the race actually imposes?",
+    "Level 4: race execution. Can they pace, transition and self-regulate across a full or near-full race distance?",
+    "Level 5: competitive optimisation. Marginal gains, individualised pacing models, peaking — appropriate only once levels 1-4 are secure.",
+    "The dominant error the system prevents: prescribing level 4-5 intensity and complexity to a level 1-2 athlete, which produces injury and technical breakdown rather than fitness.",
+    "Levels are movement-specific as well as global — an athlete can be level 4 on the row and level 1 on the sandbag lunge, and should be coached accordingly at each station.",
+    "Regression is normal and expected after injury, illness or a long lay-off. Re-assess rather than resuming at the previous level.",
+    "The system gives coach and athlete shared language for holding a session back, which makes the decision feel principled rather than arbitrary.",
+    "Assess at the level the race demands: judge competence under fatigue, because a standard that only holds when fresh will not hold at station six.",
+    "Unverified: the official course delivers this section as audio and the precise level names, criteria and thresholds could not be checked against the source. Confirm the exact definitions against the module before quoting them in an assessment."
+   ],
+   "training_link": "Be honest about which rung your athlete is actually on, and coach that rung rather than the one they want to be on. The classic failure is a keen beginner given a competitive athlete's session — heavy sled, high volume, tight clock — when they can't yet hold a lunge pattern under load. Assess each station separately, because almost everyone is several levels apart across the eight, and coach each at its own level. Test competence when they're tired rather than fresh, since fresh competence tells you nothing about station six. And when someone comes back from injury or a long break, re-assess rather than picking up where they left off — regression is normal and pretending otherwise is how people get hurt twice.",
+   "glossary": [
+    {
+     "term": "5 Level System",
+     "def": "Module 4's staged competence framework placing an athlete on a ladder from movement competence through to competitive optimisation, coached at their demonstrated level.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M10 32h12v-6h12v-6h12v-6h12v-6h10\" fill=\"none\" stroke=\"#67e8b0\" stroke-width=\"2\"/><line x1=\"10\" y1=\"34\" x2=\"72\" y2=\"34\" stroke=\"#3a4a5e\" stroke-width=\"1\"/></svg>"
+    },
+    {
+     "term": "Demonstrated capability",
+     "def": "What the athlete can actually do consistently and under fatigue — the basis for level assignment, as distinct from training history or ambition.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"14\" y=\"10\" width=\"52\" height=\"22\" rx=\"3\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"1.6\"/><path d=\"M40 10v22\" stroke=\"#ffb86b\" stroke-width=\"2\"/><path d=\"M20 21h14M46 21h14\" stroke=\"#67e8b0\" stroke-width=\"1.6\"/></svg>"
+    },
+    {
+     "term": "Advancement criteria",
+     "def": "The conditions that must be met before moving up a level. Judged repeatedly and under fatigue, not on a single fresh attempt.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"24\" cy=\"20\" r=\"9\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"2\"/><path d=\"M40 20h22M54 13l8 7-8 7\" fill=\"none\" stroke=\"#67e8b0\" stroke-width=\"2\"/></svg>"
+    },
+    {
+     "term": "Movement-specific levelling",
+     "def": "Assigning a level per station rather than globally, since an athlete is commonly several levels apart across the eight.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"16\" y=\"8\" width=\"48\" height=\"24\" rx=\"2\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"1.6\"/><path d=\"M32 8v24M48 8v24M16 16h48M16 24h48\" stroke=\"#3a4a5e\" stroke-width=\"1.2\"/><rect x=\"32\" y=\"16\" width=\"16\" height=\"8\" fill=\"#67e8b0\" opacity=\"0.35\"/></svg>"
+    },
+    {
+     "term": "Regression",
+     "def": "A drop to a lower level after injury, illness or lay-off. Expected, and handled by re-assessment rather than resuming the previous load.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M8 12 C26 13 44 22 72 33\" fill=\"none\" stroke=\"#ffb86b\" stroke-width=\"2\"/><line x1=\"8\" y1=\"34\" x2=\"72\" y2=\"34\" stroke=\"#3a4a5e\" stroke-width=\"1\"/></svg>"
+    },
+    {
+     "term": "Level mismatch",
+     "def": "Prescribing intensity or complexity above the athlete's demonstrated level — the dominant programming error the system exists to prevent.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M10 20h20M30 20l14-9M30 20l14 9\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"2\"/><circle cx=\"48\" cy=\"11\" r=\"3\" fill=\"#67e8b0\"/><circle cx=\"48\" cy=\"29\" r=\"3\" fill=\"#ffb86b\"/></svg>"
+    }
+   ],
+   "relevant": true,
+   "exam_focus": "Place an athlete on the competence ladder from a case description, justify holding a session back, and explain why levels are assessed per station and under fatigue.",
+   "figures": []
+  },
+  "114": {
+   "title": "Safety, efficacy & efficiency",
+   "topic_id": "hp_safety",
+   "domain": "PG",
+   "chapter": "Module 4",
+   "page_refs": "HYROX Performance Pillars — Safety, Efficacy, Efficiency",
+   "key_concept": "Safety, efficacy and efficiency is Module 4's ordering principle for judging any movement, and the order is not arbitrary — it is a hierarchy. Safety comes first: can the athlete perform this without unacceptable injury risk, now, in their current state? Efficacy comes second: does the movement actually achieve its purpose — for a race station, does it meet the movement standard and count as a rep? Efficiency comes last: is it being done at the lowest energetic cost? The hierarchy matters because coaches routinely invert it, chasing efficiency cues on an athlete who cannot yet hit depth on a wall ball, or who is loading a spine they cannot brace. A rep that is not safe is not coachable; a rep that is safe but does not meet standard is a no-rep and therefore worthless however efficient it looks; only once both hold does economy become the productive thing to work on. The framework also connects back to mobility and flexibility, which serve all three: range protects the athlete in compromised positions, allows them to hit the required standards, and lets them move smoothly.",
+   "key_facts": [
+    "The three criteria in strict order: safety, then efficacy, then efficiency. The order is a hierarchy, not a list.",
+    "Safety: can the athlete perform the movement without unacceptable injury risk in their current state, under the load and fatigue prescribed?",
+    "Efficacy: does the movement achieve its purpose — for a race station, does it meet the movement standard and count?",
+    "Efficiency: is it performed at the lowest energetic cost, so the athlete arrives at the next station with more left?",
+    "The common coaching inversion is chasing efficiency cues on an athlete who cannot yet meet the standard, or who is loading a structure they cannot control.",
+    "A no-rep is worthless however elegant it is — wall-ball depth and target height, and burpee broad jump stance, are the classic efficacy failures.",
+    "Judging standards matters competitively: penalties for staggered stance on the burpee broad jump and no-reps for missed wall-ball depth decide races at the sharp end.",
+    "Safety and efficacy both degrade under fatigue, which is why the criteria must be judged late in a session rather than fresh.",
+    "Mobility and flexibility serve all three: range protects the athlete in compromised positions, permits the required standards to be hit, and enables smooth movement.",
+    "Strength contributes to safety directly — it supports joints, builds tendon and ligament resilience, and preserves form when the athlete is fatigued or compromised.",
+    "Coordination sits mostly under efficiency but crosses into efficacy, because a loss of precision at speed produces no-reps and penalties.",
+    "Practical use: when a movement looks wrong, diagnose in order — is it unsafe, is it not meeting standard, or is it merely wasteful — and coach the first one that fails.",
+    "The framework applies to programming as well as technique: a session can be unsafe, ineffective for its stated purpose, or simply an expensive way to get a cheap adaptation."
+   ],
+   "training_link": "When something looks wrong, work down the list in order rather than saying the first thing you notice. Is it dangerous? Fix that and nothing else today. Is it safe but not meeting the standard — not hitting depth, not reaching extension, staggered on the burpee? Then that's the whole session, because a no-rep is worth nothing no matter how pretty it is. Only when both of those hold should you start refining economy. Judge all of it on a tired athlete, since safety and efficacy are exactly what fatigue erodes. And remember mobility buys you all three at once — it protects them in bad positions, it's often what's stopping them hitting depth, and it makes the movement cheaper.",
+   "glossary": [
+    {
+     "term": "Safety, efficacy, efficiency",
+     "def": "Module 4's ordered hierarchy for judging any movement: is it safe, does it achieve its purpose, and only then is it economical.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"26\" cy=\"14\" r=\"6\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"1.8\"/><circle cx=\"40\" cy=\"28\" r=\"6\" fill=\"none\" stroke=\"#67e8b0\" stroke-width=\"1.8\"/><circle cx=\"54\" cy=\"14\" r=\"6\" fill=\"none\" stroke=\"#ffb86b\" stroke-width=\"1.8\"/><path d=\"M31 18l6 6M49 18l-6 6M32 14h16\" stroke=\"#3a4a5e\" stroke-width=\"1.2\"/></svg>"
+    },
+    {
+     "term": "Efficacy",
+     "def": "Whether a movement actually achieves its intended purpose — for a race station, whether it meets the movement standard and counts as a repetition.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"14\" y=\"10\" width=\"52\" height=\"22\" rx=\"3\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"1.6\"/><path d=\"M40 10v22\" stroke=\"#ffb86b\" stroke-width=\"2\"/><path d=\"M20 21h14M46 21h14\" stroke=\"#67e8b0\" stroke-width=\"1.6\"/></svg>"
+    },
+    {
+     "term": "Movement standard",
+     "def": "The defined criteria a repetition must satisfy to count, such as wall-ball depth and target height or burpee broad jump stance.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"16\" y=\"8\" width=\"34\" height=\"26\" rx=\"2\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"1.6\"/><path d=\"M22 16h22M22 22h22M22 28h14\" stroke=\"#67e8b0\" stroke-width=\"1.6\"/></svg>"
+    },
+    {
+     "term": "No-rep",
+     "def": "A repetition that fails the movement standard and does not count. Energetically expensive and competitively worthless.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M8 12 C26 13 44 22 72 33\" fill=\"none\" stroke=\"#ffb86b\" stroke-width=\"2\"/><line x1=\"8\" y1=\"34\" x2=\"72\" y2=\"34\" stroke=\"#3a4a5e\" stroke-width=\"1\"/></svg>"
+    },
+    {
+     "term": "Hierarchy inversion",
+     "def": "The common coaching error of working on efficiency before safety or efficacy are secured.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M10 20h20M30 20l14-9M30 20l14 9\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"2\"/><circle cx=\"48\" cy=\"11\" r=\"3\" fill=\"#67e8b0\"/><circle cx=\"48\" cy=\"29\" r=\"3\" fill=\"#ffb86b\"/></svg>"
+    },
+    {
+     "term": "Compromised position",
+     "def": "A body position adopted under fatigue or load in which control is reduced and injury risk rises. Mobility and strength are the buffers.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M8 26 C20 26 22 32 32 32 C46 32 46 12 66 12\" fill=\"none\" stroke=\"#67e8b0\" stroke-width=\"2\"/><line x1=\"8\" y1=\"24\" x2=\"72\" y2=\"24\" stroke=\"#3a4a5e\" stroke-width=\"1\" stroke-dasharray=\"3 2\"/></svg>"
+    }
+   ],
+   "relevant": true,
+   "exam_focus": "Apply the safety-efficacy-efficiency hierarchy to a faulty movement, explain why the order matters, and identify the classic efficacy failures at HYROX stations.",
    "figures": []
   }
  }
