@@ -142,6 +142,31 @@
     "phase": 25,
     "name": "Module 7.2 — Running Faster",
     "days": "75-75"
+   },
+   {
+    "phase": 26,
+    "name": "Module 10 — Athlete Populations (Junior, Female, Masters, High Performance, Adapted, Doubles)",
+    "days": "76-81"
+   },
+   {
+    "phase": 27,
+    "name": "Module 9 — Mental Performance (Expanded): SDT, Neurodivergence, Pressure & Routines",
+    "days": "82-87"
+   },
+   {
+    "phase": 28,
+    "name": "Module 7.2 — Running Biomechanics (Expanded): Hip, Braking, Separation & Injury",
+    "days": "88-93"
+   },
+   {
+    "phase": 29,
+    "name": "Module 6 — Nutrition (Expanded): Scope, Gut Training, Recovery & Plant-Based",
+    "days": "94-97"
+   },
+   {
+    "phase": 30,
+    "name": "Module 2 — Sports Medicine (Expanded): Longevity, Neuro, Illness & Anti-Doping",
+    "days": "98-101"
    }
   ],
   "source_note": "Original study notes written for the Level 2 'Mastering Performance' module list. Not a reproduction of HYROX Academy course material."
@@ -5762,6 +5787,1543 @@
    ],
    "relevant": true,
    "exam_focus": "Expect to be tested on the honest status of the proximal-initiation model (a coaching model with a plausible mechanism; propulsion is hip-extensor and plantarflexor driven, and pelvic rotation is largely passive) rather than on reciting it as fact. Know the two pelvic-rotation faults — added lumbar extension from driving the pelvis backwards, and actively producing rather than allowing the rotation — and the observable tell of each. Be able to reconcile the posture-cue warning with the tall-posture cue of day 33: correcting trunk POSITION out of a flexed, collapsed state is right; pinning the scapulae with 'shoulders back, chest up' is wrong. Know that the scapulothoracic articulation is not a true joint, that a self-stabilising pattern and hip-abductor strengthening are complementary rather than competing (day 10), and that amplitude scales with speed. Know the limit on the Weyand citation — it concerns maximal sprint speed, not 1 km race pace. Calc items work per-step gains across 8 km and must be labelled as modelled upper bounds built on an assumed per-step figure, not measured effects.",
+   "figures": []
+  },
+  "76": {
+   "title": "The junior athlete",
+   "topic_id": "pc_junior",
+   "domain": "CM",
+   "chapter": "Module 10",
+   "page_refs": "Personalized Performance Coaching",
+   "key_concept": "Juniors are not scaled-down adults. They are moving through maturation, and the coaching problem is sequencing training to biological rather than chronological age. Two children of the same birth year can be several years apart in maturity, which distorts talent judgement (the relative age effect) and changes what loading is appropriate. The organising model is long-term athletic development: build broad movement competence and general athleticism first, layer sport-specific work later, and treat resistance training as a skill to be coached rather than a risk to be avoided — supervised, technique-led strength training is safe and reduces injury risk. Around the growth spurt, coordination temporarily degrades (adolescent awkwardness) and growth-plate and apophyseal tissues become vulnerable, so volume, plyometric load and technical expectations all need dialling back. HYROX adds a specific caution: it is an adult competitive format with fixed loads, so the coach's job is to modify loads, distances and station demands rather than expose an immature athlete to the standard race.",
+   "key_facts": [
+    "Biological age ≠ chronological age. Sequence training to maturity status, not birth year.",
+    "Relative age effect: athletes born early in a selection year are over-represented in squads because they are bigger and more mature, not more talented. Guard against it when judging juniors.",
+    "Peak height velocity (PHV) is the fastest phase of the growth spurt and the key reference point for programming; it typically arrives earlier in girls than boys, with wide individual variation.",
+    "Around PHV expect a transient dip in coordination and a rise in apophyseal complaints (Osgood-Schlatter at the tibial tuberosity, Sever's at the calcaneus). Reduce impact volume and hold technique standards rather than chasing loads.",
+    "Supervised, well-coached resistance training is safe for youth and lowers injury risk; the old 'lifting stunts growth' claim is not supported. Technique and supervision are the safety mechanism, not load avoidance.",
+    "Train fundamental movement skills and general athleticism early — running, jumping, landing, hinging, squatting, pushing, pulling, bracing — before HYROX-specific station work.",
+    "Early diversification (multiple sports) is generally preferable to early single-sport specialisation, which is associated with higher overuse-injury and burnout risk.",
+    "Children have relatively high aerobic recoverability but lower anaerobic and glycolytic capacity than adults; long, heavy lactate work is a poor fit and low-yield.",
+    "Thermoregulation is less efficient in younger children (higher surface-area-to-mass ratio, lower sweat rate). Manage heat exposure and drink access proactively.",
+    "For HYROX specifically, modify: shorter run legs, lighter sleds, lighter sandbags, reduced wall-ball weight and target height, fewer total stations. Do not default to open-division loads.",
+    "Motivation should be mastery- and fun-led; adult-style outcome pressure predicts dropout. Long-term retention in sport is itself a performance outcome.",
+    "Safeguarding and the coach-parent-athlete triangle sit above programming: consent, supervision, appropriate contact and clear communication with parents are non-negotiable.",
+    "Monitor growth (standing height every 4-8 weeks) as a practical, low-cost flag for entering the vulnerable window."
+   ],
+   "training_link": "If you take a 14-year-old into a HYROX gym, start by measuring height every month or two rather than testing a sled max. A rapid jump in standing height tells you they are in or near the growth spurt — that is your cue to cut impact volume, keep plyometrics low and crisp, and stop expecting technical progress for a while. Coach strength as a skill: light loads, high supervision, hinge and squat patterns done well, because that is what actually protects them. Build the general engine and movement vocabulary now and leave race-specific station grinding for later. When they do a HYROX-style session, scale it honestly — shorter runs, lighter sled, lighter bag, lower wall-ball target — and judge the session on movement quality and whether they want to come back, not on the clock.",
+   "glossary": [
+    {
+     "term": "Biological age",
+     "def": "An athlete's maturity status relative to their own growth timeline, as distinct from years since birth. It is the correct reference for sequencing youth training load.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M8 32 C24 30 34 14 44 14 S62 22 72 10\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"2\"/><circle cx=\"44\" cy=\"14\" r=\"2.5\" fill=\"#5ec8ff\"/></svg>"
+    },
+    {
+     "term": "Peak height velocity (PHV)",
+     "def": "The period of most rapid growth during the adolescent spurt. It marks a window of raised injury vulnerability and temporarily reduced coordination.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M8 26 C20 26 22 32 32 32 C46 32 46 12 66 12\" fill=\"none\" stroke=\"#67e8b0\" stroke-width=\"2\"/><line x1=\"8\" y1=\"24\" x2=\"72\" y2=\"24\" stroke=\"#3a4a5e\" stroke-width=\"1\" stroke-dasharray=\"3 2\"/></svg>"
+    },
+    {
+     "term": "Relative age effect",
+     "def": "Over-selection of athletes born early in a cut-off year, whose greater maturity is mistaken for greater talent. A systematic bias in junior identification.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M8 12 C26 13 44 22 72 33\" fill=\"none\" stroke=\"#ffb86b\" stroke-width=\"2\"/><line x1=\"8\" y1=\"34\" x2=\"72\" y2=\"34\" stroke=\"#3a4a5e\" stroke-width=\"1\"/></svg>"
+    },
+    {
+     "term": "Long-term athletic development",
+     "def": "A staged approach that builds broad movement competence and general athleticism before sport-specific specialisation, prioritising lifelong participation alongside performance.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"16\" y=\"8\" width=\"34\" height=\"26\" rx=\"2\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"1.6\"/><path d=\"M22 16h22M22 22h22M22 28h14\" stroke=\"#67e8b0\" stroke-width=\"1.6\"/></svg>"
+    },
+    {
+     "term": "Apophysitis",
+     "def": "Irritation at a growth-plate tendon attachment, common around the growth spurt — for example Osgood-Schlatter at the knee or Sever's at the heel. Managed by load reduction, not rest alone.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"14\" y=\"10\" width=\"52\" height=\"22\" rx=\"3\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"1.6\"/><path d=\"M40 10v22\" stroke=\"#ffb86b\" stroke-width=\"2\"/><path d=\"M20 21h14M46 21h14\" stroke=\"#67e8b0\" stroke-width=\"1.6\"/></svg>"
+    },
+    {
+     "term": "Early specialisation",
+     "def": "Restricting a young athlete to a single sport year-round before maturity. Associated with elevated overuse injury and dropout risk relative to sampling several sports.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"24\" cy=\"20\" r=\"9\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"2\"/><path d=\"M40 20h22M54 13l8 7-8 7\" fill=\"none\" stroke=\"#67e8b0\" stroke-width=\"2\"/></svg>"
+    }
+   ],
+   "relevant": true,
+   "exam_focus": "Given a junior athlete's maturity status and training history, justify appropriate load modification, station scaling and the decision to prioritise general athleticism over HYROX-specific work.",
+   "figures": []
+  },
+  "77": {
+   "title": "The female athlete",
+   "topic_id": "pc_female",
+   "domain": "CM",
+   "chapter": "Module 10",
+   "page_refs": "Personalized Performance Coaching",
+   "key_concept": "Coaching female athletes well means separating three things that often get merged: physiological sex differences that genuinely change race strategy, the menstrual cycle and hormonal contraception, and low energy availability. The performance-relevant sex differences in HYROX are mostly about body composition and absolute strength — women carry proportionally less upper-body muscle mass, which makes the fixed absolute loads of the sled and wall ball relatively harder, even though the race prescribes lighter loads for the women's division. Aerobically, women tend to show greater fatigue resistance and often better pacing discipline. On the menstrual cycle, the honest position is that group-level performance effects across cycle phases are small and inconsistent in the research, while individual symptom burden can be large and very real; so the coaching action is individual tracking and symptom-led adjustment rather than a fixed phase-based template. Low energy availability and RED-S are the highest-stakes issue, because the consequences run through bone, endocrine and cardiovascular health as well as performance.",
+   "key_facts": [
+    "Sex differences that matter in HYROX are mostly relative-strength ones: less upper-body lean mass means the sled, SkiErg and wall ball sit at a higher percentage of maximum for women even at divisional loads.",
+    "Women generally show greater fatigue resistance at a given relative intensity and a higher proportional reliance on fat oxidation, which favours the long aerobic middle of a HYROX race.",
+    "Wall balls are frequently the disproportionate limiter for women because the 6 kg / 9 ft (open) demand is a repeated overhead throw at a high fraction of upper-body capacity. It rewards targeted upper-body and trunk work.",
+    "Menstrual-cycle research on performance is heterogeneous and mostly low-quality; group mean effects across phases are small. Do not apply a rigid phase-based programming template as if it were settled science.",
+    "Individual symptom burden (dysmenorrhoea, heavy bleeding, migraine, GI symptoms, sleep disruption) can be substantial and is the actionable signal. Track symptoms and adjust the individual athlete.",
+    "Hormonal contraception changes the hormonal profile and often the bleed pattern; athletes on it cannot be programmed as if they were naturally cycling. Ask, do not assume.",
+    "Low energy availability (LEA) is the central risk: insufficient energy intake relative to exercise energy expenditure and fat-free mass, whether intentional or not.",
+    "RED-S is the syndrome arising from sustained LEA, affecting bone health, menstrual and endocrine function, immunity, mood, GI and cardiovascular health, and performance. It is not exclusive to women.",
+    "Amenorrhoea in a training athlete is a red flag, not a convenient side effect. It warrants referral, not reassurance.",
+    "Bone stress injuries cluster with LEA and with rapid load progression; a female athlete with menstrual disturbance plus new bone pain needs medical assessment.",
+    "Iron deficiency is more prevalent in menstruating athletes and degrades endurance performance before frank anaemia appears. Suspect it with unexplained fatigue and refer for testing.",
+    "Pregnancy and postpartum return require individualised, clinician-led progression — pelvic floor and abdominal wall load tolerance, not just cardiovascular fitness, govern the timeline.",
+    "Coaching conduct matters: avoid casual body-composition talk, weigh-ins without clinical purpose, and 'lighter is faster' framing. These are the proximate drivers of disordered eating in endurance settings."
+   ],
+   "training_link": "Ask the questions most coaches skip: is her cycle regular, is she on hormonal contraception, has she ever lost her period, and is she fuelling the training she is actually doing. Track symptoms across a couple of months alongside session quality and let her pattern — not a textbook phase chart — drive any adjustment; for most athletes that means moving a hard session by a day or two in a bad week rather than rebuilding the block. Treat wall balls and the sled as likely limiters and give them dedicated upper-body strength-endurance work rather than hoping race practice fixes them. If you see amenorrhoea, unexplained fatigue, repeated bone pain or restrictive eating patterns, stop programming around it and refer — that is a scope-of-practice line, not a judgement call.",
+   "glossary": [
+    {
+     "term": "Low energy availability (LEA)",
+     "def": "Dietary energy intake minus exercise energy expenditure, expressed relative to fat-free mass, falling below the level needed to support normal physiological function.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M8 12 C26 13 44 22 72 33\" fill=\"none\" stroke=\"#ffb86b\" stroke-width=\"2\"/><line x1=\"8\" y1=\"34\" x2=\"72\" y2=\"34\" stroke=\"#3a4a5e\" stroke-width=\"1\"/></svg>"
+    },
+    {
+     "term": "RED-S",
+     "def": "Relative Energy Deficiency in Sport — the multi-system syndrome caused by sustained low energy availability, spanning bone, endocrine, immune, cardiovascular, psychological and performance outcomes.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"14\" y=\"10\" width=\"52\" height=\"22\" rx=\"3\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"1.6\"/><path d=\"M40 10v22\" stroke=\"#ffb86b\" stroke-width=\"2\"/><path d=\"M20 21h14M46 21h14\" stroke=\"#67e8b0\" stroke-width=\"1.6\"/></svg>"
+    },
+    {
+     "term": "Functional hypothalamic amenorrhoea",
+     "def": "Loss of menstruation driven by suppressed hypothalamic signalling under energy deficit and stress. A clinical red flag requiring referral, not a benign training adaptation.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M8 12 C26 13 44 22 72 33\" fill=\"none\" stroke=\"#ffb86b\" stroke-width=\"2\"/><line x1=\"8\" y1=\"34\" x2=\"72\" y2=\"34\" stroke=\"#3a4a5e\" stroke-width=\"1\"/></svg>"
+    },
+    {
+     "term": "Follicular / luteal phase",
+     "def": "The two principal phases of the menstrual cycle, before and after ovulation, with differing oestrogen and progesterone profiles. Group performance differences between them are small and inconsistent.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M8 32 C24 30 34 14 44 14 S62 22 72 10\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"2\"/><circle cx=\"44\" cy=\"14\" r=\"2.5\" fill=\"#5ec8ff\"/></svg>"
+    },
+    {
+     "term": "Relative load",
+     "def": "An external load expressed as a fraction of the individual's maximum capacity. Fixed absolute race loads impose different relative loads on different athletes.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"24\" cy=\"20\" r=\"9\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"2\"/><path d=\"M40 20h22M54 13l8 7-8 7\" fill=\"none\" stroke=\"#67e8b0\" stroke-width=\"2\"/></svg>"
+    },
+    {
+     "term": "Bone stress injury",
+     "def": "A spectrum from stress reaction to stress fracture caused by repetitive loading outstripping bone remodelling capacity, strongly associated with low energy availability.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"14\" y=\"10\" width=\"52\" height=\"22\" rx=\"3\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"1.6\"/><path d=\"M40 10v22\" stroke=\"#ffb86b\" stroke-width=\"2\"/><path d=\"M20 21h14M46 21h14\" stroke=\"#67e8b0\" stroke-width=\"1.6\"/></svg>"
+    }
+   ],
+   "relevant": true,
+   "exam_focus": "Identify RED-S / low energy availability risk from an athlete presentation and state the correct referral and programming response; explain why fixed absolute station loads impose different relative demands.",
+   "figures": []
+  },
+  "78": {
+   "title": "The masters athlete",
+   "topic_id": "pc_masters",
+   "domain": "CM",
+   "chapter": "Module 10",
+   "page_refs": "Personalized Performance Coaching",
+   "key_concept": "Masters athletes are conventionally defined from about 35 years of age, though the practical category most coaches recognise begins nearer 40 and the qualifying age varies widely by sport. The central pattern is that explosive and maximal qualities decline faster than endurance qualities: sprint and power performances drop off earlier and more steeply than long-distance performance, which is why older athletes remain competitive in marathon and long-course racing. Strength declines roughly 5-10% per decade in athletes who keep training hard, against 10-15% per decade after 30 in sedentary adults, accelerating substantially after 60. On the endurance side, VO2max is the main driver of decline — roughly 10% per decade when sedentary, 5-7% when active, 3-5% in highly trained athletes and as little as 2-3% per decade in well-trained masters until around 50, after which decline accelerates. Crucially, exercise economy and threshold values are relatively well preserved, so the aerobic middle of a HYROX race ages better than the explosive elements. Training intensity must be maintained, not just volume, and recovery capacity plus tissue tolerance become the binding constraints.",
+   "key_facts": [
+    "Masters status is commonly set at 35+, but the threshold varies by sport (swimming classifies masters from around 25) and the practical coaching category is usually 40+.",
+    "Decline is quality-specific: sprint and explosive performance fall earlier and faster than endurance performance. Expect burpee broad jumps and wall-ball power to age worse than the runs.",
+    "Strength declines ≈5-10% per decade in consistently training masters; ≈10-15% per decade after 30 when sedentary, and up to ≈30% per decade after 60. Inter-individual variation is large.",
+    "Determinants of strength that age: muscle cross-sectional area, fibre-type distribution and fast-twitch recruitment, motor unit number and firing rate, neuromuscular coordination, and tendon stiffness.",
+    "Motor unit loss becomes pronounced after roughly 70 and tracks with strength loss, but firing rate and coordination remain trainable — 'use it or lose it' is mechanistically accurate here.",
+    "Tendons lose stiffness and elasticity with age, reducing elastic energy return in running and raising injury risk under impact. Strength and plyometric training promote collagen remodelling and can maintain or improve tendon stiffness.",
+    "VO2max decline by activity level: ≈10% per decade sedentary, ≈5-7% active, ≈3-5% highly trained, and as little as ≈2-3% per decade in well-trained masters until ~50, accelerating thereafter.",
+    "The VO2max fall is driven mainly by central factors: reduced maximal cardiac output, itself driven mainly by reduced maximal stroke volume, plus a maximal heart rate decline of roughly 0.2 beats/min per year.",
+    "Mechanisms of maximal heart rate decline include slower cardiac conduction velocity and reduced sinoatrial node responsiveness to sympathetic drive.",
+    "Exercise economy and lactate/ventilatory thresholds are comparatively preserved with age. Endurance performance therefore declines less steeply than VO2max alone predicts.",
+    "Because economy and threshold hold up, HYROX's long aerobic demand suits masters athletes better than short maximal efforts — but compromised running still punishes lost leg stiffness.",
+    "Maintaining intensity matters more than maintaining volume: much of the apparent 'ageing' decline in the research is confounded by athletes reducing training intensity and volume as they age.",
+    "Injury risk rises with reduced tissue compliance and slower recovery, so masters programming buys its hard sessions with more recovery days rather than by removing intensity."
+   ],
+   "training_link": "With a 48-year-old athlete, the instinct is to soften everything — that is exactly backwards. Keep the hard sessions hard, because intensity is what defends VO2max and motor unit firing rate; buy them with an extra easy or off day rather than by turning intervals into tempo. Put real strength training and low-volume, crisp plyometrics in the week specifically to defend tendon stiffness and power, since those are the qualities decaying fastest and the ones the burpee broad jump and wall balls will expose. Lean into what ages well: their economy and threshold are largely intact, so the eight runs and the aerobic middle of the race are where they stay competitive. Then watch tissue tolerance closely — niggles that a 25-year-old runs through will become the thing that ends the block.",
+   "glossary": [
+    {
+     "term": "Masters athlete",
+     "def": "An athlete competing in an age-graded category, conventionally from 35 or 40 years upward depending on sport, typically in competition designed for older participants.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"16\" y=\"8\" width=\"34\" height=\"26\" rx=\"2\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"1.6\"/><path d=\"M22 16h22M22 22h22M22 28h14\" stroke=\"#67e8b0\" stroke-width=\"1.6\"/></svg>"
+    },
+    {
+     "term": "Sarcopenia",
+     "def": "Age-related loss of muscle mass and function, driven by fibre atrophy, motor unit loss and reduced anabolic signalling, and substantially attenuated by strenuous resistance training.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M8 12 C26 13 44 22 72 33\" fill=\"none\" stroke=\"#ffb86b\" stroke-width=\"2\"/><line x1=\"8\" y1=\"34\" x2=\"72\" y2=\"34\" stroke=\"#3a4a5e\" stroke-width=\"1\"/></svg>"
+    },
+    {
+     "term": "Maximal cardiac output",
+     "def": "The greatest volume of blood the heart can pump per minute — the product of maximal heart rate and maximal stroke volume. Its age-related fall is the main driver of declining VO2max.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M8 12 C26 13 44 22 72 33\" fill=\"none\" stroke=\"#ffb86b\" stroke-width=\"2\"/><line x1=\"8\" y1=\"34\" x2=\"72\" y2=\"34\" stroke=\"#3a4a5e\" stroke-width=\"1\"/></svg>"
+    },
+    {
+     "term": "Tendon stiffness",
+     "def": "A tendon's resistance to lengthening under load, governing how efficiently force transfers from muscle to bone and how much elastic energy is returned in running. Declines with age but is trainable.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M8 26 C20 26 22 32 32 32 C46 32 46 12 66 12\" fill=\"none\" stroke=\"#67e8b0\" stroke-width=\"2\"/><line x1=\"8\" y1=\"24\" x2=\"72\" y2=\"24\" stroke=\"#3a4a5e\" stroke-width=\"1\" stroke-dasharray=\"3 2\"/></svg>"
+    },
+    {
+     "term": "Exercise economy",
+     "def": "The oxygen or energy cost of moving at a given submaximal speed or power. Comparatively well preserved with age, which cushions endurance performance decline.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M8 32 C24 30 34 14 44 14 S62 22 72 10\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"2\"/><circle cx=\"44\" cy=\"14\" r=\"2.5\" fill=\"#5ec8ff\"/></svg>"
+    },
+    {
+     "term": "Motor unit",
+     "def": "A motor neuron and all the muscle fibres it innervates. Numbers fall and firing rates slow with age, degrading force production and fine control unless training defends them.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M10 20h20M30 20l14-9M30 20l14 9\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"2\"/><circle cx=\"48\" cy=\"11\" r=\"3\" fill=\"#67e8b0\"/><circle cx=\"48\" cy=\"29\" r=\"3\" fill=\"#ffb86b\"/></svg>"
+    }
+   ],
+   "relevant": true,
+   "exam_focus": "Explain which performance qualities decline fastest with age and why, quote approximate decline rates by training status, and justify a masters programme that preserves intensity while managing recovery and tissue tolerance.",
+   "figures": []
+  },
+  "79": {
+   "title": "The high-performance athlete",
+   "topic_id": "pc_highperf",
+   "domain": "CM",
+   "chapter": "Module 10",
+   "page_refs": "Personalized Performance Coaching",
+   "key_concept": "At the elite end the coaching problem inverts. The recreational athlete improves from almost any coherent stimulus; the high-performance athlete has already harvested the easy adaptations, so gains are small, slow and expensive, and the risk of over-reaching outweighs the risk of under-training. Programming becomes an exercise in precision: narrow the number of qualities being developed at once, protect the few sessions that actually drive the result, and treat everything else as maintenance or recovery. Monitoring shifts from motivational to diagnostic — you are looking for early divergence between prescribed and actual output. The elite HYROX profile is a genuine hybrid: the ability to hold near-threshold running for eight repetitions while absorbing eight strength-endurance stations, with roxzone efficiency and station pacing worth minutes. Because the margins are small, the coach's leverage moves toward the non-training variables — sleep, travel, nutrition timing, race-day logistics, and the psychological load of expectation.",
+   "key_facts": [
+    "Diminishing returns: the trained athlete needs a larger, better-targeted stimulus for a smaller adaptation, and the window between productive overload and non-functional overreaching narrows.",
+    "Develop one or at most two qualities per block; at elite level attempting three concurrently reliably produces three mediocre outcomes.",
+    "Protect the 'key sessions' — usually two or three per week that actually drive the target adaptation. Everything else exists to allow those to be performed at quality.",
+    "Polarised or pyramidal intensity distributions dominate elite endurance practice: a large majority of easy volume supporting a small, genuinely hard fraction.",
+    "The interference effect becomes more relevant, not less, as both strength and endurance qualities approach their ceilings. Separate incompatible sessions by time or day where possible.",
+    "Monitoring must be objective and longitudinal: session RPE and load, HRV trends, morning readiness, power/pace at fixed HR, and — most usefully — performance at a repeated benchmark session.",
+    "Elite HYROX performance is limited less often by raw strength than by compromised running and the ability to hold pace on legs already loaded by the sled and lunges.",
+    "Roxzone and transition discipline are worth meaningful time even at the front of the field; at elite level these are rehearsed, not improvised.",
+    "Pacing at elite level is a modelled plan, not a feel — target splits per run and per station, with a defined response if a station goes badly.",
+    "Marginal gains only pay once the fundamentals are saturated: sleep duration and regularity, fuelling, heat and travel management, and equipment familiarity.",
+    "Psychological load rises with expectation; performing under pressure and pre-race routine become trainable, programmed content rather than personality traits.",
+    "Injury and illness cost more here because the training density leaves no slack. Availability — the proportion of planned sessions actually completed — is itself a top-tier performance metric.",
+    "Long-term progression is measured across seasons, not blocks. A year of 2% improvement is an excellent outcome at this level."
+   ],
+   "training_link": "With an athlete already near their ceiling, resist the urge to add. Pick the one quality that will actually change the result — usually compromised running or sled-to-run transition — and build the week so two or three key sessions land fresh, with everything else deliberately easy. Set a repeatable benchmark session and run it every four to six weeks; that number tells you more than any wearable. Watch the gap between prescribed and achieved output, because at this level the first sign of overreaching is an athlete quietly failing to hit paces they hit a fortnight ago. Then spend your remaining attention off the training floor: sleep regularity, fuelling, travel, and rehearsing race-day pressure. That is where the last minutes live.",
+   "glossary": [
+    {
+     "term": "Diminishing returns",
+     "def": "The principle that as training status rises, a given stimulus produces progressively smaller adaptation, requiring greater precision and larger relative effort for less gain.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M8 32 C24 30 34 14 44 14 S62 22 72 10\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"2\"/><circle cx=\"44\" cy=\"14\" r=\"2.5\" fill=\"#5ec8ff\"/></svg>"
+    },
+    {
+     "term": "Non-functional overreaching",
+     "def": "Accumulated fatigue that produces a performance decrement requiring weeks rather than days to resolve, without the supercompensation that follows functional overreaching.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M8 12 C26 13 44 22 72 33\" fill=\"none\" stroke=\"#ffb86b\" stroke-width=\"2\"/><line x1=\"8\" y1=\"34\" x2=\"72\" y2=\"34\" stroke=\"#3a4a5e\" stroke-width=\"1\"/></svg>"
+    },
+    {
+     "term": "Key session",
+     "def": "A session that directly drives the block's target adaptation. Its quality is protected by scheduling everything else around it.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"14\" y=\"10\" width=\"52\" height=\"22\" rx=\"3\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"1.6\"/><path d=\"M40 10v22\" stroke=\"#ffb86b\" stroke-width=\"2\"/><path d=\"M20 21h14M46 21h14\" stroke=\"#67e8b0\" stroke-width=\"1.6\"/></svg>"
+    },
+    {
+     "term": "Polarised training",
+     "def": "An intensity distribution concentrating most volume below the first threshold and a small fraction above the second, with comparatively little time in between.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M10 20h20M30 20l14-9M30 20l14 9\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"2\"/><circle cx=\"48\" cy=\"11\" r=\"3\" fill=\"#67e8b0\"/><circle cx=\"48\" cy=\"29\" r=\"3\" fill=\"#ffb86b\"/></svg>"
+    },
+    {
+     "term": "Availability",
+     "def": "The proportion of planned training an athlete actually completes. At elite level it correlates with outcome as strongly as any physiological marker.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M8 26 C20 26 22 32 32 32 C46 32 46 12 66 12\" fill=\"none\" stroke=\"#67e8b0\" stroke-width=\"2\"/><line x1=\"8\" y1=\"24\" x2=\"72\" y2=\"24\" stroke=\"#3a4a5e\" stroke-width=\"1\" stroke-dasharray=\"3 2\"/></svg>"
+    },
+    {
+     "term": "Benchmark session",
+     "def": "A standardised, repeated session used as a longitudinal performance probe, giving a directly comparable data point across a training year.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"16\" y=\"8\" width=\"34\" height=\"26\" rx=\"2\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"1.6\"/><path d=\"M22 16h22M22 22h22M22 28h14\" stroke=\"#67e8b0\" stroke-width=\"1.6\"/></svg>"
+    }
+   ],
+   "relevant": true,
+   "exam_focus": "Explain why programming for a highly trained athlete prioritises precision, session protection and monitoring over added volume, and identify early markers of non-functional overreaching.",
+   "figures": []
+  },
+  "80": {
+   "title": "The adapted athlete",
+   "topic_id": "pc_adapted",
+   "domain": "CM",
+   "chapter": "Module 10",
+   "page_refs": "Personalized Performance Coaching",
+   "key_concept": "Adapted coaching starts from function, not diagnosis. Two athletes with the same label can have entirely different capacities, so the assessment question is what this athlete can do, what they can do with modification, and what genuinely must be substituted. HYROX supports adaptive participation, and the coaching craft lies in preserving the training intent of each station while changing the movement, load or implement: the sled's intent is heavy horizontal strength-endurance, the wall ball's is repeated squat-to-overhead local muscular endurance, and either intent can survive a substituted movement. Alongside the physical modification sit population-specific medical considerations that a coach must know about and screen for — autonomic dysreflexia and thermoregulatory impairment in spinal cord injury, skin and pressure management, seating and wheelchair configuration, and the higher shoulder-injury burden of wheelchair athletes. The most common coaching failure is not unsafe programming but low expectation: adapted athletes are routinely under-loaded relative to their real capacity.",
+   "key_facts": [
+    "Classify by function, not diagnosis. Assess available range, strength, balance, endurance, thermoregulatory capacity and fatigue pattern in front of you.",
+    "Preserve training intent when substituting: match the energy system, the muscular demand and the duration, and accept that the movement itself may change entirely.",
+    "Station intents to preserve — SkiErg/Row: upper-body and trunk aerobic-strength endurance; Sleds: heavy horizontal push/pull strength-endurance; Burpee broad jump: whole-body cyclical power with a floor transition; Farmers carry: grip and trunk stiffness under load; Sandbag lunges: unilateral leg endurance; Wall balls: repeated squat-to-overhead local muscular endurance.",
+    "Spinal cord injury above roughly T6 carries autonomic dysreflexia risk — a dangerous hypertensive response to a noxious stimulus below the lesion. Know the signs (pounding headache, flushing, sweating above the lesion, bradycardia) and the immediate response: stop, sit upright, find and remove the trigger, seek medical help.",
+    "Thermoregulation is impaired below the level of a spinal cord lesion (reduced sweating and vasomotor control). Plan active cooling, shorter heat exposure and more frequent fluid access.",
+    "Wheelchair athletes carry a high shoulder-injury burden from propulsion plus overhead training. Balance pushing volume with posterior chain, scapular and external-rotation work.",
+    "Skin integrity and pressure management matter: check contact points, transfer technique and equipment fit, because a pressure injury costs far more training time than any session gains.",
+    "Boosting — deliberately inducing autonomic dysreflexia for performance — is prohibited and dangerous. Coaches should know it exists and never facilitate it.",
+    "Visual impairment coaching relies on verbal and tactile cueing, consistent spatial set-up, and guide protocols; keep equipment layout unchanged between sessions.",
+    "For limb difference and prosthetic users, socket tolerance and residual-limb skin load often cap volume before cardiovascular fitness does. Progress running volume conservatively.",
+    "Neurological conditions affecting tone, coordination or fatigue (for example cerebral palsy, MS) need session timing built around the athlete's fatigue pattern, not a fixed weekly template.",
+    "Communicate directly with the athlete, not a companion, and use the language the athlete uses about themselves.",
+    "Work inside the multidisciplinary team — physiotherapist, clinician, prosthetist, equipment specialist — and refer early. Scope of practice tightens, it does not loosen, with medical complexity."
+   ],
+   "training_link": "Start with a movement audit rather than a diagnosis: what can this athlete load, through what range, for how long, and what makes them fatigue. Then rebuild each station around its intent — if a standing lunge is not available, you still need unilateral or single-side leg endurance; if a wall ball is not available, you still need repeated squat-to-overhead local muscular endurance under a clock. Screen for the population-specific risks before you write anything: autonomic dysreflexia and cooling for higher spinal cord injuries, shoulder load and skin checks for wheelchair users, socket tolerance for prosthetic users. Keep the training environment physically consistent so an athlete with visual impairment can move confidently. And check your expectations — the most common mistake is prescribing too little, not too much.",
+   "glossary": [
+    {
+     "term": "Functional classification",
+     "def": "Grouping athletes by what they can physically do rather than by medical diagnosis, so that programming and competition reflect actual capacity.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"16\" y=\"8\" width=\"34\" height=\"26\" rx=\"2\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"1.6\"/><path d=\"M22 16h22M22 22h22M22 28h14\" stroke=\"#67e8b0\" stroke-width=\"1.6\"/></svg>"
+    },
+    {
+     "term": "Training intent",
+     "def": "The physiological and muscular purpose of an exercise, as distinct from its specific movement. Preserving intent lets a coach substitute a movement without losing the adaptation.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"24\" cy=\"20\" r=\"9\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"2\"/><path d=\"M40 20h22M54 13l8 7-8 7\" fill=\"none\" stroke=\"#67e8b0\" stroke-width=\"2\"/></svg>"
+    },
+    {
+     "term": "Autonomic dysreflexia",
+     "def": "A potentially dangerous hypertensive response to a noxious stimulus below a spinal cord lesion, typically at T6 or above. A medical emergency requiring immediate trigger removal and upright positioning.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"14\" y=\"10\" width=\"52\" height=\"22\" rx=\"3\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"1.6\"/><path d=\"M40 10v22\" stroke=\"#ffb86b\" stroke-width=\"2\"/><path d=\"M20 21h14M46 21h14\" stroke=\"#67e8b0\" stroke-width=\"1.6\"/></svg>"
+    },
+    {
+     "term": "Boosting",
+     "def": "Deliberately provoking autonomic dysreflexia to raise blood pressure and performance. Prohibited in competition and hazardous to health.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M8 12 C26 13 44 22 72 33\" fill=\"none\" stroke=\"#ffb86b\" stroke-width=\"2\"/><line x1=\"8\" y1=\"34\" x2=\"72\" y2=\"34\" stroke=\"#3a4a5e\" stroke-width=\"1\"/></svg>"
+    },
+    {
+     "term": "Residual limb tolerance",
+     "def": "The load and duration a prosthetic user's residual limb and socket interface can absorb before skin or tissue breakdown. Frequently the true volume limiter.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"14\" y=\"10\" width=\"52\" height=\"22\" rx=\"3\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"1.6\"/><path d=\"M40 10v22\" stroke=\"#ffb86b\" stroke-width=\"2\"/><path d=\"M20 21h14M46 21h14\" stroke=\"#67e8b0\" stroke-width=\"1.6\"/></svg>"
+    },
+    {
+     "term": "Movement substitution",
+     "def": "Replacing a prescribed exercise with an alternative that matches its energy system, muscular demand and duration while fitting the athlete's available function.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M10 20h20M30 20l14-9M30 20l14 9\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"2\"/><circle cx=\"48\" cy=\"11\" r=\"3\" fill=\"#67e8b0\"/><circle cx=\"48\" cy=\"29\" r=\"3\" fill=\"#ffb86b\"/></svg>"
+    }
+   ],
+   "relevant": true,
+   "exam_focus": "Given an adapted athlete's functional profile, substitute HYROX stations while preserving training intent, and identify the population-specific medical risks that must be screened and referred.",
+   "figures": []
+  },
+  "81": {
+   "title": "The doubles athlete",
+   "topic_id": "pc_doubles",
+   "domain": "CM",
+   "chapter": "Module 10",
+   "page_refs": "Personalized Performance Coaching",
+   "key_concept": "Doubles is a genuinely different event, not a halved single race. Both partners run every metre together, but station work is shared — so the total running volume is unchanged while station volume per athlete roughly halves, and the intensity at which stations are performed rises sharply because each athlete works in bursts with recovery. That changes the physiological profile: doubles rewards repeated high-intensity efforts and fast recovery between them more than steady strength-endurance, and it rewards pace-matching in the runs. The coaching problem becomes pairing and strategy as much as conditioning. Partners must be matched closely enough on running pace that neither is racing at the wrong intensity for the full 8 km, while their station strengths ideally complement each other so the work split can be asymmetric where it pays. Communication, changeover mechanics and a pre-agreed contingency plan for when one partner degrades are the difference between a good pair and two good individuals racing badly together.",
+   "key_facts": [
+    "In doubles both athletes complete all 8 km of running together; only the station work is divided. Running volume per athlete is unchanged from the individual race.",
+    "Because station work is shared, each athlete performs roughly half the station volume — but at a higher intensity, with partial recovery between bursts.",
+    "The physiological emphasis shifts toward repeated high-intensity work capacity and recovery between efforts, rather than sustained strength-endurance at a moderate intensity.",
+    "Running pace compatibility is the single biggest pairing criterion: the pair runs at the slower partner's sustainable pace, and a mismatched faster partner spends the race under-working while the slower one runs over threshold.",
+    "Complementary station strengths allow an asymmetric split — give a partner more of the station they are strong at rather than defaulting to 50/50 everywhere.",
+    "Changeover cost is real. Every swap has a transition cost, so fewer, larger blocks are usually faster than many small alternations, unless fatigue forces the split.",
+    "Agree the split per station in advance, including the fallback if someone is struggling. Improvising splits mid-race under hypoxic stress produces poor decisions.",
+    "Wall balls at the end are where pairs most often unravel — plan the break pattern and the swap trigger (a rep count, not a feeling) before the race.",
+    "Sled push and pull are usually where a strength mismatch pays most: assign the stronger partner a larger share, since sled time is highly sensitive to absolute strength.",
+    "Train together at least some of the time. Changeover mechanics, communication under load and shared pacing are skills, and they degrade under fatigue like any other.",
+    "Communication should be pre-agreed and minimal — short, unambiguous calls, because complex verbal exchange at race intensity fails.",
+    "Doubles pacing errors usually come from the early runs: the pair feels fresh because station work was shared and goes out too hard, then pays over the back half.",
+    "The psychological dimension cuts both ways — accountability to a partner raises effort, but guilt at holding a partner back can push an athlete past sustainable intensity. Manage it explicitly."
+   ],
+   "training_link": "Pair on running pace first and station strengths second — if their sustainable 1 km pace differs by much, no amount of clever station splitting will fix the race. Once paired, write the split station by station before race week, giving the stronger partner more of the sled and pre-agreeing the wall-ball break pattern with a rep-count swap trigger rather than 'when I'm cooked'. Train the changeovers, because the transition is a skill and a sloppy swap costs seconds every station. Programme for the actual demand: shorter, harder station intervals with incomplete recovery, run at a shared pace, rather than the long grinding station sets a solo athlete needs. And rehearse the contingency — what happens when one of them blows up — so the answer exists before they need it.",
+   "glossary": [
+    {
+     "term": "Work split",
+     "def": "The pre-agreed division of station repetitions or distance between doubles partners, ideally asymmetric to exploit complementary strengths.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"28\" cy=\"20\" r=\"8\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"2\"/><circle cx=\"52\" cy=\"20\" r=\"8\" fill=\"none\" stroke=\"#67e8b0\" stroke-width=\"2\"/><path d=\"M36 20h8\" stroke=\"#ffb86b\" stroke-width=\"2\"/></svg>"
+    },
+    {
+     "term": "Changeover",
+     "def": "The transition when doubles partners swap on a station. Each swap carries a time cost, so the number of swaps is itself a strategic variable.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M10 20h20M30 20l14-9M30 20l14 9\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"2\"/><circle cx=\"48\" cy=\"11\" r=\"3\" fill=\"#67e8b0\"/><circle cx=\"48\" cy=\"29\" r=\"3\" fill=\"#ffb86b\"/></svg>"
+    },
+    {
+     "term": "Pace compatibility",
+     "def": "How closely two partners' sustainable running paces match. The pair necessarily runs at the slower athlete's sustainable pace, making this the primary pairing criterion.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"28\" cy=\"20\" r=\"8\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"2\"/><circle cx=\"52\" cy=\"20\" r=\"8\" fill=\"none\" stroke=\"#67e8b0\" stroke-width=\"2\"/><path d=\"M36 20h8\" stroke=\"#ffb86b\" stroke-width=\"2\"/></svg>"
+    },
+    {
+     "term": "Swap trigger",
+     "def": "An objective, pre-agreed cue — usually a rep count or distance — that dictates when partners change over, replacing in-race judgement under fatigue.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"14\" y=\"10\" width=\"52\" height=\"22\" rx=\"3\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"1.6\"/><path d=\"M40 10v22\" stroke=\"#ffb86b\" stroke-width=\"2\"/><path d=\"M20 21h14M46 21h14\" stroke=\"#67e8b0\" stroke-width=\"1.6\"/></svg>"
+    },
+    {
+     "term": "Repeated high-intensity capacity",
+     "def": "The ability to produce and repeat near-maximal efforts with partial recovery between them. The dominant station quality in doubles racing.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M8 26 C20 26 22 32 32 32 C46 32 46 12 66 12\" fill=\"none\" stroke=\"#67e8b0\" stroke-width=\"2\"/><line x1=\"8\" y1=\"24\" x2=\"72\" y2=\"24\" stroke=\"#3a4a5e\" stroke-width=\"1\" stroke-dasharray=\"3 2\"/></svg>"
+    },
+    {
+     "term": "Asymmetric split",
+     "def": "Allocating a larger share of a station to the partner better suited to it, rather than dividing every station equally.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"24\" cy=\"20\" r=\"9\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"2\"/><path d=\"M40 20h22M54 13l8 7-8 7\" fill=\"none\" stroke=\"#67e8b0\" stroke-width=\"2\"/></svg>"
+    }
+   ],
+   "relevant": true,
+   "exam_focus": "Explain how the doubles format changes the physiological demand relative to the individual race, and justify a pairing decision plus a station-by-station work split with defined swap triggers.",
+   "figures": []
+  },
+  "82": {
+   "title": "Self-determination theory & the performance environment",
+   "topic_id": "mp_sdt",
+   "domain": "CM",
+   "chapter": "Module 9",
+   "page_refs": "Mental Performance",
+   "key_concept": "Self-determination theory is the most useful motivational framework a coach can hold, because it explains not just how much motivation an athlete has but what kind. It proposes three basic psychological needs — autonomy (a sense of volition and ownership), competence (a sense of effectiveness and progress) and relatedness (a sense of genuine connection). Environments that satisfy those needs shift athletes along a continuum from external regulation, where behaviour is driven by reward, punishment or obligation, toward identified and intrinsic regulation, where behaviour is driven by personal value and enjoyment. That shift matters practically: intrinsically motivated athletes show better persistence, higher training quality, greater resilience after setbacks and lower dropout. The corollary is that performance and well-being are not in tension. A need-supportive environment produces both; a controlling environment can buy short-term compliance while eroding the very motivation that sustains a long HYROX build. The coach's leverage sits in small, repeatable behaviours — offering meaningful choice, giving competence-affirming feedback and showing unconditional regard.",
+   "key_facts": [
+    "SDT's three basic psychological needs: autonomy (volition and ownership), competence (effectiveness and visible progress), relatedness (genuine connection and belonging).",
+    "Motivation sits on a continuum, not a switch: amotivation → external regulation → introjected → identified → integrated → intrinsic. Coaching moves athletes along it.",
+    "External regulation (racing to avoid a coach's disapproval) is fragile and collapses under adversity. Identified and intrinsic regulation persist.",
+    "Introjected regulation — training driven by guilt, shame or ego protection — often looks like great commitment and is a common precursor to burnout.",
+    "Need-supportive coaching behaviours: offer meaningful choices, explain the rationale for sessions, acknowledge the athlete's perspective and feelings, and give informational rather than controlling feedback.",
+    "Need-thwarting behaviours: controlling language ('you must', 'you have to'), conditional regard, guilt induction, and public comparison between athletes.",
+    "Autonomy support does not mean athlete-led. The coach still owns method and safety; the athlete owns the 'why' and gets genuine input into the 'how'.",
+    "Competence is built by visible, attributable progress — hence benchmark sessions, split comparisons and process goals rather than only outcome goals.",
+    "Relatedness is a performance variable in HYROX, where much training is solitary. Group sessions, training partners and community are legitimate programming decisions.",
+    "Performance and well-being are complementary, not a trade-off. Environments that sacrifice well-being for short-term output tend to lose both over a season.",
+    "A motivational climate can be mastery-oriented (defined by improvement and effort) or ego-oriented (defined by beating others). Mastery climates predict better persistence and lower anxiety.",
+    "Practical diagnostic: ask why an athlete trains. Answers about identity, enjoyment and personal standards signal internal regulation; answers about obligation and other people's expectations signal fragility.",
+    "Autonomy is cheap to give: a choice between two acceptable sessions, or over session order, restores ownership without compromising the plan."
+   ],
+   "training_link": "Notice how you phrase a session. 'You have to hit these splits' and 'here's why these splits matter, and you can run them Tuesday or Wednesday' produce the same training and different athletes. Give real choices where the plan allows — which of two conditioning options, what order the week runs in — and always explain the rationale, because understanding is what converts compliance into ownership. Feed competence with visible progress: keep a benchmark session, show them their splits improving, and praise the process they controlled rather than the outcome they partly didn't. Build in relatedness deliberately, since HYROX training is lonely; a weekly group session is a motivational intervention, not just a workout. And listen for the athlete who trains out of guilt — that one looks like your most committed athlete right up until they burn out.",
+   "glossary": [
+    {
+     "term": "Self-determination theory",
+     "def": "A motivational framework holding that satisfying the needs for autonomy, competence and relatedness moves behaviour from externally controlled toward intrinsically motivated.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"26\" cy=\"14\" r=\"6\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"1.8\"/><circle cx=\"40\" cy=\"28\" r=\"6\" fill=\"none\" stroke=\"#67e8b0\" stroke-width=\"1.8\"/><circle cx=\"54\" cy=\"14\" r=\"6\" fill=\"none\" stroke=\"#ffb86b\" stroke-width=\"1.8\"/><path d=\"M31 18l6 6M49 18l-6 6M32 14h16\" stroke=\"#3a4a5e\" stroke-width=\"1.2\"/></svg>"
+    },
+    {
+     "term": "Autonomy",
+     "def": "The sense of acting with volition and ownership over one's behaviour. Supported by meaningful choice and rationale, not by removing coach expertise.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M10 20h20M30 20l14-9M30 20l14 9\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"2\"/><circle cx=\"48\" cy=\"11\" r=\"3\" fill=\"#67e8b0\"/><circle cx=\"48\" cy=\"29\" r=\"3\" fill=\"#ffb86b\"/></svg>"
+    },
+    {
+     "term": "Competence",
+     "def": "The sense of being effective and making visible progress. Built by attributable improvement, process goals and honest informational feedback.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M8 26 C20 26 22 32 32 32 C46 32 46 12 66 12\" fill=\"none\" stroke=\"#67e8b0\" stroke-width=\"2\"/><line x1=\"8\" y1=\"24\" x2=\"72\" y2=\"24\" stroke=\"#3a4a5e\" stroke-width=\"1\" stroke-dasharray=\"3 2\"/></svg>"
+    },
+    {
+     "term": "Relatedness",
+     "def": "The sense of genuine connection and belonging within a training environment. A legitimate performance variable in an individual sport.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"26\" cy=\"14\" r=\"6\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"1.8\"/><circle cx=\"40\" cy=\"28\" r=\"6\" fill=\"none\" stroke=\"#67e8b0\" stroke-width=\"1.8\"/><circle cx=\"54\" cy=\"14\" r=\"6\" fill=\"none\" stroke=\"#ffb86b\" stroke-width=\"1.8\"/><path d=\"M31 18l6 6M49 18l-6 6M32 14h16\" stroke=\"#3a4a5e\" stroke-width=\"1.2\"/></svg>"
+    },
+    {
+     "term": "Introjected regulation",
+     "def": "Behaviour driven by internal pressure such as guilt, shame or ego protection. Superficially resembles high commitment but predicts burnout.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M8 12 C26 13 44 22 72 33\" fill=\"none\" stroke=\"#ffb86b\" stroke-width=\"2\"/><line x1=\"8\" y1=\"34\" x2=\"72\" y2=\"34\" stroke=\"#3a4a5e\" stroke-width=\"1\"/></svg>"
+    },
+    {
+     "term": "Mastery climate",
+     "def": "A motivational environment defining success as personal improvement and effort rather than beating others. Associated with greater persistence and lower anxiety.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M8 26 C20 26 22 32 32 32 C46 32 46 12 66 12\" fill=\"none\" stroke=\"#67e8b0\" stroke-width=\"2\"/><line x1=\"8\" y1=\"24\" x2=\"72\" y2=\"24\" stroke=\"#3a4a5e\" stroke-width=\"1\" stroke-dasharray=\"3 2\"/></svg>"
+    }
+   ],
+   "relevant": true,
+   "exam_focus": "Identify which basic psychological need an environment is thwarting from a coaching scenario, and prescribe specific need-supportive behaviours to shift an athlete's regulation.",
+   "figures": []
+  },
+  "83": {
+   "title": "Coaching neurodivergent athletes",
+   "topic_id": "mp_neurodiversity",
+   "domain": "CM",
+   "chapter": "Module 9",
+   "page_refs": "Mental Performance",
+   "key_concept": "Neurodivergence describes natural variation in how brains process information, attention, sensory input and social interaction — including ADHD, autism, dyslexia, dyspraxia and Tourette's. The coaching frame is accommodation and environment design, not deficit correction. Many of the traits involved cut both ways in sport: hyperfocus can produce extraordinary training consistency and also make it hard to stop when stopping is correct; sensory sensitivity can make a loud, crowded, echoing HYROX venue genuinely overwhelming; a strong preference for routine can be a performance asset and a source of distress when a session changes without warning. Practically, the coach's job is to reduce unnecessary cognitive and sensory load — clear unambiguous instructions, predictable structure, advance notice of change, written as well as verbal information — and to ask the athlete directly what helps rather than inferring it. A coach is not diagnosing, and should never attempt to; the skills are inclusive communication, environmental adjustment and knowing when to refer.",
+   "key_facts": [
+    "Neurodivergence covers natural neurological variation — ADHD, autism, dyslexia, dyspraxia, Tourette's among others — not illness or deficit.",
+    "Coaches do not diagnose. The role is to accommodate presentation, adjust the environment and refer to appropriate professionals when needed.",
+    "Ask the athlete what helps. Self-reported accommodations are far more accurate than assumptions based on a label.",
+    "Reduce ambiguity: give instructions that are literal, specific and sequenced. 'Three rounds, 10 wall balls, 200 m run, rest 90 seconds' beats 'just go a few rounds and see how you feel'.",
+    "Provide information in more than one channel — written or demonstrated as well as spoken — because processing preferences differ.",
+    "Give advance notice of changes to session, venue or timing. Unannounced change is a disproportionate stressor where routine is a coping structure.",
+    "Sensory load is a real performance variable: noise, echo, crowding, lighting and heat at a HYROX venue can be overwhelming. Plan arrival timing, warm-up location, and consider ear defenders or noise-cancelling headphones.",
+    "Executive function differences affect planning, sequencing, time management and task initiation — not effort or motivation. Structure and external scaffolding help; nagging does not.",
+    "Hyperfocus is an asset and a risk: it can drive exceptional consistency and can also override fatigue signals and drive overtraining. Build explicit stop rules.",
+    "Break long or complex sessions into discrete, clearly bounded chunks with defined start and end points.",
+    "Masking — suppressing natural responses to appear neurotypical — is exhausting and can hide distress. An athlete coping visibly well may still be depleting.",
+    "Use the language the athlete uses about themselves, and never disclose their neurodivergence to others without explicit permission.",
+    "Inclusive design mostly helps everyone: clearer instructions, predictable structure and lower sensory chaos improve the environment for the whole group."
+   ],
+   "training_link": "Start by asking, not guessing: what makes sessions easier, what makes them harder, and how do you like information given. Then write your sessions differently — literal, numbered, unambiguous, with the rest periods and stop points specified rather than left to feel. Send the session in advance and flag any change as early as you can, because a last-minute switch of venue costs some athletes far more than it costs you. For race day, plan the sensory side as deliberately as the pacing: when to arrive, where to warm up away from the noise, whether ear defenders help. And if you have an athlete whose hyperfocus means they never miss a session and never back off, give them an explicit stop rule — they will follow a written rule far more reliably than a vague instruction to listen to their body.",
+   "glossary": [
+    {
+     "term": "Neurodivergence",
+     "def": "Natural variation in neurological processing of attention, sensory input, information and social interaction. A difference to accommodate, not a deficit to correct.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"26\" cy=\"14\" r=\"6\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"1.8\"/><circle cx=\"40\" cy=\"28\" r=\"6\" fill=\"none\" stroke=\"#67e8b0\" stroke-width=\"1.8\"/><circle cx=\"54\" cy=\"14\" r=\"6\" fill=\"none\" stroke=\"#ffb86b\" stroke-width=\"1.8\"/><path d=\"M31 18l6 6M49 18l-6 6M32 14h16\" stroke=\"#3a4a5e\" stroke-width=\"1.2\"/></svg>"
+    },
+    {
+     "term": "Executive function",
+     "def": "Cognitive processes governing planning, sequencing, task initiation, working memory and time management. Differences here affect organisation, not effort or motivation.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"16\" y=\"8\" width=\"34\" height=\"26\" rx=\"2\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"1.6\"/><path d=\"M22 16h22M22 22h22M22 28h14\" stroke=\"#67e8b0\" stroke-width=\"1.6\"/></svg>"
+    },
+    {
+     "term": "Sensory load",
+     "def": "The cumulative demand of noise, light, crowding, heat and touch in an environment. A genuine performance variable at loud, crowded race venues.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M8 20 Q16 6 24 20 T40 20 T56 20 T72 20\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"2\"/></svg>"
+    },
+    {
+     "term": "Masking",
+     "def": "Consciously suppressing natural responses to appear neurotypical. Highly effortful and capable of concealing significant distress.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M8 12 C26 13 44 22 72 33\" fill=\"none\" stroke=\"#ffb86b\" stroke-width=\"2\"/><line x1=\"8\" y1=\"34\" x2=\"72\" y2=\"34\" stroke=\"#3a4a5e\" stroke-width=\"1\"/></svg>"
+    },
+    {
+     "term": "Hyperfocus",
+     "def": "Sustained, intense absorption in a task. An asset for training consistency and a risk factor for overriding fatigue signals.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"14\" y=\"10\" width=\"52\" height=\"22\" rx=\"3\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"1.6\"/><path d=\"M40 10v22\" stroke=\"#ffb86b\" stroke-width=\"2\"/><path d=\"M20 21h14M46 21h14\" stroke=\"#67e8b0\" stroke-width=\"1.6\"/></svg>"
+    },
+    {
+     "term": "Accommodation",
+     "def": "A deliberate adjustment to environment, communication or structure that removes an unnecessary barrier without lowering the performance standard.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"24\" cy=\"20\" r=\"9\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"2\"/><path d=\"M40 20h22M54 13l8 7-8 7\" fill=\"none\" stroke=\"#67e8b0\" stroke-width=\"2\"/></svg>"
+    }
+   ],
+   "relevant": true,
+   "exam_focus": "Given a neurodivergent athlete's presentation, prescribe communication and environmental accommodations, and state the boundary between coaching accommodation and clinical diagnosis.",
+   "figures": []
+  },
+  "84": {
+   "title": "The winner's mindset & core performance principles",
+   "topic_id": "mp_winners",
+   "domain": "CM",
+   "chapter": "Module 9",
+   "page_refs": "Mental Performance",
+   "key_concept": "A 'winner's mindset' is not a personality type an athlete either has or lacks — it is a set of trainable habits of attention, interpretation and response. The core performance principles that recur across elite sport psychology are: control the controllables and disengage from everything else; focus on process over outcome, because process is what the athlete can actually execute; interpret arousal as readiness rather than threat; hold a growth orientation in which setbacks are information rather than verdicts; and respond to failure with a short, structured reset rather than rumination. Confidence in this model is an output, not an input — it is built by accumulated evidence of competence (successfully completed hard sessions, benchmark improvements, rehearsed race scenarios), which is why it is more reliably grown in training than summoned on race day. Self-talk is the mechanism that connects these principles to behaviour: what an athlete says to themselves at kilometre six determines whether they hold pace or negotiate.",
+   "key_facts": [
+    "Mental skills are trainable and follow the same rules as physical ones — deliberate practice, progressive exposure, repetition. They are not fixed traits.",
+    "Control the controllables: effort, attention, technique, pacing decisions, routine and response are controllable; competitors, conditions, sled friction and results are not.",
+    "Process focus over outcome focus. Outcome goals motivate direction; process goals govern execution and are what the athlete can act on mid-race.",
+    "Challenge vs threat appraisal: the same physiological arousal is performance-enhancing when read as 'I am ready' and performance-degrading when read as 'I am in danger'.",
+    "Confidence is an output of evidence. Build it from completed hard sessions, benchmark improvements and rehearsed scenarios rather than from affirmation alone.",
+    "Growth orientation treats a bad race as data about what to train next, not a verdict on ability. The behavioural test is what the athlete does in the following week.",
+    "Self-talk can be instructional ('drive the arms', 'shorten the stride') or motivational ('hold this', 'you've done this'). Instructional self-talk generally suits technical and pacing tasks better.",
+    "Reframing is a skill: replacing 'my legs are gone' with 'this is what kilometre six is supposed to feel like' changes the behavioural response, not just the mood.",
+    "A structured reset — a physical cue, a breath, a single instructional word — beats unstructured rumination after a mistake or a bad station.",
+    "Attentional focus should be external and task-relevant under load (the pace, the rhythm, the next marker) rather than internal and self-evaluative.",
+    "Resilience in practice is the speed of return to task after a setback, not the absence of a reaction to it.",
+    "Pre-performance routines make behaviour automatic under pressure, protecting execution when working memory is degraded by stress.",
+    "Mental skills must be practised in training under fatigue. Skills rehearsed only when fresh and calm do not survive race conditions."
+   ],
+   "training_link": "Treat mental skills as sessions, not speeches. Pick one cue per block — say, an instructional self-talk phrase for the back half of every run — and make the athlete use it in training until it is automatic, because a phrase invented on race morning does nothing. Build confidence out of evidence: log the hard sessions they completed and show them the benchmark trend, so belief has something underneath it. Teach the reset explicitly — one breath, one word, eyes up, back to pace — and drill it after deliberately imperfect stations so the recovery is rehearsed. And when they describe a bad race, listen for whether they are treating it as data or as a verdict; redirecting that interpretation is one of the higher-leverage conversations you will have all season.",
+   "glossary": [
+    {
+     "term": "Controllables",
+     "def": "The elements of performance an athlete can directly influence — effort, attention, technique, pacing, routine and response. Attention spent elsewhere is wasted.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"14\" y=\"10\" width=\"52\" height=\"22\" rx=\"3\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"1.6\"/><path d=\"M40 10v22\" stroke=\"#ffb86b\" stroke-width=\"2\"/><path d=\"M20 21h14M46 21h14\" stroke=\"#67e8b0\" stroke-width=\"1.6\"/></svg>"
+    },
+    {
+     "term": "Process goal",
+     "def": "A goal specifying execution the athlete controls, such as holding a target cadence, rather than an outcome such as a finish position.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"16\" y=\"8\" width=\"34\" height=\"26\" rx=\"2\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"1.6\"/><path d=\"M22 16h22M22 22h22M22 28h14\" stroke=\"#67e8b0\" stroke-width=\"1.6\"/></svg>"
+    },
+    {
+     "term": "Challenge vs threat appraisal",
+     "def": "The interpretation of physiological arousal as either readiness for a demand or danger. The same arousal produces opposite performance effects depending on the reading.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M10 20h20M30 20l14-9M30 20l14 9\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"2\"/><circle cx=\"48\" cy=\"11\" r=\"3\" fill=\"#67e8b0\"/><circle cx=\"48\" cy=\"29\" r=\"3\" fill=\"#ffb86b\"/></svg>"
+    },
+    {
+     "term": "Instructional self-talk",
+     "def": "Task-focused internal cueing directing technique or pacing. Generally more effective than purely motivational self-talk for technical and pacing tasks.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"24\" cy=\"20\" r=\"9\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"2\"/><path d=\"M40 20h22M54 13l8 7-8 7\" fill=\"none\" stroke=\"#67e8b0\" stroke-width=\"2\"/></svg>"
+    },
+    {
+     "term": "Reframing",
+     "def": "Deliberately reinterpreting a sensation or event to change the behavioural response, such as reading leg discomfort as an expected race marker rather than failure.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M28 12a12 12 0 1 0 12 12\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"2\"/><path d=\"M24 8l6 4-6 4\" fill=\"none\" stroke=\"#67e8b0\" stroke-width=\"2\"/></svg>"
+    },
+    {
+     "term": "Pre-performance routine",
+     "def": "A consistent sequence of actions before a performance that automates behaviour and protects execution when stress degrades working memory.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"16\" y=\"8\" width=\"34\" height=\"26\" rx=\"2\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"1.6\"/><path d=\"M22 16h22M22 22h22M22 28h14\" stroke=\"#67e8b0\" stroke-width=\"1.6\"/></svg>"
+    }
+   ],
+   "relevant": true,
+   "exam_focus": "Distinguish process from outcome focus and challenge from threat appraisal, and design a mental-skills intervention that is rehearsed under fatigue rather than introduced on race day.",
+   "figures": []
+  },
+  "85": {
+   "title": "The brain under pressure & calming the threat system",
+   "topic_id": "mp_threat",
+   "domain": "CM",
+   "chapter": "Module 9",
+   "page_refs": "Mental Performance",
+   "key_concept": "Under pressure the brain does three things that matter to a coach: it appraises the situation for threat, it narrows and reallocates attention, and it degrades the executive control needed for complex decisions. When the threat system dominates, sympathetic arousal rises, breathing becomes shallow and fast, attention narrows onto the source of threat rather than the task, and working memory — the resource an athlete needs to hold a pacing plan — shrinks. That produces the familiar failures: going out too hard, forgetting the plan, fixating on a competitor, and over-gripping technique. The intervention set is therefore twofold. Down-regulate the physiology, principally through breathing that lengthens the exhale and engages the diaphragm, which raises parasympathetic activity and signals safety. Then redirect attention to the right thing at the right time with a simple, pre-rehearsed cue. Because these tools depend on being automatic, they have to be trained in advance — sport psychology is not an emergency umbrella deployed the night before a race.",
+   "key_facts": [
+    "Three key brain functions under pressure: threat appraisal, attentional allocation, and executive control (planning, decision-making, working memory).",
+    "Acute stress narrows attention. Useful when the relevant cue is narrow, harmful when the athlete needs to monitor pace, competitors and their own state.",
+    "Working memory degrades under stress, which is why complex race plans fail and pre-rehearsed routines survive.",
+    "Diaphragmatic breathing — belly rising rather than chest and shoulders — is the mechanical basis of down-regulation.",
+    "Extending the exhale relative to the inhale increases parasympathetic activity and lowers arousal. A longer, slower out-breath is the single most reliable acute tool.",
+    "Box breathing (in 4, hold 4, out 4, hold 4) gives a structured, countable protocol that also occupies attention, which is part of why it works.",
+    "A brief body scan aiming to soften tension by only 5-10% is more achievable under arousal than instructions to 'relax', which often backfire.",
+    "Down-regulation is a trained skill and a legitimate part of the training week: teach the system to come down as deliberately as you teach it to go hard.",
+    "Cue words and physical anchors (a touch of the wrist, eyes to a fixed point) redirect attention faster than reasoning does at high arousal.",
+    "Attentional focus should be external and task-relevant under pressure; internal self-monitoring of already-automated technique degrades it.",
+    "Not all arousal is bad — the aim is the athlete's optimal zone, not minimum activation. Some athletes need up-regulation before a race, not calming.",
+    "Reappraisal ('this racing heart means I'm ready') is more effective than suppression ('calm down'), which tends to increase arousal.",
+    "These tools must be practised in training, ideally under fatigue and mild pressure, or they will not be accessible on race day."
+   ],
+   "training_link": "Teach the breathing before they need it. Put two or three minutes of box breathing — in four, hold four, out four, hold four — at the end of hard sessions, so down-regulating becomes something the athlete's system has practised rather than a party trick attempted in the corral. Make the exhale longer than the inhale and get the belly moving, not the shoulders; that is the part that actually shifts the nervous system. Give each athlete one cue word and one physical anchor for the race, and rehearse them at the moment they will be needed — entering the roxzone, starting the run after the sled. Then aim for their zone, not for calm: some athletes need bringing down before the start, and some need bringing up, and confusing the two costs races.",
+   "glossary": [
+    {
+     "term": "Threat system",
+     "def": "The stress-response network that appraises a situation as dangerous and drives sympathetic arousal, attentional narrowing and defensive behaviour.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M8 20 Q16 6 24 20 T40 20 T56 20 T72 20\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"2\"/></svg>"
+    },
+    {
+     "term": "Diaphragmatic breathing",
+     "def": "Breathing that expands the belly rather than lifting the chest and shoulders, enabling parasympathetic activation and effective down-regulation.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M8 20 Q16 6 24 20 T40 20 T56 20 T72 20\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"2\"/></svg>"
+    },
+    {
+     "term": "Box breathing",
+     "def": "A structured protocol of equal-count inhale, hold, exhale and hold — commonly four counts each — that lowers arousal and occupies attention.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"14\" y=\"10\" width=\"52\" height=\"22\" rx=\"3\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"1.6\"/><path d=\"M40 10v22\" stroke=\"#ffb86b\" stroke-width=\"2\"/><path d=\"M20 21h14M46 21h14\" stroke=\"#67e8b0\" stroke-width=\"1.6\"/></svg>"
+    },
+    {
+     "term": "Attentional narrowing",
+     "def": "The constriction of attentional field under high arousal, which can usefully sharpen focus or harmfully exclude task-relevant information.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M10 20h20M30 20l14-9M30 20l14 9\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"2\"/><circle cx=\"48\" cy=\"11\" r=\"3\" fill=\"#67e8b0\"/><circle cx=\"48\" cy=\"29\" r=\"3\" fill=\"#ffb86b\"/></svg>"
+    },
+    {
+     "term": "Working memory",
+     "def": "The limited store holding information in mind during a task. It degrades under stress, causing complex race plans to fail where rehearsed routines hold.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M8 12 C26 13 44 22 72 33\" fill=\"none\" stroke=\"#ffb86b\" stroke-width=\"2\"/><line x1=\"8\" y1=\"34\" x2=\"72\" y2=\"34\" stroke=\"#3a4a5e\" stroke-width=\"1\"/></svg>"
+    },
+    {
+     "term": "Reappraisal",
+     "def": "Reinterpreting arousal as readiness rather than danger. More effective than attempting to suppress the arousal, which typically amplifies it.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M28 12a12 12 0 1 0 12 12\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"2\"/><path d=\"M24 8l6 4-6 4\" fill=\"none\" stroke=\"#67e8b0\" stroke-width=\"2\"/></svg>"
+    }
+   ],
+   "relevant": true,
+   "exam_focus": "Explain the three brain functions affected by pressure and prescribe a specific down-regulation and attentional-cue protocol, justifying why it must be rehearsed in training.",
+   "figures": []
+  },
+  "86": {
+   "title": "Simulating pressure in training",
+   "topic_id": "mp_pressure_sim",
+   "domain": "CM",
+   "chapter": "Module 9",
+   "page_refs": "Mental Performance",
+   "key_concept": "Mental skills transfer to competition only if they are practised under conditions resembling competition, which means pressure has to be deliberately manufactured in training. Pressure training adds a stressor — consequence, evaluation, audience, uncertainty, fatigue or time constraint — to a technically familiar task, so the athlete rehearses executing under the arousal they will actually face. The dose matters: too little and nothing transfers, too much and the athlete simply fails and learns that pressure means failure. The aim is a level at which execution is genuinely threatened but still achievable, progressed over a block. For HYROX this means full or partial race simulations with real timing and splits, deliberately imperfect scenarios (starting a run after a botched sled, forcing a wall-ball break at the worst moment), and consequence-loaded sessions. The debrief is the part most coaches skip and the part that carries the learning: a structured downshift back to baseline followed by a reflective review of what the athlete noticed, did and would change.",
+   "key_facts": [
+    "Pressure training = a familiar task plus a deliberately added stressor, so mental skills are rehearsed under competition-like arousal.",
+    "Stressor categories: consequence (a forfeit or reward), evaluation (being watched, filmed or scored), audience, uncertainty (undisclosed session details), fatigue, and time constraint.",
+    "Dose it. Pressure high enough to threaten execution but low enough that success is achievable — then progress it across the block.",
+    "Excessive pressure teaches the wrong lesson: repeated failure under pressure conditions the association between arousal and collapse.",
+    "Simulate specifics, not just intensity: replicate race timing, start protocol, station order, transitions, kit and even nutrition where possible.",
+    "Rehearse adversity deliberately — a bad sled, a dropped wall-ball set, a competitor surging past — so the recovery response is trained, not improvised.",
+    "Partial simulations (a three-station block at race pace) can be run more frequently than full simulations, which carry a real recovery cost.",
+    "Full race simulations are training sessions with a taper and recovery cost attached. Schedule them like key sessions, not as extras.",
+    "Uncertainty is a potent and cheap stressor: withholding the session details until the warm-up removes the athlete's ability to pre-pace.",
+    "Always debrief. Without structured reflection the athlete gets the stress exposure but not the learning.",
+    "Debrief structure: down-regulate first (breathing, body scan), then review what they noticed, what they did, what worked, and one change for next time.",
+    "Deliberate down-shifting after a pressure session is training in itself — teaching the system to return to baseline is as coachable as driving it up.",
+    "Record the outcome and the athlete's subjective experience, so pressure exposure can be progressed systematically rather than by instinct."
+   ],
+   "training_link": "Stop running your race simulations clean. Once the athlete can execute the session when everything goes right, start breaking it on purpose — make them start the run after a deliberately awful sled, force a wall-ball break at rep eight, put a camera on them, or tell them the session only at the warm-up. Keep the pressure at a level where they can still just about hold the plan, and turn it up across the block. Then protect the debrief: two or three minutes of box breathing and a body scan to bring the system down, and only then ask what they noticed, what they did about it, and what they would change. That conversation is where the session turns into a skill — without it you have just made them tired and stressed.",
+   "glossary": [
+    {
+     "term": "Pressure training",
+     "def": "Deliberately adding a stressor to a familiar task so that technical and mental skills are rehearsed under competition-like arousal.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"14\" y=\"10\" width=\"52\" height=\"22\" rx=\"3\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"1.6\"/><path d=\"M40 10v22\" stroke=\"#ffb86b\" stroke-width=\"2\"/><path d=\"M20 21h14M46 21h14\" stroke=\"#67e8b0\" stroke-width=\"1.6\"/></svg>"
+    },
+    {
+     "term": "Stressor",
+     "def": "The added element that raises arousal — consequence, evaluation, audience, uncertainty, fatigue or time constraint.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M8 20 Q16 6 24 20 T40 20 T56 20 T72 20\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"2\"/></svg>"
+    },
+    {
+     "term": "Race simulation",
+     "def": "A session replicating competition structure, timing and conditions closely enough to rehearse pacing, transitions and decision-making under fatigue.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"16\" y=\"8\" width=\"34\" height=\"26\" rx=\"2\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"1.6\"/><path d=\"M22 16h22M22 22h22M22 28h14\" stroke=\"#67e8b0\" stroke-width=\"1.6\"/></svg>"
+    },
+    {
+     "term": "Adversity rehearsal",
+     "def": "Deliberately introducing a setback mid-session so the athlete practises the recovery response rather than improvising it on race day.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M28 12a12 12 0 1 0 12 12\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"2\"/><path d=\"M24 8l6 4-6 4\" fill=\"none\" stroke=\"#67e8b0\" stroke-width=\"2\"/></svg>"
+    },
+    {
+     "term": "Down-shifting",
+     "def": "The deliberate post-session return to baseline arousal through slow breathing and body scanning — a trainable recovery skill in its own right.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M8 12 C26 13 44 22 72 33\" fill=\"none\" stroke=\"#ffb86b\" stroke-width=\"2\"/><line x1=\"8\" y1=\"34\" x2=\"72\" y2=\"34\" stroke=\"#3a4a5e\" stroke-width=\"1\"/></svg>"
+    },
+    {
+     "term": "Structured debrief",
+     "def": "A guided post-session review — what was noticed, what was done, what worked, what changes — that converts stress exposure into learning.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M28 12a12 12 0 1 0 12 12\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"2\"/><path d=\"M24 8l6 4-6 4\" fill=\"none\" stroke=\"#67e8b0\" stroke-width=\"2\"/></svg>"
+    }
+   ],
+   "relevant": true,
+   "exam_focus": "Design a progressive pressure-training intervention for a named HYROX weakness, specifying the stressor, the dose rationale and the debrief structure.",
+   "figures": []
+  },
+  "87": {
+   "title": "Routines, journaling & reflective practice",
+   "topic_id": "mp_routines",
+   "domain": "CM",
+   "chapter": "Module 9",
+   "page_refs": "Mental Performance",
+   "key_concept": "Routines and journaling are the two habits that make everything else in mental performance durable. A routine is a fixed sequence of actions that automates behaviour when working memory is compromised — pre-race, pre-station, and post-error. Its value is not superstition but load reduction: the athlete does not have to decide anything, so attention stays on the task. Good routines are short, portable, controllable and rehearsed; anything dependent on a specific location, object or condition becomes a liability when a race disrupts it. Journaling serves the parallel function for learning. Sport psychology only compounds if the athlete notices patterns across weeks, and memory for subjective states is poor and biased by recent results. A structured log — what was done, how it felt, what was noticed, what to change — turns scattered experiences into a data set the athlete and coach can act on. The recurring reflective prompt is deliberately simple: three things learned, three things already done well, three things to improve.",
+   "key_facts": [
+    "A routine automates behaviour so attention and degraded working memory are not spent on decisions during high arousal.",
+    "Three routine types worth building: pre-race (the hours and minutes before the start), pre-station or pre-effort (seconds before a repeatable task), and post-error reset.",
+    "Good routines are short, portable, fully controllable and rehearsed. Routines dependent on a specific object, place or condition break when the race disrupts them.",
+    "Distinguish routine from superstition: a routine has a functional mechanism (attention, arousal, sequencing); a superstition attributes outcome to an unrelated act and creates anxiety when broken.",
+    "A pre-station routine can be as small as a breath, a grip check and a cue word — small enough to survive fatigue.",
+    "The post-error reset is the highest-value routine in HYROX, where a bad station otherwise contaminates the following run.",
+    "Rehearse routines in training under fatigue. A routine used only on race day is not a routine.",
+    "Journaling counters the unreliability of memory for subjective states, which is heavily biased by the most recent session or result.",
+    "A useful log captures both objective (session, splits, load) and subjective (RPE, mood, sleep, stress, what was noticed) data — the interaction is where the insight sits.",
+    "The three-by-three reflective prompt — three things learned, three already done well, three to improve — is simple enough to sustain and forces balanced reflection rather than pure fault-finding.",
+    "Reflection-in-action (adjusting during the session) and reflection-on-action (reviewing afterwards) are complementary; journaling develops the second and gradually improves the first.",
+    "Patterns only emerge across weeks: recurring pre-race sleep disruption, a station that always precedes a mood drop, a taper that consistently feels flat.",
+    "Coaches should journal too. Reflective practice is a coach-development tool as much as an athlete one, and modelling it raises athlete adherence."
+   ],
+   "training_link": "Give every athlete three routines and make them rehearse all three in training: what they do in the last twenty minutes before a start, what they do in the five seconds before a station, and what they do immediately after something goes wrong. Keep them short and portable — a breath, a cue word, eyes up — because anything elaborate will break on race day. Then get them writing. A few lines after each session covering what they did, how it felt, and what they noticed, plus the three-by-three review at the end of each week: three things learned, three things already going well, three to improve. Read it. The patterns you spot across a month — the station that always precedes a bad run, the week they always feel flat — are things neither of you will remember accurately without the log.",
+   "glossary": [
+    {
+     "term": "Pre-performance routine",
+     "def": "A fixed, rehearsed sequence of actions before a performance that automates behaviour and preserves attention when arousal degrades working memory.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"16\" y=\"8\" width=\"34\" height=\"26\" rx=\"2\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"1.6\"/><path d=\"M22 16h22M22 22h22M22 28h14\" stroke=\"#67e8b0\" stroke-width=\"1.6\"/></svg>"
+    },
+    {
+     "term": "Post-error reset",
+     "def": "A short, deliberate routine executed immediately after a mistake to return attention to the task and prevent contamination of the next effort.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M28 12a12 12 0 1 0 12 12\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"2\"/><path d=\"M24 8l6 4-6 4\" fill=\"none\" stroke=\"#67e8b0\" stroke-width=\"2\"/></svg>"
+    },
+    {
+     "term": "Superstition",
+     "def": "An act believed to influence outcome without a functional mechanism. Unlike a routine, it generates anxiety when it cannot be performed.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M8 12 C26 13 44 22 72 33\" fill=\"none\" stroke=\"#ffb86b\" stroke-width=\"2\"/><line x1=\"8\" y1=\"34\" x2=\"72\" y2=\"34\" stroke=\"#3a4a5e\" stroke-width=\"1\"/></svg>"
+    },
+    {
+     "term": "Reflection-in-action",
+     "def": "Noticing and adjusting during performance itself, as distinct from reviewing afterwards.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M8 20 Q16 6 24 20 T40 20 T56 20 T72 20\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"2\"/></svg>"
+    },
+    {
+     "term": "Reflection-on-action",
+     "def": "Structured review after the event, converting experience into transferable learning. The habit journaling is designed to build.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M28 12a12 12 0 1 0 12 12\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"2\"/><path d=\"M24 8l6 4-6 4\" fill=\"none\" stroke=\"#67e8b0\" stroke-width=\"2\"/></svg>"
+    },
+    {
+     "term": "Three-by-three review",
+     "def": "A reflective prompt capturing three things learned, three already done well and three to improve — simple enough to sustain and balanced by design.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"16\" y=\"8\" width=\"34\" height=\"26\" rx=\"2\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"1.6\"/><path d=\"M22 16h22M22 22h22M22 28h14\" stroke=\"#67e8b0\" stroke-width=\"1.6\"/></svg>"
+    }
+   ],
+   "relevant": true,
+   "exam_focus": "Distinguish a functional routine from a superstition, specify the three routine types an athlete needs, and justify journaling as the mechanism that makes mental-skills training compound.",
+   "figures": []
+  },
+  "88": {
+   "title": "Unlock your hip — extension, not more stride",
+   "topic_id": "rb_hip",
+   "domain": "BM",
+   "chapter": "Module 7.2",
+   "page_refs": "Running Biomechanics and Technique for HYROX Performance",
+   "key_concept": "Most athletes trying to run faster reach further forward with the lead leg. The productive change is the opposite: create more range behind the body through hip extension. Propulsion in running comes from the stance leg pushing back and down against the ground behind the centre of mass, so the usable stride is the part behind you, not the part in front. Restricted hip extension — very common in athletes who sit for a living, and worse again in a HYROX athlete whose sled and lunge work loads the hip flexors heavily — forces compensations: the pelvis tips anteriorly, the lumbar spine extends to fake the range, stride opens at the front instead of the back, and the glutes under-contribute while the hamstrings and lower back take the load. Unlocking the hip is therefore a combination of restoring extension range, then teaching the athlete to use it under load. This matters disproportionately in HYROX because every run happens on hip flexors already shortened and fatigued by the preceding station.",
+   "key_facts": [
+    "Propulsion comes from force applied behind the centre of mass during late stance. The functional stride is what happens behind you.",
+    "Limited hip extension pushes athletes to lengthen stride at the front instead — the mechanism that produces overstriding and braking.",
+    "Common compensation chain: restricted hip extension → anterior pelvic tilt → lumbar extension → apparent range with no propulsive benefit and added spinal load.",
+    "Reduced glute contribution shifts propulsive demand onto hamstrings and calf, raising strain risk in both.",
+    "The hip flexors (iliopsoas, rectus femoris, TFL) shorten with prolonged sitting and with the exact HYROX stations that dominate a race — sled push, sled pull and sandbag lunges.",
+    "In HYROX this is a compounding problem: each run starts on hip flexors more fatigued and more shortened than the last, so extension range degrades across the race.",
+    "Assess with a Thomas test or a half-kneeling extension check; watch for the athlete substituting lumbar extension for hip extension.",
+    "Restoring range alone rarely changes running. Range must be followed by loaded, patterned work so the nervous system uses the new range.",
+    "Useful loading: hip thrusts, split squats and Bulgarians through full range, single-leg RDLs, and A-march variations with a deliberate late-stance push.",
+    "Cue the push, not the reach: 'drive the ground back behind you' produces extension; 'lengthen your stride' produces overstride.",
+    "Trunk position matters — a slight forward lean from the ankles preserves the extension window; sitting back into the hips closes it.",
+    "Improved hip extension typically shows up as a longer stride at the same cadence rather than as a change in cadence itself.",
+    "Expect the biggest visible gains in the back half of a race, where the fatigued athlete's extension range collapses first."
+   ],
+   "training_link": "If your athlete's runs fall apart in the second half of a HYROX race, check hip extension before you touch their cadence. Test it half-kneeling and watch whether the range comes from the hip or from their lower back arching — the second one is a fake. Then treat it as a strength problem as much as a mobility one: open the range, but immediately load it with split squats and hip thrusts through full range so they actually use it. Cue the push behind them rather than the reach in front, because 'longer stride' reliably produces the overstride you're trying to remove. And schedule it knowing the sled and the lunges are actively working against you — the mobility work matters most in the weeks with the heaviest station volume.",
+   "glossary": [
+    {
+     "term": "Hip extension",
+     "def": "Movement of the thigh rearward relative to the pelvis. The range behind the body that generates propulsion in late stance.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M12 32h50\" stroke=\"#3a4a5e\" stroke-width=\"1.4\"/><path d=\"M12 32L58 10\" stroke=\"#67e8b0\" stroke-width=\"2\"/><path d=\"M12 32l24 0a24 24 0 0 0 5-9\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"1.4\"/></svg>"
+    },
+    {
+     "term": "Anterior pelvic tilt",
+     "def": "Forward rotation of the pelvis, often compensating for restricted hip extension and creating apparent range through the lumbar spine instead.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M8 12 C26 13 44 22 72 33\" fill=\"none\" stroke=\"#ffb86b\" stroke-width=\"2\"/><line x1=\"8\" y1=\"34\" x2=\"72\" y2=\"34\" stroke=\"#3a4a5e\" stroke-width=\"1\"/></svg>"
+    },
+    {
+     "term": "Late stance",
+     "def": "The final phase of ground contact, where the hip extends and force is applied behind the centre of mass. The propulsive portion of the gait cycle.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><line x1=\"8\" y1=\"32\" x2=\"72\" y2=\"32\" stroke=\"#3a4a5e\" stroke-width=\"1.4\"/><circle cx=\"40\" cy=\"14\" r=\"4\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"1.8\"/><path d=\"M40 18l-12 14M40 18l12 14\" stroke=\"#67e8b0\" stroke-width=\"1.8\"/><path d=\"M28 32h-6\" stroke=\"#ffb86b\" stroke-width=\"2\"/></svg>"
+    },
+    {
+     "term": "Iliopsoas",
+     "def": "The primary hip flexor group. Shortens with prolonged sitting and with sled and lunge work, restricting the extension available for propulsion.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"14\" y=\"10\" width=\"52\" height=\"22\" rx=\"3\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"1.6\"/><path d=\"M40 10v22\" stroke=\"#ffb86b\" stroke-width=\"2\"/><path d=\"M20 21h14M46 21h14\" stroke=\"#67e8b0\" stroke-width=\"1.6\"/></svg>"
+    },
+    {
+     "term": "Thomas test",
+     "def": "A clinical assessment of hip flexor length and available hip extension, performed supine with the opposite knee held to the chest.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"16\" y=\"8\" width=\"34\" height=\"26\" rx=\"2\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"1.6\"/><path d=\"M22 16h22M22 22h22M22 28h14\" stroke=\"#67e8b0\" stroke-width=\"1.6\"/></svg>"
+    },
+    {
+     "term": "Compensation",
+     "def": "A substitute movement produced elsewhere when the intended joint lacks range — here, lumbar extension standing in for hip extension.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M10 20h20M30 20l14-9M30 20l14 9\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"2\"/><circle cx=\"48\" cy=\"11\" r=\"3\" fill=\"#67e8b0\"/><circle cx=\"48\" cy=\"29\" r=\"3\" fill=\"#ffb86b\"/></svg>"
+    }
+   ],
+   "relevant": true,
+   "exam_focus": "Explain why propulsion depends on range behind the body, identify the compensation chain caused by restricted hip extension, and justify pairing mobility with loaded patterning.",
+   "figures": []
+  },
+  "89": {
+   "title": "Reducing braking forces & the overstride",
+   "topic_id": "rb_braking",
+   "domain": "BM",
+   "chapter": "Module 7.2",
+   "page_refs": "Running Biomechanics and Technique for HYROX Performance",
+   "key_concept": "Every foot contact produces a horizontal braking impulse before it produces propulsion. The larger the braking component, the more energy the athlete spends re-accelerating, and the higher the impact loading travelling up the leg. Braking scales with how far in front of the centre of mass the foot lands, so the overstride is the primary target: a foot planted well ahead of the body with an extended knee acts as a strut, decelerating the athlete and transmitting a sharp impact peak. Importantly, the fix is rarely a direct instruction about foot placement, which tends to make athletes reach and then pull. The reliable levers are increasing cadence slightly, encouraging a small forward lean from the ankles, and improving hip extension so the athlete gets range behind rather than in front. In HYROX this is doubly important: braking forces are what a fatigued athlete absorbs on eight separate runs, and compromised running after the sled is exactly when overstriding creeps in.",
+   "key_facts": [
+    "Every contact has a braking phase followed by a propulsive phase; net progress depends on minimising the braking cost, not eliminating it.",
+    "Braking impulse rises with the horizontal distance between the foot at contact and the centre of mass — the definition of overstriding.",
+    "An overstride typically pairs a far-forward foot with a relatively extended knee, creating a strut that decelerates and transmits a high impact peak.",
+    "Impact peak and loading rate are associated with tibial stress injuries; braking force is a mechanical driver of injury as well as an energy cost.",
+    "Raising cadence by roughly 5-10% is the most reliable single intervention: it shortens stride, moves foot contact closer to the centre of mass and lowers braking without conscious foot placement.",
+    "A small whole-body forward lean initiated from the ankles (not by bending at the waist) shifts the centre of mass forward relative to the foot.",
+    "Do not cue foot placement directly. 'Land under yourself' commonly produces reaching followed by a backward pull — the exact fault it aims to fix.",
+    "Improved hip extension reduces overstride indirectly by giving the athlete somewhere else to find stride length.",
+    "Braking cost increases on downhills and when decelerating into turns — relevant to indoor HYROX courses with repeated direction changes.",
+    "Fatigue increases overstride: as hip extension and leg stiffness decline across a race, contact drifts forward. Late-race technique work matters more than fresh-state work.",
+    "Compromised running after the sled is a high-risk window — the athlete transitions from a pushing pattern to a running pattern with degraded proprioception.",
+    "Measure rather than eyeball where possible: cadence from a watch, and slow-motion video from the side to see foot position relative to the hip at contact.",
+    "Small changes only. A large deliberate cadence or footstrike change alters tissue loading distribution and can create a new injury while solving an old one."
+   ],
+   "training_link": "Take the cadence reading from their watch before you change anything, then nudge it up by about 5% and let the stride shorten itself — that single change fixes most of the overstride without the athlete ever thinking about their feet. Resist telling them to land under their body; say it and they'll reach out and drag the foot back, which is worse than what they started with. Film them from the side at the end of a hard session rather than fresh, because the overstride you care about is the one that appears at kilometre six on legs cooked by the sled. Add a small lean from the ankles, keep the change small, and give the tissue a few weeks to adapt before layering on more.",
+   "glossary": [
+    {
+     "term": "Braking impulse",
+     "def": "The rearward horizontal force applied during early stance that decelerates the runner. Its size scales with how far ahead of the centre of mass the foot lands.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M8 12 C26 13 44 22 72 33\" fill=\"none\" stroke=\"#ffb86b\" stroke-width=\"2\"/><line x1=\"8\" y1=\"34\" x2=\"72\" y2=\"34\" stroke=\"#3a4a5e\" stroke-width=\"1\"/></svg>"
+    },
+    {
+     "term": "Overstride",
+     "def": "Foot contact made well ahead of the centre of mass, usually with a relatively extended knee, producing high braking and a sharp impact peak.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><line x1=\"8\" y1=\"32\" x2=\"72\" y2=\"32\" stroke=\"#3a4a5e\" stroke-width=\"1.4\"/><circle cx=\"40\" cy=\"14\" r=\"4\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"1.8\"/><path d=\"M40 18l-12 14M40 18l12 14\" stroke=\"#67e8b0\" stroke-width=\"1.8\"/><path d=\"M28 32h-6\" stroke=\"#ffb86b\" stroke-width=\"2\"/></svg>"
+    },
+    {
+     "term": "Loading rate",
+     "def": "How rapidly ground reaction force rises after contact. Elevated rates are associated with tibial stress injury risk.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M8 26 C20 26 22 32 32 32 C46 32 46 12 66 12\" fill=\"none\" stroke=\"#67e8b0\" stroke-width=\"2\"/><line x1=\"8\" y1=\"24\" x2=\"72\" y2=\"24\" stroke=\"#3a4a5e\" stroke-width=\"1\" stroke-dasharray=\"3 2\"/></svg>"
+    },
+    {
+     "term": "Cadence",
+     "def": "Steps per minute. A modest increase shortens stride and moves contact closer to the centre of mass, indirectly reducing braking.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"38\" cy=\"20\" r=\"11\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"1.8\"/><circle cx=\"38\" cy=\"20\" r=\"2\" fill=\"#67e8b0\"/><path d=\"M56 20h10M60 16l6 4-6 4\" fill=\"none\" stroke=\"#ffb86b\" stroke-width=\"1.6\"/></svg>"
+    },
+    {
+     "term": "Centre of mass",
+     "def": "The point about which body mass is balanced. Foot position relative to it at contact determines whether the step brakes or propels.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"14\" y=\"10\" width=\"52\" height=\"22\" rx=\"3\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"1.6\"/><path d=\"M40 10v22\" stroke=\"#ffb86b\" stroke-width=\"2\"/><path d=\"M20 21h14M46 21h14\" stroke=\"#67e8b0\" stroke-width=\"1.6\"/></svg>"
+    },
+    {
+     "term": "Forward lean",
+     "def": "A small whole-body inclination initiated at the ankles rather than the waist, shifting the centre of mass forward relative to the contact point.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M12 32h50\" stroke=\"#3a4a5e\" stroke-width=\"1.4\"/><path d=\"M12 32L58 10\" stroke=\"#67e8b0\" stroke-width=\"2\"/><path d=\"M12 32l24 0a24 24 0 0 0 5-9\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"1.4\"/></svg>"
+    }
+   ],
+   "relevant": true,
+   "exam_focus": "Explain the mechanical link between overstride, braking impulse and injury risk, and select an intervention that reduces braking without cueing foot placement directly.",
+   "figures": []
+  },
+  "90": {
+   "title": "Foot separation & the swing leg",
+   "topic_id": "rb_footsep",
+   "domain": "BM",
+   "chapter": "Module 7.2",
+   "page_refs": "Running Biomechanics and Technique for HYROX Performance",
+   "key_concept": "Foot separation describes how far apart the feet are at a given moment in the gait cycle — most usefully, the gap between the trailing and leading foot at the point of touchdown. It is a practical, visible proxy for whether an athlete is running with the elastic, bouncing pattern of a runner or the low, shuffling pattern of a jogger. Large separation at touchdown with the trailing leg still extended behind indicates good hip extension, real flight time and elastic recycling of the swing leg. Small separation — feet close together, low heel recovery, minimal flight — indicates the athlete is stepping rather than springing, generating little vertical impulse and relying on hip flexion to pull the leg through. Coaching separation is useful precisely because it is observable on video without a lab, and because it responds to the same interventions as overstride: hip extension range, leg stiffness, and cueing heel recovery under the hip rather than reaching in front.",
+   "key_facts": [
+    "Foot separation = the distance between the feet at a defined instant, most usefully at touchdown of the leading foot.",
+    "Wide separation at touchdown with an extended trailing hip indicates real flight time and effective use of the range behind the body.",
+    "Narrow separation with low heel recovery is a jogging pattern — minimal flight, low vertical impulse, and swing driven by hip flexion rather than elastic recoil.",
+    "Separation is largely an output of hip extension and leg stiffness, not something to be manufactured directly by reaching further forward.",
+    "Heel recovery height under the hip rises naturally with speed and with elastic quality; forcing a high heel at slow speeds just adds cost.",
+    "Separation reduces as fatigue accumulates, so it is a sensitive visual marker of running degradation across a HYROX race.",
+    "It is easy to measure: a side-on video at 120-240 fps and a single freeze at touchdown is enough for consistent comparison over a block.",
+    "Compare the athlete against themselves over time rather than against an elite reference — absolute values vary with limb length and speed.",
+    "Training levers that increase separation: hip extension range, plyometric and stiffness work, strides and hill sprints, and running at genuinely higher speeds.",
+    "Cue swing-leg recovery under the hip ('heel to the back pocket') rather than knee drive in front, which encourages reaching.",
+    "Separation and cadence interact: at a fixed speed, a very high cadence reduces separation. Judge them together, not in isolation.",
+    "In compromised running after a station, separation collapses first — making it a good target for late-session technique drills.",
+    "Do not chase separation as an end in itself. It is a diagnostic window onto extension and elasticity, and improves when those improve."
+   ],
+   "training_link": "Film your athlete from the side, freeze at the moment the front foot lands, and look at where the back foot is. If the trailing leg is still extended well behind with the heel recovering up under the hip, they are running. If the feet are close together and the back heel is skimming the floor, they are jogging fast — and no amount of arm-drive cueing will change that. Treat it as a hip extension and stiffness problem: strides, short hill sprints and plyometrics, plus the extension work, rather than a cue about picking their knees up. Re-film at the end of a hard session, because separation collapsing at kilometre six is the thing that actually costs them time. Track them against their own footage over a block, not against an elite runner's.",
+   "glossary": [
+    {
+     "term": "Foot separation",
+     "def": "The gap between trailing and leading foot at a defined instant, typically touchdown. A visible proxy for hip extension and flight time.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><line x1=\"8\" y1=\"32\" x2=\"72\" y2=\"32\" stroke=\"#3a4a5e\" stroke-width=\"1.4\"/><circle cx=\"40\" cy=\"14\" r=\"4\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"1.8\"/><path d=\"M40 18l-12 14M40 18l12 14\" stroke=\"#67e8b0\" stroke-width=\"1.8\"/><path d=\"M28 32h-6\" stroke=\"#ffb86b\" stroke-width=\"2\"/></svg>"
+    },
+    {
+     "term": "Flight time",
+     "def": "The airborne phase between contacts. Present in running, minimal or absent in walking and heavily reduced in a shuffling jog.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M8 32 C24 30 34 14 44 14 S62 22 72 10\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"2\"/><circle cx=\"44\" cy=\"14\" r=\"2.5\" fill=\"#5ec8ff\"/></svg>"
+    },
+    {
+     "term": "Heel recovery",
+     "def": "How high the heel travels toward the buttock during swing. Rises with speed and elastic quality, shortening the swing lever.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"38\" cy=\"20\" r=\"11\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"1.8\"/><circle cx=\"38\" cy=\"20\" r=\"2\" fill=\"#67e8b0\"/><path d=\"M56 20h10M60 16l6 4-6 4\" fill=\"none\" stroke=\"#ffb86b\" stroke-width=\"1.6\"/></svg>"
+    },
+    {
+     "term": "Leg stiffness",
+     "def": "Resistance of the leg spring to compression during stance. Higher stiffness returns more elastic energy and supports greater separation.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M8 26 C20 26 22 32 32 32 C46 32 46 12 66 12\" fill=\"none\" stroke=\"#67e8b0\" stroke-width=\"2\"/><line x1=\"8\" y1=\"24\" x2=\"72\" y2=\"24\" stroke=\"#3a4a5e\" stroke-width=\"1\" stroke-dasharray=\"3 2\"/></svg>"
+    },
+    {
+     "term": "Swing phase",
+     "def": "The portion of the gait cycle when a leg is off the ground travelling forward, ideally driven by elastic recoil rather than active hip flexion.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"38\" cy=\"20\" r=\"11\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"1.8\"/><circle cx=\"38\" cy=\"20\" r=\"2\" fill=\"#67e8b0\"/><path d=\"M56 20h10M60 16l6 4-6 4\" fill=\"none\" stroke=\"#ffb86b\" stroke-width=\"1.6\"/></svg>"
+    },
+    {
+     "term": "Touchdown",
+     "def": "The instant of initial ground contact — the reference point for measuring foot separation consistently between sessions.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"14\" y=\"10\" width=\"52\" height=\"22\" rx=\"3\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"1.6\"/><path d=\"M40 10v22\" stroke=\"#ffb86b\" stroke-width=\"2\"/><path d=\"M20 21h14M46 21h14\" stroke=\"#67e8b0\" stroke-width=\"1.6\"/></svg>"
+    }
+   ],
+   "relevant": true,
+   "exam_focus": "Use foot separation on video to diagnose a jogging versus running pattern, and prescribe the extension and stiffness work that improves it rather than cueing it directly.",
+   "figures": []
+  },
+  "91": {
+   "title": "Jogging vs running — two different patterns",
+   "topic_id": "rb_jogging",
+   "domain": "BM",
+   "chapter": "Module 7.2",
+   "page_refs": "Running Biomechanics and Technique for HYROX Performance",
+   "key_concept": "Jogging and running are not the same movement performed at different speeds — they are mechanically distinct patterns. Running is a bouncing gait: the leg behaves as a spring, storing elastic energy in tendon during stance and returning it, with meaningful vertical oscillation, real flight time and propulsion generated behind the body. Jogging is closer to a compliant shuffle: low flight time, small vertical displacement, the swing leg pulled through by hip flexion, and the foot often landing ahead of the centre of mass with a heel-first strut. The practical problem for HYROX athletes is that almost all their running volume is slow, so they groove the jogging pattern, and then on race day at threshold pace they attempt to run fast with a movement pattern that has no spring in it. That is why easy volume alone does not produce a faster runner and why strides, hill sprints and genuinely fast running belong in the week even for an endurance-dominant event.",
+   "key_facts": [
+    "Running is a spring-mass gait with elastic energy storage and return in tendon; jogging is a low-amplitude compliant pattern with minimal elastic contribution.",
+    "Key mechanical differences: flight time, vertical oscillation, leg stiffness, heel recovery height, foot separation, and whether propulsion comes from behind the body.",
+    "Vertical movement is not waste. Some upward impulse is mechanically necessary — attempting to eliminate it is like throwing a discus flat along the ground.",
+    "The optimum is an angle, not a direction: too little vertical impulse and there is no flight, too much and energy is wasted lifting the body.",
+    "Jogging recruits hip flexion to pull the swing leg through, while running recycles it largely by elastic recoil, which is cheaper at speed.",
+    "An athlete who only ever runs slowly grooves the jogging pattern and cannot access the running pattern on demand at race intensity.",
+    "This matters in HYROX because race pace sits well above most athletes' habitual easy pace, so the pattern they have practised is not the pattern the race requires.",
+    "Strides (short, controlled, fast efforts with full recovery) are the cheapest way to keep the running pattern available without meaningful fatigue cost.",
+    "Hill sprints build the same pattern while limiting impact and enforcing hip extension and forward lean naturally.",
+    "Plyometrics and heavy strength work develop the tendon stiffness that makes the elastic pattern possible in the first place.",
+    "The distinction is diagnostic, not moral — easy jogging volume is still valuable aerobic training. The error is assuming it develops running mechanics.",
+    "Watch for the pattern under fatigue: the transition from running to jogging mechanics across a race is a large hidden time loss.",
+    "Compromised running after a station is where athletes most often drop into the jogging pattern and fail to climb back out."
+   ],
+   "training_link": "If your athlete's easy pace and race pace mechanics look like two different people, that's the problem. Almost all their volume is slow, so they've grooved a shuffle — and race day asks for a spring they haven't practised. Put strides at the end of two easy runs a week: six by twenty seconds, controlled and fast, full recovery, no fatigue cost worth worrying about. Add short hill sprints, which enforce the lean and the extension for free. Back it with plyometrics and real strength work so the tendons can actually behave like springs. Then check what happens after the sled — that's where they'll fall into the jogging pattern, and the athlete who can climb back out of it is the one who holds their splits.",
+   "glossary": [
+    {
+     "term": "Spring-mass model",
+     "def": "A model treating the stance leg as a spring compressing and recoiling. It describes running mechanics but not the low-amplitude jogging pattern.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M8 32 C24 30 34 14 44 14 S62 22 72 10\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"2\"/><circle cx=\"44\" cy=\"14\" r=\"2.5\" fill=\"#5ec8ff\"/></svg>"
+    },
+    {
+     "term": "Vertical oscillation",
+     "def": "Up-and-down movement of the centre of mass per stride. Necessary in some measure for flight; wasteful only in excess.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M8 26 C20 26 22 32 32 32 C46 32 46 12 66 12\" fill=\"none\" stroke=\"#67e8b0\" stroke-width=\"2\"/><line x1=\"8\" y1=\"24\" x2=\"72\" y2=\"24\" stroke=\"#3a4a5e\" stroke-width=\"1\" stroke-dasharray=\"3 2\"/></svg>"
+    },
+    {
+     "term": "Elastic energy return",
+     "def": "Energy stored in tendon during stance and released at push-off, reducing the metabolic cost of each stride at speed.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"38\" cy=\"20\" r=\"11\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"1.8\"/><circle cx=\"38\" cy=\"20\" r=\"2\" fill=\"#67e8b0\"/><path d=\"M56 20h10M60 16l6 4-6 4\" fill=\"none\" stroke=\"#ffb86b\" stroke-width=\"1.6\"/></svg>"
+    },
+    {
+     "term": "Strides",
+     "def": "Short, controlled fast efforts with full recovery, used to maintain access to the running pattern without meaningful fatigue cost.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"24\" cy=\"20\" r=\"9\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"2\"/><path d=\"M40 20h22M54 13l8 7-8 7\" fill=\"none\" stroke=\"#67e8b0\" stroke-width=\"2\"/></svg>"
+    },
+    {
+     "term": "Compliance",
+     "def": "The degree to which the leg yields under load. High compliance suits slow shuffling gait; running requires greater stiffness.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M8 12 C26 13 44 22 72 33\" fill=\"none\" stroke=\"#ffb86b\" stroke-width=\"2\"/><line x1=\"8\" y1=\"34\" x2=\"72\" y2=\"34\" stroke=\"#3a4a5e\" stroke-width=\"1\"/></svg>"
+    },
+    {
+     "term": "Ground contact time",
+     "def": "Duration the foot spends on the ground per step. Shorter in running than jogging, and a proxy for elastic quality at a given speed.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"14\" y=\"10\" width=\"52\" height=\"22\" rx=\"3\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"1.6\"/><path d=\"M40 10v22\" stroke=\"#ffb86b\" stroke-width=\"2\"/><path d=\"M20 21h14M46 21h14\" stroke=\"#67e8b0\" stroke-width=\"1.6\"/></svg>"
+    }
+   ],
+   "relevant": true,
+   "exam_focus": "Contrast jogging and running mechanically, explain why easy volume alone does not develop running mechanics, and prescribe the sessions that preserve the running pattern.",
+   "figures": []
+  },
+  "92": {
+   "title": "The problem with some running drills",
+   "topic_id": "rb_drill_myths",
+   "domain": "BM",
+   "chapter": "Module 7.2",
+   "page_refs": "Running Biomechanics and Technique for HYROX Performance",
+   "key_concept": "Standard running drills are often taught with an explanation that installs a false model. The classic demonstration — a coach standing still, lifting a foot in front and drawing it backwards to land 'under the body' — teaches that the foot should move rearward relative to the ground. It should not. In real running the body travels forward while the foot descends more or less vertically; the foot ends up under the body because the body has moved to meet it, not because the athlete pulled it back. Athletes who internalise the pulling model reach forward and then claw, which is precisely the overstride the drill was meant to prevent, and they lose the vertical impulse running requires. The same problem afflicts the 'feet move in a circle' cue: taken literally it implies the athlete should complete the front half of the circle by reaching. The cue can be rescued by shifting the imagined wheel rearward so the circle sits behind and beneath the athlete rather than in front. The general lesson is that a drill is only as good as the model it installs.",
+   "key_facts": [
+    "The static demonstration of 'foot forward, pull it back under you' is mechanically wrong: it teaches rearward foot motion relative to the ground.",
+    "In running the foot descends roughly vertically while the body translates forward. The foot arrives under the body because the body moved, not because it was pulled back.",
+    "Athletes taught the pulling model tend to reach and then claw at the ground, producing overstride and losing the vertical component of propulsion.",
+    "Running requires upward as well as forward impulse. The discus analogy: thrown flat it travels a short distance, thrown too steeply likewise — the optimum is an intermediate angle.",
+    "Minimising vertical movement deliberately is the equivalent of throwing the discus horizontally: it removes the flight the gait depends on.",
+    "B-skip taught with the same forward-throw-and-pull explanation reinforces the identical fault.",
+    "The 'foot moves in a circle' cue is only half true: from touchdown through toe-off to recovery is roughly half a circle, so instructing a full circle invites a forward reach to complete it.",
+    "The cue can be salvaged by moving the imagined wheel rearward — centred behind and beneath the athlete rather than directly under the centre of mass.",
+    "Encouraging heel recovery and knee lift is legitimate; the fault lies in the accompanying explanation, not in the drill itself.",
+    "A drill's value lies in the model it installs. Evaluate the explanation as carefully as the movement.",
+    "Feel and mechanics diverge: it can feel like a circular foot path even though it is not, and coaching to the feel is acceptable if the resulting mechanics are correct.",
+    "Prefer cues describing intent and outcome ('push the ground back behind you', 'run tall') over cues describing joint paths.",
+    "Test the cue, not the theory: film the athlete before and after and check whether contact position and separation actually improved.",
+    "Drills are a supplement to running fast, not a replacement for it."
+   ],
+   "training_link": "Watch your own demonstration before you watch your athletes. If you stand still and draw your foot backwards to show where it should land, you have just taught them to claw at the ground — and the reaching overstride you spend the rest of the session correcting is one you installed. Explain it the honest way: the foot comes down, the body goes forward, and that's why it ends up underneath. Keep the drills, fix the sentence that goes with them. If you like the wheel cue, move the wheel back so the circle sits behind and under them rather than out in front. Then check it worked — film a few strides before and after, look at contact position and foot separation, and keep the cue only if the footage changed.",
+   "glossary": [
+    {
+     "term": "Foot path illusion",
+     "def": "The mistaken belief that the foot travels rearward relative to the ground during stance. Relative to the ground it descends near-vertically while the body translates forward.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"38\" cy=\"20\" r=\"11\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"1.8\"/><circle cx=\"38\" cy=\"20\" r=\"2\" fill=\"#67e8b0\"/><path d=\"M56 20h10M60 16l6 4-6 4\" fill=\"none\" stroke=\"#ffb86b\" stroke-width=\"1.6\"/></svg>"
+    },
+    {
+     "term": "Clawing",
+     "def": "Actively pulling the foot backward at touchdown, typically following a forward reach. Increases braking and reduces vertical impulse.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M8 12 C26 13 44 22 72 33\" fill=\"none\" stroke=\"#ffb86b\" stroke-width=\"2\"/><line x1=\"8\" y1=\"34\" x2=\"72\" y2=\"34\" stroke=\"#3a4a5e\" stroke-width=\"1\"/></svg>"
+    },
+    {
+     "term": "Vertical impulse",
+     "def": "The upward component of ground reaction force needed to produce flight. Necessary for running; minimising it removes the flight phase.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M12 32h50\" stroke=\"#3a4a5e\" stroke-width=\"1.4\"/><path d=\"M12 32L58 10\" stroke=\"#67e8b0\" stroke-width=\"2\"/><path d=\"M12 32l24 0a24 24 0 0 0 5-9\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"1.4\"/></svg>"
+    },
+    {
+     "term": "B-skip",
+     "def": "A running drill combining knee lift with an active downward leg action. Reinforces faulty mechanics when taught with a pull-back explanation.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><line x1=\"8\" y1=\"32\" x2=\"72\" y2=\"32\" stroke=\"#3a4a5e\" stroke-width=\"1.4\"/><circle cx=\"40\" cy=\"14\" r=\"4\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"1.8\"/><path d=\"M40 18l-12 14M40 18l12 14\" stroke=\"#67e8b0\" stroke-width=\"1.8\"/><path d=\"M28 32h-6\" stroke=\"#ffb86b\" stroke-width=\"2\"/></svg>"
+    },
+    {
+     "term": "Cue",
+     "def": "A short instruction intended to change movement. Judged by the mechanics it produces on video, not by its theoretical accuracy.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"24\" cy=\"20\" r=\"9\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"2\"/><path d=\"M40 20h22M54 13l8 7-8 7\" fill=\"none\" stroke=\"#67e8b0\" stroke-width=\"2\"/></svg>"
+    },
+    {
+     "term": "External cue",
+     "def": "An instruction directing attention to an effect in the environment ('push the ground away') rather than to a body part. Generally transfers better under speed.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"14\" y=\"10\" width=\"52\" height=\"22\" rx=\"3\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"1.6\"/><path d=\"M40 10v22\" stroke=\"#ffb86b\" stroke-width=\"2\"/><path d=\"M20 21h14M46 21h14\" stroke=\"#67e8b0\" stroke-width=\"1.6\"/></svg>"
+    }
+   ],
+   "relevant": true,
+   "exam_focus": "Identify why the standard 'pull the foot under the body' demonstration installs a faulty model, and reframe a running drill cue so it produces correct mechanics.",
+   "figures": []
+  },
+  "93": {
+   "title": "The causes of running injuries",
+   "topic_id": "rb_injury_cause",
+   "domain": "BM",
+   "chapter": "Module 7.2",
+   "page_refs": "Running Biomechanics and Technique for HYROX Performance",
+   "key_concept": "Running injuries are overwhelmingly load-management failures rather than technique failures. The dominant mechanism is cumulative: tissue is loaded faster than it can adapt, and the injury appears at whichever structure has the lowest reserve. That makes training load history — how much, how fast it changed, and what the tissue was previously accustomed to — the strongest modifiable factor, ahead of footstrike pattern, pronation or any single kinematic variable, none of which predict injury reliably at the individual level. Biomechanics still matters, but as a modifier of where load concentrates rather than as a simple cause: high loading rates and braking forces bias toward bone stress injury, low cadence and overstride increase per-step tissue demand, and reduced hip extension and glute contribution shift load onto hamstrings and calf. Layered on top are the non-mechanical contributors — energy availability, sleep, previous injury and rapid changes in surface, footwear or terrain. HYROX adds its own signature: eight runs performed on legs pre-fatigued by heavy pushing, pulling and lunging.",
+   "key_facts": [
+    "Most running injuries are cumulative overload — load applied faster than tissue adaptation — not acute trauma or a single technique fault.",
+    "Training load history is the strongest modifiable risk factor: total volume, rate of change, and what the tissue was previously accustomed to.",
+    "Previous injury is the single most consistent predictor of future injury; take the history seriously and address the deficits it left behind.",
+    "Footstrike pattern does not reliably predict injury. Changing it shifts load between structures — forefoot loads the calf and Achilles more, rearfoot loads the knee more — rather than removing it.",
+    "Pronation has been poorly supported as an injury predictor and is a weak basis for prescribing footwear.",
+    "High loading rate and large braking impulse bias toward bone stress injuries, particularly tibial.",
+    "Low cadence with overstride raises per-step loading; a modest cadence increase reduces load at the knee, though it may increase demand elsewhere.",
+    "Reduced hip extension and glute contribution shift propulsive demand to hamstrings and calf, raising strain risk in both.",
+    "Rapid changes in surface, gradient, footwear (including a sudden shift to a different stack height or drop) or session type are common precipitants.",
+    "Energy availability, sleep and stress modulate tissue adaptation capacity — a mechanically identical load is riskier in an under-fuelled athlete.",
+    "Bone stress injuries in an athlete with menstrual disturbance or restrictive eating warrant medical referral, not a technique session.",
+    "The HYROX-specific pattern: runs performed on legs already loaded by sled push, sled pull and sandbag lunges, so the running tissue load arrives on a pre-fatigued system.",
+    "Progress load gradually and monitor niggles honestly — an irritable tendon that is managed early costs days, and one that is ignored costs a block.",
+    "Technique work is a legitimate adjunct where a specific mechanical fault concentrates load, but it does not substitute for sane load progression."
+   ],
+   "training_link": "When an athlete turns up with shin pain, look at their last six weeks before you look at their footstrike. Nine times out of ten you'll find a jump in volume, a new surface, a shoe change or a block where the sled work quietly doubled — and that's your answer. Ask about previous injuries too, because the old one is the best predictor of the next. Only then consider mechanics, and use them to explain where the load concentrated rather than as the villain: overstride and low cadence load the shin, poor hip extension loads the calf and hamstring. Check fuelling and sleep, because the same session is more dangerous in an under-fuelled athlete. And remember the HYROX wrinkle — their runs land on legs already beaten up by the sled and the lunges, so your running load isn't the only running load.",
+   "glossary": [
+    {
+     "term": "Cumulative overload",
+     "def": "Injury arising from repeated loading exceeding tissue adaptation capacity over time, rather than from a single traumatic event.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M8 26 C20 26 22 32 32 32 C46 32 46 12 66 12\" fill=\"none\" stroke=\"#67e8b0\" stroke-width=\"2\"/><line x1=\"8\" y1=\"24\" x2=\"72\" y2=\"24\" stroke=\"#3a4a5e\" stroke-width=\"1\" stroke-dasharray=\"3 2\"/></svg>"
+    },
+    {
+     "term": "Tissue capacity",
+     "def": "The load a structure can tolerate and adapt to, determined by training history, recovery, and energy availability. Injury occurs when demand exceeds it.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"14\" y=\"10\" width=\"52\" height=\"22\" rx=\"3\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"1.6\"/><path d=\"M40 10v22\" stroke=\"#ffb86b\" stroke-width=\"2\"/><path d=\"M20 21h14M46 21h14\" stroke=\"#67e8b0\" stroke-width=\"1.6\"/></svg>"
+    },
+    {
+     "term": "Loading rate",
+     "def": "How quickly ground reaction force rises after contact. Elevated rates are associated with bone stress injury, particularly at the tibia.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M8 12 C26 13 44 22 72 33\" fill=\"none\" stroke=\"#ffb86b\" stroke-width=\"2\"/><line x1=\"8\" y1=\"34\" x2=\"72\" y2=\"34\" stroke=\"#3a4a5e\" stroke-width=\"1\"/></svg>"
+    },
+    {
+     "term": "Footstrike pattern",
+     "def": "Which part of the foot contacts first. It redistributes load between calf/Achilles and knee rather than predicting injury on its own.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><line x1=\"8\" y1=\"32\" x2=\"72\" y2=\"32\" stroke=\"#3a4a5e\" stroke-width=\"1.4\"/><circle cx=\"40\" cy=\"14\" r=\"4\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"1.8\"/><path d=\"M40 18l-12 14M40 18l12 14\" stroke=\"#67e8b0\" stroke-width=\"1.8\"/><path d=\"M28 32h-6\" stroke=\"#ffb86b\" stroke-width=\"2\"/></svg>"
+    },
+    {
+     "term": "Load progression",
+     "def": "The rate at which training demand increases over time. The most controllable determinant of overuse injury risk.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M8 32 C24 30 34 14 44 14 S62 22 72 10\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"2\"/><circle cx=\"44\" cy=\"14\" r=\"2.5\" fill=\"#5ec8ff\"/></svg>"
+    },
+    {
+     "term": "Niggle",
+     "def": "A low-grade recurring symptom below the threshold of injury. Managed early it costs days; ignored it commonly costs a training block.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M10 20h20M30 20l14-9M30 20l14 9\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"2\"/><circle cx=\"48\" cy=\"11\" r=\"3\" fill=\"#67e8b0\"/><circle cx=\"48\" cy=\"29\" r=\"3\" fill=\"#ffb86b\"/></svg>"
+    }
+   ],
+   "relevant": true,
+   "exam_focus": "Rank the causes of a running injury presentation, explain why load history outranks footstrike and pronation, and state when a presentation requires referral rather than technique work.",
+   "figures": []
+  },
+  "94": {
+   "title": "Working with athletes on nutrition — scope & referral",
+   "topic_id": "nu_working",
+   "domain": "PH",
+   "chapter": "Module 6",
+   "page_refs": "Nutrition",
+   "key_concept": "Nutrition is the area where coaches most often drift outside their scope of practice, usually with good intentions. The workable boundary is this: a coach can provide general, evidence-based nutrition guidance oriented to performance — fuelling around sessions, hydration, practical race-day strategy, general food-quality advice — while individualised medical nutrition therapy, prescriptive meal plans for clinical conditions, eating-disorder management and supplement prescription for medical purposes belong to a registered dietitian or physician. Knowing the line matters legally and clinically, but the deeper coaching skill is behavioural: most athletes already know roughly what to do and fail on implementation. So the effective work is small, specific, negotiated changes anchored to sessions rather than comprehensive dietary overhauls, and it depends on trust, non-judgemental language and cultural and practical realism about what the athlete actually eats. Red flags — restriction, secrecy, rigid rules, weight preoccupation, unexplained fatigue or menstrual disturbance — trigger referral rather than adjustment.",
+   "key_facts": [
+    "In scope for a coach: general performance-oriented nutrition guidance, fuelling around training, hydration, practical race-day strategy, food-quality basics.",
+    "Out of scope: individualised medical nutrition therapy, clinical meal prescription, eating-disorder treatment, and prescribing supplements for medical purposes.",
+    "Build a referral network before you need one — dietitian, physician, and a clinician experienced in disordered eating.",
+    "Assess before advising: a simple food and training log across a normal week beats a questionnaire and reveals timing problems most athletes can't self-report.",
+    "The common failure is implementation, not knowledge. Prioritise one or two specific, negotiated changes over a comprehensive overhaul.",
+    "Anchor changes to sessions ('carbohydrate in the two hours before the key session') because they are concrete and easy to evaluate.",
+    "Practical constraints — budget, cooking skill, shift work, family, culture, religious observance, travel — determine adherence more than optimality does.",
+    "Use non-judgemental, non-moralising language. 'Good' and 'bad' foods framing predicts guilt and secrecy rather than change.",
+    "Avoid routine body-composition measurement without a clear purpose and a plan for the result; it is a common trigger for restriction.",
+    "Red flags for referral: restriction, food secrecy, rigid rules, weight preoccupation, unexplained fatigue, menstrual disturbance, recurrent bone injury, GI symptoms.",
+    "Document your advice and your referrals. It protects the athlete and it protects you.",
+    "Athletes get most of their nutrition information from social media. Part of the job is respectfully correcting misinformation without shaming them for holding it.",
+    "Evaluate the change you made before adding another. An unmeasured intervention is a guess."
+   ],
+   "training_link": "Ask for a week's food and training log before you say anything about nutrition — you'll usually find the problem is timing, not content, and that's a much easier fix. Then change one thing. Pick something concrete and tied to a session, like getting carbohydrate in before the key run, and check in two weeks later whether it actually happened. Work with their real life rather than an ideal one: shift patterns, budget and what their family eats will decide adherence far more than the optimal macro split. Keep the language neutral — no good foods and bad foods — and skip the body-composition checks unless you have a specific reason and a plan. And know your exit: restriction, secrecy, missing periods or repeated bone injuries mean you refer, not adjust.",
+   "glossary": [
+    {
+     "term": "Scope of practice",
+     "def": "The boundary of services a coach is qualified and permitted to deliver. Nutrition guidance sits inside it; clinical nutrition therapy does not.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"14\" y=\"10\" width=\"52\" height=\"22\" rx=\"3\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"1.6\"/><path d=\"M40 10v22\" stroke=\"#ffb86b\" stroke-width=\"2\"/><path d=\"M20 21h14M46 21h14\" stroke=\"#67e8b0\" stroke-width=\"1.6\"/></svg>"
+    },
+    {
+     "term": "Medical nutrition therapy",
+     "def": "Individualised, clinically directed dietary treatment of a diagnosed condition. Requires a registered dietitian or physician.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M40 6l16 6v10c0 8-7 12-16 14-9-2-16-6-16-14V12z\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"1.8\"/><path d=\"M34 20l5 5 8-9\" fill=\"none\" stroke=\"#67e8b0\" stroke-width=\"2\"/></svg>"
+    },
+    {
+     "term": "Food and training log",
+     "def": "A concurrent record of intake and sessions across a normal week — the most useful low-cost assessment tool available to a coach.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"16\" y=\"8\" width=\"34\" height=\"26\" rx=\"2\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"1.6\"/><path d=\"M22 16h22M22 22h22M22 28h14\" stroke=\"#67e8b0\" stroke-width=\"1.6\"/></svg>"
+    },
+    {
+     "term": "Behaviour-change anchoring",
+     "def": "Tying a dietary change to an existing concrete event, such as a specific session, so it is easy to remember and easy to evaluate.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"24\" cy=\"20\" r=\"9\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"2\"/><path d=\"M40 20h22M54 13l8 7-8 7\" fill=\"none\" stroke=\"#67e8b0\" stroke-width=\"2\"/></svg>"
+    },
+    {
+     "term": "Red flag",
+     "def": "A sign warranting referral rather than coaching adjustment — restriction, secrecy, rigid rules, weight preoccupation, menstrual disturbance, recurrent bone injury.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M8 12 C26 13 44 22 72 33\" fill=\"none\" stroke=\"#ffb86b\" stroke-width=\"2\"/><line x1=\"8\" y1=\"34\" x2=\"72\" y2=\"34\" stroke=\"#3a4a5e\" stroke-width=\"1\"/></svg>"
+    },
+    {
+     "term": "Referral network",
+     "def": "The dietitian, physician and clinical specialists a coach has identified in advance, so referral is immediate rather than improvised.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M10 20h20M30 20l14-9M30 20l14 9\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"2\"/><circle cx=\"48\" cy=\"11\" r=\"3\" fill=\"#67e8b0\"/><circle cx=\"48\" cy=\"29\" r=\"3\" fill=\"#ffb86b\"/></svg>"
+    }
+   ],
+   "relevant": true,
+   "exam_focus": "State what nutrition guidance is inside and outside a coach's scope, identify red flags requiring referral, and design a single anchored behavioural change rather than a dietary overhaul.",
+   "figures": []
+  },
+  "95": {
+   "title": "Training the gut",
+   "topic_id": "nu_gut",
+   "domain": "PH",
+   "chapter": "Module 6",
+   "page_refs": "Nutrition",
+   "key_concept": "Gastrointestinal distress is one of the most common reasons endurance athletes underperform, and it is substantially trainable. The gut adapts to what it is regularly asked to do: repeated exposure to carbohydrate during exercise upregulates intestinal transporters, increases gastric emptying rate and improves tolerance, so an athlete who never practises fuelling cannot suddenly absorb race-day carbohydrate. The mechanism sits alongside the exercise-induced splanchnic blood flow reduction — blood is diverted to working muscle and skin, reducing gut perfusion and impairing absorption, an effect worsened by high intensity, heat and dehydration. Practically, gut training means progressively increasing carbohydrate intake during sessions over weeks, rehearsing the exact race-day products, and using multiple transportable carbohydrates (glucose plus fructose) to exceed the roughly 60 g/h ceiling imposed by a single transporter pathway. HYROX adds a specific complication: bouncing, bracing, wall balls and lunges mechanically agitate the gut in a way steady running does not.",
+   "key_facts": [
+    "The gut is adaptable: regular carbohydrate exposure during exercise upregulates intestinal transporters, speeds gastric emptying and improves tolerance.",
+    "Glucose absorption via SGLT1 saturates at roughly 60 g/h; adding fructose, absorbed via GLUT5, allows total intakes around 90 g/h or higher in well-trained guts.",
+    "Typical multiple-transportable-carbohydrate ratios are around 2:1 glucose:fructose, with some newer products using 1:0.8.",
+    "Splanchnic hypoperfusion — reduced gut blood flow as blood is diverted to muscle and skin — impairs absorption and is worsened by high intensity, heat and dehydration.",
+    "Dehydration markedly worsens GI symptoms; fluid strategy and fuelling strategy cannot be planned separately.",
+    "Train the gut progressively across weeks, raising intake per hour in steps rather than jumping to race targets.",
+    "Rehearse with the exact race-day products, concentrations and timing. Novel products on race day are a common and avoidable failure.",
+    "High-fibre, high-fat and high-protein intakes close to competition slow gastric emptying and raise symptom risk; lower-residue choices in the final 24 hours help symptom-prone athletes.",
+    "Symptoms split into upper (nausea, reflux, fullness) and lower (cramping, urgency, diarrhoea), with somewhat different drivers and fixes.",
+    "HYROX-specific mechanical agitation — jumping, bracing under the sandbag, repeated squat-to-overhead — provokes symptoms that steady-state running does not, so rehearse fuelling in station work, not just on runs.",
+    "Very high carbohydrate concentrations and hypertonic drinks slow gastric emptying; dilute appropriately.",
+    "Some athletes are genuinely low absorbers and will not reach 90 g/h. Individualise to the tested tolerance rather than a published target.",
+    "Persistent or severe symptoms, blood in stool, or symptoms outside exercise warrant medical referral rather than further gut training."
+   ],
+   "training_link": "If your athlete's stomach is the reason their race falls apart, treat it as a trainable system and put it in the plan. Start below their current tolerance and add carbohydrate per hour in steps over six to eight weeks, using the exact gel or drink they'll race with — not a similar one. Use a glucose-fructose product if you're going past about 60 g an hour, since that's where the single transporter tops out. Practise it during station work as well as running, because bracing under a sandbag and throwing wall balls upsets a full stomach in a way a steady jog never will. Get the hydration right at the same time, since dehydration makes everything worse. And if symptoms are severe, persistent or happening outside training, that's a referral.",
+   "glossary": [
+    {
+     "term": "Gut training",
+     "def": "Progressive, repeated exposure to carbohydrate and fluid during exercise, upregulating absorption capacity and improving tolerance over weeks.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M20 30c0-10 8-10 8-18M28 12c8 0 8 8 0 8M28 20c10 0 10 10 0 10M28 30h20\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"1.8\"/></svg>"
+    },
+    {
+     "term": "Multiple transportable carbohydrates",
+     "def": "Combining glucose and fructose to use separate intestinal transporters, allowing oxidation rates above the ~60 g/h single-pathway ceiling.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M10 20h20M30 20l14-9M30 20l14 9\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"2\"/><circle cx=\"48\" cy=\"11\" r=\"3\" fill=\"#67e8b0\"/><circle cx=\"48\" cy=\"29\" r=\"3\" fill=\"#ffb86b\"/></svg>"
+    },
+    {
+     "term": "SGLT1 / GLUT5",
+     "def": "The intestinal transporters for glucose and fructose respectively. Their separate saturation points are why mixed-carbohydrate products work.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"14\" y=\"10\" width=\"52\" height=\"22\" rx=\"3\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"1.6\"/><path d=\"M40 10v22\" stroke=\"#ffb86b\" stroke-width=\"2\"/><path d=\"M20 21h14M46 21h14\" stroke=\"#67e8b0\" stroke-width=\"1.6\"/></svg>"
+    },
+    {
+     "term": "Splanchnic hypoperfusion",
+     "def": "Reduced blood flow to the gut during exercise as blood is redirected to muscle and skin, impairing absorption and driving GI symptoms.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M8 12 C26 13 44 22 72 33\" fill=\"none\" stroke=\"#ffb86b\" stroke-width=\"2\"/><line x1=\"8\" y1=\"34\" x2=\"72\" y2=\"34\" stroke=\"#3a4a5e\" stroke-width=\"1\"/></svg>"
+    },
+    {
+     "term": "Gastric emptying",
+     "def": "The rate at which stomach contents pass to the small intestine. Slowed by high intensity, dehydration, and hypertonic or fat- and fibre-rich intake.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M8 32 C24 30 34 14 44 14 S62 22 72 10\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"2\"/><circle cx=\"44\" cy=\"14\" r=\"2.5\" fill=\"#5ec8ff\"/></svg>"
+    },
+    {
+     "term": "Low-residue diet",
+     "def": "Reduced-fibre eating in the final 24 hours before competition, used to lower gut contents and symptom risk in susceptible athletes.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"16\" y=\"8\" width=\"34\" height=\"26\" rx=\"2\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"1.6\"/><path d=\"M22 16h22M22 22h22M22 28h14\" stroke=\"#67e8b0\" stroke-width=\"1.6\"/></svg>"
+    }
+   ],
+   "relevant": true,
+   "exam_focus": "Explain the transporter basis of the ~60 g/h ceiling and how mixed carbohydrates raise it, and design a progressive gut-training protocol rehearsing race products under HYROX-specific mechanical load.",
+   "figures": []
+  },
+  "96": {
+   "title": "Post-competition recovery nutrition",
+   "topic_id": "nu_postcomp",
+   "domain": "PH",
+   "chapter": "Module 6",
+   "page_refs": "Nutrition",
+   "key_concept": "After a HYROX race the athlete has depleted glycogen, sustained muscle damage from eccentric loading (lunges, wall balls, sled deceleration), lost fluid and electrolytes, and taken an immune and inflammatory hit. Recovery nutrition addresses each, and how aggressively it must be pursued depends almost entirely on when they next need to perform. With a week or more before the next hard session, normal good eating across the following days will restore everything and the classic thirty-minute window is largely irrelevant. With another race or a hard session within roughly 24 hours — a doubles athlete racing again, or a training weekend — timing genuinely matters and rapid refuelling becomes worthwhile. The practical priorities are carbohydrate for glycogen resynthesis, protein for muscle protein synthesis and repair, fluid plus sodium to restore plasma volume, and a return to normal eating patterns quickly. Alcohol and severe energy restriction after competition are the two most common self-inflicted delays to recovery.",
+   "key_facts": [
+    "Four recovery targets after a race: glycogen resynthesis, muscle repair, rehydration with electrolytes, and restoration of immune and overall energy status.",
+    "The urgency of nutrient timing scales with the interval to the next performance. Long recovery windows make the 'anabolic window' largely irrelevant.",
+    "For rapid refuelling (next hard effort within ~24 h) aim for roughly 1.0-1.2 g/kg/h of carbohydrate for the first several hours.",
+    "With ≥24 h recovery, total daily carbohydrate intake matters far more than the timing of the first feed.",
+    "Post-exercise protein around 0.3-0.4 g/kg per serving supports muscle protein synthesis; total daily protein intake remains the dominant variable.",
+    "Rehydration requires replacing roughly 125-150% of the fluid deficit, because some intake is lost as urine — and it must include sodium to retain the fluid.",
+    "Plain water without sodium after a large sweat loss can promote diuresis and delay rehydration.",
+    "Eccentric-heavy stations (sandbag lunges, wall balls, sled deceleration) drive delayed-onset muscle soreness and a longer repair timeline than the metabolic cost alone suggests.",
+    "Alcohol impairs glycogen resynthesis, muscle protein synthesis and rehydration, and worsens sleep quality — the single most common post-race recovery error.",
+    "Appetite is often suppressed after hard racing; liquid carbohydrate and protein are more practical than solid food in the first hour.",
+    "Post-race energy restriction (common when athletes 'earn' a rest week by eating less) impairs repair and immune recovery precisely when demand is highest.",
+    "Return to normal eating patterns as quickly as possible — the following days matter more than the following hour in most cases.",
+    "Anti-inflammatory supplementation immediately post-training may blunt some adaptive signalling; after a target race, where adaptation is not the goal, this concern is much less relevant."
+   ],
+   "training_link": "Ask one question before you plan any of this: when do they need to perform again. If the next race is months away, tell them to drink, get some salt and food in, skip the alcohol and eat normally for a few days — nothing more sophisticated is required, and the thirty-minute window myth just adds stress. If they're racing again tomorrow or doing a hard session, then timing genuinely matters: carbohydrate at roughly 1.0-1.2 g/kg/h for the first few hours, protein with it, and fluid at about 1.5 times what they lost, with sodium in it or it just runs straight through. Expect them not to feel hungry, so lead with liquids. And warn them about the two classic own goals — a big night out, and 'earning' the rest week by under-eating.",
+   "glossary": [
+    {
+     "term": "Glycogen resynthesis",
+     "def": "Replenishment of muscle and liver glycogen after exercise. Rate-limited early on, making carbohydrate timing relevant only when recovery time is short.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M8 26 C20 26 22 32 32 32 C46 32 46 12 66 12\" fill=\"none\" stroke=\"#67e8b0\" stroke-width=\"2\"/><line x1=\"8\" y1=\"24\" x2=\"72\" y2=\"24\" stroke=\"#3a4a5e\" stroke-width=\"1\" stroke-dasharray=\"3 2\"/></svg>"
+    },
+    {
+     "term": "Rehydration factor",
+     "def": "The need to consume roughly 125-150% of fluid lost, since a portion is excreted as urine, with sodium included to retain the remainder.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M20 30c0-10 8-10 8-18M28 12c8 0 8 8 0 8M28 20c10 0 10 10 0 10M28 30h20\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"1.8\"/></svg>"
+    },
+    {
+     "term": "Muscle protein synthesis",
+     "def": "The repair and remodelling process stimulated by protein intake after exercise; total daily intake dominates over precise timing.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M8 32 C24 30 34 14 44 14 S62 22 72 10\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"2\"/><circle cx=\"44\" cy=\"14\" r=\"2.5\" fill=\"#5ec8ff\"/></svg>"
+    },
+    {
+     "term": "Eccentric loading",
+     "def": "Force production while a muscle lengthens — prominent in lunges, wall balls and sled deceleration. Drives muscle damage and delayed-onset soreness.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M8 12 C26 13 44 22 72 33\" fill=\"none\" stroke=\"#ffb86b\" stroke-width=\"2\"/><line x1=\"8\" y1=\"34\" x2=\"72\" y2=\"34\" stroke=\"#3a4a5e\" stroke-width=\"1\"/></svg>"
+    },
+    {
+     "term": "Anabolic window",
+     "def": "The proposed short post-exercise period of heightened nutrient sensitivity. Real but far less consequential than once claimed when recovery time is long.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"14\" y=\"10\" width=\"52\" height=\"22\" rx=\"3\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"1.6\"/><path d=\"M40 10v22\" stroke=\"#ffb86b\" stroke-width=\"2\"/><path d=\"M20 21h14M46 21h14\" stroke=\"#67e8b0\" stroke-width=\"1.6\"/></svg>"
+    },
+    {
+     "term": "Post-exercise diuresis",
+     "def": "Urinary fluid loss triggered by drinking large volumes of low-sodium fluid, which delays full rehydration after heavy sweat loss.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M10 20h20M30 20l14-9M30 20l14 9\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"2\"/><circle cx=\"48\" cy=\"11\" r=\"3\" fill=\"#67e8b0\"/><circle cx=\"48\" cy=\"29\" r=\"3\" fill=\"#ffb86b\"/></svg>"
+    }
+   ],
+   "relevant": true,
+   "exam_focus": "Prescribe post-race nutrition scaled to the interval before the next performance, and justify why sodium and the 125-150% rehydration factor matter after heavy sweat loss.",
+   "figures": []
+  },
+  "97": {
+   "title": "Vegetarian & vegan athletes",
+   "topic_id": "nu_plantbased",
+   "domain": "PH",
+   "chapter": "Module 6",
+   "page_refs": "Nutrition",
+   "key_concept": "A well-planned plant-based diet can support HYROX performance at any level, and the coach's role is to make the planning explicit rather than to argue about the choice. The genuine risks are specific and manageable: protein quantity and quality, iron, vitamin B12, omega-3, calcium, vitamin D, zinc and iodine. Plant proteins are generally lower in leucine and less digestible, so plant-based athletes need somewhat higher total protein intake and more attention to distributing it across the day and pairing complementary sources. Iron is the most performance-relevant risk, because non-haem iron from plants is far less bioavailable than haem iron, and endurance training raises requirements — a combination that makes deficiency common and endurance-limiting well before anaemia appears. Vitamin B12 is the one genuinely non-negotiable supplement for vegans, since reliable food sources are fortified products only. Energy density is a quieter problem: high-fibre, high-volume diets can make it hard to eat enough, which slides into low energy availability.",
+   "key_facts": [
+    "A well-planned plant-based diet can meet the demands of endurance and strength training; problems come from poor planning, not from plant sources per se.",
+    "Plant proteins are typically lower in leucine and less digestible, so plant-based athletes generally need a higher total protein intake than omnivores.",
+    "Distribute protein across the day and combine complementary sources (legumes with grains) to cover the full amino acid profile.",
+    "Vitamin B12 is not reliably available from unfortified plant foods. Vegan athletes require supplementation or fortified foods — this is non-negotiable.",
+    "Non-haem iron from plants is far less bioavailable than haem iron from animal foods; requirements are effectively higher for plant-based athletes.",
+    "Vitamin C consumed with iron-rich plant foods enhances non-haem absorption; tea, coffee and calcium taken with the meal inhibit it.",
+    "Iron deficiency impairs endurance well before frank anaemia appears — screen symptomatic athletes rather than waiting for haemoglobin to fall.",
+    "Omega-3: plant ALA converts poorly to EPA and DHA; an algae-derived supplement is the practical route for vegans.",
+    "Calcium and vitamin D matter for bone health, particularly alongside the bone-stress risks of running volume. Fortified plant milks and supplementation cover most cases.",
+    "Zinc and iodine are frequently under-consumed on plant-based diets; iodine is a particular gap where iodised salt is not used.",
+    "Creatine and beta-alanine stores tend to be lower in vegetarians, so supplementation may produce a larger relative benefit than in omnivores.",
+    "High fibre and low energy density can make it difficult to consume adequate energy — a route into low energy availability that looks like discipline.",
+    "Refer to a dietitian for a new or struggling plant-based athlete rather than improvising a plan; blood screening for iron, B12 and vitamin D is a reasonable early step."
+   ],
+   "training_link": "Don't debate the diet — plan it. Push total protein a bit higher than you would for an omnivore and spread it across the day, pairing legumes with grains rather than relying on one source. Check B12 is covered by a supplement or fortified foods, because there's no reliable food route for a vegan and the deficiency is slow and silent. Treat iron as the performance issue it is: get it screened if they're tired, pair iron-rich meals with vitamin C, and keep the coffee away from those meals. Add algae-based omega-3, and check calcium and vitamin D given the running volume. Then watch total energy — high-fibre eating fills people up, and an athlete quietly under-eating on a virtuous-looking diet is heading for low energy availability. When in doubt, refer.",
+   "glossary": [
+    {
+     "term": "Non-haem iron",
+     "def": "Plant-derived iron with substantially lower bioavailability than haem iron from animal foods. Absorption improves with vitamin C and is inhibited by tea, coffee and calcium.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M8 12 C26 13 44 22 72 33\" fill=\"none\" stroke=\"#ffb86b\" stroke-width=\"2\"/><line x1=\"8\" y1=\"34\" x2=\"72\" y2=\"34\" stroke=\"#3a4a5e\" stroke-width=\"1\"/></svg>"
+    },
+    {
+     "term": "Leucine threshold",
+     "def": "The amount of leucine needed to maximally stimulate muscle protein synthesis. Lower leucine content in plant proteins means larger servings are required.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"14\" y=\"10\" width=\"52\" height=\"22\" rx=\"3\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"1.6\"/><path d=\"M40 10v22\" stroke=\"#ffb86b\" stroke-width=\"2\"/><path d=\"M20 21h14M46 21h14\" stroke=\"#67e8b0\" stroke-width=\"1.6\"/></svg>"
+    },
+    {
+     "term": "Complementary proteins",
+     "def": "Combining plant sources with differing limiting amino acids, such as legumes with grains, to provide a complete profile across the day.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M10 20h20M30 20l14-9M30 20l14 9\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"2\"/><circle cx=\"48\" cy=\"11\" r=\"3\" fill=\"#67e8b0\"/><circle cx=\"48\" cy=\"29\" r=\"3\" fill=\"#ffb86b\"/></svg>"
+    },
+    {
+     "term": "Vitamin B12",
+     "def": "A nutrient absent from unfortified plant foods and essential for neurological and haematological function. Supplementation is mandatory for vegans.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M40 6l16 6v10c0 8-7 12-16 14-9-2-16-6-16-14V12z\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"1.8\"/><path d=\"M34 20l5 5 8-9\" fill=\"none\" stroke=\"#67e8b0\" stroke-width=\"2\"/></svg>"
+    },
+    {
+     "term": "ALA to EPA/DHA conversion",
+     "def": "The inefficient metabolic conversion of plant-derived omega-3 into the long-chain forms, making algae-based supplementation the practical option.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"24\" cy=\"20\" r=\"9\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"2\"/><path d=\"M40 20h22M54 13l8 7-8 7\" fill=\"none\" stroke=\"#67e8b0\" stroke-width=\"2\"/></svg>"
+    },
+    {
+     "term": "Energy density",
+     "def": "Energy per unit volume of food. Low density plus high fibre can cap intake and drive inadvertent low energy availability.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M8 32 C24 30 34 14 44 14 S62 22 72 10\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"2\"/><circle cx=\"44\" cy=\"14\" r=\"2.5\" fill=\"#5ec8ff\"/></svg>"
+    }
+   ],
+   "relevant": true,
+   "exam_focus": "Identify the specific nutrients at risk on a plant-based diet, explain why iron and B12 need different handling, and state when the athlete should be referred and screened.",
+   "figures": []
+  },
+  "98": {
+   "title": "HYROX for longevity & health",
+   "topic_id": "sm_longevity",
+   "domain": "SM",
+   "chapter": "Module 2",
+   "page_refs": "Sports Medicine: Optimizing Health, Recovery & Performance",
+   "key_concept": "Most HYROX participants are not chasing a podium; they are using the format as a structure for lifelong fitness. That makes the health case worth understanding, because it changes how a coach programmes for the majority of their clients. HYROX training happens to combine the two strongest predictors of all-cause mortality risk reduction — cardiorespiratory fitness and muscular strength — in a single format, alongside functional capacity work (carrying, lunging, pushing, pulling) that maps directly onto the physical tasks that determine independence in later life. Cardiorespiratory fitness in particular shows a strong graded inverse relationship with mortality, with the largest absolute gains at the low-fitness end, meaning the deconditioned beginner has more to gain than the athlete chasing a five-minute PB. Set against that are the real risks: overuse injury from rapid load progression, the RED-S and overtraining risks of chasing performance, and event-day cardiac risk in older participants with undetected disease. The coach's job is to keep the health return while managing those risks.",
+   "key_facts": [
+    "Cardiorespiratory fitness and muscular strength are each independently associated with reduced all-cause mortality; HYROX training develops both.",
+    "The fitness-mortality relationship is graded and steepest at the low-fitness end — the deconditioned beginner gains most from the first improvements.",
+    "Resistance training independently associates with reduced all-cause mortality and is essential for preserving muscle mass and bone density with age.",
+    "HYROX movements map onto real functional capacity: carrying load, lunging, pushing, pulling and repeated sit-to-stand are the tasks that determine later-life independence.",
+    "Weight-bearing and resistance loading maintain bone mineral density, relevant to osteoporosis and fracture risk in ageing populations.",
+    "The community and event structure supports adherence, which is the variable that actually determines long-term health outcomes.",
+    "Metabolic health benefits — insulin sensitivity, blood pressure, lipid profile, visceral fat — follow from the combined aerobic and resistance stimulus.",
+    "Risks scale with how the training is done: rapid load progression drives overuse injury, and performance chasing can drive RED-S and overtraining.",
+    "Event-day cardiac events, while rare, cluster in older participants with undetected cardiovascular disease during unaccustomed maximal effort.",
+    "Pre-participation screening matters for older or previously inactive athletes: a health history questionnaire and medical clearance where risk factors or symptoms exist.",
+    "Exertional symptoms — chest pain, unusual breathlessness, syncope or near-syncope during exertion — require medical assessment before further training, always.",
+    "For the health-focused participant, consistency and injury avoidance outrank intensity. A block completed beats a block attempted.",
+    "Frame goals accordingly: for most clients the meaningful outcome is training for another twenty years, not a personal best this season."
+   ],
+   "training_link": "Most of the people who walk into your gym want to be fit at seventy, not fast in November — programme for that. The good news is the format already does the heavy lifting: it builds aerobic fitness and strength together, which is about as good as exercise prescription gets for long-term health, and the carrying, lunging and pushing translate directly to staying independent later. So protect consistency above all else. Progress load slowly enough that they never lose a month to a niggle, because the block they complete is worth more than the block they attempt. Screen the older or previously sedentary ones properly before you load them up, and treat chest pain, unusual breathlessness or dizziness on exertion as a hard stop and a referral — never something to train through.",
+   "glossary": [
+    {
+     "term": "Cardiorespiratory fitness",
+     "def": "The capacity of the cardiovascular and respiratory systems to supply oxygen during sustained exercise. One of the strongest known predictors of all-cause mortality risk.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M8 26 C20 26 22 32 32 32 C46 32 46 12 66 12\" fill=\"none\" stroke=\"#67e8b0\" stroke-width=\"2\"/><line x1=\"8\" y1=\"24\" x2=\"72\" y2=\"24\" stroke=\"#3a4a5e\" stroke-width=\"1\" stroke-dasharray=\"3 2\"/></svg>"
+    },
+    {
+     "term": "All-cause mortality",
+     "def": "Death from any cause. Used in epidemiology to assess the total health impact of an exposure such as fitness or strength.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M8 12 C26 13 44 22 72 33\" fill=\"none\" stroke=\"#ffb86b\" stroke-width=\"2\"/><line x1=\"8\" y1=\"34\" x2=\"72\" y2=\"34\" stroke=\"#3a4a5e\" stroke-width=\"1\"/></svg>"
+    },
+    {
+     "term": "Functional capacity",
+     "def": "The physical ability to perform everyday tasks — carrying, lifting, rising from a chair, climbing stairs — which determines independence in later life.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"24\" cy=\"20\" r=\"9\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"2\"/><path d=\"M40 20h22M54 13l8 7-8 7\" fill=\"none\" stroke=\"#67e8b0\" stroke-width=\"2\"/></svg>"
+    },
+    {
+     "term": "Pre-participation screening",
+     "def": "Health history and risk-factor assessment before starting or intensifying training, with medical clearance where risk factors or symptoms are present.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M40 6l16 6v10c0 8-7 12-16 14-9-2-16-6-16-14V12z\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"1.8\"/><path d=\"M34 20l5 5 8-9\" fill=\"none\" stroke=\"#67e8b0\" stroke-width=\"2\"/></svg>"
+    },
+    {
+     "term": "Bone mineral density",
+     "def": "The mineral content of bone, maintained by weight-bearing and resistance loading and central to fracture risk with ageing.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"14\" y=\"10\" width=\"52\" height=\"22\" rx=\"3\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"1.6\"/><path d=\"M40 10v22\" stroke=\"#ffb86b\" stroke-width=\"2\"/><path d=\"M20 21h14M46 21h14\" stroke=\"#67e8b0\" stroke-width=\"1.6\"/></svg>"
+    },
+    {
+     "term": "Adherence",
+     "def": "The degree to which an athlete actually completes planned training over time. The dominant determinant of long-term health outcomes.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M8 32 C24 30 34 14 44 14 S62 22 72 10\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"2\"/><circle cx=\"44\" cy=\"14\" r=\"2.5\" fill=\"#5ec8ff\"/></svg>"
+    }
+   ],
+   "relevant": true,
+   "exam_focus": "Explain why combined aerobic and resistance training predicts reduced all-cause mortality, and identify when pre-participation screening or medical referral is required.",
+   "figures": []
+  },
+  "99": {
+   "title": "Functional neuroscience & injury prevention",
+   "topic_id": "sm_neuro",
+   "domain": "SM",
+   "chapter": "Module 2",
+   "page_refs": "Sports Medicine: Optimizing Health, Recovery & Performance",
+   "key_concept": "Injury prevention has traditionally been framed around tissue: make the muscle stronger, the tendon stiffer, the joint more stable. The functional-neuroscience lens adds the control layer — injuries frequently occur not because tissue lacked capacity but because the nervous system did not organise the movement well enough under the conditions of the moment. That control depends on sensory input (proprioception from muscle spindles, Golgi tendon organs and joint receptors, plus vestibular and visual input), on the speed and quality of central processing, and on the motor output that results. Fatigue, distraction, pain and previous injury all degrade this loop, which is why injuries cluster late in sessions, under cognitive load and in athletes with injury history. Practically this means prevention work should include reactive and unanticipated elements, dual-task and fatigued conditions, and progressive exposure rather than only clean, pre-planned, fresh-state strength work. It also explains why an athlete can pass a movement screen and still get hurt on the eighth run.",
+   "key_facts": [
+    "Injury risk depends on both tissue capacity and neuromuscular control — the ability to organise movement appropriately in the moment.",
+    "Proprioception draws on muscle spindles (length and velocity), Golgi tendon organs (tension) and joint receptors, integrated with vestibular and visual input.",
+    "Feedforward control anticipates load and pre-activates muscle before contact; feedback control corrects after the fact and is too slow for high-speed events.",
+    "Previous injury degrades proprioceptive acuity and alters motor patterns, which partly explains why it is the strongest predictor of future injury.",
+    "Fatigue degrades the whole loop: slower reaction, reduced proprioceptive accuracy, altered recruitment. Injuries therefore cluster late in sessions and late in races.",
+    "Cognitive load and distraction reduce available attentional resources for movement control, raising risk in unpredictable environments.",
+    "Pain alters motor control independently of tissue damage, producing protective patterns that can persist after the tissue has healed.",
+    "Clean, pre-planned, fresh-state screening can miss athletes who fail under fatigue or unanticipated conditions — a common false negative.",
+    "Effective prevention programmes combine strength, plyometric, balance and agility work; multi-component programmes consistently outperform single-mode approaches.",
+    "Include reactive and unanticipated elements — reacting to a call or a visual cue rather than executing a known sequence.",
+    "Train under fatigue deliberately, so control is rehearsed in the state where injuries actually happen.",
+    "In HYROX, the compromised-running transition after a station is the highest-risk control moment: proprioception is degraded and the movement pattern changes abruptly.",
+    "Progressive exposure to the demand, rather than avoidance of it, is what builds durable control — tissue and nervous system both adapt to what they meet regularly."
+   ],
+   "training_link": "Stop testing your athletes only when they're fresh and the movement is pre-planned — that's not when they get hurt. Put some of the prevention work at the end of hard sessions, and add reactive elements: change of direction on a call, a landing they didn't know was coming, a dual-task element. Pay particular attention to the moment they come off a station into a run, because that transition is where proprioception is worst and the pattern changes fastest — practise it deliberately rather than letting race day be the first rehearsal. Take injury history seriously as a control problem, not just a tissue one; an old ankle sprain leaves a proprioceptive deficit that outlasts the healing. And build multi-component work — strength, plyos, balance, agility — because the combination beats any single ingredient.",
+   "glossary": [
+    {
+     "term": "Proprioception",
+     "def": "The sense of body position and movement, drawn from muscle spindles, Golgi tendon organs and joint receptors, and integrated with vestibular and visual input.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"30\" cy=\"20\" r=\"10\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"1.8\"/><path d=\"M30 10v20M22 16h16M22 24h16\" stroke=\"#67e8b0\" stroke-width=\"1.3\"/><path d=\"M44 20h18M56 15l6 5-6 5\" fill=\"none\" stroke=\"#ffb86b\" stroke-width=\"1.8\"/></svg>"
+    },
+    {
+     "term": "Feedforward control",
+     "def": "Anticipatory pre-activation of muscle before an expected load, fast enough to protect joints where feedback correction would arrive too late.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"24\" cy=\"20\" r=\"9\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"2\"/><path d=\"M40 20h22M54 13l8 7-8 7\" fill=\"none\" stroke=\"#67e8b0\" stroke-width=\"2\"/></svg>"
+    },
+    {
+     "term": "Muscle spindle",
+     "def": "A sensory receptor within muscle detecting change in length and rate of change, central to reflexive stiffness regulation.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M10 20h20M30 20l14-9M30 20l14 9\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"2\"/><circle cx=\"48\" cy=\"11\" r=\"3\" fill=\"#67e8b0\"/><circle cx=\"48\" cy=\"29\" r=\"3\" fill=\"#ffb86b\"/></svg>"
+    },
+    {
+     "term": "Golgi tendon organ",
+     "def": "A receptor at the musculotendinous junction sensing tension, contributing to force regulation and protective inhibition.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"14\" y=\"10\" width=\"52\" height=\"22\" rx=\"3\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"1.6\"/><path d=\"M40 10v22\" stroke=\"#ffb86b\" stroke-width=\"2\"/><path d=\"M20 21h14M46 21h14\" stroke=\"#67e8b0\" stroke-width=\"1.6\"/></svg>"
+    },
+    {
+     "term": "Dual-task condition",
+     "def": "Performing a movement while managing a concurrent cognitive demand, reducing attention available for motor control and revealing fragile patterns.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"30\" cy=\"20\" r=\"10\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"1.8\"/><path d=\"M30 10v20M22 16h16M22 24h16\" stroke=\"#67e8b0\" stroke-width=\"1.3\"/><path d=\"M44 20h18M56 15l6 5-6 5\" fill=\"none\" stroke=\"#ffb86b\" stroke-width=\"1.8\"/></svg>"
+    },
+    {
+     "term": "Unanticipated movement",
+     "def": "Movement performed in response to an unpredicted cue rather than a known sequence. Far more representative of injury conditions than pre-planned testing.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M8 32 C24 30 34 14 44 14 S62 22 72 10\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"2\"/><circle cx=\"44\" cy=\"14\" r=\"2.5\" fill=\"#5ec8ff\"/></svg>"
+    }
+   ],
+   "relevant": true,
+   "exam_focus": "Explain how fatigue, pain and previous injury degrade neuromuscular control, and design prevention work incorporating fatigued, reactive and unanticipated conditions.",
+   "figures": []
+  },
+  "100": {
+   "title": "Training & competing while sick",
+   "topic_id": "sm_illness",
+   "domain": "SM",
+   "chapter": "Module 2",
+   "page_refs": "Sports Medicine: Optimizing Health, Recovery & Performance",
+   "key_concept": "Athletes get ill, and the recurring question is whether to train, modify or stop. The most widely used practical heuristic is the neck check: symptoms above the neck alone — mild sore throat, nasal congestion, sneezing without fever — generally permit light-to-moderate training with a symptom review, while symptoms below the neck, or any systemic sign, mean stop. The systemic red flags are fever, muscle aches, unusual fatigue, productive cough, chest tightness, breathlessness, vomiting or diarrhoea. Fever specifically is an absolute contraindication to training: it raises resting metabolic and cardiovascular demand, impairs thermoregulation, and — critically — training with a systemic viral illness carries a risk of myocarditis, which is a rare but potentially fatal cause of exercise-related sudden cardiac death. Return should be graded rather than immediate, typically requiring a symptom-free and fever-free period before resuming, then a progressive rebuild. Heavy training loads and competition transiently increase infection susceptibility, so prevention through hygiene, sleep, adequate energy and load management is a legitimate performance intervention.",
+   "key_facts": [
+    "The neck check: symptoms confined above the neck (mild sore throat, nasal congestion, sneezing, no fever) generally permit reduced training with review.",
+    "Symptoms below the neck — productive cough, chest tightness, breathlessness, GI symptoms — mean do not train.",
+    "Any systemic symptom (fever, myalgia, unusual fatigue, swollen glands) means stop, regardless of where the local symptoms sit.",
+    "Fever is an absolute contraindication to training. It raises cardiovascular and metabolic demand and impairs thermoregulation.",
+    "Training with a systemic viral illness carries a risk of myocarditis — rare, but a recognised cause of exercise-related sudden cardiac death in athletes.",
+    "When training is permitted, reduce intensity and volume first and reassess daily rather than pushing through to a planned session.",
+    "Return to training should be graded: a fever-free and symptom-free period first, then progressive rebuild over several days, with a longer runway after systemic illness.",
+    "As a rough guide, allow at least as many easy days returning as days missed after a systemic illness, and longer if fever was present.",
+    "Watch for post-illness fatigue and unexpectedly high heart rate at easy paces — a sign the athlete has returned too fast.",
+    "Heavy training and competition transiently increase upper respiratory infection susceptibility, particularly around long-haul travel and major events.",
+    "Prevention is programmable: sleep, adequate energy availability, hand hygiene, avoiding sharing bottles and towels, and managing load spikes.",
+    "Vitamin D sufficiency and adequate energy availability support immune function; megadose supplementation is not a substitute for either.",
+    "Medication caution: some over-the-counter cold remedies contain substances restricted in sport, so check status before an athlete competes.",
+    "Never let an athlete race with fever or systemic illness, whatever the entry fee or the training block behind it."
+   ],
+   "training_link": "Teach your athletes the neck check so they can make the call without texting you at 6am: stuffy nose and a scratchy throat with no fever, train easy and reassess tomorrow. Anything below the neck, or a fever, aches or unusual fatigue, and they stop — no negotiation, because training through a systemic viral illness carries a small but real myocarditis risk and that's not a gamble worth a session. Bring them back gradually rather than straight into the key session, and give at least as many easy days as they missed if it was systemic. Watch their heart rate at easy pace on the way back; if it's high for the effort, they've come back too soon. And if a target race lands on a fever, they don't race.",
+   "glossary": [
+    {
+     "term": "Neck check",
+     "def": "A practical heuristic permitting reduced training for symptoms above the neck without fever, and prohibiting it for symptoms below the neck or any systemic sign.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"14\" y=\"10\" width=\"52\" height=\"22\" rx=\"3\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"1.6\"/><path d=\"M40 10v22\" stroke=\"#ffb86b\" stroke-width=\"2\"/><path d=\"M20 21h14M46 21h14\" stroke=\"#67e8b0\" stroke-width=\"1.6\"/></svg>"
+    },
+    {
+     "term": "Systemic symptoms",
+     "def": "Signs of whole-body involvement — fever, muscle aches, unusual fatigue, swollen glands — which contraindicate training regardless of local symptoms.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M8 12 C26 13 44 22 72 33\" fill=\"none\" stroke=\"#ffb86b\" stroke-width=\"2\"/><line x1=\"8\" y1=\"34\" x2=\"72\" y2=\"34\" stroke=\"#3a4a5e\" stroke-width=\"1\"/></svg>"
+    },
+    {
+     "term": "Myocarditis",
+     "def": "Inflammation of the heart muscle, which can follow viral illness and is a recognised cause of exercise-related sudden cardiac death. The core reason not to train with fever.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M40 6l16 6v10c0 8-7 12-16 14-9-2-16-6-16-14V12z\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"1.8\"/><path d=\"M34 20l5 5 8-9\" fill=\"none\" stroke=\"#67e8b0\" stroke-width=\"2\"/></svg>"
+    },
+    {
+     "term": "Graded return",
+     "def": "A progressive rebuild of intensity and volume after illness, rather than resuming the planned programme at the point it was interrupted.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M8 26 C20 26 22 32 32 32 C46 32 46 12 66 12\" fill=\"none\" stroke=\"#67e8b0\" stroke-width=\"2\"/><line x1=\"8\" y1=\"24\" x2=\"72\" y2=\"24\" stroke=\"#3a4a5e\" stroke-width=\"1\" stroke-dasharray=\"3 2\"/></svg>"
+    },
+    {
+     "term": "Upper respiratory tract infection",
+     "def": "The most common illness in athletes, with transiently raised susceptibility around heavy training loads, competition and long-haul travel.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M8 32 C24 30 34 14 44 14 S62 22 72 10\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"2\"/><circle cx=\"44\" cy=\"14\" r=\"2.5\" fill=\"#5ec8ff\"/></svg>"
+    },
+    {
+     "term": "Exertional red flags",
+     "def": "Chest pain, unusual breathlessness, palpitations or syncope during exertion — always requiring medical assessment before further training.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M10 20h20M30 20l14-9M30 20l14 9\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"2\"/><circle cx=\"48\" cy=\"11\" r=\"3\" fill=\"#67e8b0\"/><circle cx=\"48\" cy=\"29\" r=\"3\" fill=\"#ffb86b\"/></svg>"
+    }
+   ],
+   "relevant": true,
+   "exam_focus": "Apply the neck check to a symptom presentation, justify fever as an absolute contraindication via myocarditis risk, and prescribe a graded return after systemic illness.",
+   "figures": []
+  },
+  "101": {
+   "title": "Anti-doping & WADA essentials",
+   "topic_id": "sm_antidoping",
+   "domain": "SM",
+   "chapter": "Module 2",
+   "page_refs": "Sports Medicine: Optimizing Health, Recovery & Performance",
+   "key_concept": "Anti-doping rests on a principle that surprises many athletes: strict liability. An athlete is responsible for any prohibited substance found in their sample regardless of intent, negligence or how it got there — which means 'my supplement was contaminated' is an explanation, not a defence. The World Anti-Doping Agency publishes a Prohibited List updated at least annually, organised into substances prohibited at all times, substances prohibited in competition only (including stimulants, cannabinoids and glucocorticoids by certain routes), and substances prohibited in particular sports. Beyond the presence of a substance, there are further anti-doping rule violations that catch out the unwary: whereabouts failures, tampering, refusing a test, trafficking, complicity, and — directly relevant to coaches — administration and association with sanctioned personnel. A Therapeutic Use Exemption allows a legitimately needed medication under defined criteria. For a coach, the practical duties are to check every medication and supplement, to advise batch-tested products where supplements are used at all, and never to supply anything.",
+   "key_facts": [
+    "Strict liability: the athlete is responsible for what is in their body, regardless of intent or how it got there.",
+    "The WADA Prohibited List is updated at least annually. Check it each year rather than assuming last season's knowledge holds.",
+    "List structure: substances and methods prohibited at all times, those prohibited in competition only, and those prohibited in particular sports.",
+    "Prohibited methods matter too — manipulation of blood and blood components, chemical and physical manipulation, and gene doping.",
+    "Anti-doping rule violations extend well beyond a positive test: use or attempted use, refusing or evading a test, whereabouts failures, tampering, possession, trafficking, administration, complicity, and prohibited association.",
+    "Coaches can personally commit violations through administration, complicity or association with sanctioned support personnel.",
+    "A Therapeutic Use Exemption permits a prohibited substance where there is a clear medical need, no reasonable permitted alternative, no additional performance benefit beyond a return to normal health, and the need is not the result of prior non-therapeutic use.",
+    "Apply for a TUE in advance where required; retroactive applications are limited to defined circumstances such as emergency treatment.",
+    "Supplements are the most common route to inadvertent violations, through contamination and undeclared ingredients rather than deliberate cheating.",
+    "Where supplements are used, choose third-party batch-tested products (for example Informed Sport or similar schemes) — this reduces but does not eliminate risk.",
+    "Coaches should never supply supplements or medication to an athlete. Advise, document and refer to a physician or pharmacist for checking.",
+    "Check every medication before use, including over-the-counter cold and allergy remedies, some of which contain in-competition prohibited stimulants.",
+    "Education is part of the coaching role: athletes who understand strict liability behave differently from those who assume good intent protects them."
+   ],
+   "training_link": "Have the conversation before there's a problem, not after. Explain strict liability plainly — whatever ends up in their sample is their responsibility, and 'I didn't know' has never worked for anyone. Make it a rule that every medication and supplement gets checked against the current Prohibited List before it's taken, including the cold and flu tablets from the pharmacy, which are a classic way to fail an in-competition test. If they insist on supplements, steer them to third-party batch-tested products and be honest that it reduces rather than removes the risk. Never hand them anything yourself — advise, document, and send them to a pharmacist or physician. And if they have a genuine medical need for something on the list, get the TUE sorted in advance rather than hoping.",
+   "glossary": [
+    {
+     "term": "Strict liability",
+     "def": "The principle that an athlete is responsible for any prohibited substance in their sample regardless of intent or negligence.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M40 6l16 6v10c0 8-7 12-16 14-9-2-16-6-16-14V12z\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"1.8\"/><path d=\"M34 20l5 5 8-9\" fill=\"none\" stroke=\"#67e8b0\" stroke-width=\"2\"/></svg>"
+    },
+    {
+     "term": "Prohibited List",
+     "def": "WADA's annually updated list of banned substances and methods, divided into those prohibited at all times, in competition only, and in particular sports.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"16\" y=\"8\" width=\"34\" height=\"26\" rx=\"2\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"1.6\"/><path d=\"M22 16h22M22 22h22M22 28h14\" stroke=\"#67e8b0\" stroke-width=\"1.6\"/></svg>"
+    },
+    {
+     "term": "Therapeutic Use Exemption (TUE)",
+     "def": "Authorisation to use a prohibited substance for a genuine medical need, granted where no permitted alternative exists and no performance benefit beyond normal health results.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"14\" y=\"10\" width=\"52\" height=\"22\" rx=\"3\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"1.6\"/><path d=\"M40 10v22\" stroke=\"#ffb86b\" stroke-width=\"2\"/><path d=\"M20 21h14M46 21h14\" stroke=\"#67e8b0\" stroke-width=\"1.6\"/></svg>"
+    },
+    {
+     "term": "Anti-doping rule violation",
+     "def": "Any of the defined breaches — including use, refusal, whereabouts failures, tampering, trafficking, administration, complicity and prohibited association — not merely a positive test.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M8 12 C26 13 44 22 72 33\" fill=\"none\" stroke=\"#ffb86b\" stroke-width=\"2\"/><line x1=\"8\" y1=\"34\" x2=\"72\" y2=\"34\" stroke=\"#3a4a5e\" stroke-width=\"1\"/></svg>"
+    },
+    {
+     "term": "Prohibited association",
+     "def": "A violation committed by working with support personnel serving a doping sanction. Directly relevant to coaches and their professional networks.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M10 20h20M30 20l14-9M30 20l14 9\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"2\"/><circle cx=\"48\" cy=\"11\" r=\"3\" fill=\"#67e8b0\"/><circle cx=\"48\" cy=\"29\" r=\"3\" fill=\"#ffb86b\"/></svg>"
+    },
+    {
+     "term": "Batch testing",
+     "def": "Third-party analysis of specific supplement batches for prohibited substances, reducing but not eliminating contamination risk.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M8 32 C24 30 34 14 44 14 S62 22 72 10\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"2\"/><circle cx=\"44\" cy=\"14\" r=\"2.5\" fill=\"#5ec8ff\"/></svg>"
+    }
+   ],
+   "relevant": true,
+   "exam_focus": "Explain strict liability and its implications for supplement use, list anti-doping rule violations beyond a positive test, and state the criteria for a Therapeutic Use Exemption.",
    "figures": []
   }
  }

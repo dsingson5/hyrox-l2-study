@@ -4648,5 +4648,1617 @@
    "a": "Running time = 8 x 4:30 = 36 min. Steps = 36 x 180 = 6,480. Baseline step length = 8,000 / 6,480 = 1.235 m. Method A: 6,480 x 0.004 m = 25.9 m extra; at 4:30/km (0.27 s per metre) that is 25.9 x 0.27 = 7.0 s. Method B (check): new step length 1.2386 m, so 8,000 / 1.2386 = 6,459 steps, i.e. 21 fewer steps at 60/180 = 0.333 s per step = 7.0 s. Agrees. Interpretation: the output is roughly linear in the assumed per-step gain, so the whole calculation is only as good as a number nobody has measured on this athlete. Halve the assumption and you halve the benefit; it also shrinks as running time falls. The coaching conclusion is that this is a plausible but small aggregate effect worth permitting, not a performance lever to sell — and it sits well inside the noise of a few sloppy transitions.",
    "type": "calc"
   }
+ ],
+ "pc_junior": [
+  {
+   "q": "Biological vs chronological age — why does the distinction matter?",
+   "a": "Two juniors of the same birth year can be years apart in maturity. Load, expectations and talent judgements must follow maturity status, not birth year.",
+   "type": "recall"
+  },
+  {
+   "q": "What is the relative age effect?",
+   "a": "Over-selection of athletes born early in a cut-off year, whose greater size and maturity get mistaken for greater talent.",
+   "type": "recall"
+  },
+  {
+   "q": "What is PHV and why does it change your programming?",
+   "a": "Peak height velocity — the fastest phase of the growth spurt. Coordination dips and apophyseal tissue becomes vulnerable, so impact volume and technical expectations drop.",
+   "type": "recall"
+  },
+  {
+   "q": "Does resistance training stunt growth in youth?",
+   "a": "No. Supervised, technique-led resistance training is safe in youth and reduces injury risk. Supervision and technique are the safety mechanism, not load avoidance.",
+   "type": "recall"
+  },
+  {
+   "q": "Name two apophyseal conditions common around the growth spurt.",
+   "a": "Osgood-Schlatter at the tibial tuberosity and Sever's at the calcaneus.",
+   "type": "recall"
+  },
+  {
+   "q": "Why is early single-sport specialisation discouraged?",
+   "a": "It is associated with higher overuse injury and burnout risk than sampling multiple sports, without a reliable long-term performance advantage.",
+   "type": "application"
+  },
+  {
+   "q": "How do children differ from adults metabolically?",
+   "a": "Relatively good aerobic recoverability but lower anaerobic/glycolytic capacity, so long heavy lactate work is a poor fit.",
+   "type": "recall"
+  },
+  {
+   "q": "How would you scale a HYROX session for a 13-year-old?",
+   "a": "Shorter run legs, lighter sled and sandbag, reduced wall-ball weight and target height, fewer stations. Never default to open-division loads.",
+   "type": "application"
+  },
+  {
+   "q": "A cheap, practical way to detect the vulnerable growth window?",
+   "a": "Measure standing height every 4-8 weeks; a rapid jump signals entry into or near PHV.",
+   "type": "application"
+  },
+  {
+   "q": "Why is thermoregulation a specific concern in younger children?",
+   "a": "Higher surface-area-to-mass ratio and lower sweat rate make heat dissipation less efficient.",
+   "type": "recall"
+  },
+  {
+   "q": "What motivational climate suits juniors and why?",
+   "a": "Mastery- and enjoyment-led. Adult-style outcome pressure predicts dropout, and retention is itself a long-term performance outcome.",
+   "type": "application"
+  },
+  {
+   "q": "Coordination suddenly worsens in a 14-year-old you coach. Most likely explanation?",
+   "a": "Adolescent awkwardness around the growth spurt — a transient coordination dip. Hold technique standards, cut load, wait it out.",
+   "type": "application"
+  }
+ ],
+ "pc_female": [
+  {
+   "q": "Define low energy availability.",
+   "a": "Dietary energy intake minus exercise energy expenditure, relative to fat-free mass, falling below what normal physiological function requires.",
+   "type": "recall"
+  },
+  {
+   "q": "What is RED-S and who does it affect?",
+   "a": "Relative Energy Deficiency in Sport — the multi-system syndrome from sustained low energy availability. It affects athletes of any sex, not just women.",
+   "type": "recall"
+  },
+  {
+   "q": "How solid is the evidence for phase-based menstrual cycle programming?",
+   "a": "Weak. Group-level performance differences across phases are small and inconsistent. Individual symptom burden is the actionable signal, not a fixed template.",
+   "type": "recall"
+  },
+  {
+   "q": "Why are wall balls often a disproportionate limiter for female athletes?",
+   "a": "Repeated squat-to-overhead throwing sits at a higher fraction of upper-body capacity given proportionally less upper-body lean mass, even at divisional loads.",
+   "type": "application"
+  },
+  {
+   "q": "An athlete you coach reports she has not menstruated in eight months. Response?",
+   "a": "Treat it as a red flag, not a convenient side effect. Refer for medical assessment and review energy availability — do not simply adjust the programme.",
+   "type": "application"
+  },
+  {
+   "q": "Why can't you programme an athlete on hormonal contraception as if she were naturally cycling?",
+   "a": "Contraception alters the hormonal profile and bleed pattern, so cycle-phase reasoning does not transfer. Ask rather than assume.",
+   "type": "application"
+  },
+  {
+   "q": "Which deficiency is more prevalent in menstruating athletes and degrades endurance early?",
+   "a": "Iron deficiency — it impairs endurance performance before frank anaemia appears.",
+   "type": "recall"
+  },
+  {
+   "q": "Name three body systems affected by RED-S beyond performance.",
+   "a": "Bone health, endocrine/menstrual function, and immunity — plus cardiovascular, GI and psychological health.",
+   "type": "recall"
+  },
+  {
+   "q": "Which aerobic characteristics tend to favour female athletes in HYROX?",
+   "a": "Greater fatigue resistance at a given relative intensity, proportionally higher fat oxidation, and often better pacing discipline.",
+   "type": "recall"
+  },
+  {
+   "q": "What coaching conduct raises disordered-eating risk?",
+   "a": "Casual body-composition commentary, weigh-ins without clinical purpose, and 'lighter is faster' framing.",
+   "type": "application"
+  },
+  {
+   "q": "Athlete has menstrual disturbance plus new shin pain. Priority action?",
+   "a": "Suspect a bone stress injury linked to low energy availability and refer for medical assessment before adjusting load.",
+   "type": "application"
+  },
+  {
+   "q": "What governs a postpartum return-to-training timeline?",
+   "a": "Pelvic floor and abdominal wall load tolerance under clinician-led progression — not cardiovascular fitness.",
+   "type": "application"
+  }
+ ],
+ "pc_masters": [
+  {
+   "q": "At what age is a masters athlete conventionally defined?",
+   "a": "Commonly 35+, though it varies widely by sport and the practical coaching category is usually 40+.",
+   "type": "recall"
+  },
+  {
+   "q": "Which declines faster with age — sprint/power or endurance performance?",
+   "a": "Sprint and explosive performance decline earlier and more steeply; endurance holds up comparatively well.",
+   "type": "recall"
+  },
+  {
+   "q": "Approximate strength decline per decade in a consistently training masters athlete?",
+   "a": "Roughly 5-10% per decade, against 10-15% per decade after 30 in sedentary adults and up to 30% per decade after 60.",
+   "type": "recall"
+  },
+  {
+   "q": "Give approximate VO2max decline rates per decade by training status.",
+   "a": "≈10% sedentary, ≈5-7% active, ≈3-5% highly trained, and as little as ≈2-3% in well-trained masters until about 50, accelerating after.",
+   "type": "recall"
+  },
+  {
+   "q": "What central factor mainly drives the VO2max decline?",
+   "a": "Reduced maximal cardiac output, driven mainly by reduced maximal stroke volume, plus a maximal heart rate fall of about 0.2 beats/min per year.",
+   "type": "recall"
+  },
+  {
+   "q": "Why does endurance performance decline less steeply than VO2max?",
+   "a": "Exercise economy and lactate/ventilatory thresholds are comparatively preserved with age, cushioning the performance effect.",
+   "type": "application"
+  },
+  {
+   "q": "Name the five determinants of strength that deteriorate with age.",
+   "a": "Muscle cross-sectional area, fibre type and fast-twitch recruitment, motor unit number and firing rate, neuromuscular coordination, and tendon stiffness.",
+   "type": "recall"
+  },
+  {
+   "q": "Why prioritise strength and plyometric work for a masters athlete?",
+   "a": "It promotes collagen remodelling and maintains or improves tendon stiffness, defending force transmission, elastic energy return and power — the fastest-decaying qualities.",
+   "type": "application"
+  },
+  {
+   "q": "Which HYROX elements should you expect to age worst?",
+   "a": "The explosive ones — burpee broad jumps and wall-ball power — since neuromuscular coordination and power decline before aerobic qualities.",
+   "type": "application"
+  },
+  {
+   "q": "Volume or intensity — which do you protect in a masters programme?",
+   "a": "Intensity. Much of the apparent age-related decline is confounded by athletes reducing intensity. Buy hard sessions with extra recovery days instead.",
+   "type": "application"
+  },
+  {
+   "q": "What mechanisms underlie the fall in maximal heart rate?",
+   "a": "Slower cardiac conduction velocity and reduced sinoatrial node responsiveness to sympathetic drive.",
+   "type": "recall"
+  },
+  {
+   "q": "Why does HYROX suit masters athletes relatively well?",
+   "a": "Its long aerobic demand leans on economy and threshold, which are preserved, rather than on short maximal efforts, which are not.",
+   "type": "application"
+  }
+ ],
+ "pc_highperf": [
+  {
+   "q": "How does the risk balance change at elite level?",
+   "a": "The risk of over-reaching outweighs the risk of under-training, because easy adaptations are already harvested and the productive-overload window is narrow.",
+   "type": "recall"
+  },
+  {
+   "q": "How many qualities should a high-performance block develop at once?",
+   "a": "One, or at most two. Attempting three concurrently reliably produces three mediocre outcomes.",
+   "type": "recall"
+  },
+  {
+   "q": "What is a key session and how does it shape the week?",
+   "a": "The two or three sessions that actually drive the target adaptation. Everything else is scheduled to allow them to be performed at quality.",
+   "type": "application"
+  },
+  {
+   "q": "Describe a polarised intensity distribution.",
+   "a": "A large majority of easy volume below the first threshold plus a small genuinely hard fraction above the second, with little time in between.",
+   "type": "recall"
+  },
+  {
+   "q": "What is the most useful monitoring tool at elite level?",
+   "a": "A repeated standardised benchmark session — it gives a directly comparable longitudinal performance data point that wearables cannot.",
+   "type": "application"
+  },
+  {
+   "q": "First practical sign of non-functional overreaching?",
+   "a": "A widening gap between prescribed and achieved output — quietly missing paces the athlete hit a fortnight earlier.",
+   "type": "application"
+  },
+  {
+   "q": "Distinguish functional from non-functional overreaching.",
+   "a": "Functional overreaching resolves in days with supercompensation; non-functional produces a decrement needing weeks and no performance gain.",
+   "type": "recall"
+  },
+  {
+   "q": "What usually limits elite HYROX performance?",
+   "a": "Compromised running — holding pace on legs pre-loaded by the sled and lunges — more often than raw strength.",
+   "type": "application"
+  },
+  {
+   "q": "Why does availability count as a performance metric?",
+   "a": "Training density leaves no slack, so the proportion of planned sessions actually completed correlates with outcome as strongly as physiological markers.",
+   "type": "application"
+  },
+  {
+   "q": "When do marginal gains actually pay?",
+   "a": "Only once the fundamentals are saturated — sleep duration and regularity, fuelling, heat and travel management, equipment familiarity.",
+   "type": "recall"
+  },
+  {
+   "q": "How should elite pacing be set?",
+   "a": "As a modelled plan with target splits per run and per station, plus a defined response if a station goes badly — not by feel.",
+   "type": "application"
+  },
+  {
+   "q": "What counts as a good annual improvement at elite level?",
+   "a": "Around 2%. Progression is measured across seasons, not blocks.",
+   "type": "recall"
+  }
+ ],
+ "pc_adapted": [
+  {
+   "q": "Should adapted athletes be classified by diagnosis or function?",
+   "a": "By function. Two athletes with the same diagnosis can have entirely different capacities, so assess what this athlete can actually do.",
+   "type": "recall"
+  },
+  {
+   "q": "What does 'preserving training intent' mean when substituting a station?",
+   "a": "Matching the energy system, muscular demand and duration of the original, while allowing the movement itself to change completely.",
+   "type": "recall"
+  },
+  {
+   "q": "What is the training intent of wall balls?",
+   "a": "Repeated squat-to-overhead local muscular endurance under a clock.",
+   "type": "recall"
+  },
+  {
+   "q": "What is autonomic dysreflexia and at what lesion level is it a risk?",
+   "a": "A dangerous hypertensive response to a noxious stimulus below a spinal cord lesion, typically at T6 or above.",
+   "type": "recall"
+  },
+  {
+   "q": "Signs of autonomic dysreflexia and the immediate response?",
+   "a": "Pounding headache, flushing and sweating above the lesion, bradycardia. Stop, sit the athlete upright, find and remove the trigger, seek medical help.",
+   "type": "application"
+  },
+  {
+   "q": "Why does thermoregulation fail below a spinal cord lesion?",
+   "a": "Reduced sweating and vasomotor control below the lesion impair heat dissipation, so cooling and fluid access must be planned.",
+   "type": "recall"
+  },
+  {
+   "q": "Which injury burden is elevated in wheelchair athletes and how do you offset it?",
+   "a": "Shoulder injury from propulsion plus overhead work. Balance pushing volume with posterior chain, scapular and external-rotation work.",
+   "type": "application"
+  },
+  {
+   "q": "What is boosting and what is the coach's position on it?",
+   "a": "Deliberately provoking autonomic dysreflexia for performance. It is prohibited and dangerous; a coach must never facilitate it.",
+   "type": "recall"
+  },
+  {
+   "q": "What often caps training volume for a prosthetic user?",
+   "a": "Socket tolerance and residual-limb skin load — usually before cardiovascular fitness becomes limiting.",
+   "type": "application"
+  },
+  {
+   "q": "How should you set up sessions for an athlete with visual impairment?",
+   "a": "Consistent spatial layout between sessions, verbal and tactile cueing, and clear guide protocols.",
+   "type": "application"
+  },
+  {
+   "q": "What is the most common coaching error with adapted athletes?",
+   "a": "Under-loading them. Low expectation, not unsafe programming, is the usual failure.",
+   "type": "application"
+  },
+  {
+   "q": "Why does scope of practice tighten with medical complexity?",
+   "a": "Because population-specific medical risk requires the multidisciplinary team — physiotherapist, clinician, prosthetist — and early referral rather than coach improvisation.",
+   "type": "recall"
+  }
+ ],
+ "pc_doubles": [
+  {
+   "q": "How much running does each doubles partner complete?",
+   "a": "All of it — both partners run every metre of the 8 km together. Only station work is divided.",
+   "type": "recall"
+  },
+  {
+   "q": "How does the physiological demand differ from the individual race?",
+   "a": "Station volume per athlete roughly halves but intensity rises sharply, shifting emphasis to repeated high-intensity capacity and recovery between bursts.",
+   "type": "recall"
+  },
+  {
+   "q": "What is the single most important pairing criterion?",
+   "a": "Running pace compatibility — the pair runs at the slower partner's sustainable pace.",
+   "type": "recall"
+  },
+  {
+   "q": "What goes wrong when partners are badly matched on pace?",
+   "a": "The faster partner under-works all race while the slower one runs above threshold for 8 km and degrades.",
+   "type": "application"
+  },
+  {
+   "q": "Why not split every station 50/50?",
+   "a": "Complementary strengths make an asymmetric split faster — give each partner more of the station they are strong at.",
+   "type": "application"
+  },
+  {
+   "q": "Why prefer fewer, larger work blocks over many small alternations?",
+   "a": "Every changeover carries a time cost, so minimising swaps is usually faster unless fatigue forces a split.",
+   "type": "application"
+  },
+  {
+   "q": "What is a swap trigger and why use one?",
+   "a": "An objective pre-agreed cue, usually a rep count, dictating changeover. It replaces in-race judgement, which degrades badly under fatigue.",
+   "type": "recall"
+  },
+  {
+   "q": "Which station most often unravels a pair, and how do you prepare?",
+   "a": "Wall balls at the end. Plan the break pattern and a rep-count swap trigger before the race.",
+   "type": "application"
+  },
+  {
+   "q": "Where does a strength mismatch pay off most?",
+   "a": "Sled push and pull, since sled time is highly sensitive to absolute strength — give the stronger partner a larger share.",
+   "type": "application"
+  },
+  {
+   "q": "Why do doubles pairs commonly mis-pace the early runs?",
+   "a": "Shared station work leaves them feeling fresh, so they go out too hard and pay over the back half.",
+   "type": "application"
+  },
+  {
+   "q": "What kind of in-race communication works?",
+   "a": "Short, unambiguous, pre-agreed calls. Complex verbal exchange fails at race intensity.",
+   "type": "recall"
+  },
+  {
+   "q": "Name the psychological risk specific to doubles.",
+   "a": "Guilt at holding a partner back can push an athlete past sustainable intensity, even as accountability otherwise raises effort.",
+   "type": "application"
+  }
+ ],
+ "mp_sdt": [
+  {
+   "q": "Name SDT's three basic psychological needs.",
+   "a": "Autonomy (volition and ownership), competence (effectiveness and visible progress), relatedness (genuine connection).",
+   "type": "recall"
+  },
+  {
+   "q": "Why is external regulation fragile?",
+   "a": "Behaviour driven by reward, punishment or obligation collapses under adversity, unlike identified or intrinsic regulation driven by personal value.",
+   "type": "recall"
+  },
+  {
+   "q": "What is introjected regulation and why is it a warning sign?",
+   "a": "Training driven by guilt, shame or ego protection. It looks like exceptional commitment and commonly precedes burnout.",
+   "type": "application"
+  },
+  {
+   "q": "Does autonomy support mean letting the athlete write the programme?",
+   "a": "No. The coach owns method and safety; the athlete gets genuine input and understands the rationale. That's autonomy-supportive, not athlete-led.",
+   "type": "application"
+  },
+  {
+   "q": "Give two need-thwarting coaching behaviours.",
+   "a": "Controlling language ('you must'), conditional regard, guilt induction, or public comparison between athletes.",
+   "type": "recall"
+  },
+  {
+   "q": "How do you build competence in practice?",
+   "a": "Visible, attributable progress — benchmark sessions, split comparisons and process goals rather than outcome goals alone.",
+   "type": "application"
+  },
+  {
+   "q": "Why is relatedness a programming decision in HYROX?",
+   "a": "Much HYROX training is solitary, so group sessions and training partners are legitimate interventions on a genuine performance variable.",
+   "type": "application"
+  },
+  {
+   "q": "Mastery vs ego climate — which predicts better outcomes?",
+   "a": "Mastery (success defined by improvement and effort) predicts greater persistence and lower anxiety than ego climate (success defined by beating others).",
+   "type": "recall"
+  },
+  {
+   "q": "Are performance and well-being a trade-off?",
+   "a": "No — they're complementary. Environments that sacrifice well-being for short-term output typically lose both across a season.",
+   "type": "recall"
+  },
+  {
+   "q": "A cheap way to restore autonomy without compromising the plan?",
+   "a": "Offer a choice between two acceptable sessions, or over the order of the week.",
+   "type": "application"
+  },
+  {
+   "q": "What diagnostic question reveals an athlete's regulation type?",
+   "a": "Ask why they train. Identity, enjoyment and personal standards signal internal regulation; obligation and others' expectations signal fragility.",
+   "type": "application"
+  },
+  {
+   "q": "Order the motivation continuum.",
+   "a": "Amotivation → external → introjected → identified → integrated → intrinsic.",
+   "type": "recall"
+  }
+ ],
+ "mp_neurodiversity": [
+  {
+   "q": "What does neurodivergence describe?",
+   "a": "Natural variation in neurological processing of attention, sensory input, information and social interaction — a difference, not a deficit or illness.",
+   "type": "recall"
+  },
+  {
+   "q": "What is the coach's boundary here?",
+   "a": "Coaches accommodate and adjust the environment; they never diagnose. Refer to appropriate professionals when needed.",
+   "type": "recall"
+  },
+  {
+   "q": "Most accurate way to determine useful accommodations?",
+   "a": "Ask the athlete directly what helps. Self-report beats inference from a label.",
+   "type": "application"
+  },
+  {
+   "q": "Rewrite 'go a few rounds and see how you feel' appropriately.",
+   "a": "'Three rounds: 10 wall balls, 200 m run, rest 90 seconds.' Literal, specific, sequenced, with defined stop points.",
+   "type": "application"
+  },
+  {
+   "q": "Why give advance notice of session changes?",
+   "a": "Where routine is a coping structure, unannounced change is a disproportionate stressor.",
+   "type": "application"
+  },
+  {
+   "q": "Name sensory factors that matter at a HYROX venue.",
+   "a": "Noise, echo, crowding, lighting and heat. Plan arrival timing, warm-up location and consider ear defenders.",
+   "type": "recall"
+  },
+  {
+   "q": "Executive function differences affect what — and not what?",
+   "a": "They affect planning, sequencing, time management and task initiation. They do not reflect effort or motivation.",
+   "type": "recall"
+  },
+  {
+   "q": "Why is hyperfocus a risk as well as an asset?",
+   "a": "It drives exceptional consistency but can override fatigue signals and drive overtraining. Build explicit written stop rules.",
+   "type": "application"
+  },
+  {
+   "q": "What is masking and why does it matter clinically?",
+   "a": "Suppressing natural responses to appear neurotypical. It is exhausting and can conceal significant distress behind apparent coping.",
+   "type": "recall"
+  },
+  {
+   "q": "Can you tell the training group about an athlete's ADHD?",
+   "a": "Not without their explicit permission. Use the language they use about themselves.",
+   "type": "application"
+  },
+  {
+   "q": "Why does inclusive session design help everyone?",
+   "a": "Clearer instructions, predictable structure and lower sensory chaos improve the environment for the whole group.",
+   "type": "application"
+  },
+  {
+   "q": "How should information be delivered?",
+   "a": "In more than one channel — written or demonstrated as well as spoken — because processing preferences differ.",
+   "type": "recall"
+  }
+ ],
+ "mp_winners": [
+  {
+   "q": "Is a winner's mindset a trait?",
+   "a": "No — it's a set of trainable habits of attention, interpretation and response, developed like physical skills.",
+   "type": "recall"
+  },
+  {
+   "q": "In HYROX, what's controllable and what isn't?",
+   "a": "Controllable: effort, attention, technique, pacing decisions, routine, response. Not: competitors, conditions, sled friction, results.",
+   "type": "recall"
+  },
+  {
+   "q": "Why prefer process goals mid-race?",
+   "a": "Process goals specify execution the athlete can act on; outcome goals can't be executed at kilometre six.",
+   "type": "application"
+  },
+  {
+   "q": "Explain challenge vs threat appraisal.",
+   "a": "Identical arousal enhances performance when read as readiness and degrades it when read as danger. The interpretation, not the arousal, is decisive.",
+   "type": "recall"
+  },
+  {
+   "q": "Where does real confidence come from?",
+   "a": "Accumulated evidence — completed hard sessions, benchmark improvements, rehearsed scenarios — not affirmation on race morning.",
+   "type": "application"
+  },
+  {
+   "q": "Instructional or motivational self-talk for a pacing task?",
+   "a": "Instructional ('shorten the stride', 'drive the arms') generally outperforms motivational self-talk for technical and pacing tasks.",
+   "type": "recall"
+  },
+  {
+   "q": "How do you test whether an athlete holds a growth orientation?",
+   "a": "Watch what they do the following week. Treating a bad race as data produces changed training; treating it as a verdict produces withdrawal.",
+   "type": "application"
+  },
+  {
+   "q": "Define resilience behaviourally.",
+   "a": "The speed of return to task after a setback — not the absence of a reaction to it.",
+   "type": "recall"
+  },
+  {
+   "q": "Where should attention sit under load?",
+   "a": "External and task-relevant — pace, rhythm, next marker — rather than internal self-monitoring of automated technique.",
+   "type": "application"
+  },
+  {
+   "q": "What does a structured reset look like after a bad station?",
+   "a": "A physical cue, a breath, a single instructional word, eyes up, back to pace — rehearsed, and better than rumination.",
+   "type": "application"
+  },
+  {
+   "q": "Why must mental skills be practised under fatigue?",
+   "a": "Skills rehearsed only when fresh and calm do not survive race conditions.",
+   "type": "recall"
+  },
+  {
+   "q": "Give an example of reframing at kilometre six.",
+   "a": "Replacing 'my legs are gone' with 'this is what kilometre six is supposed to feel like' — changing the behavioural response, not just mood.",
+   "type": "application"
+  }
+ ],
+ "mp_threat": [
+  {
+   "q": "Name the three brain functions affected by pressure.",
+   "a": "Threat appraisal, attentional allocation, and executive control including working memory and decision-making.",
+   "type": "recall"
+  },
+  {
+   "q": "Why do complex race plans fail under pressure?",
+   "a": "Working memory degrades under stress, so elaborate plans can't be held. Pre-rehearsed routines survive because they don't require it.",
+   "type": "application"
+  },
+  {
+   "q": "What is the mechanical basis of down-regulation?",
+   "a": "Diaphragmatic breathing — belly rising rather than chest and shoulders lifting.",
+   "type": "recall"
+  },
+  {
+   "q": "Which single breathing change most reliably lowers arousal?",
+   "a": "Extending the exhale relative to the inhale, which raises parasympathetic activity.",
+   "type": "recall"
+  },
+  {
+   "q": "Describe box breathing.",
+   "a": "Inhale 4, hold 4, exhale 4, hold 4. Structured, countable, and it occupies attention — part of why it works.",
+   "type": "recall"
+  },
+  {
+   "q": "Why aim to soften tension 5-10% rather than 'relax'?",
+   "a": "A small achievable target works under arousal, whereas instructions to fully relax often backfire.",
+   "type": "application"
+  },
+  {
+   "q": "Is the goal always to lower arousal?",
+   "a": "No — the goal is the athlete's optimal zone. Some athletes need up-regulation before a race.",
+   "type": "application"
+  },
+  {
+   "q": "Reappraisal or suppression — which works?",
+   "a": "Reappraisal ('this racing heart means I'm ready'). Suppression ('calm down') tends to increase arousal.",
+   "type": "recall"
+  },
+  {
+   "q": "How does attentional narrowing help and harm?",
+   "a": "It sharpens focus when the relevant cue is narrow, but excludes task-relevant information when the athlete must monitor pace, competitors and state.",
+   "type": "application"
+  },
+  {
+   "q": "What redirects attention fastest at high arousal?",
+   "a": "A rehearsed cue word or physical anchor — reasoning is too slow under arousal.",
+   "type": "application"
+  },
+  {
+   "q": "Why isn't sport psychology an 'emergency umbrella'?",
+   "a": "The tools only work when automatic, which requires training in advance. They can't be deployed for the first time the night before a race.",
+   "type": "recall"
+  },
+  {
+   "q": "Where should these tools be practised?",
+   "a": "In training, ideally under fatigue and mild pressure, so they're accessible on race day.",
+   "type": "application"
+  }
+ ],
+ "mp_pressure_sim": [
+  {
+   "q": "Define pressure training.",
+   "a": "Adding a deliberate stressor to a technically familiar task so mental and technical skills are rehearsed under competition-like arousal.",
+   "type": "recall"
+  },
+  {
+   "q": "List the stressor categories available to a coach.",
+   "a": "Consequence, evaluation, audience, uncertainty, fatigue and time constraint.",
+   "type": "recall"
+  },
+  {
+   "q": "How do you dose pressure correctly?",
+   "a": "High enough to genuinely threaten execution, low enough that success remains achievable — then progress it across the block.",
+   "type": "application"
+  },
+  {
+   "q": "What happens if the pressure dose is too high?",
+   "a": "Repeated failure conditions an association between arousal and collapse — the opposite of the intended learning.",
+   "type": "application"
+  },
+  {
+   "q": "Why is uncertainty such an efficient stressor?",
+   "a": "It's free, and withholding session details until the warm-up removes the athlete's ability to pre-pace.",
+   "type": "application"
+  },
+  {
+   "q": "Give two examples of adversity rehearsal in HYROX.",
+   "a": "Starting a run immediately after a deliberately botched sled; forcing a wall-ball break at the worst possible rep count.",
+   "type": "application"
+  },
+  {
+   "q": "Partial vs full race simulation — how do they differ in use?",
+   "a": "Partial simulations (a three-station block at race pace) can run frequently; full simulations carry a real recovery cost and are scheduled as key sessions.",
+   "type": "recall"
+  },
+  {
+   "q": "What's the most commonly skipped and most valuable part of a pressure session?",
+   "a": "The structured debrief. Without it the athlete gets stress exposure but no learning.",
+   "type": "recall"
+  },
+  {
+   "q": "Give the debrief structure.",
+   "a": "Down-regulate first (breathing, body scan), then review what was noticed, what was done, what worked, and one change for next time.",
+   "type": "recall"
+  },
+  {
+   "q": "Why is post-session down-shifting itself training?",
+   "a": "Teaching the system to return to baseline is as coachable and as necessary as teaching it to drive up.",
+   "type": "application"
+  },
+  {
+   "q": "What should a race simulation replicate beyond intensity?",
+   "a": "Timing, start protocol, station order, transitions, kit and nutrition where possible.",
+   "type": "recall"
+  },
+  {
+   "q": "Why record subjective experience alongside the result?",
+   "a": "So pressure exposure can be progressed systematically across the block rather than by instinct.",
+   "type": "application"
+  }
+ ],
+ "mp_routines": [
+  {
+   "q": "What is a routine actually doing mechanistically?",
+   "a": "Reducing decision load so attention and degraded working memory stay on the task during high arousal.",
+   "type": "recall"
+  },
+  {
+   "q": "Name the three routine types an athlete needs.",
+   "a": "Pre-race, pre-station (or pre-effort), and post-error reset.",
+   "type": "recall"
+  },
+  {
+   "q": "What makes a routine robust?",
+   "a": "Short, portable, fully controllable and rehearsed. Anything dependent on a specific place, object or condition breaks on race day.",
+   "type": "application"
+  },
+  {
+   "q": "Distinguish routine from superstition.",
+   "a": "A routine has a functional mechanism (attention, arousal, sequencing). A superstition attributes outcome to an unrelated act and creates anxiety when broken.",
+   "type": "recall"
+  },
+  {
+   "q": "Why is the post-error reset especially valuable in HYROX?",
+   "a": "A bad station otherwise contaminates the run that immediately follows it.",
+   "type": "application"
+  },
+  {
+   "q": "Why journal rather than rely on memory?",
+   "a": "Memory for subjective states is poor and heavily biased by the most recent session or result.",
+   "type": "recall"
+  },
+  {
+   "q": "What should a training log capture?",
+   "a": "Objective data (session, splits, load) and subjective data (RPE, mood, sleep, stress, what was noticed). The interaction carries the insight.",
+   "type": "recall"
+  },
+  {
+   "q": "State the three-by-three reflective prompt.",
+   "a": "Three things learned, three things already done well, three things to improve.",
+   "type": "recall"
+  },
+  {
+   "q": "Reflection-in-action vs reflection-on-action?",
+   "a": "In-action is adjusting during the session; on-action is structured review afterwards. Journaling builds the second and gradually improves the first.",
+   "type": "recall"
+  },
+  {
+   "q": "What kind of patterns only emerge from a log?",
+   "a": "Recurring pre-race sleep disruption, a station that always precedes a mood drop, a taper that consistently feels flat.",
+   "type": "application"
+  },
+  {
+   "q": "How small can a pre-station routine be?",
+   "a": "A breath, a grip check and a cue word — small enough to survive deep fatigue.",
+   "type": "application"
+  },
+  {
+   "q": "Should coaches journal?",
+   "a": "Yes — reflective practice is a coach-development tool, and modelling it raises athlete adherence.",
+   "type": "application"
+  }
+ ],
+ "rb_hip": [
+  {
+   "q": "Where does propulsion actually come from in running?",
+   "a": "Force applied behind the centre of mass in late stance. The functional stride is the range behind you, not in front.",
+   "type": "recall"
+  },
+  {
+   "q": "What happens when hip extension is restricted?",
+   "a": "The athlete lengthens stride at the front instead — producing overstride and braking rather than propulsion.",
+   "type": "application"
+  },
+  {
+   "q": "Describe the compensation chain from restricted hip extension.",
+   "a": "Restricted extension → anterior pelvic tilt → lumbar extension, giving apparent range with no propulsive benefit and added spinal load.",
+   "type": "recall"
+  },
+  {
+   "q": "Which HYROX stations actively work against hip extension?",
+   "a": "Sled push, sled pull and sandbag lunges — all load and shorten the hip flexors.",
+   "type": "application"
+  },
+  {
+   "q": "Why isn't mobility work alone enough?",
+   "a": "New range must be loaded and patterned so the nervous system uses it. Range without loading rarely changes running.",
+   "type": "application"
+  },
+  {
+   "q": "Which muscles pick up the slack when glutes under-contribute?",
+   "a": "Hamstrings and calf, raising strain risk in both.",
+   "type": "recall"
+  },
+  {
+   "q": "Give a better cue than 'lengthen your stride'.",
+   "a": "'Drive the ground back behind you' — it produces extension, whereas 'lengthen your stride' produces overstride.",
+   "type": "application"
+  },
+  {
+   "q": "How do you test hip extension and what's the false positive?",
+   "a": "Thomas test or half-kneeling check. The false positive is the athlete substituting lumbar extension for hip extension.",
+   "type": "application"
+  },
+  {
+   "q": "How does improved hip extension show up in gait?",
+   "a": "Usually as a longer stride at the same cadence, not as a cadence change.",
+   "type": "recall"
+  },
+  {
+   "q": "Why does this matter more in the back half of a HYROX race?",
+   "a": "Extension range degrades as hip flexors fatigue and shorten across successive stations, so each run starts from a worse position.",
+   "type": "application"
+  },
+  {
+   "q": "Name three loading exercises that pattern hip extension.",
+   "a": "Hip thrusts, split squats or Bulgarians through full range, and single-leg RDLs.",
+   "type": "recall"
+  },
+  {
+   "q": "How does trunk position affect the extension window?",
+   "a": "A slight forward lean from the ankles preserves it; sitting back into the hips closes it.",
+   "type": "application"
+  }
+ ],
+ "rb_braking": [
+  {
+   "q": "What determines the size of the braking impulse?",
+   "a": "The horizontal distance between the foot at contact and the centre of mass — the definition of overstriding.",
+   "type": "recall"
+  },
+  {
+   "q": "Why is an overstride mechanically costly?",
+   "a": "The far-forward foot with extended knee acts as a strut, decelerating the athlete and transmitting a sharp impact peak that must be re-accelerated against.",
+   "type": "recall"
+  },
+  {
+   "q": "Single most reliable intervention to reduce braking?",
+   "a": "Increase cadence by roughly 5-10%, which shortens stride and moves contact closer to the centre of mass without cueing foot placement.",
+   "type": "application"
+  },
+  {
+   "q": "Why not cue 'land under your body'?",
+   "a": "It commonly produces reaching followed by a backward pull — the exact fault it's meant to fix.",
+   "type": "application"
+  },
+  {
+   "q": "How should a forward lean be initiated?",
+   "a": "From the ankles as a whole-body lean, not by bending at the waist.",
+   "type": "recall"
+  },
+  {
+   "q": "Which injury type is associated with high loading rate?",
+   "a": "Tibial stress injuries.",
+   "type": "recall"
+  },
+  {
+   "q": "Why film at the end of a session rather than fresh?",
+   "a": "Fatigue increases overstride as hip extension and leg stiffness decline. The race-relevant fault appears late, not fresh.",
+   "type": "application"
+  },
+  {
+   "q": "Which HYROX moment is the highest-risk window for overstriding?",
+   "a": "Compromised running immediately after the sled, transitioning from a pushing pattern with degraded proprioception.",
+   "type": "application"
+  },
+  {
+   "q": "How does hip extension reduce overstride indirectly?",
+   "a": "It gives the athlete somewhere else to find stride length — behind the body rather than in front.",
+   "type": "application"
+  },
+  {
+   "q": "Why make only small technique changes?",
+   "a": "Large deliberate cadence or footstrike changes redistribute tissue loading and can create a new injury while solving an old one.",
+   "type": "recall"
+  },
+  {
+   "q": "Is the aim to eliminate braking?",
+   "a": "No. Every contact brakes then propels; the aim is minimising the braking cost, not removing it.",
+   "type": "recall"
+  },
+  {
+   "q": "Where else do braking costs rise on a HYROX course?",
+   "a": "Downhills and decelerations into the repeated direction changes of an indoor course.",
+   "type": "application"
+  }
+ ],
+ "rb_footsep": [
+  {
+   "q": "Define foot separation and when it's measured.",
+   "a": "The distance between trailing and leading foot at a defined instant — most usefully at touchdown of the leading foot.",
+   "type": "recall"
+  },
+  {
+   "q": "What does wide separation at touchdown indicate?",
+   "a": "Good hip extension, real flight time and elastic recycling of the swing leg.",
+   "type": "recall"
+  },
+  {
+   "q": "What does narrow separation with low heel recovery indicate?",
+   "a": "A jogging pattern — minimal flight, low vertical impulse, swing driven by hip flexion rather than elastic recoil.",
+   "type": "recall"
+  },
+  {
+   "q": "Should you cue separation directly?",
+   "a": "No. It's an output of hip extension and leg stiffness; manufacturing it by reaching forward creates overstride.",
+   "type": "application"
+  },
+  {
+   "q": "How do you measure it practically?",
+   "a": "Side-on video at 120-240 fps, frozen at touchdown, compared against the athlete's own previous footage.",
+   "type": "application"
+  },
+  {
+   "q": "Why compare against the athlete, not an elite reference?",
+   "a": "Absolute values vary with limb length and running speed.",
+   "type": "recall"
+  },
+  {
+   "q": "Name three training levers that increase separation.",
+   "a": "Hip extension range work, plyometric/stiffness work, and strides or hill sprints at genuinely higher speeds.",
+   "type": "recall"
+  },
+  {
+   "q": "Give a swing-leg cue that doesn't cause reaching.",
+   "a": "'Heel to the back pocket' — recovery under the hip, rather than knee drive out in front.",
+   "type": "application"
+  },
+  {
+   "q": "How do separation and cadence interact?",
+   "a": "At fixed speed a very high cadence reduces separation, so they must be judged together.",
+   "type": "application"
+  },
+  {
+   "q": "Why is separation a useful fatigue marker?",
+   "a": "It collapses as fatigue accumulates, making it a sensitive visual indicator of running degradation across a race.",
+   "type": "application"
+  },
+  {
+   "q": "Does forcing high heel recovery at slow speeds help?",
+   "a": "No — heel recovery rises naturally with speed and elastic quality; forcing it slowly just adds metabolic cost.",
+   "type": "recall"
+  },
+  {
+   "q": "What's the correct status of separation as a coaching target?",
+   "a": "A diagnostic window onto extension and elasticity, not an end in itself.",
+   "type": "recall"
+  }
+ ],
+ "rb_jogging": [
+  {
+   "q": "Are jogging and running the same movement at different speeds?",
+   "a": "No — they're mechanically distinct patterns, differing in flight time, elastic contribution, stiffness and where propulsion comes from.",
+   "type": "recall"
+  },
+  {
+   "q": "Describe running in spring-mass terms.",
+   "a": "The stance leg acts as a spring, storing elastic energy in tendon and returning it, with real flight time and propulsion generated behind the body.",
+   "type": "recall"
+  },
+  {
+   "q": "Is vertical movement wasted energy?",
+   "a": "No. Some upward impulse is mechanically necessary for flight — eliminating it is like throwing a discus flat along the ground.",
+   "type": "application"
+  },
+  {
+   "q": "Why doesn't easy volume alone make a faster runner?",
+   "a": "Slow volume grooves the jogging pattern; the running pattern must be practised or it isn't available at race intensity.",
+   "type": "application"
+  },
+  {
+   "q": "Why does this bite specifically in HYROX?",
+   "a": "Race pace sits well above most athletes' habitual easy pace, so the pattern they've practised isn't the one the race requires.",
+   "type": "application"
+  },
+  {
+   "q": "What are strides and why use them?",
+   "a": "Short controlled fast efforts with full recovery — the cheapest way to keep the running pattern available without meaningful fatigue cost.",
+   "type": "recall"
+  },
+  {
+   "q": "Why are hill sprints useful here?",
+   "a": "They build the running pattern while limiting impact and enforcing hip extension and forward lean naturally.",
+   "type": "application"
+  },
+  {
+   "q": "What underpins the elastic pattern physically?",
+   "a": "Tendon stiffness, developed by plyometrics and heavy strength work.",
+   "type": "recall"
+  },
+  {
+   "q": "Is jogging volume therefore useless?",
+   "a": "No — it's valuable aerobic training. The error is assuming it develops running mechanics.",
+   "type": "application"
+  },
+  {
+   "q": "How does the swing leg differ between the two patterns?",
+   "a": "Jogging pulls it through with hip flexion; running recycles it largely by elastic recoil, which is cheaper at speed.",
+   "type": "recall"
+  },
+  {
+   "q": "Where in a HYROX race does the pattern most often collapse?",
+   "a": "Compromised running after a station, where athletes drop into jogging mechanics and often fail to climb back out.",
+   "type": "application"
+  },
+  {
+   "q": "What is the optimum for vertical impulse?",
+   "a": "An intermediate angle — too little gives no flight, too much wastes energy lifting the body.",
+   "type": "recall"
+  }
+ ],
+ "rb_drill_myths": [
+  {
+   "q": "What's wrong with the static 'pull the foot back under you' demonstration?",
+   "a": "It teaches that the foot moves rearward relative to the ground. It doesn't — the foot descends near-vertically while the body translates forward.",
+   "type": "recall"
+  },
+  {
+   "q": "So why does the foot end up under the body?",
+   "a": "Because the body moved forward to meet it, not because the athlete pulled it back.",
+   "type": "recall"
+  },
+  {
+   "q": "What fault does the pulling model produce?",
+   "a": "Reaching forward then clawing at the ground — overstride, plus loss of the vertical impulse running requires.",
+   "type": "application"
+  },
+  {
+   "q": "Explain the discus analogy.",
+   "a": "Thrown flat it goes a short distance; thrown too steeply likewise. The optimum is an intermediate angle — as with vertical impulse in running.",
+   "type": "recall"
+  },
+  {
+   "q": "Why is 'the feet move in a circle' only half true?",
+   "a": "Touchdown through toe-off to recovery is roughly half a circle. Instructing a full circle invites a forward reach to complete it.",
+   "type": "application"
+  },
+  {
+   "q": "How can the wheel cue be salvaged?",
+   "a": "Shift the imagined wheel rearward so the circle sits behind and beneath the athlete rather than in front.",
+   "type": "application"
+  },
+  {
+   "q": "Is B-skip a bad drill?",
+   "a": "No — the fault is the explanation. Taught with the forward-throw-and-pull model it reinforces the same error.",
+   "type": "application"
+  },
+  {
+   "q": "How should a cue be evaluated?",
+   "a": "By the mechanics it produces on video before and after, not by its theoretical accuracy.",
+   "type": "application"
+  },
+  {
+   "q": "Can a cue be 'wrong' but still useful?",
+   "a": "Yes — feel and mechanics diverge. Coaching to a feel is acceptable if the resulting mechanics are correct.",
+   "type": "recall"
+  },
+  {
+   "q": "Prefer which kind of cue?",
+   "a": "External cues describing intent or effect ('push the ground back behind you', 'run tall') over cues describing joint paths.",
+   "type": "recall"
+  },
+  {
+   "q": "What's the general principle about drills?",
+   "a": "A drill is only as good as the model it installs — evaluate the explanation as carefully as the movement.",
+   "type": "recall"
+  },
+  {
+   "q": "Do drills replace running fast?",
+   "a": "No. They're a supplement to running fast, not a substitute for it.",
+   "type": "recall"
+  }
+ ],
+ "rb_injury_cause": [
+  {
+   "q": "What causes most running injuries?",
+   "a": "Cumulative overload — load applied faster than tissue can adapt — rather than acute trauma or a single technique fault.",
+   "type": "recall"
+  },
+  {
+   "q": "Strongest modifiable risk factor?",
+   "a": "Training load history: total volume, rate of change, and what the tissue was previously accustomed to.",
+   "type": "recall"
+  },
+  {
+   "q": "Most consistent predictor of future injury?",
+   "a": "Previous injury.",
+   "type": "recall"
+  },
+  {
+   "q": "Does footstrike pattern predict injury?",
+   "a": "No. Changing it shifts load between structures — forefoot toward calf and Achilles, rearfoot toward the knee — rather than removing it.",
+   "type": "recall"
+  },
+  {
+   "q": "How well supported is pronation as an injury predictor?",
+   "a": "Poorly. It's a weak basis for prescribing footwear.",
+   "type": "recall"
+  },
+  {
+   "q": "Which mechanical variables bias toward tibial bone stress injury?",
+   "a": "High loading rate and large braking impulse.",
+   "type": "application"
+  },
+  {
+   "q": "An athlete presents with shin pain. What do you examine first?",
+   "a": "The last six weeks of load — volume jumps, new surface, shoe change, increased sled work — before looking at footstrike.",
+   "type": "application"
+  },
+  {
+   "q": "Name three common precipitants beyond volume.",
+   "a": "Rapid change of surface, gradient, or footwear (including stack height or drop), and abrupt change in session type.",
+   "type": "recall"
+  },
+  {
+   "q": "How do energy availability and sleep fit in?",
+   "a": "They modulate tissue adaptation capacity — a mechanically identical load is riskier in an under-fuelled or under-slept athlete.",
+   "type": "application"
+  },
+  {
+   "q": "Bone stress injury plus menstrual disturbance — action?",
+   "a": "Medical referral, not a technique session.",
+   "type": "application"
+  },
+  {
+   "q": "What's the HYROX-specific injury signature?",
+   "a": "Runs performed on legs already pre-fatigued by sled push, sled pull and sandbag lunges, so running load lands on a compromised system.",
+   "type": "application"
+  },
+  {
+   "q": "Does technique work have a role at all?",
+   "a": "Yes, as an adjunct where a specific fault concentrates load — but it doesn't substitute for sane load progression.",
+   "type": "recall"
+  }
+ ],
+ "nu_working": [
+  {
+   "q": "What nutrition guidance is inside a coach's scope?",
+   "a": "General evidence-based performance nutrition — fuelling around sessions, hydration, race-day strategy, food-quality basics.",
+   "type": "recall"
+  },
+  {
+   "q": "What is outside it?",
+   "a": "Individualised medical nutrition therapy, clinical meal prescription, eating-disorder treatment, and prescribing supplements for medical purposes.",
+   "type": "recall"
+  },
+  {
+   "q": "Best low-cost assessment tool before advising?",
+   "a": "A concurrent food and training log over a normal week — it reveals timing problems athletes can't self-report.",
+   "type": "application"
+  },
+  {
+   "q": "Why prefer one change over a full overhaul?",
+   "a": "The common failure is implementation, not knowledge. One specific negotiated change gets done; an overhaul doesn't.",
+   "type": "application"
+  },
+  {
+   "q": "Why anchor changes to sessions?",
+   "a": "They're concrete, memorable and easy to evaluate — e.g. 'carbohydrate in the two hours before the key session'.",
+   "type": "application"
+  },
+  {
+   "q": "What determines adherence more than optimality?",
+   "a": "Practical constraints — budget, cooking skill, shift work, family, culture, religious observance, travel.",
+   "type": "recall"
+  },
+  {
+   "q": "Why avoid 'good' and 'bad' food framing?",
+   "a": "Moralising language predicts guilt and secrecy rather than behaviour change.",
+   "type": "application"
+  },
+  {
+   "q": "When should you measure body composition?",
+   "a": "Only with a clear purpose and a plan for the result — routine measurement is a common trigger for restriction.",
+   "type": "application"
+  },
+  {
+   "q": "List four red flags requiring referral.",
+   "a": "Restriction, food secrecy, rigid rules, weight preoccupation, unexplained fatigue, menstrual disturbance, recurrent bone injury, GI symptoms.",
+   "type": "recall"
+  },
+  {
+   "q": "Why build a referral network in advance?",
+   "a": "So referral is immediate rather than improvised at the moment an athlete needs it.",
+   "type": "application"
+  },
+  {
+   "q": "How should you handle social-media nutrition misinformation?",
+   "a": "Correct it respectfully without shaming the athlete for having believed it.",
+   "type": "application"
+  },
+  {
+   "q": "What should you do before adding a second change?",
+   "a": "Evaluate whether the first one worked. An unmeasured intervention is a guess.",
+   "type": "recall"
+  }
+ ],
+ "nu_gut": [
+  {
+   "q": "Is GI tolerance trainable?",
+   "a": "Yes — repeated carbohydrate exposure during exercise upregulates intestinal transporters, speeds gastric emptying and improves tolerance.",
+   "type": "recall"
+  },
+  {
+   "q": "What limits glucose absorption to about 60 g/h?",
+   "a": "Saturation of the SGLT1 transporter.",
+   "type": "recall"
+  },
+  {
+   "q": "How do you exceed that ceiling?",
+   "a": "Add fructose, absorbed via GLUT5, allowing roughly 90 g/h or more in a well-trained gut — commonly at a 2:1 glucose:fructose ratio.",
+   "type": "application"
+  },
+  {
+   "q": "What is splanchnic hypoperfusion and what worsens it?",
+   "a": "Reduced gut blood flow as blood diverts to muscle and skin. Worsened by high intensity, heat and dehydration.",
+   "type": "recall"
+  },
+  {
+   "q": "Why can't fuelling and hydration be planned separately?",
+   "a": "Dehydration markedly worsens GI symptoms and impairs absorption.",
+   "type": "application"
+  },
+  {
+   "q": "How should gut training be progressed?",
+   "a": "In steps across weeks, raising intake per hour gradually rather than jumping to race targets.",
+   "type": "application"
+  },
+  {
+   "q": "Why rehearse with the exact race products?",
+   "a": "Novel products, concentrations or timing on race day are a common and entirely avoidable failure.",
+   "type": "recall"
+  },
+  {
+   "q": "What dietary changes help symptom-prone athletes pre-race?",
+   "a": "Lower fibre, fat and protein in the final 24 hours — a low-residue approach.",
+   "type": "application"
+  },
+  {
+   "q": "What's HYROX-specific about GI symptoms?",
+   "a": "Jumping, bracing under the sandbag and repeated squat-to-overhead mechanically agitate the gut in a way steady running doesn't — so rehearse fuelling in station work.",
+   "type": "application"
+  },
+  {
+   "q": "Distinguish upper and lower GI symptoms.",
+   "a": "Upper: nausea, reflux, fullness. Lower: cramping, urgency, diarrhoea. Somewhat different drivers and fixes.",
+   "type": "recall"
+  },
+  {
+   "q": "Will every athlete reach 90 g/h?",
+   "a": "No — some are genuinely low absorbers. Individualise to tested tolerance, not a published target.",
+   "type": "application"
+  },
+  {
+   "q": "When does GI distress need referral?",
+   "a": "Persistent or severe symptoms, blood in stool, or symptoms occurring outside exercise.",
+   "type": "application"
+  }
+ ],
+ "nu_postcomp": [
+  {
+   "q": "Name the four recovery nutrition targets after a race.",
+   "a": "Glycogen resynthesis, muscle repair, rehydration with electrolytes, and restoration of immune and energy status.",
+   "type": "recall"
+  },
+  {
+   "q": "What determines how urgently timing matters?",
+   "a": "The interval before the next performance. Long recovery windows make the 'anabolic window' largely irrelevant.",
+   "type": "application"
+  },
+  {
+   "q": "Carbohydrate target for rapid refuelling within 24 h?",
+   "a": "Roughly 1.0-1.2 g/kg/h for the first several hours.",
+   "type": "recall"
+  },
+  {
+   "q": "How much fluid to replace, and why more than the deficit?",
+   "a": "Roughly 125-150% of the deficit, because some intake is excreted as urine.",
+   "type": "recall"
+  },
+  {
+   "q": "Why must rehydration include sodium?",
+   "a": "Plain water after large sweat losses promotes diuresis and delays rehydration; sodium helps retain the fluid.",
+   "type": "application"
+  },
+  {
+   "q": "Which HYROX stations drive the eccentric damage?",
+   "a": "Sandbag lunges, wall balls and sled deceleration.",
+   "type": "recall"
+  },
+  {
+   "q": "Why is alcohol the classic post-race error?",
+   "a": "It impairs glycogen resynthesis, muscle protein synthesis and rehydration, and degrades sleep quality.",
+   "type": "application"
+  },
+  {
+   "q": "Appetite is suppressed post-race. Practical response?",
+   "a": "Lead with liquid carbohydrate and protein rather than solid food in the first hour.",
+   "type": "application"
+  },
+  {
+   "q": "Why is post-race energy restriction harmful?",
+   "a": "It impairs repair and immune recovery exactly when demand is highest — common when athletes 'earn' a rest week by under-eating.",
+   "type": "application"
+  },
+  {
+   "q": "Post-exercise protein serving guideline?",
+   "a": "Roughly 0.3-0.4 g/kg per serving, though total daily intake remains the dominant variable.",
+   "type": "recall"
+  },
+  {
+   "q": "Does the anti-inflammatory blunting concern apply after a target race?",
+   "a": "Much less — adaptation isn't the goal after a target race, unlike after a training session.",
+   "type": "application"
+  },
+  {
+   "q": "What matters more with a long recovery window?",
+   "a": "Total daily carbohydrate intake over the following days, not the timing of the first feed.",
+   "type": "recall"
+  }
+ ],
+ "nu_plantbased": [
+  {
+   "q": "Can a plant-based diet support HYROX performance?",
+   "a": "Yes, when well planned. Problems arise from poor planning, not from plant sources themselves.",
+   "type": "recall"
+  },
+  {
+   "q": "Why do plant-based athletes need more total protein?",
+   "a": "Plant proteins are typically lower in leucine and less digestible than animal sources.",
+   "type": "recall"
+  },
+  {
+   "q": "Which supplement is genuinely non-negotiable for vegans?",
+   "a": "Vitamin B12 — there is no reliable unfortified plant source.",
+   "type": "recall"
+  },
+  {
+   "q": "Why is iron the most performance-relevant risk?",
+   "a": "Non-haem plant iron is far less bioavailable, endurance training raises requirements, and deficiency impairs endurance before anaemia appears.",
+   "type": "application"
+  },
+  {
+   "q": "What enhances and what inhibits non-haem iron absorption?",
+   "a": "Vitamin C enhances it; tea, coffee and calcium taken with the meal inhibit it.",
+   "type": "application"
+  },
+  {
+   "q": "How should vegans cover omega-3?",
+   "a": "An algae-derived EPA/DHA supplement, since ALA converts poorly.",
+   "type": "recall"
+  },
+  {
+   "q": "Which nutrients are commonly under-consumed besides iron and B12?",
+   "a": "Calcium, vitamin D, zinc and iodine — iodine especially where iodised salt isn't used.",
+   "type": "recall"
+  },
+  {
+   "q": "Why might creatine supplementation help vegetarians more?",
+   "a": "Their baseline creatine stores tend to be lower, so the relative benefit is larger.",
+   "type": "application"
+  },
+  {
+   "q": "What's the quiet energy-availability risk?",
+   "a": "High fibre and low energy density can cap intake, causing inadvertent low energy availability that looks like discipline.",
+   "type": "application"
+  },
+  {
+   "q": "How do you cover the amino acid profile?",
+   "a": "Distribute protein across the day and combine complementary sources such as legumes with grains.",
+   "type": "recall"
+  },
+  {
+   "q": "Reasonable early screening for a new plant-based athlete?",
+   "a": "Blood screening for iron, B12 and vitamin D, plus referral to a dietitian.",
+   "type": "application"
+  },
+  {
+   "q": "Should a coach argue about the dietary choice?",
+   "a": "No — the role is to make the planning explicit, not to debate the choice.",
+   "type": "recall"
+  }
+ ],
+ "sm_longevity": [
+  {
+   "q": "Which two fitness qualities most strongly predict reduced all-cause mortality?",
+   "a": "Cardiorespiratory fitness and muscular strength — and HYROX training develops both.",
+   "type": "recall"
+  },
+  {
+   "q": "Who gains most from improving fitness?",
+   "a": "The deconditioned. The fitness-mortality relationship is graded and steepest at the low-fitness end.",
+   "type": "recall"
+  },
+  {
+   "q": "How do HYROX movements map to later-life independence?",
+   "a": "Carrying, lunging, pushing, pulling and repeated sit-to-stand are the functional tasks determining independence with age.",
+   "type": "application"
+  },
+  {
+   "q": "Why does resistance training matter beyond performance?",
+   "a": "It independently associates with reduced mortality and preserves muscle mass and bone mineral density with age.",
+   "type": "recall"
+  },
+  {
+   "q": "What's the main risk of the format done badly?",
+   "a": "Overuse injury from rapid load progression, plus RED-S and overtraining when performance is chased hard.",
+   "type": "application"
+  },
+  {
+   "q": "Where do event-day cardiac events cluster?",
+   "a": "In older participants with undetected cardiovascular disease during unaccustomed maximal effort.",
+   "type": "recall"
+  },
+  {
+   "q": "Who needs pre-participation screening?",
+   "a": "Older or previously inactive athletes — health history questionnaire, with medical clearance where risk factors or symptoms exist.",
+   "type": "application"
+  },
+  {
+   "q": "Which exertional symptoms are a hard stop?",
+   "a": "Chest pain, unusual breathlessness, syncope or near-syncope during exertion. Medical assessment before further training.",
+   "type": "recall"
+  },
+  {
+   "q": "For the health-focused client, what outranks intensity?",
+   "a": "Consistency and injury avoidance — a block completed beats a block attempted.",
+   "type": "application"
+  },
+  {
+   "q": "Why does the community aspect count as a health variable?",
+   "a": "It supports adherence, which is what actually determines long-term outcomes.",
+   "type": "application"
+  },
+  {
+   "q": "Name metabolic benefits of combined aerobic and resistance training.",
+   "a": "Improved insulin sensitivity, blood pressure, lipid profile and reduced visceral fat.",
+   "type": "recall"
+  },
+  {
+   "q": "How should you frame goals for most clients?",
+   "a": "Training for another twenty years rather than a personal best this season.",
+   "type": "application"
+  }
+ ],
+ "sm_neuro": [
+  {
+   "q": "What does the functional-neuroscience lens add to injury prevention?",
+   "a": "The control layer — injuries often occur because the nervous system didn't organise the movement well, not because tissue lacked capacity.",
+   "type": "recall"
+  },
+  {
+   "q": "Name the proprioceptive receptors and what they sense.",
+   "a": "Muscle spindles (length and velocity), Golgi tendon organs (tension), joint receptors — integrated with vestibular and visual input.",
+   "type": "recall"
+  },
+  {
+   "q": "Feedforward vs feedback control?",
+   "a": "Feedforward pre-activates muscle in anticipation of load; feedback corrects after the fact and is too slow for high-speed events.",
+   "type": "recall"
+  },
+  {
+   "q": "Why is previous injury the strongest predictor of future injury?",
+   "a": "It degrades proprioceptive acuity and alters motor patterns, deficits that outlast tissue healing.",
+   "type": "application"
+  },
+  {
+   "q": "Why do injuries cluster late in sessions?",
+   "a": "Fatigue slows reaction, reduces proprioceptive accuracy and alters recruitment — the whole control loop degrades.",
+   "type": "application"
+  },
+  {
+   "q": "How does pain affect motor control?",
+   "a": "It alters control independently of tissue damage, producing protective patterns that can persist after healing.",
+   "type": "recall"
+  },
+  {
+   "q": "Why can an athlete pass a movement screen and still get hurt?",
+   "a": "Clean, pre-planned, fresh-state screening misses athletes who fail under fatigue or unanticipated conditions.",
+   "type": "application"
+  },
+  {
+   "q": "What kind of prevention programme works best?",
+   "a": "Multi-component — strength, plyometric, balance and agility — consistently outperforming single-mode approaches.",
+   "type": "recall"
+  },
+  {
+   "q": "Give an example of adding a reactive element.",
+   "a": "Change of direction on a verbal or visual cue, or an unanticipated landing, rather than a known sequence.",
+   "type": "application"
+  },
+  {
+   "q": "Which HYROX moment is the highest-risk control moment?",
+   "a": "The compromised-running transition out of a station — degraded proprioception plus an abrupt pattern change.",
+   "type": "application"
+  },
+  {
+   "q": "What does a dual-task condition reveal?",
+   "a": "Fragile motor patterns, by reducing the attentional resource available for movement control.",
+   "type": "recall"
+  },
+  {
+   "q": "Avoidance or progressive exposure?",
+   "a": "Progressive exposure — both tissue and nervous system adapt to what they meet regularly.",
+   "type": "application"
+  }
+ ],
+ "sm_illness": [
+  {
+   "q": "State the neck check.",
+   "a": "Symptoms above the neck only (mild sore throat, congestion, sneezing, no fever) permit reduced training with review; below the neck or systemic means stop.",
+   "type": "recall"
+  },
+  {
+   "q": "List the systemic red flags.",
+   "a": "Fever, muscle aches, unusual fatigue, swollen glands, productive cough, chest tightness, breathlessness, vomiting, diarrhoea.",
+   "type": "recall"
+  },
+  {
+   "q": "Why is fever an absolute contraindication?",
+   "a": "It raises cardiovascular and metabolic demand, impairs thermoregulation, and training with systemic viral illness carries myocarditis risk.",
+   "type": "recall"
+  },
+  {
+   "q": "What is myocarditis and why does it matter here?",
+   "a": "Inflammation of the heart muscle following viral illness — a rare but recognised cause of exercise-related sudden cardiac death.",
+   "type": "recall"
+  },
+  {
+   "q": "When training is permitted, what do you cut first?",
+   "a": "Intensity and volume, with daily reassessment rather than pushing through to the planned session.",
+   "type": "application"
+  },
+  {
+   "q": "Rough guide for returning after systemic illness?",
+   "a": "At least as many easy days as days missed, and longer if fever was present, after a symptom- and fever-free period.",
+   "type": "recall"
+  },
+  {
+   "q": "What sign suggests they returned too soon?",
+   "a": "Post-illness fatigue and unexpectedly high heart rate at easy paces.",
+   "type": "application"
+  },
+  {
+   "q": "When is infection susceptibility transiently raised?",
+   "a": "Around heavy training loads, competition and long-haul travel.",
+   "type": "recall"
+  },
+  {
+   "q": "Name programmable prevention measures.",
+   "a": "Sleep, adequate energy availability, hand hygiene, not sharing bottles or towels, and managing load spikes.",
+   "type": "application"
+  },
+  {
+   "q": "What's the anti-doping trap in cold remedies?",
+   "a": "Some over-the-counter preparations contain stimulants prohibited in competition — check status before racing.",
+   "type": "application"
+  },
+  {
+   "q": "Athlete has a fever on the morning of a target race. Decision?",
+   "a": "They don't race. Fever plus systemic illness is a hard stop regardless of entry fee or training invested.",
+   "type": "application"
+  },
+  {
+   "q": "Does vitamin D supplementation replace sleep and fuelling for immunity?",
+   "a": "No — sufficiency supports immune function but megadosing is not a substitute for sleep or adequate energy availability.",
+   "type": "recall"
+  }
+ ],
+ "sm_antidoping": [
+  {
+   "q": "Define strict liability.",
+   "a": "The athlete is responsible for any prohibited substance found in their sample, regardless of intent, negligence or how it got there.",
+   "type": "recall"
+  },
+  {
+   "q": "Is supplement contamination a defence?",
+   "a": "No — it's an explanation, not a defence. Strict liability still applies.",
+   "type": "recall"
+  },
+  {
+   "q": "How is the Prohibited List structured?",
+   "a": "Substances and methods prohibited at all times, those prohibited in competition only, and those prohibited in particular sports.",
+   "type": "recall"
+  },
+  {
+   "q": "How often is the Prohibited List updated?",
+   "a": "At least annually — check it each year rather than relying on last season's knowledge.",
+   "type": "recall"
+  },
+  {
+   "q": "Name violations beyond a positive test.",
+   "a": "Use or attempted use, refusing or evading testing, whereabouts failures, tampering, possession, trafficking, administration, complicity, prohibited association.",
+   "type": "recall"
+  },
+  {
+   "q": "How can a coach personally commit a violation?",
+   "a": "Through administration, complicity, or prohibited association with sanctioned support personnel.",
+   "type": "application"
+  },
+  {
+   "q": "State the TUE criteria.",
+   "a": "Clear medical need, no reasonable permitted alternative, no performance benefit beyond return to normal health, and need not caused by prior non-therapeutic use.",
+   "type": "recall"
+  },
+  {
+   "q": "When can a TUE be applied for retroactively?",
+   "a": "Only in defined circumstances such as emergency treatment — otherwise apply in advance.",
+   "type": "recall"
+  },
+  {
+   "q": "Most common route to an inadvertent violation?",
+   "a": "Supplements — via contamination and undeclared ingredients rather than deliberate cheating.",
+   "type": "application"
+  },
+  {
+   "q": "What should you advise if an athlete insists on supplements?",
+   "a": "Third-party batch-tested products, while being honest that this reduces rather than eliminates risk.",
+   "type": "application"
+  },
+  {
+   "q": "Should a coach ever supply supplements or medication?",
+   "a": "Never. Advise, document, and refer to a physician or pharmacist for checking.",
+   "type": "recall"
+  },
+  {
+   "q": "What are prohibited methods?",
+   "a": "Manipulation of blood and blood components, chemical and physical manipulation, and gene doping.",
+   "type": "recall"
+  }
  ]
 }
