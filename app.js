@@ -24,7 +24,7 @@ const TARGET_RETENTION = 0.85;
 
 // Interleave targets across the five L2 curriculum domains, proportional to
 // their share of authored lessons (keep in sync with generate_daily.py).
-const EXAM_WEIGHTS = { CM: 0.19, SM: 0.12, BM: 0.20, PH: 0.24, PG: 0.25 };
+const EXAM_WEIGHTS = { CM: 0.23, SM: 0.13, BM: 0.24, PH: 0.20, PG: 0.20 };
 const DOMAIN_NAME = { CM: "Coaching, Mindset & Individualisation", SM: "Sports Medicine, Recovery & Injury", BM: "Biomechanics & Technique", PH: "Physiology & Nutrition", PG: "Performance Pillars & Programming" };
 const CONF_P = { low: 0.25, med: 0.6, high: 0.9 };
 

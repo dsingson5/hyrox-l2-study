@@ -6818,5 +6818,191 @@
    "a": "Compact mesomorphs cycle reps fast on hip drive but must avoid inefficient high arcs; tall ectomorphs get reduced effective throw height and reach but must control long levers through the squat.",
    "type": "application"
   }
+ ],
+ "pd_modelcrit": [
+  {
+   "q": "How does reverse periodisation order a macrocycle, and how does that differ from the traditional sequence?",
+   "a": "Reverse periodisation front-loads high-intensity, speed and explosive work in the early phases, then builds the aerobic and strength-endurance qualities up as the race approaches. The traditional sequence does the opposite: accumulate high-volume, lower-intensity work first, then sharpen intensity toward competition. The hybrid attraction of the reverse ordering is that the qualities the race leans on most heavily are the last ones consolidated, while high-intensity tolerance is established early and then held on maintenance dosing — which is also its exposure, since max speed carries the shortest residual of any quality (day 40), so the early-built work is the first to fade if the holding dose lapses. Do not confuse it with backwards planning (day 41) — that is how you build a calendar from a fixed race date, not what you emphasise when.",
+   "type": "recall"
+  },
+  {
+   "q": "State precisely what the comparative evidence on traditional versus reverse periodisation shows — and what it does not show.",
+   "a": "It shows that neither ordering reliably beats the other on the outcomes that have been measured — strength, VO2max, muscular endurance, economy. That is an absence of a reliable average difference between the two models. It is not a finding that they are interchangeable in a given athlete, nor that emphasis ordering is irrelevant: individual responses are invisible inside a group mean, and the trials are overwhelmingly single-modality rather than hybrid. No equivalence test was run, so 'equivalent' is the wrong word for it. The correct inference is that the model label is the wrong thing to argue about — selection should be driven by training history, the dominant limiter and the competition calendar. Day 58 carries the general version of the same point and the guard against over-reading it: structure still beats no structure.",
+   "type": "recall"
+  },
+  {
+   "q": "Block periodisation is the default recommendation for hybrid athletes. Give the case against it, and the individualisation criticism that sits above the specific limitations.",
+   "a": "Four failure modes, in no fixed order of importance. A block that builds aerobic base and nothing else leaves a specificity debt — the athlete arrives physiologically ready and unrehearsed, having practised neither run-to-station entry, nor the roxzone, nor the cumulative fatigue that decides the back half of a race. Concentrated single-quality phases also suit trained athletes better than beginners, who generally do better with the same qualities spread across the week. Any quality left out of the current phase is running on residual credit (day 40), and that credit expires — over-run the block, or under-dose the holding stimulus, and the capacity measures lower when you return to it. And the rigidity that makes a block clear is what breaks it against a real calendar: an athlete racing repeatedly, or a race added at six weeks' notice, forces you to abandon the plan or improvise it. Above all of these: the fixed sequence takes no account of the athlete's entry background, so the phase order is a default rather than a prescription.",
+   "type": "recall"
+  },
+  {
+   "q": "How well established is the evidence base for periodisation in hybrid racing, and what coaching posture follows from that?",
+   "a": "Weakly established. Most periodisation research comes from single-modality endurance, strength or team-sport contexts, and how those models translate to hybrid racing is substantially under-researched. Emerging HYROX-specific research reports that aerobic capacity correlates strongly with performance and that endurance training volume shows strong associations with finish time, while the determinants and performance indicators of resistance training remain under-researched. Read that pairing carefully: under-researched means unmeasured, not unimportant — no study has shown resistance qualities to matter less. The race itself draws on blended aerobic and anaerobic pathways. The posture: respect the established principles of periodisation, stay receptive to new and updated evidence, and treat any chosen model as a hypothesis about this athlete rather than a rule to be defended.",
+   "type": "recall"
+  },
+  {
+   "q": "A new athlete arrives from four years of high-intensity functional fitness. Sleds, burpees and wall balls are strong; the eight 1 km runs cost them several minutes. Your default template gives one aerobic block inside a 20-week build. What do you do, and on what authority?",
+   "a": "Overwrite the default. The phase order is a convention, not a prescription, and this athlete's limiter (day 17) is clearly aerobic. Weight the first three-fifths of the build — weeks 1–12 of the 20, matching the worked case in this lesson's training link, three successive phases rather than one — toward higher-volume, lower-intensity running plus off-feet aerobic work, which still leaves a full eight weeks of specific prep, so compromised running starts inside the 8–12 weeks-out window (day 41). Hold maximal strength on maintenance dosing, which is cheap to maintain (day 40). Keep skill micro-doses in every week so the already-strong stations do not drift. Only then move to specific prep: compromised running, race-order rehearsal, wall balls and sandbag lunges trained pre-fatigued. The authority for the change is not a model — it is the limiter, the entry background and the length of the runway.",
+   "type": "applied"
+  },
+  {
+   "q": "A colleague says 'block periodisation is the evidence-based choice for HYROX'. Rebut this in terms a coach will accept.",
+   "a": "Two problems. First, the comparative literature has never separated the two orderings on outcome, and broadly the same picture holds for linear versus undulating (day 40); day 58 puts the general version on record — any structured plan beats unstructured training, while the gaps between named models are small. Calling one model evidence-based overstates what exists. Second, nearly all of that literature is single-modality, so the confidence around any recommendation for hybrid racing is wide. Argue for it on what it actually buys, which is organisational rather than physiological: one named emphasis per phase is easier to monitor and easier for the athlete to hold in mind, the concurrent load on any given week is lower (day 42), and the realisation phase in day 40's ATR sequence gives you a defined place to put race-shaped work. None of that is a claim of superior outcome, and it should not be sold as one.",
+   "type": "applied"
+  },
+  {
+   "q": "An athlete intends to race five times across an eight-week stretch of the season. How does that change your block structure, and what do you give up?",
+   "a": "Long strict blocks are off the table — the calendar will interrupt every one of them. Rank the races A/B/C (day 41), then run a compressed or hybrid structure (day 44): short emphasis phases near the bottom of the two-to-eight-week working range, each carrying two emphases rather than one, with maintenance dosing on everything else. Only A races get a full taper and a full reload; B and C races are trained through. Skill micro-doses stay in every week because they cost almost nothing. What you give up is depth: no quality will be developed as far as it would in a concentrated six-to-eight-week block. Name that trade before the block starts, in writing, and name the quality being sacrificed — an athlete who agreed to five races and then finds their sled has not moved all season will read it as a coaching failure rather than the cost of a choice they made.",
+   "type": "applied"
+  },
+  {
+   "q": "After a six-week concentrated aerobic block your athlete's running is clearly better, but wall-ball capacity has dropped and the sled feels heavy. Diagnose, and say how you would have prevented it.",
+   "a": "This is the predictable pairing of short-term deconditioning with a specificity gap, not a surprise: residual effects for strength-endurance are shorter than for aerobic capacity or maximal strength (day 40), so a block of that length outran the residual, and if no station work was inside the block, the athlete also lost technical rhythm and fatigue exposure. Prevention is structural rather than remedial — keep a genuine maintenance dose of one to two quality strength/station sessions per week, layer skill micro-doses through every phase (day 74), and be clear that length is the weaker lever here: strength-endurance residuals run only about 15 ± 5 days (day 40), so any block past two to three weeks needs a real maintenance dose rather than a slightly shorter block. Rebuild through compromised running before restoring heavy eccentric station volume (day 44).",
+   "type": "applied"
+  },
+  {
+   "q": "A club marathon runner is preparing for their first HYROX. How does the phase weighting differ from the strength-background athlete, and where is their real risk?",
+   "a": "Invert the weighting. Their limiter is force production and strength-endurance under load — sleds, farmers carry, sandbag lunges — while aerobic capacity is already the asset. Emphasise strength and power early and repeatedly, and trim running volume rather than adding to it, because high endurance volume is exactly the condition under which strength adaptation is most blunted (day 42). Consolidate race-specific aerobic and compromised running later, where their background makes it cheap to restore. The real risk is technical and eccentric: they have almost no exposure to loaded, eccentric-heavy patterns, so start low on the practice-context ladder (day 74) and expect sandbag lunges and the 100 wall balls to be the stations that decide the race.",
+   "type": "applied"
+  },
+  {
+   "q": "Two athletes share the same dominant limiter but you give them different periodisation orderings. Justify that, given that the evidence shows no consistent difference between the models.",
+   "a": "The histories and calendars differ, and those are the variables the evidence actually points you toward. An athlete in their first structured build, with a single A-race 24 weeks out, suits a progressive traditional build: the load rises predictably, monitoring is simple and adherence holds (day 58). An athlete racing in ten weeks who already carries high-intensity tolerance but a fading aerobic base suits a reverse-weighted structure that leaves the aerobic and strength-endurance work until last. 'No consistent difference' describes an average across groups — it licenses choosing on athlete-specific grounds, not choosing at random. Random assignment forfeits coherence with the athlete's history and race dates, and it also destroys your ability to interpret the outcome if the block goes badly.",
+   "type": "applied"
+  },
+  {
+   "q": "You run a 16-week build with two station-skill micro-doses per week of 12 minutes each, kept in every phase including the aerobic-emphasis blocks. Average training time is 9 hours per week. How much skill work is that in total, and what share of the build does it consume?",
+   "a": "Exposures: 16 weeks x 2 = 32. Total skill time: 32 x 12 min = 384 min = 6.4 hours. Total training time: 9 h x 16 = 144 hours. Share: 6.4 / 144 = 0.0444, i.e. about 4.4% of the build. That is the point of the micro-dose — under five per cent of total training time keeps station technique from drifting while another quality is emphasised, which is why dropping technical work out of an aerobic block is almost never a time decision: if it goes, name the actual reason (no equipment, a station the athlete currently cannot load) rather than pretending the hours were needed elsewhere. Be precise about what it buys, though. At that dose it is technical maintenance only, not race-shaped rehearsal, so the transition and cumulative-fatigue half of the specificity gap still has to be closed later with compromised running and simulations (day 74).",
+   "type": "calc"
+  },
+  {
+   "q": "Your athlete's A-race is 16 weeks away with a B-race at the end of week 7. You want a one-week reload after the B-race and a two-week taper into the A-race. What block lengths does the calendar leave, do they sit inside the two-to-eight-week working range, and what share of the runway does the first block represent?",
+   "a": "Fixed commitments: week 7 = B-race week, week 8 = reload, weeks 15-16 = taper. That leaves block 1 = weeks 1-6 = 6 weeks, and block 2 = weeks 9-14 = 6 weeks. Check the total: 6 + 1 + 1 + 6 + 2 = 16 weeks. Both blocks are 6 weeks, comfortably inside the two-to-eight-week range, so no compression is needed. Block 1 is 6 / 16 = 0.375, i.e. 37.5% of the runway — worth checking against the limiter, because a strength-background athlete needing an aerobic emphasis would want more than 37.5% of the build weighted that way (the worked case in the training link runs to 60%), which means taking aerobic emphasis into part of block 2 as well.",
+   "type": "calc"
+  }
+ ],
+ "ph_metabolism": [
+  {
+   "q": "Name the two mechanisms of ATP resynthesis, state where in the cell each occurs, and say which requires oxygen.",
+   "a": "Substrate-level phosphorylation transfers a phosphate group directly from a donor onto ADP; it occurs mainly in the cytosol (the creatine kinase reaction and two steps of glycolysis), where it needs no oxygen; one further substrate-level step occurs inside the mitochondrion, in the Krebs cycle, and accounts for that cycle's single direct high-energy phosphate. Oxidative phosphorylation occurs on the inner mitochondrial membrane, requires oxygen as the terminal electron acceptor, and makes ATP indirectly from a proton gradient rather than from a phosphate donor. The first is fast but low-yield; the second is slower to spin up but supplies the great majority of ATP.",
+   "type": "recall"
+  },
+  {
+   "q": "Describe the electron transport chain and state precisely what oxygen does there.",
+   "a": "NADH and FADH2 deliver electrons to a series of complexes in the inner mitochondrial membrane. As electrons pass down the chain, the energy released is used to pump protons out into the intermembrane space, creating a gradient. Protons flowing back through ATP synthase drive the phosphorylation of ADP to ATP. Oxygen is the terminal electron acceptor at the end of the chain, combining with electrons and protons to form water. Without it the chain backs up, NADH cannot be reoxidised, and the cell must fall back on the cytosolic route to recover NAD+ (day 20) — note that in exercise this is rarely true anoxia; the same NAD+ shortfall arises whenever glycolytic flux outruns the mitochondrion's capacity to accept pyruvate.",
+   "type": "recall"
+  },
+  {
+   "q": "What does one turn of the Krebs cycle yield per acetyl-CoA, and why is describing it as an ATP-producing step misleading?",
+   "a": "Per acetyl-CoA it releases two CO2 and produces three NADH, one FADH2 and just one direct high-energy phosphate (GTP/ATP). Calling it an ATP step is misleading because its real output is reducing equivalents — loaded electron carriers. Those carriers are then cashed in at the electron transport chain, which is where nearly all the ATP is actually formed. The cycle prepares the currency; the chain mints it.",
+   "type": "recall"
+  },
+  {
+   "q": "Trace stored body fat from an adipocyte to acetyl-CoA, naming each step. How many rounds of beta-oxidation does a 16-carbon fatty acid take, and how many acetyl-CoA units does it yield?",
+   "a": "Triglyceride is cleaved by lipases (lipolysis) into glycerol and free fatty acids; the fatty acids travel bound to albumin in the blood (or are used locally if stored as intramuscular triglyceride); they cross the sarcolemma on transport proteins, are activated, and enter the mitochondrion via the carnitine shuttle; beta-oxidation then clips two-carbon units off the chain, each round producing one acetyl-CoA plus one NADH and one FADH2. A 16-carbon fatty acid requires seven rounds and yields eight acetyl-CoA — the last round splits a four-carbon remnant into two. Those eight units then enter the same Krebs cycle carbohydrate feeds.",
+   "type": "recall"
+  },
+  {
+   "q": "An athlete has read about fat adaptation and wants to train so they burn fat during the race and never need carbohydrate on course. Answer at the pathway level.",
+   "a": "Fat is denser per gram (about 9 kcal/g versus 4) and the store is effectively unlimited, but it cannot support HYROX power outputs for two pathway reasons. First, oxygen economy: fatty acids are more reduced, so they deliver fewer kcal and fewer ATP per litre of oxygen than carbohydrate — roughly a 7% energy penalty per litre, and a comparable-or-larger penalty in ATP per O2 molecule. At an intensity where oxygen delivery is already the constraint, that is exactly the wrong trade. Second, rate: mobilisation, blood transport, membrane transport, the carnitine shuttle and a long beta-oxidation chain all sit upstream of the Krebs cycle, so flux cannot rise fast enough for a sled or a wall-ball set. Fat adaptation can shift the mix at easy intensities, which has some value for the aerobic base, but it cannot fuel race pace and it will not remove the need for carbohydrate. Day 24 carries the intake side.",
+   "type": "applied"
+  },
+  {
+   "q": "An athlete on a self-imposed very low-carbohydrate diet reports that easy runs feel completely normal but that the sleds and burpee broad jumps are catastrophic. Explain using the pathways.",
+   "a": "At easy intensity the demand is low enough for the mitochondrial route to meet it, and beta-oxidation can supply acetyl-CoA at the required rate, so the athlete genuinely feels fine. The stations demand ATP faster than oxidative phosphorylation can deliver, which is precisely where glycolysis must spike — and glycolysis runs on glucose and glycogen, which are the substrates in short supply. There is a second hit: Krebs flux needs oxaloacetate topped up largely from pyruvate, so a carbohydrate-poor athlete also degrades the cycle that fat depends on. The pattern of complaint — easy work preserved, high-power work collapsed — is a signature of the carbohydrate pathway being starved, not of poor fitness.",
+   "type": "applied"
+  },
+  {
+   "q": "Late in a long race simulation an athlete's pace falls away and their fat oxidation, measured by gas exchange, falls as well rather than rising to compensate. Explain the mechanism and say what you change.",
+   "a": "Fat oxidation does not simply take over when glycogen runs low, because both fuels converge on acetyl-CoA and enter the same Krebs cycle. Cycle flux depends on oxaloacetate, which is replenished largely from pyruvate — that is, from carbohydrate. As glycogen depletes, that anaplerotic supply falls and the cycle cannot accept acetyl units at the previous rate, so fat oxidation declines with it. This is the pathway-level content behind 'fat burns in a carbohydrate flame'; the detailed anaplerotic account is debated, but the observation is robust. Practically, protect carbohydrate availability during long sessions rather than expecting a metabolic rescue, and treat this as a fuelling and durability problem — day 24 owns the intake response, day 22 the late-race performance consequences.",
+   "type": "applied"
+  },
+  {
+   "q": "A coach says the sled push is 'anaerobic', so the mitochondrion has nothing to do with it. Day 18 already establishes that a better aerobic base speeds station-to-station recovery — state the pathway-level reason WHY.",
+   "a": "The debt the sled leaves behind is settled by oxidative phosphorylation, and every item on the bill is mitochondrial. Cytosolic glycolysis has run fast enough to load NAD+ into NADH; only the electron transport chain, with oxygen as terminal electron acceptor, reoxidises those carriers so the cytosol can accept flux again. The lactate produced to regenerate NAD+ locally is taken up elsewhere, reconverted to pyruvate and oxidised through acetyl-CoA and the Krebs cycle (day 20). And phosphocreatine is rephosphorylated using mitochondrially generated ATP, so the tank refills at a rate set by oxidative capacity (day 18). The substrate-level pathways front the effort; the mitochondrion pays for it. That is the mechanism under day 18's conclusion, not a second version of it. Days 71 and 72 cover how the capacity is developed.",
+   "type": "applied"
+  },
+  {
+   "q": "Alcohol carries about 7 kcal/g. Trace its metabolic route and explain why 'it is energy' does not make it a fuel for a HYROX athlete.",
+   "a": "Ethanol is oxidised almost entirely in the liver — to acetaldehyde, then to acetate; much of that acetate is exported and activated to acetyl-CoA in other tissues, where it can enter the Krebs cycle. Three pathway facts disqualify it as an athletic fuel. It cannot be stored, so the energy must be handled as it arrives; skeletal muscle has no meaningful capacity to oxidise ethanol itself, so working muscle never sees the parent fuel; and while the liver is clearing it, the shift in cytosolic NADH/NAD+ suppresses gluconeogenesis and hepatic fat oxidation. The energy is real, metabolisable and unavailable where it would be needed — before counting the carbohydrate it displaces from the plate. Day 96 owns the post-race recovery consequences.",
+   "type": "applied"
+  },
+  {
+   "q": "An athlete asks why the body bothers storing glycogen inside the muscle when blood glucose is available anyway. Give the pathway answer, and one consequence for the closing stations of a race.",
+   "a": "Muscle glycogen is cleaved by glycogen phosphorylase to glucose-1-phosphate, which enters glycolysis already phosphorylated and skips one of the two ATP normally invested up front — a net 3 ATP per glucose unit against 2 from blood glucose. It also sits inside the fibre, so it needs no delivery from the circulation and no transport across the sarcolemma at the moment ATP demand is rising faster than blood flow can respond. The consequence late in a race is compound: as local glycogen falls the muscle is pushed onto the slower, slightly less productive route exactly when it needs the fast one, and Krebs flux loses the pyruvate-derived oxaloacetate that keeps fat oxidation running alongside it. Days 18 and 24 carry the store sizes and the intake response.",
+   "type": "applied"
+  },
+  {
+   "q": "CALC: Complete oxidation of one glucose molecule is commonly credited with about 32 ATP and consumes 6 O2; palmitate is credited with about 106 ATP and consumes 23 O2. Calculate ATP per O2 for each, express the difference, and note how the answer shifts if you use the lower glucose figure of 30.",
+   "a": "Glucose: 32 / 6 = 5.33 ATP per O2. Palmitate: 106 / 23 = 4.61 ATP per O2. Carbohydrate therefore yields about 16% more ATP per molecule of oxygen (5.33 / 4.61 = 1.157), or equivalently fat needs about 16% more oxygen for the same ATP. Using the lower glucose tally of 30, the figure is 30 / 6 = 5.00 versus 4.61, a carbohydrate advantage of about 8.5%. The honest answer is therefore a range of roughly 8-16% depending on the assumptions used, which is exactly why the ATP tallies should be quoted as bookkeeping rather than constants. The direction is what matters and it never reverses: fat costs more oxygen per unit of ATP.",
+   "type": "calc"
+  },
+  {
+   "q": "CALC: An athlete sustains an oxygen uptake of 3.5 L/min across the running portions of a race. Using approximately 5.05 kcal per litre of O2 for pure carbohydrate oxidation and 4.69 kcal per litre for pure fat, calculate energy yield per minute at each extreme and the difference across 45 minutes of running. What does it show?",
+   "a": "Carbohydrate: 3.5 x 5.05 = 17.68 kcal/min. Fat: 3.5 x 4.69 = 16.42 kcal/min. Difference = 1.26 kcal/min. Over 45 minutes: 17.68 x 45 = 795.4 kcal versus 16.42 x 45 = 738.7 kcal, a shortfall of about 56.7 kcal (1.26 x 45 = 56.7), roughly 7% less energy from the identical oxygen delivery. Interpretation: at a fixed, delivery-limited oxygen uptake, shifting the fuel mix toward fat means less energy and therefore less pace for the same cardiorespiratory cost. That, together with the slower pathway, is the mechanistic reason race intensity is carbohydrate-dominated — and note these are the extremes, since real mixes sit between them.",
+   "type": "calc"
+  }
+ ],
+ "sk_highperf": [
+  {
+   "q": "State the two practitioner definitions of skill covered here, and say what each one changes about programming.",
+   "a": "First, the capacity definition: a skill is any movement, range or capability that still has developable range — so skill is a property of the athlete-task relationship, not a fixed trait, and excellence does not exhaust development. Programming consequence: audit each station and running for range remaining instead of declaring anything finished. Second, the execution definition: skill is the ability to execute a task automatically, on demand and with intent, which brings confidence and the athlete's certainty of delivery inside the definition. Programming consequence: the criterion is not a clean rep but a clean rep produced without deliberation, judged under pressure rather than fresh and unhurried. Note that each definition came from one athlete, so treat them as illustrative positions rather than a surveyed consensus.",
+   "type": "recall"
+  },
+  {
+   "q": "What is the provenance of this material, and how must it be taught on an exam-prep site?",
+   "a": "It is elite practitioner testimony — informed opinion from athletes describing their own experience — not research evidence. It is genuinely valuable as an account of what expert practice feels like from the inside and as a source of coaching hypotheses. It must be labelled as opinion. Where a claim happens to align with the motor-learning literature (the attention freed by automation, days 27-28), say so explicitly; where it is simply one athlete's experience (their opposed-versus-solo practice balance, their simulation frequency), say that too. Note the trap that runs the other way as well: diminishing returns at high competence is a literature pattern, not something the athletes claimed — they said their own development was still wide open. Presenting opinion as a research finding is an error even when the content is good coaching.",
+   "type": "recall"
+  },
+  {
+   "q": "Why do elite competitors argue that running is the highest-leverage skill in HYROX, and what follows for the coach?",
+   "a": "Because it is by far the most-performed movement in the race — eight kilometres, one run before each station, commonly around half of finishing time depending on ability — so any improvement is applied eight times, whereas a station fix is applied once. What follows is that run technique should be given a deliberate technical progression of its own, with cueing, drilling and criteria (Module 7.2: days 30-33, 75, 88-93), rather than being treated only as a fitness quality trained by accumulating volume. Mind the provenance: the athletes assert only that running is a developable skill and the most-used movement in the race; the claim that coaches routinely under-treat it is this lesson's inference from the leverage arithmetic, not something they said.",
+   "type": "recall"
+  },
+  {
+   "q": "Day 2 owns feedback fading and day 27 owns how feedback changes across the learning stages. What does the refinement ceiling add on top of both?",
+   "a": "That the trigger changes hands. Fading in day 2 is coach-scheduled against a plan; at the refinement ceiling the athlete's own perception has become a primary information source, so the athlete's question is a better prompt for feedback than the coach's observation. The coach's mode shifts from instructing to co-investigating — propose a hypothesis, let the athlete report what changed, test again — and what is said becomes more precise because the athlete has already localised the problem. The practical rule: let feedback frequency track the athlete's demonstrated competence at self-detection rather than a preset schedule.",
+   "type": "recall"
+  },
+  {
+   "q": "Two athletes join your squad. One comes from a high-endurance background and finishes roughly eight minutes ahead of the other, who comes from a functional-fitness background. Which has more developable range, and how do you find out?",
+   "a": "You cannot tell from the finish time — that is the point. The endurance entrant is faster now but typically arrives with little station-skill development, so may have more range left; the functional-fitness entrant arrives with movement patterns already drilled but comparatively undeveloped endurance and little experience of pacing across mixed modalities. Find out by auditing each of the eight stations and running separately for range remaining, then rank what is left by expected time returned rather than by which fault looks worst. Time-trial the stations pre-fatigued, compare split profiles against the run splits, and note where technique degrades after a run rather than fresh.",
+   "type": "applied"
+  },
+  {
+   "q": "A strong athlete says wall balls are her worst station and wants to add a high-volume daily wall-ball block. Walk through the response.",
+   "a": "Refuse the volume answer and drill down. Which component actually fails — depth, the catch, the throw, the breathing, or simply the size of the sets she can hold? Then why: if depth fails, is it hip or ankle range, position under fatigue, or that she is arriving at station eight far more fatigued than she trains? Then what is the base constraint, and fix that — mobility, position work, the squat pattern itself. Only then rebuild load, volume and intensity, in that order. Piling daily volume onto a pattern that is inefficient grooves the inefficiency (day 29) and costs recovery she needs elsewhere. Note also that wall balls are 100 reps in every individual division and sit last, so fatigue exposure, not fresh technique, is usually the real limiter.",
+   "type": "applied"
+  },
+  {
+   "q": "Your athlete has only a phone video of her last race, shot by a friend from the sidelines. How do you build decision review from that, and what are its limits?",
+   "a": "Isolate the discrete choices visible in the footage — how she entered each station, how she broke the wall balls and lunges, where she paused, whether she covered anyone's move — and for each ask what she was intending and how it turned out on the following run split. Cross-reference her split file so the outcome is measured, not remembered. Where her own footage runs out, watch broadcast racing and tally how often a given choice appears to work for other athletes, which gives a crude sense of the odds. Where there is no useful footage at all, the other reported route is off-race decision drills — reaction and peripheral-vision tasks, or timed head-to-head card-ordering games — to rehearse fast choice-making itself. Limits: you see outcome, not intent, so any inference about why another athlete chose something is a guess; sample sizes are tiny; and a choice that worked once may have worked despite itself. Use it to generate rehearsals to test, not to fix rules.",
+   "type": "applied"
+  },
+  {
+   "q": "An experienced athlete does nearly all her work solo to protect her prescribed zones, and says she has lost the feel of racing people. What do you add in the final weeks before a major, and how do you justify the dose?",
+   "a": "Sparing opposed exposure, clustered before the target race rather than made habitual — a small number of sessions with a partner at the upper rungs (day 74, rung 4, which owns what an opponent restores and what the intensity cap protects) and, distinctively at this level, entry to a real event that is not a HYROX: a road race or another hybrid format, used purely for head-to-head exposure and for the novelty of decisions she does not routinely make. Justify the dose honestly: this is reported practitioner practice, not an evidence-based prescription, and the reason it stays sparing is exactly the reason she trains alone. Place it far enough out that it does not eat the taper (day 43).",
+   "type": "applied"
+  },
+  {
+   "q": "A seasoned athlete with several races a year asks for a full race simulation every month. What do you say, and what do you offer instead?",
+   "a": "Decline the frequency. Full simulations are most informative for athletes who are new or who have not raced recently and therefore lack information about their own race; for a seasoned athlete they mostly generate a comparison against previous times under conditions that can never match a race — different energy, field, surface, adrenaline — so a slower simulation reads as decline and a faster one as unearned reassurance. Offer instead race-shaped work that keeps the demands but removes the scoreboard: race order and sequencing with deliberate breaks, altered loads or capped intensity. Keep true simulations at or below the sparse end of day 41's default — for a seasoned athlete perhaps one or two across a build rather than one every few weeks — and place the first early enough (around ten weeks out) that the information can still change the plan, and never so close to the race that it compromises the taper (day 43). Declare the intent — testing (day 49) or rehearsal (day 74, rung 5) — beforehand.",
+   "type": "applied"
+  },
+  {
+   "q": "You keep cueing an advanced athlete's sled-pull position at every session. Her position is already sound; she loses time because she goes out too hard on run 1 and pays for it from run 5 onward. What is the coaching error, and what should replace it?",
+   "a": "The error is continuing to coach movement quality that is already adequate because it is the thing you know how to observe, while the actual limiter has moved to pacing and decision-making. Extra cueing on a sound pattern is at best neutral, and can disrupt automaticity by dragging attention back onto the movement (day 27's external-focus material). Replace it with decision work: rehearse nominated opening pace and set structures at the upper rungs, have her state a plan before the bout and report her state at fixed checkpoints, then debrief the choices rather than the reps. Build her ability to read her own state — the practitioner claim is that knowing what you can sustain is itself a skill that develops with years of deliberate attention. Keep the sled-pull feedback but fade it to occasional and athlete-initiated (day 2).",
+   "type": "applied"
+  },
+  {
+   "q": "An athlete runs the eight kilometres at 4:48/km. A run-mechanics change lets her hold 4:42/km at the same effort. Separately, a station-technique programme would take 4 s off each of the eight stations. Compare the two returns, and state the coaching point.",
+   "a": "4:48/km is 288 s and 4:42/km is 282 s, a saving of 6 s per kilometre. Across eight runs that is 6 x 8 = 48 s. The station programme returns 4 x 8 = 32 s. The run change is worth 48 s versus 32 s, a difference of 16 s in favour of the running work. Coaching point: the run is the same movement performed eight times, so a small per-kilometre technical gain is multiplied by eight and typically outranks a comparable per-station gain. This arithmetic is the leverage argument for treating running as a skill with a technical progression rather than as volume alone.",
+   "type": "calc"
+  },
+  {
+   "q": "Rehearsing wall-ball set strategy, your athlete tries two plans for the 100 reps. Plan A: 5 sets of 20 at 24 reps/min with 12 s between sets. Plan B: 10 sets of 10 at 26 reps/min with 5 s between sets. Which is faster, by how much, and what does the exercise actually teach?",
+   "a": "Plan A: work time is 100 / 24 = 4.1667 min = 250 s; rests are 4 x 12 = 48 s; total 298 s (4:58). Plan B: work time is 100 / 26 = 3.846 min = 230.8 s; rests are 9 x 5 = 45 s; total 275.8 s (about 4:36). Plan B is faster by roughly 22 s. What it teaches is not the answer but the method: the rep rates are this athlete's, measured at station eight after run 8, and they change with fatigue, so the comparison must be rehearsed rather than calculated in the abstract. Rehearsing both plans is decision skill work — it gives her a felt basis for choosing set size in the race rather than defaulting to whatever she did last time.",
+   "type": "calc"
+  }
  ]
 }
