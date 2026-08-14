@@ -54,13 +54,9 @@ Academy course material. Assessment-format details are inferred from public
 sources about the same platform's other courses and are flagged as unverified
 in the lessons that mention them.
 
-Gap audit status (Aug 2026, revised): a block of gap-close lessons authored for days
-111-119 was lost when those day slots were renumbered for new content. **Re-opened
-gaps:** Module 7.3 test matrix and decision tree; Module 4's safety/efficacy/efficiency;
-Module 3's how-to-utilise-testing-data; Module 8's double peaking; Module 7.1's
-categorization of skills; Module 7.2's differences in running. Module 6 supplements and
-the Module 4 5 Level System have been restored. Drafts of the rest are in the git
-history at commits 1cea6c9, 9b35296 and 2487b12 if they are wanted back.
+Gap audit status (Aug 2026, closed): **all identified course-section gaps are authored.**
+The seven lessons lost when days 111-113 were renumbered over the 111-119 block have been
+restored from git history at days 116-122, byte-identical to the reviewed originals.
 
 **Verified from source (Aug 2026).** Sections that were previously unverifiable have been
 transcribed from audio David supplied, and the lessons rewritten from the actual course
@@ -75,9 +71,14 @@ material:
 * Module 4 *Interference Effect* and *Building Power* — days 42 and 37 now carry the
   practitioners' material, including a corrected session-separation figure (3-4 h plus a
   meal, against the 6 h convention previously recorded).
+* Module 5 *Muscle Physiology*, *Thermoregulation & Hydration* and *Exercise Adaptations* —
+  days 64, 68, 69 and 71 now carry the source material. Day 64 was audited against the
+  section and found correct; it gains the HYROX strength-curve mapping and a note that the
+  course itself uses the loose 'isometric is maximum force' phrasing, which describes the
+  shortening branch only.
 
-Still a reconstruction: Module 7.2's *Differences in Running*, one of the lessons lost from
-the 111-119 block.
+Still a reconstruction: Module 7.2's *Differences in Running* (day 122), restored with its
+unverified flag intact.
 
 Numeric thresholds for the 5 Level System's four categories live in a separate *HYROX
 Fitness Level Guidelines* page inside that section, which could not be extracted.
