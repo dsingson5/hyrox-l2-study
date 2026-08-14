@@ -192,6 +192,26 @@
     "phase": 35,
     "name": "Module 4 — The 5 Level System (verified)",
     "days": "115-115"
+   },
+   {
+    "phase": 36,
+    "name": "Module 7.3 — Off-Feet Decision-Making (restored)",
+    "days": "116-117"
+   },
+   {
+    "phase": 37,
+    "name": "Module 4 — Safety, Efficacy & Efficiency (restored)",
+    "days": "118-118"
+   },
+   {
+    "phase": 38,
+    "name": "Modules 3, 8 & 7.1 — Test Data, Double Peaking & Skill Categorisation (restored)",
+    "days": "119-121"
+   },
+   {
+    "phase": 39,
+    "name": "Module 7.2 — Differences in Running (restored)",
+    "days": "122-122"
    }
   ],
   "source_note": "Original study notes written for the Level 2 'Mastering Performance' module list. Not a reproduction of HYROX Academy course material."
@@ -4960,7 +4980,14 @@
     "Force–velocity (Hill, 1938): concentric force falls as shortening velocity rises, because fewer cross-bridges are attached at any instant. Zero velocity gives the highest force on the concentric side of the curve — but maximal ECCENTRIC force exceeds maximal isometric force, commonly reported around 1.2–1.8× in isolated preparations and often only about 1.0–1.3× in voluntary human efforts because of neural inhibition. The lengthening branch is not a mirror image of the shortening branch: force rises steeply just past zero velocity and then largely plateaus, so eccentric force is close to velocity-independent in voluntary human efforts even though isolated preparations show it continuing to climb. 'Isometric is maximal force' is true only if eccentric actions are excluded, and that is a standard exam trap.",
     "Power = force × velocity, so it is zero at both ends of the curve — no force at maximal unloaded velocity, no velocity at isometric — and peaks at an intermediate velocity, commonly around a third of maximal shortening velocity in isolated muscle. The maximal-strength / strength-speed / power / speed-strength / speed vocabulary simply labels positions along that curve; the terms describe the intent of a set, have no agreed load boundaries, and the single-muscle optimum does not transfer directly to a multi-joint barbell task.",
     "Strength curves describe the exercise, not the muscle: they are the product of force–length, changing joint moment arms and the resistance's own lever arm, which is also why a constant external load never means a constant muscle tension. Three broad shapes recur. Ascending — capability rises toward extension, so a deadlift is hardest off the floor and eases past the knee, and most squat and press variations behave the same way. Descending — capability falls toward full contraction, so a chin-up or a supported row is hardest in the final few centimetres. Bell-shaped — most single-joint work peaks mid-range, the biceps curl being the standard example, hardest where the load's moment arm is longest. Equipment decides as much as anatomy: a leg extension on a plain lever arm gets harder toward full extension, in the short and weak range of the quadriceps, whereas a cammed machine follows whatever profile its designer chose.",
-    "HYROX mapping: the drive out of a wall ball and the leg action of the sled push are ascending-pattern exercises — capability rises toward end-range extension — except that the sled never gets easy, because friction is roughly constant across the 50 m, so end-range extension must still produce useful force on every stride. Sled pull, SkiErg and rower are descending-pattern for the upper body: capability falls as the rope or handle finishes toward the body, in the shortened range where the lats, posterior shoulder and elbow flexors are weakest, while the demand stays constant."
+    "HYROX mapping: the drive out of a wall ball and the leg action of the sled push are ascending-pattern exercises — capability rises toward end-range extension — except that the sled never gets easy, because friction is roughly constant across the 50 m, so end-range extension must still produce useful force on every stride. Sled pull, SkiErg and rower are descending-pattern for the upper body: capability falls as the rope or handle finishes toward the body, in the shortened range where the lats, posterior shoulder and elbow flexors are weakest, while the demand stays constant.",
+    "HYROX velocity contrast straight from the module: a wall ball is a fast shortening action and the sled push a slow, controlled one — force production is markedly higher on the sled, partly the heavier load and partly the low shortening velocity itself.",
+    "Course phrasing to be aware of: the Module 5 section states that at zero velocity 'the muscle is producing maximum force'. Read that as maximum on the SHORTENING branch — the same section also states force rises further during eccentric actions, so the full hierarchy remains eccentric > isometric > concentric. If an assessment item quotes the isometric-maximum phrasing, it is describing the concentric side of the curve.",
+    "The module's mechanism for eccentric superiority matches the account above: passive tension taken up by tendon and connective tissue, plus cross-bridges being forcibly detached while still bearing load.",
+    "Strength-curve mapping the module gives for HYROX — ASCENDING (capability rises toward extension): sled push, sled pull, wall balls and farmers carry, where force output increases as the joint extends.",
+    "DESCENDING (capability falls toward the finish): pull-ups transfer to sled pull, SkiErg and rowing, where the highest force demand comes as the arms finish the pull — most pronounced on the sled pull.",
+    "Training application for ascending curves: add chains or bands to squats and bench press to overload the lockout, building force in the range the sled and wall ball actually finish in.",
+    "Training application for descending curves: rows and pull-ups with pauses at peak contraction, to build strength in the shortened range where these patterns are weakest."
    ],
    "training_link": "Work backwards from where in the range the athlete actually fails. The sled push demands force at end-range hip and knee extension because friction does not fall away as the joints open — precisely where a barbell squat unloads — so the primary dose is sled work at race load over race distance, with accommodating resistance on squats and presses as a secondary way of keeping tension high where the bar goes light. The pulling stations fail near the body, in the shortened range, so build strength there: brief loaded holds at the finish of rows and chin-ups, and rope pulls at race cadence. Load long muscle lengths deliberately — squats and split squats at or below judged depth — because wall balls and lunges are decided at the bottom. The push is concentric-dominant, so it tolerates more frequent repetition than lunge or landing work. Then audit station splits: matching a strength curve is a rationale, not demonstrated transfer.",
    "glossary": [
@@ -5013,6 +5040,21 @@
      "term": "Strength curve",
      "def": "How the force an athlete can produce changes across an exercise's range of motion — ascending, descending or bell-shaped. It is set by muscle force–length, changing joint moment arms and the resistance's own lever arm, so it is a property of the exercise and its equipment rather than of the muscle.",
      "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M10 6 C12 22 26 32 72 34\" fill=\"none\" stroke=\"#ffb86b\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M8 4v32h68\" fill=\"none\" stroke=\"#3a4a5e\" stroke-width=\"1\"/></svg>"
+    },
+    {
+     "term": "Velocity cost of force",
+     "def": "The practical consequence of the force-velocity relationship: a fast action such as a wall ball produces less force per contraction than a slow, controlled one such as a sled push, independent of the load being moved.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M8 32 C24 30 34 14 44 14 S62 22 72 10\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"2\"/><circle cx=\"44\" cy=\"14\" r=\"2.5\" fill=\"#5ec8ff\"/></svg>"
+    },
+    {
+     "term": "Lockout overload",
+     "def": "Adding chains or bands so resistance rises through the range, loading the end-range extension that ascending-curve stations — sled, wall ball, farmers carry — actually finish in.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M8 26 C20 26 22 32 32 32 C46 32 46 12 66 12\" fill=\"none\" stroke=\"#67e8b0\" stroke-width=\"2\"/><line x1=\"8\" y1=\"24\" x2=\"72\" y2=\"24\" stroke=\"#3a4a5e\" stroke-width=\"1\" stroke-dasharray=\"3 2\"/></svg>"
+    },
+    {
+     "term": "Peak-contraction pause",
+     "def": "Holding the shortened position of a pull to build force where a descending-curve pattern is weakest — the range the sled pull, SkiErg and rower finish in.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"14\" y=\"10\" width=\"52\" height=\"22\" rx=\"3\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"1.6\"/><path d=\"M40 10v22\" stroke=\"#ffb86b\" stroke-width=\"2\"/><path d=\"M20 21h14M46 21h14\" stroke=\"#67e8b0\" stroke-width=\"1.6\"/></svg>"
     }
    ],
    "relevant": true,
@@ -5276,7 +5318,16 @@
     "Movement economy is a determinant of heat strain in its own right, separate from aerobic fitness: a less economical athlete spends more energy — and so liberates more heat — to hold the same external speed, so economy shifts the thermal load even between athletes with matched aerobic capacity. Technical work on running, ski, row, burpee and sled mechanics is therefore also heat management.",
     "Heat acclimation/acclimatisation adaptation set: plasma-volume expansion (early, and among the first to decay), earlier sweat onset, higher sweat rate, more dilute sweat, lower core temperature and heart rate at a fixed workload, and improved thermal comfort. Induction typically runs 5–14 daily exposures of roughly 60–90 min at modest intensity, with adaptations decaying over the following weeks unless topped up. Day 25 carries this as a one-line definition only.",
     "Heat-illness spectrum: heat exhaustion presents as an inability to continue with dizziness, nausea, weakness and often collapse, but with an intact sensorium; exertional heat stroke is distinguished by central nervous system dysfunction — confusion, disorientation, irrational or aggressive behaviour, ataxia, seizure, loss of consciousness. Exertional heat stroke is a medical emergency: call emergency medical services immediately AND begin aggressive whole-body cooling on the spot — cold-water immersion where available, otherwise continuous cold water, ice packs to neck, axillae and groin, and fanning. Cool first, transport second, because outcome tracks how fast core temperature comes down. Rapid cooling is recognised first aid, not treatment; what sits outside coaching scope of practice (day 1) is diagnosis, medication, and the decision to stop cooling or clear the athlete — as injury management generally does (day 7).",
-    "Cooling has reasonable support at both ends. Pre-cooling (cold-water immersion, cooling vests, ice-slurry ingestion of roughly 5–10 g/kg before the start) improves endurance performance in the heat; per-cooling during exercise performs at least as well in meta-analysis (Bongers and colleagues) — its limitation is delivery in competition, not size of effect. In a HYROX hall the realistic levers are pre-race cooling, a shortened warm-up in minimal kit, cold fluid at the 15 roxzone traverses (day 25 covers the drinking plan) and anything that lowers thermal perception."
+    "Cooling has reasonable support at both ends. Pre-cooling (cold-water immersion, cooling vests, ice-slurry ingestion of roughly 5–10 g/kg before the start) improves endurance performance in the heat; per-cooling during exercise performs at least as well in meta-analysis (Bongers and colleagues) — its limitation is delivery in competition, not size of effect. In a HYROX hall the realistic levers are pre-race cooling, a shortened warm-up in minimal kit, cold fluid at the 15 roxzone traverses (day 25 covers the drinking plan) and anything that lowers thermal perception.",
+    "The performance cascade the module draws: ambient temperature rises → skin temperature rises → the brain registers it as thermal perception → in parallel core temperature rises and drives cardiovascular strain → the two signals combine to elevate RPE → the athlete instinctively drops work rate.",
+    "Because part of that chain is perceptual, strategies that make an athlete FEEL cooler preserve performance even without changing core temperature — ice towels, menthol rinses and fans work by holding RPE down.",
+    "Intensity, not duration, is the main driver of core temperature. A time trial can push core temperature past 40 °C within 20 minutes while a far longer, easier ride stays lower and stable: 'exercising longer does not equal hotter'.",
+    "The only genuine mid-race cooling lever is reducing speed or power output, because that is what cuts metabolic heat production.",
+    "Movement is only about 20-25% efficient, so the rest of the energy becomes heat: roughly 300 W of mechanical output implies over 1,200 W of total metabolic energy. In a hot venue the athlete is a substantial part of the heat problem.",
+    "Evaporation cools via the phase change from liquid to vapour, not by sweat sitting on skin, and convection strips the humid layer near the skin so evaporation can continue. In still air evaporation slows sharply — airflow matters as much as sweat rate.",
+    "Heat tolerance tracks body composition and fitness: higher body fat and BMI worsen it, higher VO2max and a greater surface-area-to-mass ratio improve it.",
+    "The mechanism is insulation rather than sweating. In a mass-matched comparison, higher-body-fat participants heated faster with similar local sweat rates — fat slows heat transport away from the core.",
+    "Running economy is the under-appreciated variable: at matched aerobic fitness, athletes with better economy accumulated less core temperature in both free and fixed-pace running, because inefficient movement wastes energy as heat. Economy rather than VO2max was the bigger differentiator."
    ],
    "training_link": "Treat the hall as a measurement, not a hope. Get your athlete in early enough to feel it: note whether any air is genuinely moving over the run loop, and read humidity alongside temperature — a still 26 °C hall at 70% humidity is a harder thermal problem than a dry, breezy 30 °C course, and cool-gym splits will lie to them. Reset the race model before the gun rather than discovering it on run five (day 16): a few seconds per kilometre off the opening two runs and a slightly softer sled push cost less than the back-half collapse they prevent. Build heat exposure into the final weeks — roughly five to ten easy 60–90 min sessions in genuinely warm conditions, kept away from key quality days — then rehearse the controllables: minimal warm-up kit, cold fluid or an ice towel in the holding pen, and one cold mouthful at a named roxzone (day 25). Finally, agree the emergency plan out loud before you need it: who calls, where the ice and water are, and that cooling starts immediately rather than after the ambulance arrives.",
    "glossary": [
@@ -5329,6 +5380,21 @@
      "term": "Exertional heat stroke",
      "def": "The severe end of the heat-illness spectrum, marked by central nervous system dysfunction — confusion, ataxia, irrational behaviour, seizure or unconsciousness — during or shortly after exertion. A medical emergency: call emergency services and start aggressive whole-body cooling immediately. Cool first, transport second, because outcome tracks how fast core temperature falls. Cooling is first aid; diagnosis, medication and clearing the athlete belong to medical staff.",
      "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M40 8l14 24H26z\" fill=\"none\" stroke=\"#ffb86b\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/><path d=\"M40 17v8\" stroke=\"#ffb86b\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><circle cx=\"40\" cy=\"28.5\" r=\"1.6\" fill=\"#ffb86b\"/></svg>"
+    },
+    {
+     "term": "Thermal perception",
+     "def": "The brain's registration of skin temperature, which combines with cardiovascular strain to raise RPE — so feeling hot lowers work rate even before core temperature becomes limiting.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M40 6c6 8 10 10 10 17a10 10 0 0 1-20 0c0-7 4-9 10-17z\" fill=\"none\" stroke=\"#ffb86b\" stroke-width=\"1.8\"/><path d=\"M40 20c2 3 3 4 3 6a3 3 0 0 1-6 0c0-2 1-3 3-6z\" fill=\"#5ec8ff\" opacity=\"0.6\"/></svg>"
+    },
+    {
+     "term": "Perceptual cooling",
+     "def": "Interventions such as ice towels, menthol rinses and fans that reduce how hot an athlete feels, preserving performance by holding RPE down without necessarily changing core temperature.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M40 8c5 7 9 11 9 16a9 9 0 0 1-18 0c0-5 4-9 9-16z\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"1.8\"/><path d=\"M36 24a4 4 0 0 0 8 0\" fill=\"none\" stroke=\"#67e8b0\" stroke-width=\"1.6\"/></svg>"
+    },
+    {
+     "term": "Insulation effect",
+     "def": "The mechanism by which higher body fat impairs heat tolerance: it slows heat transport from core to skin, independent of sweat rate.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M8 12 C26 13 44 22 72 33\" fill=\"none\" stroke=\"#ffb86b\" stroke-width=\"2\"/><line x1=\"8\" y1=\"34\" x2=\"72\" y2=\"34\" stroke=\"#3a4a5e\" stroke-width=\"1\"/></svg>"
     }
    ],
    "relevant": true,
@@ -5355,7 +5421,15 @@
     "The kidney matches sodium excretion to intake across a wide range -- shown decades ago in heat-acclimatised outdoor workers (Malhotra, 1960), where sweat and urinary losses tracked intake. Chronic salt loading in a temperate climate therefore mostly produces expensive urine. It also means a single sweat-sodium value partly reflects habitual diet and acclimation state.",
     "Not all body-mass loss during exercise is fluid loss: oxidising stored substrate consumes mass and releases metabolic water, and water bound to glycogen is freed as glycogen is used. Day 25's field simplification of 1 kg to about 1 litre remains the correct practical tool; the caveat is that a small part of the measured change is not a fluid deficit of the same size.",
     "The proportion of laboratory studies reporting a performance decrement climbs steeply with the size of the deficit -- around 2-3% the results are close to a coin flip, and beyond 4% a decrement becomes the common finding, particularly in hot or still conditions. Even at those larger deficits, cool, well-ventilated, self-paced protocols still return null results, which is itself part of the disagreement.",
-    "Field data cut the other way: across 643 marathon finishers, percentage body-mass change was INVERSELY related to finishing time -- the fastest lost the most (Zouhal and colleagues, 2011) -- and long-course triathlon fields show the same pattern, with some finishers well beyond 5% (Wharam and colleagues, 2006). That is heavily confounded -- fast finishers are on course for less time, stop less often, drink less, and are typically leaner and fitter -- so it is evidence that laboratory protocols overstate the field effect, NOT evidence that dehydration improves performance. A real cost nonetheless exists at the muscle: dehydration accelerates muscle glycogen use and raises heart rate, core temperature and perceived exertion at a fixed workload (Logan-Sprenger and colleagues), so the disagreement is about magnitude and threshold in the field, not about whether fluid loss does anything at all."
+    "Field data cut the other way: across 643 marathon finishers, percentage body-mass change was INVERSELY related to finishing time -- the fastest lost the most (Zouhal and colleagues, 2011) -- and long-course triathlon fields show the same pattern, with some finishers well beyond 5% (Wharam and colleagues, 2006). That is heavily confounded -- fast finishers are on course for less time, stop less often, drink less, and are typically leaner and fitter -- so it is evidence that laboratory protocols overstate the field effect, NOT evidence that dehydration improves performance. A real cost nonetheless exists at the muscle: dehydration accelerates muscle glycogen use and raises heart rate, core temperature and perceived exertion at a fixed workload (Logan-Sprenger and colleagues), so the disagreement is about magnitude and threshold in the field, not about whether fluid loss does anything at all.",
+    "The module's dehydration-performance tiers: at 2-3% body-mass loss just over half of studies show no clear effect; from 4% almost every study shows a decline; by 6-7% it is universal. The live debate is how much loss is tolerable, not whether dehydration can hurt.",
+    "Counter-finding worth holding: in an Ironman study faster finishers tended to lose MORE body mass, in some cases 6-8%. Greater loss can reflect higher intensity and greater fluid turnover rather than causing a slower race.",
+    "Separate voluntary from involuntary dehydration, and remember some race-day mass loss comes from fluid shifts between compartments and from carbohydrate metabolism rather than net water deficit.",
+    "Starting state dominates. Athletes beginning euhydrated showed similar heart-rate and core-temperature responses through a 90-minute heat stress test even when they drank nothing; starting hypohydrated by about 3.5% body mass raised heart rate faster, pushed core temperature higher and increased strain significantly.",
+    "Aggressive in-race rehydration did level out the difference for the hypohydrated group — but the module notes this is difficult to achieve in a HYROX race, so arriving well hydrated is the practical priority.",
+    "Study conditions that mask a dehydration effect: starting hydrated, events under two hours, low intensity, cooler temperatures and good airflow. Effects appear with pre-existing mass loss, 3-4%+ losses, high skin temperature, high intensity and still air.",
+    "Sodium's role in rehydration: adding sodium to fluids appears to help maintain plasma volume by aiding fluid movement from intracellular to extracellular space — the main reason it matters for recovery and rehydration.",
+    "The body defends plasma volume first, drawing water from interstitial space and then from inside cells; cells shrink and function less efficiently, and if the shift goes far enough plasma volume falls anyway, which is the point at which performance suffers."
    ],
    "training_link": "Measure three things and stop guessing at the fourth. First, starting state: a week of first-morning nude body mass gives a stable baseline, so on race morning you know whether the athlete is already down a kilogram before the gun -- that is the deficit day 25's pre-race protocol exists to prevent, and the one you genuinely control. Second, classify the sweat: white crusting on kit and skin, plus a bad history in hot halls, justify a sweat-sodium test to place the athlete in a band, not to prescribe milligrams. Treat repeated cramping as a prompt to look, not as a diagnosis -- the electrolyte explanation for exercise-associated cramp is contested and the neuromuscular-fatigue explanation (load, pace, novelty) is at least as likely, so review the training and pacing before the salt. Third, plan roxzone intake capped at measured sweat rate (day 25). What you should not do is chase individualised replacement to the milligram, or load salt for weeks in a temperate climate -- the kidney simply excretes it. And tell the athlete plainly that 2% is a planning line, not a trapdoor, so they neither panic mid-race nor ignore it entirely.",
    "glossary": [
@@ -5408,6 +5482,26 @@
      "term": "Metabolic water",
      "def": "Water produced when carbohydrate and fat are oxidised, released alongside the water previously bound to stored glycogen. It is one reason measured body-mass loss during exercise slightly overstates the true fluid deficit.",
      "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"8\" y=\"8\" width=\"64\" height=\"24\" rx=\"3\" fill=\"none\" stroke=\"#3a4a5e\" stroke-width=\"1.6\"/><rect x=\"10\" y=\"10\" width=\"38\" height=\"20\" rx=\"2\" fill=\"#5ec8ff\" opacity=\"0.65\"/><rect x=\"50\" y=\"10\" width=\"14\" height=\"20\" rx=\"2\" fill=\"#67e8b0\" opacity=\"0.6\"/><rect x=\"65\" y=\"10\" width=\"5\" height=\"20\" rx=\"1.5\" fill=\"#ff8fb0\"/></svg>"
+    },
+    {
+     "term": "Dehydration tiers",
+     "def": "The graded evidence picture: 2-3% body-mass loss often shows no clear performance effect, 4%+ shows decline in almost all studies, 6-7% universally.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M8 12 C26 13 44 22 72 33\" fill=\"none\" stroke=\"#ffb86b\" stroke-width=\"2\"/><line x1=\"8\" y1=\"34\" x2=\"72\" y2=\"34\" stroke=\"#3a4a5e\" stroke-width=\"1\"/></svg>"
+    },
+    {
+     "term": "Voluntary vs involuntary dehydration",
+     "def": "The distinction between mass loss reflecting genuine fluid deficit and loss arising from compartment shifts, substrate use and high work rate — not all race-day mass loss carries the same risk.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M10 20h20M30 20l14-9M30 20l14 9\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"2\"/><circle cx=\"48\" cy=\"11\" r=\"3\" fill=\"#67e8b0\"/><circle cx=\"48\" cy=\"29\" r=\"3\" fill=\"#ffb86b\"/></svg>"
+    },
+    {
+     "term": "Euhydrated start",
+     "def": "Beginning a race in a normally hydrated state. The single most protective hydration variable, since starting hypohydrated raises heart rate and core temperature independently of what is drunk during the event.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M40 8c5 7 9 11 9 16a9 9 0 0 1-18 0c0-5 4-9 9-16z\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"1.8\"/><path d=\"M36 24a4 4 0 0 0 8 0\" fill=\"none\" stroke=\"#67e8b0\" stroke-width=\"1.6\"/></svg>"
+    },
+    {
+     "term": "Plasma volume defence",
+     "def": "The body's prioritisation of blood plasma during fluid loss, pulling water from interstitial and then intracellular space — protective until the shift is large enough that plasma volume falls anyway.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"14\" y=\"10\" width=\"52\" height=\"22\" rx=\"3\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"1.6\"/><path d=\"M40 10v22\" stroke=\"#ffb86b\" stroke-width=\"2\"/><path d=\"M20 21h14M46 21h14\" stroke=\"#67e8b0\" stroke-width=\"1.6\"/></svg>"
     }
    ],
    "relevant": true,
@@ -5513,7 +5607,14 @@
     "The exponential update makes the asymmetry explicit. With time constants of 42 and 7 days, a session pulls chronic load toward its own stress value by (session stress − current chronic)/42 and acute load by (session stress − current acute)/7 — the same gap is weighted six times more heavily in the acute figure, so the chronic number creeps where the acute number lurches. Three cautions. That /42 and /7 form is the standard linear approximation to the exact smoothing factor 1 − e^(−1/τ); with the exact factors the sensitivity ratio is closer to 5.7. The weighting is arithmetic from the chosen window lengths and not a measured physiological property. And the daily increments themselves stand in a 6:1 ratio only while acute and chronic load happen to be equal — once they diverge, each figure is closing a different gap.",
     "Read the chart sceptically. It inherits the intensity × duration collapse wholesale; the seven- and forty-two-day windows are conventions rather than measured constants; training stress balance is a modelled bookkeeping figure and not a validated measurement of readiness; and the closely related acute:chronic workload ratio has been substantially criticised on methodological grounds. Days 5 and 39 carry that critique and the thresholds it undermines; nothing here softens it. Use the chart to notice load spikes and drift, then confirm with a repeatable benchmark.",
     "The central adaptation is structural. Sustained endurance training produces ECCENTRIC left-ventricular hypertrophy — cavity enlargement with roughly proportionate wall thickening, the volume-loading pattern — as distinct from the concentric pattern of wall thickening without cavity enlargement associated with pressure loading. The mechanical chain: expanded blood and plasma volume raise venous return and filling pressure, so end-diastolic volume rises and the stretched myocardium generates more force via the Frank-Starling mechanism; a lower submaximal heart rate lengthens diastole, improving filling further; added left-ventricular mass increases contractile force; and reduced total peripheral resistance lowers afterload so the ventricle empties more completely. Treat the volume-versus-pressure dichotomy as a first approximation — real athletes show mixed patterns and effect sizes in recreational athletes are modest. Day 65 carries stroke volume, Q = HR × SV and plasma volume themselves.",
-    "What that remodelling looks like in the field: heart rate falls at every submaximal running speed while maximal heart rate is essentially unchanged (it does not rise with training and often drifts slightly down), maximal cardiac output rises, and post-exercise heart-rate recovery quickens. HRR over roughly 60 s is a cheap marker of autonomic control and cardiorespiratory fitness — but a marker only, confounded by heat and humidity, hydration status, the intensity of the preceding effort, caffeine and residual load, so read its trend under standardised conditions rather than a single value."
+    "What that remodelling looks like in the field: heart rate falls at every submaximal running speed while maximal heart rate is essentially unchanged (it does not rise with training and often drifts slightly down), maximal cardiac output rises, and post-exercise heart-rate recovery quickens. HRR over roughly 60 s is a cheap marker of autonomic control and cardiorespiratory fitness — but a marker only, confounded by heat and humidity, hydration status, the intensity of the preceding effort, caffeine and residual load, so read its trend under standardised conditions rather than a single value.",
+    "Module 5's own framing of the dose: 'there is no such thing as hard without both intensity and duration' — 100 m and 100 km are both hard at wildly different intensities, which is exactly why the two must be combined into a single load figure and why that figure is lossy.",
+    "Stress is not the session; it is how the athlete's body perceives the session. The same sled-plus-run combo leaves a trained athlete stable and stops a newer one halfway — the module's stated argument for individualising HYROX training.",
+    "Recovery runs on several clocks at once, and the practical warning is direct: 'just because your heart rate comes down fast, it doesn't mean you're fully recovered.' The systems the next session depends on may rebuild far more slowly than the one that settles first.",
+    "Fitter athletes both tolerate more stress before homeostasis is meaningfully displaced and return to baseline faster; the same session creates a much larger disruption in a less conditioned athlete.",
+    "Adaptation requires novelty. Repeat an unchanged dose and load plateaus because the body 'has seen this before', fitness plateaus once the stimulus is fully absorbed, and the athlete is maintaining rather than progressing.",
+    "The HYROX-specific margin is narrow: because sessions blend strength, endurance and high output, the gap between just enough and far too many sessions is smaller than in single-modality training.",
+    "Performance equals fitness against freshness. Be fit when you do not need to perform, and fit AND fresh when you do — the planning logic behind carrying chronic load through a build and stripping acute load before a race."
    ],
    "training_link": "Three habits follow. Write intensities relative to something current and individual — the 1 km repeats as a fraction of each athlete's own critical speed, the sled as a percentage of a recently tested load or a target time band, wall balls against today's unbroken set — because the same 4:10/km is comfortable aerobic work for one athlete and a severe-domain effort for another. Match the recovery window to the quality you need back: the eight 1 km legs and 15 roxzone traverses need autonomic and metabolic readiness, so a day is often sufficient, whereas sandbag lunges and burpee broad jump landings leave structural debt that outlives the glycogen, and the concentric-dominant sleds cost far less repair than their difficulty suggests (days 6 and 39). Treat ATL, CTL and TSB as a ledger read alongside a benchmark, never as the verdict. The adaptation you are chasing announces itself as a falling heart rate at a fixed run pace.",
    "glossary": [
@@ -5566,6 +5667,26 @@
      "term": "Heart-rate recovery (HRR)",
      "def": "The fall in heart rate across a fixed interval (commonly 60 s) after exercise stops. Quickens with training as a marker of autonomic control and cardiorespiratory fitness, and is confounded by heat, hydration, the preceding effort, stimulants and residual load.",
      "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M8 30 C22 26 36 16 70 8\" fill=\"none\" stroke=\"#ffb86b\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M8 33 C22 30 36 23 70 16\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-dasharray=\"4 3\"/><path d=\"M6 4v32h68\" fill=\"none\" stroke=\"#3a4a5e\" stroke-width=\"1\"/></svg>"
+    },
+    {
+     "term": "Intensity-duration inseparability",
+     "def": "The principle that neither intensity nor duration describes a dose alone — both must be combined, which is what a training-load figure attempts and why it loses information.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M10 20h20M30 20l14-9M30 20l14 9\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"2\"/><circle cx=\"48\" cy=\"11\" r=\"3\" fill=\"#67e8b0\"/><circle cx=\"48\" cy=\"29\" r=\"3\" fill=\"#ffb86b\"/></svg>"
+    },
+    {
+     "term": "Perceived load",
+     "def": "Stress understood as the disturbance the athlete's body registers rather than the work written on the whiteboard. The basis for individualised prescription.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"14\" y=\"10\" width=\"52\" height=\"22\" rx=\"3\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"1.6\"/><path d=\"M40 10v22\" stroke=\"#ffb86b\" stroke-width=\"2\"/><path d=\"M20 21h14M46 21h14\" stroke=\"#67e8b0\" stroke-width=\"1.6\"/></svg>"
+    },
+    {
+     "term": "Recovery clocks",
+     "def": "The several parallel timelines on which different systems restore — minutes for phosphagens, hours to a day for glycogen, days for structural repair — so 'recovered' always needs a 'for what'.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"40\" cy=\"20\" r=\"13\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"1.8\"/><path d=\"M40 12v9l7 4\" fill=\"none\" stroke=\"#67e8b0\" stroke-width=\"2\"/></svg>"
+    },
+    {
+     "term": "Stimulus novelty",
+     "def": "The requirement that a dose be new enough relative to current capacity to be detected. An unchanged dose eventually maintains rather than develops.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"18\" cy=\"20\" r=\"5\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"1.8\"/><circle cx=\"34\" cy=\"20\" r=\"5\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"1.8\"/><circle cx=\"50\" cy=\"20\" r=\"5\" fill=\"none\" stroke=\"#67e8b0\" stroke-width=\"1.8\"/><circle cx=\"66\" cy=\"20\" r=\"5\" fill=\"none\" stroke=\"#ffb86b\" stroke-width=\"1.8\"/><path d=\"M23 20h6M39 20h6M55 20h6\" stroke=\"#3a4a5e\" stroke-width=\"1.4\"/></svg>"
     }
    ],
    "relevant": true,
@@ -8354,6 +8475,423 @@
    ],
    "relevant": true,
    "exam_focus": "Name the five levels and the four categories, apply the 'you are your lowest level' rule to a mixed profile, and convert that profile into a training priority and a division recommendation.",
+   "figures": []
+  },
+  "116": {
+   "title": "Off-feet conditioning — the test matrix",
+   "topic_id": "of_testmatrix",
+   "domain": "PG",
+   "chapter": "Module 7.3",
+   "page_refs": "Off-Feet Conditioning — Test Matrix",
+   "key_concept": "Off-feet conditioning is only useful if you know what it is substituting for, and that requires measuring the athlete on both sides of the comparison. A test matrix is a small, repeatable battery that profiles aerobic capacity across each modality the athlete might use — running, bike, SkiErg, rower — so their off-feet work can be prescribed at an equivalent physiological cost rather than guessed at. The core insight is that fitness is only partly transferable between modalities: an athlete's threshold on the bike may sit at a very different absolute output from their running threshold, and mode-specific economy and local muscular endurance differ substantially. Without a matrix you end up prescribing 60 minutes on the bike as though it equals a 60-minute run, which it usually does not. Running the same tests every 4-8 weeks also turns the matrix into a monitoring tool, showing whether off-feet volume is maintaining the aerobic base or quietly allowing it to erode. Anchor every modality to a common internal-load currency — heart rate, RPE and, where available, lactate — so the numbers can be compared at all.",
+   "key_facts": [
+    "Purpose of a test matrix: profile the athlete in every modality they will train in, so off-feet work can be prescribed at equivalent physiological cost rather than by assumed equivalence.",
+    "Transfer between modalities is partial. Central adaptations (cardiac output, plasma volume) transfer well; peripheral and mode-specific adaptations (local muscular endurance, economy, motor pattern) transfer poorly.",
+    "Minimum viable matrix: a running threshold or time-trial test, a bike test, a SkiErg test and a rowing test — each with heart rate and RPE recorded.",
+    "Anchor to internal load, not external: HR, RPE and where available lactate are what make outputs from different machines comparable.",
+    "Record both the output (pace, watts, split, distance) and the internal cost (HR, RPE) so you can express any modality as a percentage of that athlete's own maximum in that modality.",
+    "Practical test options: a 5 km or 30-minute run test; a 20-minute or ramp bike test; 1000 m SkiErg; 1000 m or 2000 m row.",
+    "Standardise the conditions — same damper setting, same machine where possible, similar time of day, similar prior-day load — or the matrix compares noise.",
+    "Re-test every 4-8 weeks. The matrix is a monitoring tool as much as a prescription tool.",
+    "The matrix exposes profile asymmetry: a runner with a weak SkiErg or row is common, and it tells you which off-feet modality is a genuine substitute versus which is itself a limiter needing development.",
+    "Heart rate at a fixed submaximal output, tracked over time in each modality, is a low-cost durability and fitness marker.",
+    "Beware conflating a station test with a conditioning test: a 1000 m row is both a race-station benchmark and an aerobic probe, and the two purposes need different pacing instructions.",
+    "Where lactate testing is available it sharpens threshold anchoring considerably, but a well-standardised HR-and-RPE matrix is sufficient for most coaching decisions.",
+    "The matrix is not a fitness test for its own sake — its output should be a table you actually consult when writing the week."
+   ],
+   "training_link": "Before you start swapping runs for bike sessions, spend a week testing. Get a running threshold number, a bike number, a 1000 m Ski and a 1000 m row, and write down heart rate and RPE alongside every result — those are the only things that let you compare a watt to a pace. What usually falls out is an asymmetry: the runner whose Ski is dreadful, or the strong rower whose bike is untrained. That tells you which modality is a genuine substitute for running volume and which is actually a weakness you should be training on its own terms. Keep the conditions identical each time, re-test every month or two, and actually put the table somewhere you'll look at it when you write the week — an unused matrix is just a hard training session.",
+   "glossary": [
+    {
+     "term": "Test matrix",
+     "def": "A small repeatable battery profiling an athlete across every training modality, so work in one can be prescribed at equivalent physiological cost to another.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"16\" y=\"8\" width=\"48\" height=\"24\" rx=\"2\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"1.6\"/><path d=\"M32 8v24M48 8v24M16 16h48M16 24h48\" stroke=\"#3a4a5e\" stroke-width=\"1.2\"/><rect x=\"32\" y=\"16\" width=\"16\" height=\"8\" fill=\"#67e8b0\" opacity=\"0.35\"/></svg>"
+    },
+    {
+     "term": "Modality transfer",
+     "def": "The degree to which fitness gained in one exercise mode carries to another. Central adaptations transfer well; peripheral and economy adaptations poorly.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"24\" cy=\"20\" r=\"9\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"2\"/><path d=\"M40 20h22M54 13l8 7-8 7\" fill=\"none\" stroke=\"#67e8b0\" stroke-width=\"2\"/></svg>"
+    },
+    {
+     "term": "Internal load",
+     "def": "The physiological cost of a session — heart rate, RPE, lactate — as opposed to external output such as pace or watts. The common currency across modalities.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"14\" y=\"10\" width=\"52\" height=\"22\" rx=\"3\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"1.6\"/><path d=\"M40 10v22\" stroke=\"#ffb86b\" stroke-width=\"2\"/><path d=\"M20 21h14M46 21h14\" stroke=\"#67e8b0\" stroke-width=\"1.6\"/></svg>"
+    },
+    {
+     "term": "Mode-specific economy",
+     "def": "The efficiency with which an athlete performs a particular movement. Largely trained by doing that movement, which is why transfer is incomplete.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M8 26 C20 26 22 32 32 32 C46 32 46 12 66 12\" fill=\"none\" stroke=\"#67e8b0\" stroke-width=\"2\"/><line x1=\"8\" y1=\"24\" x2=\"72\" y2=\"24\" stroke=\"#3a4a5e\" stroke-width=\"1\" stroke-dasharray=\"3 2\"/></svg>"
+    },
+    {
+     "term": "Profile asymmetry",
+     "def": "A marked gap between an athlete's capacity in different modalities, revealing which off-feet options are true substitutes and which are limiters.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M10 20h20M30 20l14-9M30 20l14 9\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"2\"/><circle cx=\"48\" cy=\"11\" r=\"3\" fill=\"#67e8b0\"/><circle cx=\"48\" cy=\"29\" r=\"3\" fill=\"#ffb86b\"/></svg>"
+    },
+    {
+     "term": "Standardisation",
+     "def": "Holding test conditions — machine, damper, time of day, prior load — constant so repeated measurements reflect fitness change rather than noise.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"16\" y=\"8\" width=\"34\" height=\"26\" rx=\"2\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"1.6\"/><path d=\"M22 16h22M22 22h22M22 28h14\" stroke=\"#67e8b0\" stroke-width=\"1.6\"/></svg>"
+    }
+   ],
+   "relevant": true,
+   "exam_focus": "Design a minimum off-feet test matrix, justify anchoring to internal load, and explain why modality transfer is only partial.",
+   "figures": []
+  },
+  "117": {
+   "title": "Off-feet conditioning — the decision tree",
+   "topic_id": "of_decisiontree",
+   "domain": "PG",
+   "chapter": "Module 7.3",
+   "page_refs": "Off-Feet Conditioning — Decision Tree",
+   "key_concept": "A decision tree turns the question 'should this session be off-feet?' into a repeatable rule rather than a mood. The first branch is always tissue status: if running is contraindicated or provoking symptoms, the session goes off-feet regardless of what the plan said. The second branch is the session's purpose — if the aim is aerobic development or recovery, the modality is largely interchangeable and off-feet is a legitimate choice; if the aim is running-specific economy, compromised-running practice, or bone and tendon loading, then off-feet cannot substitute and the session should be modified rather than swapped. The third branch is cumulative impact load: an athlete already near their tolerated running volume gains aerobic stimulus more cheaply off-feet. The fourth is context — travel, weather, heat, time constraints and equipment access. Used consistently the tree stops two opposite errors: the athlete who bikes away from every niggle and never develops running durability, and the coach who insists on running through symptoms because the plan said run.",
+   "key_facts": [
+    "Branch 1 — tissue status. Pain, an irritable tendon, a bone stress concern or a medical restriction sends the session off-feet immediately, whatever the plan said.",
+    "Branch 2 — session purpose. Aerobic development and active recovery transfer well off-feet; running economy, compromised-running practice and bone/tendon loading do not.",
+    "If the purpose cannot be met off-feet, modify the running session (shorter, slower, softer surface) rather than substituting a different modality.",
+    "Branch 3 — accumulated impact load. An athlete near their tolerated weekly running volume can add aerobic stimulus more cheaply off-feet than by adding mileage.",
+    "Branch 4 — context. Travel, extreme heat, air quality, darkness, time available and equipment access are legitimate inputs, not excuses.",
+    "Match intensity by internal load using the test matrix, not by duration. Sixty minutes of easy cycling is not sixty minutes of easy running.",
+    "Bike is generally the lowest-impact, highest-volume substitute; rowing and SkiErg add upper-body and trunk demand that doubles as race-station practice.",
+    "Because bike and row are seated and non-weight-bearing, they do not maintain bone loading, tendon stiffness or running-specific leg stiffness — a real cost of over-substituting.",
+    "Two failure modes the tree prevents: the athlete who bikes away from every niggle and never builds running durability, and the coach who runs an athlete through symptoms because the plan said run.",
+    "For HYROX specifically, off-feet work is doubly valuable because SkiErg, row and bike are either race stations or close analogues — the substitution can be race-specific rather than merely aerobic.",
+    "Set a standing rule for how much of weekly aerobic volume may be off-feet, then vary it deliberately by phase rather than session by session.",
+    "In a heavy race block or when returning from injury, the off-feet share rises; in a running-development block it falls.",
+    "Document the decision. If you cannot say which branch sent the session off-feet, you made a mood-based call, not a coaching one."
+   ],
+   "training_link": "Write the tree down once and then follow it, because the whole value is that it removes the argument. Anything sore or symptomatic goes off-feet immediately — that branch is not negotiable. Then ask what the session was actually for: if it was aerobic volume or recovery, the bike or rower is fine; if it was economy, compromised running, or getting load through bone and tendon, off-feet won't do it, so shrink the run rather than replace it. Match the intensity using your matrix numbers rather than the clock. And set a ceiling on how much of the week can be off-feet — otherwise the athlete drifts into a very fit cyclist who falls apart on the eight runs.",
+   "glossary": [
+    {
+     "term": "Decision tree",
+     "def": "An ordered set of branching rules converting a recurring coaching question into a repeatable decision rather than an ad hoc judgement.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M40 6v8M40 14L22 22M40 14l18 8M22 22v6M58 22v6\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"1.8\"/><circle cx=\"40\" cy=\"6\" r=\"3\" fill=\"#5ec8ff\"/><circle cx=\"22\" cy=\"31\" r=\"3\" fill=\"#67e8b0\"/><circle cx=\"58\" cy=\"31\" r=\"3\" fill=\"#ffb86b\"/></svg>"
+    },
+    {
+     "term": "Session purpose",
+     "def": "The specific adaptation a session targets. Determines whether a different modality can substitute without losing the intended stimulus.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"14\" y=\"10\" width=\"52\" height=\"22\" rx=\"3\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"1.6\"/><path d=\"M40 10v22\" stroke=\"#ffb86b\" stroke-width=\"2\"/><path d=\"M20 21h14M46 21h14\" stroke=\"#67e8b0\" stroke-width=\"1.6\"/></svg>"
+    },
+    {
+     "term": "Impact load",
+     "def": "The cumulative weight-bearing stress of running. The variable off-feet conditioning is usually chosen to reduce.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M8 12 C26 13 44 22 72 33\" fill=\"none\" stroke=\"#ffb86b\" stroke-width=\"2\"/><line x1=\"8\" y1=\"34\" x2=\"72\" y2=\"34\" stroke=\"#3a4a5e\" stroke-width=\"1\"/></svg>"
+    },
+    {
+     "term": "Non-weight-bearing modality",
+     "def": "Seated or supported exercise such as cycling or rowing. Preserves aerobic stimulus but not bone loading or running-specific leg stiffness.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M10 20h20M30 20l14-9M30 20l14 9\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"2\"/><circle cx=\"48\" cy=\"11\" r=\"3\" fill=\"#67e8b0\"/><circle cx=\"48\" cy=\"29\" r=\"3\" fill=\"#ffb86b\"/></svg>"
+    },
+    {
+     "term": "Substitution ceiling",
+     "def": "A deliberate cap on the share of weekly aerobic volume performed off-feet, varied by training phase rather than by how the athlete feels.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M10 32h12v-6h12v-6h12v-6h12v-6h10\" fill=\"none\" stroke=\"#67e8b0\" stroke-width=\"2\"/><line x1=\"10\" y1=\"34\" x2=\"72\" y2=\"34\" stroke=\"#3a4a5e\" stroke-width=\"1\"/></svg>"
+    },
+    {
+     "term": "Race-specific substitution",
+     "def": "Choosing an off-feet modality that is itself a race station — SkiErg or row — so the session serves conditioning and skill simultaneously.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"24\" cy=\"20\" r=\"9\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"2\"/><path d=\"M40 20h22M54 13l8 7-8 7\" fill=\"none\" stroke=\"#67e8b0\" stroke-width=\"2\"/></svg>"
+    }
+   ],
+   "relevant": true,
+   "exam_focus": "Apply the decision tree to a scenario, state which session purposes cannot be met off-feet, and explain the cost of over-substituting non-weight-bearing work.",
+   "figures": []
+  },
+  "118": {
+   "title": "Safety, efficacy & efficiency",
+   "topic_id": "hp_safety",
+   "domain": "PG",
+   "chapter": "Module 4",
+   "page_refs": "HYROX Performance Pillars — Safety, Efficacy, Efficiency",
+   "key_concept": "Safety, efficacy and efficiency is Module 4's ordering principle for judging any movement, and the order is not arbitrary — it is a hierarchy. Safety comes first: can the athlete perform this without unacceptable injury risk, now, in their current state? Efficacy comes second: does the movement actually achieve its purpose — for a race station, does it meet the movement standard and count as a rep? Efficiency comes last: is it being done at the lowest energetic cost? The hierarchy matters because coaches routinely invert it, chasing efficiency cues on an athlete who cannot yet hit depth on a wall ball, or who is loading a spine they cannot brace. A rep that is not safe is not coachable; a rep that is safe but does not meet standard is a no-rep and therefore worthless however efficient it looks; only once both hold does economy become the productive thing to work on. The framework also connects back to mobility and flexibility, which serve all three: range protects the athlete in compromised positions, allows them to hit the required standards, and lets them move smoothly.",
+   "key_facts": [
+    "The three criteria in strict order: safety, then efficacy, then efficiency. The order is a hierarchy, not a list.",
+    "Safety: can the athlete perform the movement without unacceptable injury risk in their current state, under the load and fatigue prescribed?",
+    "Efficacy: does the movement achieve its purpose — for a race station, does it meet the movement standard and count?",
+    "Efficiency: is it performed at the lowest energetic cost, so the athlete arrives at the next station with more left?",
+    "The common coaching inversion is chasing efficiency cues on an athlete who cannot yet meet the standard, or who is loading a structure they cannot control.",
+    "A no-rep is worthless however elegant it is — wall-ball depth and target height, and burpee broad jump stance, are the classic efficacy failures.",
+    "Judging standards matters competitively: penalties for staggered stance on the burpee broad jump and no-reps for missed wall-ball depth decide races at the sharp end.",
+    "Safety and efficacy both degrade under fatigue, which is why the criteria must be judged late in a session rather than fresh.",
+    "Mobility and flexibility serve all three: range protects the athlete in compromised positions, permits the required standards to be hit, and enables smooth movement.",
+    "Strength contributes to safety directly — it supports joints, builds tendon and ligament resilience, and preserves form when the athlete is fatigued or compromised.",
+    "Coordination sits mostly under efficiency but crosses into efficacy, because a loss of precision at speed produces no-reps and penalties.",
+    "Practical use: when a movement looks wrong, diagnose in order — is it unsafe, is it not meeting standard, or is it merely wasteful — and coach the first one that fails.",
+    "The framework applies to programming as well as technique: a session can be unsafe, ineffective for its stated purpose, or simply an expensive way to get a cheap adaptation."
+   ],
+   "training_link": "When something looks wrong, work down the list in order rather than saying the first thing you notice. Is it dangerous? Fix that and nothing else today. Is it safe but not meeting the standard — not hitting depth, not reaching extension, staggered on the burpee? Then that's the whole session, because a no-rep is worth nothing no matter how pretty it is. Only when both of those hold should you start refining economy. Judge all of it on a tired athlete, since safety and efficacy are exactly what fatigue erodes. And remember mobility buys you all three at once — it protects them in bad positions, it's often what's stopping them hitting depth, and it makes the movement cheaper.",
+   "glossary": [
+    {
+     "term": "Safety, efficacy, efficiency",
+     "def": "Module 4's ordered hierarchy for judging any movement: is it safe, does it achieve its purpose, and only then is it economical.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"26\" cy=\"14\" r=\"6\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"1.8\"/><circle cx=\"40\" cy=\"28\" r=\"6\" fill=\"none\" stroke=\"#67e8b0\" stroke-width=\"1.8\"/><circle cx=\"54\" cy=\"14\" r=\"6\" fill=\"none\" stroke=\"#ffb86b\" stroke-width=\"1.8\"/><path d=\"M31 18l6 6M49 18l-6 6M32 14h16\" stroke=\"#3a4a5e\" stroke-width=\"1.2\"/></svg>"
+    },
+    {
+     "term": "Efficacy",
+     "def": "Whether a movement actually achieves its intended purpose — for a race station, whether it meets the movement standard and counts as a repetition.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"14\" y=\"10\" width=\"52\" height=\"22\" rx=\"3\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"1.6\"/><path d=\"M40 10v22\" stroke=\"#ffb86b\" stroke-width=\"2\"/><path d=\"M20 21h14M46 21h14\" stroke=\"#67e8b0\" stroke-width=\"1.6\"/></svg>"
+    },
+    {
+     "term": "Movement standard",
+     "def": "The defined criteria a repetition must satisfy to count, such as wall-ball depth and target height or burpee broad jump stance.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"16\" y=\"8\" width=\"34\" height=\"26\" rx=\"2\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"1.6\"/><path d=\"M22 16h22M22 22h22M22 28h14\" stroke=\"#67e8b0\" stroke-width=\"1.6\"/></svg>"
+    },
+    {
+     "term": "No-rep",
+     "def": "A repetition that fails the movement standard and does not count. Energetically expensive and competitively worthless.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M8 12 C26 13 44 22 72 33\" fill=\"none\" stroke=\"#ffb86b\" stroke-width=\"2\"/><line x1=\"8\" y1=\"34\" x2=\"72\" y2=\"34\" stroke=\"#3a4a5e\" stroke-width=\"1\"/></svg>"
+    },
+    {
+     "term": "Hierarchy inversion",
+     "def": "The common coaching error of working on efficiency before safety or efficacy are secured.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M10 20h20M30 20l14-9M30 20l14 9\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"2\"/><circle cx=\"48\" cy=\"11\" r=\"3\" fill=\"#67e8b0\"/><circle cx=\"48\" cy=\"29\" r=\"3\" fill=\"#ffb86b\"/></svg>"
+    },
+    {
+     "term": "Compromised position",
+     "def": "A body position adopted under fatigue or load in which control is reduced and injury risk rises. Mobility and strength are the buffers.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M8 26 C20 26 22 32 32 32 C46 32 46 12 66 12\" fill=\"none\" stroke=\"#67e8b0\" stroke-width=\"2\"/><line x1=\"8\" y1=\"24\" x2=\"72\" y2=\"24\" stroke=\"#3a4a5e\" stroke-width=\"1\" stroke-dasharray=\"3 2\"/></svg>"
+    }
+   ],
+   "relevant": true,
+   "exam_focus": "Apply the safety-efficacy-efficiency hierarchy to a faulty movement, explain why the order matters, and identify the classic efficacy failures at HYROX stations.",
+   "figures": []
+  },
+  "119": {
+   "title": "How to utilise testing data",
+   "topic_id": "bm_testdata",
+   "domain": "BM",
+   "chapter": "Module 3",
+   "page_refs": "Biomechanics — How to Utilise Testing Data",
+   "key_concept": "Collecting test data is the easy half; the coaching skill is converting numbers into decisions. A test result is only meaningful against a reference — the athlete's own previous result, a population norm, or the demand of the race — and of those three, the athlete's own trend is usually the most useful and the population norm the least. Before acting on any change you need to know whether it exceeds measurement error: a 2% shift in a test with 3% day-to-day variability is noise, and chasing it produces churn. Movement competency screening feeds the same loop, identifying whether a breakdown reflects a strength deficit, a flexibility restriction, a coordination problem, an existing niggle or simply a skill limitation — and those four causes need four different interventions. The final step is the one most often skipped: closing the loop. Data should change the programme, and the next test should evaluate whether that change worked. Data that never alters a session is an expensive hobby.",
+   "key_facts": [
+    "A number means nothing alone. Interpret every result against one of three references: the athlete's own history, a population norm, or the race demand.",
+    "The athlete's own trend is usually the most useful reference; population norms are the least, because HYROX athletes are a heterogeneous population.",
+    "Establish measurement error before interpreting change — if day-to-day variability is 3%, a 2% improvement is noise.",
+    "Standardise ruthlessly: same protocol, equipment, time of day, warm-up and prior-day load, or you measure conditions rather than fitness.",
+    "Movement competency screening asks whether the athlete performs key patterns optimally — pain-free, with correct joint alignment, muscular coordination and posture.",
+    "Faulty patterns arise from four distinguishable causes: a strength deficit, a flexibility or range restriction, a coordination problem, or an existing injury/niggle — plus pure skill limitation. Each needs a different intervention.",
+    "Both excessive and insufficient muscle activity cause breakdown: quad dominance overloading the patellar tendon, or an under-firing glute medius failing to control knee alignment.",
+    "Key patterns worth screening: a lunge (sometimes with rotation), an upper-body push, an upper-body pull, a hinge/bend, and gait or walking analysis.",
+    "Observe from front and side views — many faults are invisible from a single plane.",
+    "Static posture screening is easy to perform, but its relationship to movement quality remains unclear. Use it as a baseline for comparison rather than as a diagnosis.",
+    "Map tests to the demands they probe: aerobic capacity for the 8 km and roxzone, anaerobic power for sleds and burpee broad jumps, strength endurance for the lunges and carries, neuromuscular efficiency for technique maintenance under fatigue.",
+    "Test under fatigue where the fault appears under fatigue. Screening only in a fresh state misses the athlete whose knee alignment fails at station six.",
+    "Close the loop: a result should change the programme, and the next test should evaluate whether the change worked. Data that never alters a session is an expensive hobby.",
+    "Communicate results in terms the athlete can act on — one or two priorities, not a spreadsheet."
+   ],
+   "training_link": "Decide what a result would change before you run the test — if no plausible number would alter next week's training, don't bother collecting it. When you do test, repeat the protocol identically and work out roughly how much your numbers bounce around, because otherwise you'll chase a 2% wobble as though it were progress. Screen the lunge, hinge, push, pull and gait from both the front and the side, and when something looks wrong, work out which of the four causes it is — weak, tight, uncoordinated, or sore — because the fix is different each time. Do at least some screening on a tired athlete, since knee valgus that only shows up at the end is exactly the one that costs them the race. Then feed it back as one or two priorities, not a report.",
+   "glossary": [
+    {
+     "term": "Reference standard",
+     "def": "What a test result is compared against — the athlete's own history, a population norm, or the race demand. Without one, a number is uninterpretable.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"16\" y=\"8\" width=\"48\" height=\"24\" rx=\"2\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"1.6\"/><path d=\"M32 8v24M48 8v24M16 16h48M16 24h48\" stroke=\"#3a4a5e\" stroke-width=\"1.2\"/><rect x=\"32\" y=\"16\" width=\"16\" height=\"8\" fill=\"#67e8b0\" opacity=\"0.35\"/></svg>"
+    },
+    {
+     "term": "Measurement error",
+     "def": "The inherent day-to-day variability of a test. Change smaller than the error is noise and should not drive programming.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M8 12 C26 13 44 22 72 33\" fill=\"none\" stroke=\"#ffb86b\" stroke-width=\"2\"/><line x1=\"8\" y1=\"34\" x2=\"72\" y2=\"34\" stroke=\"#3a4a5e\" stroke-width=\"1\"/></svg>"
+    },
+    {
+     "term": "Movement competency",
+     "def": "The ability to perform key movement patterns optimally — pain-free, with correct joint alignment, muscular coordination and posture.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"16\" y=\"8\" width=\"34\" height=\"26\" rx=\"2\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"1.6\"/><path d=\"M22 16h22M22 22h22M22 28h14\" stroke=\"#67e8b0\" stroke-width=\"1.6\"/></svg>"
+    },
+    {
+     "term": "Quad dominance",
+     "def": "Over-reliance on the quadriceps in a pattern, placing additional stress on structures such as the patellar tendon and disturbing knee control.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M10 20h20M30 20l14-9M30 20l14 9\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"2\"/><circle cx=\"48\" cy=\"11\" r=\"3\" fill=\"#67e8b0\"/><circle cx=\"48\" cy=\"29\" r=\"3\" fill=\"#ffb86b\"/></svg>"
+    },
+    {
+     "term": "Neuromuscular efficiency",
+     "def": "The ability to maintain coordination and technique under fatigue — the attribute that determines whether form survives to the final stations.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"24\" cy=\"20\" r=\"9\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"2\"/><path d=\"M40 20h22M54 13l8 7-8 7\" fill=\"none\" stroke=\"#67e8b0\" stroke-width=\"2\"/></svg>"
+    },
+    {
+     "term": "Closing the loop",
+     "def": "Using a test result to change the programme, then re-testing to evaluate whether the change worked.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M8 26 C20 26 22 32 32 32 C46 32 46 12 66 12\" fill=\"none\" stroke=\"#67e8b0\" stroke-width=\"2\"/><line x1=\"8\" y1=\"24\" x2=\"72\" y2=\"24\" stroke=\"#3a4a5e\" stroke-width=\"1\" stroke-dasharray=\"3 2\"/></svg>"
+    }
+   ],
+   "relevant": true,
+   "exam_focus": "Interpret a test result against an appropriate reference, distinguish real change from measurement error, and identify which of the four causes underlies a faulty movement pattern.",
+   "figures": []
+  },
+  "120": {
+   "title": "Double peaking within the macrocycle",
+   "topic_id": "pd_doublepeak",
+   "domain": "PG",
+   "chapter": "Module 8",
+   "page_refs": "Mastering Periodization in HYROX — Double Peaking Within the Macrocycle",
+   "key_concept": "Peak form is a temporary supercompensation, not a plateau you can occupy. That single fact governs everything about double peaking: because peak condition decays within weeks, an athlete who wants to perform twice in one macrocycle cannot simply hold form between the two races — they must deliberately come down, rebuild, and taper again. The sequence is peak one, a short recovery, a compressed re-development block that restores training stress without attempting to rebuild the whole base, then a second, usually shorter taper into peak two. The art is in the middle block: too gentle and the athlete arrives at race two detrained and flat; too aggressive and they arrive fatigued, having converted a peak into a hole. Tapering itself is not rest. The module is explicit that complete cessation is wrong — diminishing returns of adaptation do not occur immediately, but extended complete rest does cause decline — so load is manipulated rather than removed. And fatigue is multidimensional: physical, neural, psychological and emotional, all of which must be shed for a genuine peak.",
+   "key_facts": [
+    "Peaking is arriving at competition in a state of optimal readiness, where training, recovery and mindset align.",
+    "Peak form is a temporary supercompensation, not a permanent plateau. It cannot be held indefinitely — the skill is timing it, not sustaining it.",
+    "Double peaking therefore requires coming down deliberately after race one and rebuilding, not attempting to maintain peak condition across the gap.",
+    "Sequence: peak one → short recovery → compressed re-development block → second, usually shorter taper → peak two.",
+    "The middle block is where double peaks are won or lost: too gentle and the athlete is flat and detrained, too aggressive and they arrive fatigued.",
+    "The second taper is usually shorter than the first, because the athlete is rebuilding from a higher base and carrying less accumulated fatigue.",
+    "Tapering is intentional reduction of training load, not rest — designed to allow full system recovery so performance peaks on the day.",
+    "The module explicitly rejects complete cessation: diminishing returns of adaptation do not occur immediately, but extended complete rest does cause decline. Manipulate load; don't remove it.",
+    "Preserve intensity while cutting volume — that is the mechanism by which fitness is retained while fatigue is shed.",
+    "Fatigue is multidimensional — physical, neural, psychological and emotional. Unaddressed, it dulls sharpness, reduces confidence and blunts responsiveness.",
+    "A 2022 review cited in the module on central and peripheral fatigue argues recovery must target both the nervous system (neural drive, coordination, responsiveness) and the muscles (metabolite clearance, micro-damage repair, energy store restoration).",
+    "A 2023 review cited on the psychology of tapering reports that athletes generally show improvements in mood, perceived fatigue, wellness and recovery balance during taper phases.",
+    "Roger Bannister's two-week retreat to the Scottish mountains before the four-minute mile is the module's illustration — physiological supercompensation and psychological rebalancing arriving together.",
+    "Individualise: athletes differ in how they respond to a taper, and experienced athletes usually know what works for them. Record what worked and reuse it.",
+    "Practical rule for HYROX: designate genuine A-races. Two true peaks per macrocycle is realistic; four is not, and trying produces a season of mediocre form."
+   ],
+   "training_link": "If your athlete has two races they genuinely care about in one cycle, plan for two separate peaks rather than hoping they can hold form across the gap — they can't, because peak condition decays within weeks. Let them come down properly after the first race, then run a short, sharp rebuild that restores training stress without trying to reconstruct the whole base, and taper again more briefly into race two. Don't let them rest completely during either taper: cut the volume and keep the intensity, because that's what sheds fatigue while holding fitness. Watch the mental side as well as the legs — mood and perceived fatigue usually lift during a good taper, and if they don't, the taper isn't working. And be ruthless about which races are actually A-races; two real peaks a cycle is achievable, four is a year of feeling average.",
+   "glossary": [
+    {
+     "term": "Double peaking",
+     "def": "Deliberately producing two peaks within one macrocycle by coming down after the first, rebuilding, and tapering again.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M8 32 C16 32 18 12 26 12 C34 12 36 30 44 30 C52 30 54 10 62 10 C68 10 70 20 74 24\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"2\"/><circle cx=\"26\" cy=\"12\" r=\"2.6\" fill=\"#67e8b0\"/><circle cx=\"62\" cy=\"10\" r=\"2.6\" fill=\"#ffb86b\"/></svg>"
+    },
+    {
+     "term": "Supercompensation",
+     "def": "The temporary rise in performance capacity above baseline following recovery from training stress. The physiological basis of a peak, and inherently short-lived.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M8 26 C20 26 22 32 32 32 C46 32 46 12 66 12\" fill=\"none\" stroke=\"#67e8b0\" stroke-width=\"2\"/><line x1=\"8\" y1=\"24\" x2=\"72\" y2=\"24\" stroke=\"#3a4a5e\" stroke-width=\"1\" stroke-dasharray=\"3 2\"/></svg>"
+    },
+    {
+     "term": "Taper",
+     "def": "Intentional reduction of training load before competition, typically cutting volume while preserving intensity, to shed fatigue without losing fitness.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M8 12 C26 13 44 22 72 33\" fill=\"none\" stroke=\"#ffb86b\" stroke-width=\"2\"/><line x1=\"8\" y1=\"34\" x2=\"72\" y2=\"34\" stroke=\"#3a4a5e\" stroke-width=\"1\"/></svg>"
+    },
+    {
+     "term": "Re-development block",
+     "def": "The compressed training phase between two peaks that restores training stress without attempting to rebuild the entire base.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M10 32h12v-6h12v-6h12v-6h12v-6h10\" fill=\"none\" stroke=\"#67e8b0\" stroke-width=\"2\"/><line x1=\"10\" y1=\"34\" x2=\"72\" y2=\"34\" stroke=\"#3a4a5e\" stroke-width=\"1\"/></svg>"
+    },
+    {
+     "term": "Central vs peripheral fatigue",
+     "def": "Fatigue of the nervous system (neural drive, coordination, responsiveness) versus of the muscle (metabolites, micro-damage, energy stores). Recovery must address both.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M10 20h20M30 20l14-9M30 20l14 9\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"2\"/><circle cx=\"48\" cy=\"11\" r=\"3\" fill=\"#67e8b0\"/><circle cx=\"48\" cy=\"29\" r=\"3\" fill=\"#ffb86b\"/></svg>"
+    },
+    {
+     "term": "A-race",
+     "def": "A competition designated as a genuine performance target, around which a peak is built. Realistically limited to about two per macrocycle.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"14\" y=\"10\" width=\"52\" height=\"22\" rx=\"3\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"1.6\"/><path d=\"M40 10v22\" stroke=\"#ffb86b\" stroke-width=\"2\"/><path d=\"M20 21h14M46 21h14\" stroke=\"#67e8b0\" stroke-width=\"1.6\"/></svg>"
+    }
+   ],
+   "relevant": true,
+   "exam_focus": "Plan a double-peak macrocycle with recovery, re-development and a second taper, and justify why complete rest is rejected in favour of load manipulation.",
+   "figures": []
+  },
+  "121": {
+   "title": "Categorising skills in HYROX racing",
+   "topic_id": "sk_categorization",
+   "domain": "BM",
+   "chapter": "Module 7.1",
+   "page_refs": "Embedding Skills in Athletes — Categorization of Skills in HYROX Racing",
+   "key_concept": "HYROX is popularly described as a low-skill sport, and the module's starting point is that this is only partly true. Anyone can push a sled; doing it efficiently and effectively under fatigue is a skill. The working definition offered is that skill is the ability to accomplish a task automatically and with intent — turning it on and executing it the way you meant to, without deliberation. That definition matters because it separates skill from fitness: fitness is a question of load, volume and intensity, whereas skill can be developed without incredible duress, which means skill work can be layered into a programme at points where hard conditioning cannot. The performance argument for automaticity is concrete rather than aesthetic. Deliberation costs mental energy, and mental energy is metabolically real — so an athlete who has to think about where their hips go on the sled pull, or how many steps fill the box, is spending glucose and attention that should be going into pacing decisions. Categorising the race's skills lets you decide which ones to automate first.",
+   "key_facts": [
+    "The 'HYROX is low skill' narrative is only partly true: the movements are simple to attempt and genuinely skilful to execute efficiently under fatigue.",
+    "Working definition of skill: the ability to accomplish a task automatically and with intent — turning it on and doing it as intended, without deliberation.",
+    "Skill is distinguishable from fitness. Fitness concerns load, volume and intensity; skill can be developed without incredible duress.",
+    "That distinction is programmable: skill work can be placed on days where hard conditioning cannot, including during taper, recovery and rehabilitation.",
+    "Automaticity has a metabolic payoff — deliberation consumes mental energy and the brain draws heavily on glucose, so automated skills free resources for pacing and decision-making.",
+    "Confidence is part of the definition: knowing you can execute the task at hand is inseparable from having automated it.",
+    "Skill has a mental as well as physical component — how the movement should feel, and knowing what to do without needing to work it out mid-race.",
+    "Useful categories for HYROX: closed self-paced station skills (SkiErg, row, wall balls), load-management skills (sled push and pull, carries), transition and roxzone skills, and pacing/self-regulation skills.",
+    "Worked example from the module — the sled pull: arm position, hip position, taking tension out of the rope without wasted time, and knowing how many steps fill the box so the pattern repeats without thought.",
+    "Counting the step pattern in advance ('one-two, one-two-three') is a concrete automation device that removes in-race deliberation.",
+    "Transition skills are heavily underrated relative to their time cost, and they are pure skill rather than fitness.",
+    "Skill development requires committing to a longer timeline. Attempting to develop every skill at once, while also building fitness, produces poor results in all of them.",
+    "Sequence the skills: pick a small number to automate per block rather than working on everything simultaneously."
+   ],
+   "training_link": "Push back gently on the idea that there's nothing to learn here. Ask your athlete to describe exactly what they do on the sled pull — where the arms sit, where the hips sit, how they take tension out of the rope, how many steps fill the box — and if they have to think about any of it, that's a skill not yet automated and it's costing them mental energy they'll want at station six. Pick two or three skills per block and drill them to the point of not thinking, rather than nibbling at all eight stations at once. Use the days when hard conditioning isn't appropriate — taper weeks, easy days, coming back from a niggle — because skill work doesn't need duress. And give it a longer timeline than feels necessary; trying to build every skill and the engine simultaneously gets you neither.",
+   "glossary": [
+    {
+     "term": "Skill (working definition)",
+     "def": "The ability to accomplish a task automatically and with intent — executing as intended without deliberation.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"30\" cy=\"20\" r=\"10\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"1.8\"/><path d=\"M30 14v6l4 4\" stroke=\"#67e8b0\" stroke-width=\"1.8\" fill=\"none\"/><path d=\"M48 20h16M58 15l6 5-6 5\" fill=\"none\" stroke=\"#ffb86b\" stroke-width=\"1.8\"/></svg>"
+    },
+    {
+     "term": "Automaticity",
+     "def": "Performing a movement without conscious attention. Frees mental resources and reduces the metabolic cost of deliberation.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"30\" cy=\"20\" r=\"10\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"1.8\"/><path d=\"M30 14v6l4 4\" stroke=\"#67e8b0\" stroke-width=\"1.8\" fill=\"none\"/><path d=\"M48 20h16M58 15l6 5-6 5\" fill=\"none\" stroke=\"#ffb86b\" stroke-width=\"1.8\"/></svg>"
+    },
+    {
+     "term": "Skill vs fitness",
+     "def": "Fitness concerns load, volume and intensity; skill can be developed without duress — so the two occupy different slots in a programme.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M10 20h20M30 20l14-9M30 20l14 9\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"2\"/><circle cx=\"48\" cy=\"11\" r=\"3\" fill=\"#67e8b0\"/><circle cx=\"48\" cy=\"29\" r=\"3\" fill=\"#ffb86b\"/></svg>"
+    },
+    {
+     "term": "Closed self-paced skill",
+     "def": "A skill executed in a predictable environment at the athlete's own tempo, such as the SkiErg or wall balls. Highly amenable to automation.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"14\" y=\"10\" width=\"52\" height=\"22\" rx=\"3\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"1.6\"/><path d=\"M40 10v22\" stroke=\"#ffb86b\" stroke-width=\"2\"/><path d=\"M20 21h14M46 21h14\" stroke=\"#67e8b0\" stroke-width=\"1.6\"/></svg>"
+    },
+    {
+     "term": "Transition skill",
+     "def": "The movement and decision pattern between run and station. Pure skill rather than fitness, and heavily underrated relative to its time cost.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"24\" cy=\"20\" r=\"9\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"2\"/><path d=\"M40 20h22M54 13l8 7-8 7\" fill=\"none\" stroke=\"#67e8b0\" stroke-width=\"2\"/></svg>"
+    },
+    {
+     "term": "Skill sequencing",
+     "def": "Automating a small number of skills per block rather than all at once, on a timeline long enough for each to become automatic.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M10 32h12v-6h12v-6h12v-6h12v-6h10\" fill=\"none\" stroke=\"#67e8b0\" stroke-width=\"2\"/><line x1=\"10\" y1=\"34\" x2=\"72\" y2=\"34\" stroke=\"#3a4a5e\" stroke-width=\"1\"/></svg>"
+    }
+   ],
+   "relevant": true,
+   "exam_focus": "Define skill as automaticity with intent, distinguish it from fitness, and categorise HYROX skills to justify which to automate first and where to place the work.",
+   "figures": []
+  },
+  "122": {
+   "title": "Differences in running — why one model doesn't fit",
+   "topic_id": "rb_differences",
+   "domain": "BM",
+   "chapter": "Module 7.2",
+   "page_refs": "Running Biomechanics and Technique — Differences in Running",
+   "key_concept": "The running module spends most of its time on principles that generalise — hip extension, braking, elastic quality — and then insists on the corollary: the expression of those principles is individual, and coaching every athlete toward one visual template is a mistake. Anthropometry alone guarantees difference, because limb length, mass distribution and tendon properties change what is mechanically optimal; a tall athlete and a compact one running at the same speed are solving different problems. Layered on top are training history, strength, mobility restrictions and injury history, each of which shifts what an athlete can currently do. The practical consequence is that technique targets should be set as principles with individual tolerances rather than as a single ideal gait. There is a second sense of 'differences' that matters just as much in HYROX: the same athlete runs differently in different states. Fresh running, compromised running after a station, and running in the closing kilometres are three distinct patterns, and the one to coach is the degraded one. Note: this section was not directly verifiable in the source, so the framing below is reconstructed from the module's surrounding material.",
+   "key_facts": [
+    "The module's principles generalise; their expression does not. Coaching every athlete to one visual template is the error the section guards against.",
+    "Anthropometry drives difference: limb length, mass distribution and tendon properties change what is mechanically optimal for a given athlete.",
+    "Tall and compact athletes running at the same speed solve different problems — stride length versus stride frequency, and larger versus smaller moment arms.",
+    "Training history, current strength, mobility restriction and injury history all shift what an athlete can currently express, independent of what is theoretically optimal.",
+    "Set targets as principles with individual tolerances — 'get more range behind you' rather than 'match this cadence number'.",
+    "Cadence illustrates the point: population averages are a weak individual prescription, and the useful comparison is the athlete against their own baseline.",
+    "There is no single correct footstrike. It redistributes load between structures rather than being right or wrong (see day 93).",
+    "Second sense of difference — the same athlete runs differently in different states: fresh, compromised after a station, and deep into the closing kilometres.",
+    "The pattern worth coaching is the degraded one, because that is the one that determines HYROX race time.",
+    "Assess and film at multiple states and speeds. A single fresh clip at a comfortable pace tells you very little about race mechanics.",
+    "Beware borrowing elite templates: elite runners' technique is partly a consequence of their capacities, not a cause an amateur can copy.",
+    "Change one variable at a time and verify on video, because an intervention that helps one athlete can degrade another.",
+    "Some individual differences are worth accommodating rather than correcting — an asymmetry that is longstanding, painless and efficient is often best left alone.",
+    "Unverified: this section's specific content could not be checked against the source, which is delivered as video. The principle-versus-template framing is a reconstruction; confirm details against the module."
+   ],
+   "training_link": "Stop coaching your athletes toward the same picture. A 1.90 m athlete and a 1.60 m athlete running side by side should not look alike, and forcing either toward the other's stride will make them slower. Set the target as a principle — more range behind them, less braking in front — and let each of them express it in a way their build and current mobility allows. Be sceptical of cadence numbers off the internet; compare them against their own baseline instead. Film at several states rather than one, and make sure one of those clips is late in a hard session after a station, since that degraded pattern is the one that decides their race. Change one thing at a time, check it on video, and if something looks odd but is longstanding, painless and efficient, leave it alone.",
+   "glossary": [
+    {
+     "term": "Anthropometry",
+     "def": "An individual's physical dimensions — limb length, mass distribution, segment proportions — which alter what running mechanics are optimal for them.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"28\" cy=\"12\" r=\"4\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"1.8\"/><path d=\"M28 16v10M22 20h12M28 26l-5 10M28 26l5 10\" stroke=\"#67e8b0\" stroke-width=\"1.8\"/><path d=\"M52 8v26\" stroke=\"#ffb86b\" stroke-width=\"1.8\"/><path d=\"M48 12h8M48 30h8\" stroke=\"#3a4a5e\" stroke-width=\"1.4\"/></svg>"
+    },
+    {
+     "term": "Principle vs template",
+     "def": "Coaching toward an underlying mechanical goal with individual tolerances, rather than toward one visual model of ideal gait.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M10 20h20M30 20l14-9M30 20l14 9\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"2\"/><circle cx=\"48\" cy=\"11\" r=\"3\" fill=\"#67e8b0\"/><circle cx=\"48\" cy=\"29\" r=\"3\" fill=\"#ffb86b\"/></svg>"
+    },
+    {
+     "term": "Individual tolerance",
+     "def": "The acceptable range around a technique target for a given athlete, set by their build, strength and mobility rather than by a population norm.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"16\" y=\"8\" width=\"48\" height=\"24\" rx=\"2\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"1.6\"/><path d=\"M32 8v24M48 8v24M16 16h48M16 24h48\" stroke=\"#3a4a5e\" stroke-width=\"1.2\"/><rect x=\"32\" y=\"16\" width=\"16\" height=\"8\" fill=\"#67e8b0\" opacity=\"0.35\"/></svg>"
+    },
+    {
+     "term": "State-dependent mechanics",
+     "def": "The fact that one athlete runs differently fresh, compromised after a station, and late in a race — three patterns requiring separate assessment.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M8 12 C26 13 44 22 72 33\" fill=\"none\" stroke=\"#ffb86b\" stroke-width=\"2\"/><line x1=\"8\" y1=\"34\" x2=\"72\" y2=\"34\" stroke=\"#3a4a5e\" stroke-width=\"1\"/></svg>"
+    },
+    {
+     "term": "Elite template fallacy",
+     "def": "Copying elite runners' technique without their underlying capacities, mistaking a consequence of their physiology for a cause of their speed.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"24\" cy=\"20\" r=\"9\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"2\"/><path d=\"M40 20h22M54 13l8 7-8 7\" fill=\"none\" stroke=\"#67e8b0\" stroke-width=\"2\"/></svg>"
+    },
+    {
+     "term": "Benign asymmetry",
+     "def": "A longstanding, painless and efficient movement difference better accommodated than corrected.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"14\" y=\"10\" width=\"52\" height=\"22\" rx=\"3\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"1.6\"/><path d=\"M40 10v22\" stroke=\"#ffb86b\" stroke-width=\"2\"/><path d=\"M20 21h14M46 21h14\" stroke=\"#67e8b0\" stroke-width=\"1.6\"/></svg>"
+    }
+   ],
+   "relevant": true,
+   "exam_focus": "Explain why technique targets should be principles with individual tolerances, and identify which running state should drive coaching decisions in HYROX.",
    "figures": []
   }
  }
