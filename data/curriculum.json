@@ -187,6 +187,11 @@
     "phase": 34,
     "name": "Module 7.1 — Skill in the High-Performance Athlete",
     "days": "113-113"
+   },
+   {
+    "phase": 35,
+    "name": "Module 4 — The 5 Level System (verified)",
+    "days": "115-115"
    }
   ],
   "source_note": "Original study notes written for the Level 2 'Mastering Performance' module list. Not a reproduction of HYROX Academy course material."
@@ -2807,7 +2812,7 @@
    "domain": "SM",
    "chapter": "Module 4",
    "page_refs": "HYROX Performance Pillars — Building Power",
-   "key_concept": "HYROX rewards a strength floor more than a strength ceiling. Station loads are fixed and absolute, so what matters is the fraction of an athlete's maximal capacity each rep demands: once someone can handle the race loads with room to spare, further 1RM gains buy progressively less race time and the payoff shifts to strength-endurance and to holding force output under accumulating fatigue. The sleds are the exception — pushing and pulling a heavily loaded sled can sit close to an underpowered athlete's maximal horizontal force, so max strength still gates that station. In a concurrent build, most athletes hold this with two low-volume, high-intent lifting sessions a week — heavy low-rep work plus loaded carries and compromised-position practice — sequenced so lifting fatigue does not land on key running sessions. Note that specific strength 'floors' below are coaching heuristics for programming decisions, not validated cut-offs.",
+   "key_concept": "HYROX rewards a strength floor more than a strength ceiling. Station loads are fixed and absolute, so what matters is the fraction of an athlete's maximal capacity each rep demands: once someone can handle the race loads with room to spare, further 1RM gains buy progressively less race time and the payoff shifts to strength-endurance and to holding force output under accumulating fatigue. The sleds are the exception — pushing and pulling a heavily loaded sled can sit close to an underpowered athlete's maximal horizontal force, so max strength still gates that station. In a concurrent build, most athletes hold this with two low-volume, high-intent lifting sessions a week — heavy low-rep work plus loaded carries and compromised-position practice — sequenced so lifting fatigue does not land on key running sessions. Note that specific strength 'floors' below are coaching heuristics for programming decisions, not validated cut-offs. Module 4's Building Power section makes the sequencing explicit: a strength base is a prerequisite for power work, not a parallel goal. The distinction the practitioners use is raw strength — what you can move in a squat, deadlift and press — versus applied strength, which is how that force gets used to move an external load or the body. Power work is the applied half, so there must be force to apply before there is anything to accelerate. Their stronger argument is injury prevention: stable joints, robust tendons and adequate range are what let an athlete survive the rising volume and fatigue of a build, and explosive work performed on an unprepared body is where injuries happen. Only once that base is solid do they move to contrast pairings.",
    "key_facts": [
     "Three qualities sit on a continuum: maximal strength (force ceiling) → strength-endurance (repeat submaximal force with little decay) → rate of force development (produce force fast). HYROX loads the middle of that continuum hardest.",
     "Relative strength drives the experience of the race: because loads are absolute and fixed, a lighter or weaker athlete works at a higher percentage of their maximum on every rep of the same station.",
@@ -2821,7 +2826,18 @@
     "The high-rep stations — wall balls, sandbag lunges, burpee broad jumps — are limited mainly by local muscular endurance, eccentric tolerance and pacing, so they respond far more to specific repeated-effort practice than to a bigger squat.",
     "Wall balls close the race and sandbag lunges precede them, so the quads and glutes are already heavily pre-fatigued when they arrive. Under the current rulebook every individual division does 100 reps (earlier seasons set women's Open at 75; doubles split the work) — check the current rules for the athlete's division rather than assuming.",
     "Loaded carries and controlled eccentric work build the grip and trunk tolerance the farmers carry and sandbag demand; failing grip mid-carry forces drops and re-grips, which costs time directly on the station.",
-    "Peaking: taper lifting volume roughly two weeks out while retaining load/intensity, and pull heavy eccentric work about 10 days out so residual soreness has cleared by race day. These timelines are practical conventions, individualised by how an athlete recovers."
+    "Peaking: taper lifting volume roughly two weeks out while retaining load/intensity, and pull heavy eccentric work about 10 days out so residual soreness has cleared by race day. These timelines are practical conventions, individualised by how an athlete recovers.",
+    "Sequencing rule from Module 4: build the strength base before training power. Power work is applied strength, and there must be force to apply before there is anything to accelerate.",
+    "Raw strength = what the athlete can move in the basic compound lifts (squat, deadlift, press). Applied strength = how that force is used to move an external load or the body.",
+    "The base means strong AND technically efficient in the big compound lifts — including trunk stability and control of the eccentric phase — not just a number.",
+    "Injury prevention is the practitioners' paramount reason: stable joints, strong tendons, the strength to hold positions, and adequate mobility and range are what make rising volume and fatigue survivable later in a build.",
+    "Once the base is solid, power is developed with a contrast pairing: a heavy slow lift followed immediately by a fast explosive movement using the same or supporting muscle groups, which lets the nervous system switch recruitment on and off.",
+    "Generic contrast example: heavy back squats (five sets, or a 10-minute EMOM of 1-2 reps) straight into empty-barbell jump squats, hurdle hops or bodyweight jump squats.",
+    "HYROX-specific contrast pairings — back squat + broad/double/triple broad jump (burpee broad jump); deadlift + row sprint; barbell lunges + light sled sprint (sandbag lunge and sled); front squat + maximal-height wall ball; push press + wall balls where the shoulders are the limiter.",
+    "Periodisation of the pairings: general strength foundation early in a long block, shifting the explosive partner toward actual HYROX movements as the race approaches, so strength is maintained while explosiveness becomes race-specific.",
+    "Load the lunge heavier than race weight deliberately — an odd object or heavy carry forces trunk stabilisation, so the athlete has met a heavier version while fatigued before the sandbag shifts on race day.",
+    "Rate of force development matters in running too — the practitioners' cue is keeping the steps 'snappy'.",
+    "Running RFD micro-doses: short sprints seeded into a long run roughly every 800 m to 1 km, or alternating minutes of 15-20 s air-bike sprints with single power cleans or snatches for 10-20 minutes."
    ],
    "training_link": "Triage relative strength before you write a strength block. If an athlete cannot move their division's sled at a steady walk, or their squat and deadlift sit well below the working floor, force capacity is a genuine limiter and a dedicated strength emphasis is justified. Once they clear it, drop to roughly two 40-minute sessions a week — heavy hinge and squat in low reps, plus loaded carries and unilateral work — placed after the hard interval day so run quality stays clean. Spend the reclaimed time on compromised work: wall balls and sandbag lunges straight off a 1 km run. Then retest what you actually sold them: sled time and station splits under fatigue, not the 1RM.",
    "glossary": [
@@ -2869,10 +2885,30 @@
      "term": "Roxzone",
      "def": "The transition corridor between each run and each station. Named here only to be clear that it is a transition-time variable, distinct from the strength qualities this lesson covers.",
      "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M8 32 C26 31 38 26 50 16 S66 6 72 6\" fill=\"none\" stroke=\"#ffb86b\" stroke-width=\"2\"/><line x1=\"50\" y1=\"6\" x2=\"50\" y2=\"34\" stroke=\"#3a4a5e\" stroke-width=\"1\" stroke-dasharray=\"3 2\"/></svg>"
+    },
+    {
+     "term": "Raw vs applied strength",
+     "def": "Raw strength is what can be moved in the basic compound lifts; applied strength is how that force is used to move an external load or the body. Power development trains the second and presupposes the first.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"14\" y=\"26\" width=\"52\" height=\"8\" rx=\"2\" fill=\"#5ec8ff\" opacity=\"0.55\"/><rect x=\"24\" y=\"16\" width=\"32\" height=\"8\" rx=\"2\" fill=\"#67e8b0\" opacity=\"0.5\"/><rect x=\"34\" y=\"6\" width=\"12\" height=\"8\" rx=\"2\" fill=\"#ffb86b\" opacity=\"0.6\"/></svg>"
+    },
+    {
+     "term": "Strength base",
+     "def": "Being both strong and technically efficient in the big compound lifts, with trunk stability and eccentric control — the prerequisite for safe, effective power work.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"14\" y=\"26\" width=\"52\" height=\"8\" rx=\"2\" fill=\"#5ec8ff\" opacity=\"0.55\"/><rect x=\"24\" y=\"16\" width=\"32\" height=\"8\" rx=\"2\" fill=\"#67e8b0\" opacity=\"0.5\"/><rect x=\"34\" y=\"6\" width=\"12\" height=\"8\" rx=\"2\" fill=\"#ffb86b\" opacity=\"0.6\"/></svg>"
+    },
+    {
+     "term": "Contrast pairing",
+     "def": "A heavy slow lift followed immediately by a fast explosive movement using the same or supporting muscle groups, switching nervous-system recruitment between the two.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"14\" y=\"12\" width=\"20\" height=\"16\" rx=\"2\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"1.8\"/><path d=\"M38 20h6\" stroke=\"#3a4a5e\" stroke-width=\"1.6\"/><path d=\"M48 28l6-16 6 16\" fill=\"none\" stroke=\"#ffb86b\" stroke-width=\"2\"/></svg>"
+    },
+    {
+     "term": "Supramaximal stabilisation load",
+     "def": "Deliberately loading a pattern heavier than race weight so trunk stabilisation is trained beyond competition demand, preparing the athlete for shifting loads and unpredictable forces under fatigue.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"14\" y=\"10\" width=\"52\" height=\"22\" rx=\"3\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"1.6\"/><path d=\"M40 10v22\" stroke=\"#ffb86b\" stroke-width=\"2\"/><path d=\"M20 21h14M46 21h14\" stroke=\"#67e8b0\" stroke-width=\"1.6\"/></svg>"
     }
    ],
    "relevant": true,
-   "exam_focus": "Recognising that HYROX demands a strength floor plus well-developed strength-endurance rather than a maximal-strength ceiling, correctly bounding the certainty of interference-effect claims, and applying concurrent-training sequencing — maintenance dosing, session separation, taper timing — so that lifting does not degrade running quality.",
+   "exam_focus": "Recognising that HYROX demands a strength floor plus well-developed strength-endurance rather than a maximal-strength ceiling, correctly bounding the certainty of interference-effect claims, and applying concurrent-training sequencing — maintenance dosing, session separation, taper timing — so that lifting does not degrade running quality; and justify why a strength base precedes power work, using the raw-versus-applied distinction and the injury-prevention argument.",
    "figures": []
   },
   "38": {
@@ -3169,19 +3205,32 @@
    "topic_id": "pd_concurrent",
    "domain": "PG",
    "chapter": "Module 8",
-   "page_refs": "Mastering Periodization in HYROX",
-   "key_concept": "Concurrent training means developing endurance and strength/hypertrophy in the same block — unavoidable in HYROX. Interference is the blunting of adaptation when both are trained close together, and it appears to be asymmetric: endurance is seldom harmed, while strength and especially power adaptations are the ones that suffer. The classic molecular story is AMPK (energy-stress, endurance) restraining mTORC1 (growth, resistance work), but that acute signalling account is contested in humans and explains far less than residual fatigue, glycogen depletion, muscle damage and total training load. Coaches manage interference with sequencing, separation, modality choice and dose — not by abandoning one quality. HYROX athletes need both, so interference is minimised, never eliminated.",
+   "page_refs": "Mastering Periodization in HYROX — see also Module 4 §8 Interference Effect",
+   "key_concept": "Concurrent training means developing endurance and strength/hypertrophy in the same block — unavoidable in HYROX. Interference is the blunting of adaptation when both are trained close together, and it appears to be asymmetric: endurance is seldom harmed, while strength and especially power adaptations are the ones that suffer. The classic molecular story is AMPK (energy-stress, endurance) restraining mTORC1 (growth, resistance work), but that acute signalling account is contested in humans and explains far less than residual fatigue, glycogen depletion, muscle damage and total training load. Coaches manage interference with sequencing, separation, modality choice and dose — not by abandoning one quality. HYROX athletes need both, so interference is minimised, never eliminated. Module 4's own section on this is a discussion between two practitioners, and it adds a practical layer. They split the problem into an acute effect — one session degrading the quality of the next — and a chronic one, and say plainly that the acute effect is what they actually program around. Their reframe on strength is worth holding: HYROX strength is a sufficiency threshold ('are you strong enough to finish this race?'), so training concurrently slowing the rate of strength gain is an acceptable price once that threshold is met. And because the fragile quality is rate of force development, their answer is not to avoid interference but to micro-dose power into both session types so RFD never disappears.",
    "key_facts": [
     "Interference is asymmetric → endurance largely unaffected; strength, power and hypertrophy are what get blunted.",
     "Meta-analytic evidence points to explosive/rate-of-force qualities being most fragile, with hypertrophy and maximal strength affected to a smaller degree; treat the exact ranking as a tendency, not a settled hierarchy.",
     "Molecular sketch: endurance ↑AMPK/PGC-1α (mitochondrial, oxidative) vs resistance ↑mTORC1/p70S6K (myofibrillar protein synthesis); AMPK activation can restrain mTORC1 signalling acutely, though human data on this are inconsistent.",
     "Signalling windows are hours; performance interference is chronic and mostly a fatigue/energy-availability problem.",
-    "Separation rule of thumb: ≥6 h between opposing sessions is the common coaching recommendation; ≥24 h or a separate day is safer for key strength work. This is practical convention, not a precisely validated threshold.",
     "Running appears to interfere with lower-body strength more than cycling/rowing/ski — eccentric loading and muscle damage are the likely drivers.",
     "Interference tends to scale with endurance dose: greater frequency and duration are associated with larger decrements, so a short HIIT block before lifting is generally less compromising than a long threshold or steady run.",
     "Under-fuelling amplifies interference: low glycogen ↑AMPK signalling, ↓training quality and ↑catabolic drive.",
     "Practical weekly ordering: hard strength/power early in the week or on separate days from long runs; place low-intensity aerobic work adjacent to lifting instead.",
-    "Concurrent-trained beginners often still gain both qualities; interference bites hardest in trained athletes near their adaptive ceiling, where recovery capacity is the limiting resource."
+    "Concurrent-trained beginners often still gain both qualities; interference bites hardest in trained athletes near their adaptive ceiling, where recovery capacity is the limiting resource.",
+    "Two forms, per the Module 4 practitioners: an acute effect (one session degrading the quality of the next) and a chronic effect (blunted adaptation rate). They program primarily around the acute one.",
+    "Their working separation rule is 3-4 hours plus at least one meal between opposing sessions. Wider coaching convention often cites 6 h or more, and a separate day for key strength work — quote the course's 3-4 h + a feed if asked, and treat both as practical convention rather than a validated threshold.",
+    "Their practical demonstration that power is the casualty: measure a max box jump, run, then measure again — it is lower. Strength and aerobic capacity can improve simultaneously; RFD is what degrades.",
+    "Strength for HYROX is a sufficiency threshold, not a maximum — 'are you strong enough to finish this race?'. Once cleared, a slower rate of strength gain is an acceptable cost of concurrency.",
+    "Concurrent training does not stop progress in either quality; it slows the rate relative to training one alone.",
+    "Modality sequencing in practice: low-impact conditioning in the morning (bike, easy ski, swim, row) leaves an afternoon strength session intact, whereas a morning of running means the lower-body numbers will not be there.",
+    "Block periodisation as an interference tool: pick a small number of stations or qualities to progress and hold the rest, then rotate blocks so improvements accumulate.",
+    "Maintenance dose in their practice is roughly twice a week, against five or six sessions for the block's priority quality.",
+    "Transfer-over movements reduce total interference by serving several stations at once — single-leg work (Bulgarian split squats, lunges, step-ups) develops sandbag lunges, wall balls and sled push together.",
+    "Counter-warning: 'sometimes people are so focused on not having the interference effect that they are actually not training for HYROX anymore.' The race demands both qualities in one session, so some interference is the training.",
+    "Because RFD is the fragile quality, protect it by micro-dosing power into both aerobic and strength sessions rather than by separating everything.",
+    "Micro-dosing examples: threshold running or machine work paired the same day with low-rep heavy deadlifts plus box jumps or jump rope; 7-15 s sprints seeded inside a 20-60 min endurance piece; strides never longer than about 30 s.",
+    "French contrast method as their strength template — a heavy compound lift paired with a short all-out effort, e.g. back squats with a 10 s maximal bike or runner sprint.",
+    "Isometric holds and tempoed concentric/eccentric work also support RFD retention."
    ],
    "training_link": "Protect the fragile qualities: put your heavy squat/deadlift or power work on its own day, or at minimum 6+ hours from a hard run, and never straight after a long threshold session. Use ski, row and bike for aerobic volume on your lifting days so the legs stay fresh, and reserve running-heavy days for compromised-running and station work. Keep carbohydrate intake up around double days — an under-fuelled athlete collects the interference without the adaptation.",
    "glossary": [
@@ -3224,10 +3273,40 @@
      "term": "Modality specificity",
      "def": "The principle that interference depends on the endurance mode used; non-impact modes (bike, ski, row) appear to transfer less muscle damage to lifting than running.",
      "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"24\" cy=\"20\" r=\"9\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"2\"/><path d=\"M40 20h22M54 13l8 7-8 7\" fill=\"none\" stroke=\"#67e8b0\" stroke-width=\"2\"/></svg>"
+    },
+    {
+     "term": "Acute vs chronic interference",
+     "def": "Acute interference is one session degrading the quality of the next; chronic interference is the long-run blunting of adaptation rate. Session sequencing addresses the first.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M10 20h20M30 20l14-9M30 20l14 9\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"2\"/><circle cx=\"48\" cy=\"11\" r=\"3\" fill=\"#67e8b0\"/><circle cx=\"48\" cy=\"29\" r=\"3\" fill=\"#ffb86b\"/></svg>"
+    },
+    {
+     "term": "Strength sufficiency",
+     "def": "The view that HYROX strength is a threshold to clear — enough to complete the race well — rather than a quality to maximise, which makes a slower rate of strength gain acceptable.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"14\" y=\"10\" width=\"52\" height=\"22\" rx=\"3\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"1.6\"/><path d=\"M40 10v22\" stroke=\"#ffb86b\" stroke-width=\"2\"/><path d=\"M20 21h14M46 21h14\" stroke=\"#67e8b0\" stroke-width=\"1.6\"/></svg>"
+    },
+    {
+     "term": "Maintenance dose",
+     "def": "The reduced frequency that holds a quality while another is developed — roughly two sessions a week in the practitioners' practice, against five or six for the block priority.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M10 32h12v-6h12v-6h12v-6h12v-6h10\" fill=\"none\" stroke=\"#67e8b0\" stroke-width=\"2\"/><line x1=\"10\" y1=\"34\" x2=\"72\" y2=\"34\" stroke=\"#3a4a5e\" stroke-width=\"1\"/></svg>"
+    },
+    {
+     "term": "Transfer-over movement",
+     "def": "An exercise that develops several race stations at once, such as single-leg work serving sandbag lunges, wall balls and sled push — reducing total training load and therefore interference.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"24\" cy=\"20\" r=\"9\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"2\"/><path d=\"M40 20h22M54 13l8 7-8 7\" fill=\"none\" stroke=\"#67e8b0\" stroke-width=\"2\"/></svg>"
+    },
+    {
+     "term": "Micro-dosing",
+     "def": "Distributing small, frequent doses of a fragile quality across the week so it is preserved rather than protected by avoidance. Applied here to rate of force development.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M12 20h8l4-8 6 16 6-16 6 16 4-8h22\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"2\"/></svg>"
+    },
+    {
+     "term": "French contrast method",
+     "def": "Pairing a heavy slow lift with a short explosive effort using the same or supporting muscle groups, to retain power alongside strength and endurance work.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"14\" y=\"12\" width=\"20\" height=\"16\" rx=\"2\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"1.8\"/><path d=\"M38 20h6\" stroke=\"#3a4a5e\" stroke-width=\"1.6\"/><path d=\"M48 28l6-16 6 16\" fill=\"none\" stroke=\"#ffb86b\" stroke-width=\"2\"/></svg>"
     }
    ],
    "relevant": true,
-   "exam_focus": "Expect to be asked which quality interference blunts most, why fatigue rather than kinase signalling explains most of it, and how to sequence and separate strength and endurance sessions across a HYROX week.",
+   "exam_focus": "Expect to be asked which quality interference blunts most, why fatigue rather than kinase signalling explains most of it, and how to sequence and separate strength and endurance sessions across a HYROX week; and give the course practitioners' 3-4 h plus a meal separation rule and their RFD micro-dosing strategy.",
    "figures": []
   },
   "43": {
@@ -7292,8 +7371,8 @@
    "topic_id": "sm_antidoping",
    "domain": "SM",
    "chapter": "Module 2",
-   "page_refs": "Sports Medicine: Optimizing Health, Recovery & Performance",
-   "key_concept": "Anti-doping rests on a principle that surprises many athletes: strict liability. An athlete is responsible for any prohibited substance found in their sample regardless of intent, negligence or how it got there — which means 'my supplement was contaminated' is an explanation, not a defence. The World Anti-Doping Agency publishes a Prohibited List updated at least annually, organised into substances prohibited at all times, substances prohibited in competition only (including stimulants, cannabinoids and glucocorticoids by certain routes), and substances prohibited in particular sports. Beyond the presence of a substance, there are further anti-doping rule violations that catch out the unwary: whereabouts failures, tampering, refusing a test, trafficking, complicity, and — directly relevant to coaches — administration and association with sanctioned personnel. A Therapeutic Use Exemption allows a legitimately needed medication under defined criteria. For a coach, the practical duties are to check every medication and supplement, to advise batch-tested products where supplements are used at all, and never to supply anything.",
+   "page_refs": "Sports Medicine: Optimizing Health, Recovery & Performance — Anti-Doping WADA",
+   "key_concept": "Anti-doping rests on a principle that surprises many athletes: strict liability. An athlete is responsible for any prohibited substance found in their sample regardless of intent, negligence or how it got there — which means 'my supplement was contaminated' is an explanation, not a defence. The World Anti-Doping Agency publishes a Prohibited List updated at least annually, organised into substances prohibited at all times, substances prohibited in competition only (including stimulants, cannabinoids and glucocorticoids by certain routes), and substances prohibited in particular sports. Beyond the presence of a substance, there are further anti-doping rule violations that catch out the unwary: whereabouts failures, tampering, refusing a test, trafficking, complicity, and — directly relevant to coaches — administration and association with sanctioned personnel. A Therapeutic Use Exemption allows a legitimately needed medication under defined criteria. For a coach, the practical duties are to check every medication and supplement, to advise batch-tested products where supplements are used at all, and never to supply anything. Module 2's section on this is delivered as a walkthrough of the actual Elite Athlete Briefing slides by the technical director for elite racing, and it adds a second half the rules alone do not convey: the race-day procedure, which runs entirely on continuity. From the moment a selected athlete crosses the line they are under observation, a chaperone is assigned, and — the point the briefing stresses hardest — maintaining contact with that chaperone is the athlete's responsibility, not the chaperone's. Break it and the test can be recorded as a missed test. The same logic governs everything the athlete consumes in the venue: sealed products only, an unsupervised nutrition table used at the athlete's own risk, and the slide stated in white that the athlete is responsible for whatever they consume, not HYROX. The briefing slides are themselves evidential and can be admissible if a sanction follows, which is why every step is documented.",
    "key_facts": [
     "Strict liability: the athlete is responsible for what is in their body, regardless of intent or how it got there.",
     "The WADA Prohibited List is updated at least annually. Check it each year rather than assuming last season's knowledge holds.",
@@ -7307,9 +7386,20 @@
     "Where supplements are used, choose third-party batch-tested products (for example Informed Sport or similar schemes) — this reduces but does not eliminate risk.",
     "Coaches should never supply supplements or medication to an athlete. Advise, document and refer to a physician or pharmacist for checking.",
     "Check every medication before use, including over-the-counter cold and allergy remedies, some of which contain in-competition prohibited stimulants.",
-    "Education is part of the coaching role: athletes who understand strict liability behave differently from those who assume good intent protects them."
+    "Education is part of the coaching role: athletes who understand strict liability behave differently from those who assume good intent protects them.",
+    "Race-day controls are run under the HYROX Anti-Doping Code, which follows WADA guidelines. The briefing slides are evidential and can be admissible in court if a sanction follows, so every step of the process must be demonstrable.",
+    "Selection begins the instant the athlete crosses the line: they are under observation from that point and a chaperone is assigned before they leave the finish area.",
+    "A doping control officer formally notifies the athlete, introduces the chaperone by name, and the athlete must stay with that chaperone through to a formal, time-and-date-stamped handover at the doping control station.",
+    "Continuity is the athlete's responsibility, not the chaperone's. Running into the crowd to celebrate with family and losing the chaperone is the classic failure.",
+    "Losing chaperone contact can be recorded as a missed test, which counts as an adverse finding — but it is decided case by case by the doping commission representative, so a broken contact is not automatically fatal.",
+    "Returning from the finish area to the wall balls — even to cheer in the last finisher — is not permitted at elite level, because it takes the athlete out of the registered controlled environment.",
+    "Only sealed products are provided in the elite changing rooms, elite lounge and doping control suite. Well-intentioned local food and sweets are removed before elites arrive, because continuity over them cannot be assured.",
+    "Roxzone cups are filled from sealed bottles by one person who stays with them until the race ends and then disposes of them; cups are entirely replaced between the women's and men's races.",
+    "Athletes may stage their own hydration and nutrition on a dedicated table near the out-arch, but that table is explicitly unsupervised — no camera, no security, no staff — so anything left there is at the athlete's own risk. They are chaperoned to it at an agreed time by an agreed route and place items themselves.",
+    "A DNF is a mandatory report to a named official — the technical director for elite racing, a nominated race director, or the doping control liaison in the recovery area — not to anyone simply wearing event kit.",
+    "An athlete can still be selected after a DNF or after finishing, so they must remain in the recovery area until the official end of the race: 30 minutes after the last athlete crosses the line, logged to the thousandth of a second."
    ],
-   "training_link": "Have the conversation before there's a problem, not after. Explain strict liability plainly — whatever ends up in their sample is their responsibility, and 'I didn't know' has never worked for anyone. Make it a rule that every medication and supplement gets checked against the current Prohibited List before it's taken, including the cold and flu tablets from the pharmacy, which are a classic way to fail an in-competition test. If they insist on supplements, steer them to third-party batch-tested products and be honest that it reduces rather than removes the risk. Never hand them anything yourself — advise, document, and send them to a pharmacist or physician. And if they have a genuine medical need for something on the list, get the TUE sorted in advance rather than hoping.",
+   "training_link": "Have the conversation before there's a problem, not after. Explain strict liability plainly — whatever ends up in their sample is their responsibility, and 'I didn't know' has never worked for anyone. Make it a rule that every medication and supplement gets checked against the current Prohibited List before it's taken, including the cold and flu tablets from the pharmacy, which are a classic way to fail an in-competition test. If they insist on supplements, steer them to third-party batch-tested products and be honest that it reduces rather than removes the risk. Never hand them anything yourself — advise, document, and send them to a pharmacist or physician. And if they have a genuine medical need for something on the list, get the TUE sorted in advance rather than hoping. Then brief them on race day itself, because the procedure is where athletes lose tests rather than fail them: once they cross that line they stay with their chaperone, they do not detour into the crowd, they do not go back onto the floor to cheer anyone in, they only eat and drink what came sealed, and they stay in recovery until thirty minutes after the last finisher — even if they DNF'd.",
    "glossary": [
     {
      "term": "Strict liability",
@@ -7340,10 +7430,30 @@
      "term": "Batch testing",
      "def": "Third-party analysis of specific supplement batches for prohibited substances, reducing but not eliminating contamination risk.",
      "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M8 32 C24 30 34 14 44 14 S62 22 72 10\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"2\"/><circle cx=\"44\" cy=\"14\" r=\"2.5\" fill=\"#5ec8ff\"/></svg>"
+    },
+    {
+     "term": "Chaperone",
+     "def": "The official assigned to a selected athlete at the finish line who accompanies them until formal handover to the doping control officer. Keeping contact is the athlete's duty.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"18\" cy=\"20\" r=\"5\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"1.8\"/><circle cx=\"34\" cy=\"20\" r=\"5\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"1.8\"/><circle cx=\"50\" cy=\"20\" r=\"5\" fill=\"none\" stroke=\"#67e8b0\" stroke-width=\"1.8\"/><circle cx=\"66\" cy=\"20\" r=\"5\" fill=\"none\" stroke=\"#ffb86b\" stroke-width=\"1.8\"/><path d=\"M23 20h6M39 20h6M55 20h6\" stroke=\"#3a4a5e\" stroke-width=\"1.4\"/></svg>"
+    },
+    {
+     "term": "Continuity",
+     "def": "The unbroken documented chain of observation and custody over a selected athlete and over anything they consume. The organising principle of race-day doping control.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"18\" cy=\"20\" r=\"5\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"1.8\"/><circle cx=\"34\" cy=\"20\" r=\"5\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"1.8\"/><circle cx=\"50\" cy=\"20\" r=\"5\" fill=\"none\" stroke=\"#67e8b0\" stroke-width=\"1.8\"/><circle cx=\"66\" cy=\"20\" r=\"5\" fill=\"none\" stroke=\"#ffb86b\" stroke-width=\"1.8\"/><path d=\"M23 20h6M39 20h6M55 20h6\" stroke=\"#3a4a5e\" stroke-width=\"1.4\"/></svg>"
+    },
+    {
+     "term": "Missed test",
+     "def": "A failure to remain available for or complete a test, which counts as an adverse finding. Broken chaperone contact can be recorded as one, subject to case-by-case review.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M8 12 C26 13 44 22 72 33\" fill=\"none\" stroke=\"#ffb86b\" stroke-width=\"2\"/><line x1=\"8\" y1=\"34\" x2=\"72\" y2=\"34\" stroke=\"#3a4a5e\" stroke-width=\"1\"/></svg>"
+    },
+    {
+     "term": "End of race",
+     "def": "For doping-control purposes, 30 minutes after the last athlete crosses the line. Selected and non-selected athletes alike must remain available until then.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"40\" cy=\"20\" r=\"13\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"1.8\"/><path d=\"M40 12v9l7 4\" fill=\"none\" stroke=\"#67e8b0\" stroke-width=\"2\"/></svg>"
     }
    ],
    "relevant": true,
-   "exam_focus": "Explain strict liability and its implications for supplement use, list anti-doping rule violations beyond a positive test, and state the criteria for a Therapeutic Use Exemption.",
+   "exam_focus": "Explain strict liability and its implications for supplement use, list anti-doping rule violations beyond a positive test, and state the criteria for a Therapeutic Use Exemption; and describe the race-day chaperone and continuity procedure, including who is responsible for maintaining contact and what counts as a missed test.",
    "figures": []
   },
   "102": {
@@ -8121,6 +8231,129 @@
    ],
    "relevant": true,
    "exam_focus": "Be able to give both practitioner definitions of skill — developable range, and automatic execution on demand with intent — and say what each one changes about how you programme for an advanced athlete. Expect to justify treating running as skill work rather than fitness work, using the eight-run structure as the leverage argument, and to say which part of that argument is testimony and which is inference. Know that decision-making is claimed as trainable, how race-footage review and off-race decision drills are used to train it, and what those methods cannot tell you. Be able to describe what shifts at the refinement ceiling: smaller and slower gains (the literature's diminishing-returns pattern, not the athletes' claim — they said the opposite about themselves), athlete perception as primary data, coach as co-investigator, feedback less frequent and athlete-initiated (day 2). Above all, be able to state the provenance honestly — this is elite practitioner opinion, valuable as perspective, aligning in places with the motor-learning literature of days 27-28 and elsewhere simply experience. An answer that presents it as research is wrong even where the content is sound.",
+   "figures": []
+  },
+  "114": {
+   "title": "Supplements — evidence, permissibility & contamination risk",
+   "topic_id": "nu_supplements",
+   "domain": "PH",
+   "chapter": "Module 6",
+   "page_refs": "Nutrition — Supplements",
+   "key_concept": "The module's position is food-first: supplementation is a considered exception, not a default. Legitimate reasons to supplement are narrow — meeting macronutrient requirements around training and competition, correcting a specific deficiency arising from dietary restriction, or using a genuine ergogenic aid to enhance performance or recovery. Any decision is then filtered through three questions: is it permissible, is it safe, and is it effective. On effectiveness, the strongest evidence comes from systematic reviews and meta-analyses that pool findings across studies, and from stance or consensus statements; a handful of supplements clear that bar and a great many do not. On permissibility, HYROX introduced athlete drug testing in February 2024 and expanded it for the 2025-26 season, so the anti-doping consequences are now concrete rather than theoretical. And on safety, the practical hazard for most athletes is not the substance itself but contamination — commercially produced supplements can contain undeclared banned substances, and under strict liability the athlete carries that risk regardless of intent.",
+   "key_facts": [
+    "Food-first is the default. Supplement only to meet macronutrient needs around training and competition, correct a deficiency from dietary restriction, or use a genuine ergogenic aid.",
+    "Filter every decision through permissibility, safety and efficacy — in that order.",
+    "Strongest evidence for effectiveness: systematic reviews and meta-analyses pooling multiple studies, plus stance and consensus statements. A few supplements clear that bar; most do not.",
+    "Well-supported ergogenic aids in endurance and mixed-modal sport: caffeine, creatine, beta-alanine, sodium bicarbonate, and dietary nitrate (beetroot juice).",
+    "Supported where deficiency is confirmed by testing — not otherwise: iron and vitamin D. Supplementing without a confirmed deficiency has no established performance benefit and iron can be harmful in excess.",
+    "Weakly evidenced or unsupported for performance despite heavy marketing: glutamine as an ergogenic aid or lactate buffer, BCAAs for endurance performance, and most 'recovery' proprietary blends. Treat claims encountered elsewhere in the course with the same scepticism.",
+    "A registered dietitian or sports nutritionist can often identify small habitual-diet changes that remove the need for a supplement entirely.",
+    "HYROX introduced drug testing in February 2024, expanded for the 2025-26 competitive season. The anti-doping code is published in full on the HYROX website.",
+    "Strict liability applies: it is the athlete's individual duty to avoid prohibited substances, and neither intent nor knowing use needs to be proven for a violation.",
+    "Check every medication and over-the-counter product against Global DRO. Formulations for the same medicine differ between countries, so re-check anything bought abroad.",
+    "TUE consequence specific to HYROX: without an exemption an athlete cannot compete for competitive results, podiums or world championship qualification, though they may be permitted to participate for time.",
+    "Informed Sport is a global banned-substance testing and certification programme developed with UK Anti-Doping; certified products carry the logo and are searchable by brand, product or batch code.",
+    "Critical limitation: Informed Sport tests for the presence of banned substances — it does not explicitly verify that listed ingredients and dosages are accurate. Certification reduces doping risk, not mislabelling risk.",
+    "Testing scale at elite races: up to five athletes per gender category in singles (≈10 samples) and five pairs per gender category in doubles (≈20), so roughly 30 samples are commonly collected at a single elite race. This is set to rise with a further division being introduced below Elite 15.",
+    "How the selected group is chosen: Elite 15 podium finishers are mandatory-tested, with the remainder drawn at random from the field. Selected athletes are notified as they leave the finish area and chaperoned until the sample is provided (see day 101).",
+    "Unannounced out-of-competition testing can occur at any time for licensed elite athletes.",
+    "Penalties vary by circumstance and can reach a four-year ban for a first offence, with a lifetime ban possible for repeat violations."
+   ],
+   "training_link": "Start by asking what the supplement is supposed to fix, and whether food could fix it instead — most of the time it could, and a dietitian will spot the change faster than you will. If there's a real case, hold it to the evidence: caffeine, creatine, beta-alanine, bicarb and nitrate have genuine support; iron and vitamin D only once a test shows a deficiency; almost everything else is marketing, including the glutamine that gets recommended around gyms for lactate. Then handle the risk properly — check every medication on Global DRO, re-check anything bought in another country, and if they insist on supplements, steer them to Informed Sport batch-tested products while being straight that this covers banned substances and not whether the label is honest. Since HYROX started testing in 2024 and expanded it — around thirty samples now collected at a single elite race — this is a real conversation, not a hypothetical one.",
+   "glossary": [
+    {
+     "term": "Food-first",
+     "def": "The principle that nutritional needs should be met through diet wherever possible, with supplementation as a considered exception.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"16\" y=\"8\" width=\"34\" height=\"26\" rx=\"2\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"1.6\"/><path d=\"M22 16h22M22 22h22M22 28h14\" stroke=\"#67e8b0\" stroke-width=\"1.6\"/></svg>"
+    },
+    {
+     "term": "Ergogenic aid",
+     "def": "A substance intended to enhance performance capacity or recovery. Only a small number have strong supporting evidence.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M8 26 C20 26 22 32 32 32 C46 32 46 12 66 12\" fill=\"none\" stroke=\"#67e8b0\" stroke-width=\"2\"/><line x1=\"8\" y1=\"24\" x2=\"72\" y2=\"24\" stroke=\"#3a4a5e\" stroke-width=\"1\" stroke-dasharray=\"3 2\"/></svg>"
+    },
+    {
+     "term": "Evidence hierarchy",
+     "def": "Systematic reviews and meta-analyses, plus consensus statements, outrank individual studies and manufacturer claims when judging effectiveness.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"20\" y=\"8\" width=\"40\" height=\"6\" fill=\"#67e8b0\" opacity=\"0.7\"/><rect x=\"24\" y=\"17\" width=\"32\" height=\"6\" fill=\"#5ec8ff\" opacity=\"0.55\"/><rect x=\"28\" y=\"26\" width=\"24\" height=\"6\" fill=\"#ffb86b\" opacity=\"0.45\"/></svg>"
+    },
+    {
+     "term": "Global DRO",
+     "def": "An online reference for checking whether specific medications contain prohibited substances. Formulations differ by country, so re-check products bought abroad.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M40 6l16 6v10c0 8-7 12-16 14-9-2-16-6-16-14V12z\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"1.8\"/><path d=\"M34 20l5 5 8-9\" fill=\"none\" stroke=\"#67e8b0\" stroke-width=\"2\"/></svg>"
+    },
+    {
+     "term": "Informed Sport",
+     "def": "A banned-substance testing and certification programme developed with UK Anti-Doping. Tests for prohibited substances but does not verify listed ingredients or dosages.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M40 6l16 6v10c0 8-7 12-16 14-9-2-16-6-16-14V12z\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"1.8\"/><path d=\"M34 20l5 5 8-9\" fill=\"none\" stroke=\"#67e8b0\" stroke-width=\"2\"/></svg>"
+    },
+    {
+     "term": "Contamination risk",
+     "def": "The chance that a commercially produced supplement contains undeclared banned substances — the main practical doping hazard, borne by the athlete under strict liability.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M8 12 C26 13 44 22 72 33\" fill=\"none\" stroke=\"#ffb86b\" stroke-width=\"2\"/><line x1=\"8\" y1=\"34\" x2=\"72\" y2=\"34\" stroke=\"#3a4a5e\" stroke-width=\"1\"/></svg>"
+    }
+   ],
+   "relevant": true,
+   "exam_focus": "Apply the permissibility-safety-efficacy filter to a supplement request, separate well-evidenced ergogenic aids from unsupported ones, and state what Informed Sport certification does and does not guarantee.",
+   "figures": []
+  },
+  "115": {
+   "title": "The HYROX 5 Level System",
+   "topic_id": "hp_levels",
+   "domain": "PG",
+   "chapter": "Module 4",
+   "page_refs": "HYROX Performance Pillars — 5 Level System",
+   "key_concept": "The 5 Level System exists to answer two coaching questions: where do I start a new athlete or client who does not know what level they should compete at, and is this athlete ready to progress — including whether they are ready to move from a doubles division to solo. It is a population and division ladder, not a movement-competence ladder: level 1 is the absolute novice who may never have been in a gym, level 2 the beginner, level 3 the open athlete, level 4 the pro athlete and level 5 the elite or age-group world championship athlete. Every level is described across four categories — cardio guidelines, strength guidelines by movement pattern, HYROX exercise standards, and time guidelines — and the rule that makes the system work is that an athlete is graded at their weakest category, not their average. Because HYROX demands a multitude of qualities, being well-rounded is the condition for moving up. The scale is logarithmic: each level takes longer to clear than the one below.",
+   "key_facts": [
+    "Primary purpose: help a coach decide where to start a new athlete or client who is unsure what level or division they should compete at.",
+    "Secondary purpose: a guideline for deciding whether an athlete should progress to a higher level — including readiness to move from a doubles division to solo.",
+    "Level 1 — absolute novice. May never have trained in a gym, may be there to lose weight; needs the lexicon of fitness and basic movement patterns before anything else.",
+    "Level 2 — beginner. Level 3 — open-division athlete. Level 4 — pro-division athlete. Level 5 — elite or age-group World Championship athlete.",
+    "Every level is specified across four categories: cardio guidelines, strength guidelines by movement pattern, HYROX exercise standards, and time guidelines.",
+    "The governing rule: 'you are your lowest level.' An athlete is graded at their weakest category, not an average of the four.",
+    "Worked example from the module: an athlete can be level 1 on cardio, level 5 on strength and level 3 on HYROX exercise standards — and is a level 1 athlete for progression purposes.",
+    "The classic profile mismatch is the runner who tests level 4-5 on the erg pieces but cannot move the sled: fast to that point in the race, then stopped.",
+    "Because HYROX demands a multitude of qualities, being well-rounded is the condition for moving up a level — a single lagging category holds the athlete where they are.",
+    "The scale is logarithmic: each level takes longer to clear than the one below, as beginner gains flatten.",
+    "Indicative timeline given in the module: roughly two months as a novice, around half a year as a beginner, and perhaps two years at open level. Treat these as illustrative, not prescriptive.",
+    "Coaching output: score the athlete separately in all four categories, train the lowest, and hold the rest at maintenance — the profile makes the training priority unambiguous.",
+    "This dovetails with the interference-effect material (day 42): the level system identifies which quality earns the block's five or six sessions and which drops to a twice-weekly maintenance dose.",
+    "Not captured here: the numeric thresholds for each level and category live in a separate 'HYROX Fitness Level Guidelines' page within the same section, which could not be extracted. Confirm the actual values there before placing an athlete."
+   ],
+   "training_link": "Score every new athlete across all four categories separately rather than forming a single overall impression — cardio, strength by pattern, HYROX exercise standards, and times. The profile is almost always uneven, and the uneven bit is the point. Whatever comes out lowest is the block's priority and earns the majority of the sessions; everything else drops to maintenance, roughly twice a week, which is exactly the interference-effect logic from day 42. Then use the same profile for the honest conversation about divisions: a strong athlete with level 1 cardio is not an open-division athlete yet, however good the sled looks. And set expectations about time — each level takes longer than the last, so an athlete who cleared novice in two months should not expect to clear open in two more.",
+   "glossary": [
+    {
+     "term": "5 Level System",
+     "def": "HYROX's five-tier ladder — novice, beginner, open, pro, elite — used to decide where to start an athlete and whether they are ready to progress or change division.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M10 32h12v-6h12v-6h12v-6h12v-6h10\" fill=\"none\" stroke=\"#67e8b0\" stroke-width=\"2\"/><line x1=\"10\" y1=\"34\" x2=\"72\" y2=\"34\" stroke=\"#3a4a5e\" stroke-width=\"1\"/></svg>"
+    },
+    {
+     "term": "The four categories",
+     "def": "Cardio guidelines, strength guidelines by movement pattern, HYROX exercise standards, and time guidelines — the axes on which every level is specified.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"16\" y=\"8\" width=\"48\" height=\"24\" rx=\"2\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"1.6\"/><path d=\"M32 8v24M48 8v24M16 16h48M16 24h48\" stroke=\"#3a4a5e\" stroke-width=\"1.2\"/><rect x=\"32\" y=\"16\" width=\"16\" height=\"8\" fill=\"#67e8b0\" opacity=\"0.35\"/></svg>"
+    },
+    {
+     "term": "You are your lowest level",
+     "def": "The governing rule: an athlete is graded at their weakest of the four categories rather than their average, so progression requires being well-rounded.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M8 12 C26 13 44 22 72 33\" fill=\"none\" stroke=\"#ffb86b\" stroke-width=\"2\"/><line x1=\"8\" y1=\"34\" x2=\"72\" y2=\"34\" stroke=\"#3a4a5e\" stroke-width=\"1\"/></svg>"
+    },
+    {
+     "term": "Logarithmic progression",
+     "def": "The property that each level takes longer to clear than the one below, as beginner gains flatten with training age.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M8 26 C20 26 22 32 32 32 C46 32 46 12 66 12\" fill=\"none\" stroke=\"#67e8b0\" stroke-width=\"2\"/><line x1=\"8\" y1=\"24\" x2=\"72\" y2=\"24\" stroke=\"#3a4a5e\" stroke-width=\"1\" stroke-dasharray=\"3 2\"/></svg>"
+    },
+    {
+     "term": "Profile mismatch",
+     "def": "A large spread between an athlete's categories — the runner strong on the ergs but unable to move the sled — which identifies the training priority immediately.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M10 20h20M30 20l14-9M30 20l14 9\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"2\"/><circle cx=\"48\" cy=\"11\" r=\"3\" fill=\"#67e8b0\"/><circle cx=\"48\" cy=\"29\" r=\"3\" fill=\"#ffb86b\"/></svg>"
+    },
+    {
+     "term": "Division readiness",
+     "def": "Using the level profile to judge which division an athlete should enter, and when they are ready to move from doubles to solo.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"14\" y=\"10\" width=\"52\" height=\"22\" rx=\"3\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"1.6\"/><path d=\"M40 10v22\" stroke=\"#ffb86b\" stroke-width=\"2\"/><path d=\"M20 21h14M46 21h14\" stroke=\"#67e8b0\" stroke-width=\"1.6\"/></svg>"
+    }
+   ],
+   "relevant": true,
+   "exam_focus": "Name the five levels and the four categories, apply the 'you are your lowest level' rule to a mixed profile, and convert that profile into a training priority and a division recommendation.",
    "figures": []
   }
  }

@@ -2291,6 +2291,51 @@
    "q": "Justify prioritising loaded carries in a HYROX strength plan.",
    "a": "They train grip endurance, trunk stiffness and gait under load, which transfers directly to the 200 m farmers carry and to holding a sandbag through lunges. They deliver that with relatively low eccentric cost, so they add strength-endurance without leaving legs too beaten up to run well.",
    "type": "applied"
+  },
+  {
+   "q": "Why must a strength base precede power training?",
+   "a": "Power work is applied strength — there must be force to apply before there is anything to accelerate. And explosive work on an unprepared body is where injuries occur.",
+   "type": "recall"
+  },
+  {
+   "q": "Distinguish raw from applied strength.",
+   "a": "Raw = what you can move in squat, deadlift and press. Applied = how that force is used to move an external load or your body.",
+   "type": "recall"
+  },
+  {
+   "q": "What does 'strength base' mean beyond the numbers?",
+   "a": "Technical efficiency in the big compound lifts, including trunk stability and control of the eccentric phase.",
+   "type": "recall"
+  },
+  {
+   "q": "State the practitioners' paramount reason for building the base first.",
+   "a": "Injury prevention — stable joints, strong tendons, the strength to hold positions and adequate range are what make the rising volume and fatigue of a build survivable.",
+   "type": "application"
+  },
+  {
+   "q": "Describe a contrast pairing and what it does.",
+   "a": "A heavy slow lift followed immediately by a fast explosive movement using the same or supporting muscle groups, letting the nervous system switch recruitment on and off.",
+   "type": "recall"
+  },
+  {
+   "q": "Give three HYROX-specific contrast pairings.",
+   "a": "Back squat + broad jump (burpee broad jump); deadlift + row sprint; barbell lunges + light sled sprint (sandbag lunge and sled). Also front squat or push press + maximal-height wall balls.",
+   "type": "application"
+  },
+  {
+   "q": "How do the pairings change as a race approaches?",
+   "a": "General strength foundation early; the explosive partner shifts toward actual HYROX movements near the race, maintaining strength while making explosiveness race-specific.",
+   "type": "application"
+  },
+  {
+   "q": "Why load the lunge heavier than race weight?",
+   "a": "It forces trunk stabilisation beyond race demand, so the athlete has already met a heavier load while fatigued before the sandbag shifts on race day.",
+   "type": "application"
+  },
+  {
+   "q": "How is RFD maintained for running?",
+   "a": "Keep the steps 'snappy' — short sprints inside a long run every 800 m-1 km, or alternating minutes of 15-20 s air-bike sprints with single power cleans/snatches for 10-20 min.",
+   "type": "application"
   }
  ],
  "pe_screening": [
@@ -2601,6 +2646,46 @@
    "q": "Give one weekly-ordering rule for a HYROX strength-emphasis block.",
    "a": "Hard strength early in the week on a low-running day; long/threshold running placed after strength days or on separate days, with easy aerobic work paired to lifting days.",
    "type": "applied"
+  },
+  {
+   "q": "Distinguish acute from chronic interference, and say which the Module 4 practitioners program around.",
+   "a": "Acute = one session degrading the quality of the next; chronic = blunted adaptation rate over time. They program primarily around the acute effect.",
+   "type": "recall"
+  },
+  {
+   "q": "What separation do the course practitioners actually recommend?",
+   "a": "3-4 hours plus at least one meal between opposing sessions. Wider convention cites 6 h+, but the course's figure is 3-4 h with a feed.",
+   "type": "recall"
+  },
+  {
+   "q": "Give their practical demonstration that power is what interference costs you.",
+   "a": "Measure a max box jump, go for a run, measure again — it is lower. Strength and aerobic capacity can rise together; RFD is what falls.",
+   "type": "application"
+  },
+  {
+   "q": "Explain the 'strength sufficiency' reframe.",
+   "a": "HYROX strength is a threshold — are you strong enough to finish this race — not a maximum. Once cleared, a slower rate of strength gain is an acceptable cost of concurrency.",
+   "type": "application"
+  },
+  {
+   "q": "What is a maintenance dose in their practice?",
+   "a": "Roughly twice a week, against five or six sessions for the block's priority quality.",
+   "type": "recall"
+  },
+  {
+   "q": "How do transfer-over movements reduce interference?",
+   "a": "They serve several stations at once — single-leg work develops sandbag lunges, wall balls and sled push together — so less total training is needed.",
+   "type": "application"
+  },
+  {
+   "q": "What is the counter-warning about over-managing interference?",
+   "a": "The race demands strength and endurance in a single session, so an athlete who avoids all interference has stopped training for HYROX. Some interference is the training.",
+   "type": "application"
+  },
+  {
+   "q": "Name three ways to micro-dose RFD across a week.",
+   "a": "7-15 s sprints inside a long endurance piece; strides under 30 s; heavy low-rep deadlifts plus box jumps on a threshold day. French contrast pairings also count.",
+   "type": "recall"
   }
  ],
  "pd_taper": [
@@ -6259,6 +6344,36 @@
    "q": "What are prohibited methods?",
    "a": "Manipulation of blood and blood components, chemical and physical manipulation, and gene doping.",
    "type": "recall"
+  },
+  {
+   "q": "Whose responsibility is it to maintain contact with the chaperone?",
+   "a": "The athlete's, not the chaperone's. Losing contact — typically by running into the crowd to celebrate — can be recorded as a missed test.",
+   "type": "recall"
+  },
+  {
+   "q": "Is a broken chaperone contact automatically a missed test?",
+   "a": "No. It can be recorded as one, but the doping commission representative decides case by case whether the test can continue.",
+   "type": "application"
+  },
+  {
+   "q": "The athlete nutrition table by the out-arch — what's the catch?",
+   "a": "It is explicitly unsupervised: no camera, no security, no staff. Anything left there is at the athlete's own risk, and the athlete is responsible for whatever they consume, not HYROX.",
+   "type": "application"
+  },
+  {
+   "q": "When is an elite athlete free to leave the recovery area, and why?",
+   "a": "Not until the official end of race — 30 minutes after the last finisher — because an athlete can still be selected after a DNF or a finish, and disappearing breaks continuity.",
+   "type": "recall"
+  },
+  {
+   "q": "Why are local snacks removed from the elite areas before athletes arrive?",
+   "a": "Continuity over them cannot be assured, so they carry a contamination risk. Only sealed products are provided.",
+   "type": "application"
+  },
+  {
+   "q": "What must an athlete do if they DNF?",
+   "a": "Report to a named official — technical director for elite racing, a nominated race director, or the doping control liaison — not to anyone simply wearing event kit.",
+   "type": "recall"
   }
  ],
  "st_framework": [
@@ -7003,6 +7118,130 @@
    "q": "Rehearsing wall-ball set strategy, your athlete tries two plans for the 100 reps. Plan A: 5 sets of 20 at 24 reps/min with 12 s between sets. Plan B: 10 sets of 10 at 26 reps/min with 5 s between sets. Which is faster, by how much, and what does the exercise actually teach?",
    "a": "Plan A: work time is 100 / 24 = 4.1667 min = 250 s; rests are 4 x 12 = 48 s; total 298 s (4:58). Plan B: work time is 100 / 26 = 3.846 min = 230.8 s; rests are 9 x 5 = 45 s; total 275.8 s (about 4:36). Plan B is faster by roughly 22 s. What it teaches is not the answer but the method: the rep rates are this athlete's, measured at station eight after run 8, and they change with fatigue, so the comparison must be rehearsed rather than calculated in the abstract. Rehearsing both plans is decision skill work — it gives her a felt basis for choosing set size in the race rather than defaulting to whatever she did last time.",
    "type": "calc"
+  }
+ ],
+ "nu_supplements": [
+  {
+   "q": "What's the module's default position?",
+   "a": "Food-first. Supplementation is a considered exception, not a default.",
+   "type": "recall"
+  },
+  {
+   "q": "Name the three legitimate reasons to supplement.",
+   "a": "Meeting macronutrient needs around training and competition, correcting a deficiency from dietary restriction, or using a genuine ergogenic aid.",
+   "type": "recall"
+  },
+  {
+   "q": "State the three-part filter.",
+   "a": "Permissibility, safety, efficacy.",
+   "type": "recall"
+  },
+  {
+   "q": "What counts as strongest evidence of effectiveness?",
+   "a": "Systematic reviews and meta-analyses pooling multiple studies, plus stance and consensus statements.",
+   "type": "recall"
+  },
+  {
+   "q": "Name the well-supported ergogenic aids.",
+   "a": "Caffeine, creatine, beta-alanine, sodium bicarbonate and dietary nitrate (beetroot juice).",
+   "type": "recall"
+  },
+  {
+   "q": "When are iron and vitamin D justified?",
+   "a": "Only where deficiency is confirmed by testing. Supplementing without confirmed deficiency has no established benefit, and excess iron can harm.",
+   "type": "application"
+  },
+  {
+   "q": "Name supplements that are heavily marketed but weakly evidenced.",
+   "a": "Glutamine as an ergogenic aid or lactate buffer, BCAAs for endurance performance, and most proprietary recovery blends.",
+   "type": "recall"
+  },
+  {
+   "q": "When did HYROX introduce drug testing?",
+   "a": "February 2024, expanded for the 2025-26 competitive season.",
+   "type": "recall"
+  },
+  {
+   "q": "What does strict liability mean here?",
+   "a": "It's the athlete's individual duty to avoid prohibited substances; neither intent nor knowing use needs proving for a violation.",
+   "type": "recall"
+  },
+  {
+   "q": "What is Global DRO, and what's the country caveat?",
+   "a": "An online check for whether medications contain prohibited substances. Formulations differ between countries, so re-check anything bought abroad.",
+   "type": "application"
+  },
+  {
+   "q": "What does Informed Sport certification NOT guarantee?",
+   "a": "It doesn't verify that listed ingredients and dosages are accurate — it tests for banned substances only. It reduces doping risk, not mislabelling risk.",
+   "type": "application"
+  },
+  {
+   "q": "How many samples are collected at an elite race, and how is the group chosen?",
+   "a": "Roughly 30 — up to five athletes per gender category in singles (≈10) plus five pairs per gender category in doubles (≈20). Elite 15 podium finishers are mandatory-tested and the remainder drawn at random. Set to rise with a new division below Elite 15.",
+   "type": "recall"
+  }
+ ],
+ "hp_levels": [
+  {
+   "q": "What two questions does the 5 Level System exist to answer?",
+   "a": "Where to start a new athlete who doesn't know what level or division to compete at, and whether an athlete is ready to progress a level — including doubles to solo.",
+   "type": "recall"
+  },
+  {
+   "q": "Name the five levels.",
+   "a": "1 absolute novice, 2 beginner, 3 open, 4 pro, 5 elite / age-group World Championship.",
+   "type": "recall"
+  },
+  {
+   "q": "Name the four categories every level is specified across.",
+   "a": "Cardio guidelines, strength guidelines by movement pattern, HYROX exercise standards, and time guidelines.",
+   "type": "recall"
+  },
+  {
+   "q": "State the governing rule and what it implies.",
+   "a": "'You are your lowest level' — graded at the weakest category, not the average. Progression therefore requires being well-rounded.",
+   "type": "recall"
+  },
+  {
+   "q": "An athlete is level 1 cardio, level 5 strength, level 3 exercise standards. What level are they, and what do you train?",
+   "a": "Level 1. Cardio is the priority and earns most of the sessions; strength and standards drop to maintenance.",
+   "type": "application"
+  },
+  {
+   "q": "Describe the classic profile mismatch the module gives.",
+   "a": "The runner who tests level 4-5 on the erg pieces but cannot move the sled — fast up to that point in the race, then stopped.",
+   "type": "application"
+  },
+  {
+   "q": "What does 'logarithmic' mean here?",
+   "a": "Each level takes longer to clear than the one below, as beginner gains flatten. Illustratively: ~2 months novice, ~half a year beginner, perhaps two years at open.",
+   "type": "recall"
+  },
+  {
+   "q": "How does the level system connect to interference management?",
+   "a": "It identifies which quality earns the block's five or six sessions and which drops to a roughly twice-weekly maintenance dose (day 42).",
+   "type": "application"
+  },
+  {
+   "q": "Level 1 describes whom, and what do they need first?",
+   "a": "The absolute novice, possibly never in a gym. They need the lexicon of fitness and basic movement patterns before anything else.",
+   "type": "recall"
+  },
+  {
+   "q": "How would you use the profile for a division conversation?",
+   "a": "Recommend the division matching their lowest category — a strong athlete with level 1 cardio is not yet an open-division athlete, however good the sled looks.",
+   "type": "application"
+  },
+  {
+   "q": "Where do the actual numeric thresholds live?",
+   "a": "In a separate 'HYROX Fitness Level Guidelines' page inside the same section. Confirm the values there before placing an athlete.",
+   "type": "recall"
+  },
+  {
+   "q": "Why is being well-rounded a condition of progression?",
+   "a": "HYROX demands a multitude of qualities, so a single lagging category holds the athlete at that level regardless of strengths elsewhere.",
+   "type": "application"
   }
  ]
 }
