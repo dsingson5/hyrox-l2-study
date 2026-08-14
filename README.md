@@ -13,7 +13,7 @@ Level 2 *Mastering Performance* certification.
 
 ### Curriculum
 
-119 lessons. Days 1-51 walk the 13 official modules; days 52-53 add the two
+124 lessons. Days 1-51 walk the 13 official modules; days 52-53 add the two
 Module 1 topics the original pass missed (reflective practice / growth mindset,
 holistic athlete development); days 54-59 are cross-module exam-synthesis days;
 days 60-61 are mock assessments; days 62-75 deepen Modules 4, 5, 7.1 and 7.2.
@@ -53,6 +53,16 @@ established sport-science knowledge. They are not a reproduction of HYROX
 Academy course material. Assessment-format details are inferred from public
 sources about the same platform's other courses and are flagged as unverified
 in the lessons that mention them.
+
+Days 123-124 add Module 8 section 3, **Athlete Monitoring**, which had no coverage
+anywhere on the site: the testing battery (5 km run, AMRAP 7 burpees + 1 km row, "Karen",
+sled push to failure, rep-max squat endurance, NIRS 5-1-5, the WOD-Science functional ramp
+test with IMU power analysis, the compromised running fatigue test) and both example test
+weeks; then the profiling logic that turns those results into a periodization model —
+strength-biased vs endurance-biased novices, the delivery-limited vs utilisation-limited
+distinction and its opposite interval prescriptions, the spider diagram with goal-based
+versus elite-based scaling, and the note that HYROX-specific normative values do not yet
+exist so coaches must build their own.
 
 Gap audit status (Aug 2026, closed): **all identified course-section gaps are authored.**
 The seven lessons lost when days 111-113 were renumbered over the 111-119 block have been

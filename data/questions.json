@@ -7782,5 +7782,134 @@
    "a": "Unverified — the source is delivered as video and couldn't be checked. The principle-versus-template framing is a reconstruction.",
    "type": "recall"
   }
+ ],
+ "pd_testbattery": [
+  {
+   "q": "Why are race times insufficient for profiling an athlete?",
+   "a": "They give an overall impression of fitness but little insight into specific strengths and weaknesses, so they cannot guide the choice of training focus or periodization model.",
+   "type": "recall"
+  },
+  {
+   "q": "What quality does the HYROX strength battery target, and why not 1RM?",
+   "a": "Strength endurance — repeated lower-body efforts at a high percentage of maximal load. HYROX does not demand the maximal strength levels of weightlifting, CrossFit or powerlifting.",
+   "type": "recall"
+  },
+  {
+   "q": "State the sled push to failure protocol.",
+   "a": "Start at 70% of competition weight, push 12.5 m unbroken, repeat every 3 minutes adding 20 kg (men) or 15 kg (women) until the 12.5 m can no longer be completed unbroken. Score is the last weight successfully pushed.",
+   "type": "recall"
+  },
+  {
+   "q": "Why record the rep scheme as well as the time in 'Karen'?",
+   "a": "The rep scheme reveals pacing and fatigue management, which the total time alone conceals.",
+   "type": "application"
+  },
+  {
+   "q": "What does NIRS measure that VO2max does not?",
+   "a": "Local muscle oxygenation — SmO2 and total haemoglobin — at the muscle where energy is being consumed, rather than a systemic whole-body value.",
+   "type": "recall"
+  },
+  {
+   "q": "Why is no warm-up performed before a 5-1-5 assessment?",
+   "a": "So that oxygen kinetics at the onset of exercise can be observed.",
+   "type": "application"
+  },
+  {
+   "q": "Why does the 5-1-5 repeat each load twice?",
+   "a": "To compare the response to repeated efforts, which mirrors HYROX where running bouts are repeatedly interrupted by stations.",
+   "type": "application"
+  },
+  {
+   "q": "Describe one round of the compromised running fatigue test.",
+   "a": "500 m run, 12 kettlebell swings (24/16 kg), 10 burpee broad jumps, 20 m sled push at race weight, 500 m run — then 2 minutes rest. Four rounds total.",
+   "type": "recall"
+  },
+  {
+   "q": "What problem do IMUs solve in the functional ramp test?",
+   "a": "Quantifying external work in functional movements, by converting acceleration and angular velocity into instantaneous power output so the ramp becomes measurable.",
+   "type": "recall"
+  },
+  {
+   "q": "Why are rest days built into a test week?",
+   "a": "To reduce interference between tests and protect data quality — a test run on residual fatigue measures the fatigue rather than the quality.",
+   "type": "application"
+  }
+ ],
+ "pd_profiling": [
+  {
+   "q": "What decision does profiling exist to resolve?",
+   "a": "Which periodization model to use. Since no model is consistently superior, the athlete's profile rather than the model's reputation has to drive the choice.",
+   "type": "application"
+  },
+  {
+   "q": "In what sense is almost every HYROX competitor a novice?",
+   "a": "They are experienced in another discipline — strength training, CrossFit, running, triathlon — but new to the specific mixed demands of HYROX, so background-specific weaknesses must be addressed first.",
+   "type": "recall"
+  },
+  {
+   "q": "Outline the periodization emphasis for a strength-biased novice.",
+   "a": "Block periodization of endurance: a long general preparation phase of low-intensity running with gradually rising mileage, with strength kept on an undulating model at around 20% of total volume, shifting to functional strength endurance at race intensity near competition.",
+   "type": "application"
+  },
+  {
+   "q": "Why is running prioritised for that athlete?",
+   "a": "Roughly half of race time is spent running, and it is usually their weakest link.",
+   "type": "recall"
+  },
+  {
+   "q": "Outline the emphasis for an endurance-biased novice.",
+   "a": "Maintain rather than expand the aerobic base; focus on strength endurance and high power on an undulating model, with sprint-interval work (high power, long recoveries) to replicate heavy functional movements under fatigue.",
+   "type": "application"
+  },
+  {
+   "q": "What is 'overprogramming' and who is at risk?",
+   "a": "Overreaching driven by unfamiliar training intensity rather than volume. Endurance-biased athletes are at risk because HYROX intensity far exceeds what pure endurance sport accustomed them to.",
+   "type": "recall"
+  },
+  {
+   "q": "How does a delivery-limited athlete present on NIRS, and what do they need?",
+   "a": "SmO2 falls under work but THb fails to recover during rest — cardiac output cannot sustain blood flow. They need longer intervals at or just above lactate threshold with relatively short recoveries.",
+   "type": "application"
+  },
+  {
+   "q": "How does a utilisation-limited athlete present, and what do they need?",
+   "a": "SmO2 does not fall sufficiently even at high workloads — oxygen is delivered but not extracted. They need high-intensity, high-power functional intervals with full recovery.",
+   "type": "application"
+  },
+  {
+   "q": "Why is confusing the two limiters costly?",
+   "a": "They require opposite recovery structures — short recoveries versus full recoveries — so a misdiagnosis corrupts the rest intervals as well as the work.",
+   "type": "application"
+  },
+  {
+   "q": "How is the 100% reference set on a spider diagram?",
+   "a": "Either goal-based, where the athlete's own target is 100% (a 21-min 5 km goal against a current 23 min scores about 91%), or elite-based, where a top-performer value defines 100%.",
+   "type": "application"
+  },
+  {
+   "q": "Give the elite reference values for the 5 km run and 'Karen'.",
+   "a": "5 km run 16:00 men / 18:00 women; 'Karen' 150 wall balls 4:50 men / 5:10 women.",
+   "type": "recall"
+  },
+  {
+   "q": "How often should the status layer be refreshed?",
+   "a": "After each assessment cycle, roughly every 6-8 weeks.",
+   "type": "recall"
+  },
+  {
+   "q": "Why are published normative values largely unavailable for these tests?",
+   "a": "The sport is new and the protocols — combining functional fitness with endurance profiling — are new. Coaches must build reference data themselves through systematic repeated testing across a group over weeks and months.",
+   "type": "recall"
+  },
+  {
+   "q": "Is a large test battery necessary?",
+   "a": "No. Coaches may trim to one or two key assessments depending on time, equipment and phase; what matters is that the combination yields a clear overall profile, not the number of tests.",
+   "type": "application"
+  },
+  {
+   "q": "Does a strong 1RM predict strength endurance?",
+   "a": "No — high maximal strength does not automatically predict high strength endurance at submaximal loads, which is why the battery tests endurance qualities directly rather than inferring them.",
+   "type": "application"
+  }
  ]
 }
