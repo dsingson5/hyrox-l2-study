@@ -28,12 +28,11 @@ expert lenses (biomechanics / physiotherapy / strength & conditioning) followed
 by a deep dive on each of the eight stations, including the burpee broad jump,
 which previously had no dedicated lesson anywhere on the site.
 
-Days 111-119 close the last of the audited gaps: Module 7.3's test matrix and
-decision tree (111-112), Module 4's 5 Level System and safety/efficacy/
-efficiency hierarchy (113-114), Module 3's how-to-utilise-testing-data
-(115), Module 8's double peaking (116), Module 7.1's categorization of
-skills (117), Module 7.2's differences in running (118) and Module 6's
-supplements (119).
+Days 111-113 (authored later, from remaining course media) cover a periodisation-models
+critique, metabolic pathways and skill in the high-performance athlete. An earlier
+111-119 block of gap-close lessons was overwritten when those days were renumbered;
+two of them — Module 6 supplements and the Module 4 5 Level System — have since been
+restored at new day numbers.
 
 **Correction, Aug 2026:** days 37-39 (`pe_strength`, `pe_screening`,
 `pe_load_mgmt`) were originally filed under Module 7.4 on the assumption that
@@ -55,14 +54,31 @@ Academy course material. Assessment-format details are inferred from public
 sources about the same platform's other courses and are flagged as unverified
 in the lessons that mention them.
 
-Gap audit status (Aug 2026): **all identified course-section gaps are now
-authored.** Every teaching section across the 13 official modules maps to at
-least one lesson.
+Gap audit status (Aug 2026, revised): a block of gap-close lessons authored for days
+111-119 was lost when those day slots were renumbered for new content. **Re-opened
+gaps:** Module 7.3 test matrix and decision tree; Module 4's safety/efficacy/efficiency;
+Module 3's how-to-utilise-testing-data; Module 8's double peaking; Module 7.1's
+categorization of skills; Module 7.2's differences in running. Module 6 supplements and
+the Module 4 5 Level System have been restored. Drafts of the rest are in the git
+history at commits 1cea6c9, 9b35296 and 2487b12 if they are wanted back.
 
-Two sections could not be verified against the source because the course
-delivers them as podcast audio or video rather than text — Module 4's *5 Level
-System* (day 113) and Module 7.2's *Differences in Running* (day 118). Both are
-reconstructions from surrounding module material and are flagged as unverified
-in-lesson and in their question sets. Confirm the exact definitions against the
-module before relying on them in an assessment.
+**Verified from source (Aug 2026).** Sections that were previously unverifiable have been
+transcribed from audio David supplied, and the lessons rewritten from the actual course
+material:
+
+* Module 2 *Anti-Doping WADA* — day 101 now carries the race-day chaperone and continuity
+  procedure from the Elite Athlete Briefing slides.
+* Module 4 *5 Level System* — **the earlier version was wrong.** It reconstructed the system
+  as a movement-competence ladder. It is a population/division ladder (novice, beginner,
+  open, pro, elite) scored across four categories, with an athlete graded at their lowest
+  category. Rewritten and restored.
+* Module 4 *Interference Effect* and *Building Power* — days 42 and 37 now carry the
+  practitioners' material, including a corrected session-separation figure (3-4 h plus a
+  meal, against the 6 h convention previously recorded).
+
+Still a reconstruction: Module 7.2's *Differences in Running*, one of the lessons lost from
+the 111-119 block.
+
+Numeric thresholds for the 5 Level System's four categories live in a separate *HYROX
+Fitness Level Guidelines* page inside that section, which could not be extracted.
 
