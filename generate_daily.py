@@ -630,7 +630,8 @@ def render_html(today, today_day, today_lesson, deep_review, reviews, questions,
 '''
 
 
-def build_index_html(base_html, available, this_iso, dtopic=None, rorder=None):
+def build_index_html(base_html, available, this_iso, dtopic=None, rorder=None,
+                     page_prefix="daily/", at_root=True):
     """Wrap the day's page as a self-correcting landing page.
     Injects a tiny script that:
       1. Computes *today* in Asia/Manila (viewer's own clock is irrelevant).
@@ -675,8 +676,9 @@ def build_index_html(base_html, available, this_iso, dtopic=None, rorder=None):
         'year:"numeric",month:"2-digit",day:"2-digit"}).formatToParts(d||new Date());'
         'var o={};p.forEach(function(x){o[x.type]=x.value;});return o.year+"-"+o.month+"-"+o.day;}'
         'catch(e){return null;}}'
-        'var today=mt();if(!today){location.replace("daily/hyrox_"+THIS+".html");return;}'
-        'function go(t){location.replace("daily/hyrox_"+(t||THIS)+".html");}'
+        'var today=mt();if(!today){location.replace("' + page_prefix + 'hyrox_"+THIS+".html");return;}'
+        'function go(t){try{console.log("[resume] ->",t||THIS);}catch(e){}'
+        'location.replace("' + page_prefix + 'hyrox_"+(t||THIS)+".html");}'
         'try{var ov=document.createElement("div");ov.id="sa-resume";'
         'ov.textContent="Finding your place...";'
         'ov.setAttribute("style","position:fixed;inset:0;display:flex;align-items:center;'
@@ -742,15 +744,19 @@ def build_index_html(base_html, available, this_iso, dtopic=None, rorder=None):
     # Root landing page lives beside modules.html, not inside daily/ — undo
     # the daily-relative prefixes for this one output. Normally invisible
     # (the head redirect fires first), but with JS off or a failed redirect
-    # these links are what the visitor gets.
-    base_html = base_html.replace('href="../modules.html"', 'href="modules.html"')
-    base_html = base_html.replace('window.location.href = "hyrox_"', 'window.location.href = "daily/hyrox_"')
-    base_html = base_html.replace(
-        '<div class="container">',
-        '<noscript><div style="padding:12px 16px;font:14px sans-serif;background:#231f1f;color:#eee">'
-        'JavaScript is off, so the resume redirect can\'t run — '
-        '<a href="modules.html" style="color:#7fd4ff">browse all modules &amp; lessons</a> instead.</div></noscript>'
-        '<div class="container">', 1)
+    # these links are what the visitor gets. The rolling daily/hyrox_today.html
+    # copy gets the SAME redirect (at_root=False, page_prefix="") so a
+    # bookmarked "today" URL also resumes at the most relevant lesson instead
+    # of silently showing the chronological day.
+    if at_root:
+        base_html = base_html.replace('href="../modules.html"', 'href="modules.html"')
+        base_html = base_html.replace('window.location.href = "hyrox_"', 'window.location.href = "daily/hyrox_"')
+        base_html = base_html.replace(
+            '<div class="container">',
+            '<noscript><div style="padding:12px 16px;font:14px sans-serif;background:#231f1f;color:#eee">'
+            'JavaScript is off, so the resume redirect can\'t run — '
+            '<a href="modules.html" style="color:#7fd4ff">browse all modules &amp; lessons</a> instead.</div></noscript>'
+            '<div class="container">', 1)
     return base_html.replace("<head>", "<head>\n" + CACHE_META + redirect, 1)
 
 
@@ -799,7 +805,8 @@ def build_day(build_date, curriculum, questions, is_entry):
         return 0
     rolling_path = OUT / "hyrox_today.html"
     index_path = ROOT / "index.html"  # GitHub Pages entry point
-    rolling_path.write_text(html, encoding="utf-8")
+    # (rolling copy written below, once the resume-redirect inputs exist —
+    # it carries the same redirect so bookmarked "today" URLs also resume.)
     # Index is the GitHub Pages entry point: make it self-correct to Manila "today".
     _start = meta["start_date"]
     available = sorted({d for p in OUT.glob("hyrox_2*.html") if (d := p.stem.replace("hyrox_", "")) >= _start})
@@ -831,6 +838,8 @@ def build_day(build_date, curriculum, questions, is_entry):
     except Exception:
         _rorder = []
     index_path.write_text(build_index_html(html, available, build_date.isoformat(), _lesson_dates, _rorder), encoding="utf-8")
+    rolling_path.write_text(build_index_html(html, available, build_date.isoformat(), _lesson_dates, _rorder,
+                                             page_prefix="", at_root=False), encoding="utf-8")
     print(f"Wrote {rolling_path} (rolling)")
     print(f"Wrote {index_path} (GitHub Pages entry)")
     return 0
