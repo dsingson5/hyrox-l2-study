@@ -87,7 +87,7 @@ DOMAIN_FULL = {"CM": "Coaching, Mindset & Individualisation", "SM": "Sports Medi
                "PG": "Performance Pillars & Programming"}
 # Interleave targets across the five L2 domains, proportional to their share
 # of authored lessons (keep in sync with app.js EXAM_WEIGHTS).
-EXAM_WEIGHTS = {"CM": 0.23, "SM": 0.13, "BM": 0.24, "PH": 0.20, "PG": 0.20}
+EXAM_WEIGHTS = {"CM": 0.22, "SM": 0.12, "BM": 0.25, "PH": 0.19, "PG": 0.22}
 
 # ── Interactive-figure aliases ───────────────────────────────────────────────
 # widgets/steppers/biomech/motifs were inherited from the CSCS site and are

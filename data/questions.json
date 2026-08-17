@@ -7004,5 +7004,563 @@
    "a": "Plan A: work time is 100 / 24 = 4.1667 min = 250 s; rests are 4 x 12 = 48 s; total 298 s (4:58). Plan B: work time is 100 / 26 = 3.846 min = 230.8 s; rests are 9 x 5 = 45 s; total 275.8 s (about 4:36). Plan B is faster by roughly 22 s. What it teaches is not the answer but the method: the rep rates are this athlete's, measured at station eight after run 8, and they change with fatigue, so the comparison must be rehearsed rather than calculated in the abstract. Rehearsing both plans is decision skill work — it gives her a felt basis for choosing set size in the race rather than defaulting to whatever she did last time.",
    "type": "calc"
   }
+ ],
+ "bm_techmodels": [
+  {
+   "q": "What are the three layers of a technical model, and what coaching purpose does each layer serve?",
+   "a": "The layers are: the movement divided into phases; a technical description of efficient execution within each phase; and the physical attributes each phase demands. The phase structure organises observation, the descriptions tell the coach what to look for on video and where time or energy is being lost, and the attribute list tells the coach what to train when a fault does not respond to cueing. In HYROX the models are efficiency-first, because running fills roughly half of race time and energy saved there is spent at the stations.",
+   "type": "recall"
+  },
+  {
+   "q": "Name the four phases of the SkiErg technical model and identify where inefficiency most commonly concentrates.",
+   "a": "Initiation, overcoming inertia, the arm pull, and recovery. Inefficiency concentrates at the start of each stroke — overcoming inertia — where the athlete's best asset is body weight, and the advantage is lost if the drop begins before tension is felt in the cords, while the handles are still travelling back up. Two further markers: the pull should finish with the hands arriving next to the thighs, not swept out behind the hips, and the recovery should be unhurried enough to breathe and reset.",
+   "type": "recall"
+  },
+  {
+   "q": "Define an active contact and explain the mechanism by which it reduces braking.",
+   "a": "An active contact is a touchdown in which the foot is moving downwards and backwards relative to the body, produced by the hip extending into the landing. It requires front-side mechanics — heel up and thigh rotating forward immediately after toe-off — so the knee is not still extending forwards at contact. This removes the blocking effect of a reaching landing, shortens the touchdown distance and therefore the braking time, and lowers the braking force the propulsive phase must repay.",
+   "type": "recall"
+  },
+  {
+   "q": "List the reliability rules of the DIY treadmill gait-analysis protocol.",
+   "a": "Retest on the same treadmill at the same comfortable whole-number speed; film in high-speed mode at 120–240 fps; analyse only once the stride has settled; mark the first frame of clear contact and the last frame before the foot leaves the belt; capture at least five contacts per foot and average them before comparing sides; and compute asymmetry per metric against the under-10% target. The rules exist because single steps vary too much to diagnose from, and because a changed speed or treadmill invalidates comparison with the previous test.",
+   "type": "recall"
+  },
+  {
+   "q": "What is leakage? Give its rowing-specific name and describe how it appears there.",
+   "a": "Leakage is movement through range that delivers no force into the implement — limbs travelling while the flywheel, sled or handle gains nothing. In rowing it is called slipping: the knees extend and the seat drives backwards while the handle barely moves, so the strongest segment of the stroke is spent for no boat-side return. The correction is a proximal-to-distal build-up — legs first with arms long and trunk braced as a stable platform — so handle speed rises from the first instant of leg drive.",
+   "type": "recall"
+  },
+  {
+   "q": "An athlete's slow-motion video shows the knee extending forwards late in the swing phase and a heel-first landing well ahead of the body. What does the running model predict, and what would you change?",
+   "a": "The model predicts a rigid, blocking contact: a distinct vertical impact spike, high braking force and impulse, longer contact time, more propulsive work to hold pace, and extra eccentric fatigue accumulating into the stations. The technique targets are front-side recovery (heel lifts as the thigh rotates forward at toe-off), a slight forward trunk lean, and a flatter foot planted closer to the body with a flexed knee and near-vertical shin so the contact becomes active. In parallel, programme eccentric strength and plyometric work so the tendons can accept and return load in the shorter, faster contact you are asking for.",
+   "type": "applied"
+  },
+  {
+   "q": "During the sled push, a tall athlete uses the extended-arms grip, leans body weight heavily onto the poles, and takes long strides. Identify the costs and the corrections.",
+   "a": "Three costs: leaning weight into the sled directs force downwards, adding friction and raising the horizontal force needed; the extended-arms style gives the ground-reaction vector the most scope to miss the contact point, and for a tall athlete the arms angle downwards, making it worse; and long strides shrink the share of double-foot drive while risking a foot planted ahead of the centre of mass — a sticking point if the sled loses momentum. Corrections: solid contact without resting on the sled, a more wrapped or flexed-elbow grip that lines the push through the poles, short frequent steps to keep the sled moving, and a recovery foot landing with the ankle under or just behind the hip so it can drive immediately.",
+   "type": "applied"
+  },
+  {
+   "q": "On SkiErg video you see the athlete start sinking into the drop while the handles are still travelling back up. Name the fault, its cost, and the fix.",
+   "a": "This is leakage in the overcoming-inertia phase: the body-weight drop — the athlete's main weapon against flywheel inertia — is being spent on slack cord. The cost is a weaker stroke or more strokes for the same distance, and often a drift towards an arm-dominated pull. The fix is sequencing: complete the arm recovery, feel tension in the cords, and only then let the hips and knees flex into the drop; also check the stance distance allows full arm and leg extension so the drop has room to work.",
+   "type": "applied"
+  },
+  {
+   "q": "A lunge athlete deliberately lengthens steps about 20% beyond optimal to cut the repetition count. What does the S-O-S model predict, and what attributes would justify 'strong' steps?",
+   "a": "The model predicts the centre of mass will sit behind the front heel at the low point — the dead zone — so momentum dies and each rise becomes a grinding single-leg squat, with the rear-leg drive unable to carry the body over the front foot; a step that long also sits near most athletes' comfort limit. The safer prescription is the optimal step — thigh length plus foot length, both knees at right angles — with the minimum count given by 100 m ÷ step length. Strong steps are only defensible for athletes with the hip flexibility to reach the position and the rear-leg drive, strength and power to move the centre of mass over the front foot, plus the eccentric quadriceps control to brake each landing without collapse.",
+   "type": "applied"
+  },
+  {
+   "q": "During kettlebell carries an athlete shows a visible trunk side-bend and the opposite hip dropping on every step. Explain the mechanics and give two corrections.",
+   "a": "In walking, each leg spends roughly 40% of the cycle in single support, and with kettlebells added the stance hip must resist a large turning moment that tries to drop the contralateral pelvis — the visible hip drop and compensatory side-bend mean the eccentric hip-abductor and postural capacity is being overwhelmed. Correct the technique first: allow only a small lateral shift of the combined centre of mass over the support foot rather than a gross trunk lean, keep a normal gait width because planting the foot medially lengthens the hip's moment arm, and shorten the steps with cushioned contacts to raise the double-support share and spare the grip. Then train the attribute — eccentric hip-abductor and anti-lateral-flexion strength — so the position can be held for the full 200 m.",
+   "type": "applied"
+  },
+  {
+   "q": "At 240 fps: the right foot contacts at frame 60 and leaves at frame 114; the left contacts at frame 150 and leaves at frame 210. Compute both contact times and the asymmetry, and state whether it is actionable.",
+   "a": "Right contact time = (114 − 60) ÷ 240 = 54 ÷ 240 = 0.225 s. Left contact time = (210 − 150) ÷ 240 = 60 ÷ 240 = 0.250 s. Asymmetry = (0.250 − 0.225) ÷ 0.250 × 100 = 0.025 ÷ 0.250 × 100 = 10.0%, which sits on the 10% line rather than under it — actionable. First confirm it is real by averaging at least five contacts per side, then search for a cause (strength, mobility or injury history) rather than issuing an immediate technique command.",
+   "type": "calc"
+  },
+  {
+   "q": "The belt runs at 12 km/h and the video is 240 fps. The right foot contacts at frame 100 and the next left-foot contact is at frame 196. Compute step time, step length and step frequency.",
+   "a": "Step time = (196 − 100) ÷ 240 = 96 ÷ 240 = 0.400 s. Belt speed = 12 ÷ 3.6 = 3.33 m/s, so step length = 3.33 × 0.400 = 1.33 m. Step frequency = 1 ÷ 0.400 = 2.5 steps per second (2.5 Hz). Cross-check: 1.33 m × 2.5 Hz = 3.33 m/s, which matches the belt speed, so the arithmetic is consistent.",
+   "type": "calc"
+  }
+ ],
+ "hp_movelib": [
+  {
+   "q": "What four parts document every movement in the library, and what does each part give the coach?",
+   "a": "Set-up, execution, points of performance and common faults, each paired with a video demonstration. Set-up gives the pre-repetition checklist where corrections are cheapest; execution gives the movement narrative; points of performance give the few checkpoints worth watching in real time; and the common-faults list gives a prediction of where the movement will break, priming the coach's eye before observation starts.",
+   "type": "recall"
+  },
+  {
+   "q": "Name the four categories of advancement guidelines that make up each level's promotion battery.",
+   "a": "Cardio guidelines, strength guidelines organised by movement pattern, HYROX exercise standards, and time guidelines. A level is passed by meeting the whole battery across all four categories — the structure exists precisely so that a single impressive quality cannot carry an athlete upward on its own.",
+   "type": "recall"
+  },
+  {
+   "q": "State the correction ladder in order and the condition attached to its final rung.",
+   "a": "Verbal correction first, then visual — demonstrating the fault and the correct action so the athlete sees the contrast — then tactile, meaning manual adjustment or a touch target to press against. The tactile rung requires asking the athlete's consent before any contact. The ladder exists because athletes learn through different channels, and each rung carries more information than the one before.",
+   "type": "recall"
+  },
+  {
+   "q": "At which level does racing first become recommended, and in what formats?",
+   "a": "Level 2. The green light is graduated by format: a relay team leg, an Open doubles entry with a target around two and a half hours, or a solo Open completion in the region of three hours. Level 1 athletes are advised not to race yet — the foundational patterns and base conditioning are not in place — and full solo competitiveness targets belong to Level 3 and above.",
+   "type": "recall"
+  },
+  {
+   "q": "Give three Level 5 movements and explain why they appear at the top of the library despite never featuring in a race.",
+   "a": "Examples include the overhead squat, toes-to-bar and double-unders. They are supplemental: their value is the overhead mobility, coordination and trunk-control headroom they develop, which is general athletic capacity rather than race rehearsal. They arrive last because that headroom is only worth chasing once an athlete's race-movement standards are already elite — for developing athletes the same hours buy more elsewhere.",
+   "type": "recall"
+  },
+  {
+   "q": "During box step-ups an athlete presses a hand into the front thigh on every repetition and lightly pushes off the back leg. What is really happening, and what should the coach do?",
+   "a": "Both are catalogued faults, and they share one meaning: assistance is leaking back into a movement designed to test single-leg capability, so the target leg is being undertrained and the level assessment is being flattered. The coach works the ladder — a verbal cue first (ideally external, per day 2), then demonstrating the fault beside the correct unassisted version, then a consent-first tactile cue if needed. If the pattern cannot be done cleanly, drop the box height rather than accept the assisted version, because a clean rep on an easier rung outranks a corrupted rep on a harder one.",
+   "type": "applied"
+  },
+  {
+   "q": "An athlete announces a Pro-division doubles goal. Which level's battery should the coach check, and how should the conversation go if the athlete is currently mid-Level 3?",
+   "a": "Pro-division racing lives at Level 4, and entry into Level 4 is gated by the Level 3-to-4 battery — for example a back squat at 80% of body weight, a deadlift at body weight, 10 km under 55/60 minutes, 100 wall balls at 6/4 kg inside six minutes, and 50 m of sled push at 102 kg inside four. A mid-Level 3 athlete has not cleared it yet, so the honest conversation reframes the season: race Open now at the Level 3 goal band, and treat the 3-to-4 battery as the promotion criteria that unlock the Pro attempt. One addition: the battery tests Open-style loads, so competence on the Pro implements themselves — the 9/6 kg ball, the Pro-weight sled — should be screened before the entry is booked. The battery converts an argument about ambition into a checklist about evidence.",
+   "type": "applied"
+  },
+  {
+   "q": "A coach skips the verbal and visual rungs and physically repositions an athlete's hips on the first fault. Give two distinct objections.",
+   "a": "First, consent: the tactile rung explicitly requires asking before touching, and skipping that step breaches the protocol regardless of how effective the correction might be. Second, pedagogy: the ladder is ordered so the athlete gets the chance to self-correct from lower-information cues first — jumping straight to manual manipulation teaches dependence on the coach's hands, suits only some learning styles, and discards the verbal and visual attempts that tell the coach which channel this athlete actually learns through.",
+   "type": "applied"
+  },
+  {
+   "q": "An athlete back-squats well beyond their gate requirement but runs 10 km in 58 minutes (male). Place them, and set the next block's emphasis.",
+   "a": "The lowest-level rule places him by the run: 58 minutes fails the Level 3-to-4 cardio gate of under 55 minutes, so he is a Level 3 athlete despite Level 4-or-better strength. The next block therefore weights running volume and aerobic development while the barbell work drops to maintenance dosing, which is cheap for a quality already in surplus. The rule is not bureaucratic — it mirrors the race, which will bill him for eight runs regardless of his squat.",
+   "type": "applied"
+  },
+  {
+   "q": "Why does the library pair every level's movement list with standards, rather than letting coaches advance athletes on technique quality alone?",
+   "a": "Because technique judged by eye is subjective and drifts with the coach's mood, while a standards battery is testable, repeatable and arguable-about in numbers. The standards also encode the four-category breadth — cardio, strength, race-exercise and time — so advancement certifies a whole athlete rather than a well-drilled movement. Finally, standards make the racing recommendations defensible: telling an athlete to wait on a solo entry lands differently when it is a missed battery rather than an opinion.",
+   "type": "applied"
+  },
+  {
+   "q": "An 80 kg athlete is testing the Level 2-to-3 battery. Compute the loads for: goblet squats at 20% of body weight, lat pull-downs at 70% of body weight, and a farmer carry at 33% of body weight in total.",
+   "a": "Goblet squat: 0.20 × 80 = 16 kg. Lat pull-down: 0.70 × 80 = 56 kg. Farmer carry: 0.33 × 80 = 26.4 kg total load, which splits to roughly 13 kg per hand over the 200 m. The pattern to notice is that early gates scale to body weight, so the battery stays fair across athlete sizes, while later gates progressively switch to the race's own absolute loads.",
+   "type": "calc"
+  },
+  {
+   "q": "A 75 kg athlete asks what the barbell gates look like from Level 3 up to the Level 5 doorway. Compute the back squat and deadlift requirements at the Level 3-to-4 gate (80% and 100% of body weight) and the Level 4-to-5 gate (120% and 140%).",
+   "a": "Level 3-to-4: back squat = 0.80 × 75 = 60 kg; deadlift = 1.00 × 75 = 75 kg. Level 4-to-5: back squat = 1.20 × 75 = 90 kg; deadlift = 1.40 × 75 = 105 kg. So the squat gate rises by 30 kg and the deadlift gate by 30 kg between the two boundaries — a deliberate widening that reflects Level 4's shift towards expressing larger forces, while the running and station time-standards tighten in parallel.",
+   "type": "calc"
+  }
+ ],
+ "sk_categories": [
+  {
+   "q": "How do Araújo and Davids (2011) reframe what a skill is, and what is the contrast with the traditional definition?",
+   "a": "The traditional definition treats skill as a specialised, learned ability — a possession acquired through training and then owned. Araújo and Davids frame skill as emergent: the athlete's capacities and the situation's demands jointly produce the behaviour, so what we call skill is an ongoing negotiation with conditions — remade in each context rather than fetched from a store. The coaching consequence is that varied exposure to constraints, not repetition in one fixed setting, is what builds the capacity that transfers to race day.",
+   "type": "recall"
+  },
+  {
+   "q": "Name the three skill categories of HYROX racing and give a one-line description of each.",
+   "a": "First, resilience of movement standards and economy of movement — keeping execution legal under the rules and cheap in energy as fatigue accumulates. Second, pacing intensity — regulating effort segment by segment from knowledge of personal thresholds and each station's energy price. Third, decision making — selecting and adapting strategy under fatigue, from push-or-recover calls to transition management and responses to the unexpected.",
+   "type": "recall"
+  },
+  {
+   "q": "Why are movement standards and economy of movement bundled into a single category?",
+   "a": "Because the same clean mechanics serve both ends: a repetition executed to the rulebook's standard is usually also the energy-cheap version of that repetition. The category's two costs also arrive together — poor execution risks no-reps and penalties while simultaneously wasting energy, and both costs compound across eight stations and eight runs. Training them separately would duplicate the work, since drills for mechanical efficiency, mobility and technique under fatigue improve both at once.",
+   "type": "recall"
+  },
+  {
+   "q": "Describe both directions in which pacing can fail in a HYROX race.",
+   "a": "The aggressive failure: opening too hard builds excessive fatigue early, and the bill is typically presented by the sled push, after which every subsequent segment is compromised. The conservative failure: holding too much back leaves genuine capacity unspent when the finish line arrives, which is a slower race wearing the costume of a controlled one. The skill is threading between them — and adjusting the thread live as fatigue and conditions diverge from the plan built on day 16's model.",
+   "type": "recall"
+  },
+  {
+   "q": "List five distinct decisions a HYROX racer may have to make mid-race.",
+   "a": "Whether to push or recover on a given run segment; how to enter and set up a station with the least time lost; whether to break a set — lunges or wall balls, say — strategically before failure forces it; how to manage transitions and position through a crowded roxzone; and how to respond to the unexpected, such as an equipment problem, a competitor's surge, or a no-rep ruling. Each is made under fatigue, which is why the category is trained deliberately rather than left to temperament.",
+   "type": "recall"
+  },
+  {
+   "q": "An athlete's wall balls are flawless in training but collect a string of no-reps in the final station of races. Which category failed, and what does development look like?",
+   "a": "Category one — resilience of movement standards: the pattern exists, but it does not survive race-grade fatigue and judging pressure. Development moves the standard up day 74's ladder: wall balls rehearsed at race intensity on pre-fatigued legs, with video review against the rulebook criteria, targeted mobility so depth and target height stay available when tired, and day 86-style evaluation pressure — a counting judge — so the standard is rehearsed under scrutiny. The economy framing matters in the debrief: every no-rep was a repetition's worth of energy spent for zero credit.",
+   "type": "applied"
+  },
+  {
+   "q": "An athlete produces a sound pacing plan with their coach, then abandons it inside the first kilometre of every race. What is missing, and how do you build it?",
+   "a": "The model exists but the skill of executing it does not — pacing intensity is a category-two failure, and adrenaline plus other athletes are constraints the training never included. Build calibration first: race-specific intervals at planned effort so the target paces acquire a remembered feel, then instrumented simulations where live biofeedback and splits confront the athlete's perceived effort. Then add the missing constraints deliberately — group starts, competitors alongside, day 86's evaluation pressure — so the plan is rehearsed in the conditions that currently break it.",
+   "type": "applied"
+  },
+  {
+   "q": "Design a scenario-based session that trains the decision of breaking sandbag lunges strategically, and justify each element.",
+   "a": "Pre-fatigue the legs honestly — a hard run into the station, per day 74's principle that the context must contain the real conditions — then present the 100 m with an instruction that the athlete must choose and announce a break plan at the halfway mark based on how they feel, not before the set starts. Vary the constraint across rounds: a heavier bag, a stricter judge, a rival finishing alongside (day 86's consequence and evaluation ingredients). Debrief the choices rather than the time: what information did the athlete read, when did they commit, and would the same call survive a worse day? The decision, not the lunge, is the training target.",
+   "type": "applied"
+  },
+  {
+   "q": "A gym-perfect athlete races at an unfamiliar venue and reports the sled 'felt wrong', losing two minutes on it. Interpret this through the emergent view of skill and prescribe the fix.",
+   "a": "Under the emergent view nothing paradoxical happened: the athlete's sled 'skill' was a solution tuned to one environment — one floor, one friction, one implement — and when the constraints changed the behaviour did not transfer. The prescription is constraint variation: push different sleds on different surfaces at different loads, in different fatigue states, so the athlete learns to find the working solution rather than reproduce a memorised one. The coach's target shifts from polishing the single best pattern to widening the range of conditions under which an acceptable pattern emerges.",
+   "type": "applied"
+  },
+  {
+   "q": "A coach reviews a race and blames an athlete's 'poor decisions' in the back half. Using the cascade between categories, what should the review check before accepting that verdict?",
+   "a": "Trace upstream. First check economy: a technique leak — say, an inefficient SkiErg or early over-gripped carries — raises energy cost per repetition and silently drains the budget. Then check pacing: if the opening kilometres ran ahead of the model, the athlete reached the decisive stations in a state where no good options remained. Only if execution was economical and pacing was on plan is the verdict genuinely decisional; otherwise the fix belongs to category one or two, and the same 'bad decisions' will reappear in every race until the upstream leak is closed.",
+   "type": "applied"
+  },
+  {
+   "q": "An athlete's wall-ball inefficiency costs about 0.5 s per repetition across 100 repetitions, and their loose depth standard produces 12 no-reps at roughly 5 s each (the wasted repetition plus the reset). Compute the total time cost.",
+   "a": "Inefficiency cost: 100 × 0.5 = 50 s. No-rep cost: 12 × 5 = 60 s. Total: 50 + 60 = 110 s, so nearly two minutes surrendered at a single station — before counting the extra energy spent, which carries no time credit at all. The working shows why category one is framed as an energy-and-time skill: the economy leak and the standards leak are separate line items, and here the standards leak is the larger one.",
+   "type": "calc"
+  },
+  {
+   "q": "An athlete's model calls for eight 1 km runs at 4:30 (36:00 of running). They open runs one and two at 4:05 each, then fade: runs five to eight each cost 15 s over plan, and the sled push takes an extra 45 s. Compute the net result against the plan.",
+   "a": "Time banked early: 2 × (4:30 − 4:05) = 2 × 25 = 50 s ahead. Late running losses: 4 × 15 = 60 s. Station loss: 45 s. Total losses: 60 + 45 = 105 s, so the net is 105 − 50 = 55 s slower than the plan despite the fast start. The arithmetic is the standard demonstration that banked time is borrowed, not earned — the aggressive opening was repaid with interest, which is exactly the over-aggressive failure mode of pacing intensity.",
+   "type": "calc"
+  }
+ ],
+ "hp_levels": [
+  {
+   "q": "List the five levels of the athlete system in order, with the athlete each describes.",
+   "a": "Level 1 is the absolute novice, possibly with no gym history at all; level 2 is the beginner; level 3 is the open-division athlete; level 4 is the pro-division athlete; and level 5 is the elite or age-group world-championship athlete. The labels deliberately mirror how the sport is contested, so a level placement translates directly into a division recommendation.",
+   "type": "recall"
+  },
+  {
+   "q": "Name the four guideline categories against which every level is assessed.",
+   "a": "Cardio guidelines, strength guidelines organised by movement pattern, HYROX exercise standards, and time guidelines. Assessing four separate categories rather than one composite score is what allows the system to expose an unbalanced athlete instead of averaging the imbalance away.",
+   "type": "recall"
+  },
+  {
+   "q": "State the lowest-level rule and the reasoning behind it.",
+   "a": "An athlete's overall level is the level of their weakest guideline category, not their strongest and not the average. HYROX runs a fixed sequence of runs and stations, so a deficient quality cannot be routed around — an athlete with a level-5 engine and level-1 sled strength will simply stall at the sled. The rule forces the well-roundedness the race itself demands.",
+   "type": "recall"
+  },
+  {
+   "q": "What are the two coaching questions the level system exists to answer?",
+   "a": "First, placement: where should a new or uncertain athlete enter the sport — which division, which format, or whether they should race at all yet. Second, progression: has an established athlete met the criteria to move up a level, which in practice means heavier guideline standards, faster time targets, or a step such as moving from doubles to a solo entry.",
+   "type": "recall"
+  },
+  {
+   "q": "Describe the format in which each level's movements are documented, and the correction ladder a coach applies to them.",
+   "a": "Every movement in a level's library is written up as set-up, execution, points of performance, and common faults, alongside a demonstration. Correction proceeds by learning style: verbal cueing first, then visual — demonstrating the fault beside the correct action — and finally tactile cueing, for which the athlete's consent is asked before any hands-on correction.",
+   "type": "recall"
+  },
+  {
+   "q": "A new client rows competitively and posts level-4 to level-5 numbers on the erg tests, but cannot move a sled loaded to Open weight. How do you place and programme them?",
+   "a": "By the lowest-level rule they are placed at the level of their sled and strength work, not their erg capacity — plausibly level 1 or 2 despite the elite engine. Programming inverts their habits: strength and station standards take the developmental emphasis while erg work drops to maintenance, because the erg quality is banked and the sled is what will end their race. Placement also means holding them out of solo racing until the strength categories catch up.",
+   "type": "applied"
+  },
+  {
+   "q": "An athlete tests solidly at level 3 in all four categories but their race time is around 2:10 against a level-3 goal time of roughly 1:30. Where do you look, and why does the level system point you there?",
+   "a": "The grid says fitness is not the problem — all four categories pass at level 3 — so the gap is execution: pacing errors, slow transitions through the roxzone, poor station strategy, or broken sets. This is exactly what the time guidelines are for as a calibration layer: when gym standards and race outcome disagree, the difference is race craft, and the programme should shift toward simulations, transition practice and pacing rehearsal rather than more fitness.",
+   "type": "applied"
+  },
+  {
+   "q": "A beginner has just cleared the level 1 anchors in two months and expects to reach pro standard within the year. How does the time-at-level pattern shape the conversation?",
+   "a": "Dwell time is roughly logarithmic: the novice level clears in weeks to a couple of months because untrained athletes adapt quickly, the beginner level in around half a year, and open-to-pro takes years, since each remaining improvement is harder to buy. The coach should set this expectation explicitly now, so that a normal open-level plateau in a year's time is read as the curve behaving as it always does, not as failure of the athlete or the programme.",
+   "type": "applied"
+  },
+  {
+   "q": "Why is racing not recommended for a level 1 athlete even in the relay format, given the level 1 anchors are so modest?",
+   "a": "The level 1 anchors — empty-sled pushes, hand-elevated push-ups, a 30-minute walk, 1,000 m of continuous erg work — establish that the athlete can express each race pattern unloaded and continuously. Until those exist, race-day loads and volumes would be imposed on patterns the athlete does not yet own, which is a safety problem, and the experience would likely be miserable enough to damage adherence. The anchors are the minimum floor from which a race entry becomes a positive experience rather than a gamble.",
+   "type": "applied"
+  },
+  {
+   "q": "An athlete cleared the level 3-to-4 strength gate eight months ago and their coach proposes automatic promotion to level 5 standards on the grounds of time served. What is wrong with this, and what should happen instead?",
+   "a": "The system promotes on criteria, never on the calendar: level 5 requires re-testing all four categories against the 4-to-5 anchors — 120%/140% bodyweight lifts, the sub-40/45 10 km, the faster wall-ball and sled caps — and the athlete advances only when the lowest category clears. Time served predicts nothing at this end of the scale, where dwell times run to years. The coach should re-test, identify which category is lowest, and aim the next block at that.",
+   "type": "applied"
+  },
+  {
+   "q": "An 80 kg male athlete is preparing for the level 4-to-5 gate. Calculate his target back squat and deadlift, and compare them with what the level 3-to-4 gate asked of him.",
+   "a": "The 4-to-5 gate sets back squat at 120% of bodyweight: 0.20 x 80 = 16, so 80 + 16 = 96 kg. Deadlift is 140% of bodyweight: 0.40 x 80 = 32, so 80 + 32 = 112 kg. The 3-to-4 gate asked for a squat at 80% (0.80 x 80 = 64 kg) and a deadlift at bodyweight (80 kg), so the squat requirement has risen by 96 − 64 = 32 kg and the deadlift by 112 − 80 = 32 kg — the strength demand climbs steeply between the top gates.",
+   "type": "calc"
+  },
+  {
+   "q": "Convert the 10 km time guidelines into average pace per kilometre: the level 4-to-5 standard (sub-40 men, sub-45 women) and the level 3-to-4 men's standard (sub-55).",
+   "a": "Pace is total time divided by distance. Men at the 4-to-5 gate: 40 min / 10 km = 4.0 min/km, i.e. 4:00 per km. Women: 45 / 10 = 4.5 min/km, i.e. 4:30 per km. Men at the 3-to-4 gate: 55 / 10 = 5.5 min/km, i.e. 5:30 per km. So promotion from open to pro standard demands taking a full 1:30 per kilometre off sustained 10 km pace, which is why the cardio category usually needs years, not months.",
+   "type": "calc"
+  }
+ ],
+ "hp_see": [
+  {
+   "q": "Name the three pillars in order and explain why the order itself, not just the list, is the framework's content.",
+   "a": "Safety, then efficacy, then efficiency. They form a decision hierarchy: safety constrains what may be programmed at all, efficacy filters the remainder to what demonstrably works, and efficiency optimises time and effort only inside that doubly-filtered space. Reversed, the framework produces recognisable failures — economy-first coaching yields fast, injurious movement; results-first coaching yields methods that work until the athlete breaks.",
+   "type": "recall"
+  },
+  {
+   "q": "State the two tests a programme must pass to satisfy the efficacy pillar.",
+   "a": "First, it must deliver the adaptation it was written for — strength, aerobic capacity, race performance — verified through progressive overload and repeated race results rather than assumed. Second, movement standards must be met on every rep: a wall ball without full depth or a burpee without chest contact contributes nothing however fast it was performed. A safe programme that produces no adaptation, or fast reps that would be no-repped, both fail this pillar.",
+   "type": "recall"
+  },
+  {
+   "q": "What are the wall-ball and burpee movement standards cited under efficacy?",
+   "a": "The wall ball requires a full-depth squat — judged by whether the hip's crease finishes below the top of the knee in the bottom position; the burpee requires the chest — the line through the nipples — to touch the ground on every rep. Both matter because a rep missing the standard is repeated at the judge's discretion, so energy has been spent and no progress bought.",
+   "type": "recall"
+  },
+  {
+   "q": "List the three cueing questions a coach should ask before correcting an athlete.",
+   "a": "In pillar order: safety — performed at race intensity, is this the safest available way for this athlete to move? Efficacy — would the correction genuinely produce a faster race or better station execution? Efficiency — does it remove effort or fatigue that buys nothing? Each question belongs to one pillar, and a cue that fails all three is noise that interrupts the athlete without paying for the interruption.",
+   "type": "recall"
+  },
+  {
+   "q": "What three coaching failure modes does the ordered framework exist to prevent?",
+   "a": "The over-cautious programme that never applies enough stimulus to produce results (safety without efficacy); the dangerous-but-effective programme that produces results until it produces an injury (efficacy without safety); and the safe, effective but wasteful programme that squanders the athlete's limited training hours (both without efficiency). The framework's season-level payoff is repeatable execution across many races rather than one fragile peak.",
+   "type": "recall"
+  },
+  {
+   "q": "Why does safety take a distinctive form in HYROX compared with a max-effort strength sport, and what two race-environment factors must a coach prepare tissue for?",
+   "a": "In HYROX the threat is accumulation rather than a single maximal event: 100 wall balls, 200 m of loaded carrying and over 8 km of running mean a small mechanical fault is rehearsed hundreds of times, so repetitive volume exposes and then compounds poor mechanics. The two environmental factors are mixed surfaces — concrete, polished floor or tile on runs, turf of varying friction under sleds — and fatigue, which demands form rehearsed under duress, since fresh-only technique effectively does not exist on race day.",
+   "type": "applied"
+  },
+  {
+   "q": "An athlete's coach wants to add speed to their burpee broad jump cycle, but video shows their chest intermittently missing the floor when tired. Apply the hierarchy.",
+   "a": "Efficiency work is locked until the pillars above it clear. The intermittent chest contact is an efficacy failure — those reps would be no-repped — and if the cause is positional breakdown under fatigue it borders on a safety issue as well. The sequence is: regress the movement or shorten the sets until the standard holds under fatigue, confirm every rep counts, and only then return to cycle speed, rhythm and foot placement. Speeding up a rep that does not count optimises waste.",
+   "type": "applied"
+  },
+  {
+   "q": "A time-poor athlete has 4.5 hours per week. How does the efficiency pillar shape their programme without violating the two pillars above it?",
+   "a": "Efficiency governs choices only inside safe and effective options: favour compound movements over isolation work, combine strength and conditioning into single sessions where recovery allows, and dose each quality at its minimum effective level rather than its maximum tolerable one. What efficiency may not do is buy time by skipping technique acquisition or by loading movements the athlete has not earned — those are safety decisions, and they outrank the schedule.",
+   "type": "applied"
+  },
+  {
+   "q": "A coach watches an athlete take three shuffling steps and a bounce before every wall-ball rep, but the reps all meet the standard. Which pillar addresses this, and does the correction pass the three questions?",
+   "a": "This is an efficiency matter — the reps are safe and they count, but parasitic movement leaks energy across a 100-rep station. Running the questions: safety is unaffected; the correction improves station execution by shortening cycle time (efficacy of the cue itself); and it directly reduces wasted effort. It clears the filter and is worth coaching, ideally by rehearsing a fixed stance and catch rhythm so the economy holds under fatigue.",
+   "type": "applied"
+  },
+  {
+   "q": "Why does the framework treat movement economy as 'free speed', and what does that imply about where a mid-pack athlete's cheapest improvements live?",
+   "a": "Economy recovers time without requiring any new fitness: the athlete already possesses the capacity and is simply leaking it through extra steps, tension and walking transitions. For a mid-pack athlete the implication is that transition discipline and station economy are the cheapest minutes available — cheaper than the weeks of training a fitness-driven minute costs — so they should be coached deliberately rather than left to race-day instinct.",
+   "type": "applied"
+  },
+  {
+   "q": "Using the transition arithmetic: how many transitions does a HYROX race contain, and what total time does running rather than walking the roxzone save at 2 s and at 4 s per transition? Show the working.",
+   "a": "The race alternates 8 runs with 8 stations, finishing on the final station: 16 segments in sequence create 16 − 1 = 15 junctions, so 15 transitions. At 2 s saved per transition: 15 x 2 = 30 s. At 4 s: 15 x 4 = 60 s. So simply refusing to walk the roxzone recovers roughly 30-60 seconds across the race — with zero additional fitness required.",
+   "type": "calc"
+  },
+  {
+   "q": "An athlete's eight station times sum to 40:00, and their coach believes better economy can save 2% at each station plus 3 s at each of the 15 transitions. Calculate the total saving.",
+   "a": "Station time is 40:00 = 2,400 s. A 2% saving across that total: 2,400 x 0.02 = 48 s. Transitions: 15 x 3 = 45 s. Combined: 48 + 45 = 93 s, i.e. 1 min 33 s. This is the compounding the efficiency pillar describes — small per-station percentages plus seconds per transition add up to more than a minute and a half without any change in the athlete's fitness.",
+   "type": "calc"
+  }
+ ],
+ "pd_doublepeak": [
+  {
+   "q": "State the taper durations and volume prescriptions for the first (qualifier) and second (championship) peaks, and what happens to intensity in each.",
+   "a": "The first-peak taper runs up to 7 days: volume is trimmed while intensity stays high, balancing freshness against the season's ongoing progression. The second-peak taper runs 10-14 days with sharper volume reductions — up to about 60% below normal — while intensity is fully retained. In both, intensity is preserved because short quality efforts protect neuromuscular and race-specific sharpness at little fatigue cost, while volume carries most of the fatigue.",
+   "type": "recall"
+  },
+  {
+   "q": "Which research citations anchor the taper volume prescription, and which anchor the duration of peak form?",
+   "a": "The prescription that volume can safely fall by up to around 60% while intensity is maintained rests on Mujika & Padilla (2003) and Bosquet et al. (2007). The finding that peak form lasts only about one to three weeks before regression rests on Mujika & Padilla (2003) and Le Meur et al. (2012). Together they define both how to taper and why the taper must be timed to land its window on the race date.",
+   "type": "recall"
+  },
+  {
+   "q": "Name the three physiological mechanisms through which a taper improves performance.",
+   "a": "First, supercompensation: recovery outpaces residual fatigue, with fuel stores rebuilt, hormones rebalanced and repairs finished, peaking after roughly 7-14 days of reduced load. Second, reduced soreness and injury risk as connective tissue and fibre repair finish. Third, preserved sharpness through low-volume intensity — short hard efforts that keep neuromuscular coordination and cardiovascular conditioning current while volume falls.",
+   "type": "recall"
+  },
+  {
+   "q": "What is the rebuild phase and what are its two failure modes?",
+   "a": "The rebuild phase is the several-week period after the qualifier in which training density is restored to preserve adaptations ahead of the second build-up, sized to the gap between races. Its failure modes are symmetrical: ramping too slowly extends the first taper's reduction into effective detraining, while ramping too aggressively loads a body whose tissue repair lags behind its readiness markers. Monitoring arbitrates the ramp rate.",
+   "type": "recall"
+  },
+  {
+   "q": "Describe the recommended taper for a participation-level athlete and the success criteria it serves.",
+   "a": "A simple reduced-load taper of five to seven days: light runs, reduced station work, and recovery prioritised — freshness over fine-tuning. No multi-phase structure, intensity micro-management or psychological machinery is needed, because this athlete's success is defined as completing the race and enjoying it. Prescribing the elite double-taper protocol to a hobbyist is over-coaching.",
+   "type": "recall"
+  },
+  {
+   "q": "Why is the first-peak taper deliberately kept short even though a longer taper might produce a faster qualifier performance?",
+   "a": "Because the qualifier's job is to be passed, not to be the season's best day. A longer taper buys freshness at the cost of training density, and that density is exactly what the second, more important peak must be built from. Up to seven days sharpens the athlete enough to perform while barely pausing progression — spending the season's fitness on the gateway race would be optimising the wrong objective.",
+   "type": "applied"
+  },
+  {
+   "q": "An athlete in the final week before Worlds reports feeling flat, anxious, and convinced they are losing fitness, and asks to add sessions. How should the coach respond?",
+   "a": "Recognise this as anticipatory taper anxiety, not evidence: taper-phase research finds mood, perceived fatigue and wellness generally improve, and fitness losses over a fortnight of retained intensity are negligible. The response is to re-explain the plan and its reasoning, hold the volume reduction, and substitute structure for the vacated hours — visualisation, breathing work, transition rehearsal, wall-ball pacing — which reassures precisely because it is race-shaped. Adding volume now would reintroduce the fatigue the taper exists to shed.",
+   "type": "applied"
+  },
+  {
+   "q": "A coach schedules the athlete to reach peak form five weeks before Worlds 'to be safe'. What is wrong with this plan?",
+   "a": "Peak form is perishable: it holds roughly one to three weeks before regressing, because supercompensation fades without renewed quality stimulus and sustained low load begins to read as detraining. Arriving at peak five weeks out guarantees the athlete is past their window on race day, and trying to 'hold' the peak invites central fatigue and burnout as well. The taper must be timed backwards from the race date so the 1-3 week window contains it.",
+   "type": "applied"
+  },
+  {
+   "q": "How does qualification uncertainty change taper planning compared with a single dated A-race season?",
+   "a": "With one A-race the entire macrocycle funnels into a single taper (day 41's backwards build). Under qualification uncertainty the coach must plan a second peak that may never be activated: the qualifier gets a short taper so the season's density survives if qualification succeeds, the rebuild is pre-planned but conditional, and the athlete's psychology — training hard for a race they may not enter — needs explicit management. The plan is written as a branching structure, not a straight line.",
+   "type": "applied"
+  },
+  {
+   "q": "What distinguishes a high performer's taper package from the taper itself, and why do race simulations appear inside it?",
+   "a": "Beyond the load manipulation, the high performer's package includes psychological management — handling the anxiety of reduced work and the uncertainty of qualification — plus logistics: travel, scheduling, nutrition and sleep around each event. Race simulations, transition practice and pacing rehearsal appear because they do double duty: they preserve race rhythm at low volume, and they function as evidence to the athlete that readiness is real, which directly treats the anxiety.",
+   "type": "applied"
+  },
+  {
+   "q": "An athlete normally trains 10 hours per week. Their 14-day championship taper cuts volume 30% in the first week and 60% in the second. Calculate the weekly hours and the total taper-fortnight volume against a normal fortnight.",
+   "a": "Week one: 10 x (1 − 0.30) = 10 x 0.70 = 7.0 hours. Week two: 10 x (1 − 0.60) = 10 x 0.40 = 4.0 hours. Taper fortnight total: 7 + 4 = 11 hours against a normal 20 — a 45% reduction overall ((20 − 11) / 20 = 0.45). Those 11 hours are weighted toward short race-pace intervals, reduced-rep heavy sled work and transition rehearsal, since intensity is retained throughout.",
+   "type": "calc"
+  },
+  {
+   "q": "Worlds falls 56 days after the qualifier. Allowing 7 days of post-race recovery and a 14-day second taper, how long is the rebuild phase? Show the working and comment on the result.",
+   "a": "Rebuild = 56 − 7 (post-qualifier recovery) − 14 (championship taper) = 35 days, i.e. exactly 5 weeks. That is a workable rebuild: several weeks to restore training density without rushing a just-raced body. If the gap were only 35 days total, the same subtraction would leave 35 − 7 − 14 = 14 days of rebuild, and the coach should consider shortening the recovery block or trimming the taper toward 10 days to protect at least some density — the arithmetic is exactly how the three windows get sized in practice.",
+   "type": "calc"
+  }
+ ],
+ "rb_treadmills": [
+  {
+   "q": "Why is it wrong to say that a motorised treadmill's belt 'does the work' for the runner?",
+   "a": "Ground contact is too brief for a deliberate push-off, so running propulsion is not a push in the first place — it is a bounce. The athlete lands, compresses over the foot, stretches the elastic tissue of the calf-Achilles complex, and the stretch-shortening cycle's recoil sends the centre of mass up and forward. Outdoors the body passes over a fixed foot; on the belt the foot is carried back beneath the body — the relative motion is identical, so the athlete generates the same elastic work in both cases. The motor only sets the belt speed; it cannot bounce for you.",
+   "type": "recall"
+  },
+  {
+   "q": "At what pace does the case for a 1-2% treadmill incline begin, and why is it unnecessary below that pace?",
+   "a": "Only at roughly 4:21 per kilometre (about 7:00 per mile) and faster, because that is where air resistance outdoors becomes a meaningful part of the energy cost — and even at 4:00/km the penalty is still small. Below that threshold a level belt already costs about the same as flat, windless overground running, so no compensation is needed. Outdoors, wind is not purely a cost anyway — it can assist as often as it resists.",
+   "type": "recall"
+  },
+  {
+   "q": "Contrast the muscle loading of flat-treadmill running with overground running, and give the rehab implication of each difference.",
+   "a": "Hamstring activation is slightly lower on the treadmill, which makes the mill a sensible venue when returning from a hamstring problem — especially combined with a reduced pace, since slowing down is the simplest load-reducer available. Conversely the ankle works harder on the belt, raising calf and Achilles load, so an athlete recovering from calf or Achilles trouble is better served running overground.",
+   "type": "recall"
+  },
+  {
+   "q": "What did Catala-Vilaplana et al. (2023) conclude about curved non-motorised treadmills, and why does the finding matter?",
+   "a": "Measured against overground running, they found the curved mill's mechanics deviate further than the motorised belt's do — the machine sits biomechanically farther from real running, not closer. This directly contradicts the common sales pitch that the curved mill is 'more natural' because the runner drives the belt. For a coach it means the curved mill cannot be justified as superior gait rehearsal — its real value lies elsewhere, in sprint, HR and cadence work.",
+   "type": "recall"
+  },
+  {
+   "q": "Summarise what the Morrow (2022), Bruseghini (2019) and Edwards (2017) studies collectively establish about curved non-motorised treadmills.",
+   "a": "Morrow and Bruseghini showed that the same pace costs more on the curved mill than on a motorised one — higher heart rate, higher oxygen uptake and greater carbohydrate use — with Bruseghini additionally documenting significant gait changes (stride length, stride angle, imbalance). Edwards showed non-motorised treadmill running is more cardiometabolically demanding than both overground and motorised treadmill running. Together they establish the curved mill as the hardest of the three venues at matched pace, because it amounts to constant uphill running.",
+   "type": "recall"
+  },
+  {
+   "q": "An athlete returning from a hamstring strain asks whether to do her easy runs outdoors or on the gym's flat treadmill. Advise her.",
+   "a": "The flat treadmill is the better choice during the return: hamstring activation runs slightly lower on the belt, and she should also run deliberately slower, since reducing pace is the most powerful load-reducer of all. Warn her that the belt shifts work toward the ankle, so calf and Achilles loading rises — worth monitoring, though not a contraindication here. As symptoms clear, reintroduce overground running so she regains the variability and hamstring loading the race demands.",
+   "type": "applied"
+  },
+  {
+   "q": "A member with recurrent Achilles problems loves the curved-treadmill conditioning classes. What is your concern, and what do you offer instead?",
+   "a": "The curved mill is effectively permanent uphill running, and uphill loading shifts stress below the knee — precisely onto his Achilles — with the toe-tapping fault, common in nervous curved-mill users, making the below-knee strain even worse. His conditioning stimulus can be preserved without that cost: bike or rower intervals will raise heart rate comparably with no Achilles penalty, and his running is better done on flat overground surfaces. Reintroduce curved-mill work, if at all, only when the tendon has been robust for a long period.",
+   "type": "applied"
+  },
+  {
+   "q": "You are managing a runner in knee rehab. How do you use gradient, and what warning do you attach?",
+   "a": "Uphill running reduces knee load, so uphill doses are the rehab route — ideally on a motorised treadmill, where the gradient is precise and there is no obligatory downhill return, since downhill running raises knee load again. The warning: uphill feels deceptively gentle. The impact numbers drop, yet the calf's muscle-tendon pull loads the tibia harder than any landing does, so below-knee tissue is working very hard; progress the dose conservatively and watch the calf, Achilles and shin.",
+   "type": "applied"
+  },
+  {
+   "q": "An athlete insists treadmill running feels much harder than outdoors even though pace and heart rate match. How do you interpret and manage this?",
+   "a": "The measured differences between the two venues are small, so a large felt difference is almost certainly perceptual — and individuals genuinely split in both directions, with uninspiring environments feeling harder. Manage the psychology rather than abandoning the modality: entertainment, music, training partners, and interval structures that break the monotony all help. Keep the physiological targets unchanged; the effort discrepancy is in the environment, not the legs.",
+   "type": "applied"
+  },
+  {
+   "q": "Six weeks from a race, how should you distribute a HYROX athlete's running across outdoors, flat mill and curved mill, and why?",
+   "a": "Key sessions — race-pace running and compromised-running work — belong on flat, hard, race-like surfaces: firm overground or the flat motorised mill, because HYROX is contested on flat exhibition-hall floors and there is no reason to habitually load the body in a way the race never will. The curved mill keeps its honest jobs: short sprint or acceleration repeats, quick HR-raising conditioning and cadence work. If access or weather forces compromises, remember the floor of the hierarchy — an imperfect venue still beats a skipped session.",
+   "type": "applied"
+  },
+  {
+   "q": "Convert the ~7:00-per-mile air-resistance threshold into a per-kilometre pace, showing your working.",
+   "a": "One mile is 1.609 km, and 7:00 is 420 seconds. Pace per km = 420 s ÷ 1.609 km ≈ 261 s/km. 261 seconds is 4 minutes 21 seconds, so 7:00/mile ≈ 4:21/km — the pace at which air resistance starts to be worth compensating for, and the origin of the lesson's threshold. Any athlete training slower than 4:21/km can leave the treadmill level.",
+   "type": "calc"
+  },
+  {
+   "q": "A runner overstrides at 160 steps per minute. Using the standard 5-10% cadence-raise guideline (day 31), calculate her target cadence window, and name one venue property from this lesson that helps.",
+   "a": "A 5% raise: 160 × 1.05 = 168 spm. A 10% raise: 160 × 1.10 = 176 spm. Her target window is therefore 168-176 steps per minute. Venue can assist: cadence runs naturally higher on the curved mill, slightly higher on a flat treadmill than overground, and a small incline on a flat mill raises it further — so short technique blocks on those surfaces can groove the quicker rhythm before it is transferred to flat race-like running.",
+   "type": "calc"
+  }
+ ],
+ "of_testmatrix": [
+  {
+   "q": "Name the five tests in the off-feet matrix and divide them into their two families.",
+   "a": "Power family: the 6-second peak-power test and the 30-second test. Aerobic family: the submaximal health-assessment ramp, the maximal ramp, and the 3-minute confirmation test. The families differ in what they anchor — the power tests read leg speed and sprint power against normative W/kg tables, while the aerobic tests produce maximal minute power and max heart rate (estimated or true) from which training zones and a cardiorespiratory-fitness score are derived.",
+   "type": "recall"
+  },
+  {
+   "q": "State the termination criteria and target duration of the submaximal health-assessment test, and what its endpoint yields.",
+   "a": "The ramp terminates at RPE 7/10 or at 85% of a known maximum heart rate, whichever comes first, and should last 8-12 minutes. The power and heart rate at termination generate an estimated maximal minute power and an estimated max HR, from which power and HR zones, a cardiorespiratory-fitness score with population percentile, and a division-mapped training plan all follow. Because no maximal effort is ever required, it is low-risk and suitable for all athletes.",
+   "type": "recall"
+  },
+  {
+   "q": "Which tests in the matrix are restricted, to whom, and under what conditions?",
+   "a": "Three tests are restricted to pro-division athletes: the 30-second test (experienced, fit, injury-free athletes only — it is the maximum test in the matrix and imposes great bodily stress), the maximal ramp (high-risk, run only with qualified supervision on hand — a coach experienced in maximal testing, a sport-science professional or a clinician — and medical advice taken if anything is in doubt), and the 3-minute test, which inherits the maximal ramp's status because it requires riding at true MMP. The 6-second test and the submaximal ramp are open to all levels.",
+   "type": "recall"
+  },
+  {
+   "q": "What must precede a 3-minute test, and what does a successful one confirm?",
+   "a": "A maximal ramp must precede it, because the test consists of riding continuously for three minutes AT the maximal minute power that ramp measured, at around 100 rpm (90-110). If the 3-minute average power matches the final-minute average of the ramp, the MMP, max HR and the zones derived from them are confirmed. The 3-minute average can exceed the ramp figure — still useful, as it updates the power zones — but the test may not elicit a true maximum heart rate.",
+   "type": "recall"
+  },
+  {
+   "q": "Why is resistance for the power tests set by biological sex and body mass rather than left to the athlete?",
+   "a": "Because the point of the tests is comparison: watts-per-kilogram results only mean something when read against normative tables, and those tables assume the standardised resistance for that sex and mass band. An athlete free-choosing resistance would produce a number with no reference population. The same logic drives retest hygiene — change the setting and the comparison with both the tables and the athlete's own history collapses.",
+   "type": "recall"
+  },
+  {
+   "q": "A new open-division athlete with three months of training history joins your squad. Which tests do you administer, in what order, and which do you refuse?",
+   "a": "Start with the submaximal health-assessment ramp — low-risk, suitable for all, and its output (estimated MMP, zones, CRF percentile, plan mapping) is exactly what a new programme needs. It can then serve as the warm-up for a 6-second peak-power test in the same session, adding a leg-speed and power profile that is safe at any level. Refuse the 30-second test, the maximal ramp and the 3-minute test: all three are pro-only, high-stress protocols this athlete's history does not yet justify.",
+   "type": "applied"
+  },
+  {
+   "q": "A pro athlete says the zones from her submaximal test feel wrong — threshold intervals feel too easy. What is your testing route?",
+   "a": "The submax produces an ESTIMATED maximal minute power, and estimates can miss, particularly in well-trained athletes near the top of a band. The route is a supervised maximal ramp to measure her TRUE MMP and max HR — she is pro, so eligible, provided an experienced professional oversees it — followed by a 3-minute test at the measured MMP to confirm the number and lock the zones. If the 3-minute average exceeds the ramp figure, update the power zones from it.",
+   "type": "applied"
+  },
+  {
+   "q": "An athlete's 6-second retest shows a large power jump, but you notice the erg was set two resistance levels higher than his baseline test. How do you interpret the result?",
+   "a": "You cannot interpret it as improvement. The test's meaning depends on the standardised resistance for his sex and mass — the normative tables and his own baseline both assume it — so a different setting produces a number from a different test. Higher resistance typically inflates peak wattage while depressing cadence, so the 'gain' is an artefact of settings. Repeat the test at the correct level, and log resistance alongside every result so it cannot drift again.",
+   "type": "applied"
+  },
+  {
+   "q": "Using a 6-second test result, how do you set up the athlete's subsequent sprint training on the erg, and what qualities are you developing?",
+   "a": "Set the resistance two levels below the test resistance, which lets the athlete express and develop high leg speed rather than grinding. The targets come from the test benchmarks — averages around 130 rpm with peaks of 140-150+ — and the qualities being trained are the components of repeated propulsive power: repeated concentric acceleration, rate of impulse, intramuscular activation and intermuscular synchronisation. Retesting at the standard resistance then tracks whether the sprint block moved peak and average W/kg.",
+   "type": "applied"
+  },
+  {
+   "q": "An open-division athlete reaches RPE 7/10 only six minutes into her submaximal ramp. What does this tell you and what do you change?",
+   "a": "The test terminated below the 8-12 minute window, which means the protocol ramped too aggressively for her current fitness — the start watts or increment for the band she was assigned outran her. Her estimated MMP is therefore built on a too-short ramp and should be treated cautiously. Re-test with a gentler configuration — the lower end of her band's start-watt range — so termination lands inside the window; the early cutoff is itself useful data, flagging that her cardiorespiratory fitness sits at the low end of her division band.",
+   "type": "applied"
+  },
+  {
+   "q": "A 90 kg male records a peak of 1170 W on the single best revolution of his 6-second test and averages 990 W across the six seconds. Calculate both relative-power figures.",
+   "a": "Peak: 1170 W ÷ 90 kg = 13.0 W/kg. Average: 990 W ÷ 90 kg = 11.0 W/kg. These are the two numbers read against the normative watts-per-kilogram tables for his sex and mass at the standardised resistance — the peak reflecting the single best revolution (typically within the first one to three), the 6-second average reflecting how well he holds propulsive power across the whole effort.",
+   "type": "calc"
+  },
+  {
+   "q": "An open-division female starts her submaximal ramp at 85 W with 15 W added at each new minute. She reaches the RPE 7/10 cutoff during the ninth minute. What wattage is she riding at termination, and is the test valid by duration?",
+   "a": "The first minute is ridden at 85 W and each subsequent minute adds 15 W, so minute 9's load is 85 + (15 × 8) = 85 + 120 = 205 W. She terminates at 205 W. Duration check: reaching the cutoff during minute nine means an elapsed time between eight and nine minutes, inside the required 8-12 minute window, so the ramp configuration was appropriate and the terminal power and heart rate can be used to estimate her maximal minute power and max HR.",
+   "type": "calc"
+  }
+ ],
+ "of_decisiontree": [
+  {
+   "q": "Describe the official off-feet decision tree: its opening gate, what gets built before any prescription, and its four use-case branches.",
+   "a": "The opening gate is benchmark-first: have this athlete's off-feet capabilities been benchmarked? An unbenchmarked athlete is risk-stratified and routed through the submaximal test, and the results build an athlete power profile — maximal aerobic power, sprint power capacity and peak power output. A further gate asks whether a training plan exists, and the tree then branches by use-case: building general cardiorespiratory fitness (percentile-banded 12-week plans), returning from injury, progressively building aerobic power (Z1-Z6 zones from maximal minute power and max HR), and developing repeated peak power and leg speed. This lesson's own six-question session framework sits downstream of the tree — it assumes the benchmark gate has already been passed.",
+   "type": "recall"
+  },
+  {
+   "q": "What three inputs answer the framework's first gate, and what does a 'no' actually mean for the session?",
+   "a": "The triage of what the athlete reports — soreness settles, a niggle is managed, an injury stops impact (day 39's classification); the athlete's weekly impact-load budget, i.e. how much ground-contact volume their tissue history can currently absorb; and any bone-stress history, which lowers that budget outright. A 'no' reroutes rather than cancels: the aerobic objective survives, and the session moves to a non-impact modality that can still deliver it.",
+   "type": "recall"
+  },
+  {
+   "q": "What two properties make the bike the framework's default off-feet modality, and what is its weakness?",
+   "a": "Minimal skill demand — technique barely limits output, so session quality holds even in deep fatigue or inexperience — and zero impact. Its controllable wattage also makes it the most precisely dosed modality available. The weakness is specificity: no HYROX includes a bike, so its transfer is mostly central — heart, blood, plasma volume — and it rehearses none of the race's movement patterns.",
+   "type": "recall"
+  },
+  {
+   "q": "What do the rower and SkiErg add over the bike, and what gates their use?",
+   "a": "Race-specificity — they are actual race stations, SkiErg first and rower fifth, so conditioning minutes double as technical rehearsal — plus recruitment of the trunk, lats, grip and hip-hinge pattern that the bike leaves untouched. The gate is skill: because output depends on correct movement sequencing, a novice or profoundly fatigued athlete produces degraded technique rather than a clean aerobic stimulus. Use them when technique is stable and specificity is wanted.",
+   "type": "recall"
+  },
+  {
+   "q": "How are doses converted between running and erg work, and what is the caveat about heart rate?",
+   "a": "By duration and internal load: a 40-minute Z2 run becomes roughly 40 minutes of Z2 erg work at matched RPE, because distance means nothing across modalities. Heart rate is an unreliable bridge — at matched effort it commonly reads differently on ergs than running, typically lower on the bike, and it lags behind changes in work rate. So anchor by RPE early in a block, and by per-modality power targets from testing once they exist.",
+   "type": "recall"
+  },
+  {
+   "q": "An athlete with a grumbling tibia arrives on a threshold-run day. Walk the framework.",
+   "a": "Gate one: a tibial symptom in an athlete with bone-stress risk means no impact today — the session reroutes. Gate two: the objective is threshold, which survives the rerouting. Gate three: the bike fits best — zero impact, and threshold work rewards its precisely holdable wattage; the curved mill is excluded outright because it is uphill running and loads the lower leg. Gate four: keep the duration and structure (for example 3 × 10 minutes) at threshold watts from her erg test, anchored by RPE if no test exists. Then schedule the route back — short flat runs as symptoms clear — and keep a minimum run-adjacent exposure such as walking if tolerated.",
+   "type": "applied"
+  },
+  {
+   "q": "Why must the curved treadmill be excluded from the injury branch of the tree, despite being non-motorised and 'low impact' in marketing copy?",
+   "a": "Because it is still running — and a particularly below-knee-loading form of it. The athlete works on the rising front of the belt, so every stride is effectively uphill, which shifts load onto the calf, Achilles and lower leg; the common toe-tapping fault concentrates that strain further. An athlete routed off-feet to spare exactly those tissues would be re-loading them. The curved mill's honest place in the tree is the sprint-power branch for healthy athletes.",
+   "type": "applied"
+  },
+  {
+   "q": "A coach copies an athlete's running heart-rate zones onto rower intervals. What goes wrong, and what should be done instead?",
+   "a": "At matched internal effort, heart rate does not read the same across modalities, and it lags work-rate changes — so run-derived bands will misplace erg intensity, usually making intervals too hard or too easy for the intended zone, and interval prescriptions chase a number that responds late. Instead, anchor erg work to per-modality data: the day 121 test matrix produces an estimated or true maximal minute power and erg-specific zones, and power is the firmer handle because it responds instantly and does not drift with heat or fatigue. Until testing happens, RPE is the better bridge.",
+   "type": "applied"
+  },
+  {
+   "q": "Design the return-to-running phase for an athlete finishing four off-feet weeks, and name the two symmetrical errors to avoid.",
+   "a": "Reintroduce running only as the gate-one flags clear — settling symptoms and pain-free daily function — starting with short, flat, easy exposures and progressing gradually, while off-feet volume is held up so the total aerobic dose stays level as running rebuilds underneath it. Error one: resuming at the previous full running volume, which re-injures tissue that has deconditioned to impact. Error two: dropping all off-feet work the day running resumes, which detrains the engine while the legs are still only partway back.",
+   "type": "applied"
+  },
+  {
+   "q": "A deconditioned newcomer and an athlete returning from a tibial stress injury both enter the official decision tree. Which branch takes each, and what anchors govern their progression?",
+   "a": "The newcomer is benchmarked first — risk stratification, then the submaximal test — and lands in the general cardiorespiratory-fitness branch, where the CRF percentile bands them into a 12-week plan: roughly 0-30% beginner 1, 31-50% beginner 2, 51-70% intermediate, above 70% advanced. The returning athlete takes the return-from-injury branch: erg work replaces impact volume while two anchors govern the way back — a pedal-effectiveness score around 75 and a left-right symmetry deficit inside 10% — on a week-by-week schedule that blends off-feet minutes with a graded return of on-feet work, accelerated only in uncomplicated cases. Both exits then feed the session framework this lesson teaches: per-modality zones, duration-and-RPE dosing and a scheduled route back to full running.",
+   "type": "applied"
+  },
+  {
+   "q": "An athlete's plan calls for 6.0 hours of aerobic work this week, but her impact budget caps running at 60% of that time. Calculate her running and off-feet allocations.",
+   "a": "Running: 6.0 × 0.60 = 3.6 hours. Off-feet: 6.0 − 3.6 = 2.4 hours. The framework's point is that the 2.4 hours are not lost training — they are rerouted to the bike, rower or SkiErg at matched duration and RPE, so the aerobic objective of the week is preserved while ground-contact load stays inside the budget her tissue history allows.",
+   "type": "calc"
+  },
+  {
+   "q": "An athlete's running Z2 band is 135-150 bpm. On the bike her heart rate reads 8 beats lower at matched RPE. Calculate her provisional bike Z2 band and state what should eventually replace it.",
+   "a": "Lower bound: 135 − 8 = 127 bpm. Upper bound: 150 − 8 = 142 bpm. Her provisional bike Z2 band is therefore 127-142 bpm. This is a stopgap built on an observed offset — the durable solution is a per-modality anchor from the day 121 test matrix, whose estimated or true maximal minute power yields bike-specific power zones, a firmer intensity handle than heart rate because power responds instantly and does not drift.",
+   "type": "calc"
+  }
  ]
 }

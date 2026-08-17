@@ -45,7 +45,7 @@ SUBTITLE = {
     "Module 7.1": "Embedding Skills in Athletes for HYROX Performance",
     "Module 7.2": "Running Biomechanics and Technique for HYROX Performance",
     "Module 7.3": "Off-Feet Conditioning",
-    "Module 7.4": "The Panel of Experts &mdash; station deep dives",
+    "Module 7.4": "Performance Enhancement and Injury &mdash; station deep dives",
     "Module 8":   "Mastering Periodization in HYROX",
     "Module 9":   "Mental Performance",
     "Module 10":  "Personalized Performance Coaching",
