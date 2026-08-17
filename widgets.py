@@ -763,7 +763,7 @@ def polarized_donut() -> str:
     body = '''
 <div class="pd-container">
   <div class="pd-side">
-    <h4>Polarized (Seiler 80/20)</h4>
+    <h4>Polarised (Seiler 80/20)</h4>
     <svg viewBox="0 0 200 200" class="w-svg" xmlns="http://www.w3.org/2000/svg">
       <circle cx="100" cy="100" r="80" fill="none" stroke="#67e8b0" stroke-width="36" stroke-dasharray="402 502" transform="rotate(-90 100 100)"/>
       <circle cx="100" cy="100" r="80" fill="none" stroke="#ff7a7a" stroke-width="36" stroke-dasharray="100 502" stroke-dashoffset="-402" transform="rotate(-90 100 100)"/>
@@ -787,13 +787,13 @@ def polarized_donut() -> str:
   </div>
 </div>
 <div class="lc-context">
-  Seiler's polarized model: ~80% sessions in easy zone, ~20% in hard zone, minimize the middle "gray zone."
+  Seiler's polarised model: ~80% sessions in easy zone, ~20% in hard zone, minimise the middle "grey zone."
   Measured by SESSION COUNT, not minutes. Your block follows this — 4×8 and 10×1000m are the polar Z3+ sessions.
 </div>
 '''
     return _wrap(
         "pd-widget",
-        "Polarized vs Pyramidal — session distribution",
+        "Polarised vs Pyramidal — session distribution",
         body,
         "Two valid distributions of endurance training intensity.",
     )
