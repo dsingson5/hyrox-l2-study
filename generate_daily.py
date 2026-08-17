@@ -630,18 +630,22 @@ def render_html(today, today_day, today_lesson, deep_review, reviews, questions,
 '''
 
 
-def build_index_html(base_html, available, this_iso, dtopic=None):
+def build_index_html(base_html, available, this_iso, dtopic=None, rorder=None):
     """Wrap the day's page as a self-correcting landing page.
     Injects a tiny script that:
       1. Computes *today* in Asia/Manila (viewer's own clock is irrelevant).
       2. Looks at localStorage hyroxl2.state.v1 to find dates the user has
          already answered questions on (grouped by Manila date).
-      3. Redirects to the EARLIEST archive date that is <= today AND has no
-         answer activity yet — so missed days resume on the right page rather
-         than skipping ahead. If everything up to today is done, goes to today.
-      4. On a fresh device (no state yet), defaults to today so a brand-new
-         visitor doesn't get sent back to Day 1."""
+      3. Redirects to the FIRST INCOMPLETE page in RELEVANCE order (rorder,
+         from data/relevance_order.json) — the most relevant lesson not yet
+         mastered. Completed lessons are skipped wherever they sit, and
+         future-DATED pages are servable immediately (the whole archive is
+         unlocked; dates are just filenames). Falls back to the old
+         chronological walk if no relevance order is baked.
+      4. On a fresh device (no state yet), starts at the most relevant lesson
+         (rorder[0]) rather than Day 1."""
     days = json.dumps(sorted(available))
+    rorder_json = json.dumps(rorder or [])
     dtopic_json = json.dumps(dtopic or {})
     # Per-day CORE question stable-ids: a day counts as DONE only when the
     # user has graded EVERY one of them. Baked so the redirect can decide
@@ -660,7 +664,7 @@ def build_index_html(base_html, available, this_iso, dtopic=None):
     dayq_json = json.dumps(_dayq)
     redirect = (
         '<script>(function(){'
-        'var DAYS=' + days + ';var DTOPIC=' + dtopic_json + ';var DAYQ=' + dayq_json + ';var THIS="' + this_iso + '";'
+        'var DAYS=' + days + ';var RORDER=' + rorder_json + ';var DTOPIC=' + dtopic_json + ';var DAYQ=' + dayq_json + ';var THIS="' + this_iso + '";'
         'var CUTOFF="' + COMPLETION_CUTOFF + '";'
         # No gist id is baked (none exists yet for this site) — but once the
         # user configures cloud sync on a device, its stored gist id makes the
@@ -696,13 +700,18 @@ def build_index_html(base_html, available, this_iso, dtopic=None):
         'var qs=DAYQ[d];'
         'if(qs&&qs.length){for(var i=0;i<qs.length;i++){if(!cards[qs[i]])return false;}return true;}'
         'return reviewed[d]||(DTOPIC[d]&&engaged[DTOPIC[d]]);}'
+        # Relevance regime: walk RORDER (most-relevant first, whole archive —
+        # no date gate; every page is unlocked) and serve the first lesson
+        # whose core questions aren't all graded. Chronological DAYS walk
+        # remains as the fallback when no relevance order is baked.
         'function decide(reviewed,completed,engaged,cards,hasState){var tg=null;'
-        'if(hasState){for(var i=0;i<DAYS.length;i++){var d=DAYS[i];if(d>today)break;'
+        'var ORD=(RORDER&&RORDER.length)?RORDER:DAYS;var gate=!(RORDER&&RORDER.length);'
+        'if(hasState){for(var i=0;i<ORD.length;i++){var d=ORD[i];if(gate&&d>today)break;'
         'if(!complete(d,reviewed,completed,engaged,cards)){tg=d;break;}}'
         'if(!tg){tg=(DAYS.indexOf(today)!==-1)?today:DAYS[DAYS.length-1];}}'
-        # Fresh visitor: every lesson is already unlocked (dates are backdated),
-        # so start at Module 1 Day 1 rather than at 'today' (= the final lesson).
-        'else{tg=DAYS[0];}'
+        # Fresh visitor: start at the most relevant lesson (or Day 1 when no
+        # relevance order exists — every lesson is unlocked either way).
+        'else{tg=ORD[0];}'
         'return tg||THIS;}'
         'var local=readLocal();var settled=false;'
         'function finish(remote){if(settled)return;settled=true;'
@@ -807,7 +816,21 @@ def build_day(build_date, curriculum, questions, is_entry):
                 _lesson_dates[_dd] = _tid
         except Exception:
             pass
-    index_path.write_text(build_index_html(html, available, build_date.isoformat(), _lesson_dates), encoding="utf-8")
+    # Relevance serving order (2026-08-17): data/relevance_order.json is a
+    # permutation of day numbers ranked by relevance to David's current
+    # training & coaching. The resume redirect walks THIS order (not the
+    # calendar) for the next incomplete lesson, so "today's lesson" is always
+    # the most relevant thing he hasn't mastered yet. Dates stay the page
+    # naming layer; completion/FSRS state is untouched by re-ranking.
+    _rorder = []
+    try:
+        _ro = json.loads((DATA / "relevance_order.json").read_text(encoding="utf-8"))
+        _avs = set(available)
+        _rorder = [d for n in _ro
+                   if (d := (_sd + _dt.timedelta(days=int(n) - 1)).isoformat()) in _avs]
+    except Exception:
+        _rorder = []
+    index_path.write_text(build_index_html(html, available, build_date.isoformat(), _lesson_dates, _rorder), encoding="utf-8")
     print(f"Wrote {rolling_path} (rolling)")
     print(f"Wrote {index_path} (GitHub Pages entry)")
     return 0
