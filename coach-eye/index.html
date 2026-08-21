@@ -1,0 +1,1629 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#0a0a0c">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Coach Eye">
+<title>Coach Eye - HYROX Movement Quiz</title>
+<link rel="icon" href="data:,">
+<style>
+  :root{
+    --bg:#0a0a0c;
+    --panel:#141417;
+    --panel2:#1c1c21;
+    --line:#28282e;
+    --line2:#3a3a42;
+    --text:#f4f4f5;
+    --muted:#a0a0a8;
+    --faint:#55555c;
+    --accent:#ffed00;
+    --accent-ink:#111111;
+    --good:#2ecc71;
+    --bad:#ff5a5a;
+    --radius:14px;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{color-scheme:dark}
+  body{
+    background:var(--bg);color:var(--text);
+    font-family:system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    line-height:1.55;-webkit-font-smoothing:antialiased;min-height:100vh;
+  }
+  .wrap{max-width:920px;margin:0 auto;padding:0 16px 64px}
+  .wrap{padding:0 max(16px, env(safe-area-inset-left)) calc(64px + env(safe-area-inset-bottom)) max(16px, env(safe-area-inset-right))}
+  button{touch-action:manipulation;-webkit-tap-highlight-color:rgba(0,0,0,0)}
+  header{display:flex;align-items:baseline;gap:14px;flex-wrap:wrap;padding:20px 0 12px;border-bottom:1px solid var(--line);margin-bottom:20px}
+  .brand{font-weight:800;font-size:1.35rem;letter-spacing:.06em}
+  .brand em{font-style:normal;color:var(--accent)}
+  .tagline{color:var(--muted);font-size:.78rem;letter-spacing:.16em;text-transform:uppercase}
+  footer{margin-top:48px;color:var(--faint);font-size:.75rem;text-align:center}
+
+  .screen{display:none}
+  .screen.active{display:block;animation:fadeIn .28s ease}
+  @keyframes fadeIn{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
+
+  h2{font-size:1.25rem;font-weight:700;margin-bottom:10px}
+  .card{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);padding:18px;margin-bottom:16px}
+  .seclabel{font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);font-weight:700;margin:14px 0 6px}
+  .card > .seclabel:first-child{margin-top:0}
+  .muted{color:var(--muted)}
+  .small{font-size:.85rem}
+  .center{text-align:center}
+  .hint{font-weight:400;text-transform:none;letter-spacing:0;color:var(--faint)}
+  .warn{color:var(--accent)}
+  code{background:var(--panel2);border:1px solid var(--line);border-radius:5px;padding:1px 6px;font-size:.85em}
+  pre{background:#000;border:1px solid var(--line);border-radius:10px;padding:14px;overflow-x:auto;color:#d7d7db;font-size:.83rem;line-height:1.6;margin:10px 0}
+  pre code{background:none;border:none;padding:0}
+
+  .btn{
+    cursor:pointer;border:1px solid var(--line2);background:var(--panel2);color:var(--text);
+    border-radius:12px;padding:11px 18px;font-size:1rem;font-weight:600;font-family:inherit;
+    transition:background .15s,border-color .15s,color .15s,opacity .15s;
+  }
+  .btn:hover:not(:disabled){border-color:#55555f;background:#232329}
+  .btn:disabled{opacity:.4;cursor:not-allowed}
+  .btn-primary{background:var(--accent);color:var(--accent-ink);border-color:var(--accent);font-weight:800}
+  .btn-primary:hover:not(:disabled){background:var(--accent);border-color:var(--accent);filter:brightness(1.06)}
+  .btn-block{display:block;width:100%;padding:16px;font-size:1.1rem;margin:14px 0}
+  .btn-mini{padding:7px 13px;font-size:.87rem;border-radius:10px}
+  .btn-mini.sel{border-color:var(--accent);color:var(--accent)}
+  .linklike{background:none;border:none;color:var(--muted);text-decoration:underline;cursor:pointer;font-size:.85rem;font-family:inherit}
+  .linklike:hover{color:var(--text)}
+  a{color:var(--accent)}
+  :focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+
+  .chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:4px}
+  .chip{
+    cursor:pointer;border:1px solid var(--line2);background:var(--panel2);color:var(--text);
+    border-radius:999px;padding:8px 15px;font-size:.9rem;font-weight:600;font-family:inherit;
+    transition:border-color .15s,color .15s,background .15s;
+  }
+  .chip:hover{border-color:#55555f}
+  .chip.sel{border-color:var(--accent);color:var(--accent);background:rgba(255,237,0,.08)}
+  .fchip{
+    cursor:pointer;border:1px solid var(--line2);background:var(--panel2);color:var(--text);
+    border-radius:999px;padding:8px 15px;font-size:.9rem;font-weight:600;font-family:inherit;
+    transition:border-color .15s,color .15s,background .15s;
+  }
+  .fchip.sel{border-color:var(--accent);color:var(--accent);background:rgba(255,237,0,.08)}
+  .fchip.sel.match{border-color:var(--good);color:var(--good);background:rgba(46,204,113,.1)}
+  .fchip.sel.miss{border-color:var(--bad);color:var(--bad);background:rgba(255,90,90,.1)}
+
+  .seg{display:inline-flex;border:1px solid var(--line2);border-radius:11px;overflow:hidden}
+  .seg button{background:transparent;border:none;color:var(--muted);padding:10px 18px;font-weight:700;font-size:.95rem;cursor:pointer;font-family:inherit;transition:background .15s,color .15s}
+  .seg button:hover{color:var(--text)}
+  .seg button.sel{background:var(--accent);color:var(--accent-ink)}
+
+  .switch{display:inline-flex;align-items:center;gap:10px;cursor:pointer;user-select:none;font-weight:600}
+  .switch input{
+    appearance:none;-webkit-appearance:none;width:44px;height:24px;border-radius:12px;flex:none;
+    background:var(--panel2);border:1px solid var(--line2);position:relative;cursor:pointer;transition:background .2s,border-color .2s;margin:0;
+  }
+  .switch input:checked{background:var(--accent);border-color:var(--accent)}
+  .switch input::after{content:"";position:absolute;top:2px;left:2px;width:18px;height:18px;border-radius:50%;background:#8a8a92;transition:left .2s,background .2s}
+  .switch input:checked::after{left:22px;background:var(--accent-ink)}
+
+  .row{display:flex;gap:22px;align-items:center;flex-wrap:wrap}
+  .row-buttons{display:flex;gap:10px}
+  .row-buttons .btn{flex:1}
+  .bar{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:12px;flex-wrap:wrap}
+
+  /* video */
+  .vwrap{position:relative;background:#000;border-radius:var(--radius);overflow:hidden;border:1px solid var(--line)}
+  .vwrap.err{min-height:240px}
+  video{width:100%;max-height:60vh;object-fit:contain;background:#000;display:block}
+  .vid-error{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;background:var(--panel);text-align:center;padding:24px}
+  .vid-error[hidden]{display:none}
+  .tap-play{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;gap:10px;font-weight:800;letter-spacing:.08em;background:rgba(0,0,0,.45);cursor:pointer;z-index:2;user-select:none}
+  .tap-play[hidden]{display:none}
+  .vcontrols{display:flex;gap:10px;justify-content:center;margin-top:10px}
+
+  /* question screen */
+  .q-top{display:flex;justify-content:space-between;gap:12px;color:var(--muted);font-size:.9rem;margin-bottom:8px;font-variant-numeric:tabular-nums}
+  .q-top .timer{color:var(--text);font-weight:700;min-width:52px;text-align:right}
+  .progressbar{height:4px;background:var(--panel2);border-radius:2px;overflow:hidden;margin-bottom:16px}
+  #qBar{height:100%;background:var(--accent);width:0;transition:width .3s ease}
+  .answers{display:flex;gap:12px;margin-top:18px}
+  .btn-answer{
+    flex:1;cursor:pointer;padding:20px 12px;font-size:1.2rem;font-weight:800;font-family:inherit;
+    border-radius:14px;background:var(--panel);border:2px solid var(--line2);color:var(--text);
+    transition:border-color .15s,background .15s,opacity .15s;
+  }
+  .btn-answer:hover:not(:disabled){border-color:var(--accent)}
+  .btn-answer:disabled{opacity:.35;cursor:not-allowed}
+  kbd{background:#222227;border:1px solid var(--line2);border-radius:5px;padding:1px 8px;font-size:.72rem;margin-left:8px;color:var(--muted);font-family:inherit;font-weight:600;vertical-align:middle}
+  .kbd-legend{margin-top:12px}
+  @media(max-width:480px){
+    .answers{flex-direction:column}
+    .btn-answer{min-height:56px}
+    .btn-answer kbd{display:none}
+    .q-top{font-size:.8rem}
+    .kbd-legend{display:none}
+    video{max-height:48vh}
+    .btn-mini{min-height:40px}
+  }
+
+  /* reveal */
+  .banner{border-radius:var(--radius);padding:16px 18px;margin-bottom:16px;border:1px solid var(--line)}
+  .banner.good{background:rgba(46,204,113,.09);border-color:rgba(46,204,113,.5)}
+  .banner.bad{background:rgba(255,90,90,.09);border-color:rgba(255,90,90,.5)}
+  .banner h3{font-size:1.35rem;font-weight:800;margin-bottom:2px}
+  .banner.good h3{color:var(--good)}
+  .banner.bad h3{color:var(--bad)}
+  .banner .truth{font-weight:800;letter-spacing:.06em}
+  .coach-title{font-size:1.15rem;font-weight:800;margin-bottom:2px}
+  .checklist{list-style:none}
+  .checklist li{padding:4px 0 4px 26px;position:relative}
+  .checklist li::before{content:"\2713";position:absolute;left:4px;color:var(--good);font-weight:700}
+  .cue-list{list-style:none}
+  .cue-list li{padding:4px 0 4px 26px;position:relative}
+  .cue-list li::before{content:"\2192";position:absolute;left:4px;color:var(--accent);font-weight:700}
+  .fault-item{padding:10px 13px;border-left:3px solid var(--line2);margin:8px 0;background:var(--panel2);border-radius:0 9px 9px 0}
+  .fault-item.in-clip{border-left-color:var(--bad);background:rgba(255,90,90,.07)}
+  .fault-item .flabel{font-weight:700}
+  .fault-item .fdetail{color:var(--muted);font-size:.92rem}
+  .tag{display:inline-block;font-size:.66rem;letter-spacing:.12em;text-transform:uppercase;font-weight:800;color:var(--bad);border:1px solid var(--bad);border-radius:5px;padding:1px 7px;margin-left:8px;vertical-align:middle}
+
+  textarea,select{
+    width:100%;background:var(--panel2);border:1px solid var(--line2);color:var(--text);
+    border-radius:10px;padding:10px 12px;font:inherit;
+  }
+  textarea{min-height:72px;resize:vertical}
+  textarea::placeholder{color:var(--faint)}
+  select{cursor:pointer}
+
+  /* summary + stats */
+  .bigscore{font-size:3rem;font-weight:800;color:var(--accent);line-height:1.2;font-variant-numeric:tabular-nums}
+  .tscroll{overflow-x:auto}
+  table{width:100%;border-collapse:collapse;font-variant-numeric:tabular-nums}
+  th,td{padding:8px 8px;border-bottom:1px solid var(--line);text-align:left;font-size:.93rem;white-space:nowrap}
+  th{color:var(--muted);font-size:.72rem;text-transform:uppercase;letter-spacing:.12em;font-weight:700}
+  tr:last-child td{border-bottom:none}
+  .miss-item{padding:9px 0;border-bottom:1px solid var(--line);font-size:.95rem}
+  .miss-item:last-of-type{border-bottom:none}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="brand">COACH <em>EYE</em></div>
+    <div class="tagline">HYROX Movement Quiz</div>
+  </header>
+
+  <main>
+    <!-- ============ SETUP ============ -->
+    <section id="scr-setup" class="screen">
+      <div class="card">
+        <h2>No clips loaded yet</h2>
+        <p id="setupReason" class="muted"></p>
+      </div>
+      <div class="card">
+        <div class="seclabel">Option A &middot; Run the pipeline, then serve this folder</div>
+        <pre><code># 1. split + crop your course videos into quiz clips
+python3 pipeline/process_videos.py /path/to/your/videos
+
+# 2. serve the quiz folder over http
+cd hyrox-quiz/quiz
+python3 -m http.server 8000
+
+# 3. open http://localhost:8000 in your browser</code></pre>
+        <p class="muted small">The quiz needs to be served over <code>http://</code> so the browser may fetch <code>manifest.json</code> and the clip files. Any local server works; <code>python3 -m http.server</code> ships with Python.</p>
+        <p style="margin-top:10px"><button id="btnRetry" class="btn">Retry loading manifest.json</button></p>
+      </div>
+      <div class="card">
+        <div class="seclabel">Option B &middot; Import your clips into this browser</div>
+        <p class="small" style="margin-bottom:12px">Already processed your videos? Import the <code>quiz</code> folder (the one containing <code>manifest.json</code> and <code>clips/</code>). The clips are stored <b>in this browser on this device</b> &mdash; nothing is uploaded anywhere &mdash; and from then on this page just works, no server needed. Re-import any time after processing new videos.</p>
+        <label class="btn btn-primary" for="dirPick">Import quiz folder&hellip;</label>
+        <input type="file" id="dirPick" webkitdirectory directory multiple style="display:none">
+        <label class="btn" for="filePick" style="margin-left:8px">Import files&hellip; <span class="hint">(phone)</span></label>
+        <input type="file" id="filePick" multiple accept=".mp4,.json,.js,video/mp4,application/json,text/javascript" style="display:none">
+        <p class="small muted" style="margin-top:8px">On a phone there is no folder picker: copy the quiz folder to your device, tap <b>Import files</b>, and select <code>manifest.json</code> together with everything inside <code>clips/</code>.</p>
+        <p id="setupMsg" class="small warn" style="margin-top:10px"></p>
+      </div>
+    </section>
+
+    <!-- ============ START ============ -->
+    <section id="scr-start" class="screen">
+      <div class="card">
+        <div class="seclabel">Clip library</div>
+        <p id="stTotals"></p>
+        <p id="stNote" class="small muted" hidden></p>
+        <p id="stStorage" class="small" hidden style="margin-top:8px">Clips are stored in this browser.
+          <button id="btnAddClips" class="btn btn-mini" type="button">Add / update clips&hellip;</button>
+          <button id="btnWipeClips" class="btn btn-mini" type="button">Remove from this browser</button>
+        </p>
+        <p id="stKnowledgeWarn" class="small warn" hidden>knowledge.js is not loaded &mdash; coaching notes will be generic.</p>
+        <div class="seclabel">Filter by exercise <span class="hint">&middot; none selected = all</span></div>
+        <div id="stChips" class="chips"></div>
+      </div>
+      <div class="card">
+        <div class="seclabel">Session</div>
+        <div class="row">
+          <div class="seg" id="stLen">
+            <button type="button" data-len="10" class="sel">10</button>
+            <button type="button" data-len="20">20</button>
+            <button type="button" data-len="0">All</button>
+          </div>
+          <label class="switch"><input type="checkbox" id="stFocus"><span>Focus my mistakes</span></label>
+        </div>
+      </div>
+      <button id="btnStart" class="btn btn-primary btn-block">Start quiz</button>
+      <div class="row-buttons">
+        <button id="btnLabelMode" class="btn">Label clips</button>
+        <button id="btnStats" class="btn">My stats</button>
+      </div>
+      <p class="muted small center" style="margin-top:16px">Source: <span id="stModeTxt"></span> &middot; <button id="lnkSetup" class="linklike">change</button></p>
+    </section>
+
+    <!-- ============ QUESTION ============ -->
+    <section id="scr-question" class="screen">
+      <div class="q-top">
+        <span id="qProgress"></span>
+        <span id="qStreak"></span>
+        <span id="qTimer" class="timer">0.0s</span>
+      </div>
+      <div class="progressbar"><div id="qBar"></div></div>
+      <div id="qVideoSlot"></div>
+      <p id="qExercise" class="center muted" style="margin-top:10px"></p>
+      <div class="answers">
+        <button id="btnGood" class="btn-answer" type="button">Good form<kbd>G</kbd></button>
+        <button id="btnBad" class="btn-answer" type="button">Faulty<kbd>F</kbd></button>
+      </div>
+      <p class="kbd-legend muted small center">G good &middot; F faulty &middot; Space replay &middot; S slow-mo</p>
+      <p class="center" style="margin-top:14px"><button id="btnQuit" class="linklike">End session</button></p>
+    </section>
+
+    <!-- ============ REVEAL ============ -->
+    <section id="scr-reveal" class="screen">
+      <div id="rvContent"></div>
+    </section>
+
+    <!-- ============ SUMMARY ============ -->
+    <section id="scr-summary" class="screen">
+      <div id="smContent"></div>
+    </section>
+
+    <!-- ============ LABEL MODE ============ -->
+    <section id="scr-label" class="screen">
+      <div class="bar">
+        <button id="lblBack" class="btn btn-mini" type="button">&larr; Back</button>
+        <span id="lblPos" class="muted small"></span>
+        <label class="switch small"><input type="checkbox" id="lblShowAll"><span class="small">All clips</span></label>
+      </div>
+      <p id="lblSpoiler" class="small warn center" hidden style="margin-bottom:12px">Heads-up: current labels are visible here &mdash; spoilers for clips you have not quizzed yet.</p>
+      <div id="lblEmpty" class="card center" hidden><p id="lblEmptyMsg" class="muted"></p></div>
+      <div id="lblMain">
+        <div id="lblVideoSlot"></div>
+        <p id="lblMeta" class="muted small center" style="margin-top:8px"></p>
+        <div id="lblControls" style="margin-top:12px"></div>
+      </div>
+      <div class="bar" style="margin-top:14px">
+        <button id="lblPrev" class="btn" type="button">&larr; Prev</button>
+        <button id="lblNext" class="btn" type="button">Next &rarr;</button>
+      </div>
+      <button id="btnExport" class="btn btn-block" type="button">Export manifest.json</button>
+      <p class="muted small">Labels are saved in this browser immediately. To make them permanent, export and save the file over <code>quiz/manifest.json</code>.</p>
+    </section>
+
+    <!-- ============ STATS ============ -->
+    <section id="scr-stats" class="screen">
+      <div class="bar">
+        <button id="statsBack" class="btn btn-mini" type="button">&larr; Back</button>
+        <h2 style="margin:0">My stats</h2>
+        <span></span>
+      </div>
+      <div id="statsBody"></div>
+    </section>
+  </main>
+
+  <footer>Coach Eye runs entirely on this device &middot; no data leaves your browser</footer>
+</div>
+
+<!-- shared video block, reparented into whichever screen needs it -->
+<div id="holder" hidden>
+  <div id="videoBox">
+    <div class="vwrap" id="vwrap">
+      <video id="vid" muted loop playsinline preload="auto"></video>
+      <div id="tapPlay" class="tap-play" hidden>&#9654; Tap to play</div>
+      <div id="vidError" class="vid-error" hidden>
+        <p id="vidErrMsg" class="muted">This clip failed to load.</p>
+        <button id="vidErrBtn" class="btn" type="button" hidden></button>
+      </div>
+    </div>
+    <div class="vcontrols">
+      <button id="btnReplay" class="btn btn-mini" type="button">&#8635; Replay</button>
+      <button id="btnSlow" class="btn btn-mini" type="button">0.5&times; slow-mo</button>
+    </div>
+  </div>
+</div>
+
+<script src="knowledge.js"></script>
+<script>
+(function(){
+'use strict';
+
+/* ================= helpers ================= */
+function $id(id){ return document.getElementById(id); }
+function el(tag, attrs){
+  var n = document.createElement(tag);
+  if (attrs){
+    for (var k in attrs){
+      if (!Object.prototype.hasOwnProperty.call(attrs, k)) continue;
+      if (k === 'class') n.className = attrs[k];
+      else n.setAttribute(k, attrs[k]);
+    }
+  }
+  for (var i = 2; i < arguments.length; i++){
+    var c = arguments[i];
+    if (c === null || c === undefined) continue;
+    n.appendChild(typeof c === 'string' ? document.createTextNode(c) : c);
+  }
+  return n;
+}
+function fmtMs(ms){ return (ms / 1000).toFixed(1) + 's'; }
+function shuffle(a){
+  for (var i = a.length - 1; i > 0; i--){
+    var j = Math.floor(Math.random() * (i + 1));
+    var t = a[i]; a[i] = a[j]; a[j] = t;
+  }
+  return a;
+}
+function readText(file){
+  if (file.text) return file.text();
+  return new Promise(function(res, rej){
+    var r = new FileReader();
+    r.onload = function(){ res(r.result); };
+    r.onerror = function(){ rej(r.error); };
+    r.readAsText(file);
+  });
+}
+
+/* ================= storage ================= */
+var LS_STATS = 'hyrox.quiz.v1';
+var LS_LABELS = 'hyrox.quiz.labels.v1';
+function lsGet(key, fallback){
+  try {
+    var v = localStorage.getItem(key);
+    return v ? JSON.parse(v) : fallback;
+  } catch (e) { return fallback; }
+}
+function lsSet(key, val){
+  try { localStorage.setItem(key, JSON.stringify(val)); } catch (e) { /* private mode etc. */ }
+}
+
+/* ================= knowledge ================= */
+function KB(){
+  try {
+    return (window.HYROX_KNOWLEDGE && window.HYROX_KNOWLEDGE.exercises) || {};
+  } catch (e) { return {}; }
+}
+function exName(key){
+  if (!key || key === 'unknown') return 'Unknown exercise';
+  var k = KB()[key];
+  return (k && k.name) ? k.name : key;
+}
+
+/* ================= state ================= */
+var B64_UNLABELED = 'dW5sYWJlbGVk'; /* base64("unlabeled") */
+var manifest = null;
+var rawClips = [];
+var labels = {};            /* overlay: id -> {answer(b64), exercise, faults, note} */
+var stats = { clips: {} };  /* id -> {r, w, times[], last} */
+var mode = 'server';        /* 'server' | 'folder' | 'idb' */
+var fileList = [];          /* FileList entries in folder mode */
+var blobCache = {};         /* clip.file -> object URL */
+var demosHidden = 0;        /* built-in demo clips suppressed because real clips exist */
+
+var currentScreen = '';
+var session = null;         /* {queue:[effClip], idx, results:[]} */
+var curClip = null;
+var answered = false;
+var qStart = 0;
+var timerInt = null;
+var slow = false;
+var streak = 0;
+var sessLen = 10;
+var focusMistakes = false;
+var startSel = {};          /* exercise key -> true (empty = all) */
+var vidErrAction = null;
+var noteTimer = null;
+
+/* label mode state */
+var labelList = [];         /* clip ids */
+var labelIdx = 0;
+var labelShowAll = false;
+var lblCurId = null;
+
+var vid = $id('vid');
+var videoBox = $id('videoBox');
+
+/* ================= screens ================= */
+var SCREENS = ['setup', 'start', 'question', 'reveal', 'summary', 'label', 'stats'];
+function show(name){
+  currentScreen = name;
+  for (var i = 0; i < SCREENS.length; i++){
+    var n = $id('scr-' + SCREENS[i]);
+    if (n) n.classList.toggle('active', SCREENS[i] === name);
+  }
+  window.scrollTo(0, 0);
+}
+
+/* ================= data ================= */
+function initData(m, files, blobs){
+  /* drop object URLs from a previously picked folder - re-picking after a
+     pipeline re-run must not serve stale File objects (ERR_UPLOAD_FILE_CHANGED) */
+  for (var bk in blobCache){
+    if (!Object.prototype.hasOwnProperty.call(blobCache, bk)) continue;
+    try { URL.revokeObjectURL(blobCache[bk]); } catch (eRevoke) { /* ignore */ }
+  }
+  blobCache = {};
+  manifest = m;
+  rawClips = [];
+  var seen = {};
+  var list = (m && Array.isArray(m.clips)) ? m.clips : [];
+  for (var i = 0; i < list.length; i++){
+    var c = list[i];
+    if (c && c.id && c.file && !seen[c.id]){ seen[c.id] = true; rawClips.push(c); }
+  }
+  /* hide the synthetic demo clips as soon as real clips exist */
+  demosHidden = 0;
+  var realOnly = [];
+  for (i = 0; i < rawClips.length; i++){
+    if (!isDemoClip(rawClips[i])) realOnly.push(rawClips[i]);
+  }
+  if (realOnly.length && realOnly.length < rawClips.length){
+    demosHidden = rawClips.length - realOnly.length;
+    rawClips = realOnly;
+  }
+  mode = blobs ? 'idb' : (files ? 'folder' : 'server');
+  fileList = files || [];
+  if (blobs){
+    for (var bp in blobs){
+      if (!Object.prototype.hasOwnProperty.call(blobs, bp)) continue;
+      try { blobCache[bp] = URL.createObjectURL(blobs[bp]); } catch (eUrl) { /* ignore */ }
+    }
+  }
+  var s = lsGet(LS_STATS, null);
+  stats = (s && typeof s === 'object' && s.clips && typeof s.clips === 'object') ? s : { clips: {} };
+  var l = lsGet(LS_LABELS, null);
+  labels = (l && typeof l === 'object') ? l : {};
+}
+
+function effClip(raw){
+  var ov = labels[raw.id] || {};
+  return {
+    id: raw.id,
+    file: raw.file,
+    source: raw.source || '',
+    start: raw.start,
+    end: raw.end,
+    answerB64: ov.answer || raw.answer || B64_UNLABELED,
+    exercise: ov.exercise || raw.exercise || 'unknown',
+    faults: (ov.faults || raw.faults || []).slice(),
+    note: (typeof ov.note === 'string') ? ov.note : (raw.note || '')
+  };
+}
+function effClips(){
+  var out = [];
+  for (var i = 0; i < rawClips.length; i++) out.push(effClip(rawClips[i]));
+  return out;
+}
+function effById(id){
+  for (var i = 0; i < rawClips.length; i++){
+    if (rawClips[i].id === id) return effClip(rawClips[i]);
+  }
+  return null;
+}
+function isUnlabeled(c){
+  /* decodeAnswer maps garbage/undecodable answers to 'unlabeled', so malformed
+     labels route to Label mode instead of vanishing mid-session. The decoded
+     value lives only in this transient local - nothing is written to DOM or
+     state, so good/bad stays encoded until grading. */
+  var v = decodeAnswer(c.answerB64);
+  return v === 'unlabeled';
+}
+function decodeAnswer(b64){
+  /* call ONLY at grading/reveal/label time */
+  try {
+    var v = atob(String(b64 || '')).trim().toLowerCase();
+    return (v === 'good' || v === 'bad') ? v : 'unlabeled';
+  } catch (e) { return 'unlabeled'; }
+}
+function b64enc(s){
+  try { return btoa(s); } catch (e) { return s; }
+}
+function decodeSource(s){
+  /* manifest v2 stores base64(UTF-8 filename) in clip.source; fall back to
+     the raw string when decoding fails (v1 manifests / undecodable values).
+     Call ONLY where the source may be shown post-answer (reveal/label/summary)
+     - the question screen must never display it. */
+  var raw = String(s || '');
+  if (!raw) return '';
+  try {
+    var bin = atob(raw);
+    if (typeof TextDecoder !== 'undefined'){
+      var bytes = new Uint8Array(bin.length);
+      for (var i = 0; i < bin.length; i++) bytes[i] = bin.charCodeAt(i);
+      return new TextDecoder('utf-8', { fatal: true }).decode(bytes);
+    }
+    return decodeURIComponent(escape(bin));
+  } catch (e) { return raw; }
+}
+
+/* ================= demo clips ================= */
+/* The repo ships tiny synthetic demo clips (grayscale test patterns) so the
+   quiz works out of the box. Once REAL clips exist they must disappear -
+   a coach quizzing on TV static is a bug report waiting to happen. */
+var DEMO_SOURCES = { 'demo_wall_ball.mp4': 1, 'demo_kniebeuge.mp4': 1 };
+function isDemoClip(c){
+  if (!c) return false;
+  if (c.demo === true) return true;
+  return DEMO_SOURCES[decodeSource(c.source || '')] === 1;
+}
+
+/* ================= on-device clip storage (IndexedDB) ================= */
+/* Lets the hosted page work with no server: clips are imported once per
+   device and persist in the browser's own storage. Nothing is uploaded. */
+var IDB_NAME = 'hyrox-quiz-media-v1';
+function idbOpen(){
+  return new Promise(function(res, rej){
+    if (!window.indexedDB) return rej(new Error('IndexedDB unavailable'));
+    var rq = indexedDB.open(IDB_NAME, 1);
+    rq.onupgradeneeded = function(){
+      var db = rq.result;
+      if (!db.objectStoreNames.contains('files')) db.createObjectStore('files');
+      if (!db.objectStoreNames.contains('meta')) db.createObjectStore('meta');
+    };
+    rq.onsuccess = function(){ res(rq.result); };
+    rq.onerror = function(){ rej(rq.error || new Error('IndexedDB open failed')); };
+  });
+}
+function idbSaveLibrary(man, blobs){
+  return idbOpen().then(function(db){
+    return new Promise(function(res, rej){
+      var tx = db.transaction(['files', 'meta'], 'readwrite');
+      tx.oncomplete = function(){ db.close(); res(); };
+      tx.onerror = function(){ db.close(); rej(tx.error || new Error('storing failed')); };
+      tx.onabort = function(){ db.close(); rej(tx.error || new Error('storing aborted - device storage may be full')); };
+      var fs = tx.objectStore('files');
+      fs.clear();
+      tx.objectStore('meta').clear();
+      tx.objectStore('meta').put(man, 'manifest');
+      for (var p in blobs){
+        if (Object.prototype.hasOwnProperty.call(blobs, p)) fs.put(blobs[p], p);
+      }
+    });
+  });
+}
+function idbLoadLibrary(){
+  return idbOpen().then(function(db){
+    return new Promise(function(res, rej){
+      var tx = db.transaction(['files', 'meta'], 'readonly');
+      var man = null, keys = [], vals = [];
+      var mq = tx.objectStore('meta').get('manifest');
+      mq.onsuccess = function(){ man = mq.result || null; };
+      var fs = tx.objectStore('files');
+      var kq = fs.getAllKeys();
+      var vq = fs.getAll();
+      kq.onsuccess = function(){ keys = kq.result || []; };
+      vq.onsuccess = function(){ vals = vq.result || []; };
+      tx.oncomplete = function(){
+        db.close();
+        if (!man || !Array.isArray(man.clips) || !man.clips.length) return res(null);
+        var blobs = {};
+        for (var i = 0; i < keys.length && i < vals.length; i++) blobs[keys[i]] = vals[i];
+        res({ manifest: man, blobs: blobs });
+      };
+      tx.onerror = function(){ db.close(); rej(tx.error || new Error('load failed')); };
+    });
+  });
+}
+function idbWipe(){
+  return idbOpen().then(function(db){
+    return new Promise(function(res){
+      var tx = db.transaction(['files', 'meta'], 'readwrite');
+      tx.objectStore('files').clear();
+      tx.objectStore('meta').clear();
+      tx.oncomplete = function(){ db.close(); res(); };
+      tx.onerror = function(){ db.close(); res(); };
+      tx.onabort = function(){ db.close(); res(); };
+    });
+  }).catch(function(){});
+}
+
+function setLabel(id, patch){
+  var ov = labels[id] || (labels[id] = {});
+  for (var k in patch){
+    if (Object.prototype.hasOwnProperty.call(patch, k)) ov[k] = patch[k];
+  }
+  lsSet(LS_LABELS, labels);
+}
+var notePendingId = null;
+var notePendingVal = '';
+function flushNote(){
+  /* write any pending debounced note immediately */
+  if (noteTimer){ clearTimeout(noteTimer); noteTimer = null; }
+  if (notePendingId !== null){
+    var id = notePendingId, val = notePendingVal;
+    notePendingId = null;
+    notePendingVal = '';
+    setLabel(id, { note: val });
+  }
+}
+function noteInput(id, val){
+  /* switching to a different clip must not drop the previous clip's pending note */
+  if (notePendingId !== null && notePendingId !== id) flushNote();
+  clearTimeout(noteTimer);
+  notePendingId = id;
+  notePendingVal = val;
+  noteTimer = setTimeout(function(){
+    noteTimer = null;
+    notePendingId = null;
+    notePendingVal = '';
+    setLabel(id, { note: val });
+  }, 300);
+}
+function recordAnswer(clip, correct, ms){
+  var s = stats.clips[clip.id];
+  if (!s || typeof s !== 'object' || Array.isArray(s)){
+    /* corrupted localStorage (primitive/array) would brick a strict-mode
+       property write - replace with a fresh record */
+    s = stats.clips[clip.id] = { r: 0, w: 0, times: [], last: 0 };
+  }
+  if (correct) s.r = (s.r || 0) + 1; else s.w = (s.w || 0) + 1;
+  if (!Array.isArray(s.times)) s.times = [];
+  s.times.push(Math.round(ms));
+  if (s.times.length > 20) s.times.shift();
+  s.last = Date.now();
+  lsSet(LS_STATS, stats);
+}
+
+/* ================= video ================= */
+function findFile(rel){
+  var clean = String(rel).replace(/\\/g, '/');
+  var suffix = '/' + clean;
+  var i, f, p;
+  for (i = 0; i < fileList.length; i++){
+    f = fileList[i];
+    p = (f.webkitRelativePath || f.name).replace(/\\/g, '/');
+    if (p === clean || p.slice(-suffix.length) === suffix) return f;
+  }
+  var base = clean.split('/').pop();
+  for (i = 0; i < fileList.length; i++){
+    if (fileList[i].name === base) return fileList[i];
+  }
+  return null;
+}
+function clipUrl(clip){
+  if (mode === 'server') return clip.file;
+  if (blobCache[clip.file]) return blobCache[clip.file];
+  if (mode === 'idb') return null;  /* every stored blob was mapped at boot */
+  var f = findFile(clip.file);
+  if (!f) return null;
+  try {
+    blobCache[clip.file] = URL.createObjectURL(f);
+    return blobCache[clip.file];
+  } catch (e) { return null; }
+}
+function playSafe(){
+  try {
+    var p = vid.play();
+    if (p && p.catch) p.catch(function(){ showTapPlay(); });
+  } catch (e) { showTapPlay(); }
+}
+/* iOS Low Power Mode (and some mobile browsers) refuse even muted autoplay;
+   surface a tap target instead of a frozen first frame */
+function showTapPlay(){ try { $id('tapPlay').hidden = false; } catch (e) {} }
+function hideTapPlay(){ try { $id('tapPlay').hidden = true; } catch (e) {} }
+function loadClipVideo(clip){
+  hideVidError();
+  hideTapPlay();
+  vid.dataset.expect = '1';
+  var url = clipUrl(clip);
+  if (!url){ vid.dataset.expect = '0'; videoFailed(); return; }
+  vid.muted = true;
+  if (vid.getAttribute('src') !== url){
+    vid.src = url;
+    try { vid.load(); } catch (e) {}
+  } else {
+    try { vid.currentTime = 0; } catch (e) {}
+  }
+  vid.playbackRate = slow ? 0.5 : 1;
+  playSafe();
+}
+function unloadVideo(){
+  vid.dataset.expect = '0';
+  try { vid.pause(); } catch (e) {}
+  vid.removeAttribute('src');
+  try { vid.load(); } catch (e) {}
+  hideVidError();
+  hideTapPlay();
+}
+function replayVid(){
+  try { vid.currentTime = 0; } catch (e) {}
+  playSafe();
+}
+function toggleSlow(){
+  slow = !slow;
+  try { vid.playbackRate = slow ? 0.5 : 1; } catch (e) {}
+  $id('btnSlow').classList.toggle('sel', slow);
+}
+function showVidError(msg, btnLabel, fn){
+  $id('vidErrMsg').textContent = msg;
+  var b = $id('vidErrBtn');
+  if (btnLabel){ b.hidden = false; b.textContent = btnLabel; vidErrAction = fn; }
+  else { b.hidden = true; vidErrAction = null; }
+  $id('vidError').hidden = false;
+  $id('vwrap').classList.add('err');
+}
+function hideVidError(){
+  $id('vidError').hidden = true;
+  $id('vwrap').classList.remove('err');
+}
+function videoFailed(){
+  if (currentScreen === 'question' && !answered && session){
+    $id('btnGood').disabled = true;
+    $id('btnBad').disabled = true;
+    stopTimer();
+    showVidError('This clip failed to load' + (curClip ? ' (' + curClip.file + ')' : '') + '.', 'Skip this clip', skipCurrent);
+  } else {
+    showVidError('This clip failed to load.', null, null);
+  }
+}
+vid.addEventListener('error', function(){
+  if (vid.dataset.expect === '1'){ vid.dataset.expect = '0'; videoFailed(); }
+});
+vid.addEventListener('loadeddata', function(){
+  try { vid.playbackRate = slow ? 0.5 : 1; } catch (e) {}
+});
+$id('tapPlay').addEventListener('click', function(){ hideTapPlay(); playSafe(); });
+/* tap the footage itself to pause/resume - handy for studying a position on a phone */
+vid.addEventListener('click', function(){
+  if (vid.paused) playSafe();
+  else { try { vid.pause(); } catch (e) {} }
+});
+vid.addEventListener('playing', function(){
+  hideTapPlay();
+  /* start the decision clock when the athlete is actually visible */
+  if (currentScreen === 'question' && !answered && vid.dataset.fresh === '1'){
+    vid.dataset.fresh = '0';
+    qStart = performance.now();
+  }
+});
+
+/* ================= timer ================= */
+function startTimer(){
+  stopTimer();
+  qStart = performance.now();
+  $id('qTimer').textContent = '0.0s';
+  timerInt = setInterval(function(){
+    $id('qTimer').textContent = fmtMs(performance.now() - qStart);
+  }, 100);
+}
+function stopTimer(){
+  if (timerInt){ clearInterval(timerInt); timerInt = null; }
+}
+
+/* ================= boot / setup ================= */
+function boot(){
+  var reason = '';
+  fetch('manifest.json', { cache: 'no-store' })
+    .then(function(r){
+      if (!r.ok){
+        reason = 'manifest.json could not be fetched (HTTP ' + r.status + '). Run the pipeline first so it generates the manifest and clips.';
+        return null;
+      }
+      return r.json().catch(function(){
+        reason = 'manifest.json exists but is not valid JSON. Re-run the pipeline to regenerate it.';
+        return null;
+      });
+    })
+    .catch(function(){
+      reason = 'manifest.json could not be fetched. This usually means the page was opened directly as a file (file://) instead of being served over http, or the pipeline has not run yet.';
+      return null;
+    })
+    .then(function(m){
+      if (m && Array.isArray(m.clips) && m.clips.length){
+        initData(m, null, null);
+        goStart();
+        return;
+      }
+      if (m) reason = 'manifest.json was found, but it contains no clips yet. Run the pipeline on your course videos to generate clips.';
+      /* no server manifest - do clips live in this browser's storage? */
+      idbLoadLibrary().then(function(lib){
+        if (lib){ initData(lib.manifest, null, lib.blobs); goStart(); }
+        else showSetup(reason);
+      }).catch(function(){ showSetup(reason); });
+    });
+}
+function showSetup(reason){
+  $id('setupReason').textContent = reason || 'Point the app at a processed clip library to begin.';
+  $id('setupMsg').textContent = '';
+  unloadVideo();
+  show('setup');
+}
+function handleFolderPick(files){
+  if (!files.length) return;
+  var mans = [];
+  for (var i = 0; i < files.length; i++){
+    if (files[i].name === 'manifest.json') mans.push(files[i]);
+  }
+  mans.sort(function(a, b){
+    var da = (a.webkitRelativePath || '').split('/').length;
+    var db = (b.webkitRelativePath || '').split('/').length;
+    return da - db;
+  });
+  if (!mans.length){
+    $id('setupMsg').textContent = 'No manifest.json found in that folder. Pick the quiz folder that the pipeline generated.';
+    return;
+  }
+  readText(mans[0]).then(function(text){
+    var m = JSON.parse(text);
+    if (!m || !Array.isArray(m.clips) || !m.clips.length){
+      $id('setupMsg').textContent = 'That manifest.json contains no clips yet. Run the pipeline first.';
+      return null;
+    }
+    /* knowledge.js fallback for when index.html was opened from elsewhere */
+    if (!window.HYROX_KNOWLEDGE){
+      var kf = null;
+      for (var j = 0; j < files.length; j++){
+        if (files[j].name === 'knowledge.js'){ kf = files[j]; break; }
+      }
+      if (kf){
+        return readText(kf).then(function(t){
+          try {
+            var eq = t.indexOf('=');
+            var body = t.slice(eq + 1).trim().replace(/;\s*$/, '');
+            window.HYROX_KNOWLEDGE = JSON.parse(body);
+          } catch (e) { /* keep generic notes */ }
+          return m;
+        }).catch(function(){ return m; });
+      }
+    }
+    return m;
+  }).then(function(m){
+    if (!m) return;
+    storeImport(m, [].slice.call(files));
+  }).catch(function(err){
+    $id('setupMsg').textContent = 'Could not read manifest.json: ' + (err && err.message ? err.message : err);
+  });
+}
+function storeImport(m, files){
+  /* Persist the imported library in this browser (IndexedDB) so the page
+     works on every future visit with no server and no re-picking. */
+  var list = [], i, c;
+  for (i = 0; i < (m.clips || []).length; i++){
+    c = m.clips[i];
+    if (c && c.id && c.file) list.push(c);
+  }
+  var realOnly = [];
+  for (i = 0; i < list.length; i++){ if (!isDemoClip(list[i])) realOnly.push(list[i]); }
+  if (realOnly.length) list = realOnly;  /* never store demo clips alongside real ones */
+
+  fileList = files;  /* findFile() searches this */
+  var blobs = {}, found = [], missing = 0;
+  for (i = 0; i < list.length; i++){
+    var f = findFile(list[i].file);
+    if (f){ blobs[list[i].file] = f; found.push(list[i]); }
+    else missing++;
+  }
+  if (!found.length){
+    $id('setupMsg').textContent = 'The manifest was read, but none of its clip files were in your selection. Select manifest.json together with the files inside clips/.';
+    return;
+  }
+  var m2 = {};
+  for (var k in m){ if (Object.prototype.hasOwnProperty.call(m, k)) m2[k] = m[k]; }
+  m2.clips = found;
+  $id('setupMsg').textContent = 'Storing ' + found.length + ' clip' + (found.length === 1 ? '' : 's') + ' in this browser…' +
+    (missing ? ' (' + missing + ' listed in the manifest were not in your selection and were skipped)' : '');
+  try {
+    if (navigator.storage && navigator.storage.persist) navigator.storage.persist().catch(function(){});
+  } catch (ePersist) { /* ignore */ }
+  idbSaveLibrary(m2, blobs).then(function(){
+    return idbLoadLibrary();
+  }).then(function(lib){
+    $id('setupMsg').textContent = '';
+    if (lib) initData(lib.manifest, null, lib.blobs);
+    else initData(m2, files, null);  /* stored ok but unreadable? fall back to this session's files */
+    goStart();
+  }).catch(function(){
+    /* storage refused (private browsing / full disk): still usable this session */
+    $id('setupMsg').textContent = '';
+    initData(m2, files, null);
+    goStart();
+  });
+}
+
+/* ================= start screen ================= */
+function selCount(){
+  var n = 0;
+  for (var k in startSel){ if (startSel[k]) n++; }
+  return n;
+}
+function quizPool(){
+  var all = effClips();
+  var any = selCount() > 0;
+  var out = [];
+  for (var i = 0; i < all.length; i++){
+    var c = all[i];
+    if (isUnlabeled(c)) continue;
+    if (any && !startSel[c.exercise]) continue;
+    out.push(c);
+  }
+  return out;
+}
+function goStart(){
+  session = null;
+  stopTimer();
+  unloadVideo();
+  renderStart();
+  show('start');
+}
+function renderStart(){
+  var eff = effClips();
+  var quiz = [], unl = 0, i;
+  for (i = 0; i < eff.length; i++){
+    if (isUnlabeled(eff[i])) unl++; else quiz.push(eff[i]);
+  }
+  var srcSet = {};
+  for (i = 0; i < eff.length; i++) srcSet[eff[i].source || '?'] = true;
+  var srcs = Object.keys(srcSet).length;
+  $id('stTotals').textContent =
+    eff.length + ' clip' + (eff.length === 1 ? '' : 's') + ' loaded · ' +
+    quiz.length + ' ready to quiz · ' + unl + ' unlabeled · ' +
+    srcs + ' source video' + (srcs === 1 ? '' : 's');
+  var noteEl = $id('stNote');
+  if (demosHidden){
+    noteEl.textContent = demosHidden + ' built-in demo clip' + (demosHidden === 1 ? '' : 's') +
+      ' (synthetic test patterns) hidden because you have real clips now.';
+    noteEl.hidden = false;
+  } else {
+    noteEl.hidden = true;
+  }
+  $id('stStorage').hidden = mode !== 'idb';
+  $id('stKnowledgeWarn').hidden = !!window.HYROX_KNOWLEDGE;
+
+  /* per-exercise chips with counts */
+  var counts = {};
+  for (i = 0; i < quiz.length; i++){
+    counts[quiz[i].exercise] = (counts[quiz[i].exercise] || 0) + 1;
+  }
+  for (var k in startSel){ if (!counts[k]) delete startSel[k]; }
+  var box = $id('stChips');
+  box.textContent = '';
+  var keys = Object.keys(counts).sort(function(a, b){
+    return exName(a).localeCompare(exName(b));
+  });
+  keys.forEach(function(key){
+    var chip = el('button', { class: 'chip' + (startSel[key] ? ' sel' : ''), type: 'button' },
+      exName(key) + ' · ' + counts[key]);
+    chip.addEventListener('click', function(){
+      if (startSel[key]) delete startSel[key]; else startSel[key] = true;
+      renderStart();
+    });
+    box.appendChild(chip);
+  });
+  if (!keys.length){
+    box.appendChild(el('p', { class: 'muted small' }, 'No labeled clips yet — use "Label clips" below to label them first.'));
+  }
+
+  $id('btnLabelMode').textContent = 'Label clips' + (unl ? ' (' + unl + ')' : '');
+  var pool = quizPool();
+  var n = sessLen === 0 ? pool.length : Math.min(sessLen, pool.length);
+  $id('btnStart').disabled = !pool.length;
+  $id('btnStart').textContent = pool.length
+    ? 'Start quiz · ' + n + ' clip' + (n === 1 ? '' : 's')
+    : 'Start quiz (no labeled clips)';
+  $id('stModeTxt').textContent = mode === 'folder' ? 'picked local folder' : 'served folder';
+}
+
+/* ================= quiz flow ================= */
+function weightFor(id){
+  var s = stats.clips[id];
+  if (!s) return 1;
+  return Math.max(0.25, 1 + 2 * (s.w || 0) - (s.r || 0));
+}
+function pickSession(pool, n, weighted){
+  var arr = pool.slice();
+  if (!weighted){
+    shuffle(arr);
+    return arr.slice(0, n);
+  }
+  var out = [];
+  while (out.length < n && arr.length){
+    var tot = 0, ws = [], i;
+    for (i = 0; i < arr.length; i++){ ws[i] = weightFor(arr[i].id); tot += ws[i]; }
+    var r = Math.random() * tot;
+    for (i = 0; i < arr.length; i++){
+      r -= ws[i];
+      if (r <= 0) break;
+    }
+    if (i >= arr.length) i = arr.length - 1;
+    out.push(arr[i]);
+    arr.splice(i, 1);
+  }
+  return out;
+}
+function startQuiz(){
+  var pool = quizPool();
+  if (!pool.length) return;
+  var n = sessLen === 0 ? pool.length : Math.min(sessLen, pool.length);
+  session = { queue: pickSession(pool, n, focusMistakes), idx: 0, results: [] };
+  streak = 0;
+  nextStep();
+}
+function nextStep(){
+  if (!session) return;
+  if (session.idx >= session.queue.length){ showSummary(); return; }
+  renderQuestion();
+}
+function renderQuestion(){
+  var q = session.queue[session.idx];
+  var clip = effById(q.id) || q;
+  curClip = clip;
+  answered = false;
+  $id('qProgress').textContent = 'Question ' + (session.idx + 1) + ' / ' + session.queue.length;
+  $id('qStreak').textContent = 'Streak ' + streak;
+  $id('qBar').style.width = (100 * session.idx / session.queue.length) + '%';
+  $id('qExercise').textContent = exName(clip.exercise);
+  $id('btnGood').disabled = false;
+  $id('btnBad').disabled = false;
+  $id('qVideoSlot').appendChild(videoBox);
+  /* show FIRST so currentScreen === 'question' before the video loads:
+     a synchronous failure (folder-mode file missing) must take the question
+     branch of videoFailed (answers disabled, timer stopped, skip offered).
+     startTimer runs before loadClipVideo so that videoFailed's stopTimer
+     is not undone afterwards. */
+  show('question');
+  vid.dataset.fresh = '1';
+  startTimer();
+  loadClipVideo(clip);
+}
+function skipCurrent(){
+  if (!session || !curClip) return;
+  session.results.push({ id: curClip.id, exercise: curClip.exercise, skipped: true });
+  session.idx++;
+  nextStep();
+}
+function giveAnswer(guess){
+  if (currentScreen !== 'question' || answered || !curClip || !session) return;
+  if ($id('btnGood').disabled) return; /* video failed - keyboard must not answer an invisible clip */
+  var ms = performance.now() - qStart;
+  answered = true;
+  stopTimer();
+  var truth = decodeAnswer(curClip.answerB64); /* decoded only now, at grading time */
+  if (truth !== 'good' && truth !== 'bad'){
+    session.results.push({ id: curClip.id, exercise: curClip.exercise, skipped: true });
+    session.idx++;
+    nextStep();
+    return;
+  }
+  var correct = (guess === truth);
+  streak = correct ? streak + 1 : 0;
+  recordAnswer(curClip, correct, ms);
+  session.results.push({ id: curClip.id, exercise: curClip.exercise, guess: guess, truth: truth, correct: correct, ms: ms });
+  renderReveal(curClip, guess, truth, correct, ms);
+}
+function endSession(){
+  if (!session) { goStart(); return; }
+  if (session.results.length) showSummary(); else goStart();
+}
+
+/* ================= reveal ================= */
+function labelWord(v){ return v === 'good' ? 'Good form' : 'Faulty'; }
+function renderReveal(clip, guess, truth, correct, ms){
+  var root = $id('rvContent');
+  root.textContent = '';
+
+  var banner = el('div', { class: 'banner ' + (correct ? 'good' : 'bad') },
+    el('h3', null, correct ? '✓ Correct' : '✗ Not quite'),
+    el('p', null, 'This clip: ', el('span', { class: 'truth' }, truth === 'good' ? 'GOOD FORM' : 'FAULTY MOVEMENT')),
+    el('p', { class: 'muted small' }, 'Your call: ' + labelWord(guess) + ' · Decision time: ' + fmtMs(ms))
+  );
+  root.appendChild(banner);
+
+  var slot = el('div', null);
+  root.appendChild(slot);
+  slot.appendChild(videoBox); /* keeps looping so the coach can re-watch informed */
+
+  var ex = KB()[clip.exercise];
+  if (truth === 'bad') root.appendChild(buildSelfCheck(clip, ex));
+  root.appendChild(buildCoach(clip, ex));
+  root.appendChild(buildNoteBlock(clip));
+
+  var last = (session && session.idx + 1 >= session.queue.length);
+  var nextBtn = el('button', { class: 'btn btn-primary btn-block', type: 'button' },
+    last ? 'See results' : 'Next clip', el('kbd', null, 'N'));
+  nextBtn.addEventListener('click', function(){ nextBtn.blur(); nextFromReveal(); });
+  root.appendChild(nextBtn);
+
+  show('reveal');
+}
+function nextFromReveal(){
+  if (currentScreen !== 'reveal' || !session) return;
+  session.idx++;
+  nextStep();
+}
+function buildSelfCheck(clip, ex){
+  var wrap = el('div', { class: 'card' });
+  wrap.appendChild(el('div', { class: 'seclabel' }, 'Self-check'));
+  wrap.appendChild(el('p', null, 'Which fault(s) did you spot?'));
+  var faults = (ex && Array.isArray(ex.faults)) ? ex.faults : [];
+  if (!faults.length){
+    wrap.appendChild(el('p', { class: 'muted small' }, 'No fault list available for this exercise — note what you saw below.'));
+    return wrap;
+  }
+  var labeled = clip.faults || [];
+  var hasLabeled = labeled.length > 0;
+  var chips = el('div', { class: 'chips' });
+  faults.forEach(function(f){
+    var chip = el('button', { class: 'fchip', type: 'button', title: f.detail || '' }, f.label || f.id);
+    chip.addEventListener('click', function(){
+      var sel = chip.classList.toggle('sel');
+      chip.classList.remove('match', 'miss');
+      if (sel && hasLabeled){
+        chip.classList.add(labeled.indexOf(f.id) >= 0 ? 'match' : 'miss');
+      }
+    });
+    chips.appendChild(chip);
+  });
+  wrap.appendChild(chips);
+  wrap.appendChild(el('p', { class: 'muted small', style: 'margin-top:10px' },
+    hasLabeled
+      ? 'This clip has labeled faults — your picks turn green on a match, red on a mismatch.'
+      : 'Self-graded — no faults are labeled for this clip yet, so check yourself against the fault list below.'));
+  return wrap;
+}
+function buildCoach(clip, ex){
+  var wrap = el('div', { class: 'card' });
+  wrap.appendChild(el('div', { class: 'seclabel' }, 'Coaching notes'));
+  wrap.appendChild(el('div', { class: 'coach-title' }, exName(clip.exercise)));
+  if (!ex){
+    wrap.appendChild(el('p', { class: 'muted' },
+      'No coaching notes available for this exercise. Watch the clip again and compare joint angles, range of motion, tempo and control against what you know about the movement.'));
+    return wrap;
+  }
+  if (ex.whatToWatch){
+    wrap.appendChild(el('div', { class: 'seclabel' }, 'Where to look'));
+    wrap.appendChild(el('p', null, ex.whatToWatch));
+  }
+  if (ex.standard){
+    wrap.appendChild(el('div', { class: 'seclabel' }, 'Standard'));
+    wrap.appendChild(el('p', null, ex.standard));
+  }
+  if (Array.isArray(ex.goodForm) && ex.goodForm.length){
+    wrap.appendChild(el('div', { class: 'seclabel' }, 'Good form checkpoints'));
+    var ul = el('ul', { class: 'checklist' });
+    ex.goodForm.forEach(function(g){ ul.appendChild(el('li', null, g)); });
+    wrap.appendChild(ul);
+  }
+  var exFaults = Array.isArray(ex.faults) ? ex.faults : [];
+  if (exFaults.length){
+    wrap.appendChild(el('div', { class: 'seclabel' }, 'Common faults'));
+    var clipFaults = clip.faults || [];
+    exFaults.forEach(function(f){
+      var inClip = clipFaults.indexOf(f.id) >= 0;
+      var item = el('div', { class: 'fault-item' + (inClip ? ' in-clip' : '') },
+        el('div', { class: 'flabel' }, f.label || f.id, inClip ? el('span', { class: 'tag' }, 'In this clip') : null),
+        f.detail ? el('div', { class: 'fdetail' }, f.detail) : null);
+      wrap.appendChild(item);
+    });
+    /* clip faults not present in the knowledge fault list */
+    clipFaults.forEach(function(fid){
+      var known = false;
+      for (var i = 0; i < exFaults.length; i++){ if (exFaults[i].id === fid){ known = true; break; } }
+      if (!known){
+        wrap.appendChild(el('div', { class: 'fault-item in-clip' },
+          el('div', { class: 'flabel' }, fid, el('span', { class: 'tag' }, 'In this clip'))));
+      }
+    });
+  }
+  if (Array.isArray(ex.cues) && ex.cues.length){
+    wrap.appendChild(el('div', { class: 'seclabel' }, 'Coaching cues'));
+    var cl = el('ul', { class: 'cue-list' });
+    ex.cues.forEach(function(c){ cl.appendChild(el('li', null, c)); });
+    wrap.appendChild(cl);
+  }
+  if (ex.benefits){
+    wrap.appendChild(el('div', { class: 'seclabel' }, 'Why it matters'));
+    wrap.appendChild(el('p', null, ex.benefits));
+  }
+  return wrap;
+}
+function buildNoteBlock(clip){
+  var wrap = el('div', { class: 'card' });
+  wrap.appendChild(el('div', { class: 'seclabel' }, 'My note for this clip'));
+  var ta = el('textarea', { placeholder: 'e.g. watch the left knee on rep 2 — it caves as she fatigues' });
+  ta.value = clip.note || '';
+  ta.addEventListener('input', function(){ noteInput(clip.id, ta.value); });
+  wrap.appendChild(ta);
+  return wrap;
+}
+
+/* ================= summary ================= */
+function showSummary(){
+  stopTimer();
+  unloadVideo();
+  var res = session ? session.results : [];
+  var ans = [], missed = [], skipped = 0, i;
+  for (i = 0; i < res.length; i++){
+    if (res[i].skipped) skipped++;
+    else {
+      ans.push(res[i]);
+      if (!res[i].correct) missed.push(res[i]);
+    }
+  }
+  var corN = ans.length - missed.length;
+  var acc = ans.length ? Math.round(100 * corN / ans.length) : 0;
+  var avg = 0;
+  for (i = 0; i < ans.length; i++) avg += ans[i].ms;
+  avg = ans.length ? avg / ans.length : 0;
+
+  var root = $id('smContent');
+  root.textContent = '';
+  root.appendChild(el('h2', null, 'Session complete'));
+
+  var big = el('div', { class: 'card center' });
+  big.appendChild(el('div', { class: 'bigscore' }, corN + ' / ' + ans.length));
+  big.appendChild(el('p', { class: 'muted' },
+    acc + '% accuracy · avg decision ' + fmtMs(avg) + (skipped ? ' · ' + skipped + ' skipped' : '')));
+  root.appendChild(big);
+
+  /* per-exercise breakdown */
+  var per = {};
+  for (i = 0; i < ans.length; i++){
+    var p = per[ans[i].exercise] || (per[ans[i].exercise] = { n: 0, c: 0 });
+    p.n++;
+    if (ans[i].correct) p.c++;
+  }
+  var keys = Object.keys(per).sort(function(a, b){ return exName(a).localeCompare(exName(b)); });
+  if (keys.length){
+    var card = el('div', { class: 'card' });
+    card.appendChild(el('div', { class: 'seclabel' }, 'By exercise'));
+    var tbl = el('table', null,
+      el('tr', null, el('th', null, 'Exercise'), el('th', null, 'Answered'), el('th', null, 'Correct'), el('th', null, 'Accuracy')));
+    keys.forEach(function(k){
+      var q = per[k];
+      tbl.appendChild(el('tr', null,
+        el('td', null, exName(k)),
+        el('td', null, String(q.n)),
+        el('td', null, String(q.c)),
+        el('td', null, Math.round(100 * q.c / q.n) + '%')));
+    });
+    card.appendChild(el('div', { class: 'tscroll' }, tbl));
+    root.appendChild(card);
+  }
+
+  if (missed.length){
+    var mc = el('div', { class: 'card' });
+    mc.appendChild(el('div', { class: 'seclabel' }, 'Missed clips'));
+    missed.forEach(function(r){
+      mc.appendChild(el('div', { class: 'miss-item' },
+        el('strong', null, exName(r.exercise)),
+        el('span', { class: 'muted' },
+          ' — you said ' + labelWord(r.guess) + ', it was ' + labelWord(r.truth) + ' · ' + fmtMs(r.ms))));
+    });
+    var rb = el('button', { class: 'btn btn-primary', type: 'button', style: 'margin-top:12px' }, 'Review misses');
+    var missIds = missed.map(function(r){ return r.id; });
+    rb.addEventListener('click', function(){ reviewMisses(missIds); });
+    mc.appendChild(rb);
+    root.appendChild(mc);
+  }
+
+  var back = el('button', { class: 'btn btn-block', type: 'button' }, 'Back to start');
+  back.addEventListener('click', goStart);
+  root.appendChild(back);
+  show('summary');
+}
+function reviewMisses(ids){
+  var queue = [];
+  for (var i = 0; i < ids.length; i++){
+    var c = effById(ids[i]);
+    if (c) queue.push(c);
+  }
+  if (!queue.length) return;
+  session = { queue: queue, idx: 0, results: [] };
+  streak = 0;
+  nextStep();
+}
+
+/* ================= label mode ================= */
+function openLabelMode(){
+  labelShowAll = false;
+  $id('lblShowAll').checked = false;
+  $id('lblSpoiler').hidden = true;
+  buildLabelList();
+  labelIdx = 0;
+  lblCurId = null;
+  show('label');
+  renderLabel();
+}
+function buildLabelList(){
+  var eff = effClips();
+  labelList = [];
+  for (var i = 0; i < eff.length; i++){
+    if (labelShowAll || isUnlabeled(eff[i])) labelList.push(eff[i].id);
+  }
+}
+function renderLabel(){
+  var empty = $id('lblEmpty'), main = $id('lblMain');
+  if (!labelList.length){
+    empty.hidden = false;
+    main.hidden = true;
+    $id('lblEmptyMsg').textContent = labelShowAll
+      ? 'No clips loaded.'
+      : 'No unlabeled clips — nice. Switch on "All clips" above to re-label any clip.';
+    $id('lblPos').textContent = '0 / 0';
+    $id('lblPrev').disabled = true;
+    $id('lblNext').disabled = true;
+    unloadVideo();
+    return;
+  }
+  empty.hidden = true;
+  main.hidden = false;
+  if (labelIdx < 0) labelIdx = 0;
+  if (labelIdx >= labelList.length) labelIdx = labelList.length - 1;
+  var clip = effById(labelList[labelIdx]);
+  if (!clip){
+    labelList.splice(labelIdx, 1);
+    renderLabel();
+    return;
+  }
+  $id('lblPos').textContent = 'Clip ' + (labelIdx + 1) + ' / ' + labelList.length;
+  $id('lblPrev').disabled = labelIdx === 0;
+  $id('lblNext').disabled = labelIdx === labelList.length - 1;
+  if (clip.id !== lblCurId){
+    lblCurId = clip.id;
+    $id('lblVideoSlot').appendChild(videoBox);
+    loadClipVideo(clip);
+    var s = Number(clip.start), e2 = Number(clip.end);
+    var range = (isFinite(s) && isFinite(e2)) ? ' · ' + s.toFixed(1) + 's – ' + e2.toFixed(1) + 's' : '';
+    $id('lblMeta').textContent = (decodeSource(clip.source) || 'unknown source') + range;
+  }
+  renderLabelControls(clip);
+}
+function renderLabelControlsById(id){
+  var c = effById(id);
+  if (c) renderLabelControls(c);
+}
+function renderLabelControls(clip){
+  var box = $id('lblControls');
+  box.textContent = '';
+  var card = el('div', { class: 'card' });
+
+  /* answer - decoding here is deliberate: label mode is the editing view */
+  var cur = decodeAnswer(clip.answerB64);
+  card.appendChild(el('div', { class: 'seclabel' }, 'Label'));
+  var seg = el('div', { class: 'seg' });
+  [['good', 'Good form'], ['bad', 'Faulty'], ['unlabeled', 'Unlabeled']].forEach(function(pair){
+    var b = el('button', { class: cur === pair[0] ? 'sel' : '', type: 'button' }, pair[1]);
+    b.addEventListener('click', function(){
+      setLabel(clip.id, { answer: b64enc(pair[0]) });
+      renderLabelControlsById(clip.id);
+      renderStartCountsSoon();
+    });
+    seg.appendChild(b);
+  });
+  card.appendChild(seg);
+
+  /* exercise */
+  card.appendChild(el('div', { class: 'seclabel' }, 'Exercise'));
+  var sel = el('select', null);
+  sel.appendChild(el('option', { value: 'unknown' }, 'Unknown'));
+  var keys = Object.keys(KB()).sort(function(a, b){ return exName(a).localeCompare(exName(b)); });
+  keys.forEach(function(k){ sel.appendChild(el('option', { value: k }, exName(k))); });
+  sel.value = (clip.exercise === 'unknown' || KB()[clip.exercise]) ? clip.exercise : 'unknown';
+  if (sel.selectedIndex < 0) sel.value = 'unknown';
+  sel.addEventListener('change', function(){
+    var kb2 = KB()[sel.value];
+    var valid = [];
+    (clip.faults || []).forEach(function(fid){
+      if (kb2 && Array.isArray(kb2.faults) && kb2.faults.some(function(f){ return f.id === fid; })) valid.push(fid);
+    });
+    setLabel(clip.id, { exercise: sel.value, faults: valid });
+    renderLabelControlsById(clip.id);
+  });
+  card.appendChild(sel);
+
+  /* fault chips for the selected exercise */
+  var kb = KB()[sel.value];
+  if (kb && Array.isArray(kb.faults) && kb.faults.length){
+    card.appendChild(el('div', { class: 'seclabel' }, 'Faults in this clip'));
+    var chips = el('div', { class: 'chips' });
+    kb.faults.forEach(function(f){
+      var on = (clip.faults || []).indexOf(f.id) >= 0;
+      var chip = el('button', { class: 'chip' + (on ? ' sel' : ''), type: 'button', title: f.detail || '' }, f.label || f.id);
+      chip.addEventListener('click', function(){
+        var now = effById(clip.id);
+        var arr = (now && now.faults ? now.faults : []).slice();
+        var idx = arr.indexOf(f.id);
+        if (idx >= 0) arr.splice(idx, 1); else arr.push(f.id);
+        setLabel(clip.id, { faults: arr });
+        renderLabelControlsById(clip.id);
+      });
+      chips.appendChild(chip);
+    });
+    card.appendChild(chips);
+  }
+
+  /* note */
+  card.appendChild(el('div', { class: 'seclabel' }, 'Note'));
+  var ta = el('textarea', { placeholder: 'Coaching note for this clip…' });
+  ta.value = clip.note || '';
+  ta.addEventListener('input', function(){ noteInput(clip.id, ta.value); });
+  card.appendChild(ta);
+
+  box.appendChild(card);
+}
+var startCountsTimer = null;
+function renderStartCountsSoon(){
+  /* keep the Label button badge fresh when the user returns to start */
+  clearTimeout(startCountsTimer);
+  startCountsTimer = setTimeout(function(){
+    if (currentScreen === 'start') renderStart();
+  }, 100);
+}
+function exportManifest(){
+  if (!manifest) return;
+  flushNote(); /* a pending debounced note must land in this export */
+  var m;
+  try { m = JSON.parse(JSON.stringify(manifest)); } catch (e) { return; }
+  m.version = 2; /* schema v2 - clip sources are written exactly as stored */
+  (m.clips || []).forEach(function(c){
+    var ov = c && labels[c.id];
+    if (!ov) return;
+    if (ov.answer) c.answer = ov.answer;
+    if (ov.exercise) c.exercise = ov.exercise;
+    if (Array.isArray(ov.faults)) c.faults = ov.faults.slice();
+    if (typeof ov.note === 'string') c.note = ov.note;
+  });
+  try {
+    var blob = new Blob([JSON.stringify(m, null, 2)], { type: 'application/json' });
+    var url = URL.createObjectURL(blob);
+    var a = document.createElement('a');
+    a.href = url;
+    a.download = 'manifest.json';
+    document.body.appendChild(a);
+    a.click();
+    a.remove();
+    setTimeout(function(){ URL.revokeObjectURL(url); }, 4000);
+  } catch (e) { /* download blocked - labels remain in localStorage */ }
+}
+
+/* ================= stats screen ================= */
+function renderStatsScreen(){
+  unloadVideo();
+  var root = $id('statsBody');
+  root.textContent = '';
+  var map = {};
+  effClips().forEach(function(c){ map[c.id] = c.exercise; });
+  var R = 0, W = 0, tSum = 0, tN = 0, per = {};
+  var clipStats = stats.clips || {};
+  Object.keys(clipStats).forEach(function(id){
+    var s = clipStats[id] || {};
+    var r = s.r || 0, w = s.w || 0;
+    R += r; W += w;
+    (Array.isArray(s.times) ? s.times : []).forEach(function(t){ tSum += t; tN++; });
+    var ex = map[id] || 'unknown';
+    var p = per[ex] || (per[ex] = { r: 0, w: 0 });
+    p.r += r; p.w += w;
+  });
+  var total = R + W;
+
+  var big = el('div', { class: 'card center' });
+  big.appendChild(el('div', { class: 'bigscore' }, total ? Math.round(100 * R / total) + '%' : '—'));
+  big.appendChild(el('p', { class: 'muted' }, total
+    ? R + ' correct of ' + total + ' answers' + (tN ? ' · avg decision ' + fmtMs(tSum / tN) : '')
+    : 'No answers recorded yet — run a session first.'));
+  root.appendChild(big);
+
+  var keys = Object.keys(per).filter(function(k){ return (per[k].r + per[k].w) > 0; })
+    .sort(function(a, b){ return exName(a).localeCompare(exName(b)); });
+  if (keys.length){
+    var card = el('div', { class: 'card' });
+    card.appendChild(el('div', { class: 'seclabel' }, 'By exercise'));
+    var tbl = el('table', null,
+      el('tr', null, el('th', null, 'Exercise'), el('th', null, 'Answered'), el('th', null, 'Accuracy')));
+    keys.forEach(function(k){
+      var p = per[k], n = p.r + p.w;
+      tbl.appendChild(el('tr', null,
+        el('td', null, exName(k)),
+        el('td', null, String(n)),
+        el('td', null, Math.round(100 * p.r / n) + '%')));
+    });
+    card.appendChild(el('div', { class: 'tscroll' }, tbl));
+    root.appendChild(card);
+  }
+
+  var rst = el('button', { class: 'btn', type: 'button' }, 'Reset stats');
+  rst.addEventListener('click', function(){
+    if (confirm('Reset all quiz stats? This clears your right/wrong history and decision times. Labels and notes are kept.')){
+      stats = { clips: {} };
+      lsSet(LS_STATS, stats);
+      renderStatsScreen();
+    }
+  });
+  root.appendChild(rst);
+  show('stats');
+}
+
+/* ================= wiring ================= */
+$id('btnRetry').addEventListener('click', function(){ boot(); });
+$id('dirPick').addEventListener('change', function(){ handleFolderPick([].slice.call(this.files)); });
+$id('filePick').addEventListener('change', function(){ handleFolderPick([].slice.call(this.files)); });
+$id('btnAddClips').addEventListener('click', function(){
+  showSetup('Import a new or updated clip library. It replaces what is stored in this browser; your stats and labels are kept.');
+});
+$id('btnWipeClips').addEventListener('click', function(){
+  if (!window.confirm('Remove all imported clips from this browser? Your stats and labels are kept.')) return;
+  idbWipe().then(function(){ location.reload(); });
+});
+$id('lnkSetup').addEventListener('click', function(){ showSetup('Pick a different clip library, or go back with your browser.'); });
+
+$id('stLen').querySelectorAll('button').forEach(function(b){
+  b.addEventListener('click', function(){
+    sessLen = parseInt(b.getAttribute('data-len'), 10) || 0;
+    $id('stLen').querySelectorAll('button').forEach(function(x){ x.classList.toggle('sel', x === b); });
+    renderStart();
+  });
+});
+$id('stFocus').addEventListener('change', function(){ focusMistakes = this.checked; });
+$id('btnStart').addEventListener('click', function(){ this.blur(); startQuiz(); });
+$id('btnLabelMode').addEventListener('click', function(){ this.blur(); openLabelMode(); });
+$id('btnStats').addEventListener('click', function(){ this.blur(); renderStatsScreen(); });
+
+$id('btnGood').addEventListener('click', function(){ this.blur(); giveAnswer('good'); });
+$id('btnBad').addEventListener('click', function(){ this.blur(); giveAnswer('bad'); });
+$id('btnQuit').addEventListener('click', function(){ this.blur(); endSession(); });
+
+$id('btnReplay').addEventListener('click', function(){ this.blur(); replayVid(); });
+$id('btnSlow').addEventListener('click', function(){ this.blur(); toggleSlow(); });
+$id('vidErrBtn').addEventListener('click', function(){ if (vidErrAction) vidErrAction(); });
+
+$id('lblBack').addEventListener('click', function(){ goStart(); });
+$id('lblShowAll').addEventListener('change', function(){
+  labelShowAll = this.checked;
+  $id('lblSpoiler').hidden = !labelShowAll;
+  buildLabelList();
+  labelIdx = 0;
+  lblCurId = null;
+  renderLabel();
+});
+$id('lblPrev').addEventListener('click', function(){ this.blur(); labelIdx--; renderLabel(); });
+$id('lblNext').addEventListener('click', function(){ this.blur(); labelIdx++; renderLabel(); });
+$id('btnExport').addEventListener('click', function(){ this.blur(); exportManifest(); });
+$id('statsBack').addEventListener('click', function(){ goStart(); });
+
+document.addEventListener('keydown', function(e){
+  if (e.ctrlKey || e.metaKey || e.altKey) return; /* leave browser shortcuts (Cmd/Ctrl+F etc.) alone */
+  var t = e.target;
+  if (t && (t.tagName === 'TEXTAREA' || t.tagName === 'INPUT' || t.tagName === 'SELECT')) return;
+  /* focused buttons keep native Enter/Space click behavior - avoid double firing */
+  if (t && t.tagName === 'BUTTON' && (e.key === 'Enter' || e.key === ' ')) return;
+  var k = (e.key || '').toLowerCase();
+  if (currentScreen === 'question'){
+    if (k === 'g'){ e.preventDefault(); giveAnswer('good'); }
+    else if (k === 'f' || k === 'b'){ e.preventDefault(); giveAnswer('bad'); }
+    else if (k === ' '){ e.preventDefault(); replayVid(); }
+    else if (k === 's'){ e.preventDefault(); toggleSlow(); }
+  } else if (currentScreen === 'reveal'){
+    if (k === 'n' || e.key === 'Enter'){ e.preventDefault(); nextFromReveal(); }
+    else if (k === ' '){ e.preventDefault(); replayVid(); }
+    else if (k === 's'){ e.preventDefault(); toggleSlow(); }
+  } else if (currentScreen === 'label'){
+    if (k === 'arrowleft' && !$id('lblPrev').disabled){ e.preventDefault(); labelIdx--; renderLabel(); }
+    else if (k === 'arrowright' && !$id('lblNext').disabled){ e.preventDefault(); labelIdx++; renderLabel(); }
+    else if (k === ' '){ e.preventDefault(); replayVid(); }
+    else if (k === 's'){ e.preventDefault(); toggleSlow(); }
+  }
+});
+
+boot();
+})();
+</script>
+</body>
+</html>

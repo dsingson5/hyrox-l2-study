@@ -71,6 +71,7 @@ HEAD = """<!DOCTYPE html><html lang="en"><head><meta charset="utf-8">
 a.back{display:inline-block;margin-bottom:16px;color:var(--accent);text-decoration:none;font-size:13px}
 </style></head><body><div class="wrap">
 <a class="back" href="index.html">&larr; Today's lesson</a>
+<a class="back" href="coach-eye/" style="margin-left:14px">Coach Eye &mdash; movement video quiz &rarr;</a>
 <h1>Level 2 &mdash; Mastering Performance</h1>
 """
 
