@@ -313,7 +313,7 @@ python3 -m http.server 8000
           <summary>Clips in Google Drive</summary>
           <p class="small muted" style="margin-bottom:8px">Upload your imported clips to your own Google Drive once, then every device just presses <b>Get clips from Drive</b> instead of importing the folder again. The app only ever sees the files it created (a "Coach Eye Clips" folder).</p>
           <div id="gClientRow">
-            <p class="small muted" style="margin-bottom:6px">One-time setup: at <b>console.cloud.google.com</b> create a (free) project &rarr; enable the <b>Google Drive API</b> &rarr; OAuth consent screen (External, add yourself as test user) &rarr; Credentials &rarr; Create <b>OAuth client ID</b> &rarr; Web application &rarr; add <b>https://dsingson5.github.io</b> as an authorized JavaScript origin &rarr; copy the client ID here. It syncs to your other devices automatically.</p>
+            <p class="small muted" style="margin-bottom:6px">One-time setup: at <b>console.cloud.google.com</b> create a (free) project &rarr; enable the <b>Google Drive API</b> &rarr; OAuth consent screen (External) &rarr; under <b>Audience</b> press <b>Publish app</b> (this app only asks for the non-sensitive <code>drive.file</code> scope, so publishing needs no Google review; if you stay in Testing you must add your email under Test users and Google makes you re-approve every 7 days) &rarr; Credentials &rarr; Create <b>OAuth client ID</b> &rarr; Web application &rarr; add <b>https://dsingson5.github.io</b> as an authorized JavaScript origin &rarr; copy the client ID here. It syncs to your other devices automatically.</p>
             <div class="db-row">
               <input type="text" id="gClientIn" placeholder="xxxxx.apps.googleusercontent.com" autocomplete="off" autocapitalize="off">
               <button id="gClientSave" class="btn btn-mini" type="button">Save</button>
@@ -1859,6 +1859,10 @@ function loadGIS(){
     document.head.appendChild(s);
   });
 }
+function gAuthMsg(err){
+  if (/access_denied/i.test(String(err))) return 'Google blocked the sign-in (403 access_denied): your Cloud project is still in Testing and this Google account is not on its test-user list. Fix in console.cloud.google.com \u2192 APIs & Services \u2192 OAuth consent screen \u2192 Audience: add your email under Test users, or just press "Publish app" - no review is needed because this app only uses the drive.file scope.';
+  return err;
+}
 function driveToken(){
   if (gToken && Date.now() < gTokenExp - 60000) return Promise.resolve(gToken);
   var cid = gclient();
@@ -1874,9 +1878,9 @@ function driveToken(){
               gToken = resp.access_token;
               gTokenExp = Date.now() + ((resp.expires_in || 3300) * 1000);
               res(gToken);
-            } else rej(new Error((resp && resp.error) || 'sign-in was cancelled'));
+            } else rej(new Error(gAuthMsg((resp && resp.error) || 'sign-in was cancelled')));
           },
-          error_callback: function(e){ rej(new Error(e && e.message ? e.message : 'sign-in failed or was closed')); }
+          error_callback: function(e){ rej(new Error(gAuthMsg(e && (e.message || e.type) || 'sign-in failed or was closed'))); }
         });
         tc.requestAccessToken({ prompt: '' });
       } catch (e) { rej(e); }

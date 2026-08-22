@@ -192,6 +192,11 @@
     "phase": 35,
     "name": "Syllabus audit — the nine missing sections",
     "days": "114-122"
+   },
+   {
+    "phase": 36,
+    "name": "Module 8 — Athlete Monitoring: testing, profiling & individualised periodization",
+    "days": "123-124"
    }
   ],
   "source_note": "Original study notes written for the Level 2 'Mastering Performance' module list. Not a reproduction of HYROX Academy course material."
@@ -8878,6 +8883,137 @@
    ],
    "relevant": true,
    "exam_focus": "Expect a recall item on the official tree itself — the benchmark-first opening gate, the athlete power profile (maximal aerobic power, sprint power capacity, peak power output) and the four use-case branches with the CRF percentile bands — alongside scenario items that hand you an athlete and a session and ask you to walk the session framework in order: availability before objective before modality, with correct modality properties — bike lowest in skill and impact, rower and SkiErg race-specific but skill-gated, curved mill excluded from the injury branch because it is still running. Dose-conversion logic — duration and RPE rather than distance, per-modality zones from testing — and the twin errors on the return path, full-volume resumption and premature off-feet abandonment, are also likely probes.",
+   "figures": []
+  },
+  "123": {
+   "title": "Athlete monitoring — the testing battery",
+   "topic_id": "pd_testbattery",
+   "domain": "PG",
+   "chapter": "Module 8",
+   "page_refs": "Mastering Periodization in HYROX — Athlete Monitoring",
+   "key_concept": "A race result tells you the outcome, not the cause. Two athletes finishing in the same time can have opposite limiters — one bled time on the runs, the other on the sleds — and those two problems need opposite training. Athlete monitoring at Level 2 therefore means a deliberate battery of tests that decomposes performance into its parts, organised as a spectrum from low-tech to lab-grade so a coach can enter at whatever resource level they have. The framing assumption that shapes the whole battery is that HYROX does not demand exceptional maximal strength — the requirement is strength endurance, the ability to repeat lower-body efforts at a high fraction of maximal load — so the strength tests are built around repetition and failure points rather than 1RM. Tests deliver their real value when concentrated into a planned test week, where rest days are protected not for the athlete's comfort but to stop one test contaminating the next.",
+   "key_facts": [
+    "Race times and simulation workouts give an overall impression of fitness but little insight into specific strengths and weaknesses — a dedicated battery is needed to guide the choice of training focus and periodization model.",
+    "Basic endurance — 5 km run: after a structured 20-minute warm-up, as fast as possible; use the identical loop or treadmill every time for repeatability. Gives threshold running speed, which closely reflects the pace held on the race's running segments.",
+    "Basic endurance — AMRAP 7 burpees + 1 km row: seven minutes of max burpees, then straight into a 1 km row with no rest; the two components are scored separately. Tests endurance in non-running movements and works well in groups.",
+    "HYROX does not require the maximal strength levels of weightlifting, CrossFit or powerlifting. The key quality is strength endurance — repeated lower-body efforts at a relatively high percentage of maximal load — so the strength battery targets endurance, speed and power under fatigue rather than 1RM.",
+    "Strength endurance — 'Karen': 150 wall balls for time. Record the finishing time AND the rep scheme used (e.g. 10 x 15, or 55 then smaller sets), because the rep scheme reveals pacing and fatigue management. Use a judge for counting and movement standards.",
+    "Strength endurance — sled push to failure: start at 70% of competition weight, push 12.5 m unbroken, repeat every 3 minutes adding 20 kg (men) / 15 kg (women) each round until the 12.5 m can no longer be done unbroken. Score = last weight successfully pushed. Smaller increments for novice or age-group athletes.",
+    "Strength endurance — repetition maximum squat endurance: as many back squats as possible at a fixed relative load (typically 60% 1RM, or bodyweight on the bar), ending when full range of motion fails or at volitional fatigue. Can also be run for bench press or strict press.",
+    "Advanced — NIRS (near-infrared spectroscopy): wearable sensors (MOXY, Train.red) apply the Beer-Lambert law to estimate oxygenated and deoxygenated haemoglobin/myoglobin, yielding muscle oxygen saturation (SmO2) and total haemoglobin (THb, a proxy for local blood volume). Unlike VO2max it measures locally, at the muscle where energy is actually being consumed.",
+    "The 5-1-5 assessment: 4-5 incremental stages of 5 min work / 1 min rest / 5 min work at the same intensity before stepping up. Intensities sit around threshold (e.g. 44/66/88/110/132% of 10 k pace or cycling FTP) — it is NOT a maximal test — and no warm-up is performed, so oxygen kinetics at exercise onset can be observed.",
+    "Why 5-1-5 is designed that way: muscles consume oxygen immediately at load onset while the supply system lags, exposing utilisation capacity; the 1-minute rests remove mechanical tension so vascular adjustment can be separated from muscular consumption; and repeating the load twice mirrors HYROX, where running is repeatedly interrupted by stations.",
+    "Functional ramp test to exhaustion (developed by WOD-Science): 5-minute rounds of rowing (min 1-2), wall balls (min 3), burpee broad jumps (min 4), passive rest (min 5). Row starts at 60 W and rises 40 W (m) / 30 W (f) per round; wall balls start at 10 reps at 6/4 kg rising +2 per round to 18, then load steps to 9/6 kg and reps reset to 14 and continue rising; burpee broad jumps start at 7 reps rising +1 per round, aiming for 1.75-2.0 m per rep.",
+    "The ramp test's measurement problem and its fix: unlike a treadmill or bike, external work in functional movements is hard to quantify. Inertial measurement units (IMUs) convert raw acceleration and angular velocity into instantaneous power (watts) via biomechanical modelling, turning the session into a quantifiable ramp protocol. The technology is still under development.",
+    "Compromised running fatigue test: four rounds of 500 m run, 12 kettlebell swings (24/16 kg), 10 burpee broad jumps, 20 m sled push at race weight, 500 m run — 2 minutes rest between rounds. It asks whether the athlete can hold running pace when repeatedly interrupted by glycolytic work, i.e. it tests the actual structure of the race.",
+    "Test week — novice/intermediate: Mon 5 km run; Tue rest; Wed burpee broad jump + 1 km row then 'Karen'; Thu and Fri rest; Sat squat endurance + sled push to failure; Sun rest and data review.",
+    "Test week — advanced: Mon functional ramp test + lactate; Tue rest; Wed compromised running fatigue test with NIRS and lactate; Thu rest; Fri 5-1-5 step test with NIRS; Sat squat rep-max endurance + sled push to failure; Sun rest and data review.",
+    "The rest days in a test week exist to reduce interference between tests and protect data quality, not merely to keep the athlete fresh. A test run on residual fatigue measures the fatigue, not the quality."
+   ],
+   "training_link": "Pick the battery you can actually repeat rather than the one that sounds most scientific — a 5 km run and a sled push to failure done identically four times a year beat one heroically instrumented test you never run again. Standardise the loop, the treadmill, the warm-up and the time of day. Record 'Karen' as time plus rep scheme, because the scheme is where the pacing information lives. If you only have gym equipment, the novice week is complete on its own: the advanced protocols add a diagnosis of WHY, not a better measure of WHAT. And build the rest days in first — the week is designed around protecting data quality, so a compressed test week produces numbers you cannot trust.",
+   "glossary": [
+    {
+     "term": "Testing battery",
+     "def": "A planned set of tests spanning endurance and strength-endurance qualities, chosen so that results decompose overall performance into trainable parts.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"10\" y=\"24\" width=\"10\" height=\"10\" fill=\"#5ec8ff\" opacity=\"0.5\"/><rect x=\"24\" y=\"18\" width=\"10\" height=\"16\" fill=\"#5ec8ff\" opacity=\"0.7\"/><rect x=\"38\" y=\"12\" width=\"10\" height=\"22\" fill=\"#67e8b0\"/><rect x=\"52\" y=\"6\" width=\"10\" height=\"28\" fill=\"#ffb86b\"/><line x1=\"8\" y1=\"34\" x2=\"70\" y2=\"34\" stroke=\"#3a4a5e\" stroke-width=\"1.2\"/></svg>"
+    },
+    {
+     "term": "NIRS",
+     "def": "Near-infrared spectroscopy. Wearable estimation of muscle oxygen saturation (SmO2) and local blood volume (THb) at the working muscle, rather than a systemic measure like VO2max.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><ellipse cx=\"30\" cy=\"20\" rx=\"16\" ry=\"12\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"1.6\"/><path d=\"M46 14h20M46 20h20M46 26h20\" stroke=\"#ffb86b\" stroke-width=\"1.6\"/><circle cx=\"30\" cy=\"20\" r=\"5\" fill=\"#67e8b0\" opacity=\"0.6\"/></svg>"
+    },
+    {
+     "term": "5-1-5 assessment",
+     "def": "Sub-maximal step protocol of 5 min work / 1 min rest / 5 min work per stage, run without a warm-up so oxygen kinetics at load onset can be observed.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M10 32h10v-5h8v-6h8v-6h8v-6h8v-5h10\" fill=\"none\" stroke=\"#67e8b0\" stroke-width=\"2\"/><line x1=\"8\" y1=\"34\" x2=\"72\" y2=\"34\" stroke=\"#3a4a5e\" stroke-width=\"1\"/></svg>"
+    },
+    {
+     "term": "Compromised running",
+     "def": "Running performed in the fatigued, interrupted state the race actually imposes — the quality the four-round fatigue test is built to measure.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M8 28h12l6-14 6 14h12l6-14 6 14h12\" fill=\"none\" stroke=\"#ffb86b\" stroke-width=\"2\"/><line x1=\"8\" y1=\"32\" x2=\"72\" y2=\"32\" stroke=\"#3a4a5e\" stroke-width=\"1\"/></svg>"
+    },
+    {
+     "term": "IMU power analysis",
+     "def": "Use of inertial measurement units to convert acceleration and angular velocity into instantaneous power output, making functional-movement workload quantifiable.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"12\" y=\"10\" width=\"24\" height=\"20\" rx=\"3\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"1.6\"/><path d=\"M40 20h16M50 15l6 5-6 5\" fill=\"none\" stroke=\"#67e8b0\" stroke-width=\"2\"/><circle cx=\"66\" cy=\"20\" r=\"4\" fill=\"#ffb86b\" opacity=\"0.7\"/></svg>"
+    },
+    {
+     "term": "Test week",
+     "def": "A short planned block that concentrates the battery into one period, with rest days scheduled between tests to prevent one result contaminating the next.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"8\" y=\"10\" width=\"64\" height=\"22\" rx=\"2\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"1.4\"/><path d=\"M17 10v22M26 10v22M35 10v22M44 10v22M53 10v22M62 10v22\" stroke=\"#3a4a5e\" stroke-width=\"1\"/><rect x=\"8\" y=\"10\" width=\"9\" height=\"22\" fill=\"#67e8b0\" opacity=\"0.45\"/><rect x=\"35\" y=\"10\" width=\"9\" height=\"22\" fill=\"#67e8b0\" opacity=\"0.45\"/><rect x=\"62\" y=\"10\" width=\"10\" height=\"22\" fill=\"#67e8b0\" opacity=\"0.45\"/></svg>"
+    }
+   ],
+   "relevant": true,
+   "exam_focus": "Name the tests in each tier, state the protocol and purpose of each, and explain why the strength battery targets strength endurance rather than 1RM.",
+   "figures": []
+  },
+  "124": {
+   "title": "Athlete profiling — turning test data into a periodization model",
+   "topic_id": "pd_profiling",
+   "domain": "PG",
+   "chapter": "Module 8",
+   "page_refs": "Mastering Periodization in HYROX — Athlete Monitoring",
+   "key_concept": "The module has already established that no periodization model is demonstrably superior in general. That leaves the coach with a decision and no default — and profiling is what supplies the missing basis for it. Testing sorts an athlete two ways. At entry level the question is background: strength-biased or endurance-biased, because HYROX is young enough that almost everyone arrives expert in something else and novice at this. At advanced level the question becomes physiological: is the athlete delivery-limited, unable to move enough oxygen to a large working mass, or utilisation-limited, unable to extract the oxygen that is being delivered? Those two diagnoses call for opposite interval structures, so getting it wrong misprescribes the recovery as much as the work. Results are displayed on a spider diagram scaled 0-100 against either the athlete's own goal or elite reference values, refreshed every 6-8 weeks, which turns a pile of numbers into a visible gap between where the athlete is and where they are going.",
+   "key_facts": [
+    "Profiling answers a question the periodization-models section leaves open: since no model is consistently superior, the athlete's profile — not the model's reputation — has to drive the choice.",
+    "Because HYROX is a young sport, most competitors are 'novices' in the specific sense of being experienced in another discipline (strength training, CrossFit, running, triathlon) but new to the mixed demand. Periodization must address background-specific weaknesses before layering HYROX-specific preparation on top.",
+    "Strength-biased novice — typical profile: good 'Karen', high reps in the squat endurance test, poor 5 km. Prescription: block periodization of endurance, opening with a long general preparation phase of low-intensity running and gradually rising weekly mileage.",
+    "Running is prioritised for that group because roughly half of race time is spent running and it is usually their weakest link. Strength is not dropped but moves to an undulating model — frequent variation in load, rep scheme and movement selection — and accounts for only around 20% of total training volume in the early stages.",
+    "Closer to competition the strength-biased athlete shifts to specific preparation, integrating functional strength endurance (sled pushes, lunges, wall balls) at race-specific intensities.",
+    "Endurance-biased novice — almost the inverse. The aerobic base is already developed, so endurance is maintained rather than expanded, and the focus moves to strength, particularly strength endurance and high-power output, on an undulating model.",
+    "Sprint-interval work — very high power outputs alternated with long recoveries — is especially valuable for the endurance-biased athlete because it replicates heavy functional movements performed under fatigue.",
+    "Overprogramming warning: endurance-biased athletes must be monitored for overreaching and even overtraining, because overall training intensity in HYROX is much higher than they are accustomed to from pure endurance sport. High-intensity functional work places exceptional demands on recovery and sufficient rest between sessions is essential.",
+    "For advanced or elite athletes, periodization stops being about general qualities and becomes about the individual physiological limiter, determined by NIRS 5-1-5 assessments and compromised running fatigue tests.",
+    "Delivery-limited (cardiac): SmO2 falls under work but THb fails to recover or declines during rest — cardiac output cannot sustain blood flow. Common in stronger, more muscular athletes whose muscle mass overwhelms their circulation. Training answer: longer intervals at or just above lactate threshold with relatively short recoveries, to maximise cardiovascular adaptation.",
+    "Utilisation-limited (oxidative): SmO2 does not fall enough even at high workloads — oxygen is delivered but not extracted, implicating mitochondrial density, oxidative enzyme capacity or fibre recruitment. Common in endurance-oriented athletes asked to produce high power. Training answer: high-intensity, high-power functional intervals with FULL recovery, forcing local musculature to improve extraction.",
+    "Note the inversion: the two limiters need opposite recovery structures — short recoveries for delivery-limited, full recoveries for utilisation-limited — so a misdiagnosis corrupts the rest intervals, not just the work.",
+    "A third, less common pattern is pulmonary limitation: SmO2 falls with rising intensity while THb rises, because accumulating CO2 acts as a vasodilator and the lungs cannot offload it or reload haemoglobin adequately.",
+    "Individualised prescriptions still sit inside the broader frameworks — linear, block or undulating — sequenced to respect both the athlete's profile and the competition calendar.",
+    "Spider diagram: each axis is a test, plotted 0-100, with three shaded layers — current status, medium-term goal, long-term goal — so the gap to target is visible at a glance. Update the status layer after each assessment cycle, roughly every 6-8 weeks.",
+    "Two ways to define the 100% reference. Goal-based: the athlete's own target is 100%, so a 21-minute 5 km goal against a current 23 minutes scores 21/23 x 100 = about 91%. Elite-based: top-performer values define 100% and the athlete scores as a percentage of that. Goal-based suits individual progression, elite-based suits competitive benchmarking.",
+    "Elite reference values given: 5 km run 16:00 men / 18:00 women (aerobic endurance and running economy); 'Karen' 150 wall balls 4:50 / 5:10 (muscular endurance and power under fatigue); AMRAP 7 burpees 145 / 110 reps (full-body fatigue resistance); 1 km row after burpees 3:25 / 3:45 (VO2max power and lactate tolerance).",
+    "Coaches may substitute their own preferred tests within the relevant 'buckets' of physical components — the axes are categories, not a fixed list.",
+    "The example test weeks are deliberately elaborate. In practice coaches may trim them to one or two key assessments depending on time, equipment and training phase — what matters is not the number of tests but that the chosen combination yields a clear overall profile.",
+    "Normative values for HYROX-specific tests are largely unavailable, both because the sport is new and because the protocols themselves (functional fitness combined with endurance profiling) are new. The coach's own repeated testing across a group of athletes over weeks and months is currently the most effective way to build reference data.",
+    "Reading the battery as a set: a fast 5 km suggests an endurance-oriented athlete; a strong 'Karen' suggests a strength-biased background; sled push and squat endurance reveal whether strength converts into repeatable muscular endurance or drops disproportionately at higher rep ranges.",
+    "High maximal strength does not automatically predict high strength endurance at submaximal loads — a strong 1RM and a poor sled-push-to-failure score are entirely compatible, which is why the battery tests endurance qualities directly rather than inferring them.",
+    "The tests are therefore two things at once: performance diagnostics, and the raw material for building individualised normative profiles that make future results interpretable."
+   ],
+   "training_link": "Before running a test week, decide which of the two forks you are resolving: background bias, or physiological limiter. They need different tests and lead to different plans. For a strength-biased athlete, expect to feel like you are undertraining strength for the first block — around 20% of volume is the guidance, and the discomfort of that is the point. For an endurance-biased athlete, the risk is the opposite: the intensity is unfamiliar, so watch recovery markers rather than assuming a high aerobic base makes them robust. If you are using the spider diagram, prefer goal-based scaling over elite-based for most athletes — 91% of your own target is motivating, 55% of an elite standard is not, and only one of those numbers is about you. And use your own Garmin and WHOOP history to sanity-check any prescribed recovery structure before adopting it; the delivery/utilisation split predicts what the interval should look like, but your own response data tells you whether it worked.",
+   "glossary": [
+    {
+     "term": "Athlete profiling",
+     "def": "Sorting an athlete by background bias (strength vs endurance) and, at advanced level, by physiological limiter, so that periodization can be individualised rather than templated.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M40 8v6M22 14h36\" stroke=\"#5ec8ff\" stroke-width=\"1.6\"/><path d=\"M22 14l-8 12h16zM58 14l-8 12h16z\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"1.4\"/><rect x=\"34\" y=\"28\" width=\"12\" height=\"4\" fill=\"#ffb86b\"/></svg>"
+    },
+    {
+     "term": "Delivery-limited",
+     "def": "Cardiac-limited. Oxygen cannot be supplied fast enough to a large working muscle mass; SmO2 falls but THb fails to recover in rest. Needs threshold intervals with short recoveries.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M12 20c6-10 14-10 20 0s14 10 20 0\" fill=\"none\" stroke=\"#ffb86b\" stroke-width=\"2\"/><circle cx=\"64\" cy=\"20\" r=\"6\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"1.6\"/><line x1=\"8\" y1=\"34\" x2=\"72\" y2=\"34\" stroke=\"#3a4a5e\" stroke-width=\"1\"/></svg>"
+    },
+    {
+     "term": "Utilisation-limited",
+     "def": "Oxidative-limited. Oxygen is delivered but not extracted; SmO2 fails to fall even at high workloads. Needs high-power functional intervals with full recovery.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"12\" y=\"10\" width=\"24\" height=\"20\" rx=\"3\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"1.6\"/><path d=\"M40 20h16M50 15l6 5-6 5\" fill=\"none\" stroke=\"#67e8b0\" stroke-width=\"2\"/><circle cx=\"66\" cy=\"20\" r=\"4\" fill=\"#ffb86b\" opacity=\"0.7\"/></svg>"
+    },
+    {
+     "term": "Spider diagram",
+     "def": "Radar plot with one axis per test, scaled 0-100, layering current status against medium- and long-term goals to make the development gap visible.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><polygon points=\"40,6 62,17 54,33 26,33 18,17\" fill=\"none\" stroke=\"#3a4a5e\" stroke-width=\"1.2\"/><polygon points=\"40,13 54,19 49,29 31,29 26,19\" fill=\"#5ec8ff\" opacity=\"0.35\" stroke=\"#5ec8ff\" stroke-width=\"1.2\"/><circle cx=\"40\" cy=\"6\" r=\"1.6\" fill=\"#67e8b0\"/></svg>"
+    },
+    {
+     "term": "Normative reference",
+     "def": "The value defined as 100% on an axis — either the athlete's own goal (goal-based) or a top-performer standard (elite-based).",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><line x1=\"10\" y1=\"30\" x2=\"70\" y2=\"30\" stroke=\"#3a4a5e\" stroke-width=\"1.2\"/><line x1=\"10\" y1=\"10\" x2=\"70\" y2=\"10\" stroke=\"#ffb86b\" stroke-width=\"1.6\" stroke-dasharray=\"4 3\"/><rect x=\"18\" y=\"18\" width=\"8\" height=\"12\" fill=\"#5ec8ff\" opacity=\"0.6\"/><rect x=\"34\" y=\"14\" width=\"8\" height=\"16\" fill=\"#5ec8ff\" opacity=\"0.6\"/><rect x=\"50\" y=\"22\" width=\"8\" height=\"8\" fill=\"#5ec8ff\" opacity=\"0.6\"/></svg>"
+    },
+    {
+     "term": "Overprogramming",
+     "def": "Overreaching driven by unfamiliar training intensity rather than excessive volume — the specific risk for endurance-biased athletes entering HYROX.",
+     "svg": "<svg viewBox=\"0 0 80 40\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M10 30 C24 30 30 12 42 12 C54 12 58 26 70 30\" fill=\"none\" stroke=\"#5ec8ff\" stroke-width=\"2\"/><path d=\"M42 8v-4M36 10l-3-3M48 10l3-3\" stroke=\"#ffb86b\" stroke-width=\"1.6\"/></svg>"
+    }
+   ],
+   "relevant": true,
+   "exam_focus": "Distinguish delivery- from utilisation-limited athletes on NIRS data and state the opposite interval prescriptions each requires; outline the periodization emphasis for a strength-biased versus an endurance-biased novice.",
    "figures": []
   }
  }
