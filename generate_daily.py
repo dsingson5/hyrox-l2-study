@@ -586,6 +586,7 @@ def render_html(today, today_day, today_lesson, deep_review, reviews, questions,
   </header>
   <nav class="lesson-nav" aria-label="Lesson navigation"><a class="ln-prev" id="ln-prev" href="#" onclick="return cscsNavPrev();">&larr; Previous lesson</a><span class="ln-here">Day {today_day} &middot; {date_str}</span><a class="ln-next" id="ln-next" href="#" onclick="return cscsNavNext();">Next lesson &rarr;</a></nav>
   <div class="browse-all">Everything for this module is on this page. <a href="../modules.html">Browse all modules &amp; lessons</a> &middot; <a href="../coach-eye/">Coach Eye &middot; movement video quiz</a></div>
+  <div class="games-cta"><a href="../coach-eye/">&#127909; Coach Eye &mdash; spot the movement fault &middot; video quiz</a></div>
   <div class="study-tip">
     <b>How to use this:</b> recall and type an answer <b>before</b> you reveal — the reveal stays locked until you commit.
     After the answer, grade yourself <b>Again / Hard / Good / Easy</b>; that grade schedules the card with
