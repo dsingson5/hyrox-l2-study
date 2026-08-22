@@ -286,6 +286,19 @@ python3 -m http.server 8000
           </div>
           <p id="aiKeyStatus" class="small muted" style="margin-top:6px"></p>
         </details>
+        <details class="aikey" style="margin-top:12px">
+          <summary>Sync across devices</summary>
+          <p class="small muted" style="margin-bottom:8px">Keeps your stats, labels, notes, settings and API key in a private GitHub gist so your phone, tablet and computer all see the same data. If you already use sync on the HYROX L2 study site, it turns on here automatically with the same token. Clips are not synced &mdash; import them once per device.</p>
+          <div id="syncSetup">
+            <div class="db-row">
+              <input type="password" id="syncTokenIn" placeholder="GitHub token (gist scope)" autocomplete="off">
+              <button id="syncEnable" class="btn btn-mini" type="button">Enable</button>
+            </div>
+            <p class="small muted" style="margin-top:6px">Create one at github.com &rarr; Settings &rarr; Developer settings &rarr; Personal access tokens (classic) with only the <b>gist</b> scope, then paste the same token on each device.</p>
+          </div>
+          <p style="margin-top:6px"><button id="syncNow" class="btn btn-mini" type="button" hidden>Sync now</button></p>
+          <p id="syncStatus" class="small muted" style="margin-top:6px"></p>
+        </details>
       </div>
       <button id="btnStart" class="btn btn-primary btn-block">Start quiz</button>
       <div class="row-buttons">
@@ -423,6 +436,10 @@ var LS_STATS = 'hyrox.quiz.v1';
 var LS_LABELS = 'hyrox.quiz.labels.v1';
 var LS_COACH = 'hyrox.quiz.coach.v1';
 var LS_AIKEY = 'hyrox.quiz.aikey.v1';
+var LS_TOUCH = 'hyrox.quiz.touched.v1';      /* ts of last local change, for sync merges */
+var LS_SYNC_TOKEN = 'hyrox.quiz.sync.token'; /* own GitHub token (fallback when no study-site sync) */
+var LS_SYNC_GIST = 'hyrox.quiz.sync.gist';
+var SYNC_FILE = 'coach-eye-sync.json';
 function lsGet(key, fallback){
   try {
     var v = localStorage.getItem(key);
@@ -682,7 +699,9 @@ function setLabel(id, patch){
   for (var k in patch){
     if (Object.prototype.hasOwnProperty.call(patch, k)) ov[k] = patch[k];
   }
+  ov.ts = Date.now(); /* recency for cross-device merges */
   lsSet(LS_LABELS, labels);
+  try { touch(); schedulePush(); } catch (eSync) {}
 }
 var notePendingId = null;
 var notePendingVal = '';
@@ -722,6 +741,7 @@ function recordAnswer(clip, correct, ms){
   if (s.times.length > 20) s.times.shift();
   s.last = Date.now();
   lsSet(LS_STATS, stats);
+  try { touch(); schedulePush(); } catch (eSync) {}
 }
 
 /* ================= video ================= */
@@ -1004,6 +1024,7 @@ function goStart(){
   unloadVideo();
   renderStart();
   show('start');
+  try { startSync(); } catch (eSync) {} /* first arrival on the start screen pulls once */
 }
 function renderStart(){
   var eff = effClips();
@@ -1591,6 +1612,193 @@ function renderAIResult(out, res){
   }
 }
 
+/* ================= cross-device sync (GitHub gist) ================= */
+/* Coach Eye lives on the same origin as the HYROX L2 study site, which
+   already syncs via a secret gist (hyroxl2.sync.*). When that is set up on
+   a device, Coach Eye adopts the same token+gist automatically and keeps
+   its own file (coach-eye-sync.json) in it. Otherwise a token can be
+   pasted here directly. Clips are NOT synced (import them per device). */
+function studyCreds(){
+  try {
+    var t = localStorage.getItem('hyroxl2.sync.token') || '';
+    var g = localStorage.getItem('hyroxl2.sync.gist_id') || '';
+    var en = localStorage.getItem('hyroxl2.sync.enabled') || '';
+    if (t && g && en && en !== 'false' && en !== '0') return { token: t, gist: g, src: 'study' };
+  } catch (e) {}
+  return null;
+}
+function syncCreds(){
+  var t = String(lsGet(LS_SYNC_TOKEN, '') || '');
+  var g = String(lsGet(LS_SYNC_GIST, '') || '');
+  if (t && g) return { token: t, gist: g, src: 'own' };
+  return studyCreds();
+}
+function localTouched(){ var v = lsGet(LS_TOUCH, 0); return typeof v === 'number' ? v : 0; }
+function touch(){ lsSet(LS_TOUCH, Date.now()); }
+function ghFetch(method, path, token, body, keepalive){
+  return fetch('https://api.github.com' + path, {
+    method: method,
+    keepalive: !!keepalive,
+    headers: {
+      'Authorization': 'token ' + token,
+      'Accept': 'application/vnd.github+json',
+      'Content-Type': 'application/json',
+      'X-GitHub-Api-Version': '2022-11-28'
+    },
+    body: body ? JSON.stringify(body) : undefined
+  }).then(function(r){
+    if (!r.ok) return r.text().then(function(t){ throw new Error('GitHub ' + r.status + ': ' + t.slice(0, 160)); });
+    return r.status === 204 ? null : r.json();
+  });
+}
+function buildSyncPayload(){
+  return {
+    schema: 1,
+    updated_at: new Date().toISOString(),
+    touched: localTouched(),
+    stats: stats,
+    labels: labels,
+    coach: coachDebrief,
+    aikey: aiKey()
+  };
+}
+function mergeRemote(remote){
+  if (!remote || remote.schema !== 1) return false;
+  var changed = false;
+  /* per-clip stats: take the record that has seen more answers / is newer */
+  var rc = (remote.stats && remote.stats.clips) || {};
+  for (var id in rc){
+    if (!Object.prototype.hasOwnProperty.call(rc, id)) continue;
+    var r = rc[id];
+    if (!r || typeof r !== 'object') continue;
+    var l = stats.clips[id];
+    if (!l || typeof l !== 'object' ||
+        ((r.r || 0) + (r.w || 0) > (l.r || 0) + (l.w || 0)) ||
+        ((r.last || 0) > (l.last || 0) && (r.r || 0) + (r.w || 0) >= (l.r || 0) + (l.w || 0))){
+      stats.clips[id] = r;
+      changed = true;
+    }
+  }
+  /* labels/notes: newer per-clip edit wins (ts added by setLabel) */
+  var rl = remote.labels || {};
+  for (var lid in rl){
+    if (!Object.prototype.hasOwnProperty.call(rl, lid)) continue;
+    var rv = rl[lid];
+    if (!rv || typeof rv !== 'object') continue;
+    var lv = labels[lid];
+    if (!lv || (rv.ts || 0) > (lv.ts || 0)){ labels[lid] = rv; changed = true; }
+  }
+  /* global settings: whichever side changed most recently */
+  if ((remote.touched || 0) > localTouched()){
+    if (typeof remote.coach === 'boolean' && remote.coach !== coachDebrief){
+      coachDebrief = remote.coach;
+      lsSet(LS_COACH, coachDebrief);
+      try { $id('stCoach').checked = coachDebrief; } catch (e) {}
+      changed = true;
+    }
+    if (typeof remote.aikey === 'string' && remote.aikey !== aiKey()){
+      lsSet(LS_AIKEY, remote.aikey);
+      changed = true;
+    }
+  }
+  if (changed){
+    lsSet(LS_STATS, stats);
+    lsSet(LS_LABELS, labels);
+  }
+  return changed;
+}
+var syncPushTimer = null;
+var syncPushPending = false;
+function setSyncStatus(msg){ try { $id('syncStatus').textContent = msg; } catch (e) {} }
+function syncPull(){
+  var c = syncCreds();
+  if (!c) return Promise.resolve(false);
+  setSyncStatus('Syncing…');
+  return ghFetch('GET', '/gists/' + c.gist, c.token).then(function(data){
+    var f = data && data.files && data.files[SYNC_FILE];
+    var changed = false;
+    if (f && f.content){
+      try { changed = mergeRemote(JSON.parse(f.content)); } catch (e) {}
+    }
+    setSyncStatus('✓ Synced ' + new Date().toLocaleTimeString() +
+      (c.src === 'study' ? ' · via your study-site sync' : ''));
+    if (changed){
+      refreshAIKeyStatus();
+      if (currentScreen === 'start') renderStart();
+    }
+    /* write back so this device's progress reaches the gist too */
+    schedulePush();
+    return changed;
+  }).catch(function(err){
+    setSyncStatus('Sync error: ' + (err && err.message ? err.message : err));
+    return false;
+  });
+}
+function syncPush(keepalive){
+  var c = syncCreds();
+  if (!c) return Promise.resolve(false);
+  syncPushPending = false;
+  var files = {};
+  files[SYNC_FILE] = { content: JSON.stringify(buildSyncPayload(), null, 1) };
+  return ghFetch('PATCH', '/gists/' + c.gist, c.token, { files: files }, keepalive).then(function(){
+    setSyncStatus('✓ Synced ' + new Date().toLocaleTimeString() +
+      (c.src === 'study' ? ' · via your study-site sync' : ''));
+    return true;
+  }).catch(function(err){
+    setSyncStatus('Sync error: ' + (err && err.message ? err.message : err));
+    return false;
+  });
+}
+function schedulePush(){
+  if (!syncCreds()) return;
+  syncPushPending = true;
+  if (syncPushTimer) clearTimeout(syncPushTimer);
+  syncPushTimer = setTimeout(function(){ syncPush(false); }, 4000);
+}
+var syncPulledOnce = false;
+function startSync(){
+  if (syncPulledOnce) return;
+  syncPulledOnce = true;
+  refreshSyncUI();
+  if (syncCreds()) syncPull();
+}
+function enableOwnSync(token){
+  /* a second device with the same token must adopt the existing gist,
+     never create a duplicate */
+  setSyncStatus('Looking for an existing sync gist…');
+  return ghFetch('GET', '/gists?per_page=100', token).then(function(list){
+    var found = null;
+    (Array.isArray(list) ? list : []).forEach(function(g){
+      if (!found && g && g.files && g.files[SYNC_FILE]) found = g.id;
+    });
+    if (found){
+      lsSet(LS_SYNC_TOKEN, token);
+      lsSet(LS_SYNC_GIST, found);
+      refreshSyncUI();
+      return syncPull();
+    }
+    setSyncStatus('Creating sync gist…');
+    var files = {};
+    files[SYNC_FILE] = { content: JSON.stringify(buildSyncPayload(), null, 1) };
+    return ghFetch('POST', '/gists', token, {
+      description: 'Coach Eye — cross-device sync', public: false, files: files
+    }).then(function(data){
+      lsSet(LS_SYNC_TOKEN, token);
+      lsSet(LS_SYNC_GIST, data.id);
+      refreshSyncUI();
+      setSyncStatus('✓ Sync enabled — use the same token on your other devices.');
+    });
+  }).catch(function(err){
+    setSyncStatus('Could not enable sync: ' + (err && err.message ? err.message : err));
+  });
+}
+document.addEventListener('visibilitychange', function(){
+  if (document.visibilityState === 'hidden' && syncPushPending){
+    if (syncPushTimer) clearTimeout(syncPushTimer);
+    syncPush(true); /* keepalive lets the request finish as the tab closes */
+  }
+});
+
 function buildSelfCheck(clip, ex){
   var wrap = el('div', { class: 'card' });
   wrap.appendChild(el('div', { class: 'seclabel' }, 'Self-check'));
@@ -2037,11 +2245,33 @@ $id('aiKeySave').addEventListener('click', function(){
   lsSet(LS_AIKEY, v);
   $id('aiKeyIn').value = '';
   refreshAIKeyStatus();
+  touch(); schedulePush();
 });
 $id('aiKeyClear').addEventListener('click', function(){
   lsSet(LS_AIKEY, '');
   refreshAIKeyStatus();
+  touch(); schedulePush();
 });
+
+/* cross-device sync controls */
+function refreshSyncUI(){
+  var c = syncCreds();
+  $id('syncSetup').hidden = !!c;
+  $id('syncNow').hidden = !c;
+  if (c){
+    setSyncStatus('Sync is on' + (c.src === 'study' ? ' · using your study-site sync token' : '') + '.');
+  } else {
+    setSyncStatus('Not set up on this device yet. Enable sync on the HYROX L2 study site, or paste a GitHub token above.');
+  }
+}
+refreshSyncUI();
+$id('syncEnable').addEventListener('click', function(){
+  var t = $id('syncTokenIn').value.trim();
+  if (!t){ setSyncStatus('Paste a GitHub token first (gist scope).'); return; }
+  $id('syncTokenIn').value = '';
+  enableOwnSync(t);
+});
+$id('syncNow').addEventListener('click', function(){ syncPull(); });
 $id('btnStart').addEventListener('click', function(){ this.blur(); startQuiz(); });
 $id('btnLabelMode').addEventListener('click', function(){ this.blur(); openLabelMode(); });
 $id('btnStats').addEventListener('click', function(){ this.blur(); renderStatsScreen(); });
