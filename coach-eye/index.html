@@ -184,6 +184,13 @@
   .micbtn{white-space:nowrap;min-height:40px}
   .micbtn.rec{border-color:var(--bad);color:var(--bad);animation:micpulse 1.1s ease-in-out infinite}
   @keyframes micpulse{50%{opacity:.5}}
+  .dlspin{width:13px;height:13px;border:2px solid var(--line2);border-top-color:var(--accent);border-radius:50%;
+    animation:dlspin .8s linear infinite;display:inline-block;vertical-align:-2px;margin-right:7px}
+  @keyframes dlspin{to{transform:rotate(360deg)}}
+  .dlbar{height:7px;background:var(--panel2);border:1px solid var(--line2);border-radius:5px;overflow:hidden;margin:7px 0}
+  .dlbar i{display:block;height:100%;background:var(--accent);width:0%;transition:width .3s}
+  .dlpick{margin:6px 0 2px;display:flex;flex-direction:column;gap:4px}
+  .dlpick label{display:flex;gap:7px;align-items:center;font-size:.85rem;color:var(--text)}
   .gchip{display:inline-block;padding:4px 12px;border-radius:999px;border:1px solid var(--line2);font-size:.85rem;margin:3px 6px 3px 0}
   .gchip.hit{border-color:rgba(46,204,113,.6);color:var(--good);background:rgba(46,204,113,.08)}
   .gchip.miss{color:var(--muted);border-style:dashed}
@@ -213,7 +220,7 @@
 <div class="wrap">
   <header>
     <div class="brand">COACH <em>EYE</em></div>
-    <div class="tagline">HYROX Movement Quiz</div>
+    <div class="tagline">HYROX Movement Quiz <span class="hint" id="ceBuild">v3</span></div>
   </header>
 
   <main>
@@ -422,7 +429,7 @@ python3 -m http.server 8000
   </div>
 </div>
 
-<script src="knowledge.js"></script>
+<script src="knowledge.js?v=3"></script>
 <script>
 (function(){
 'use strict';
@@ -712,6 +719,39 @@ function idbLoadLibrary(){
         res({ manifest: man, blobs: blobs });
       };
       tx.onerror = function(){ db.close(); rej(tx.error || new Error('load failed')); };
+    });
+  });
+}
+function idbPutFile(path, blob){
+  return idbOpen().then(function(db){
+    return new Promise(function(res, rej){
+      var tx = db.transaction(['files'], 'readwrite');
+      tx.oncomplete = function(){ db.close(); res(); };
+      tx.onerror = function(){ db.close(); rej(tx.error || new Error('storing failed')); };
+      tx.onabort = function(){ db.close(); rej(tx.error || new Error('QuotaExceededError')); };
+      tx.objectStore('files').put(blob, path);
+    });
+  });
+}
+function idbFileKeys(){
+  return idbOpen().then(function(db){
+    return new Promise(function(res, rej){
+      var tx = db.transaction(['files'], 'readonly');
+      var q = tx.objectStore('files').getAllKeys();
+      var keys = [];
+      q.onsuccess = function(){ keys = q.result || []; };
+      tx.oncomplete = function(){ db.close(); res(keys); };
+      tx.onerror = function(){ db.close(); rej(tx.error || new Error('load failed')); };
+    });
+  });
+}
+function idbPutManifest(man){
+  return idbOpen().then(function(db){
+    return new Promise(function(res, rej){
+      var tx = db.transaction(['meta'], 'readwrite');
+      tx.oncomplete = function(){ db.close(); res(); };
+      tx.onerror = function(){ db.close(); rej(tx.error || new Error('storing failed')); };
+      tx.objectStore('meta').put(man, 'manifest');
     });
   });
 }
@@ -1977,8 +2017,176 @@ function driveUploadAll(){
     });
   }).catch(function(e){ driveStatus('Drive error: ' + (e && e.message ? e.message : e)); });
 }
+function fmtBytes(n){
+  if (!isFinite(n) || n <= 0) return '?';
+  if (n >= 1e9) return (n / 1e9).toFixed(2) + ' GB';
+  if (n >= 1e6) return (n / 1e6).toFixed(1) + ' MB';
+  return Math.round(n / 1e3) + ' kB';
+}
+function friendlyNetErr(e){
+  var m = String((e && e.message) || e || '');
+  if (/quota|QuotaExceeded|storing aborted|full/i.test(m))
+    return 'this device ran out of storage while saving. Free up space, then press "Get clips from Drive" again - clips already saved are kept and skipped.';
+  if (/Load failed|Failed to fetch|NetworkError|network|abort/i.test(m))
+    return 'the connection dropped (or iOS cut the transfer). Press "Get clips from Drive" again - clips already saved are kept and skipped.';
+  return m;
+}
+var dlAbort = null;      /* AbortController list while a download runs */
+var dlCancelled = false;
+function driveProgressUI(st){
+  /* st: {phase, done, total, bytesDone, bytesTotal, active[], retrying, t0} or null to clear */
+  ['driveStatus', 'driveStatus2'].forEach(function(id){
+    var n = $id(id);
+    if (!n) return;
+    if (!st){ n.innerHTML = ''; return; }
+    var pct = st.bytesTotal ? Math.min(100, 100 * st.bytesDone / st.bytesTotal) : (st.total ? 100 * st.done / st.total : 0);
+    var secs = (Date.now() - st.t0) / 1000;
+    var rate = secs > 2 ? st.bytesDone / secs : 0;
+    var eta = rate > 0 && st.bytesTotal ? (st.bytesTotal - st.bytesDone) / rate : 0;
+    var line = st.done + ' / ' + st.total + ' clips \u00b7 ' + fmtBytes(st.bytesDone) +
+      (st.bytesTotal ? ' of ' + fmtBytes(st.bytesTotal) : '') +
+      (rate ? ' \u00b7 ' + fmtBytes(rate) + '/s' : '') +
+      (eta > 1 ? ' \u00b7 ~' + Math.ceil(eta / 60) + ' min left' : '');
+    var h = '<span class="dlspin"></span><b>' + (st.phase || 'Downloading') + '</b> ' +
+      '<button type="button" class="linklike small" onclick="driveCancel()" style="margin-left:8px">cancel</button>' +
+      '<span class="dlbar"><i style="width:' + pct.toFixed(1) + '%"></i></span>' +
+      line +
+      (st.active && st.active.length ? '<br><span class="hint">' + st.active.join(' \u00b7 ') + '</span>' : '') +
+      (st.retrying ? '<br><span class="warn">' + st.retrying + '</span>' : '');
+    n.innerHTML = h;
+  });
+}
+function driveCancel(){
+  dlCancelled = true;
+  (dlAbort || []).forEach(function(c){ try { c.abort(); } catch (e) {} });
+  driveStatus('Paused. Press "Get clips from Drive" to resume - clips already saved are kept and skipped.');
+}
+function fetchClipWithRetry(fileId, name, st){
+  var attempts = 0;
+  function once(){
+    attempts++;
+    var ctrl = new AbortController();
+    dlAbort.push(ctrl);
+    var stall = setTimeout(function(){ try { ctrl.abort(); } catch (e) {} }, 90000);
+    return fetch('https://www.googleapis.com/drive/v3/files/' + fileId + '?alt=media',
+      { headers: { 'Authorization': 'Bearer ' + gToken }, signal: ctrl.signal })
+      .then(function(r){
+        if (!r.ok) return r.text().then(function(t){ throw new Error('Drive ' + r.status + ': ' + t.slice(0, 120)); });
+        return r.blob();
+      })
+      .then(function(b){ clearTimeout(stall); return b; })
+      .catch(function(e){
+        clearTimeout(stall);
+        if (dlCancelled) throw e;
+        if (attempts < 3){
+          st.retrying = 'retrying ' + name + ' (' + (attempts + 1) + '/3)\u2026';
+          driveProgressUI(st);
+          return new Promise(function(res){ setTimeout(res, 1500 * attempts); }).then(once);
+        }
+        throw e;
+      });
+  }
+  return once();
+}
+function driveRunDownload(m, clips, need, byName){
+  dlAbort = []; dlCancelled = false;
+  var bytesTotal = 0;
+  need.forEach(function(it){ bytesTotal += Number((it.f && it.f.size) || 0); });
+  var st = { phase: 'Downloading', done: 0, total: need.length, bytesDone: 0, bytesTotal: bytesTotal, active: [], retrying: '', t0: Date.now() };
+  var qi = 0, failed = [], CONC = 3;
+  function finalize(){
+    st.phase = 'Saving'; st.active = []; driveProgressUI(st);
+    return idbFileKeys().then(function(keys){
+      var have = {};
+      keys.forEach(function(k){ have[k] = 1; });
+      var m2 = {};
+      for (var k in m){ if (Object.prototype.hasOwnProperty.call(m, k)) m2[k] = m[k]; }
+      m2.clips = clips.filter(function(c){ return have[c.file]; });
+      return idbPutManifest(m2);
+    }).then(function(){ return idbLoadLibrary(); }).then(function(lib2){
+      if (lib2){ initData(lib2.manifest, null, lib2.blobs); renderStart(); show('start'); }
+      driveProgressUI(null);
+      if (dlCancelled)
+        driveStatus('Paused at ' + st.done + ' of ' + st.total + '. Press "Get clips from Drive" to resume - saved clips are skipped.');
+      else if (failed.length)
+        driveStatus(st.done + ' of ' + st.total + ' clips saved \u00b7 ' + failed.length + ' failed (' + failed.slice(0, 3).join(', ') + (failed.length > 3 ? '\u2026' : '') + '). Press "Get clips from Drive" to retry just those.');
+      else
+        driveStatus('\u2713 All clips ready on this device (' + ((lib2 && lib2.manifest.clips.length) || st.done) + ' total).');
+    });
+  }
+  function worker(){
+    if (dlCancelled || qi >= need.length) return Promise.resolve();
+    var it = need[qi++];
+    var name = it.f.name;
+    st.active.push(name); driveProgressUI(st);
+    return fetchClipWithRetry(it.f.id, name, st)
+      .then(function(b){ return idbPutFile(it.c.file, b).then(function(){ b = null; }); })
+      .then(function(){
+        st.done++; st.bytesDone += Number(it.f.size || 0); st.retrying = '';
+      })
+      .catch(function(e){
+        if (!dlCancelled) failed.push(name);
+        if (/quota|full|storing/i.test(String(e && e.message))) { dlCancelled = true; failed.push('(storage full)'); }
+      })
+      .then(function(){
+        st.active = st.active.filter(function(a){ return a !== name; });
+        driveProgressUI(st);
+        return worker();
+      });
+  }
+  var pool = [];
+  for (var w = 0; w < CONC; w++) pool.push(worker());
+  return Promise.all(pool).then(finalize);
+}
+function driveOfferSubset(m, clips, need, byName){
+  /* storage preflight, then either start everything or render a per-exercise picker */
+  var bytesTotal = 0;
+  need.forEach(function(it){ bytesTotal += Number((it.f && it.f.size) || 0); });
+  var check = (navigator.storage && navigator.storage.estimate)
+    ? navigator.storage.estimate().catch(function(){ return null; })
+    : Promise.resolve(null);
+  return check.then(function(est){
+    var free = est && est.quota ? est.quota - (est.usage || 0) : null;
+    var fits = free === null || free > bytesTotal * 1.15;
+    if (fits && need.length <= 8) return driveRunDownload(m, clips, need, byName);
+    /* group by exercise for the picker */
+    var groups = {};
+    need.forEach(function(it){
+      var ex = it.c.exercise || 'other';
+      (groups[ex] = groups[ex] || { n: 0, bytes: 0 }).n++;
+      groups[ex].bytes += Number(it.f.size || 0);
+    });
+    var warn = fits ? '' :
+      '<span class="warn">Not enough space on this device: this needs ~' + fmtBytes(bytesTotal) +
+      ' and about ' + fmtBytes(free) + ' is free. Free up space, or pick a subset below - already-saved clips are kept either way.</span><br>';
+    var rows = Object.keys(groups).sort().map(function(ex){
+      return '<label><input type="checkbox" class="dlpickbox" value="' + ex.replace(/"/g, '&quot;') + '" ' + (fits ? 'checked' : '') + '> ' +
+        ex + ' <span class="hint">(' + groups[ex].n + ' \u00b7 ' + fmtBytes(groups[ex].bytes) + ')</span></label>';
+    }).join('');
+    ['driveStatus', 'driveStatus2'].forEach(function(id){
+      var n = $id(id);
+      if (!n) return;
+      n.innerHTML = warn + '<b>' + need.length + ' clips \u00b7 ' + fmtBytes(bytesTotal) + ' to download.</b>' +
+        '<div class="dlpick">' + rows + '</div>' +
+        '<button type="button" class="btn btn-mini" onclick="driveStartPicked()">Download selected</button> ' +
+        '<button type="button" class="btn btn-mini btn-primary" onclick="driveStartPicked(1)">Download all</button>';
+    });
+    window.__dlPending = { m: m, clips: clips, need: need, byName: byName };
+  });
+}
+function driveStartPicked(all){
+  var pend = window.__dlPending;
+  if (!pend) return;
+  var chosen = {};
+  var boxes = document.querySelectorAll('.dlpickbox');
+  for (var i = 0; i < boxes.length; i++) if (boxes[i].checked) chosen[boxes[i].value] = 1;
+  var need = all ? pend.need : pend.need.filter(function(it){ return chosen[it.c.exercise || 'other']; });
+  window.__dlPending = null;
+  if (!need.length){ driveStatus('Nothing selected.'); return; }
+  driveRunDownload(pend.m, pend.clips, need, pend.byName);
+}
 function driveDownloadAll(){
-  driveStatus('Signing in to Google…');
+  driveStatus('Signing in to Google\u2026');
   driveToken().then(function(){ return driveFolderId(false); }).then(function(fid){
     return driveList(fid).then(function(files){
       var byName = {};
@@ -1988,39 +2196,29 @@ function driveDownloadAll(){
         .then(function(r){ return r.json(); })
         .then(function(m){
           var clips = (m.clips || []).filter(function(c){ return c && c.id && c.file; });
-          return idbLoadLibrary().catch(function(){ return null; }).then(function(lib){
-            var haveLocal = (lib && lib.blobs) || {};
-            var blobs = {}, need = [];
+          return idbFileKeys().catch(function(){ return []; }).then(function(keys){
+            var have = {};
+            keys.forEach(function(k){ have[k] = 1; });
+            var need = [];
             clips.forEach(function(c){
-              if (haveLocal[c.file]) blobs[c.file] = haveLocal[c.file];
-              else if (byName[c.file.split('/').pop()]) need.push({ c: c, f: byName[c.file.split('/').pop()] });
+              if (!have[c.file] && byName[c.file.split('/').pop()])
+                need.push({ c: c, f: byName[c.file.split('/').pop()] });
             });
-            var i = 0;
-            function next(){
-              if (i >= need.length){
-                var m2 = {};
-                for (var k in m){ if (Object.prototype.hasOwnProperty.call(m, k)) m2[k] = m[k]; }
-                m2.clips = clips.filter(function(c){ return blobs[c.file]; });
-                return idbSaveLibrary(m2, blobs).then(function(){ return idbLoadLibrary(); }).then(function(lib2){
-                  if (lib2){
-                    initData(lib2.manifest, null, lib2.blobs);
-                    renderStart();
-                    show('start');
-                  }
-                  driveStatus('✓ ' + Object.keys(blobs).length + ' clips ready on this device.');
-                });
-              }
-              var it = need[i++];
-              driveStatus('Downloading clip ' + i + ' of ' + need.length + '…');
-              return dFetch('https://www.googleapis.com/drive/v3/files/' + it.f.id + '?alt=media')
-                .then(function(r){ return r.blob(); })
-                .then(function(b){ blobs[it.c.file] = b; return next(); });
+            if (!need.length){
+              /* everything already stored - just (re)write the manifest and load */
+              var m2 = {};
+              for (var k in m){ if (Object.prototype.hasOwnProperty.call(m, k)) m2[k] = m[k]; }
+              m2.clips = clips.filter(function(c){ return have[c.file]; });
+              return idbPutManifest(m2).then(function(){ return idbLoadLibrary(); }).then(function(lib2){
+                if (lib2){ initData(lib2.manifest, null, lib2.blobs); renderStart(); show('start'); }
+                driveStatus('\u2713 All ' + m2.clips.length + ' clips were already on this device.');
+              });
             }
-            return next();
+            return driveOfferSubset(m, clips, need, byName);
           });
         });
     });
-  }).catch(function(e){ driveStatus('Drive error: ' + (e && e.message ? e.message : e)); });
+  }).catch(function(e){ driveProgressUI(null); driveStatus('Drive error: ' + friendlyNetErr(e)); });
 }
 function refreshDriveUI(){
   var cid = gclient();
