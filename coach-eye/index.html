@@ -1342,11 +1342,10 @@ function debriefTargets(clip, ex, truth){
   return { groups: groups, labeled: !!ids };
 }
 
-function gradeDebrief(clip, ex, truth, a){
+function gradeDebrief(clip, ex, truth, text){
+  /* one transcript answers everything - every category is matched against it */
   var g = {};
-  /* movement name */
-  var nm = normText(a.name);
-  g.nameGiven = a.name.trim();
+  var nm = normText(text);
   g.nameOk = false;
   if (ex && nm.trim()){
     var pool = [String(ex.name || '').toLowerCase()].concat(ex.aliases || []);
@@ -1355,15 +1354,13 @@ function gradeDebrief(clip, ex, truth, a){
       if (al.length >= 3 && nm.indexOf(al) >= 0) g.nameOk = true;
     }
   }
-  /* athlete-facing feedback vs faults / good checkpoints */
   var tg = debriefTargets(clip, ex, truth);
-  g.talk = textHits(a.talk, tg.groups);
+  g.talk = textHits(text, tg.groups);
   g.talkLabeled = tg.labeled;
-  /* carryover + weaknesses + muscles */
-  g.carry = ex ? textHits(a.carry, splitGroups(ex.carryover)) : { hit: [], miss: [] };
-  g.addr = ex ? textHits(a.carry, splitGroups(ex.addresses)) : { hit: [], miss: [] };
-  g.muscles = ex ? textHits(a.muscles, splitGroups(ex.muscles)) : { hit: [], miss: [] };
-  g.comms = analyzeComms(a.talk, truth === 'bad' ? g.talk.hit.length : 0);
+  g.carry = ex ? textHits(text, splitGroups(ex.carryover)) : { hit: [], miss: [] };
+  g.addr = ex ? textHits(text, splitGroups(ex.addresses)) : { hit: [], miss: [] };
+  g.muscles = ex ? textHits(text, splitGroups(ex.muscles)) : { hit: [], miss: [] };
+  g.comms = analyzeComms(text, truth === 'bad' ? g.talk.hit.length : 0);
   g.covered = g.talk.hit.length + g.carry.hit.length + g.addr.hit.length + g.muscles.hit.length + (g.nameOk ? 1 : 0);
   g.total = tg.groups.length + (ex ? splitGroups(ex.carryover).length + splitGroups(ex.addresses).length + splitGroups(ex.muscles).length : 0) + 1;
   return g;
@@ -1380,31 +1377,26 @@ function chipRow(hit, miss, wrongExtra){
 function buildDebrief(clip, ex, truth, rest){
   var card = el('div', { class: 'card' });
   card.appendChild(el('div', { class: 'seclabel' }, 'Coach debrief'));
-  card.appendChild(el('p', null, 'Your athlete just did this rep and is looking at you. Coach it — the answer sheet unlocks after your debrief.'));
+  card.appendChild(el('p', null, 'Your athlete just did this rep and is looking at you. Say it all in one go — the answer sheet unlocks after your debrief. Cover:'));
+  var ul = el('ul', { class: 'checklist', style: 'margin-bottom:10px' });
+  ['the name of the movement',
+   'what you\'d say to the athlete — what was good, what needs correcting',
+   'how it helps them in HYROX & what weaknesses it addresses',
+   'the muscles being trained'].forEach(function(item){ ul.appendChild(el('li', null, item)); });
+  card.appendChild(ul);
 
-  function field(labelText, input, mic){
-    var f = el('div', { class: 'db-field' });
-    f.appendChild(el('label', null, labelText));
-    if (mic){
-      var row = el('div', { class: 'db-row' });
-      row.appendChild(input);
-      row.appendChild(mic);
-      f.appendChild(row);
-    } else {
-      f.appendChild(input);
-    }
-    return f;
+  var inText = el('textarea', { rows: '6', placeholder: 'e.g. "That\'s a squat — kniebeuge. Great depth on that one; next rep push the floor apart so the knees track over the toes. Squats carry over to wall balls and the sled, building leg strength under fatigue. We\'re training quads, glutes, hamstrings and core."' });
+  var f = el('div', { class: 'db-field' });
+  var mic = micFor(inText);
+  if (mic){
+    var row = el('div', { class: 'db-row' });
+    row.appendChild(inText);
+    row.appendChild(mic);
+    f.appendChild(row);
+  } else {
+    f.appendChild(inText);
   }
-
-  var inName = el('input', { type: 'text', placeholder: 'e.g. wall ball', autocomplete: 'off', autocapitalize: 'off' });
-  var inTalk = el('textarea', { rows: '3', placeholder: 'Talk to them: what was good, what needs correcting — e.g. "Loved the pace on that one. Next rep, push the floor apart so your knees track over your toes."' });
-  var inCarry = el('textarea', { rows: '2', placeholder: 'How does this movement help them in HYROX, and what weaknesses does it address?' });
-  var inMuscles = el('input', { type: 'text', placeholder: 'e.g. quads, glutes, core', autocomplete: 'off', autocapitalize: 'off' });
-
-  card.appendChild(field('1 · What movement is this?', inName));
-  card.appendChild(field('2 · Talk to your athlete', inTalk, micFor(inTalk)));
-  card.appendChild(field('3 · HYROX carryover & the weaknesses it addresses', inCarry, micFor(inCarry)));
-  card.appendChild(field('4 · What muscles are you training here?', inMuscles));
+  card.appendChild(f);
 
   var actions = el('p', { style: 'margin-top:14px' });
   var goBtn = el('button', { class: 'btn btn-primary', type: 'button' }, 'Review my coaching');
@@ -1418,12 +1410,12 @@ function buildDebrief(clip, ex, truth, rest){
     debriefPending = false;
     goBtn.disabled = true;
     skipBtn.disabled = true;
-    [inName, inTalk, inCarry, inMuscles].forEach(function(n){ n.readOnly = true; });
+    inText.readOnly = true;
     rest.textContent = '';
     if (withReview){
-      var a = { name: inName.value, talk: inTalk.value, carry: inCarry.value, muscles: inMuscles.value };
-      var g = gradeDebrief(clip, ex, truth, a);
-      var review = buildReviewCard(g, clip, ex, truth, a);
+      var text = inText.value;
+      var g = gradeDebrief(clip, ex, truth, text);
+      var review = buildReviewCard(g, clip, ex, truth, text);
       rest.appendChild(review);
     } else {
       card.hidden = true;
@@ -1436,25 +1428,23 @@ function buildDebrief(clip, ex, truth, rest){
   return card;
 }
 
-function buildReviewCard(g, clip, ex, truth, a){
+function buildReviewCard(g, clip, ex, truth, text){
   var card = el('div', { class: 'card' });
   card.appendChild(el('div', { class: 'seclabel' }, 'Your coaching review'));
   card.appendChild(el('p', { class: 'cov-line' }, 'You covered ' + g.covered + ' of ' + g.total + ' key points.'));
 
   /* movement name */
   card.appendChild(el('div', { class: 'seclabel' }, 'Movement name'));
-  if (!g.nameGiven){
-    card.appendChild(el('p', { class: 'muted small' }, 'Left blank — this is ' + exName(clip.exercise) + '.'));
-  } else if (g.nameOk){
-    card.appendChild(el('p', { class: 'small' }, '✓ Correct — ' + exName(clip.exercise) + '.'));
+  if (g.nameOk){
+    card.appendChild(el('p', { class: 'small' }, '✓ You named it — ' + exName(clip.exercise) + '.'));
   } else {
-    card.appendChild(el('p', { class: 'small' }, '✗ You said “' + g.nameGiven + '” — this is ' + exName(clip.exercise) + '.'));
+    card.appendChild(el('p', { class: 'small' }, '✗ You didn\'t name the movement — this is ' + exName(clip.exercise) + '.'));
   }
 
   /* athlete feedback coverage */
   card.appendChild(el('div', { class: 'seclabel' },
     truth === 'good' ? 'Checkpoints worth affirming' : (g.talkLabeled ? 'Faults in this clip' : 'Typical faults for this movement')));
-  if (!a.talk.trim()){
+  if (!text.trim()){
     card.appendChild(el('p', { class: 'muted small' }, 'You didn\'t say anything to the athlete — even a good rep deserves a word.'));
   } else if (g.talk.hit.length + g.talk.miss.length){
     card.appendChild(chipRow(g.talk.hit, g.talk.miss));
@@ -1487,13 +1477,13 @@ function buildReviewCard(g, clip, ex, truth, a){
     card.appendChild(ul);
   }
 
-  card.appendChild(buildAIBlock(clip, ex, truth, a));
+  card.appendChild(buildAIBlock(clip, ex, truth, text));
   return card;
 }
 
 /* --- optional AI review (BYOK, key never leaves this browser except to Anthropic) --- */
 function aiKey(){ return String(lsGet(LS_AIKEY, '') || ''); }
-function buildAIBlock(clip, ex, truth, a){
+function buildAIBlock(clip, ex, truth, text){
   var box = el('div', { style: 'margin-top:14px' });
   if (!aiKey()){
     box.appendChild(el('p', { class: 'muted small' }, 'Want a deeper review? Add your Anthropic API key under “AI review” on the start screen and Claude will critique your debrief like a mentor coach.'));
@@ -1504,7 +1494,7 @@ function buildAIBlock(clip, ex, truth, a){
   btn.addEventListener('click', function(){
     btn.disabled = true;
     btn.textContent = 'Reviewing…';
-    aiReview(clip, ex, truth, a).then(function(res){
+    aiReview(clip, ex, truth, text).then(function(res){
       btn.remove();
       renderAIResult(out, res);
     }).catch(function(err){
@@ -1518,7 +1508,7 @@ function buildAIBlock(clip, ex, truth, a){
   box.appendChild(out);
   return box;
 }
-function aiReview(clip, ex, truth, a){
+function aiReview(clip, ex, truth, text){
   var reference = ex ? {
     name: ex.name, standard: ex.standard, whatToWatch: ex.whatToWatch,
     goodForm: ex.goodForm, cues: ex.cues, benefits: ex.benefits,
@@ -1528,9 +1518,9 @@ function aiReview(clip, ex, truth, a){
   var payload = {
     reference: reference,
     clip: { verdict: truth, labeled_faults: clip.faults || [] },
-    coach_answers: { movement_name: a.name, athlete_feedback: a.talk, hyrox_carryover_and_weaknesses: a.carry, muscles: a.muscles }
+    debrief_transcript: text
   };
-  var system = 'You are an expert coach educator (CSCS-level, HYROX judge) reviewing a trainee coach\'s debrief of one exercise repetition. The trainee spoke as if addressing their athlete directly. Judge factual accuracy against the reference AND sound exercise science — the reference is a summary, so credit correct points beyond it and flag anything wrong or lacking plainly. Then judge the athlete-facing feedback against modern coaching-communication evidence: external attentional focus cues, cue economy (1-2 cues max), positive-first process-specific praise, autonomy-supportive language, stating the "do" rather than the "don\'t", concrete body/position references. Be direct, warm and brief. Respond with ONLY minified JSON, no markdown: {"accuracy":[{"area":"movement name"|"athlete feedback"|"hyrox carryover"|"muscles","verdict":"correct"|"partial"|"missing"|"wrong","note":"one sentence"}],"communication":{"strengths":["..."],"improve":["..."]},"say_it_like_this":"a 2-3 sentence model debrief the coach could say out loud to the athlete for THIS exact clip"}';
+  var system = 'You are an expert coach educator (CSCS-level, HYROX judge) reviewing a trainee coach\'s debrief of one exercise repetition. The trainee answered everything in ONE spoken transcript that should cover: the movement name, what they\'d say to the athlete (what was good / what needs correcting), how the movement helps in HYROX and what weaknesses it addresses, and the muscles trained. Extract each part from the transcript yourself. Judge factual accuracy against the reference AND sound exercise science — the reference is a summary, so credit correct points beyond it and flag anything wrong or lacking plainly. Then judge the athlete-facing feedback against modern coaching-communication evidence: external attentional focus cues, cue economy (1-2 cues max), positive-first process-specific praise, autonomy-supportive language, stating the "do" rather than the "don\'t", concrete body/position references. Be direct, warm and brief. Respond with ONLY minified JSON, no markdown: {"accuracy":[{"area":"movement name"|"athlete feedback"|"hyrox carryover"|"muscles","verdict":"correct"|"partial"|"missing"|"wrong","note":"one sentence"}],"communication":{"strengths":["..."],"improve":["..."]},"say_it_like_this":"a 2-3 sentence model debrief the coach could say out loud to the athlete for THIS exact clip"}';
   return fetch('https://api.anthropic.com/v1/messages', {
     method: 'POST',
     headers: {
