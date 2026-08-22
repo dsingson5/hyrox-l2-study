@@ -239,9 +239,11 @@ python3 -m http.server 8000
       <div class="card">
         <div class="seclabel">Option B &middot; Import your clips into this browser</div>
         <p class="small" style="margin-bottom:12px">Already processed your videos? Import the <code>quiz</code> folder (the one containing <code>manifest.json</code> and <code>clips/</code>). The clips are stored <b>in this browser on this device</b> &mdash; nothing is uploaded anywhere &mdash; and from then on this page just works, no server needed. Re-import any time after processing new videos.</p>
-        <label class="btn btn-primary" for="dirPick">Import quiz folder&hellip;</label>
+        <div style="display:flex;flex-wrap:wrap;gap:8px;align-items:stretch">
+        <label class="btn btn-primary" for="dirPick" style="text-align:center">Import quiz folder&hellip;</label>
+        <label class="btn" for="filePick" style="text-align:center">Import files&hellip; <span class="hint">(phone)</span></label>
+        </div>
         <input type="file" id="dirPick" webkitdirectory directory multiple style="display:none">
-        <label class="btn" for="filePick" style="margin-left:8px">Import files&hellip; <span class="hint">(phone)</span></label>
         <input type="file" id="filePick" multiple accept=".mp4,.json,.js,video/mp4,application/json,text/javascript" style="display:none">
         <p class="small muted" style="margin-top:8px">On a phone there is no folder picker: copy the quiz folder to your device, tap <b>Import files</b>, and select <code>manifest.json</code> together with everything inside <code>clips/</code>.</p>
         <p id="setupMsg" class="small warn" style="margin-top:10px"></p>
@@ -253,7 +255,9 @@ python3 -m http.server 8000
           <input type="text" id="gClientIn2" placeholder="Google client ID (or let sync fill it in)" autocomplete="off" autocapitalize="off">
           <button id="gClientSave2" class="btn btn-mini" type="button">Save</button>
         </div>
-        <p id="driveBtns2" hidden><button id="btnDriveDown2" class="btn btn-primary" type="button">Get clips from Drive</button></p>
+        <p id="driveBtns2" hidden><button id="btnDriveDown2" class="btn btn-primary" type="button">Get clips from Drive</button>
+          <button id="gClientClear2" class="linklike small" type="button" style="margin-left:8px">change client ID</button><br>
+          <span id="gClientCur2" class="hint"></span></p>
         <p id="driveStatus2" class="small muted" style="margin-top:8px"></p>
       </div>
     </section>
@@ -322,7 +326,8 @@ python3 -m http.server 8000
           <p id="driveBtns" hidden style="margin-top:6px">
             <button id="btnDriveUp" class="btn btn-mini" type="button">Upload clips to Drive</button>
             <button id="btnDriveDown" class="btn btn-mini" type="button">Get clips from Drive</button>
-            <button id="gClientClear" class="linklike small" type="button" style="margin-left:8px">change client ID</button>
+            <button id="gClientClear" class="linklike small" type="button" style="margin-left:8px">change client ID</button><br>
+            <span id="gClientCur" class="hint"></span>
           </p>
           <p id="driveStatus" class="small muted" style="margin-top:6px"></p>
         </details>
@@ -1902,7 +1907,7 @@ function driveFolderId(create){
     .then(function(r){ return r.json(); })
     .then(function(j){
       if (j.files && j.files.length) return j.files[0].id;
-      if (!create) throw new Error('no "' + DRIVE_FOLDER + '" folder in this Google account yet - press "Upload clips to Drive" on the device that has the clips first');
+      if (!create) throw new Error('signed in to Google OK \u2713 - but this Google account has no "' + DRIVE_FOLDER + '" folder yet. Press "Upload clips to Drive" on the device that has the clips (your computer), then retry here.');
       return dFetch('https://www.googleapis.com/drive/v3/files', {
         method: 'POST', headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ name: DRIVE_FOLDER, mimeType: 'application/vnd.google-apps.folder' })
@@ -1978,7 +1983,7 @@ function driveDownloadAll(){
     return driveList(fid).then(function(files){
       var byName = {};
       files.forEach(function(f){ byName[f.name] = f; });
-      if (!byName['manifest.json']) throw new Error('no manifest.json in the Drive folder - upload from the device that has the clips first');
+      if (!byName['manifest.json']) throw new Error('signed in to Google OK \u2713 - the "' + DRIVE_FOLDER + '" folder exists but has no manifest.json. Press "Upload clips to Drive" again on the device that has the clips.');
       return dFetch('https://www.googleapis.com/drive/v3/files/' + byName['manifest.json'].id + '?alt=media')
         .then(function(r){ return r.json(); })
         .then(function(m){
@@ -2018,7 +2023,8 @@ function driveDownloadAll(){
   }).catch(function(e){ driveStatus('Drive error: ' + (e && e.message ? e.message : e)); });
 }
 function refreshDriveUI(){
-  var has = !!gclient();
+  var cid = gclient();
+  var has = !!cid;
   ['gClientRow', 'gClientRow2'].forEach(function(id){
     var n = $id(id);
     if (n) n.hidden = has;
@@ -2026,6 +2032,11 @@ function refreshDriveUI(){
   ['driveBtns', 'driveBtns2'].forEach(function(id){
     var n = $id(id);
     if (n) n.hidden = !has;
+  });
+  var short = has ? (cid.length > 24 ? cid.slice(0, 18) + '\u2026' + cid.slice(-8) : cid) : '';
+  ['gClientCur', 'gClientCur2'].forEach(function(id){
+    var n = $id(id);
+    if (n) n.textContent = has ? 'using client ID ' + short : '';
   });
 }
 
@@ -2515,11 +2526,19 @@ function saveGClient(inputId){
 }
 $id('gClientSave').addEventListener('click', function(){ saveGClient('gClientIn'); });
 $id('gClientSave2').addEventListener('click', function(){ saveGClient('gClientIn2'); });
-$id('gClientClear').addEventListener('click', function(){
+function clearGClient(){
+  var old = gclient();
   lsSet(LS_GCLIENT, '');
   touch(); schedulePush();
   refreshDriveUI();
-});
+  ['gClientIn', 'gClientIn2'].forEach(function(id){
+    var n = $id(id);
+    if (n) n.value = old;   /* show the full stored ID so it can be checked or edited */
+  });
+  driveStatus('Client ID cleared on every synced device - the previous one is in the box above for checking. Edit or re-save it.');
+}
+$id('gClientClear').addEventListener('click', clearGClient);
+$id('gClientClear2').addEventListener('click', clearGClient);
 $id('btnDriveUp').addEventListener('click', driveUploadAll);
 $id('btnDriveDown').addEventListener('click', driveDownloadAll);
 $id('btnDriveDown2').addEventListener('click', driveDownloadAll);
