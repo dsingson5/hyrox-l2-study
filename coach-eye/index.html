@@ -246,6 +246,16 @@ python3 -m http.server 8000
         <p class="small muted" style="margin-top:8px">On a phone there is no folder picker: copy the quiz folder to your device, tap <b>Import files</b>, and select <code>manifest.json</code> together with everything inside <code>clips/</code>.</p>
         <p id="setupMsg" class="small warn" style="margin-top:10px"></p>
       </div>
+      <div class="card">
+        <div class="seclabel">Option C &middot; Get clips from Google Drive</div>
+        <p class="small" style="margin-bottom:10px">Already uploaded your clips to Drive from another device? One tap brings them here.</p>
+        <div id="gClientRow2" class="db-row" style="margin-bottom:8px">
+          <input type="text" id="gClientIn2" placeholder="Google client ID (or let sync fill it in)" autocomplete="off" autocapitalize="off">
+          <button id="gClientSave2" class="btn btn-mini" type="button">Save</button>
+        </div>
+        <p id="driveBtns2" hidden><button id="btnDriveDown2" class="btn btn-primary" type="button">Get clips from Drive</button></p>
+        <p id="driveStatus2" class="small muted" style="margin-top:8px"></p>
+      </div>
     </section>
 
     <!-- ============ START ============ -->
@@ -298,6 +308,23 @@ python3 -m http.server 8000
           </div>
           <p style="margin-top:6px"><button id="syncNow" class="btn btn-mini" type="button" hidden>Sync now</button></p>
           <p id="syncStatus" class="small muted" style="margin-top:6px"></p>
+        </details>
+        <details class="aikey" style="margin-top:12px">
+          <summary>Clips in Google Drive</summary>
+          <p class="small muted" style="margin-bottom:8px">Upload your imported clips to your own Google Drive once, then every device just presses <b>Get clips from Drive</b> instead of importing the folder again. The app only ever sees the files it created (a "Coach Eye Clips" folder).</p>
+          <div id="gClientRow">
+            <p class="small muted" style="margin-bottom:6px">One-time setup: at <b>console.cloud.google.com</b> create a (free) project &rarr; enable the <b>Google Drive API</b> &rarr; OAuth consent screen (External, add yourself as test user) &rarr; Credentials &rarr; Create <b>OAuth client ID</b> &rarr; Web application &rarr; add <b>https://dsingson5.github.io</b> as an authorized JavaScript origin &rarr; copy the client ID here. It syncs to your other devices automatically.</p>
+            <div class="db-row">
+              <input type="text" id="gClientIn" placeholder="xxxxx.apps.googleusercontent.com" autocomplete="off" autocapitalize="off">
+              <button id="gClientSave" class="btn btn-mini" type="button">Save</button>
+            </div>
+          </div>
+          <p id="driveBtns" hidden style="margin-top:6px">
+            <button id="btnDriveUp" class="btn btn-mini" type="button">Upload clips to Drive</button>
+            <button id="btnDriveDown" class="btn btn-mini" type="button">Get clips from Drive</button>
+            <button id="gClientClear" class="linklike small" type="button" style="margin-left:8px">change client ID</button>
+          </p>
+          <p id="driveStatus" class="small muted" style="margin-top:6px"></p>
         </details>
       </div>
       <button id="btnStart" class="btn btn-primary btn-block">Start quiz</button>
@@ -440,6 +467,8 @@ var LS_TOUCH = 'hyrox.quiz.touched.v1';      /* ts of last local change, for syn
 var LS_SYNC_TOKEN = 'hyrox.quiz.sync.token'; /* own GitHub token (fallback when no study-site sync) */
 var LS_SYNC_GIST = 'hyrox.quiz.sync.gist';
 var SYNC_FILE = 'coach-eye-sync.json';
+var LS_GCLIENT = 'hyrox.quiz.gclient.v1';   /* Google OAuth client ID for Drive clip sync */
+var DRIVE_FOLDER = 'Coach Eye Clips';
 function lsGet(key, fallback){
   try {
     var v = localStorage.getItem(key);
@@ -907,6 +936,9 @@ function showSetup(reason){
   $id('setupMsg').textContent = '';
   unloadVideo();
   show('setup');
+  /* a fresh device still pulls settings (AI key, Google client ID) from the
+     gist so "Get clips from Drive" works before any clips exist here */
+  try { startSync(); } catch (eSync) {}
 }
 function handleFolderPick(files){
   if (!files.length) return;
@@ -1659,7 +1691,8 @@ function buildSyncPayload(){
     stats: stats,
     labels: labels,
     coach: coachDebrief,
-    aikey: aiKey()
+    aikey: aiKey(),
+    gclient: gclient()
   };
 }
 function mergeRemote(remote){
@@ -1699,6 +1732,11 @@ function mergeRemote(remote){
     if (typeof remote.aikey === 'string' && remote.aikey !== aiKey()){
       lsSet(LS_AIKEY, remote.aikey);
       changed = true;
+    }
+    if (typeof remote.gclient === 'string' && remote.gclient !== gclient()){
+      lsSet(LS_GCLIENT, remote.gclient);
+      changed = true;
+      try { refreshDriveUI(); } catch (eDrive) {}
     }
   }
   if (changed){
@@ -1798,6 +1836,194 @@ document.addEventListener('visibilitychange', function(){
     syncPush(true); /* keepalive lets the request finish as the tab closes */
   }
 });
+
+/* ================= clips in Google Drive ================= */
+/* Upload the imported clips once, then every device downloads them from
+   the user's own Drive into IndexedDB - no more per-device folder imports.
+   Uses the drive.file scope (this app only ever sees files it created). */
+function gclient(){ return String(lsGet(LS_GCLIENT, '') || ''); }
+var gToken = null, gTokenExp = 0;
+function driveStatus(msg){
+  ['driveStatus', 'driveStatus2'].forEach(function(id){
+    var n = $id(id);
+    if (n) n.textContent = msg;
+  });
+}
+function loadGIS(){
+  return new Promise(function(res, rej){
+    if (window.google && window.google.accounts && window.google.accounts.oauth2) return res();
+    var s = document.createElement('script');
+    s.src = 'https://accounts.google.com/gsi/client';
+    s.onload = function(){ res(); };
+    s.onerror = function(){ rej(new Error('could not load Google sign-in (offline?)')); };
+    document.head.appendChild(s);
+  });
+}
+function driveToken(){
+  if (gToken && Date.now() < gTokenExp - 60000) return Promise.resolve(gToken);
+  var cid = gclient();
+  if (!cid) return Promise.reject(new Error('no Google client ID saved yet - see the setup steps'));
+  return loadGIS().then(function(){
+    return new Promise(function(res, rej){
+      try {
+        var tc = window.google.accounts.oauth2.initTokenClient({
+          client_id: cid,
+          scope: 'https://www.googleapis.com/auth/drive.file',
+          callback: function(resp){
+            if (resp && resp.access_token){
+              gToken = resp.access_token;
+              gTokenExp = Date.now() + ((resp.expires_in || 3300) * 1000);
+              res(gToken);
+            } else rej(new Error((resp && resp.error) || 'sign-in was cancelled'));
+          },
+          error_callback: function(e){ rej(new Error(e && e.message ? e.message : 'sign-in failed or was closed')); }
+        });
+        tc.requestAccessToken({ prompt: '' });
+      } catch (e) { rej(e); }
+    });
+  });
+}
+function dFetch(url, opts){
+  opts = opts || {};
+  opts.headers = opts.headers || {};
+  opts.headers['Authorization'] = 'Bearer ' + gToken;
+  return fetch(url, opts).then(function(r){
+    if (!r.ok) return r.text().then(function(t){ throw new Error('Drive ' + r.status + ': ' + t.slice(0, 140)); });
+    return r;
+  });
+}
+function driveFolderId(create){
+  var q = encodeURIComponent("name='" + DRIVE_FOLDER + "' and mimeType='application/vnd.google-apps.folder' and trashed=false");
+  return dFetch('https://www.googleapis.com/drive/v3/files?q=' + q + '&fields=files(id)')
+    .then(function(r){ return r.json(); })
+    .then(function(j){
+      if (j.files && j.files.length) return j.files[0].id;
+      if (!create) throw new Error('no "' + DRIVE_FOLDER + '" folder in this Google account yet - press "Upload clips to Drive" on the device that has the clips first');
+      return dFetch('https://www.googleapis.com/drive/v3/files', {
+        method: 'POST', headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ name: DRIVE_FOLDER, mimeType: 'application/vnd.google-apps.folder' })
+      }).then(function(r){ return r.json(); }).then(function(f){ return f.id; });
+    });
+}
+function driveList(folderId){
+  var q = encodeURIComponent("'" + folderId + "' in parents and trashed=false");
+  var out = [];
+  function page(t){
+    var u = 'https://www.googleapis.com/drive/v3/files?q=' + q +
+      '&fields=nextPageToken,files(id,name,size)&pageSize=1000' + (t ? '&pageToken=' + t : '');
+    return dFetch(u).then(function(r){ return r.json(); }).then(function(j){
+      out = out.concat(j.files || []);
+      return j.nextPageToken ? page(j.nextPageToken) : out;
+    });
+  }
+  return page(null);
+}
+function driveUploadBlob(folderId, name, blob, existingId){
+  /* resumable upload: two steps, works for clips of any size */
+  var url = existingId
+    ? 'https://www.googleapis.com/upload/drive/v3/files/' + existingId + '?uploadType=resumable'
+    : 'https://www.googleapis.com/upload/drive/v3/files?uploadType=resumable';
+  var meta = existingId ? {} : { name: name, parents: [folderId] };
+  return dFetch(url, {
+    method: existingId ? 'PATCH' : 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify(meta)
+  }).then(function(r){
+    var loc = r.headers.get('Location');
+    if (!loc) throw new Error('Drive did not return an upload URL');
+    return fetch(loc, { method: 'PUT', body: blob }).then(function(r2){
+      if (!r2.ok) throw new Error('upload failed (' + r2.status + ')');
+    });
+  });
+}
+function driveUploadAll(){
+  driveStatus('Signing in to Google…');
+  driveToken().then(function(){ return driveFolderId(true); }).then(function(fid){
+    return idbLoadLibrary().then(function(lib){
+      if (!lib) throw new Error('no clips stored in this browser yet - import your quiz folder first, then upload');
+      return driveList(fid).then(function(existing){
+        var have = {};
+        existing.forEach(function(f){ have[f.name] = f; });
+        var paths = Object.keys(lib.blobs);
+        var todo = paths.filter(function(p){
+          var f = have[p.split('/').pop()];
+          return !f || String(f.size || '') !== String(lib.blobs[p].size);
+        });
+        var i = 0;
+        function next(){
+          if (i >= todo.length){
+            var mf = have['manifest.json'];
+            var mBlob = new Blob([JSON.stringify(lib.manifest)], { type: 'application/json' });
+            return driveUploadBlob(fid, 'manifest.json', mBlob, mf && mf.id).then(function(){
+              driveStatus('✓ ' + paths.length + ' clips in your Drive (' + todo.length + ' uploaded just now). On your other devices, press "Get clips from Drive".');
+            });
+          }
+          var p = todo[i++];
+          driveStatus('Uploading clip ' + i + ' of ' + todo.length + '…');
+          var f = have[p.split('/').pop()];
+          return driveUploadBlob(fid, p.split('/').pop(), lib.blobs[p], f && f.id).then(next);
+        }
+        return next();
+      });
+    });
+  }).catch(function(e){ driveStatus('Drive error: ' + (e && e.message ? e.message : e)); });
+}
+function driveDownloadAll(){
+  driveStatus('Signing in to Google…');
+  driveToken().then(function(){ return driveFolderId(false); }).then(function(fid){
+    return driveList(fid).then(function(files){
+      var byName = {};
+      files.forEach(function(f){ byName[f.name] = f; });
+      if (!byName['manifest.json']) throw new Error('no manifest.json in the Drive folder - upload from the device that has the clips first');
+      return dFetch('https://www.googleapis.com/drive/v3/files/' + byName['manifest.json'].id + '?alt=media')
+        .then(function(r){ return r.json(); })
+        .then(function(m){
+          var clips = (m.clips || []).filter(function(c){ return c && c.id && c.file; });
+          return idbLoadLibrary().catch(function(){ return null; }).then(function(lib){
+            var haveLocal = (lib && lib.blobs) || {};
+            var blobs = {}, need = [];
+            clips.forEach(function(c){
+              if (haveLocal[c.file]) blobs[c.file] = haveLocal[c.file];
+              else if (byName[c.file.split('/').pop()]) need.push({ c: c, f: byName[c.file.split('/').pop()] });
+            });
+            var i = 0;
+            function next(){
+              if (i >= need.length){
+                var m2 = {};
+                for (var k in m){ if (Object.prototype.hasOwnProperty.call(m, k)) m2[k] = m[k]; }
+                m2.clips = clips.filter(function(c){ return blobs[c.file]; });
+                return idbSaveLibrary(m2, blobs).then(function(){ return idbLoadLibrary(); }).then(function(lib2){
+                  if (lib2){
+                    initData(lib2.manifest, null, lib2.blobs);
+                    renderStart();
+                    show('start');
+                  }
+                  driveStatus('✓ ' + Object.keys(blobs).length + ' clips ready on this device.');
+                });
+              }
+              var it = need[i++];
+              driveStatus('Downloading clip ' + i + ' of ' + need.length + '…');
+              return dFetch('https://www.googleapis.com/drive/v3/files/' + it.f.id + '?alt=media')
+                .then(function(r){ return r.blob(); })
+                .then(function(b){ blobs[it.c.file] = b; return next(); });
+            }
+            return next();
+          });
+        });
+    });
+  }).catch(function(e){ driveStatus('Drive error: ' + (e && e.message ? e.message : e)); });
+}
+function refreshDriveUI(){
+  var has = !!gclient();
+  ['gClientRow', 'gClientRow2'].forEach(function(id){
+    var n = $id(id);
+    if (n) n.hidden = has;
+  });
+  ['driveBtns', 'driveBtns2'].forEach(function(id){
+    var n = $id(id);
+    if (n) n.hidden = !has;
+  });
+}
 
 function buildSelfCheck(clip, ex){
   var wrap = el('div', { class: 'card' });
@@ -2272,6 +2498,28 @@ $id('syncEnable').addEventListener('click', function(){
   enableOwnSync(t);
 });
 $id('syncNow').addEventListener('click', function(){ syncPull(); });
+
+/* Google Drive clip sync controls (start screen + setup screen) */
+function saveGClient(inputId){
+  var v = $id(inputId).value.trim();
+  if (!v){ driveStatus('Paste your Google client ID first.'); return; }
+  lsSet(LS_GCLIENT, v);
+  $id(inputId).value = '';
+  touch(); schedulePush();
+  refreshDriveUI();
+  driveStatus('Client ID saved (it syncs to your other devices).');
+}
+$id('gClientSave').addEventListener('click', function(){ saveGClient('gClientIn'); });
+$id('gClientSave2').addEventListener('click', function(){ saveGClient('gClientIn2'); });
+$id('gClientClear').addEventListener('click', function(){
+  lsSet(LS_GCLIENT, '');
+  touch(); schedulePush();
+  refreshDriveUI();
+});
+$id('btnDriveUp').addEventListener('click', driveUploadAll);
+$id('btnDriveDown').addEventListener('click', driveDownloadAll);
+$id('btnDriveDown2').addEventListener('click', driveDownloadAll);
+refreshDriveUI();
 $id('btnStart').addEventListener('click', function(){ this.blur(); startQuiz(); });
 $id('btnLabelMode').addEventListener('click', function(){ this.blur(); openLabelMode(); });
 $id('btnStats').addEventListener('click', function(){ this.blur(); renderStatsScreen(); });
