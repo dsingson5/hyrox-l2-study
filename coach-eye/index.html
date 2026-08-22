@@ -1537,8 +1537,15 @@ function aiReview(clip, ex, truth, text){
     })
   }).then(function(r){
     if (!r.ok){
-      throw new Error(r.status === 401 ? 'invalid API key (401)' :
-        r.status === 429 ? 'rate limited (429) — try again in a moment' : 'HTTP ' + r.status);
+      /* surface Anthropic's own error message - a bare status code hides
+         the actual reason (e.g. "credit balance is too low") */
+      return r.json().catch(function(){ return null; }).then(function(err){
+        var msg = (err && err.error && err.error.message) ? err.error.message : ('HTTP ' + r.status);
+        if (r.status === 401) msg = 'invalid API key (401). Re-check the key on the start screen.';
+        else if (r.status === 429) msg = 'rate limited (429) — try again in a moment.';
+        else if (/credit balance/i.test(msg)) msg += ' Add credits at console.anthropic.com under Billing — the API is prepaid and separate from a claude.ai subscription.';
+        throw new Error(msg);
+      });
     }
     return r.json();
   }).then(function(data){
