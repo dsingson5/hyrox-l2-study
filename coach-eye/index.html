@@ -478,6 +478,8 @@ var LS_LABELS = 'hyrox.quiz.labels.v1';
 var LS_COACH = 'hyrox.quiz.coach.v1';
 var LS_AIKEY = 'hyrox.quiz.aikey.v1';
 var LS_TOUCH = 'hyrox.quiz.touched.v1';      /* ts of last local change, for sync merges */
+var LS_SET_TS = 'hyrox.quiz.setts.v1';       /* per-setting change timestamps {aikey,gclient,coach} */
+var LS_AIKEY_OKFP = 'hyrox.quiz.aikeyok.v1'; /* fingerprint of the last key that passed validation */
 var LS_SYNC_TOKEN = 'hyrox.quiz.sync.token'; /* own GitHub token (fallback when no study-site sync) */
 var LS_SYNC_GIST = 'hyrox.quiz.sync.gist';
 var SYNC_FILE = 'coach-eye-sync.json';
@@ -1725,9 +1727,18 @@ function aiReview(clip, ex, truth, text){
          the actual reason (e.g. "credit balance is too low") */
       return r.json().catch(function(){ return null; }).then(function(err){
         var msg = (err && err.error && err.error.message) ? err.error.message : ('HTTP ' + r.status);
-        if (r.status === 401) msg = 'Anthropic rejected the key (401): ' + msg +
-          ' \u2014 stored key is ' + aiKeyPrint() + '. Re-paste it under \u201CAI review\u201D on the ' +
-          'start screen and press Save, which now tests the key against Anthropic before storing it.';
+        if (r.status === 401){
+          var okfp = String(lsGet(LS_AIKEY_OKFP, '') || '');
+          msg = 'Anthropic rejected the key (401): ' + msg + ' \u2014 key in use: ' + aiKeyPrint() + '.';
+          if (okfp && okfp !== aiKeyPrint()){
+            msg += ' This is NOT the key that passed the start-screen check (' + okfp +
+              ') \u2014 cross-device sync replaced it with an older key. Re-paste the correct key ' +
+              'on the start screen and press Save; a saved key now wins across all devices.';
+          } else {
+            msg += ' Re-save the key on the start screen (Save tests it first), and check it has ' +
+              'not been revoked at console.anthropic.com.';
+          }
+        }
         else if (r.status === 429) msg = 'rate limited (429) — try again in a moment.';
         else if (/credit balance/i.test(msg)) msg += ' Add credits at console.anthropic.com under Billing — the API is prepaid and separate from a claude.ai subscription.';
         throw new Error(msg);
@@ -1800,6 +1811,8 @@ function syncCreds(){
 }
 function localTouched(){ var v = lsGet(LS_TOUCH, 0); return typeof v === 'number' ? v : 0; }
 function touch(){ lsSet(LS_TOUCH, Date.now()); }
+function setTs(){ var v = lsGet(LS_SET_TS, null); return (v && typeof v === 'object') ? v : {}; }
+function markSet(field){ var t = setTs(); t[field] = Date.now(); lsSet(LS_SET_TS, t); }
 function ghFetch(method, path, token, body, keepalive){
   return fetch('https://api.github.com' + path, {
     method: method,
@@ -1825,7 +1838,8 @@ function buildSyncPayload(){
     labels: labels,
     coach: coachDebrief,
     aikey: aiKey(),
-    gclient: gclient()
+    gclient: gclient(),
+    set_ts: setTs()
   };
 }
 function mergeRemote(remote){
@@ -1854,27 +1868,40 @@ function mergeRemote(remote){
     var lv = labels[lid];
     if (!lv || (rv.ts || 0) > (lv.ts || 0)){ labels[lid] = rv; changed = true; }
   }
-  /* global settings: whichever side changed most recently */
-  if ((remote.touched || 0) > localTouched()){
-    if (typeof remote.coach === 'boolean' && remote.coach !== coachDebrief){
-      coachDebrief = remote.coach;
-      lsSet(LS_COACH, coachDebrief);
-      try { $id('stCoach').checked = coachDebrief; } catch (e) {}
-      changed = true;
-    }
-    /* A device that never had a key must not wipe the key on this one - an
-       empty x-api-key is exactly what produces "invalid API key (401)". */
-    if (typeof remote.aikey === 'string' && remote.aikey.trim() &&
-        remote.aikey !== aiKey()){
-      lsSet(LS_AIKEY, remote.aikey);
-      changed = true;
-      try { refreshAIKeyStatus(); } catch (eKey) {}
-    }
-    if (typeof remote.gclient === 'string' && remote.gclient !== gclient()){
-      lsSet(LS_GCLIENT, remote.gclient);
-      changed = true;
-      try { refreshDriveUI(); } catch (eDrive) {}
-    }
+  /* global settings: PER-FIELD recency. The old global-touched rule let any
+     activity on another device (even just answering quiz questions) carry a
+     stale API key over a key saved here more recently - the source of
+     "start screen says the key works, review says 401". A field only moves
+     when the remote edit to THAT field is strictly newer. */
+  var rts = (remote.set_ts && typeof remote.set_ts === 'object') ? remote.set_ts : {};
+  var lts = setTs();
+  var legacyNewer = (remote.touched || 0) > localTouched();
+  function remoteWins(f){
+    if (rts[f] || lts[f]) return (rts[f] || 0) > (lts[f] || 0);
+    return legacyNewer; /* both sides pre-date per-field timestamps */
+  }
+  function adoptTs(f){ var t = setTs(); t[f] = rts[f] || Date.now(); lsSet(LS_SET_TS, t); }
+  if (remoteWins('coach') && typeof remote.coach === 'boolean' && remote.coach !== coachDebrief){
+    coachDebrief = remote.coach;
+    lsSet(LS_COACH, coachDebrief);
+    adoptTs('coach');
+    try { $id('stCoach').checked = coachDebrief; } catch (e) {}
+    changed = true;
+  }
+  /* A device that never had a key must not wipe the key on this one - an
+     empty x-api-key is exactly what produces "invalid API key (401)". */
+  if (remoteWins('aikey') && typeof remote.aikey === 'string' && remote.aikey.trim() &&
+      remote.aikey !== aiKey()){
+    lsSet(LS_AIKEY, remote.aikey);
+    adoptTs('aikey');
+    changed = true;
+    try { refreshAIKeyStatus(); } catch (eKey) {}
+  }
+  if (remoteWins('gclient') && typeof remote.gclient === 'string' && remote.gclient !== gclient()){
+    lsSet(LS_GCLIENT, remote.gclient);
+    adoptTs('gclient');
+    changed = true;
+    try { refreshDriveUI(); } catch (eDrive) {}
   }
   if (changed){
     lsSet(LS_STATS, stats);
@@ -2782,13 +2809,25 @@ $id('stCoach').checked = coachDebrief;
 $id('stCoach').addEventListener('change', function(){
   coachDebrief = this.checked;
   lsSet(LS_COACH, coachDebrief);
+  markSet('coach');
+  touch(); schedulePush();
 });
 
 /* optional AI-review key (stored only in this browser) */
 function refreshAIKeyStatus(msg){
-  $id('aiKeyStatus').textContent = msg || (aiKey()
-    ? 'Key stored in this browser (' + aiKeyPrint() + '). The AI review button appears after each debrief.'
-    : 'No key saved — reviews stay local (rubric only).');
+  if (!msg){
+    if (aiKey()){
+      msg = 'Key stored in this browser (' + aiKeyPrint() + '). The AI review button appears after each debrief.';
+      var okfp = String(lsGet(LS_AIKEY_OKFP, '') || '');
+      if (okfp && okfp !== aiKeyPrint()){
+        msg += ' ⚠ This is NOT the key that last passed the check (' + okfp +
+          ') — sync brought in a different one. Re-paste the correct key and press Save.';
+      }
+    } else {
+      msg = 'No key saved — reviews stay local (rubric only).';
+    }
+  }
+  $id('aiKeyStatus').textContent = msg;
 }
 refreshAIKeyStatus();
 $id('aiKeySave').addEventListener('click', function(){
@@ -2802,20 +2841,28 @@ $id('aiKeySave').addEventListener('click', function(){
     return;
   }
   lsSet(LS_AIKEY, v);
+  markSet('aikey');
   $id('aiKeyIn').value = '';
   refreshAIKeyStatus('Checking the key with Anthropic\u2026');
-  touch(); schedulePush();
-  /* Verify now rather than failing later inside a debrief. Listing models
-     costs nothing. */
+  touch();
+  /* Push NOW, not after the 4s debounce - the freshly saved key must reach
+     the sync gist before any other device can overwrite it. */
+  if (syncPushTimer) clearTimeout(syncPushTimer);
+  syncPush(false);
+  /* Verify the key as READ BACK from storage - exactly what the review
+     button will use - rather than the typed variable. Listing models costs
+     nothing. */
+  var stored = aiKey();
   fetch('https://api.anthropic.com/v1/models?limit=1', {
     headers: {
-      'x-api-key': v,
+      'x-api-key': stored,
       'anthropic-version': '2023-06-01',
       'anthropic-dangerous-direct-browser-access': 'true'
     }
   }).then(function(r){
     return r.json().catch(function(){ return null; }).then(function(body){
       if (r.ok){
+        lsSet(LS_AIKEY_OKFP, aiKeyPrint());
         refreshAIKeyStatus('\u2713 Key works (' + aiKeyPrint() + '). AI review is ready.');
         return;
       }
@@ -2835,8 +2882,12 @@ $id('aiKeySave').addEventListener('click', function(){
 });
 $id('aiKeyClear').addEventListener('click', function(){
   lsSet(LS_AIKEY, '');
+  lsSet(LS_AIKEY_OKFP, '');
+  markSet('aikey');
   refreshAIKeyStatus();
-  touch(); schedulePush();
+  touch();
+  if (syncPushTimer) clearTimeout(syncPushTimer);
+  syncPush(false);
 });
 
 /* cross-device sync controls */
@@ -2864,6 +2915,7 @@ function saveGClient(inputId){
   var v = $id(inputId).value.trim();
   if (!v){ driveStatus('Paste your Google client ID first.'); return; }
   lsSet(LS_GCLIENT, v);
+  markSet('gclient');
   $id(inputId).value = '';
   touch(); schedulePush();
   refreshDriveUI();
@@ -2874,6 +2926,7 @@ $id('gClientSave2').addEventListener('click', function(){ saveGClient('gClientIn
 function clearGClient(){
   var old = gclient();
   lsSet(LS_GCLIENT, '');
+  markSet('gclient');
   touch(); schedulePush();
   refreshDriveUI();
   ['gClientIn', 'gClientIn2'].forEach(function(id){
