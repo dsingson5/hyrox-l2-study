@@ -40,6 +40,7 @@
   .brand{font-weight:800;font-size:1.35rem;letter-spacing:.06em}
   .brand em{font-style:normal;color:var(--accent)}
   .tagline{color:var(--muted);font-size:.78rem;letter-spacing:.16em;text-transform:uppercase}
+  .buildstamp{margin-left:auto;color:var(--faint);font-size:.7rem;letter-spacing:.06em;font-variant-numeric:tabular-nums;white-space:nowrap;align-self:center}
   footer{margin-top:48px;color:var(--faint);font-size:.75rem;text-align:center}
 
   .screen{display:none}
@@ -220,7 +221,8 @@
 <div class="wrap">
   <header>
     <div class="brand">COACH <em>EYE</em></div>
-    <div class="tagline">HYROX Movement Quiz <span class="hint" id="ceBuild">v3</span></div>
+    <div class="tagline">HYROX Movement Quiz</div>
+    <div id="buildStamp" class="buildstamp"></div>
   </header>
 
   <main>
@@ -775,8 +777,70 @@ function setLabel(id, patch){
   }
   ov.ts = Date.now(); /* recency for cross-device merges */
   lsSet(LS_LABELS, labels);
+  try { serverSaveSoon(); } catch (eSrv) {}
   try { touch(); schedulePush(); } catch (eSync) {}
 }
+/* ---- where a note actually goes ---------------------------------------
+   This copy is served from GitHub Pages, so there is no local server to write
+   quiz/manifest.json. Notes are stored in this browser immediately, and pushed
+   to the private gist when cross-device sync is on. The badge next to each note
+   box says which of those is happening, so "this browser only" is never a
+   surprise. (If the same page is ever served by serve.py, it posts to
+   /api/labels and the manifest on disk becomes the store instead.) */
+var srvSaveTimer = null;
+var srvSaveBadges = [];
+function saveModeLabel(){
+  if (mode === 'server') return { text: 'saves automatically', colour: '' };
+  if (syncCreds()) return { text: 'saved \u00b7 synced', colour: '' };
+  return { text: 'this browser only', colour: '#f2c14e' };
+}
+function setSaveBadge(text, colour){
+  srvSaveBadges = srvSaveBadges.filter(function(b){ return b && b.isConnected; });
+  srvSaveBadges.forEach(function(b){
+    b.textContent = text;
+    b.style.color = colour || 'inherit';
+  });
+}
+function registerSaveBadge(b){
+  var st = saveModeLabel();
+  b.textContent = st.text;
+  b.style.color = st.colour || 'inherit';
+  srvSaveBadges.push(b);
+  return b;
+}
+function serverSaveSoon(){
+  if (mode !== 'server'){
+    var st = saveModeLabel();
+    setSaveBadge(st.text, st.colour);
+    return;
+  }
+  if (srvSaveTimer) clearTimeout(srvSaveTimer);
+  setSaveBadge('saving\u2026');
+  srvSaveTimer = setTimeout(function(){ srvSaveNow(false); }, 700);
+}
+function srvSaveNow(onExit){
+  if (mode !== 'server') return;
+  if (srvSaveTimer){ clearTimeout(srvSaveTimer); srvSaveTimer = null; }
+  var body = JSON.stringify({ labels: labels });
+  if (onExit && navigator.sendBeacon){
+    try {
+      navigator.sendBeacon('api/labels', new Blob([body], { type: 'application/json' }));
+      return;
+    } catch (eB) { /* fall through */ }
+  }
+  fetch('api/labels', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: body,
+    keepalive: !!onExit
+  }).then(function(r){ return r.json().catch(function(){ return null; }); })
+    .then(function(res){
+      if (res && res.ok) setSaveBadge('saved to manifest.json', '#6ee7a8');
+      else setSaveBadge('kept in this browser', '#f2c14e');
+    })
+    .catch(function(){ setSaveBadge('kept in this browser', '#f2c14e'); });
+}
+
 var notePendingId = null;
 var notePendingVal = '';
 function flushNote(){
@@ -1580,7 +1644,20 @@ function buildReviewCard(g, clip, ex, truth, text){
 }
 
 /* --- optional AI review (BYOK, key never leaves this browser except to Anthropic) --- */
-function aiKey(){ return String(lsGet(LS_AIKEY, '') || ''); }
+function aiKey(){
+  /* Strip anything a copy-paste can smuggle in: spaces, newlines, smart quotes
+     and zero-width characters. An invisible character looks identical to a good
+     key on screen but makes Anthropic answer 401. */
+  return String(lsGet(LS_AIKEY, '') || '')
+    .replace(/[\s\u200B-\u200D\uFEFF]/g, '')
+    .replace(/^["'\u201C\u2018]|["'\u201D\u2019]$/g, '');
+}
+function aiKeyPrint(){
+  var k = aiKey();
+  if (!k) return 'none stored';
+  return (k.length > 14 ? k.slice(0, 11) + '\u2026' + k.slice(-4) : '(too short)') +
+         ', ' + k.length + ' chars';
+}
 function buildAIBlock(clip, ex, truth, text){
   var box = el('div', { style: 'margin-top:14px' });
   if (!aiKey()){
@@ -1607,6 +1684,15 @@ function buildAIBlock(clip, ex, truth, text){
   return box;
 }
 function aiReview(clip, ex, truth, text){
+  var key = aiKey();
+  if (!key){
+    return Promise.reject(new Error('no API key is stored in this browser. Add one under ' +
+      '\u201CAI review\u201D on the start screen \u2014 Save now tests it before storing.'));
+  }
+  if (key.indexOf('sk-ant-') !== 0){
+    return Promise.reject(new Error('the stored key (' + aiKeyPrint() + ') is not an Anthropic ' +
+      'API key \u2014 those start with "sk-ant-". Re-paste it on the start screen.'));
+  }
   var reference = ex ? {
     name: ex.name, standard: ex.standard, whatToWatch: ex.whatToWatch,
     goodForm: ex.goodForm, cues: ex.cues, benefits: ex.benefits,
@@ -1623,7 +1709,7 @@ function aiReview(clip, ex, truth, text){
     method: 'POST',
     headers: {
       'content-type': 'application/json',
-      'x-api-key': aiKey(),
+      'x-api-key': key,
       'anthropic-version': '2023-06-01',
       'anthropic-dangerous-direct-browser-access': 'true'
     },
@@ -1639,7 +1725,9 @@ function aiReview(clip, ex, truth, text){
          the actual reason (e.g. "credit balance is too low") */
       return r.json().catch(function(){ return null; }).then(function(err){
         var msg = (err && err.error && err.error.message) ? err.error.message : ('HTTP ' + r.status);
-        if (r.status === 401) msg = 'invalid API key (401). Re-check the key on the start screen.';
+        if (r.status === 401) msg = 'Anthropic rejected the key (401): ' + msg +
+          ' \u2014 stored key is ' + aiKeyPrint() + '. Re-paste it under \u201CAI review\u201D on the ' +
+          'start screen and press Save, which now tests the key against Anthropic before storing it.';
         else if (r.status === 429) msg = 'rate limited (429) — try again in a moment.';
         else if (/credit balance/i.test(msg)) msg += ' Add credits at console.anthropic.com under Billing — the API is prepaid and separate from a claude.ai subscription.';
         throw new Error(msg);
@@ -1774,9 +1862,13 @@ function mergeRemote(remote){
       try { $id('stCoach').checked = coachDebrief; } catch (e) {}
       changed = true;
     }
-    if (typeof remote.aikey === 'string' && remote.aikey !== aiKey()){
+    /* A device that never had a key must not wipe the key on this one - an
+       empty x-api-key is exactly what produces "invalid API key (401)". */
+    if (typeof remote.aikey === 'string' && remote.aikey.trim() &&
+        remote.aikey !== aiKey()){
       lsSet(LS_AIKEY, remote.aikey);
       changed = true;
+      try { refreshAIKeyStatus(); } catch (eKey) {}
     }
     if (typeof remote.gclient === 'string' && remote.gclient !== gclient()){
       lsSet(LS_GCLIENT, remote.gclient);
@@ -1876,10 +1968,21 @@ function enableOwnSync(token){
   });
 }
 document.addEventListener('visibilitychange', function(){
-  if (document.visibilityState === 'hidden' && syncPushPending){
+  if (document.visibilityState !== 'hidden') return;
+  /* A note typed in the last fraction of a second is still sitting in the
+     debounce. Land it BEFORE the sync push, or the gist gets everything except
+     the sentence just written. */
+  try { flushNote(); } catch (eN) {}
+  try { srvSaveNow(true); } catch (eS) {}
+  if (syncPushPending){
     if (syncPushTimer) clearTimeout(syncPushTimer);
     syncPush(true); /* keepalive lets the request finish as the tab closes */
   }
+});
+window.addEventListener('pagehide', function(){
+  try { flushNote(); } catch (eN) {}
+  try { srvSaveNow(true); } catch (eS) {}
+  try { if (syncPushPending){ if (syncPushTimer) clearTimeout(syncPushTimer); syncPush(true); } } catch (eP) {}
 });
 
 /* ================= clips in Google Drive ================= */
@@ -2326,7 +2429,12 @@ function buildCoach(clip, ex){
 }
 function buildNoteBlock(clip){
   var wrap = el('div', { class: 'card' });
-  wrap.appendChild(el('div', { class: 'seclabel' }, 'My note for this clip'));
+  var head = el('div', { class: 'seclabel' }, 'My note for this clip');
+  head.appendChild(registerSaveBadge(el('span', {
+    class: 'small muted',
+    style: 'float:right;font-weight:400;text-transform:none;letter-spacing:0'
+  })));
+  wrap.appendChild(head);
   var ta = el('textarea', { placeholder: 'e.g. watch the left knee on rep 2 — it caves as she fatigues' });
   ta.value = clip.note || '';
   ta.addEventListener('input', function(){ noteInput(clip.id, ta.value); });
@@ -2541,7 +2649,12 @@ function renderLabelControls(clip){
   }
 
   /* note */
-  card.appendChild(el('div', { class: 'seclabel' }, 'Note'));
+  var nhead = el('div', { class: 'seclabel' }, 'Note');
+  nhead.appendChild(registerSaveBadge(el('span', {
+    class: 'small muted',
+    style: 'float:right;font-weight:400;text-transform:none;letter-spacing:0'
+  })));
+  card.appendChild(nhead);
   var ta = el('textarea', { placeholder: 'Coaching note for this clip…' });
   ta.value = clip.note || '';
   ta.addEventListener('input', function(){ noteInput(clip.id, ta.value); });
@@ -2672,19 +2785,53 @@ $id('stCoach').addEventListener('change', function(){
 });
 
 /* optional AI-review key (stored only in this browser) */
-function refreshAIKeyStatus(){
-  $id('aiKeyStatus').textContent = aiKey()
-    ? 'Key saved in this browser. The AI review button will appear after each debrief.'
-    : 'No key saved — reviews stay local (rubric only).';
+function refreshAIKeyStatus(msg){
+  $id('aiKeyStatus').textContent = msg || (aiKey()
+    ? 'Key stored in this browser (' + aiKeyPrint() + '). The AI review button appears after each debrief.'
+    : 'No key saved — reviews stay local (rubric only).');
 }
 refreshAIKeyStatus();
 $id('aiKeySave').addEventListener('click', function(){
-  var v = $id('aiKeyIn').value.trim();
-  if (!v){ $id('aiKeyStatus').textContent = 'Paste a key first.'; return; }
+  var v = String($id('aiKeyIn').value || '')
+    .replace(/[\s\u200B-\u200D\uFEFF]/g, '')
+    .replace(/^["'\u201C\u2018]|["'\u201D\u2019]$/g, '');
+  if (!v){ refreshAIKeyStatus('Paste a key first.'); return; }
+  if (v.indexOf('sk-ant-') !== 0){
+    refreshAIKeyStatus('That does not look like an Anthropic API key \u2014 they start with "sk-ant-". ' +
+      'Create one at console.anthropic.com \u2192 API keys.');
+    return;
+  }
   lsSet(LS_AIKEY, v);
   $id('aiKeyIn').value = '';
-  refreshAIKeyStatus();
+  refreshAIKeyStatus('Checking the key with Anthropic\u2026');
   touch(); schedulePush();
+  /* Verify now rather than failing later inside a debrief. Listing models
+     costs nothing. */
+  fetch('https://api.anthropic.com/v1/models?limit=1', {
+    headers: {
+      'x-api-key': v,
+      'anthropic-version': '2023-06-01',
+      'anthropic-dangerous-direct-browser-access': 'true'
+    }
+  }).then(function(r){
+    return r.json().catch(function(){ return null; }).then(function(body){
+      if (r.ok){
+        refreshAIKeyStatus('\u2713 Key works (' + aiKeyPrint() + '). AI review is ready.');
+        return;
+      }
+      var m = (body && body.error && body.error.message) ? body.error.message : ('HTTP ' + r.status);
+      if (r.status === 401){
+        refreshAIKeyStatus('\u2715 Anthropic rejected this key (401): ' + m +
+          ' \u2014 stored as ' + aiKeyPrint() + '. Check you pasted the whole key, that it has not been ' +
+          'revoked, and that it is a standard API key (not an admin key) from the account holding the credits.');
+      } else {
+        refreshAIKeyStatus('\u2715 Key check failed (' + r.status + '): ' + m);
+      }
+    });
+  }).catch(function(err){
+    refreshAIKeyStatus('Key saved (' + aiKeyPrint() + '), but the check could not reach api.anthropic.com: ' +
+      (err && err.message ? err.message : err));
+  });
 });
 $id('aiKeyClear').addEventListener('click', function(){
   lsSet(LS_AIKEY, '');
@@ -2790,6 +2937,33 @@ document.addEventListener('keydown', function(e){
     else if (k === 's'){ e.preventDefault(); toggleSlow(); }
   }
 });
+
+/* ---- build stamp -------------------------------------------------------
+   BUILD is bumped by hand on every change; the date comes from the page's own
+   Last-Modified, so an old date here means the browser served a cached copy
+   rather than what is deployed. */
+var BUILD = 4;
+function renderBuildStamp(){
+  var out = 'v' + BUILD;
+  var d = new Date(document.lastModified);
+  if (!isNaN(d.getTime())){
+    var mon = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'][d.getMonth()];
+    var h = d.getHours(), ap = h >= 12 ? 'PM' : 'AM';
+    h = h % 12; if (!h) h = 12;
+    var mm = String(d.getMinutes());
+    if (mm.length < 2) mm = '0' + mm;
+    out += ' \u00b7 ' + mon + ' ' + d.getDate() + ', ' + d.getFullYear() +
+           ' \u00b7 ' + h + ':' + mm + ' ' + ap;
+  }
+  var node = $id('buildStamp');
+  if (node){
+    node.textContent = out;
+    node.title = 'This page was last changed ' + document.lastModified +
+                 '. If that looks older than you expect, the browser served a cached copy \u2014 ' +
+                 'reload with Ctrl+Shift+R, or add ?v=' + BUILD + ' to the address.';
+  }
+}
+renderBuildStamp();
 
 boot();
 })();
