@@ -585,8 +585,7 @@ def render_html(today, today_day, today_lesson, deep_review, reviews, questions,
     <div class="session-goal">Today: <b id="goal-new">{new_count}</b> new &middot; <b id="goal-due">0</b> due &middot; ~<b id="goal-min">25</b> min <span class="sg-note">— attendance, not a streak</span></div>
   </header>
   <nav class="lesson-nav" aria-label="Lesson navigation"><a class="ln-prev" id="ln-prev" href="#" onclick="return cscsNavPrev();">&larr; Previous lesson</a><span class="ln-here">Day {today_day} &middot; {date_str}</span><a class="ln-next" id="ln-next" href="#" onclick="return cscsNavNext();">Next lesson &rarr;</a></nav>
-  <div class="browse-all">Everything for this module is on this page. <a href="../modules.html">Browse all modules &amp; lessons</a> &middot; <a href="../coach-eye/">Coach Eye &middot; movement video quiz</a></div>
-  <div class="games-cta"><a href="../coach-eye/">&#127909; Coach Eye &mdash; spot the movement fault &middot; video quiz</a></div>
+  <div class="browse-all">Everything for this module is on this page. <a href="../modules.html">Browse all modules &amp; lessons</a></div>
   <div class="study-tip">
     <b>How to use this:</b> recall and type an answer <b>before</b> you reveal — the reveal stays locked until you commit.
     After the answer, grade yourself <b>Again / Hard / Good / Easy</b>; that grade schedules the card with
@@ -751,7 +750,6 @@ def build_index_html(base_html, available, this_iso, dtopic=None, rorder=None,
     # of silently showing the chronological day.
     if at_root:
         base_html = base_html.replace('href="../modules.html"', 'href="modules.html"')
-        base_html = base_html.replace('href="../coach-eye/"', 'href="coach-eye/"')
         base_html = base_html.replace('window.location.href = "hyrox_"', 'window.location.href = "daily/hyrox_"')
         base_html = base_html.replace(
             '<div class="container">',
@@ -843,6 +841,23 @@ def build_day(build_date, curriculum, questions, is_entry):
     rolling_path.write_text(build_index_html(html, available, build_date.isoformat(), _lesson_dates, _rorder,
                                              page_prefix="", at_root=False), encoding="utf-8")
     print(f"Wrote {rolling_path} (rolling)")
+    # Offline pack manifest (study-offline v1): everything the "Download all"
+    # button stores — regenerated on every entry build so nightly-added pages
+    # join the pack automatically. Paths are site-root-relative.
+    try:
+        _pk = ["index.html", "modules.html"]
+        for _extra in ("figures.html", "games.html"):
+            if (ROOT / _extra).exists():
+                _pk.append(_extra)
+        from urllib.parse import quote as _urlq
+        _pk += sorted("daily/" + _urlq(p.name) for p in OUT.glob("*.html"))
+        _figdir = ROOT / "figures"
+        if _figdir.is_dir():
+            _pk += sorted("figures/" + _urlq(p.name) for p in _figdir.iterdir() if p.is_file())
+        (DATA / "pages.json").write_text(json.dumps(_pk), encoding="utf-8")
+        print(f"Wrote {DATA / 'pages.json'} ({len(_pk)} entries)")
+    except Exception as _pe:
+        print("pages.json write failed:", _pe)
     print(f"Wrote {index_path} (GitHub Pages entry)")
     return 0
 
