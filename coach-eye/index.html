@@ -85,6 +85,9 @@
   }
   .chip:hover{border-color:#55555f}
   .chip.sel{border-color:var(--accent);color:var(--accent);background:rgba(255,237,0,.08)}
+  .chip.hot{background:var(--accent);color:var(--accent-ink);border-color:var(--accent);font-weight:800}
+  .focus-ctx{margin-top:12px}
+  .focus-ctx .fname{display:flex;justify-content:space-between;align-items:center;gap:8px;font-weight:700;font-size:.9rem;margin-bottom:2px}
   .fchip{
     cursor:pointer;border:1px solid var(--line2);background:var(--panel2);color:var(--text);
     border-radius:999px;padding:8px 15px;font-size:.9rem;font-weight:600;font-family:inherit;
@@ -310,7 +313,7 @@ python3 -m http.server 8000
         <div id="stChips" class="chips"></div>
       </div>
       <div class="card">
-        <div class="seclabel">Session <span class="hint">&middot; spaced like the question bank: due clips come first, your rating after each answer schedules its return</span></div>
+        <div class="seclabel">Session <span class="hint">&middot; spaced like the question bank &mdash; your rating after each answer schedules each clip&rsquo;s return, and your Coaching focus sets the order</span></div>
         <div class="row">
           <div class="seg" id="stLen">
             <button type="button" data-len="10" class="sel">10</button>
@@ -323,6 +326,15 @@ python3 -m http.server 8000
           <label class="switch"><input type="checkbox" id="stCoach"><span>Coach debrief</span></label>
           <span class="hint">after each answer, coach the rep out loud before the answer sheet</span>
         </div>
+        <details class="aikey" style="margin-top:12px">
+          <summary id="focusSummary">Coaching focus &middot; order clips by what you&rsquo;re coaching now</summary>
+          <p class="small muted" style="margin-bottom:4px">List your current schedules, then tap the movements each one is working on right now &mdash; <b>once</b> if it&rsquo;s in the program, <b>twice</b> if it&rsquo;s the main focus (&#9733;), a third tap clears it. Clips then appear most-relevant first: what you coach tomorrow shows up before what you don&rsquo;t coach at all. Spaced repetition still decides which clips are due &mdash; focus only sets the order. Syncs to your other devices.</p>
+          <div id="focusList"></div>
+          <div class="db-row" style="margin-top:10px">
+            <input type="text" id="focusNewName" placeholder="Add a schedule (e.g. a new client)" autocomplete="off">
+            <button id="focusAdd" class="btn btn-mini" type="button">Add</button>
+          </div>
+        </details>
         <details class="aikey" style="margin-top:12px">
           <summary>AI review of your coaching (optional)</summary>
           <p class="small muted" style="margin-bottom:8px">Paste an Anthropic API key to have Claude review your debriefs &mdash; accuracy and coaching language. The key is stored only in this browser and sent only to api.anthropic.com when you press the AI review button.</p>
@@ -383,6 +395,7 @@ python3 -m http.server 8000
       <div class="progressbar"><div id="qBar"></div></div>
       <div id="qVideoSlot"></div>
       <p id="qExercise" class="center muted" style="margin-top:10px"></p>
+      <p id="qFocus" class="center small muted" hidden style="margin-top:2px"></p>
       <div class="answers">
         <button id="btnGood" class="btn-answer" type="button">Good form<kbd>G</kbd></button>
         <button id="btnBad" class="btn-answer" type="button">Faulty<kbd>F</kbd></button>
@@ -502,7 +515,8 @@ var LS_LABELS = 'hyrox.quiz.labels.v1';
 var LS_COACH = 'hyrox.quiz.coach.v1';
 var LS_AIKEY = 'hyrox.quiz.aikey.v1';
 var LS_TOUCH = 'hyrox.quiz.touched.v1';      /* ts of last local change, for sync merges */
-var LS_SET_TS = 'hyrox.quiz.setts.v1';       /* per-setting change timestamps {aikey,gclient,coach} */
+var LS_SET_TS = 'hyrox.quiz.setts.v1';       /* per-setting change timestamps {aikey,gclient,coach,focus} */
+var LS_FOCUS = 'hyrox.quiz.focus.v1';        /* coaching-focus config {contexts:[{n,m:{exercise:1|2}}]} */
 var LS_AIKEY_OKFP = 'hyrox.quiz.aikeyok.v1'; /* fingerprint of the last key that passed validation */
 var LS_SYNC_TOKEN = 'hyrox.quiz.sync.token'; /* own GitHub token (fallback when no study-site sync) */
 var LS_SYNC_GIST = 'hyrox.quiz.sync.gist';
@@ -620,6 +634,57 @@ function initData(m, files, blobs){
   stats = (s && typeof s === 'object' && s.clips && typeof s.clips === 'object') ? s : { clips: {} };
   var l = lsGet(LS_LABELS, null);
   labels = (l && typeof l === 'object') ? l : {};
+  loadFocus();
+}
+
+/* ================= coaching focus =================
+   The coach's live schedules (gym classes, PT clients, own training), each
+   naming the movements it is working on right now: 1 = in the program,
+   2 = main focus. Sessions present the most-relevant movement first, the
+   2nd-most-relevant next, and so on - spaced repetition still decides which
+   clips are due, focus only sets the order. */
+var focusCfg = { contexts: [] };
+function defaultFocus(){
+  return { contexts: [
+    { n: 'OMMO', m: {} },
+    { n: 'Levels', m: {} },
+    { n: 'Sofia (PT)', m: {} },
+    { n: 'Carla (PT)', m: {} },
+    { n: 'My training', m: {} }
+  ] };
+}
+function loadFocus(){
+  var f = lsGet(LS_FOCUS, null);
+  focusCfg = (f && typeof f === 'object' && Array.isArray(f.contexts)) ? f : defaultFocus();
+}
+function saveFocus(){
+  lsSet(LS_FOCUS, focusCfg);
+  markSet('focus');
+  try { touch(); schedulePush(); } catch (e) {}
+}
+function relevanceFor(exercise){
+  var t = 0, cs = (focusCfg && focusCfg.contexts) || [];
+  for (var i = 0; i < cs.length; i++){
+    t += (cs[i].m && cs[i].m[exercise]) || 0;
+  }
+  return t;
+}
+function focusContextsFor(exercise){
+  var out = [], cs = (focusCfg && focusCfg.contexts) || [];
+  for (var i = 0; i < cs.length; i++){
+    var e = (cs[i].m && cs[i].m[exercise]) || 0;
+    if (e) out.push({ n: cs[i].n, e: e });
+  }
+  out.sort(function(a, b){ return b.e - a.e; });
+  return out;
+}
+function focusCount(){
+  var n = 0, cs = (focusCfg && focusCfg.contexts) || [];
+  for (var i = 0; i < cs.length; i++){
+    var m = cs[i].m || {};
+    for (var k in m){ if (Object.prototype.hasOwnProperty.call(m, k) && m[k]) n++; }
+  }
+  return n;
 }
 
 function effClip(raw){
@@ -1265,6 +1330,60 @@ function renderStart(){
       (nDue ? ' (' + Math.min(nDue, n) + ' due)' : '')
     : 'Start quiz (no labeled clips)';
   $id('stModeTxt').textContent = mode === 'folder' ? 'picked local folder' : 'served folder';
+  renderFocus();
+}
+/* ---- coaching-focus editor ---- */
+function focusExerciseList(){
+  var set = {}, i, eff = effClips();
+  for (i = 0; i < eff.length; i++){
+    if (!isUnlabeled(eff[i]) && eff[i].exercise !== 'unknown') set[eff[i].exercise] = true;
+  }
+  var kb = KB();
+  for (var k in kb){ if (Object.prototype.hasOwnProperty.call(kb, k)) set[k] = true; }
+  return Object.keys(set).sort(function(a, b){ return exName(a).localeCompare(exName(b)); });
+}
+function renderFocus(){
+  var list = $id('focusList');
+  if (!list) return;
+  var nSel = focusCount();
+  $id('focusSummary').textContent = 'Coaching focus' +
+    (nSel ? ' · ' + nSel + ' movement' + (nSel === 1 ? '' : 's') + ' in your schedules'
+          : ' · order clips by what you’re coaching now');
+  list.textContent = '';
+  var exs = focusExerciseList();
+  (focusCfg.contexts || []).forEach(function(ctx){
+    var box = el('div', { class: 'focus-ctx' });
+    var head = el('div', { class: 'fname' });
+    head.appendChild(el('span', null, ctx.n));
+    var del = el('button', { class: 'linklike small', type: 'button' }, 'remove');
+    del.addEventListener('click', function(){
+      if (!confirm('Remove the schedule "' + ctx.n + '" and its movement picks?')) return;
+      focusCfg.contexts = focusCfg.contexts.filter(function(c){ return c !== ctx; });
+      saveFocus();
+      renderFocus();
+    });
+    head.appendChild(del);
+    box.appendChild(head);
+    var chips = el('div', { class: 'chips' });
+    exs.forEach(function(key){
+      var e = (ctx.m && ctx.m[key]) || 0;
+      var chip = el('button', { class: 'chip' + (e === 1 ? ' sel' : e >= 2 ? ' hot' : ''), type: 'button' },
+        exName(key) + (e >= 2 ? ' ★' : ''));
+      chip.addEventListener('click', function(){
+        if (!ctx.m) ctx.m = {};
+        var next = e >= 2 ? 0 : e + 1;
+        if (next) ctx.m[key] = next; else delete ctx.m[key];
+        saveFocus();
+        renderFocus();
+      });
+      chips.appendChild(chip);
+    });
+    box.appendChild(chips);
+    list.appendChild(box);
+  });
+  if (!(focusCfg.contexts || []).length){
+    list.appendChild(el('p', { class: 'muted small', style: 'margin-top:8px' }, 'No schedules yet — add one below.'));
+  }
 }
 
 /* ================= quiz flow ================= */
@@ -1338,8 +1457,9 @@ function clipBucket(id){
   return (s && ((s.r || 0) + (s.w || 0)) > 0) ? 'due' : 'new';
 }
 function pickSession(pool, n){
-  /* due-first, like the question bank: overdue clips lead every session,
-     unseen clips fill in, well-known clips wait until their due date */
+  /* SELECTION is due-first, like the question bank: overdue clips lead,
+     unseen clips fill in, well-known clips wait until their due date.
+     Within each bucket the most schedule-relevant movements win the spots. */
   var due = [], fresh = [], later = [], i;
   for (i = 0; i < pool.length; i++){
     var b = clipBucket(pool[i].id);
@@ -1353,7 +1473,23 @@ function pickSession(pool, n){
   later.sort(function(a, b){
     return ((fsCard(a.id) || {}).due || 0) - ((fsCard(b.id) || {}).due || 0);
   });
-  return due.concat(fresh, later).slice(0, n);
+  var byRel = function(a, b){ return relevanceFor(b.exercise) - relevanceFor(a.exercise); };
+  due.sort(byRel);
+  fresh.sort(byRel);
+  later.sort(byRel);
+  var rank = {};
+  for (i = 0; i < due.length; i++) rank[due[i].id] = 0;
+  for (i = 0; i < fresh.length; i++) rank[fresh[i].id] = 1;
+  for (i = 0; i < later.length; i++) rank[later[i].id] = 2;
+  var queue = due.concat(fresh, later).slice(0, n);
+  /* ORDER is by the coach's current schedules: the most relevant movement
+     appears first, the 2nd most relevant next, and so on; due-ness only
+     breaks ties (sorts are stable, so earlier ordering survives ties) */
+  queue.sort(function(a, b){
+    var d = relevanceFor(b.exercise) - relevanceFor(a.exercise);
+    return d !== 0 ? d : (rank[a.id] - rank[b.id]);
+  });
+  return queue;
 }
 function startQuiz(){
   var pool = quizPool();
@@ -1377,6 +1513,16 @@ function renderQuestion(){
   $id('qStreak').textContent = 'Streak ' + streak;
   $id('qBar').style.width = (100 * session.idx / session.queue.length) + '%';
   $id('qExercise').textContent = exName(clip.exercise);
+  var fc = focusContextsFor(clip.exercise);
+  var fEl = $id('qFocus');
+  if (fc.length){
+    var fparts = [];
+    for (var fi = 0; fi < fc.length; fi++) fparts.push(fc[fi].n + (fc[fi].e >= 2 ? ' ★' : ''));
+    fEl.textContent = 'In your schedule: ' + fparts.join(' · ');
+    fEl.hidden = false;
+  } else {
+    fEl.hidden = true;
+  }
   $id('btnGood').disabled = false;
   $id('btnBad').disabled = false;
   $id('qVideoSlot').appendChild(videoBox);
@@ -2001,6 +2147,7 @@ function buildSyncPayload(){
     coach: coachDebrief,
     aikey: obfKey(aiKey()),
     gclient: gclient(),
+    focus: focusCfg,
     set_ts: setTs()
   };
 }
@@ -2064,6 +2211,16 @@ function mergeRemote(remote){
     adoptTs('gclient');
     changed = true;
     try { refreshDriveUI(); } catch (eDrive) {}
+  }
+  /* coaching focus: the whole config moves as one blob, same per-field rule.
+     Only adopt a remote the OTHER device actually edited (rts has the field)
+     - the legacy fallback would let a never-touched default wipe real picks. */
+  if (rts.focus && remoteWins('focus') &&
+      remote.focus && typeof remote.focus === 'object' && Array.isArray(remote.focus.contexts)){
+    focusCfg = remote.focus;
+    lsSet(LS_FOCUS, focusCfg);
+    adoptTs('focus');
+    changed = true;
   }
   if (changed){
     lsSet(LS_STATS, stats);
@@ -2964,6 +3121,18 @@ $id('stLen').querySelectorAll('button').forEach(function(b){
   });
 });
 $id('stFocus').addEventListener('change', function(){ focusMistakes = this.checked; });
+$id('focusAdd').addEventListener('click', function(){
+  var name = String($id('focusNewName').value || '').trim().slice(0, 40);
+  if (!name) return;
+  focusCfg.contexts = focusCfg.contexts || [];
+  for (var i = 0; i < focusCfg.contexts.length; i++){
+    if (focusCfg.contexts[i].n.toLowerCase() === name.toLowerCase()) return;
+  }
+  focusCfg.contexts.push({ n: name, m: {} });
+  $id('focusNewName').value = '';
+  saveFocus();
+  renderFocus();
+});
 
 /* coach debrief toggle (default on) */
 coachDebrief = lsGet(LS_COACH, true) !== false;
@@ -3163,7 +3332,7 @@ document.addEventListener('keydown', function(e){
    BUILD is bumped by hand on every change; the date comes from the page's own
    Last-Modified, so an old date here means the browser served a cached copy
    rather than what is deployed. */
-var BUILD = 7;
+var BUILD = 8;
 function renderBuildStamp(){
   var out = 'v' + BUILD;
   var d = new Date(document.lastModified);
