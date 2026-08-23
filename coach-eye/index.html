@@ -156,6 +156,16 @@
   .banner.good h3{color:var(--good)}
   .banner.bad h3{color:var(--bad)}
   .banner .truth{font-weight:800;letter-spacing:.06em}
+  .rate-row{display:flex;gap:8px;margin-top:10px}
+  .rate-btn{flex:1;cursor:pointer;padding:8px 4px;font-family:inherit;font-weight:800;font-size:.92rem;
+    border-radius:10px;background:var(--panel);border:2px solid var(--line2);color:var(--text);
+    display:flex;flex-direction:column;align-items:center;gap:1px;transition:border-color .15s,color .15s}
+  .rate-btn small{font-weight:600;font-size:.68rem;color:var(--muted)}
+  .rate-btn:hover{border-color:var(--accent)}
+  .rate-btn.chosen{border-color:var(--accent);color:var(--accent)}
+  .rate-btn.chosen small{color:var(--accent)}
+  .rate-btn.rate-again.chosen{border-color:var(--bad);color:var(--bad)}
+  .rate-btn.rate-again.chosen small{color:var(--bad)}
   .coach-title{font-size:1.15rem;font-weight:800;margin-bottom:2px}
   .checklist{list-style:none}
   .checklist li{padding:4px 0 4px 26px;position:relative}
@@ -185,6 +195,19 @@
   .micbtn{white-space:nowrap;min-height:40px}
   .micbtn.rec{border-color:var(--bad);color:var(--bad);animation:micpulse 1.1s ease-in-out infinite}
   @keyframes micpulse{50%{opacity:.5}}
+  /* side-by-side debrief: the athlete stays on screen while the coach talks */
+  .db-split{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:16px;align-items:start;margin-bottom:16px}
+  .db-split>.db-vcol{position:sticky;top:12px}
+  .db-split .card{margin-bottom:0}
+  .db-split textarea{min-height:150px}
+  .db-split.solo{display:block}
+  .db-split.solo>.db-vcol{position:static}
+  @media(max-width:820px){
+    .db-split{display:block}
+    .db-split>.db-vcol{position:sticky;top:0;z-index:5;background:var(--bg);padding:4px 0 8px;margin-bottom:10px}
+    .db-split>.db-vcol video{max-height:32vh}
+    .db-split>.db-vcol .vcontrols{margin-top:6px}
+  }
   .dlspin{width:13px;height:13px;border:2px solid var(--line2);border-top-color:var(--accent);border-radius:50%;
     animation:dlspin .8s linear infinite;display:inline-block;vertical-align:-2px;margin-right:7px}
   @keyframes dlspin{to{transform:rotate(360deg)}}
@@ -276,6 +299,7 @@ python3 -m http.server 8000
       <div class="card">
         <div class="seclabel">Clip library</div>
         <p id="stTotals"></p>
+        <p id="stDue" class="small muted" hidden style="margin-top:2px"></p>
         <p id="stNote" class="small muted" hidden></p>
         <p id="stStorage" class="small" hidden style="margin-top:8px">Clips are stored in this browser.
           <button id="btnAddClips" class="btn btn-mini" type="button">Add / update clips&hellip;</button>
@@ -286,7 +310,7 @@ python3 -m http.server 8000
         <div id="stChips" class="chips"></div>
       </div>
       <div class="card">
-        <div class="seclabel">Session</div>
+        <div class="seclabel">Session <span class="hint">&middot; spaced like the question bank: due clips come first, your rating after each answer schedules its return</span></div>
         <div class="row">
           <div class="seg" id="stLen">
             <button type="button" data-len="10" class="sel">10</button>
@@ -528,6 +552,7 @@ var slow = false;
 var streak = 0;
 var coachDebrief = true;    /* start-screen toggle, persisted in LS_COACH */
 var debriefPending = false; /* reveal is waiting for the coach debrief */
+var revealRate = null;      /* {id, prev, grade} - scheduling state of the clip on the reveal screen */
 var activeRec = null;       /* live SpeechRecognition instance, if any */
 var sessLen = 10;
 var focusMistakes = false;
@@ -1220,9 +1245,24 @@ function renderStart(){
   $id('btnLabelMode').textContent = 'Label clips' + (unl ? ' (' + unl + ')' : '');
   var pool = quizPool();
   var n = sessLen === 0 ? pool.length : Math.min(sessLen, pool.length);
+  /* scheduling snapshot, mirroring the question bank's due counter */
+  var nDue = 0, nNew = 0, nLater = 0;
+  for (i = 0; i < pool.length; i++){
+    var bk = clipBucket(pool[i].id);
+    if (bk === 'due') nDue++; else if (bk === 'new') nNew++; else nLater++;
+  }
+  var dueEl = $id('stDue');
+  if (pool.length){
+    dueEl.textContent = '⏱ ' + nDue + ' due for review · ' + nNew + ' new · ' +
+      nLater + ' scheduled later';
+    dueEl.hidden = false;
+  } else {
+    dueEl.hidden = true;
+  }
   $id('btnStart').disabled = !pool.length;
   $id('btnStart').textContent = pool.length
-    ? 'Start quiz · ' + n + ' clip' + (n === 1 ? '' : 's')
+    ? 'Start quiz · ' + n + ' clip' + (n === 1 ? '' : 's') +
+      (nDue ? ' (' + Math.min(nDue, n) + ' due)' : '')
     : 'Start quiz (no labeled clips)';
   $id('stModeTxt').textContent = mode === 'folder' ? 'picked local folder' : 'served folder';
 }
@@ -1233,32 +1273,93 @@ function weightFor(id){
   if (!s) return 1;
   return Math.max(0.25, 1 + 2 * (s.w || 0) - (s.r || 0));
 }
-function pickSession(pool, n, weighted){
-  var arr = pool.slice();
-  if (!weighted){
-    shuffle(arr);
-    return arr.slice(0, n);
+
+/* ---- spaced repetition (FSRS-lite) ----
+   Same maths as the study-site question bank's built-in scheduler: an
+   Again/Hard/Good/Easy grade after each answer multiplies the clip's
+   stability, Again lapses it back to ~10 minutes. The per-clip card rides
+   inside stats.clips[id].fs, so the existing sync merge ("record with more
+   answers wins") carries the schedule across devices unchanged. */
+function fsCard(id){
+  var s = stats.clips[id];
+  return (s && s.fs && typeof s.fs === 'object') ? s.fs : null;
+}
+function fsSchedule(card, grade, now){
+  var iv = Math.max(1, (card && card.iv) || 1);
+  var stab = (card && card.s) || 1;
+  var diff = (card && card.d) || 5;
+  var reps = ((card && card.reps) || 0) + 1;
+  var lapses = (card && card.lapses) || 0;
+  var due;
+  if (grade === 1){
+    lapses++;
+    stab = Math.max(0.5, stab * 0.5);
+    diff = Math.min(10, diff + 1);
+    iv = 0;
+    due = now + 10 * 60 * 1000;
+  } else {
+    var mult = grade === 2 ? 1.2 : grade === 3 ? 2.2 : 3.2;
+    iv = Math.max(1, Math.round(iv * mult));
+    stab = stab * mult;
+    diff = Math.max(1, diff - (grade === 4 ? 0.3 : grade === 3 ? 0.1 : 0));
+    due = now + iv * 86400000;
   }
-  var out = [];
-  while (out.length < n && arr.length){
-    var tot = 0, ws = [], i;
-    for (i = 0; i < arr.length; i++){ ws[i] = weightFor(arr[i].id); tot += ws[i]; }
-    var r = Math.random() * tot;
-    for (i = 0; i < arr.length; i++){
-      r -= ws[i];
-      if (r <= 0) break;
-    }
-    if (i >= arr.length) i = arr.length - 1;
-    out.push(arr[i]);
-    arr.splice(i, 1);
-  }
+  return { due: due, iv: iv, s: stab, d: diff, reps: reps, lapses: lapses };
+}
+function fsPreview(card){
+  var out = { 1: '<10m' }, now = Date.now();
+  [2, 3, 4].forEach(function(g){
+    var days = fsSchedule(card, g, now).iv;
+    out[g] = days >= 365 ? '~1y+' : days >= 30 ? '~' + Math.round(days / 30) + 'mo' : '~' + days + 'd';
+  });
   return out;
+}
+function fsApply(id, grade, fromCard){
+  var s = stats.clips[id];
+  if (!s || typeof s !== 'object' || Array.isArray(s)){
+    s = stats.clips[id] = { r: 0, w: 0, times: [], last: 0 };
+  }
+  s.fs = fsSchedule(fromCard, grade, Date.now());
+  s.last = Date.now();
+  lsSet(LS_STATS, stats);
+  try { touch(); schedulePush(); } catch (e) {}
+  return s.fs;
+}
+function fsDescribe(card){
+  if (!card) return '';
+  if (card.iv === 0) return 'in about 10 minutes';
+  return 'in ~' + card.iv + ' day' + (card.iv === 1 ? '' : 's');
+}
+function clipBucket(id){
+  var s = stats.clips[id];
+  var card = s && s.fs;
+  if (card && typeof card.due === 'number') return card.due <= Date.now() ? 'due' : 'later';
+  /* answered before scheduling existed -> due now, so it gets a card soon */
+  return (s && ((s.r || 0) + (s.w || 0)) > 0) ? 'due' : 'new';
+}
+function pickSession(pool, n){
+  /* due-first, like the question bank: overdue clips lead every session,
+     unseen clips fill in, well-known clips wait until their due date */
+  var due = [], fresh = [], later = [], i;
+  for (i = 0; i < pool.length; i++){
+    var b = clipBucket(pool[i].id);
+    (b === 'due' ? due : b === 'new' ? fresh : later).push(pool[i]);
+  }
+  shuffle(due);
+  shuffle(fresh);
+  if (focusMistakes){
+    due.sort(function(a, b){ return weightFor(b.id) - weightFor(a.id); });
+  }
+  later.sort(function(a, b){
+    return ((fsCard(a.id) || {}).due || 0) - ((fsCard(b.id) || {}).due || 0);
+  });
+  return due.concat(fresh, later).slice(0, n);
 }
 function startQuiz(){
   var pool = quizPool();
   if (!pool.length) return;
   var n = sessLen === 0 ? pool.length : Math.min(sessLen, pool.length);
-  session = { queue: pickSession(pool, n, focusMistakes), idx: 0, results: [] };
+  session = { queue: pickSession(pool, n), idx: 0, results: [] };
   streak = 0;
   nextStep();
 }
@@ -1311,6 +1412,11 @@ function giveAnswer(guess){
   var correct = (guess === truth);
   streak = correct ? streak + 1 : 0;
   recordAnswer(curClip, correct, ms);
+  /* schedule immediately with the natural grade (right -> Good, wrong ->
+     Again) so closing the tab mid-reveal still counts; the rating buttons
+     on the reveal re-apply from the same pre-answer snapshot */
+  revealRate = { id: curClip.id, prev: fsCard(curClip.id), grade: correct ? 3 : 1 };
+  fsApply(curClip.id, revealRate.grade, revealRate.prev);
   session.results.push({ id: curClip.id, exercise: curClip.exercise, guess: guess, truth: truth, correct: correct, ms: ms });
   renderReveal(curClip, guess, truth, correct, ms);
 }
@@ -1330,25 +1436,63 @@ function renderReveal(clip, guess, truth, correct, ms){
     el('p', null, 'This clip: ', el('span', { class: 'truth' }, truth === 'good' ? 'GOOD FORM' : 'FAULTY MOVEMENT')),
     el('p', { class: 'muted small' }, 'Your call: ' + labelWord(guess) + ' · Decision time: ' + fmtMs(ms))
   );
+  banner.appendChild(buildRateRow(clip, correct));
   root.appendChild(banner);
-
-  var slot = el('div', null);
-  root.appendChild(slot);
-  slot.appendChild(videoBox); /* keeps looping so the coach can re-watch informed */
 
   var ex = KB()[clip.exercise];
   var rest = el('div', null);
+  var slot = el('div', { class: 'db-vcol' });
+  slot.appendChild(videoBox); /* keeps looping so the coach can re-watch informed */
   if (coachDebrief){
-    /* coach-simulator: debrief the rep BEFORE the answer sheet appears */
+    /* coach-simulator: video and debrief SIDE BY SIDE, so the coach keeps
+       eyes on the athlete while talking to them - the answer sheet appears
+       below after the debrief */
     debriefPending = true;
-    root.appendChild(buildDebrief(clip, ex, truth, rest));
+    var split = el('div', { class: 'db-split' });
+    split.appendChild(slot);
+    split.appendChild(buildDebrief(clip, ex, truth, rest, split));
+    root.appendChild(split);
   } else {
     debriefPending = false;
+    root.appendChild(slot);
     fillRevealRest(rest, clip, ex, truth);
   }
   root.appendChild(rest);
 
   show('reveal');
+}
+/* Again/Hard/Good/Easy under the verdict - identical grading language to the
+   study-site question bank. A wrong call already auto-scheduled "Again", a
+   right call "Good"; tapping refines it from the same pre-answer state. */
+function buildRateRow(clip, correct){
+  var box = el('div', null);
+  box.appendChild(el('p', { class: 'muted small', style: 'margin-top:10px' },
+    correct ? 'How solid was that call? Your rating sets when this clip comes back:'
+            : 'Missed it — this clip comes back soon. Adjust if you like:'));
+  var row = el('div', { class: 'rate-row' });
+  var prevCard = (revealRate && revealRate.id === clip.id) ? revealRate.prev : fsCard(clip.id);
+  var ivs = fsPreview(prevCard);
+  var names = { 1: 'Again', 2: 'Hard', 3: 'Good', 4: 'Easy' };
+  var note = el('p', { class: 'rate-note muted small', style: 'margin-top:6px' });
+  var curGrade = (revealRate && revealRate.id === clip.id) ? revealRate.grade : (correct ? 3 : 1);
+  [1, 2, 3, 4].forEach(function(g){
+    var b = el('button', { class: 'rate-btn' + (g === 1 ? ' rate-again' : '') + (g === curGrade ? ' chosen' : ''), type: 'button' },
+      names[g], el('small', null, ivs[g]));
+    b.addEventListener('click', function(){
+      if (!revealRate || revealRate.id !== clip.id) return;
+      revealRate.grade = g;
+      var card = fsApply(clip.id, g, revealRate.prev);
+      var all = row.querySelectorAll('.rate-btn'), i;
+      for (i = 0; i < all.length; i++) all[i].classList.remove('chosen');
+      b.classList.add('chosen');
+      note.textContent = 'Comes back ' + fsDescribe(card) + '.';
+    });
+    row.appendChild(b);
+  });
+  box.appendChild(row);
+  note.textContent = 'Comes back ' + fsDescribe(fsCard(clip.id)) + '. Tap a button to change.';
+  box.appendChild(note);
+  return box;
 }
 function fillRevealRest(rest, clip, ex, truth){
   if (truth === 'bad') rest.appendChild(buildSelfCheck(clip, ex));
@@ -1538,10 +1682,10 @@ function chipRow(hit, miss, wrongExtra){
   return box;
 }
 
-function buildDebrief(clip, ex, truth, rest){
+function buildDebrief(clip, ex, truth, rest, split){
   var card = el('div', { class: 'card' });
   card.appendChild(el('div', { class: 'seclabel' }, 'Coach debrief'));
-  card.appendChild(el('p', null, 'Your athlete just did this rep and is looking at you. Say it all in one go — the answer sheet unlocks after your debrief. Cover:'));
+  card.appendChild(el('p', null, 'Your athlete just did this rep and is looking at you — keep watching them while you talk. Say it all in one go; the answer sheet unlocks after your debrief. Cover:'));
   var ul = el('ul', { class: 'checklist', style: 'margin-bottom:10px' });
   ['the name of the movement',
    'what you\'d say to the athlete — what was good, what needs correcting',
@@ -1583,6 +1727,8 @@ function buildDebrief(clip, ex, truth, rest){
       rest.appendChild(review);
     } else {
       card.hidden = true;
+      /* debrief gone -> give the video its full width back */
+      if (split) split.classList.add('solo');
     }
     fillRevealRest(rest, clip, ex, truth);
     try { rest.firstChild.scrollIntoView({ behavior: 'smooth', block: 'start' }); } catch (e) {}
@@ -2999,6 +3145,12 @@ document.addEventListener('keydown', function(e){
     if (k === 'n' || e.key === 'Enter'){ e.preventDefault(); nextFromReveal(); }
     else if (k === ' '){ e.preventDefault(); replayVid(); }
     else if (k === 's'){ e.preventDefault(); toggleSlow(); }
+    else if (k >= '1' && k <= '4'){
+      e.preventDefault();
+      var rateBtns = document.querySelectorAll('#rvContent .rate-btn');
+      var rb = rateBtns[parseInt(k, 10) - 1];
+      if (rb) rb.click();
+    }
   } else if (currentScreen === 'label'){
     if (k === 'arrowleft' && !$id('lblPrev').disabled){ e.preventDefault(); labelIdx--; renderLabel(); }
     else if (k === 'arrowright' && !$id('lblNext').disabled){ e.preventDefault(); labelIdx++; renderLabel(); }
@@ -3011,7 +3163,7 @@ document.addEventListener('keydown', function(e){
    BUILD is bumped by hand on every change; the date comes from the page's own
    Last-Modified, so an old date here means the browser served a cached copy
    rather than what is deployed. */
-var BUILD = 4;
+var BUILD = 7;
 function renderBuildStamp(){
   var out = 'v' + BUILD;
   var d = new Date(document.lastModified);
