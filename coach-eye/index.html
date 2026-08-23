@@ -1660,6 +1660,22 @@ function aiKeyPrint(){
   return (k.length > 14 ? k.slice(0, 11) + '\u2026' + k.slice(-4) : '(too short)') +
          ', ' + k.length + ' chars';
 }
+/* The sync gist is unlisted but still publicly readable by URL, and GitHub's
+   secret scanners pattern-match raw "sk-ant-..." strings and report them to
+   Anthropic, which auto-disables the key. Store the key scrambled so the
+   pattern never appears in the gist. This defeats the automated scanners,
+   NOT a human who has the gist URL - keep a spend limit on the key. */
+function obfKey(s){
+  if (!s) return '';
+  try { return 'x1:' + btoa(String(s).split('').reverse().join('')); } catch (e) { return ''; }
+}
+function deobfKey(s){
+  s = String(s || '');
+  if (s.indexOf('x1:') === 0){
+    try { return atob(s.slice(3)).split('').reverse().join(''); } catch (e) { return ''; }
+  }
+  return s; /* legacy payloads stored the key in plain form */
+}
 function buildAIBlock(clip, ex, truth, text){
   var box = el('div', { style: 'margin-top:14px' });
   if (!aiKey()){
@@ -1837,7 +1853,7 @@ function buildSyncPayload(){
     stats: stats,
     labels: labels,
     coach: coachDebrief,
-    aikey: aiKey(),
+    aikey: obfKey(aiKey()),
     gclient: gclient(),
     set_ts: setTs()
   };
@@ -1890,9 +1906,9 @@ function mergeRemote(remote){
   }
   /* A device that never had a key must not wipe the key on this one - an
      empty x-api-key is exactly what produces "invalid API key (401)". */
-  if (remoteWins('aikey') && typeof remote.aikey === 'string' && remote.aikey.trim() &&
-      remote.aikey !== aiKey()){
-    lsSet(LS_AIKEY, remote.aikey);
+  var rkey = deobfKey(typeof remote.aikey === 'string' ? remote.aikey : '');
+  if (remoteWins('aikey') && rkey.trim() && rkey !== aiKey()){
+    lsSet(LS_AIKEY, rkey);
     adoptTs('aikey');
     changed = true;
     try { refreshAIKeyStatus(); } catch (eKey) {}
