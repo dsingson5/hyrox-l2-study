@@ -9,7 +9,9 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <meta name="apple-mobile-web-app-title" content="Coach Eye">
 <title>Coach Eye - HYROX Movement Quiz</title>
-<link rel="icon" href="data:,">
+<link rel="manifest" href="app.webmanifest">
+<link rel="icon" type="image/png" sizes="192x192" href="icon-192.png">
+<link rel="apple-touch-icon" href="icon-180.png">
 <style>
   :root{
     --bg:#0a0a0c;
@@ -447,7 +449,7 @@ python3 -m http.server 8000
     </section>
   </main>
 
-  <footer>Coach Eye runs entirely on this device &middot; no data leaves your browser</footer>
+  <footer id="pageFooter">Coach Eye runs entirely on this device &middot; no data leaves your browser</footer>
 </div>
 
 <!-- shared video block, reparented into whichever screen needs it -->
@@ -1135,6 +1137,19 @@ function boot(){
 function showSetup(reason){
   $id('setupReason').textContent = reason || 'Point the app at a processed clip library to begin.';
   $id('setupMsg').textContent = '';
+  /* iOS gives a Home Screen app its OWN storage silo: clips, stats and the
+     sync token from the Safari tab do not carry over. Say so, or an empty
+     start looks like data loss. */
+  var standalone = false;
+  try {
+    standalone = navigator.standalone === true ||
+      (window.matchMedia && window.matchMedia('(display-mode: standalone)').matches);
+  } catch (eSA) {}
+  if (standalone){
+    $id('setupMsg').textContent = 'Opened from your Home Screen for the first time? ' +
+      'This app keeps its own separate storage — clips and settings from the browser tab are not visible here. ' +
+      'Use "Get clips from Drive" below, and re-enter your sync token once to bring your stats over.';
+  }
   unloadVideo();
   show('setup');
   /* a fresh device still pulls settings (AI key, Google client ID) from the
@@ -1986,7 +2001,9 @@ function buildAIBlock(clip, ex, truth, text){
       btn.disabled = false;
       btn.textContent = 'AI coach review — retry';
       out.textContent = '';
-      out.appendChild(el('p', { class: 'small warn' }, 'AI review failed: ' + (err && err.message ? err.message : err)));
+      out.appendChild(el('p', { class: 'small warn' }, 'AI review failed: ' + (offlineNow()
+        ? 'you’re offline — the AI mentor needs the internet. Your local rubric review above still works; retry when back online.'
+        : (err && err.message ? err.message : err))));
     });
   });
   box.appendChild(btn);
@@ -2251,7 +2268,12 @@ function syncPull(){
     schedulePush();
     return changed;
   }).catch(function(err){
-    setSyncStatus('Sync error: ' + (err && err.message ? err.message : err));
+    /* a queued push must survive a failed pull (e.g. 'online' fired before
+       routing was really up) - the 4s debounce doubles as a settle delay */
+    if (syncPushPending) schedulePush();
+    setSyncStatus(offlineNow()
+      ? OFFLINE_SYNC_MSG
+      : 'Sync error: ' + (err && err.message ? err.message : err));
     return false;
   });
 }
@@ -2266,9 +2288,21 @@ function syncPush(keepalive){
       (c.src === 'study' ? ' · via your study-site sync' : ''));
     return true;
   }).catch(function(err){
-    setSyncStatus('Sync error: ' + (err && err.message ? err.message : err));
+    /* ghFetch wraps HTTP failures as "GitHub <status>: ..."; anything else is
+       network-shaped (offline, lie-fi, captive portal - where navigator.onLine
+       can still say true). Re-queue those so the 'online' listener and the
+       visibilitychange/pagehide nets retry them instead of dropping the push. */
+    var httpErr = /^GitHub \d/.test((err && err.message) || '');
+    if (!httpErr) syncPushPending = true;
+    setSyncStatus(offlineNow() ? OFFLINE_SYNC_MSG
+      : httpErr ? 'Sync error: ' + err.message
+      : 'Sync unreachable — changes are saved on this device and will retry.');
     return false;
   });
+}
+var OFFLINE_SYNC_MSG = 'Offline — everything is saved on this device; sync resumes when you’re back online.';
+function offlineNow(){
+  try { return navigator.onLine === false; } catch (e) { return false; }
 }
 function schedulePush(){
   if (!syncCreds()) return;
@@ -2310,7 +2344,9 @@ function enableOwnSync(token){
       setSyncStatus('✓ Sync enabled — use the same token on your other devices.');
     });
   }).catch(function(err){
-    setSyncStatus('Could not enable sync: ' + (err && err.message ? err.message : err));
+    setSyncStatus(offlineNow()
+      ? 'Offline — connect to the internet, then press Enable again to set up sync.'
+      : 'Could not enable sync: ' + friendlyNetErr(err));
   });
 }
 document.addEventListener('visibilitychange', function(){
@@ -3331,8 +3367,11 @@ document.addEventListener('keydown', function(e){
 /* ---- build stamp -------------------------------------------------------
    BUILD is bumped by hand on every change; the date comes from the page's own
    Last-Modified, so an old date here means the browser served a cached copy
-   rather than what is deployed. */
-var BUILD = 8;
+   rather than what is deployed.
+   ALSO bump VERSION in sw.js every time BUILD moves - and if the
+   knowledge.js ?v= pin in the <script> tag changes, change the matching
+   SHELL entry in sw.js too, or offline devices keep serving the old copy. */
+var BUILD = 9;
 function renderBuildStamp(){
   var out = 'v' + BUILD;
   var d = new Date(document.lastModified);
@@ -3354,6 +3393,46 @@ function renderBuildStamp(){
   }
 }
 renderBuildStamp();
+
+/* ---- offline ----
+   The service worker caches the app shell (page, knowledge base, icons), so
+   once a device has opened this page online ONCE, everything — quiz, coach
+   debrief, ratings, coaching focus, labels, stats — keeps working with zero
+   connectivity. Clips already live in IndexedDB per device. Gist sync,
+   Drive and AI review need the network and queue/degrade politely. */
+function markOfflineReady(){
+  try {
+    var f = $id('pageFooter');
+    if (f && f.textContent.indexOf('offline') === -1){
+      f.textContent += ' · works offline in this browser ✓';
+    }
+  } catch (e) {}
+}
+/* Register on the deployed https site always. On localhost only with ?sw=1:
+   the quiz folder is usually served at the origin ROOT there, so a
+   registration would claim all of localhost:<port> and outlive the labeling
+   session, intercepting whatever project is served on that port next.
+   Without the flag any leftover localhost registration is removed. */
+var swIsLocal = location.hostname === 'localhost' || location.hostname === '127.0.0.1';
+var swAllowed = location.protocol === 'https:' || (swIsLocal && /[?&]sw=1/.test(location.search));
+if ('serviceWorker' in navigator && swAllowed){
+  try {
+    navigator.serviceWorker.register('sw.js').then(function(){
+      return navigator.serviceWorker.ready;
+    }).then(function(){
+      if (navigator.serviceWorker.controller) markOfflineReady();
+      else navigator.serviceWorker.addEventListener('controllerchange', markOfflineReady);
+    }).catch(function(){ /* blocked (private mode etc.) - the app still works online */ });
+  } catch (eSW) { /* ignore */ }
+} else if ('serviceWorker' in navigator && swIsLocal){
+  try {
+    navigator.serviceWorker.getRegistration().then(function(r){ if (r) r.unregister(); });
+  } catch (eSW2) { /* ignore */ }
+}
+window.addEventListener('online', function(){
+  /* back on the network: pull remote changes, then push what queued here */
+  try { if (syncCreds()){ setSyncStatus('Back online — syncing…'); syncPull(); } } catch (e) {}
+});
 
 boot();
 })();
