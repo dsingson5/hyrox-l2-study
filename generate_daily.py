@@ -59,13 +59,16 @@ def stamp_html(site_label="HYROX L2 Study"):
             f'{SITE_VERSION} · {d} · {t}</div>')
 
 SPACING_DAYS = [1, 3, 7, 14, 30, 90]
+# Labels count lessons along the SERVING order (see pick_review_lessons), not
+# calendar days — at one lesson a day the two coincide, but the lesson count is
+# what is actually true after relevance ordering.
 SPACING_LABELS = {
-    1: "Yesterday (24 hr)",
-    3: "3 days back",
-    7: "1 week back",
-    14: "2 weeks back",
-    30: "1 month back",
-    90: "3 months back",
+    1: "Last lesson",
+    3: "3 lessons back",
+    7: "7 lessons back",
+    14: "14 lessons back",
+    30: "30 lessons back",
+    90: "90 lessons back",
 }
 
 DOMAIN_THEME = {
@@ -206,14 +209,51 @@ def relevant_lessons(lessons):
             if lessons[k].get("relevant", True)]
 
 
+_REL_ORDER = None   # serving sequence as day numbers, most-relevant first
+_REL_RANK = None    # day number -> position in that sequence
+
+
+def relevance_tables():
+    """(order, rank) for the relevance serving sequence; ([], {}) when the site
+    is still served chronologically (no data/relevance_order.json)."""
+    global _REL_ORDER, _REL_RANK
+    if _REL_ORDER is None:
+        try:
+            _REL_ORDER = [int(n) for n in
+                          json.loads((DATA / "relevance_order.json").read_text(encoding="utf-8"))]
+        except Exception:
+            _REL_ORDER = []
+        _REL_RANK = {d: i for i, d in enumerate(_REL_ORDER)}
+    return _REL_ORDER, _REL_RANK
+
+
 def pick_review_lessons(today_day, lessons, seen_through=0):
-    """Spaced recaps of prior lessons. Any lesson on a day <= seen_through is a
-    lesson the learner has declared 'done and not to be re-reviewed' (meta
-    seen_through_day), so it is never resurfaced as a spaced recap."""
+    """Spaced recaps of prior lessons.
+
+    The intervals count backwards along the SERVING order, not the calendar.
+    Lessons are served by relevance rank, so day N-1 is NOT the lesson studied
+    before day N: recapping it would resurface material never seen and pull its
+    questions into the day's core set. Walking the relevance order instead means
+    every recap is a lesson genuinely already worked through (the resume
+    redirect only advances past completed lessons); early ranks simply get
+    fewer recaps. Falls back to calendar spacing when no order is baked.
+
+    Any lesson on a day <= seen_through is one the learner has declared 'done
+    and not to be re-reviewed' (meta seen_through_day), so it is never
+    resurfaced as a spaced recap."""
+    order, rank = relevance_tables()
     out = []
     for s in SPACING_DAYS:
-        t = today_day - s
-        if t < 1 or t <= seen_through:
+        if order and today_day in rank:
+            r = rank[today_day] - s
+            if r < 0:
+                continue
+            t = order[r]
+        else:
+            t = today_day - s
+            if t < 1:
+                continue
+        if t <= seen_through:
             continue
         if str(t) in lessons and lessons[str(t)].get("relevant", True):
             out.append((s, lessons[str(t)]))
@@ -504,8 +544,9 @@ def render_html(today, today_day, today_lesson, deep_review, reviews, questions,
     if reviews:
         review_html = ('<div class="review-section">'
                        '<h2 class="rs-title">Spaced review</h2>'
-                       '<p class="rs-sub">Concepts you met before, resurfacing at expanding intervals '
-                       '(Cepeda et al. 2008). Read the recap, then test yourself in the practice set below.</p>')
+                       '<p class="rs-sub">Lessons you have already worked through, resurfacing at expanding '
+                       'intervals along your study path (Cepeda et al. 2008). Read the recap, then test '
+                       'yourself in the practice set below.</p>')
         for interval, lesson in reviews:
             label = SPACING_LABELS.get(interval, f"{interval}d review")
             review_html += render_lesson_card(lesson, label, "badge-spaced", True)
