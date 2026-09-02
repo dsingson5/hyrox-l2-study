@@ -209,6 +209,31 @@ def today_local():
 # advances the resume target past a day.
 COMPLETION_CUTOFF = "2026-07-22"
 
+# ── ACCOUNT RESUME (Hybrid Crew sign-in) ──────────────────────────────────
+# The hub (dsingson5.github.io/hybrid-crew) and this study site share ONE
+# origin, so a hub sign-in has already left `hcUser` + `roxlive.session` in
+# localStorage AT THE ROOT — raw keys, NOT under the site prefix. The worker's
+# /study endpoint derives the user FROM THE TOKEN (there is no user parameter,
+# so nobody can name their way into someone else's cards), which lets the
+# resume redirect recover real progress on a device that has never studied
+# here. The bearer token is sent to THIS ORIGIN ONLY — never to GitHub.
+STUDY_WORKER = "https://roxlive-sync.david-singson.workers.dev"
+STUDY_SITE = "hyroxl2"
+# Account fuse. STATE-AWARE: with local state on the device a fuse only costs
+# refinement (the local answer is already close), so fail fast at 2500 ms; with
+# NO local state the fallback is a pure guess at RORDER[0] — a lesson he has
+# very likely finished — so it is worth waiting out a first-of-day CORS
+# preflight + GET on a weak mobile link. The account fuse now CHAINS into the
+# gist path (see C1), so the budget is:
+#   worst case = STUDY_FETCH_COLD_MS + STUDY_GIST_CHAIN_MS = 8000
+# and RESUME_OVERLAY_MS must strictly exceed it, or the overlay could vanish
+# before a decision lands.
+STUDY_FETCH_MS = 2500        # local state present — fail fast
+STUDY_FETCH_COLD_MS = 5000   # no local state — a wrong guess costs a lesson
+STUDY_GIST_MS = 4500         # gist as the PRIMARY path (signed out)
+STUDY_GIST_CHAIN_MS = 3000   # gist reached as the account path's fallback
+RESUME_OVERLAY_MS = 9000     # > STUDY_FETCH_COLD_MS + STUDY_GIST_CHAIN_MS
+
 
 def relevant_lessons(lessons):
     """Training-relevant lessons (Tiers 1-3 + advanced), in day order.
@@ -733,6 +758,11 @@ def build_index_html(base_html, available, this_iso, dtopic=None, rorder=None,
     dayq_json = json.dumps(_dayq)
     redirect = (
         '<script>(function(){'
+        # This page is about to be replaced. app.js boots underneath us and
+        # would fire its OWN /study pull for a page nobody will read — two
+        # remote calls for one landing. The flag lets app.js no-op that boot
+        # pull (it still runs normally on the lesson page we land on).
+        'try{window.__RESUME_REDIRECTING=1;}catch(e){}'
         'var DAYS=' + days + ';var RORDER=' + rorder_json + ';var DTOPIC=' + dtopic_json + ';var DAYQ=' + dayq_json + ';var THIS="' + this_iso + '";'
         'var CUTOFF="' + COMPLETION_CUTOFF + '";'
         # No gist id is baked (none exists yet for this site) — but once the
@@ -740,6 +770,14 @@ def build_index_html(base_html, available, this_iso, dtopic=None, rorder=None,
         # remote-resume branch live, so a locally-wiped device still resumes.
         'var GIST="";try{GIST=localStorage.getItem("hyroxl2.sync.gist_id")||"";}catch(e){}'
         'var GFILE="hyrox-l2-progress.json";'
+        # Account resume: the hub session, RAW keys at the origin root (no site
+        # prefix). Both must be present — a stale hcUser with no token, or a
+        # token with no hcUser, is not a signed-in athlete and must fall
+        # straight through to the pre-existing gist/local path.
+        'var ATOK="";try{var _hu=(localStorage.getItem("hcUser")||"");'
+        'var _ht=(localStorage.getItem("roxlive.session")||"");'
+        'if(_hu.replace(/^\\s+|\\s+$/g,"")&&_ht.replace(/^\\s+|\\s+$/g,""))'
+        'ATOK=_ht.replace(/^\\s+|\\s+$/g,"");}catch(e){ATOK="";}'
         'function mt(d){try{var p=new Intl.DateTimeFormat("en-CA",{timeZone:"Asia/Manila",'
         'year:"numeric",month:"2-digit",day:"2-digit"}).formatToParts(d||new Date());'
         'var o={};p.forEach(function(x){o[x.type]=x.value;});return o.year+"-"+o.month+"-"+o.day;}'
@@ -752,7 +790,7 @@ def build_index_html(base_html, available, this_iso, dtopic=None, rorder=None,
         'ov.setAttribute("style","position:fixed;inset:0;display:flex;align-items:center;'
         'justify-content:center;background:#0b0e14;color:#9ba3b4;font:14px -apple-system,Segoe UI,sans-serif;z-index:99999");'
         '(document.documentElement||document).appendChild(ov);'
-        'setTimeout(function(){var o=document.getElementById("sa-resume");if(o&&o.parentNode)o.parentNode.removeChild(o);},8000);'
+        'setTimeout(function(){var o=document.getElementById("sa-resume");if(o&&o.parentNode)o.parentNode.removeChild(o);},' + str(RESUME_OVERLAY_MS) + ');'
         '}catch(e){}'
         'function readLocal(){try{var raw=localStorage.getItem("hyroxl2.state.v1");return raw?JSON.parse(raw):null;}catch(e){return null;}}'
         'function harvest(s,reviewed,completed,engaged,cards){if(!s)return;var tt=s.touchedDays||{};for(var k in tt){if(tt[k])reviewed[k]=true;}'
@@ -787,9 +825,19 @@ def build_index_html(base_html, available, this_iso, dtopic=None, rorder=None,
         'function finish(remote){if(settled)return;settled=true;'
         'var reviewed={},completed={},engaged={},cards={};harvest(local,reviewed,completed,engaged,cards);harvest(remote,reviewed,completed,engaged,cards);'
         'var hasState=!!(Object.keys(reviewed).length||Object.keys(completed).length||Object.keys(engaged).length||Object.keys(cards).length);go(decide(reviewed,completed,engaged,cards,hasState));}'
+        # Gist path, as a CALLABLE fallback. It used to be straight-line code
+        # after the account branch's `return`, which meant signing in DELETED
+        # this source: a 401 / 403 / worker-down / captive-portal device with a
+        # perfectly good gist was resumed from local state only and could be
+        # thrown backwards onto RORDER[0] — a lesson already finished. Now
+        # every account failure falls THROUGH to here. finish()'s single-settle
+        # guard makes the chain safe: whichever path answers first wins and the
+        # other's fuse is a no-op. ms lets the chained call use a shorter fuse
+        # so account+gist together still land inside the overlay's lifetime.
+        'function gistPath(ms){'
         'var token="";try{token=localStorage.getItem("hyroxl2.sync.token")||"";}catch(e){}'
         'if(!GIST){finish(null);return;}'
-        'var to=setTimeout(function(){finish(null);},4500);'
+        'var to=setTimeout(function(){finish(null);},ms||' + str(STUDY_GIST_MS) + ');'
         'try{var hd={"Accept":"application/vnd.github+json"};if(token)hd["Authorization"]="token "+token;'
         'fetch("https://api.github.com/gists/"+GIST,{headers:hd,cache:"no-store"})'
         '.then(function(r){return r.ok?r.json():Promise.reject();})'
@@ -797,7 +845,26 @@ def build_index_html(base_html, available, this_iso, dtopic=None, rorder=None,
         'if(f.truncated&&f.raw_url)return fetch(f.raw_url).then(function(x){return x.text();});return f.content;})'
         '.then(function(txt){var p=JSON.parse(txt);clearTimeout(to);finish(p&&p.state?p.state:null);})'
         '.catch(function(){clearTimeout(to);finish(null);});'
-        '}catch(e){clearTimeout(to);finish(null);}'
+        '}catch(e){clearTimeout(to);finish(null);}}'
+        # ACCOUNT branch FIRST, gist second, local last. On a signed-in device
+        # with no local state yet, the account call is the only thing standing
+        # between the athlete and Day 1 of the relevance order: his progress
+        # lives in the worker, not in this browser. Every failure mode — no
+        # fetch(), no network, non-200, unparseable body, a record with no
+        # .state — now falls through to gistPath() rather than settling, and
+        # gistPath()'s own failure path is the pre-existing local-only
+        # behaviour. Nothing here can leave the page sitting on the overlay.
+        'if(ATOK){var ato=setTimeout(function(){gistPath(' + str(STUDY_GIST_CHAIN_MS) + ');},'
+        'local?' + str(STUDY_FETCH_MS) + ':' + str(STUDY_FETCH_COLD_MS) + ');'
+        'try{fetch("' + STUDY_WORKER + '/study?site=' + STUDY_SITE + '",'
+        '{headers:{"Authorization":"Bearer "+ATOK},cache:"no-store"})'
+        '.then(function(r){return r.ok?r.json():Promise.reject();})'
+        '.then(function(d){clearTimeout(ato);'
+        'var st=(d&&d.ok===true&&d.payload&&typeof d.payload.state==="object"&&d.payload.state)?d.payload.state:null;'
+        'if(st){finish(st);}else{gistPath(' + str(STUDY_GIST_CHAIN_MS) + ');}})'
+        '.catch(function(){clearTimeout(ato);gistPath(' + str(STUDY_GIST_CHAIN_MS) + ');});'
+        '}catch(e){clearTimeout(ato);gistPath(' + str(STUDY_GIST_CHAIN_MS) + ');}return;}'
+        'gistPath();'
         '})();</script>'
     )
     # The landing page must never be served stale from cache, or an old
@@ -862,6 +929,15 @@ def build_day(build_date, curriculum, questions, is_entry):
             if _dstr not in _comp:
                 _dn = (_dt.date.fromisoformat(_dstr) - _sd2).days + 1
                 _comp[_dstr] = core_ids_for(_dn, lessons, questions, meta)
+        # Prune entries for dates with no page. build_index_html already
+        # intersects DAYQ with the available pages, so these are inert today —
+        # but the file grows without bound and any future consumer that skips
+        # the intersection would demand cards for pages nobody can open. The
+        # page being built right now is written a few lines below, so it is
+        # exempt from the existence test.
+        _today_iso = build_date.isoformat()
+        _comp = {_d: _ids for _d, _ids in _comp.items()
+                 if _d == _today_iso or (OUT / f"hyrox_{_d}.html").exists()}
         _cp.write_text(json.dumps(_comp, ensure_ascii=False), encoding='utf-8')
     except Exception:
         pass
@@ -913,8 +989,13 @@ def build_day(build_date, curriculum, questions, is_entry):
     # button stores — regenerated on every entry build so nightly-added pages
     # join the pack automatically. Paths are site-root-relative.
     try:
-        _pk = ["index.html", "modules.html"]
-        for _extra in ("figures.html", "games.html"):
+        # Only list files that actually exist. A phantom entry can never be
+        # fetched, so every "Download all" would end with fail >= 1 — and the
+        # build stamp is only written on a clean sweep, so the row would read
+        # "new lessons available" forever and re-download the whole archive on
+        # every tap. (This bit the CSCS twin, which listed modules.html.)
+        _pk = []
+        for _extra in ("index.html", "modules.html", "figures.html", "games.html"):
             if (ROOT / _extra).exists():
                 _pk.append(_extra)
         from urllib.parse import quote as _urlq
@@ -926,6 +1007,22 @@ def build_day(build_date, curriculum, questions, is_entry):
         print(f"Wrote {DATA / 'pages.json'} ({len(_pk)} entries)")
     except Exception as _pe:
         print("pages.json write failed:", _pe)
+    # Build stamp (study-offline v1.1): the offline pack records the stamp that
+    # was live when it was downloaded, so a device holding an out-of-date copy
+    # can be told to update instead of quietly studying stale lessons.
+    # Deliberately a SEPARATE file: pages.json must stay a plain JSON array or
+    # every already-deployed client breaks on it.
+    try:
+        try:
+            from zoneinfo import ZoneInfo
+            _bnow = _dt.datetime.now(ZoneInfo("Asia/Manila"))
+        except Exception:
+            _bnow = _dt.datetime.now(_dt.timezone.utc)
+        _bstamp = _bnow.replace(microsecond=0).isoformat()
+        (DATA / "build.json").write_text(json.dumps({"built": _bstamp}), encoding="utf-8")
+        print(f"Wrote {DATA / 'build.json'} ({_bstamp})")
+    except Exception as _be:
+        print("build.json write failed:", _be)
     print(f"Wrote {index_path} (GitHub Pages entry)")
     return 0
 
