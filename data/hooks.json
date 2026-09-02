@@ -1,0 +1,107 @@
+{
+  "nu_working": {
+    "hook": "An athlete asks you to write them a meal plan. It is the easiest yes in coaching, and it is the one that puts your insurance, your gym and your name on the line.",
+    "stakes": "The line is not about what you know. It is about what you are qualified to be responsible for.",
+    "beat": "The easiest yes"
+  },
+  "nu_gut": {
+    "hook": "Station five and they are doubled over. Not because their legs went, because their stomach did. Everyone files that under bad luck. It is a training gap.",
+    "stakes": "The gut adapts to what it is regularly asked to do, which means it can be programmed like anything else.",
+    "beat": "Station five"
+  },
+  "nu_postcomp": {
+    "hook": "They cross the line wrecked and somebody hands them a beer. What you say in the next hour depends entirely on a question nobody thinks to ask: when do they race again?",
+    "stakes": "Recovery urgency is set by the calendar, not by how bad they feel right now.",
+    "beat": "The first hour after"
+  },
+  "nu_plantbased": {
+    "hook": "An athlete tells you they have gone vegan. If your first move is to talk them out of it, you have just given up the chance to plan it properly.",
+    "stakes": "The risks here are specific and fixable. The argument is neither.",
+    "beat": "Don't debate it"
+  },
+  "sm_longevity": {
+    "hook": "Most of the people in your gym will never stand on a podium. They came because they want to still be doing this at seventy. Programme like you believe them.",
+    "stakes": "The majority of your clients are training for a different outcome than the one you are optimising for.",
+    "beat": "Who you're actually coaching"
+  },
+  "sm_neuro": {
+    "hook": "It did not tear because the muscle was weak. It tore because at minute fifty-two, when someone cut across them, the athlete did not know where their foot was.",
+    "stakes": "Testing people fresh, on pre-planned movement, tells you nothing about the moment they actually get hurt.",
+    "beat": "When it actually happens"
+  },
+  "sm_illness": {
+    "hook": "Six in the morning: feeling a bit rough, should I train? You are asleep. They are already deciding without you. Give them the rule before they need it.",
+    "stakes": "Above the neck, train easy and reassess. Below it, or a fever, stop. That is a rule they can run themselves.",
+    "beat": "The 6am text"
+  },
+  "sm_antidoping": {
+    "hook": "Whatever ends up in their sample is theirs. Not the supplement company's, not yours, not the guy at the gym who recommended it. Strict liability means intent never enters the room.",
+    "stakes": "I didn't know has never worked for anybody, and it will not work for your athlete.",
+    "beat": "Strict liability"
+  },
+  "st_framework": {
+    "hook": "Your athlete is slow at a station and your hand is already reaching for more strength work. In the wrong order you will spend twelve weeks fixing something that was never the problem.",
+    "stakes": "Restriction first, then capacity, then strength. Reaching for strength by reflex costs you a whole block.",
+    "beat": "Before you programme"
+  },
+  "st_ski": {
+    "hook": "First station. Heart rate climbing, legs still fresh, and that is exactly the trap. Watch where the stroke starts: if the elbows break first, they are already borrowing from station six.",
+    "stakes": "The SkiErg punishes an arms-first stroke the way nothing else in the race does, and it collects three stations later.",
+    "beat": "The first-station trap"
+  },
+  "st_sledpush": {
+    "hook": "Get behind them and look for one line from ankle through hip to hands. If the hips are riding high, the force they are making is going into the floor instead of the sled.",
+    "stakes": "Every degree off that line is work spent on nothing.",
+    "beat": "Find the line"
+  },
+  "st_sledpull": {
+    "hook": "Their grip goes before their legs do. The obvious fix is more farmer's holds. The real fix is often a shoulder that has been tight for a year.",
+    "stakes": "Grip failure is frequently a symptom, and training the symptom burns the block.",
+    "beat": "Grip goes first"
+  },
+  "st_burpee": {
+    "hook": "Watch one rep and ask whether they bounce or reset. Down, up, pause, jump is three separate movements. The athlete doing one continuous action will still be doing it at rep forty.",
+    "stakes": "Elastic quality separates athletes at this station far more clearly than strength does.",
+    "beat": "Bounce or reset"
+  },
+  "st_row": {
+    "hook": "Look at the knees on the last twenty strokes, not the first ten. Fresh, everybody looks fine. Fatigued is where the glute medius loses the argument.",
+    "stakes": "The fault you cannot see at stroke ten is the one costing them at stroke two hundred.",
+    "beat": "The last twenty strokes"
+  },
+  "st_carry": {
+    "hook": "Something gives out first, the trunk or the hands. Which one it is changes the entire block you write, and you can see it from ten metres away if you are actually looking.",
+    "stakes": "Grip-capped and trunk-capped athletes need opposite programmes.",
+    "beat": "What fails first"
+  },
+  "st_lunge": {
+    "hook": "Station seven, wall balls still ahead. Coach the exit from the lunge, not the entry. The athlete hauling themselves up on the front leg is spending legs they need in four minutes.",
+    "stakes": "What matters here is not the lunge. It is how much is left afterwards.",
+    "beat": "What's left after"
+  },
+  "st_wallball": {
+    "hook": "It ends on posture, not legs. The upper back rounds, the elbows drop, and from there neither the drive nor the catch works. Wanting it more does not fix a rounded thoracic spine at rep sixty.",
+    "stakes": "The final station is a postural endurance test wearing a squat's clothes.",
+    "beat": "Posture, not legs"
+  },
+  "pd_modelcrit": {
+    "hook": "Here is your typical intake: strong, fine on the sleds, and losing five minutes across eight kilometres of running. Which model you choose decides whether that gap ever closes.",
+    "stakes": "Models are not neutral. The wrong sequence banks the wrong quality at the wrong time.",
+    "beat": "The five-minute gap"
+  },
+  "ph_metabolism": {
+    "hook": "ATP is a currency, not a store. Your athlete carries seconds of it. Everything else across a two-hour race is manufactured on a membrane, at a rate that can be trained.",
+    "stakes": "Almost every ATP spent in a HYROX race is made aerobically, and spent in bursts that are not.",
+    "beat": "Seconds of currency"
+  },
+  "sk_highperf": {
+    "hook": "With an athlete who is already strong, the question stops being what to add. It becomes: across nine disciplines, where is there room left, and what does each one actually pay back?",
+    "stakes": "Rank what remains by time returned, not by what is most satisfying to coach.",
+    "beat": "Where's the room"
+  },
+  "bm_techmodels": {
+    "hook": "A technical model is a movement taken apart: the phases, what good looks like in each, and the physical attribute needed to hit it. Leave out the third part and you are describing, not coaching.",
+    "stakes": "A model that never names the attribute cannot tell you what to programme.",
+    "beat": "Taken apart"
+  }
+}

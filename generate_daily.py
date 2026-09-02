@@ -23,6 +23,15 @@ from typing import Any
 import widgets
 import themes
 import motifs
+try:  # bespoke per-lesson diagrams (79 lessons the widget library never covered)
+    import diagrams
+except Exception:  # not built yet -> pages simply render without them
+    class _NoDiagrams:
+        @staticmethod
+        def render(_topic):
+            return ""
+    diagrams = _NoDiagrams()
+import daily_media
 
 ROOT = Path(__file__).resolve().parent
 DATA = ROOT / "data"
@@ -340,6 +349,10 @@ def render_lesson_card(lesson, badge, badge_class, show_widget=True, is_today=Fa
                       f'<span class="m-icon">🔗</span><div><div class="m-title">{esc(rsrc["title"])}</div>'
                       f'<div class="m-cred">{esc(rsrc.get("credibility", ""))}</div></div></a>')
     widget_html = widgets.render(figure_key(lesson["topic_id"])) if show_widget else ""
+    # The inherited CSCS widget library covers only 43 of 122 topics; every
+    # other lesson falls back to its own authored diagram.
+    if show_widget and not widget_html:
+        widget_html = diagrams.render(lesson["topic_id"])
     chip = (f'<span class="domain-chip" style="background: {theme["glow"]}; color: {theme["accent"]}; border-color: {theme["accent"]}66;">'
             f'<svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">'
             f'<path d="{theme["icon"]}"/></svg>{esc(theme["name"])}</span>')
@@ -539,6 +552,19 @@ def render_html(today, today_day, today_lesson, deep_review, reviews, questions,
 
     today_card = render_lesson_card(today_lesson, badge, badge_class, True, is_today=True)
 
+    # Daily media — animated infographic + cinematic replay of today's lesson.
+    # Rendered from the lesson's own fields, so it needs no network and is
+    # reproducible inside the Actions build. A narrated video is attached only
+    # when data/videos.json has an entry for this topic or date.
+    try:
+        _dth = DOMAIN_THEME.get(t_domain, DOMAIN_THEME['CM'])
+        media_html = daily_media.render_daily_media(
+            today_lesson, theme, _dth, today_day, page_date,
+            video_url=daily_media.video_url_for(t_topic, page_date))
+    except Exception as e:  # never let media break the daily build
+        print(f'[daily_media] skipped: {e}', file=sys.stderr)
+        media_html = ''
+
     # ── Spaced review lesson cards (full recap incl. the topic animation; questions are pooled) ──
     review_html = ""
     if reviews:
@@ -651,6 +677,7 @@ def render_html(today, today_day, today_lesson, deep_review, reviews, questions,
   <div id="personal-reviews"></div>
   {pretest_html}
   {today_card}
+  {media_html}
   {review_html}
   <h2 style="margin: 26px 0 8px; font-size: 20px; font-weight: 700;">Practice questions</h2>
   <p style="font-size: 13px; color: var(--text-dim); margin: 0 0 14px;">Forced retrieval first, then grade yourself. Whatever you miss resurfaces on the FSRS-chosen day.</p>

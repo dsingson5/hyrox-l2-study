@@ -914,3 +914,43 @@ footer code { background: var(--surface); padding: 2px 6px; border-radius: 4px; 
   .sva-pop, .sva-flow, .sv-now { animation: none; }
 }
 /* ===== end study-anim v1 ===== */
+
+/* ── Daily media: animated infographic + cinematic replay ──────────────────
+   Injected by daily_media.py after today's lesson card. The per-instance
+   colours and keyframes live inline in the block itself (they are seeded per
+   lesson); only the layout chrome is here. */
+.daily-media { margin: 26px 0 8px; }
+
+.daily-infographic {
+  margin: 0 0 4px;
+  padding: 16px 16px 6px;
+  background: var(--surface, #14171c);
+  border: 1px solid var(--border, #2c3138);
+  border-radius: 16px;
+  overflow: hidden;
+}
+.daily-infographic svg { width: 100%; height: auto; display: block; }
+.daily-infographic .ig-cap {
+  display: flex; flex-wrap: wrap; gap: 4px 12px;
+  align-items: baseline; margin: 2px 4px 10px;
+}
+.ig-cap-k {
+  color: var(--accent, #5ec8ff);
+  font: 700 10px/1 ui-sans-serif, system-ui, -apple-system, 'Segoe UI', sans-serif;
+  letter-spacing: .2em; text-transform: uppercase;
+}
+.ig-cap-t {
+  color: var(--text-dim, #98a0aa);
+  font: 600 13px/1.35 ui-sans-serif, system-ui, -apple-system, 'Segoe UI', sans-serif;
+}
+
+@media (max-width: 640px) {
+  .daily-infographic { padding: 10px 10px 4px; border-radius: 13px; }
+  .daily-media .daily-cinematic .cn-scene { padding: 22px 18px 20px; }
+}
+
+@media print {
+  .daily-cinematic .cn-bar, .daily-cinematic .cn-video { display: none; }
+  .daily-cinematic .cn-scene { opacity: 1 !important; visibility: visible !important;
+    position: static !important; page-break-inside: avoid; }
+}
